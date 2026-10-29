@@ -1,0 +1,81 @@
+[
+  {
+    "id": "moles-from-mass",
+    "type": "numeric",
+    "lesson": "amount-of-substance",
+    "concept": "Mass and moles",
+    "difficulty": 1,
+    "prompt": "How many moles of carbon dioxide are in 22.0 g of CO₂? ($M = 44.01$ g mol⁻¹)",
+    "answer": 0.5,
+    "tolerance": 0.02,
+    "unit": "mol",
+    "explanation": "$n = \\dfrac{m}{M} = \\dfrac{22.0}{44.01} = 0.500$ mol."
+  },
+  {
+    "id": "atoms-in-magnesium",
+    "type": "numeric",
+    "lesson": "amount-of-substance",
+    "concept": "Avogadro constant",
+    "difficulty": 1,
+    "prompt": "How many atoms are in 0.25 mol of magnesium? ($N_A = 6.02 \\times 10^{23}$ mol⁻¹). You can type an answer like `1.2e23`.",
+    "answer": 1.505e23,
+    "tolerance": 0.02,
+    "unit": "atoms",
+    "explanation": "$N = nN_A = 0.25 \\times 6.02 \\times 10^{23} = 1.5 \\times 10^{23}$ atoms."
+  },
+  {
+    "id": "molar-mass-sulfuric",
+    "type": "numeric",
+    "lesson": "amount-of-substance",
+    "concept": "Molar mass",
+    "difficulty": 1,
+    "prompt": "Calculate the molar mass of sulfuric acid, H₂SO₄. ($A_r$: H = 1.01, S = 32.07, O = 16.00)",
+    "answer": 98.09,
+    "tolerance": 0.005,
+    "unit": "g mol⁻¹",
+    "explanation": "$2(1.01) + 32.07 + 4(16.00) = 2.02 + 32.07 + 64.00 = 98.09$ g mol⁻¹."
+  },
+  {
+    "id": "empirical-formula",
+    "type": "mcq",
+    "lesson": "amount-of-substance",
+    "concept": "Empirical formula",
+    "difficulty": 2,
+    "prompt": "A hydrocarbon contains 85.6 % carbon and 14.4 % hydrogen by mass. What is its empirical formula? ($A_r$: C = 12.01, H = 1.01)",
+    "options": ["CH", "CH₂", "CH₃", "C₂H₅"],
+    "answer": 1,
+    "explanation": "In 100 g: C $= 85.6/12.01 = 7.13$ mol; H $= 14.4/1.01 = 14.3$ mol. Dividing by the smaller gives 1 : 2.00, so the empirical formula is CH₂."
+  },
+  {
+    "id": "concentration",
+    "type": "numeric",
+    "lesson": "amount-of-substance",
+    "concept": "Concentration",
+    "difficulty": 1,
+    "prompt": "0.100 mol of potassium chloride is dissolved to make 500 cm³ of solution. What is the concentration?",
+    "answer": 0.2,
+    "tolerance": 0.02,
+    "unit": "mol dm⁻³",
+    "explanation": "Convert the volume first: 500 cm³ = 0.500 dm³. Then $c = n/V = 0.100/0.500 = 0.200$ mol dm⁻³."
+  },
+  {
+    "id": "molecular-formula",
+    "type": "short",
+    "lesson": "amount-of-substance",
+    "concept": "Molecular formula",
+    "difficulty": 2,
+    "prompt": "A compound has the empirical formula CH₂O and a molar mass of 180 g mol⁻¹. What is its molecular formula? (Type it without subscripts, e.g. C2H4.)",
+    "accept": ["C6H12O6", "C₆H₁₂O₆"],
+    "explanation": "CH₂O has $M = 12.01 + 2(1.01) + 16.00 = 30.03$ g mol⁻¹. $180 / 30 = 6$, so multiply every subscript by 6: C₆H₁₂O₆."
+  },
+  {
+    "id": "atoms-vs-molecules",
+    "type": "tf",
+    "lesson": "amount-of-substance",
+    "concept": "Avogadro constant",
+    "difficulty": 2,
+    "prompt": "One mole of oxygen gas, O₂, contains $6.02 \\times 10^{23}$ oxygen **atoms**.",
+    "answer": false,
+    "explanation": "It contains $6.02 \\times 10^{23}$ **molecules**. Each molecule has two atoms, so there are $1.20 \\times 10^{24}$ atoms."
+  }
+]

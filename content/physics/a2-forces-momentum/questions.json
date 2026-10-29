@@ -1,0 +1,214 @@
+[
+  {
+    "id": "net-force-accel",
+    "type": "numeric",
+    "lesson": "newtons-laws",
+    "concept": "Newton’s second law",
+    "difficulty": 1,
+    "prompt": "A 5.0 kg trolley has a 30 N force pushing it forwards and a 10 N force acting backwards. What is its acceleration?",
+    "answer": 4.0,
+    "tolerance": 0.02,
+    "unit": "m s⁻²",
+    "explanation": "Use the **resultant** force: $30 - 10 = 20$ N forwards. Then $a = F/m = 20/5.0 = 4.0$ m s⁻²."
+  },
+  {
+    "id": "third-law-pair",
+    "type": "mcq",
+    "lesson": "newtons-laws",
+    "concept": "Newton’s third law",
+    "difficulty": 2,
+    "prompt": "A book rests on a table. The Earth pulls down on the book with a gravitational force. Which force is the Newton’s third-law partner of this force?",
+    "options": [
+      "The normal force of the table on the book",
+      "The gravitational force of the book on the Earth",
+      "The contact force of the book on the table",
+      "The friction between the book and the table"
+    ],
+    "answer": 1,
+    "explanation": "A third-law pair involves the **same two objects** and the **same type** of force. Earth pulls book (gravitational) ↔ book pulls Earth (gravitational). The normal force is a contact force on the book, so although it balances the weight here, it is not its third-law partner."
+  },
+  {
+    "id": "first-law-space",
+    "type": "tf",
+    "lesson": "newtons-laws",
+    "concept": "Newton’s first law",
+    "difficulty": 1,
+    "prompt": "A spacecraft drifting far from any star or planet, with its engines switched off, will gradually slow down and stop.",
+    "answer": false,
+    "explanation": "With no resultant force there is no acceleration, so the spacecraft keeps moving at constant velocity. Things slow down on Earth only because forces like friction and drag act on them."
+  },
+  {
+    "id": "lift-reading",
+    "type": "numeric",
+    "lesson": "newtons-laws",
+    "concept": "Newton’s second law",
+    "difficulty": 3,
+    "prompt": "A 60 kg student stands on scales in a lift. The lift is moving **upwards** but slowing down at 2.0 m s⁻². Taking $g = 9.8$ m s⁻², what do the scales read?",
+    "answer": 468,
+    "tolerance": 0.02,
+    "unit": "N",
+    "explanation": "Slowing down while going up means the acceleration is **downwards**, 2.0 m s⁻². Taking down as positive: $mg - N = ma$, so $N = m(g - a) = 60 \\times 7.8 = 468$ N. The student feels lighter than their weight of 588 N."
+  },
+  {
+    "id": "constant-velocity-fall",
+    "type": "mcq",
+    "lesson": "newtons-laws",
+    "concept": "Equilibrium",
+    "difficulty": 1,
+    "prompt": "A parachutist is falling at a constant velocity. Which statement is correct?",
+    "options": [
+      "The drag force is greater than the weight",
+      "The drag force equals the weight",
+      "There are no forces acting on the parachutist",
+      "The weight is greater than the drag force"
+    ],
+    "answer": 1,
+    "explanation": "Constant velocity means zero acceleration, so the resultant force is zero. Weight and drag are both acting, but they balance exactly."
+  },
+  {
+    "id": "sliding-friction",
+    "type": "numeric",
+    "lesson": "newtons-laws",
+    "concept": "Friction",
+    "difficulty": 2,
+    "prompt": "A 4.0 kg block slides across a horizontal floor. The coefficient of dynamic friction is 0.25. Taking $g = 9.8$ m s⁻², what is the friction force on the block?",
+    "answer": 9.8,
+    "tolerance": 0.02,
+    "unit": "N",
+    "explanation": "On a horizontal floor the normal force equals the weight: $F_N = 4.0 \\times 9.8 = 39.2$ N. Then $F_f = \\mu_d F_N = 0.25 \\times 39.2 = 9.8$ N."
+  },
+  {
+    "id": "recoil-speed",
+    "type": "numeric",
+    "lesson": "momentum-impulse",
+    "concept": "Conservation of momentum",
+    "difficulty": 2,
+    "prompt": "A 4.0 kg rifle, initially at rest, fires a 0.010 kg bullet at 400 m s⁻¹. What is the recoil speed of the rifle?",
+    "answer": 1.0,
+    "tolerance": 0.02,
+    "unit": "m s⁻¹",
+    "explanation": "Total momentum is zero before firing, so afterwards the rifle’s momentum is equal and opposite to the bullet’s: $4.0\\,v = 0.010 \\times 400 = 4.0$, giving $v = 1.0$ m s⁻¹ backwards."
+  },
+  {
+    "id": "impulse-change",
+    "type": "numeric",
+    "lesson": "momentum-impulse",
+    "concept": "Impulse",
+    "difficulty": 2,
+    "prompt": "A football is kicked. The force on it rises steadily from zero to 200 N and falls steadily back to zero, the whole contact lasting 0.050 s — a triangle on a force–time graph. What impulse does the ball receive?",
+    "answer": 5.0,
+    "tolerance": 0.02,
+    "unit": "N s",
+    "explanation": "Impulse is the area under the force–time graph. For a triangle: $\\tfrac12 \\times 0.050 \\times 200 = 5.0$ N s."
+  },
+  {
+    "id": "rebound-momentum",
+    "type": "numeric",
+    "lesson": "momentum-impulse",
+    "concept": "Momentum is a vector",
+    "difficulty": 2,
+    "prompt": "A 0.20 kg ball hits a wall at 5.0 m s⁻¹ and rebounds along the same line at 4.0 m s⁻¹. What is the magnitude of its change in momentum?",
+    "answer": 1.8,
+    "tolerance": 0.02,
+    "unit": "kg m s⁻¹",
+    "explanation": "Take the rebound direction as positive: $u = -5.0$, $v = +4.0$. $\\Delta p = 0.20 \\times (4.0 - (-5.0)) = 1.8$ kg m s⁻¹. Subtracting the speeds (giving 0.2) ignores the reversal of direction."
+  },
+  {
+    "id": "ke-conserved",
+    "type": "tf",
+    "lesson": "momentum-impulse",
+    "concept": "Elastic and inelastic collisions",
+    "difficulty": 1,
+    "prompt": "In every collision between two objects in an isolated system, total kinetic energy is conserved.",
+    "answer": false,
+    "explanation": "Total **momentum** is always conserved in an isolated system. Kinetic energy is conserved only in elastic collisions; in inelastic ones some is transferred to thermal energy, sound or deformation."
+  },
+  {
+    "id": "airbag",
+    "type": "mcq",
+    "lesson": "momentum-impulse",
+    "concept": "Impulse",
+    "difficulty": 1,
+    "prompt": "Why does an airbag reduce the force on a passenger in a crash?",
+    "options": [
+      "It reduces the passenger’s change in momentum",
+      "It increases the time over which the passenger’s momentum changes",
+      "It reduces the passenger’s mass",
+      "It absorbs all of the passenger’s momentum without any force"
+    ],
+    "answer": 1,
+    "explanation": "The passenger’s change in momentum (from moving to stopped) is the same either way. Since $F = \\Delta p / \\Delta t$, spreading that change over a longer time makes the average force smaller."
+  },
+  {
+    "id": "centripetal-force",
+    "type": "numeric",
+    "lesson": "circular-motion",
+    "concept": "Centripetal force",
+    "difficulty": 2,
+    "prompt": "A 1200 kg car travels at a constant 15 m s⁻¹ around a bend that is part of a circle of radius 50 m. What resultant force does the car need?",
+    "answer": 5400,
+    "tolerance": 0.02,
+    "unit": "N",
+    "explanation": "$F = \\dfrac{mv^2}{r} = \\dfrac{1200 \\times 15^2}{50} = 5400$ N, directed towards the centre of the bend. Friction from the road provides it."
+  },
+  {
+    "id": "direction-of-force",
+    "type": "mcq",
+    "lesson": "circular-motion",
+    "concept": "Centripetal acceleration",
+    "difficulty": 1,
+    "prompt": "An object moves in a circle at constant speed. In which direction does the resultant force on it point?",
+    "options": [
+      "Along the tangent, in the direction of motion",
+      "Towards the centre of the circle",
+      "Away from the centre of the circle",
+      "Nowhere — the resultant force is zero because the speed is constant"
+    ],
+    "answer": 1,
+    "explanation": "The velocity keeps changing direction, so there is an acceleration, of size $v^2/r$, towards the centre. By $F = ma$ the resultant force points there too."
+  },
+  {
+    "id": "angular-velocity",
+    "type": "numeric",
+    "lesson": "circular-motion",
+    "concept": "Describing circular motion",
+    "difficulty": 2,
+    "prompt": "A wheel makes 120 complete turns every minute. What is its angular velocity?",
+    "answer": 12.57,
+    "tolerance": 0.02,
+    "unit": "rad s⁻¹",
+    "explanation": "120 turns per minute is $f = 2.0$ Hz. Then $\\omega = 2\\pi f = 4\\pi \\approx 12.6$ rad s⁻¹."
+  },
+  {
+    "id": "double-speed",
+    "type": "mcq",
+    "lesson": "circular-motion",
+    "concept": "Centripetal force",
+    "difficulty": 2,
+    "prompt": "A stone on a string moves in a horizontal circle. If its speed is doubled while the radius stays the same, the tension needed becomes…",
+    "options": ["half as large", "the same", "twice as large", "four times as large"],
+    "answer": 3,
+    "explanation": "$F = mv^2/r$ depends on $v^2$. Doubling $v$ multiplies $v^2$ — and so the force — by four."
+  },
+  {
+    "id": "period-expression",
+    "type": "expression",
+    "lesson": "circular-motion",
+    "concept": "Describing circular motion",
+    "difficulty": 2,
+    "prompt": "An object moves at constant speed $v$ in a circle of radius $r$. Write an expression for its period $T$. (Type `pi` for π.)",
+    "variables": ["r", "v"],
+    "answer": "2*pi*r/v",
+    "explanation": "In one period it travels one circumference, $2\\pi r$, at speed $v$. So $T = \\dfrac{2\\pi r}{v}$."
+  },
+  {
+    "id": "moon-centripetal",
+    "type": "short",
+    "lesson": "circular-motion",
+    "concept": "Centripetal force",
+    "difficulty": 1,
+    "prompt": "Which force provides the centripetal force that keeps the Moon in orbit around the Earth?",
+    "accept": ["gravity", "gravitational force", "gravitational attraction", "gravitation", "the gravitational force", "gravitational pull", "weight"],
+    "explanation": "The Earth’s **gravitational** pull on the Moon points towards the Earth — the centre of the (nearly circular) orbit — so it supplies the centripetal force."
+  }
+]

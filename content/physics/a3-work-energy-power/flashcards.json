@@ -1,0 +1,12 @@
+[
+  { "id": "work-definition", "concept": "Work", "front": "Define **work done** by a constant force.", "back": "$W = Fs\\cos\\theta$ — the force times the displacement in the direction of the force. Unit: joule (N m)." },
+  { "id": "no-work", "concept": "Work", "front": "Give two situations where a force does **no work**.", "back": "When the force is perpendicular to the motion (e.g. tension in circular motion), or when nothing moves." },
+  { "id": "work-graph", "concept": "Work", "front": "How do you find work done from a force–displacement graph?", "back": "Work done = **area under the graph**." },
+  { "id": "ke", "concept": "Energy", "front": "Kinetic energy formula?", "back": "$E_k = \\tfrac12 mv^2$, or $\\dfrac{p^2}{2m}$ in terms of momentum." },
+  { "id": "gpe", "concept": "Energy", "front": "Change in gravitational potential energy near Earth?", "back": "$\\Delta E_p = mg\\Delta h$" },
+  { "id": "elastic", "concept": "Energy", "front": "Elastic potential energy stored in a stretched spring?", "back": "$E_H = \\tfrac12 k(\\Delta x)^2$ — the area under the force–extension line." },
+  { "id": "conservation", "concept": "Energy", "front": "State the **principle of conservation of energy**.", "back": "Energy cannot be created or destroyed, only transferred between forms; the total energy of an isolated system is constant." },
+  { "id": "power", "concept": "Power", "front": "Define **power**. Two formulas?", "back": "The rate of doing work: $P = \\dfrac{\\Delta W}{\\Delta t}$, and $P = Fv$ for a force moving at velocity $v$." },
+  { "id": "efficiency", "concept": "Efficiency", "front": "Define **efficiency**.", "back": "$\\eta = \\dfrac{\\text{useful output}}{\\text{total input}}$ (energy or power). No unit; always below 1." },
+  { "id": "sankey", "concept": "Efficiency", "front": "What does arrow width show on a **Sankey diagram**?", "back": "The amount of energy (or power) in that flow. Output widths add up to the input width." }
+]

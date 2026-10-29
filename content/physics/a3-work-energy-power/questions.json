@@ -1,0 +1,161 @@
+[
+  {
+    "id": "work-angle",
+    "type": "numeric",
+    "lesson": "work-and-energy",
+    "concept": "Work done",
+    "difficulty": 2,
+    "prompt": "A trolley is pulled 10 m along a level floor by a 50 N force directed at 60° above the horizontal. How much work does this force do?",
+    "answer": 250,
+    "tolerance": 0.02,
+    "unit": "J",
+    "explanation": "Only the component along the motion does work: $W = Fs\\cos\\theta = 50 \\times 10 \\times \\cos 60^\\circ = 50 \\times 10 \\times 0.5 = 250$ J."
+  },
+  {
+    "id": "ball-drop-speed",
+    "type": "numeric",
+    "lesson": "work-and-energy",
+    "concept": "Conservation of energy",
+    "difficulty": 2,
+    "prompt": "A 2.0 kg ball is dropped from rest from a height of 20 m. Ignoring air resistance and taking $g = 9.8$ m s⁻², what is its speed just before it lands?",
+    "answer": 19.8,
+    "tolerance": 0.02,
+    "unit": "m s⁻¹",
+    "explanation": "Loss of GPE = gain of KE: $mgh = \\tfrac12 mv^2$, so $v = \\sqrt{2gh} = \\sqrt{2 \\times 9.8 \\times 20} = \\sqrt{392} = 19.8$ m s⁻¹. The mass cancels — it was a distraction."
+  },
+  {
+    "id": "perpendicular-work",
+    "type": "tf",
+    "lesson": "work-and-energy",
+    "concept": "Work done",
+    "difficulty": 2,
+    "prompt": "A ball whirls in a horizontal circle at constant speed on a string. The tension in the string does no work on the ball.",
+    "answer": true,
+    "explanation": "The tension points to the centre, which is always perpendicular to the ball’s velocity. With $\\theta = 90^\\circ$, $W = Fs\\cos 90^\\circ = 0$ — which is why the speed (and kinetic energy) stays constant."
+  },
+  {
+    "id": "car-ke",
+    "type": "numeric",
+    "lesson": "work-and-energy",
+    "concept": "Kinetic energy",
+    "difficulty": 1,
+    "prompt": "What is the kinetic energy of a 1500 kg car travelling at 20 m s⁻¹?",
+    "answer": 300000,
+    "tolerance": 0.02,
+    "unit": "J",
+    "explanation": "$E_k = \\tfrac12 mv^2 = \\tfrac12 \\times 1500 \\times 20^2 = 3.0 \\times 10^5$ J (300 kJ)."
+  },
+  {
+    "id": "ke-double-speed",
+    "type": "mcq",
+    "lesson": "work-and-energy",
+    "concept": "Kinetic energy",
+    "difficulty": 1,
+    "prompt": "A cyclist doubles their speed. By what factor does their kinetic energy increase?",
+    "options": ["2", "√2", "4", "8"],
+    "answer": 2,
+    "explanation": "Kinetic energy depends on $v^2$. Doubling $v$ multiplies $v^2$ by $2^2 = 4$. This is why stopping distances grow so quickly with speed."
+  },
+  {
+    "id": "spring-energy",
+    "type": "numeric",
+    "lesson": "work-and-energy",
+    "concept": "Elastic potential energy",
+    "difficulty": 2,
+    "prompt": "A spring with spring constant 250 N m⁻¹ is stretched by 0.20 m. How much elastic potential energy does it store?",
+    "answer": 5.0,
+    "tolerance": 0.02,
+    "unit": "J",
+    "explanation": "$E_H = \\tfrac12 k(\\Delta x)^2 = \\tfrac12 \\times 250 \\times 0.20^2 = 5.0$ J — the triangular area under the force–extension graph."
+  },
+  {
+    "id": "ramp-friction",
+    "type": "numeric",
+    "lesson": "work-and-energy",
+    "concept": "Conservation of energy",
+    "difficulty": 3,
+    "prompt": "A 5.0 kg block slides from rest down a rough ramp, dropping a vertical height of 2.0 m. It reaches the bottom at 5.0 m s⁻¹. Taking $g = 9.8$ m s⁻², how much work was done against friction?",
+    "answer": 35.5,
+    "tolerance": 0.02,
+    "unit": "J",
+    "explanation": "Loss of GPE $= 5.0 \\times 9.8 \\times 2.0 = 98$ J. Gain of KE $= \\tfrac12 \\times 5.0 \\times 5.0^2 = 62.5$ J. The difference, $98 - 62.5 = 35.5$ J, was transferred to thermal energy by friction."
+  },
+  {
+    "id": "slide-speed-expression",
+    "type": "expression",
+    "lesson": "work-and-energy",
+    "concept": "Conservation of energy",
+    "difficulty": 2,
+    "prompt": "A child starts from rest at the top of a frictionless slide of vertical height $h$. Write an expression for their speed $v$ at the bottom, in terms of $g$ and $h$.",
+    "variables": ["g", "h"],
+    "answer": "sqrt(2*g*h)",
+    "explanation": "$mgh = \\tfrac12 mv^2$ so $v = \\sqrt{2gh}$. The shape of the slide doesn’t matter — only the height dropped."
+  },
+  {
+    "id": "power-lift",
+    "type": "numeric",
+    "lesson": "power-and-efficiency",
+    "concept": "Power",
+    "difficulty": 2,
+    "prompt": "A 65 kg student runs up a staircase with a vertical height of 4.0 m in 5.0 s. Taking $g = 9.8$ m s⁻², what is the useful power developed?",
+    "answer": 510,
+    "tolerance": 0.02,
+    "unit": "W",
+    "explanation": "Work against gravity $= mgh = 65 \\times 9.8 \\times 4.0 = 2548$ J. Power $= 2548 / 5.0 \\approx 510$ W."
+  },
+  {
+    "id": "efficiency-calc",
+    "type": "numeric",
+    "lesson": "power-and-efficiency",
+    "concept": "Efficiency",
+    "difficulty": 1,
+    "prompt": "A 2000 W kettle transfers 1700 W to the water inside it. What is its efficiency, as a percentage?",
+    "answer": 85,
+    "tolerance": 0.02,
+    "unit": "%",
+    "explanation": "$\\eta = \\dfrac{\\text{useful power out}}{\\text{total power in}} = \\dfrac{1700}{2000} = 0.85 = 85\\,\\%$."
+  },
+  {
+    "id": "car-power",
+    "type": "numeric",
+    "lesson": "power-and-efficiency",
+    "concept": "Power and velocity",
+    "difficulty": 2,
+    "prompt": "A van travels at a steady 30 m s⁻¹ on a level road against a total resistive force of 600 N. What output power must the engine supply, in kilowatts?",
+    "answer": 18,
+    "tolerance": 0.02,
+    "unit": "kW",
+    "explanation": "At constant speed the driving force equals the resistive force. $P = Fv = 600 \\times 30 = 18\\,000$ W $= 18$ kW."
+  },
+  {
+    "id": "efficiency-over-100",
+    "type": "tf",
+    "lesson": "power-and-efficiency",
+    "concept": "Efficiency",
+    "difficulty": 1,
+    "prompt": "A very well-designed machine could have an efficiency greater than 100 %.",
+    "answer": false,
+    "explanation": "That would mean getting out more useful energy than was put in, which breaks conservation of energy. Real machines always dissipate some energy, so efficiency is below 100 %."
+  },
+  {
+    "id": "sankey-efficiency",
+    "type": "mcq",
+    "lesson": "power-and-efficiency",
+    "concept": "Efficiency",
+    "difficulty": 1,
+    "prompt": "A Sankey diagram for a lamp shows 500 J of electrical energy in, 150 J out as light and the rest as thermal energy. What is the lamp’s efficiency?",
+    "options": ["15 %", "30 %", "70 %", "150 %"],
+    "answer": 1,
+    "explanation": "Useful output is the light: $150 / 500 = 0.30 = 30\\,\\%$. The other 350 J heats the surroundings."
+  },
+  {
+    "id": "unit-of-power",
+    "type": "short",
+    "lesson": "power-and-efficiency",
+    "concept": "Power",
+    "difficulty": 1,
+    "prompt": "Name the SI unit of power.",
+    "accept": ["watt", "watts", "W", "J/s", "joule per second", "joules per second"],
+    "explanation": "The **watt** (W). One watt is a transfer of one joule every second."
+  }
+]

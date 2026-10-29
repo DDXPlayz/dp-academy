@@ -1,0 +1,79 @@
+[
+  {
+    "id": "arith-term",
+    "type": "numeric",
+    "lesson": "arithmetic-and-geometric",
+    "concept": "Arithmetic nth term",
+    "difficulty": 1,
+    "prompt": "Find the 30th term of the arithmetic sequence 7, 12, 17, 22, …",
+    "answer": 152,
+    "tolerance": 0,
+    "explanation": "$u_1 = 7$, $d = 5$. $u_{30} = 7 + 29 \\times 5 = 152$."
+  },
+  {
+    "id": "arith-sum",
+    "type": "numeric",
+    "lesson": "arithmetic-and-geometric",
+    "concept": "Arithmetic series",
+    "difficulty": 1,
+    "prompt": "Find the sum of the first 50 positive integers, $1 + 2 + 3 + \\dots + 50$.",
+    "answer": 1275,
+    "tolerance": 0,
+    "explanation": "This is arithmetic with $u_1 = 1$ and $u_{50} = 50$. $S_{50} = \\dfrac{50}{2}(1 + 50) = 25 \\times 51 = 1275$."
+  },
+  {
+    "id": "geo-ratio",
+    "type": "mcq",
+    "lesson": "arithmetic-and-geometric",
+    "concept": "Common ratio",
+    "difficulty": 1,
+    "prompt": "What is the common ratio of the geometric sequence $2, -6, 18, -54, \\dots$?",
+    "options": ["$3$", "$-3$", "$-4$", "$\\tfrac{1}{3}$"],
+    "answer": 1,
+    "explanation": "Divide any term by the one before: $-6 / 2 = -3$, and $18 / -6 = -3$. The alternating signs are the clue that $r$ is negative."
+  },
+  {
+    "id": "geo-sum-infinity",
+    "type": "numeric",
+    "lesson": "arithmetic-and-geometric",
+    "concept": "Sum to infinity",
+    "difficulty": 2,
+    "prompt": "Find the sum to infinity of $80 + 40 + 20 + 10 + \\dots$",
+    "answer": 160,
+    "tolerance": 0,
+    "explanation": "$u_1 = 80$, $r = \\tfrac12$. Since $|r| < 1$, $S_\\infty = \\dfrac{80}{1 - \\frac12} = 160$."
+  },
+  {
+    "id": "converges",
+    "type": "tf",
+    "lesson": "arithmetic-and-geometric",
+    "concept": "Sum to infinity",
+    "difficulty": 1,
+    "prompt": "The geometric series $1 + 1.1 + 1.21 + 1.331 + \\dots$ has a finite sum to infinity.",
+    "answer": false,
+    "explanation": "The common ratio is $1.1$. A sum to infinity exists only when $|r| < 1$; here the terms grow, so the sum increases without limit."
+  },
+  {
+    "id": "arith-general",
+    "type": "expression",
+    "lesson": "arithmetic-and-geometric",
+    "concept": "Arithmetic nth term",
+    "difficulty": 1,
+    "prompt": "An arithmetic sequence has first term $a$ and common difference $d$. Write an expression for its $n$th term.",
+    "variables": ["a", "d", "n"],
+    "answer": "a + (n-1)*d",
+    "explanation": "Reaching the $n$th term means adding $d$ to the first term $n - 1$ times: $u_n = a + (n-1)d$."
+  },
+  {
+    "id": "compound-interest",
+    "type": "numeric",
+    "lesson": "arithmetic-and-geometric",
+    "concept": "Compound interest",
+    "difficulty": 2,
+    "prompt": "USD 2000 is invested at 4 % per year, compounded annually. What is it worth after 6 years? Give your answer to the nearest cent.",
+    "answer": 2530.64,
+    "tolerance": 0.001,
+    "unit": "USD",
+    "explanation": "Each year multiplies the value by 1.04: $2000 \\times 1.04^6 = 2000 \\times 1.26532 = 2530.64$."
+  }
+]

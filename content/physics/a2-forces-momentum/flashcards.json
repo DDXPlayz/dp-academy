@@ -1,0 +1,14 @@
+[
+  { "id": "first-law", "concept": "Newton’s laws", "front": "State **Newton’s first law**.", "back": "An object remains at rest or moves at constant velocity unless a resultant force acts on it." },
+  { "id": "second-law", "concept": "Newton’s laws", "front": "State **Newton’s second law** in two forms.", "back": "$F = ma$ for constant mass; more generally, resultant force = rate of change of momentum, $F = \\dfrac{\\Delta p}{\\Delta t}$." },
+  { "id": "third-law", "concept": "Newton’s laws", "front": "Three properties of a Newton’s **third-law** force pair?", "back": "Equal in size, opposite in direction, act on **different** objects — and they are the same type of force." },
+  { "id": "weight-normal", "concept": "Newton’s laws", "front": "Are weight and the normal force on a resting book a third-law pair?", "back": "No. Both act on the book, and they are different types of force. They balance because the book is in equilibrium." },
+  { "id": "friction-static-dynamic", "concept": "Friction", "front": "Static vs dynamic friction?", "back": "Static friction matches the applied force up to a maximum $\\mu_s F_N$. Once sliding, dynamic friction is $\\mu_d F_N$, usually smaller." },
+  { "id": "momentum", "concept": "Momentum", "front": "Define **linear momentum**. Unit?", "back": "$p = mv$, a vector. Unit kg m s⁻¹ (equivalent to N s)." },
+  { "id": "impulse", "concept": "Momentum", "front": "What is **impulse**, and how do you find it from a graph?", "back": "Impulse $= F\\Delta t = \\Delta p$. It is the **area under a force–time graph**." },
+  { "id": "conservation-momentum", "concept": "Momentum", "front": "When is momentum conserved?", "back": "When no external resultant force acts on the system (an isolated system)." },
+  { "id": "elastic", "concept": "Collisions", "front": "What makes a collision **elastic**?", "back": "Total kinetic energy is conserved. (Momentum is conserved in all collisions of an isolated system.)" },
+  { "id": "centripetal-acc", "concept": "Circular motion", "front": "Centripetal acceleration: size and direction?", "back": "$a = \\dfrac{v^2}{r} = \\omega^2 r$, towards the centre of the circle." },
+  { "id": "centripetal-force-real", "concept": "Circular motion", "front": "What is a **centripetal force**?", "back": "The resultant force towards the centre needed for circular motion, $F = mv^2/r$ — supplied by a real force (tension, friction, gravity…), not an extra one." },
+  { "id": "omega", "concept": "Circular motion", "front": "Link angular velocity ω to period and speed.", "back": "$\\omega = \\dfrac{2\\pi}{T} = 2\\pi f$, and $v = \\omega r$." }
+]

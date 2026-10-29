@@ -1,0 +1,33 @@
+{
+  "id": "computer-science",
+  "title": "Computer Science",
+  "short": "Computer Sci",
+  "group": "Group 4 · Sciences",
+  "levels": ["SL", "HL"],
+  "description": "How computers work and how to make them solve problems, from hardware and networks to algorithms, programming and data structures.",
+  "colour": "#0369a1",
+  "units": [
+    {
+      "id": "concepts",
+      "code": "A",
+      "title": "Concepts of computer science",
+      "topics": [
+        { "id": "a1-fundamentals", "code": "A1", "title": "Computer fundamentals", "summary": "CPU, memory, data representation, logic gates and operating systems.", "hours": 15 },
+        { "id": "a2-networks", "code": "A2", "title": "Networks", "summary": "Network types, protocols, layers, addressing and security.", "hours": 12 },
+        { "id": "a3-databases", "code": "A3", "title": "Databases", "summary": "Relational models, normalisation and SQL.", "hours": 12 },
+        { "id": "a4-machine-learning", "code": "A4", "title": "Machine learning", "summary": "Types of learning, data preparation, models and their ethical implications.", "hours": 10 }
+      ]
+    },
+    {
+      "id": "computational-thinking",
+      "code": "B",
+      "title": "Computational thinking and problem-solving",
+      "topics": [
+        { "id": "b1-computational-thinking", "code": "B1", "title": "Computational thinking", "summary": "Decomposition, pattern recognition, abstraction and algorithmic design.", "hours": 6 },
+        { "id": "b2-programming", "code": "B2", "title": "Programming", "summary": "Variables, control structures, data structures, searching and sorting algorithms.", "hours": 22 },
+        { "id": "b3-oop", "code": "B3", "title": "Object-oriented programming", "summary": "Classes, objects, encapsulation, inheritance and polymorphism.", "hours": 12 },
+        { "id": "b4-adts", "code": "B4", "title": "Abstract data types", "summary": "Linked lists, stacks, queues, trees and hash tables.", "hours": 15, "hl": true }
+      ]
+    }
+  ]
+}

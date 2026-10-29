@@ -1,0 +1,220 @@
+[
+  {
+    "id": "avg-velocity-lap",
+    "type": "mcq",
+    "lesson": "describing-motion",
+    "concept": "Distance vs displacement",
+    "difficulty": 1,
+    "prompt": "A runner completes exactly one lap of a 400 m track in 80 s, finishing where they started. What are the runner’s average speed and average velocity?",
+    "options": [
+      "Average speed 5.0 m s⁻¹, average velocity 5.0 m s⁻¹",
+      "Average speed 5.0 m s⁻¹, average velocity 0",
+      "Average speed 0, average velocity 5.0 m s⁻¹",
+      "Both are zero"
+    ],
+    "answer": 1,
+    "explanation": "Average speed uses the **distance** travelled: $400 / 80 = 5.0$ m s⁻¹. Average velocity uses the **displacement**, and finishing at the start means the displacement is zero — so the average velocity is zero."
+  },
+  {
+    "id": "graph-gradient",
+    "type": "numeric",
+    "lesson": "describing-motion",
+    "concept": "Gradient of a v–t graph",
+    "difficulty": 1,
+    "prompt": "A velocity–time graph is a straight line from 3.0 m s⁻¹ at $t = 0$ to 15.0 m s⁻¹ at $t = 6.0$ s. What is the acceleration?",
+    "answer": 2.0,
+    "tolerance": 0.02,
+    "unit": "m s⁻²",
+    "explanation": "Acceleration is the gradient of a velocity–time graph: $a = \\dfrac{15.0 - 3.0}{6.0} = 2.0$ m s⁻²."
+  },
+  {
+    "id": "displacement-magnitude",
+    "type": "numeric",
+    "lesson": "describing-motion",
+    "concept": "Distance vs displacement",
+    "difficulty": 1,
+    "prompt": "A hiker walks 6.0 km due east and then 8.0 km due north. What is the magnitude of the hiker’s displacement?",
+    "answer": 10,
+    "tolerance": 0.02,
+    "unit": "km",
+    "explanation": "The two legs are at right angles, so the displacement is the hypotenuse: $\\sqrt{6.0^2 + 8.0^2} = \\sqrt{100} = 10$ km. The distance walked is 14 km, but displacement only cares about start and finish."
+  },
+  {
+    "id": "which-are-vectors",
+    "type": "multi",
+    "lesson": "describing-motion",
+    "concept": "Scalars and vectors",
+    "difficulty": 1,
+    "prompt": "Which of these quantities are **vectors**? Select all that apply.",
+    "options": ["Displacement", "Speed", "Acceleration", "Distance", "Velocity", "Time"],
+    "answers": [0, 2, 4],
+    "explanation": "Displacement, velocity and acceleration all need a direction to be fully described, so they are vectors. Distance, speed and time have size only — they are scalars."
+  },
+  {
+    "id": "negative-acceleration",
+    "type": "tf",
+    "lesson": "describing-motion",
+    "concept": "Sign of acceleration",
+    "difficulty": 2,
+    "prompt": "True or false: an object with a negative acceleration must be slowing down.",
+    "answer": false,
+    "explanation": "The sign only says which way the acceleration points. If the velocity is also negative, velocity and acceleration point the same way and the object **speeds up** in the negative direction. An object slows down only when velocity and acceleration have opposite signs."
+  },
+  {
+    "id": "braking-area",
+    "type": "numeric",
+    "lesson": "describing-motion",
+    "concept": "Area under a v–t graph",
+    "difficulty": 2,
+    "prompt": "A car slows uniformly from 20 m s⁻¹ to rest in 5.0 s. Using the area under its velocity–time graph, how far does it travel while braking?",
+    "answer": 50,
+    "tolerance": 0.02,
+    "unit": "m",
+    "explanation": "The graph is a straight line down to zero, so the area is a triangle: $\\tfrac12 \\times 5.0 \\times 20 = 50$ m."
+  },
+  {
+    "id": "braking-distance",
+    "type": "numeric",
+    "lesson": "uniform-acceleration",
+    "concept": "Choosing a suvat equation",
+    "difficulty": 2,
+    "prompt": "A car travelling at 25 m s⁻¹ brakes with a constant deceleration of 5.0 m s⁻². How far does it travel before stopping?",
+    "answer": 62.5,
+    "tolerance": 0.02,
+    "unit": "m",
+    "explanation": "Known: $u = 25$, $v = 0$, $a = -5.0$. Time isn’t needed, so use $v^2 = u^2 + 2as$:\n\n$$0 = 25^2 + 2(-5.0)s \\;\\Rightarrow\\; s = \\frac{625}{10} = 62.5\\ \\text{m}$$"
+  },
+  {
+    "id": "drop-time",
+    "type": "numeric",
+    "lesson": "uniform-acceleration",
+    "concept": "Free fall",
+    "difficulty": 2,
+    "prompt": "A stone is dropped from rest from a bridge 45 m above a river. Ignoring air resistance and taking $g = 9.8$ m s⁻², how long does it take to reach the water?",
+    "answer": 3.03,
+    "tolerance": 0.02,
+    "unit": "s",
+    "explanation": "With $u = 0$, use $s = \\tfrac12 g t^2$: $t = \\sqrt{\\dfrac{2 \\times 45}{9.8}} = \\sqrt{9.18} = 3.0$ s."
+  },
+  {
+    "id": "choose-equation",
+    "type": "mcq",
+    "lesson": "uniform-acceleration",
+    "concept": "Choosing a suvat equation",
+    "difficulty": 1,
+    "prompt": "A cyclist accelerates uniformly from 2.0 m s⁻¹ to 8.0 m s⁻¹ over a distance of 30 m. You want the acceleration. Which equation gets you there in one step?",
+    "options": ["$v = u + at$", "$s = \\frac{(u+v)}{2}t$", "$s = ut + \\frac12 at^2$", "$v^2 = u^2 + 2as$"],
+    "answer": 3,
+    "explanation": "You know $u$, $v$ and $s$ and want $a$. Time is neither known nor wanted, so choose the equation that leaves out $t$: $v^2 = u^2 + 2as$."
+  },
+  {
+    "id": "cyclist-acceleration",
+    "type": "numeric",
+    "lesson": "uniform-acceleration",
+    "concept": "Choosing a suvat equation",
+    "difficulty": 2,
+    "prompt": "For the same cyclist (2.0 m s⁻¹ to 8.0 m s⁻¹ over 30 m), calculate the acceleration.",
+    "answer": 1.0,
+    "tolerance": 0.02,
+    "unit": "m s⁻²",
+    "explanation": "$v^2 = u^2 + 2as$ gives $a = \\dfrac{v^2 - u^2}{2s} = \\dfrac{64 - 4}{60} = 1.0$ m s⁻²."
+  },
+  {
+    "id": "max-height-expression",
+    "type": "expression",
+    "lesson": "uniform-acceleration",
+    "concept": "Free fall",
+    "difficulty": 3,
+    "prompt": "A ball is thrown vertically upwards with speed $u$. Ignoring air resistance, write an expression for the maximum height $h$ it reaches, in terms of $u$ and $g$.",
+    "variables": ["u", "g"],
+    "answer": "u^2/(2*g)",
+    "explanation": "At the top $v = 0$ and the acceleration is $-g$ (up positive). From $v^2 = u^2 + 2as$: $0 = u^2 - 2gh$, so $h = \\dfrac{u^2}{2g}$."
+  },
+  {
+    "id": "top-of-throw",
+    "type": "mcq",
+    "lesson": "uniform-acceleration",
+    "concept": "Free fall",
+    "difficulty": 1,
+    "prompt": "A ball is thrown straight up. At the very top of its flight, what are its velocity and acceleration?",
+    "options": [
+      "Velocity zero, acceleration zero",
+      "Velocity zero, acceleration 9.8 m s⁻² downwards",
+      "Velocity 9.8 m s⁻¹ downwards, acceleration zero",
+      "Velocity zero, acceleration 9.8 m s⁻² upwards"
+    ],
+    "answer": 1,
+    "explanation": "The ball stops for an instant, so its velocity is zero. But gravity still acts, so the acceleration is 9.8 m s⁻² downwards — that is why it starts moving down again."
+  },
+  {
+    "id": "time-of-flight",
+    "type": "numeric",
+    "lesson": "projectile-motion",
+    "concept": "Resolving velocity",
+    "difficulty": 2,
+    "prompt": "A ball is launched from level ground at 15 m s⁻¹, 53° above the horizontal. Take $\\sin 53^\\circ = 0.80$, $\\cos 53^\\circ = 0.60$ and $g = 9.8$ m s⁻². Ignoring air resistance, what is its time of flight?",
+    "answer": 2.45,
+    "tolerance": 0.02,
+    "unit": "s",
+    "explanation": "Only the vertical component matters for time: $u_y = 15 \\times 0.80 = 12$ m s⁻¹. It lands when $0 = 12t - 4.9t^2$, so $t = 12/4.9 = 2.45$ s."
+  },
+  {
+    "id": "horizontal-velocity-top",
+    "type": "numeric",
+    "lesson": "projectile-motion",
+    "concept": "Independence of components",
+    "difficulty": 2,
+    "prompt": "For the same ball (15 m s⁻¹ at 53°, $\\cos 53^\\circ = 0.60$), what is its speed at the highest point of the path?",
+    "answer": 9.0,
+    "tolerance": 0.02,
+    "unit": "m s⁻¹",
+    "explanation": "At the top the vertical velocity is zero, but the horizontal velocity is unchanged throughout: $u_x = 15 \\times 0.60 = 9.0$ m s⁻¹. So the speed there is 9.0 m s⁻¹ — not zero."
+  },
+  {
+    "id": "same-landing-time",
+    "type": "tf",
+    "lesson": "projectile-motion",
+    "concept": "Independence of components",
+    "difficulty": 1,
+    "prompt": "Two identical marbles leave the edge of the same table at the same moment: one rolls off horizontally at 3 m s⁻¹, the other simply drops. Ignoring air resistance, they hit the floor at the same time.",
+    "answer": true,
+    "explanation": "Both start with zero vertical velocity and fall the same height with the same acceleration $g$. Horizontal motion doesn’t affect vertical motion, so they land together — the rolling marble just lands further away."
+  },
+  {
+    "id": "air-resistance-effects",
+    "type": "multi",
+    "lesson": "projectile-motion",
+    "concept": "Air resistance",
+    "difficulty": 2,
+    "prompt": "Compared with the same launch in a vacuum, how does significant air resistance change a projectile’s motion? Select all that apply.",
+    "options": [
+      "The range is shorter",
+      "The maximum height is lower",
+      "The path is no longer symmetrical",
+      "The horizontal velocity stays constant"
+    ],
+    "answers": [0, 1, 2],
+    "explanation": "Drag acts against the velocity, so it slows the horizontal motion (shorter range, so the horizontal velocity is **not** constant) and reduces the climb (lower peak). Because the projectile is slower on the way down, the descent is steeper than the ascent and the path is asymmetric."
+  },
+  {
+    "id": "range-expression",
+    "type": "expression",
+    "lesson": "projectile-motion",
+    "concept": "Resolving velocity",
+    "difficulty": 3,
+    "prompt": "A projectile is launched from level ground with speed $u$ at angle $\\theta$ above the horizontal. Ignoring air resistance, write an expression for its range $R$ in terms of $u$, $\\theta$ and $g$. (Type `theta` for θ.)",
+    "variables": ["u", "theta", "g"],
+    "answer": "2*u^2*sin(theta)*cos(theta)/g",
+    "explanation": "Time of flight: $0 = (u\\sin\\theta)t - \\tfrac12 g t^2$ gives $t = \\dfrac{2u\\sin\\theta}{g}$. Range $= u\\cos\\theta \\times t = \\dfrac{2u^2\\sin\\theta\\cos\\theta}{g}$, which you may also write as $\\dfrac{u^2\\sin 2\\theta}{g}$."
+  },
+  {
+    "id": "terminal-speed-name",
+    "type": "short",
+    "lesson": "projectile-motion",
+    "concept": "Air resistance",
+    "difficulty": 1,
+    "prompt": "A skydiver’s drag force grows until it equals their weight, after which they fall at a constant speed. What is this speed called?",
+    "accept": ["terminal speed", "terminal velocity"],
+    "explanation": "When drag equals weight, the resultant force is zero, so there is no acceleration and the speed stays constant. This is the **terminal speed** (often called terminal velocity)."
+  }
+]

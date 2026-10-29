@@ -1,0 +1,8 @@
+[
+  { "id": "arith-nth", "concept": "Arithmetic", "front": "nth term of an **arithmetic** sequence?", "back": "$u_n = u_1 + (n-1)d$" },
+  { "id": "arith-sum", "concept": "Arithmetic", "front": "Sum of the first n terms of an **arithmetic** series (two forms)?", "back": "$S_n = \\dfrac n2\\left(2u_1 + (n-1)d\\right) = \\dfrac n2(u_1 + u_n)$" },
+  { "id": "geo-nth", "concept": "Geometric", "front": "nth term of a **geometric** sequence?", "back": "$u_n = u_1 r^{\\,n-1}$" },
+  { "id": "geo-sum", "concept": "Geometric", "front": "Sum of the first n terms of a **geometric** series?", "back": "$S_n = \\dfrac{u_1(r^n - 1)}{r - 1}$, for $r \\ne 1$" },
+  { "id": "sum-infinity", "concept": "Geometric", "front": "Sum to infinity — formula and condition?", "back": "$S_\\infty = \\dfrac{u_1}{1 - r}$, valid only when $|r| < 1$." },
+  { "id": "growth-ratio", "concept": "Applications", "front": "A quantity grows by 7 % each year. What is the common ratio?", "back": "$r = 1.07$" }
+]

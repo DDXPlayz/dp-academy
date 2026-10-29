@@ -1,0 +1,75 @@
+{
+  "id": "chemistry",
+  "title": "Chemistry",
+  "short": "Chemistry",
+  "group": "Group 4 · Sciences",
+  "levels": ["SL", "HL"],
+  "description": "The structure of matter and how it reacts. Organised as the 2025 syllabus does it: three Structure strands and three Reactivity strands.",
+  "colour": "#0d9488",
+  "units": [
+    {
+      "id": "structure-1",
+      "code": "S1",
+      "title": "Models of the particulate nature of matter",
+      "topics": [
+        { "id": "s1-1-particulate-nature", "code": "S1.1", "title": "The particulate nature of matter", "summary": "Elements, compounds and mixtures; states of matter and changes of state.", "hours": 2 },
+        { "id": "s1-2-nuclear-atom", "code": "S1.2", "title": "The nuclear atom", "summary": "Subatomic particles, isotopes and mass spectra.", "hours": 2 },
+        { "id": "s1-3-electron-configurations", "code": "S1.3", "title": "Electron configurations", "summary": "Emission spectra, energy levels, orbitals and ionisation energy.", "hours": 4 },
+        { "id": "s1-4-the-mole", "code": "S1.4", "title": "Counting particles by mass: the mole", "summary": "The mole, molar mass, empirical and molecular formulae, and concentration.", "hours": 4 },
+        { "id": "s1-5-ideal-gases", "code": "S1.5", "title": "Ideal gases", "summary": "The ideal gas model and calculations with the gas laws.", "hours": 3 }
+      ]
+    },
+    {
+      "id": "structure-2",
+      "code": "S2",
+      "title": "Models of bonding and structure",
+      "topics": [
+        { "id": "s2-1-ionic-model", "code": "S2.1", "title": "The ionic model", "summary": "Formation of ions, ionic lattices and their properties.", "hours": 2 },
+        { "id": "s2-2-covalent-model", "code": "S2.2", "title": "The covalent model", "summary": "Lewis structures, molecular shape, polarity and intermolecular forces.", "hours": 9 },
+        { "id": "s2-3-metallic-model", "code": "S2.3", "title": "The metallic model", "summary": "Metallic bonding and the properties of metals; transition elements at HL.", "hours": 1 },
+        { "id": "s2-4-materials", "code": "S2.4", "title": "From models to materials", "summary": "Bonding triangles, alloys, polymers and addition and condensation polymerisation.", "hours": 3 }
+      ]
+    },
+    {
+      "id": "structure-3",
+      "code": "S3",
+      "title": "Classification of matter",
+      "topics": [
+        { "id": "s3-1-periodic-table", "code": "S3.1", "title": "The periodic table", "summary": "Periodic trends, oxides, oxidation states and transition-metal complexes.", "hours": 4 },
+        { "id": "s3-2-functional-groups", "code": "S3.2", "title": "Functional groups", "summary": "Homologous series, IUPAC naming, isomerism and spectroscopy.", "hours": 6 }
+      ]
+    },
+    {
+      "id": "reactivity-1",
+      "code": "R1",
+      "title": "What drives chemical reactions?",
+      "topics": [
+        { "id": "r1-1-enthalpy", "code": "R1.1", "title": "Measuring enthalpy changes", "summary": "Exothermic and endothermic reactions and calorimetry.", "hours": 2 },
+        { "id": "r1-2-energy-cycles", "code": "R1.2", "title": "Energy cycles in reactions", "summary": "Bond enthalpies, Hess’s law and Born–Haber cycles.", "hours": 3 },
+        { "id": "r1-3-fuels", "code": "R1.3", "title": "Energy from fuels", "summary": "Combustion, fossil fuels, biofuels and fuel cells.", "hours": 2 },
+        { "id": "r1-4-entropy", "code": "R1.4", "title": "Entropy and spontaneity", "summary": "Entropy, Gibbs energy and the direction of change.", "hours": 4, "hl": true }
+      ]
+    },
+    {
+      "id": "reactivity-2",
+      "code": "R2",
+      "title": "How much, how fast and how far?",
+      "topics": [
+        { "id": "r2-1-stoichiometry", "code": "R2.1", "title": "The amount of chemical change", "summary": "Balanced equations, limiting reactants, yield and atom economy.", "hours": 4 },
+        { "id": "r2-2-rates", "code": "R2.2", "title": "The rate of chemical change", "summary": "Collision theory, factors affecting rate, rate equations and activation energy.", "hours": 4 },
+        { "id": "r2-3-equilibrium", "code": "R2.3", "title": "The extent of chemical change", "summary": "Dynamic equilibrium, the equilibrium constant and Le Châtelier’s principle.", "hours": 4 }
+      ]
+    },
+    {
+      "id": "reactivity-3",
+      "code": "R3",
+      "title": "What are the mechanisms of chemical change?",
+      "topics": [
+        { "id": "r3-1-proton-transfer", "code": "R3.1", "title": "Proton transfer reactions", "summary": "Brønsted–Lowry acids and bases, pH, strong and weak acids, and buffers.", "hours": 6 },
+        { "id": "r3-2-electron-transfer", "code": "R3.2", "title": "Electron transfer reactions", "summary": "Oxidation and reduction, electrochemical cells and electrolysis.", "hours": 6 },
+        { "id": "r3-3-electron-sharing", "code": "R3.3", "title": "Electron sharing reactions", "summary": "Radicals and radical substitution.", "hours": 1 },
+        { "id": "r3-4-electron-pair-sharing", "code": "R3.4", "title": "Electron-pair sharing reactions", "summary": "Nucleophiles, electrophiles, substitution and addition mechanisms.", "hours": 3 }
+      ]
+    }
+  ]
+}

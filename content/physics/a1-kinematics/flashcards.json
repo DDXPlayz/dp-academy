@@ -1,0 +1,15 @@
+[
+  { "id": "displacement", "concept": "Definitions", "front": "What is **displacement**?", "back": "The straight-line distance from the start point to the current position, **with a direction**. A vector, in metres." },
+  { "id": "speed-velocity", "concept": "Definitions", "front": "How does **velocity** differ from **speed**?", "back": "Velocity is the rate of change of **displacement** and has a direction (vector). Speed is the rate of change of distance — its magnitude only (scalar)." },
+  { "id": "acceleration", "concept": "Definitions", "front": "Define **acceleration**.", "back": "The rate of change of velocity: $a = \\dfrac{\\Delta v}{\\Delta t}$, in m s⁻². A vector." },
+  { "id": "vt-gradient-area", "concept": "Graphs", "front": "On a velocity–time graph, what do the **gradient** and the **area** give you?", "back": "Gradient = acceleration. Area under the line = displacement." },
+  { "id": "st-gradient", "concept": "Graphs", "front": "What does the gradient of a displacement–time graph represent?", "back": "The velocity." },
+  { "id": "suvat-no-time", "concept": "suvat", "front": "Which suvat equation has **no time** in it?", "back": "$v^2 = u^2 + 2as$" },
+  { "id": "suvat-no-v", "concept": "suvat", "front": "Which suvat equation has **no final velocity** in it?", "back": "$s = ut + \\tfrac12 at^2$" },
+  { "id": "suvat-condition", "concept": "suvat", "front": "When are the suvat equations valid?", "back": "Only when the acceleration is **constant** (uniform) in size and direction." },
+  { "id": "g-value", "concept": "Free fall", "front": "What is the acceleration of free fall near the Earth’s surface?", "back": "$g \\approx 9.8$ m s⁻², directed downwards — the same for all masses when air resistance is negligible." },
+  { "id": "top-of-flight", "concept": "Free fall", "front": "At the top of a vertical throw, what is the acceleration?", "back": "Still $g$ downwards. Only the velocity is momentarily zero." },
+  { "id": "projectile-components", "concept": "Projectiles", "front": "Launch speed $u$ at angle $\\theta$ above horizontal: what are the components?", "back": "Horizontal $u\\cos\\theta$ (constant). Vertical $u\\sin\\theta$ (changes at $g$)." },
+  { "id": "projectile-link", "concept": "Projectiles", "front": "What links the horizontal and vertical motions of a projectile?", "back": "**Time.** The two motions are otherwise independent." },
+  { "id": "terminal-speed", "concept": "Air resistance", "front": "Why does a falling object reach terminal speed?", "back": "Drag increases with speed until it equals the weight. The resultant force is then zero, so the acceleration is zero and the speed stays constant." }
+]
