@@ -194,6 +194,12 @@ served by a dev-server plugin (`dev/localResources.ts`, `apply: 'serve'`):
   `resources/past-papers/` into `resources/question-bank/`; they appear under
   **Past papers** in `npm run dev` only.
 
+* `python -I -X utf8 scripts/extract_notes.py [--only <subject>] [--source sme|iitian]`
+  converts the revision-note PDFs into lessons in `resources/extracted/`; topic
+  pages list them and open them in the lesson reader.
+* `python -I -X utf8 scripts/import_questionbank.py` converts a locally saved
+  question bank (`resources/questionbank-src/`) into Past papers questions.
+
 Production builds contain none of it. Plan and structure: [`docs/`](docs/content-plan.md).
 
 ## Content policy
