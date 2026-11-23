@@ -48,7 +48,9 @@ export function buildIndex(root: string) {
   const csvPath = path.join(root, IITIAN_DIR, 'notes_index.csv');
   if (!fs.existsSync(csvPath)) return null;
   const topics = readTopics(root);
-  const index = buildNotesIndex(parseCsv(fs.readFileSync(csvPath, 'utf8')), topics);
+  // Math AA notes use IB subtopic codes (1.1–5.19), which differ from the app's grouped topic codes.
+  // An empty map keeps them unplaced until the IB → app mapping in dev/mathAaMap.ts is approved.
+  const index = buildNotesIndex(parseCsv(fs.readFileSync(csvPath, 'utf8')), topics, { 'math-aa': {} });
   const smeUnmatched: string[] = [];
   for (const [subjectId, folder] of Object.entries(SME_FOLDERS)) {
     const files = listPdfs(path.join(root, SME_DIR, folder)).map((f) => `${folder}/${f}`);
