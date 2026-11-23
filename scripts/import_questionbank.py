@@ -248,6 +248,7 @@ LEGACY_BANKS = {
 }
 OLD_TO_NEW = {
     'physics': {
+        '1.1': 'Tool 1', '1.2': 'Tool 3', '1.3': 'Tool 3',
         '2.1': 'A.1', '2.2': 'A.2', '2.3': 'A.3', '2.4': 'A.2', '3.1': 'B.1', '3.2': 'B.3',
         '4.1': 'C.1', '4.2': 'C.2', '4.3': 'C.3', '4.4': 'C.3', '4.5': 'C.4',
         '5.1': 'B.5', '5.2': 'B.5', '5.3': 'B.5', '5.4': 'D.2', '6.1': 'A.2', '6.2': 'D.1',
@@ -263,7 +264,7 @@ OLD_TO_NEW = {
         '4.1': 'S2.1', '4.2': 'S2.2', '4.3': 'S2.2', '4.4': 'S2.2', '4.5': 'S2.3',
         '5.1': 'R1.1', '5.2': 'R1.2', '5.3': 'R1.2', '6.1': 'R2.2', '7.1': 'R2.3',
         '8.1': 'R3.1', '8.2': 'R3.1', '8.3': 'R3.1', '8.4': 'R3.1', '8.5': 'R3.1', '9.1': 'R3.2', '9.2': 'R3.2',
-        '10.1': 'S3.2', '10.2': 'R3.4', '11.3': 'S3.2', '12.1': 'S1.3', '13.1': 'S3.1', '13.2': 'S3.1',
+        '10.1': 'S3.2', '10.2': 'R3.4', '11.1': 'Tool 3', '11.2': 'Tool 3', '11.3': 'S3.2', '12.1': 'S1.3', '13.1': 'S3.1', '13.2': 'S3.1',
         '14.1': 'S2.2', '14.2': 'S2.2', '15.1': 'R1.2', '15.2': 'R1.4', '16.1': 'R2.2', '16.2': 'R2.2',
         '17.1': 'R2.3', '18.1': 'R3.4', '18.2': 'R3.1', '18.3': 'R3.1', '19.1': 'R3.2',
         '20.1': 'R3.4', '20.2': 'R3.4', '20.3': 'S3.2', '21.1': 'S3.2',
@@ -302,6 +303,9 @@ def dedupe_key(ref):
 def topic_code(subject, labels):
     for lab in labels:
         lab = html.unescape(lab)
+        tool = re.match(r'Tool\s*(\d)', lab)
+        if tool:
+            return f'Tool {tool.group(1)}'
         if subject == 'physics':
             m = re.match(r'([A-E]\.\d)\b', lab)
         elif subject == 'chemistry':
@@ -387,7 +391,8 @@ def run(subject, folder, topics, legacy=False, skip=frozenset()):
             code, option_only = legacy_code(subject, labels)
             if option_only and not code:
                 continue  # option topic that is not in the 2025 syllabus
-            paper = {'1': '1A', '2': '2'}.get(paper, '2' if code else '1B')
+            # old paper 3: section A (data analysis, Tools) ≈ 1B; option questions ≈ paper 2
+            paper = {'1': '1A', '2': '2'}.get(paper, '2' if code and not code.startswith('Tool') else '1B')
         else:
             code = topic_code(subject, labels)
         topic = topics.get(code)

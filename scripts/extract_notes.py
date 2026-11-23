@@ -445,7 +445,9 @@ def load_topics():
     return out
 
 
-TITLE_ALIASES = {'motioninelectromagneticfields': 'D.3', 'structureoftheatom': 'E.1', 'electronicconfigurations': 'S1.3'}
+TITLE_ALIASES = {'motioninelectromagneticfields': 'D.3', 'structureoftheatom': 'E.1', 'electronicconfigurations': 'S1.3',
+                 'measurementsinphysics': 'Tool 1', 'processinguncertainties': 'Tool 3', 'scalarsandvectors': 'Tool 3',
+                 'tool1experimentaltechniques': 'Tool 1', 'tool2technology': 'Tool 2', 'tool3mathematics': 'Tool 3'}
 
 
 def sme_topic_for(subject, filename, topics):
@@ -467,6 +469,7 @@ def main():
     ap.add_argument('--only')
     ap.add_argument('--source')
     ap.add_argument('--repost', action='store_true', help='re-apply Markdown post-processing to lessons already extracted')
+    ap.add_argument('--match', help='only (re)extract files whose name contains this text; merges into the existing index')
     args = ap.parse_args()
     if args.repost:
         n = 0
@@ -489,7 +492,7 @@ def main():
     # Each run writes its own index file (index-<subject>-<source>.json) so runs can go in parallel;
     # the dev server merges them.
     index_path = os.path.join(OUT, f"index-{args.only or 'all'}-{args.source or 'all'}.json")
-    index = {}
+    index = json.load(open(index_path, encoding='utf-8')) if args.match and os.path.exists(index_path) else {}
     math_map = json.load(open(MATH_MAP_FILE, encoding='utf-8')) if os.path.exists(MATH_MAP_FILE) else {}
     unplaced = []
 
@@ -502,7 +505,7 @@ def main():
     for subject in subjects:
         # reset this subject's entries for the sources being rebuilt
         for tid, lst in index.get(subject, {}).items():
-            lst[:] = [e for e in lst if args.source and e['source'] != args.source]
+            lst[:] = [e for e in lst if (args.source and e['source'] != args.source) or args.match]
 
         if args.source in (None, 'sme'):
             folder = os.path.join(SME_DIR, SME_FOLDERS[subject])
@@ -511,6 +514,8 @@ def main():
                     if not f.endswith('.pdf'):
                         continue
                     path = os.path.join(dp, f)
+                    if args.match and not re.search(args.match, f):
+                        continue
                     topic = None if subject == 'math-aa' else sme_topic_for(subject, f, topics[subject])
                     if subject != 'math-aa' and not topic:
                         unplaced.append(f'sme {subject}: {f}')
@@ -542,15 +547,20 @@ def main():
             rows = list(csv.DictReader(open(os.path.join(IIT_DIR, 'notes_index.csv'), encoding='utf-8-sig')))
             seen = set()
             for r in rows:
-                if SUBJECTS.get(r['Subject']) != subject or 'Legacy' in r['Syllabus version'] or 'Unclear' in r['Syllabus version']:
-                    continue
                 f = r['Local file'].replace('\\', '/')
+                general = 'measurement-uncertainties' in f  # filed under "General"; belongs to Tool 3
+                if SUBJECTS.get(r['Subject']) != subject or 'Legacy' in r['Syllabus version'] or ('Unclear' in r['Syllabus version'] and not general):
+                    continue
+                if args.match and not re.search(args.match, f):
+                    continue
                 if f in seen:
                     continue
                 seen.add(f)
                 code = (r['Subtopic'] or '').split(' ')[0]
                 if subject == 'math-aa' and 'operations-with-numbers-in-the-form-a-x-10k' in f:
                     code = '1.1'
+                if general:
+                    code = 'Tool 3'
                 topic = topics[subject].get(code)
                 if not topic:
                     unplaced.append(f'iitian {subject}: {f}')

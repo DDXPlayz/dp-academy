@@ -295,6 +295,12 @@ const TITLE_ALIASES: Record<string, string> = {
   motioninelectromagneticfields: 'Motion in electric and magnetic fields',
   structureoftheatom: 'Atomic physics',
   electronicconfigurations: 'Electron configurations',
+  measurementsinphysics: 'Experimental techniques',
+  processinguncertainties: 'Mathematics',
+  scalarsandvectors: 'Mathematics',
+  tool1experimentaltechniques: 'Experimental techniques',
+  tool2technology: 'Technology',
+  tool3mathematics: 'Mathematics',
 };
 
 /** Folds one-PDF-per-topic Save My Exams notes into the index by matching topic titles. */
