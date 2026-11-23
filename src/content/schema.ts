@@ -13,7 +13,8 @@ export const topicSchema = z.object({
   code: z.string(),
   title: z.string(),
   summary: z.string(),
-  hours: z.number().positive(),
+  /** Teaching hours from the guide; omitted where the guide only gives hours per unit (Math AA). */
+  hours: z.number().positive().optional(),
   hl: z.boolean().default(false),
 });
 

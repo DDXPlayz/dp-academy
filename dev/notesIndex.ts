@@ -214,6 +214,11 @@ export const LEGACY_RULES: Record<string, [RegExp, string[]][]> = {
   ],
 };
 
+/** Current-syllabus notes filed under the wrong code in the index (file slug → correct topic code). */
+export const MISFILED: Record<string, [RegExp, string][]> = {
+  'math-aa': [[/operations-with-numbers-in-the-form-a-x-10k/, '1.1']],
+};
+
 export function legacyTargets(subjectId: string, fileName: string): string[] {
   const name = path.posix.basename(fileName.replace(/\\/g, '/')).toLowerCase();
   for (const [re, codes] of LEGACY_RULES[subjectId] ?? []) if (re.test(name)) return codes;
@@ -250,7 +255,9 @@ export function buildNotesIndex(
     const topics = topicsByCode[subjectId] ?? {};
 
     let targets: string[];
-    if (legacy) targets = legacyTargets(subjectId, file);
+    const misfiled = (MISFILED[subjectId] ?? []).find(([re]) => re.test(file));
+    if (misfiled) targets = [misfiled[1]];
+    else if (legacy) targets = legacyTargets(subjectId, file);
     else {
       const mapped = codeMap[subjectId] ? codeMap[subjectId][code] : code;
       targets = mapped ? [mapped] : [];

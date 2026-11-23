@@ -3,7 +3,10 @@
   "title": "Mathematics: Analysis and Approaches",
   "short": "Math AA",
   "group": "Group 5 · Mathematics",
-  "levels": ["SL", "HL"],
+  "levels": [
+    "SL",
+    "HL"
+  ],
   "description": "Algebra, functions, trigonometry, statistics and calculus, with an emphasis on proof and analytical thinking.",
   "colour": "#c2410c",
   "units": [
@@ -12,12 +15,109 @@
       "code": "1",
       "title": "Number and algebra",
       "topics": [
-        { "id": "sequences-series", "code": "1.1", "title": "Sequences and series", "summary": "Arithmetic and geometric sequences, sums, sigma notation and financial applications.", "hours": 6 },
-        { "id": "exponents-logarithms", "code": "1.2", "title": "Exponents and logarithms", "summary": "Laws of exponents and logarithms, change of base and exponential equations.", "hours": 5 },
-        { "id": "binomial-proof", "code": "1.3", "title": "Binomial theorem and proof", "summary": "Binomial expansion and simple deductive proof.", "hours": 4 },
-        { "id": "counting-partial-fractions", "code": "1.4", "title": "Counting principles and partial fractions", "summary": "Permutations, combinations, extended binomial theorem and partial fractions.", "hours": 5, "hl": true },
-        { "id": "complex-numbers", "code": "1.5", "title": "Complex numbers", "summary": "Cartesian, polar and Euler forms, De Moivre’s theorem and roots of complex numbers.", "hours": 10, "hl": true },
-        { "id": "proof-systems", "code": "1.6", "title": "Proof and systems of equations", "summary": "Induction, contradiction, counterexample and systems of linear equations.", "hours": 6, "hl": true }
+        {
+          "id": "1-1-scientific-notation",
+          "code": "1.1",
+          "title": "Scientific notation",
+          "summary": "Writing and calculating with numbers in the form a × 10^k."
+        },
+        {
+          "id": "1-2-arithmetic-sequences",
+          "code": "1.2",
+          "title": "Arithmetic sequences and series",
+          "summary": "Common differences, the nth term, sums of terms, sigma notation and simple interest."
+        },
+        {
+          "id": "1-3-geometric-sequences",
+          "code": "1.3",
+          "title": "Geometric sequences and series",
+          "summary": "Common ratios, the nth term and the sum of the first n terms."
+        },
+        {
+          "id": "1-4-financial-applications",
+          "code": "1.4",
+          "title": "Financial applications",
+          "summary": "Compound interest, depreciation and annual rates using geometric growth."
+        },
+        {
+          "id": "1-5-intro-exponents-logs",
+          "code": "1.5",
+          "title": "Introduction to exponents and logarithms",
+          "summary": "Integer exponents, logarithms as inverses of exponentials, and natural logs."
+        },
+        {
+          "id": "1-6-deductive-proof",
+          "code": "1.6",
+          "title": "Simple deductive proof",
+          "summary": "Proving numerical and algebraic statements step by step, and the language of proof."
+        },
+        {
+          "id": "1-7-laws-exponents-logs",
+          "code": "1.7",
+          "title": "Laws of exponents and logarithms",
+          "summary": "Rational exponents, the laws of logarithms, change of base and exponential equations."
+        },
+        {
+          "id": "1-8-infinite-geometric-series",
+          "code": "1.8",
+          "title": "Infinite geometric series",
+          "summary": "When a geometric series converges and how to find its sum to infinity."
+        },
+        {
+          "id": "1-9-binomial-theorem",
+          "code": "1.9",
+          "title": "The binomial theorem",
+          "summary": "Expanding (a + b)^n with binomial coefficients and Pascal’s triangle."
+        },
+        {
+          "id": "1-10-counting-principles",
+          "code": "1.10",
+          "title": "Counting principles and the extended binomial theorem",
+          "summary": "Permutations, combinations and binomial expansions with fractional and negative powers.",
+          "hl": true
+        },
+        {
+          "id": "1-11-partial-fractions",
+          "code": "1.11",
+          "title": "Partial fractions",
+          "summary": "Splitting rational expressions into simpler fractions.",
+          "hl": true
+        },
+        {
+          "id": "1-12-complex-cartesian",
+          "code": "1.12",
+          "title": "Complex numbers in Cartesian form",
+          "summary": "The imaginary unit, a + bi, arithmetic with complex numbers and the Argand diagram.",
+          "hl": true
+        },
+        {
+          "id": "1-13-complex-polar-euler",
+          "code": "1.13",
+          "title": "Polar and Euler forms",
+          "summary": "Modulus, argument, r cis θ and re^{iθ}, and multiplying and dividing in polar form.",
+          "hl": true
+        },
+        {
+          "id": "1-14-complex-roots-de-moivre",
+          "code": "1.14",
+          "title": "Complex roots and De Moivre’s theorem",
+          "summary": "Conjugate roots of polynomials, De Moivre’s theorem, and powers and roots of complex numbers.",
+          "hl": true
+        },
+        {
+          "id": "1-15-proof-methods",
+          "code": "1.15",
+          "title": "Proof by induction, contradiction and counterexample",
+          "summary": "Three further methods of proof and when to use each.",
+          "hl": true
+        },
+        {
+          "id": "1-16-linear-systems",
+          "code": "1.16",
+          "title": "Systems of linear equations",
+          "summary": "Solving up to three equations in three unknowns, including cases with no or infinitely many solutions.",
+          "hl": true
+        }
       ]
     },
     {
@@ -25,11 +125,107 @@
       "code": "2",
       "title": "Functions",
       "topics": [
-        { "id": "function-basics", "code": "2.1", "title": "Lines and functions", "summary": "Straight lines, domain and range, composite and inverse functions.", "hours": 6 },
-        { "id": "quadratics", "code": "2.2", "title": "Quadratics", "summary": "Quadratic functions, the discriminant and solving quadratic equations and inequalities.", "hours": 5 },
-        { "id": "rational-exponential", "code": "2.3", "title": "Rational, exponential and logarithmic functions", "summary": "Reciprocal and rational functions, asymptotes, exponential and logarithmic graphs.", "hours": 5 },
-        { "id": "transformations", "code": "2.4", "title": "Transformations of graphs", "summary": "Translations, stretches and reflections of graphs.", "hours": 3 },
-        { "id": "further-functions", "code": "2.5", "title": "Polynomials and further functions", "summary": "Factor and remainder theorems, sums and products of roots, modulus and odd and even functions.", "hours": 10, "hl": true }
+        {
+          "id": "2-1-straight-lines",
+          "code": "2.1",
+          "title": "Straight lines",
+          "summary": "Gradient, intercepts, the forms of a line’s equation, and parallel and perpendicular lines."
+        },
+        {
+          "id": "2-2-functions-domain-range",
+          "code": "2.2",
+          "title": "Functions, domain and range",
+          "summary": "Function notation, domain and range, and the idea of an inverse."
+        },
+        {
+          "id": "2-3-graphs-of-functions",
+          "code": "2.3",
+          "title": "Graphs of functions",
+          "summary": "Drawing and interpreting graphs by hand and with technology."
+        },
+        {
+          "id": "2-4-key-features-of-graphs",
+          "code": "2.4",
+          "title": "Key features of graphs",
+          "summary": "Intercepts, vertices, asymptotes, symmetry and intersections of graphs."
+        },
+        {
+          "id": "2-5-composite-inverse-functions",
+          "code": "2.5",
+          "title": "Composite and inverse functions",
+          "summary": "Composing functions, the identity function and finding inverses."
+        },
+        {
+          "id": "2-6-quadratic-functions",
+          "code": "2.6",
+          "title": "Quadratic functions",
+          "summary": "The three forms of a quadratic, its vertex, axis of symmetry and intercepts."
+        },
+        {
+          "id": "2-7-quadratic-equations",
+          "code": "2.7",
+          "title": "Quadratic equations and inequalities",
+          "summary": "Solving quadratics, the discriminant and the nature of the roots."
+        },
+        {
+          "id": "2-8-reciprocal-rational-functions",
+          "code": "2.8",
+          "title": "Reciprocal and rational functions",
+          "summary": "The reciprocal function and simple rational functions with their asymptotes."
+        },
+        {
+          "id": "2-9-exponential-log-functions",
+          "code": "2.9",
+          "title": "Exponential and logarithmic functions",
+          "summary": "Graphs of exponential and logarithmic functions and their inverse relationship."
+        },
+        {
+          "id": "2-10-solving-equations",
+          "code": "2.10",
+          "title": "Solving equations",
+          "summary": "Solving equations analytically and graphically, and using technology."
+        },
+        {
+          "id": "2-11-transformations",
+          "code": "2.11",
+          "title": "Transformations of graphs",
+          "summary": "Translations, stretches and reflections, and combining them."
+        },
+        {
+          "id": "2-12-polynomial-functions",
+          "code": "2.12",
+          "title": "Polynomial functions",
+          "summary": "Factor and remainder theorems, and the sum and product of roots.",
+          "hl": true
+        },
+        {
+          "id": "2-13-rational-functions",
+          "code": "2.13",
+          "title": "Rational functions",
+          "summary": "Rational functions with quadratic parts, and their oblique and vertical asymptotes.",
+          "hl": true
+        },
+        {
+          "id": "2-14-odd-even-functions",
+          "code": "2.14",
+          "title": "Odd, even and self-inverse functions",
+          "summary": "Symmetry of functions and functions that are their own inverse.",
+          "hl": true
+        },
+        {
+          "id": "2-15-solving-inequalities",
+          "code": "2.15",
+          "title": "Solving inequalities",
+          "summary": "Solving g(x) ≥ f(x) analytically and graphically.",
+          "hl": true
+        },
+        {
+          "id": "2-16-modulus-reciprocal-graphs",
+          "code": "2.16",
+          "title": "Modulus and reciprocal graphs",
+          "summary": "Graphs of |f(x)|, f(|x|), 1/f(x), f(ax + b) and [f(x)]².",
+          "hl": true
+        }
       ]
     },
     {
@@ -37,10 +233,124 @@
       "code": "3",
       "title": "Geometry and trigonometry",
       "topics": [
-        { "id": "3d-geometry", "code": "3.1", "title": "Geometry in 3D and right triangles", "summary": "Distance, midpoints, volume and surface area, and right-angled trigonometry.", "hours": 4 },
-        { "id": "triangle-trig", "code": "3.2", "title": "Sine and cosine rules", "summary": "Non-right-angled triangles, area and bearings.", "hours": 4 },
-        { "id": "circular-functions", "code": "3.3", "title": "Radians and circular functions", "summary": "Radian measure, the unit circle, trigonometric graphs, identities and equations.", "hours": 10 },
-        { "id": "vectors", "code": "3.4", "title": "Vectors", "summary": "Vector algebra, scalar and vector products, lines and planes in 3D.", "hours": 16, "hl": true }
+        {
+          "id": "3-1-3d-geometry",
+          "code": "3.1",
+          "title": "3D geometry",
+          "summary": "Distance and midpoint in 3D, volume and surface area of solids, and angles in 3D."
+        },
+        {
+          "id": "3-2-trigonometry-in-triangles",
+          "code": "3.2",
+          "title": "Trigonometry in triangles",
+          "summary": "Right-angled trigonometry, the sine and cosine rules and the area of a triangle."
+        },
+        {
+          "id": "3-3-trigonometry-applications",
+          "code": "3.3",
+          "title": "Applications of trigonometry",
+          "summary": "Bearings, angles of elevation and depression, and 3D problems."
+        },
+        {
+          "id": "3-4-radians-arcs-sectors",
+          "code": "3.4",
+          "title": "Radians, arcs and sectors",
+          "summary": "Radian measure, arc length and sector area."
+        },
+        {
+          "id": "3-5-unit-circle",
+          "code": "3.5",
+          "title": "The unit circle",
+          "summary": "Sine, cosine and tangent defined on the unit circle, and exact values."
+        },
+        {
+          "id": "3-6-trig-identities",
+          "code": "3.6",
+          "title": "Trigonometric identities",
+          "summary": "The Pythagorean identity and double-angle identities."
+        },
+        {
+          "id": "3-7-circular-functions",
+          "code": "3.7",
+          "title": "Circular functions",
+          "summary": "Graphs of sine, cosine and tangent, their amplitude, period and transformations."
+        },
+        {
+          "id": "3-8-trig-equations",
+          "code": "3.8",
+          "title": "Trigonometric equations",
+          "summary": "Solving trigonometric equations in a finite interval, including quadratic types."
+        },
+        {
+          "id": "3-9-reciprocal-inverse-trig",
+          "code": "3.9",
+          "title": "Reciprocal and inverse trigonometric functions",
+          "summary": "Secant, cosecant and cotangent, and arcsin, arccos and arctan.",
+          "hl": true
+        },
+        {
+          "id": "3-10-compound-angles",
+          "code": "3.10",
+          "title": "Compound angle identities",
+          "summary": "Identities for sin(A ± B), cos(A ± B) and tan(A ± B), and double angles for tangent.",
+          "hl": true
+        },
+        {
+          "id": "3-11-trig-symmetry",
+          "code": "3.11",
+          "title": "Symmetry of trigonometric functions",
+          "summary": "Relationships between trigonometric functions and their symmetry properties.",
+          "hl": true
+        },
+        {
+          "id": "3-12-vectors",
+          "code": "3.12",
+          "title": "Vectors",
+          "summary": "Vector notation, magnitude, unit and position vectors, and vector algebra.",
+          "hl": true
+        },
+        {
+          "id": "3-13-scalar-product",
+          "code": "3.13",
+          "title": "The scalar product",
+          "summary": "The scalar product, perpendicular vectors and the angle between two vectors.",
+          "hl": true
+        },
+        {
+          "id": "3-14-vector-lines",
+          "code": "3.14",
+          "title": "Vector equation of a line",
+          "summary": "Vector, parametric and Cartesian equations of a line, and motion along a line.",
+          "hl": true
+        },
+        {
+          "id": "3-15-line-relationships",
+          "code": "3.15",
+          "title": "Relationships between lines",
+          "summary": "Coincident, parallel, intersecting and skew lines.",
+          "hl": true
+        },
+        {
+          "id": "3-16-vector-product",
+          "code": "3.16",
+          "title": "The vector product",
+          "summary": "The vector product, its properties and areas of parallelograms and triangles.",
+          "hl": true
+        },
+        {
+          "id": "3-17-planes",
+          "code": "3.17",
+          "title": "Planes",
+          "summary": "Vector and Cartesian equations of a plane.",
+          "hl": true
+        },
+        {
+          "id": "3-18-lines-planes-intersections",
+          "code": "3.18",
+          "title": "Intersections and angles of lines and planes",
+          "summary": "Where lines and planes meet, and the angles between them.",
+          "hl": true
+        }
       ]
     },
     {
@@ -48,11 +358,92 @@
       "code": "4",
       "title": "Statistics and probability",
       "topics": [
-        { "id": "descriptive-statistics", "code": "4.1", "title": "Descriptive statistics", "summary": "Sampling, measures of centre and spread, and statistical diagrams.", "hours": 5 },
-        { "id": "regression", "code": "4.2", "title": "Correlation and regression", "summary": "Scatter diagrams, Pearson’s correlation coefficient and regression lines.", "hours": 3 },
-        { "id": "probability", "code": "4.3", "title": "Probability", "summary": "Events, Venn and tree diagrams, conditional probability and independence.", "hours": 5 },
-        { "id": "distributions", "code": "4.4", "title": "Probability distributions", "summary": "Discrete random variables, the binomial and normal distributions.", "hours": 9 },
-        { "id": "further-probability", "code": "4.5", "title": "Bayes and continuous random variables", "summary": "Bayes’ theorem, variance of discrete variables and continuous random variables.", "hours": 6, "hl": true }
+        {
+          "id": "4-1-sampling-data",
+          "code": "4.1",
+          "title": "Sampling and data",
+          "summary": "Populations and samples, sampling methods, data types and outliers."
+        },
+        {
+          "id": "4-2-presenting-data",
+          "code": "4.2",
+          "title": "Presenting data",
+          "summary": "Histograms, cumulative frequency graphs and box-and-whisker diagrams."
+        },
+        {
+          "id": "4-3-centre-spread",
+          "code": "4.3",
+          "title": "Measures of centre and spread",
+          "summary": "Mean, median, mode, range, quartiles, variance and standard deviation."
+        },
+        {
+          "id": "4-4-correlation-regression",
+          "code": "4.4",
+          "title": "Correlation and regression",
+          "summary": "Scatter diagrams, Pearson’s correlation coefficient and the regression line of y on x."
+        },
+        {
+          "id": "4-5-probability-concepts",
+          "code": "4.5",
+          "title": "Probability concepts",
+          "summary": "Trials, outcomes, sample spaces, expected numbers and complementary events."
+        },
+        {
+          "id": "4-6-combined-events",
+          "code": "4.6",
+          "title": "Combined events, Venn and tree diagrams",
+          "summary": "Combined, mutually exclusive and independent events with diagrams and tables."
+        },
+        {
+          "id": "4-7-discrete-random-variables",
+          "code": "4.7",
+          "title": "Discrete random variables",
+          "summary": "Probability distributions, expected value and fair games."
+        },
+        {
+          "id": "4-8-binomial-distribution",
+          "code": "4.8",
+          "title": "The binomial distribution",
+          "summary": "Binomial probabilities, mean and variance."
+        },
+        {
+          "id": "4-9-normal-distribution",
+          "code": "4.9",
+          "title": "The normal distribution",
+          "summary": "Properties of the normal curve and normal probability calculations."
+        },
+        {
+          "id": "4-10-regression-x-on-y",
+          "code": "4.10",
+          "title": "Regression of x on y",
+          "summary": "The regression line of x on y and when to use it."
+        },
+        {
+          "id": "4-11-conditional-probability",
+          "code": "4.11",
+          "title": "Conditional probability and independence",
+          "summary": "Formal conditional probability and testing for independence."
+        },
+        {
+          "id": "4-12-standardising-normal",
+          "code": "4.12",
+          "title": "Standardising normal variables",
+          "summary": "z-scores and finding an unknown mean or standard deviation."
+        },
+        {
+          "id": "4-13-bayes-theorem",
+          "code": "4.13",
+          "title": "Bayes’ theorem",
+          "summary": "Reversing conditional probabilities with Bayes’ theorem.",
+          "hl": true
+        },
+        {
+          "id": "4-14-continuous-random-variables",
+          "code": "4.14",
+          "title": "Continuous random variables",
+          "summary": "Probability density functions, mean, mode, median and variance, and E(aX + b).",
+          "hl": true
+        }
       ]
     },
     {
@@ -60,11 +451,128 @@
       "code": "5",
       "title": "Calculus",
       "topics": [
-        { "id": "differentiation-intro", "code": "5.1", "title": "Introduction to differentiation", "summary": "Limits, the derivative as a gradient and the power rule.", "hours": 5 },
-        { "id": "differentiation-rules", "code": "5.2", "title": "Differentiation rules and applications", "summary": "Chain, product and quotient rules; stationary points and optimisation.", "hours": 8 },
-        { "id": "integration", "code": "5.3", "title": "Integration", "summary": "Antiderivatives, definite integrals, areas and kinematics.", "hours": 10 },
-        { "id": "further-calculus", "code": "5.4", "title": "Further calculus", "summary": "Limits and L’Hôpital’s rule, implicit differentiation, related rates and integration techniques.", "hours": 12, "hl": true },
-        { "id": "differential-equations", "code": "5.5", "title": "Differential equations and series", "summary": "Separable and first-order equations, Euler’s method and Maclaurin series.", "hours": 8, "hl": true }
+        {
+          "id": "5-1-limits-derivative",
+          "code": "5.1",
+          "title": "Limits and the derivative",
+          "summary": "The idea of a limit and the derivative as a gradient and rate of change."
+        },
+        {
+          "id": "5-2-increasing-decreasing",
+          "code": "5.2",
+          "title": "Increasing and decreasing functions",
+          "summary": "Using the sign of the derivative to describe a function."
+        },
+        {
+          "id": "5-3-differentiating-powers",
+          "code": "5.3",
+          "title": "Differentiating powers of x",
+          "summary": "The derivative of ax^n and of sums of such terms."
+        },
+        {
+          "id": "5-4-tangents-normals",
+          "code": "5.4",
+          "title": "Tangents and normals",
+          "summary": "Equations of tangents and normals at a point."
+        },
+        {
+          "id": "5-5-intro-integration",
+          "code": "5.5",
+          "title": "Introduction to integration",
+          "summary": "Integration as anti-differentiation and definite integrals as areas."
+        },
+        {
+          "id": "5-6-differentiation-rules",
+          "code": "5.6",
+          "title": "Differentiation rules",
+          "summary": "Derivatives of standard functions and the chain, product and quotient rules."
+        },
+        {
+          "id": "5-7-second-derivative",
+          "code": "5.7",
+          "title": "The second derivative",
+          "summary": "The second derivative and the shape of a graph."
+        },
+        {
+          "id": "5-8-stationary-points-optimisation",
+          "code": "5.8",
+          "title": "Stationary points and optimisation",
+          "summary": "Maxima, minima, points of inflexion and optimisation problems."
+        },
+        {
+          "id": "5-9-kinematics",
+          "code": "5.9",
+          "title": "Kinematics",
+          "summary": "Displacement, velocity and acceleration with calculus, and distance travelled."
+        },
+        {
+          "id": "5-10-indefinite-integrals",
+          "code": "5.10",
+          "title": "Indefinite integrals",
+          "summary": "Integrals of standard functions and substitution by inspection."
+        },
+        {
+          "id": "5-11-definite-integrals-areas",
+          "code": "5.11",
+          "title": "Definite integrals and areas",
+          "summary": "Definite integrals and areas between a curve and an axis or between curves."
+        },
+        {
+          "id": "5-12-continuity-first-principles",
+          "code": "5.12",
+          "title": "Continuity, differentiability and first principles",
+          "summary": "Continuity, differentiability and differentiation from first principles.",
+          "hl": true
+        },
+        {
+          "id": "5-13-lhopital",
+          "code": "5.13",
+          "title": "L’Hôpital’s rule",
+          "summary": "Limits of indeterminate forms using L’Hôpital’s rule and series.",
+          "hl": true
+        },
+        {
+          "id": "5-14-implicit-related-rates",
+          "code": "5.14",
+          "title": "Implicit differentiation and related rates",
+          "summary": "Implicit differentiation, related rates of change and optimisation.",
+          "hl": true
+        },
+        {
+          "id": "5-15-further-derivatives",
+          "code": "5.15",
+          "title": "Further derivatives",
+          "summary": "Derivatives of tan, sec, csc, cot, a^x, log_a x and inverse trigonometric functions.",
+          "hl": true
+        },
+        {
+          "id": "5-16-integration-techniques",
+          "code": "5.16",
+          "title": "Integration by substitution and by parts",
+          "summary": "Integration by substitution, by parts and repeated by parts.",
+          "hl": true
+        },
+        {
+          "id": "5-17-areas-volumes-revolution",
+          "code": "5.17",
+          "title": "Areas with the y-axis and volumes of revolution",
+          "summary": "Areas between a curve and the y-axis, and volumes of revolution about either axis.",
+          "hl": true
+        },
+        {
+          "id": "5-18-differential-equations",
+          "code": "5.18",
+          "title": "Differential equations",
+          "summary": "Euler’s method, separating variables, homogeneous equations and integrating factors.",
+          "hl": true
+        },
+        {
+          "id": "5-19-maclaurin-series",
+          "code": "5.19",
+          "title": "Maclaurin series",
+          "summary": "Maclaurin series of standard functions and of differential equation solutions.",
+          "hl": true
+        }
       ]
     }
   ]

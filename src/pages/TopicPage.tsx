@@ -44,7 +44,7 @@ export default function TopicPage() {
         </h1>
         <p className="mt-2 max-w-2xl text-ink-2">{topic.summary}</p>
         <p className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm text-muted">
-          <span>{topic.hours} teaching hours</span>
+          {topic.hours && <span>{topic.hours} teaching hours</span>}
           <span>{topic.lessons.length} lessons</span>
           <span>{topic.questions.length} practice questions</span>
           <span>{topic.flashcards.length} flashcards</span>

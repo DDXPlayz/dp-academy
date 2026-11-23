@@ -90,9 +90,11 @@ export function subjectStats(subject: Subject, s: StudyState): SubjectStats {
     lessonsTotal += st.lessonsTotal;
     questionsTotal += st.questionsTotal;
     if (st.progress !== null) {
-      // Weight by teaching hours so a 2-hour topic counts less than a 9-hour one.
-      weight += t.hours;
-      sum += st.progress * t.hours;
+      // Weight by teaching hours so a 2-hour topic counts less than a 9-hour one
+      // (topics without guide hours count equally).
+      const w = t.hours ?? 1;
+      weight += w;
+      sum += st.progress * w;
     }
   }
   const mine = s.attempts.filter((a) => a.topicKey.startsWith(subject.id + '/'));

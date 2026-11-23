@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p2-binomial-probabilities",
+    "paper": "2",
+    "difficulty": "easy",
+    "marks": 5,
+    "calculator": true,
+    "subtopic": "4.8",
+    "prompt": "$X \\sim B(10,\\ 0.3)$.\n\n**(a)** Find $P(X = 3)$. **[2]**\n\n**(b)** Find $P(X \\le 2)$. **[2]**\n\n**(c)** Write down $E(X)$. **[1]**",
+    "markscheme": "**(a)** (M1) binomial pdf; $0.267$ (A1)\n\n**(b)** (M1) binomial cdf; $0.383$ (A1)\n\n**(c)** $E(X) = np = 3$ (A1)",
+    "source": "original"
+  }
+]

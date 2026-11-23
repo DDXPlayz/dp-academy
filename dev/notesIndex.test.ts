@@ -68,6 +68,15 @@ describe('buildNotesIndex', () => {
     expect(index.physics.topics['a1-kinematics'].current[0].file).toBe('Physics/A/A.1 - ibdp-physics-2025-slhl-1-4-projectile-motion-study-notes.pdf');
   });
 
+  it('moves known misfiled notes to the right topic', () => {
+    const rows = parseCsv(
+      'Subject,Syllabus version,Subtopic,Local file,Status\n' +
+        'Mathematics AA,Current,5.1 Limits,Math\\5\\5.1 - x-operations-with-numbers-in-the-form-a-x-10k-study-notes.pdf,saved',
+    );
+    const idx = buildNotesIndex(rows, { 'math-aa': { '1.1': { id: '1-1-scientific-notation', title: 'Scientific notation' }, '5.1': { id: '5-1-limits', title: 'Limits' } } });
+    expect(Object.keys(idx['math-aa'].topics)).toEqual(['1-1-scientific-notation']);
+  });
+
   it('applies an explicit code map when given one', () => {
     const mapped = buildNotesIndex(parseCsv(CSV), { chemistry: { 'X.1': { id: 'x', title: 'X' } } }, { chemistry: { 'S1.4': 'X.1' } });
     expect(mapped.chemistry.topics.x.current.length).toBe(3);

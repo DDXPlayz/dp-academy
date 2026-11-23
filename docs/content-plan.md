@@ -25,9 +25,11 @@ Math AA     1 Number and…    1.2 Arithmetic seq.   1.2.1, 1.2.2 …
   where `<nn>` is the sub-idea number. Frontmatter gains a `code` field
   (`code: S1.4.3`) shown in the reader, the topic list and search.
 * HL is the default view everywhere. AHL lessons carry `hl: true` and are hidden at SL.
-* Math AA's app topics currently group several guide subtopics (app `1.1` = guide 1.2–1.4 + 1.8).
-  To number lessons `1.2.1` the app topics would follow the guide's 83 subtopics instead; this is
-  the open decision in section 6.
+* Math AA topics are the guide's 83 subtopics (1.1–5.19), so topic codes match the guide, notes and
+  past papers one to one. The guide gives teaching hours per unit only (SL/HL: 19/39, 21/32, 25/51,
+  27/33, 28/55), so Math AA topics carry no per-topic hours.
+* The first Math lesson (arithmetic and geometric sequences) currently sits in 1.2 and covers
+  1.2, 1.3, 1.4 and 1.8; it is split into sub-idea lessons when Math AA is written.
 
 ## 2. Lessons
 
@@ -82,6 +84,5 @@ non-original question placed under `content/`.
 
 ## 6. Open decisions
 
-* **Math AA topics.** Switch the app to the guide's 83 subtopics (lessons `1.2.1` …, codes that match notes and papers one to one), or keep the current grouped topics with an explicit guide → app mapping (`dev/mathAaMap.ts`).
 * **Past papers.** Which papers may be imported. The importer only reads `resources/past-papers/` and is meant for papers from school, bought from the IB store, or IB-published specimens.
 * **Textbooks.** None are on this computer yet; adding them lets facts and chapter order be cross-checked.

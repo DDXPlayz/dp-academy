@@ -42,7 +42,7 @@ tips:
   - Many questions give two terms and ask for $u_1$ and $d$ (or $r$). Write both terms with the formula and solve simultaneously — for geometric, divide one equation by the other.
   - Your GDC’s finance solver (TVM) is allowed in Paper 2 for compound-interest problems; show the values you entered.
 related:
-  - math-aa/exponents-logarithms
+  - math-aa/1-7-laws-exponents-logs
 ---
 
 ## Introduction

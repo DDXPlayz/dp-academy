@@ -26,7 +26,7 @@ const POOL = [
   q({ id: 'med-1b', paper: '1B' }),
   q({ id: 'hl-hard', difficulty: 'hard', level: 'HL', topicKey: 'physics/a5-relativity' }),
   q({ id: 'chem', subjectId: 'chemistry', topicKey: 'chemistry/s1-4-the-mole', paper: '1A', difficulty: 'easy' }),
-  q({ id: 'math-3', subjectId: 'math-aa', topicKey: 'math-aa/calculus', paper: '3', difficulty: 'hard', level: 'HL' }),
+  q({ id: 'math-3', subjectId: 'math-aa', topicKey: 'math-aa/5-18-differential-equations', paper: '3', difficulty: 'hard', level: 'HL' }),
   q({ id: 'pp', source: 'past-paper', session: 'May 2024 TZ1', number: '3(b)', difficulty: 'hard' }),
   q({ id: 'mock', source: 'mock', difficulty: 'easy', topicKey: null }),
 ];
