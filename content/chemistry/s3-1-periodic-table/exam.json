@@ -1,0 +1,18 @@
+[
+  {
+    "id": "p1a-group-1-trend",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "prompt": "Which property increases down group 1 from lithium to caesium?",
+    "options": [
+      "First ionization energy",
+      "Electronegativity",
+      "Atomic radius",
+      "Melting point"
+    ],
+    "answer": 2,
+    "markscheme": "**C.** Each element down the group has an extra occupied shell, so the outer electron is further from the nucleus. Ionization energy, electronegativity and melting point all decrease.",
+    "source": "original"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "p1a-carbonate-titration-volume",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "prompt": "What volume of $0.200\\ \\text{mol dm}^{-3}$ HCl(aq) exactly neutralises $25.0\\ \\text{cm}^3$ of $0.100\\ \\text{mol dm}^{-3}$ Na$_2$CO$_3$(aq)?\n\nNa$_2$CO$_3$(aq) + 2HCl(aq) → 2NaCl(aq) + H$_2$O(l) + CO$_2$(g)",
+    "options": [
+      "6.25 cm$^3$",
+      "12.5 cm$^3$",
+      "25.0 cm$^3$",
+      "50.0 cm$^3$"
+    ],
+    "answer": 2,
+    "markscheme": "**C.** $n(\\text{Na}_2\\text{CO}_3) = 0.0250 \\times 0.100 = 2.50 \\times 10^{-3}$ mol, so $n(\\text{HCl}) = 5.00 \\times 10^{-3}$ mol and $V = \\tfrac{5.00 \\times 10^{-3}}{0.200} = 0.0250\\ \\text{dm}^3 = 25.0\\ \\text{cm}^3$.",
+    "source": "original"
+  }
+]

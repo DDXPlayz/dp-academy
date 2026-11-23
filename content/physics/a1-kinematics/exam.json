@@ -1,0 +1,18 @@
+[
+  {
+    "id": "p1a-uniform-acceleration-displacement",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "prompt": "A car accelerates uniformly from $4.0\\ \\text{m s}^{-1}$ to $10.0\\ \\text{m s}^{-1}$ in $3.0\\ \\text{s}$. What is the displacement of the car in this time?",
+    "options": [
+      "12 m",
+      "18 m",
+      "21 m",
+      "30 m"
+    ],
+    "answer": 2,
+    "markscheme": "**C.** For uniform acceleration the average velocity is $\\tfrac{4.0 + 10.0}{2} = 7.0\\ \\text{m s}^{-1}$, so $s = 7.0 \\times 3.0 = 21\\ \\text{m}$.",
+    "source": "original"
+  }
+]

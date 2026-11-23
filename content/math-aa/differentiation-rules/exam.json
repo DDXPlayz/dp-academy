@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p1-product-rule-stationary",
+    "paper": "1",
+    "difficulty": "medium",
+    "marks": 5,
+    "calculator": false,
+    "subtopic": "5.6",
+    "prompt": "Let $y = x\\,e^{2x}$.\n\n**(a)** Find $\\dfrac{dy}{dx}$. **[3]**\n\n**(b)** Find the $x$-coordinate of the stationary point of the curve. **[2]**",
+    "markscheme": "**(a)** Product rule (M1): $\\dfrac{dy}{dx} = e^{2x} + 2x\\,e^{2x}$ (A1)(A1) $= e^{2x}(1 + 2x)$\n\n**(b)** $e^{2x}(1 + 2x) = 0$ and $e^{2x} > 0$ (M1), so $x = -\\tfrac{1}{2}$ (A1)",
+    "source": "original"
+  }
+]

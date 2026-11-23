@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p2-mean-median-sd",
+    "paper": "2",
+    "difficulty": "easy",
+    "marks": 4,
+    "calculator": true,
+    "subtopic": "4.3",
+    "prompt": "The times, in minutes, that seven students spent on homework are\n\n$$12,\\ 15,\\ 15,\\ 18,\\ 20,\\ 22,\\ 25$$\n\n**(a)** Find the mean. **[1]**\n\n**(b)** Write down the median. **[1]**\n\n**(c)** Find the standard deviation. **[2]**",
+    "markscheme": "**(a)** $\\bar{x} = \\tfrac{127}{7} \\approx 18.1$ (A1)\n\n**(b)** $18$ (A1)\n\n**(c)** (M1) for using technology; $\\sigma \\approx 4.19$ (A1)",
+    "source": "original"
+  }
+]

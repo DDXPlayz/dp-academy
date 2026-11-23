@@ -1,0 +1,18 @@
+[
+  {
+    "id": "p1a-field-strength-orbit-radius",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "prompt": "A satellite moves to an orbit whose radius, measured from the centre of the Earth, is twice its original radius. By what factor does the gravitational field strength at the satellite change?",
+    "options": [
+      "$\\tfrac{1}{2}$",
+      "$\\tfrac{1}{4}$",
+      "2",
+      "$\\tfrac{1}{\\sqrt{2}}$"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** $g = \\tfrac{GM}{r^2}$, so doubling $r$ multiplies $g$ by $\\tfrac{1}{2^2} = \\tfrac{1}{4}$.",
+    "source": "original"
+  }
+]

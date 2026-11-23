@@ -1,0 +1,14 @@
+[
+  {
+    "id": "p2-bayes-medical-test",
+    "paper": "2",
+    "difficulty": "hard",
+    "level": "HL",
+    "marks": 5,
+    "calculator": true,
+    "subtopic": "4.13",
+    "prompt": "A disease affects 2 % of a population. A test gives a positive result for 95 % of people who have the disease and for 4 % of people who do not.\n\n**(a)** Find the probability that a randomly chosen person tests positive. **[2]**\n\n**(b)** A person tests positive. Find the probability that they have the disease. **[3]**",
+    "markscheme": "**(a)** $0.02 \\times 0.95 + 0.98 \\times 0.04$ (M1) $= 0.0582$ (A1)\n\n**(b)** $P(D \\mid +) = \\tfrac{P(D \\cap +)}{P(+)}$ (M1) $= \\tfrac{0.019}{0.0582}$ (A1) $\\approx 0.326$ (A1)",
+    "source": "original"
+  }
+]

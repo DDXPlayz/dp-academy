@@ -1,0 +1,11 @@
+[
+  {
+    "id": "p2-car-resultant-force",
+    "paper": "2",
+    "difficulty": "easy",
+    "marks": 3,
+    "prompt": "A car of mass $1200\\ \\text{kg}$ accelerates from rest to $15\\ \\text{m s}^{-1}$ in $6.0\\ \\text{s}$.\n\n**(a)** Calculate the average acceleration of the car. **[1]**\n\n**(b)** Calculate the average resultant force on the car. **[1]**\n\n**(c)** The driving force on the car is larger than your answer to (b). Explain why. **[1]**",
+    "markscheme": "**(a)** $a = \\tfrac{15}{6.0} = 2.5\\ \\text{m s}^{-2}$ ✓\n\n**(b)** $F = ma = 1200 \\times 2.5 = 3.0 \\times 10^3\\ \\text{N}$ ✓\n\n**(c)** Resistive forces (air resistance, friction) act against the motion, so the driving force must exceed the resultant force by their size ✓",
+    "source": "original"
+  }
+]

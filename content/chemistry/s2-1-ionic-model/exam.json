@@ -1,0 +1,18 @@
+[
+  {
+    "id": "p1a-magnesium-nitride-formula",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "prompt": "What is the formula of the ionic compound formed between magnesium and nitrogen?",
+    "options": [
+      "MgN",
+      "Mg$_2$N$_3$",
+      "Mg$_3$N$_2$",
+      "MgN$_2$"
+    ],
+    "answer": 2,
+    "markscheme": "**C.** Mg forms Mg$^{2+}$ and N forms N$^{3-}$; three Mg$^{2+}$ (+6) balance two N$^{3-}$ (−6).",
+    "source": "original"
+  }
+]

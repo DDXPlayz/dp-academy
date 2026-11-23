@@ -1,0 +1,11 @@
+[
+  {
+    "id": "p1b-pendulum-g-from-graph",
+    "paper": "1B",
+    "difficulty": "hard",
+    "marks": 6,
+    "prompt": "In an experiment to measure $g$, a student times 10 oscillations of a simple pendulum for four lengths $L$.\n\n| $L$ / m | 0.20 | 0.40 | 0.60 | 0.80 |\n|---|---|---|---|---|\n| time for 10 oscillations / s | 9.0 | 12.7 | 15.5 | 17.9 |\n\nFor small oscillations $T = 2\\pi\\sqrt{L/g}$.\n\n**(a)** Explain why the student timed 10 oscillations rather than one. **[1]**\n\n**(b)** Determine $g$ using a suitable straight-line graph. **[3]**\n\n**(c)** Each time has an uncertainty of $\\pm 0.2\\ \\text{s}$. Calculate the percentage uncertainty in $T^2$ for $L = 0.20\\ \\text{m}$. **[2]**",
+    "markscheme": "**(a)** The reaction-time uncertainty is shared over 10 periods, so the percentage uncertainty in $T$ is ten times smaller ✓\n\n**(b)** Plot $T^2$ against $L$ ✓ ($T^2$ = 0.81, 1.61, 2.40, 3.20 s²). Gradient $\\approx 4.0\\ \\text{s}^2\\,\\text{m}^{-1}$ ✓. $g = \\tfrac{4\\pi^2}{\\text{gradient}} \\approx 9.9\\ \\text{m s}^{-2}$ ✓ (accept 9.6 to 10.2)\n\n**(c)** $\\tfrac{0.2}{9.0} \\times 100 = 2.2\\,\\%$ for $T$ ✓; doubled for $T^2$: $4.4\\,\\%$ ✓",
+    "source": "original"
+  }
+]

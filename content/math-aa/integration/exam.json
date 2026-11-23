@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p2-distance-vs-displacement",
+    "paper": "2",
+    "difficulty": "hard",
+    "marks": 6,
+    "calculator": true,
+    "subtopic": "5.9",
+    "prompt": "A particle moves in a straight line with velocity $v(t) = t^2 - 4t + 3\\ \\text{m s}^{-1}$ for $0 \\le t \\le 5$.\n\n**(a)** Find the times when the particle changes direction. **[2]**\n\n**(b)** Find the displacement of the particle after 5 seconds. **[2]**\n\n**(c)** Find the total distance travelled in the first 5 seconds. **[2]**",
+    "markscheme": "**(a)** $(t - 1)(t - 3) = 0$ (M1); $t = 1$ and $t = 3$ (A1)\n\n**(b)** $\\displaystyle\\int_0^5 v\\,dt$ (M1) $= \\tfrac{20}{3} \\approx 6.67\\ \\text{m}$ (A1)\n\n**(c)** $\\displaystyle\\int_0^5 |v|\\,dt$ (M1) $= \\tfrac{4}{3} + \\tfrac{4}{3} + \\tfrac{20}{3} = \\tfrac{28}{3} \\approx 9.33\\ \\text{m}$ (A1)",
+    "source": "original"
+  }
+]

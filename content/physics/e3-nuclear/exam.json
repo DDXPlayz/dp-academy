@@ -1,0 +1,18 @@
+[
+  {
+    "id": "p1a-half-life-from-activity",
+    "paper": "1A",
+    "difficulty": "hard",
+    "marks": 1,
+    "prompt": "The activity of a pure radioactive sample falls from $800\\ \\text{Bq}$ to $50\\ \\text{Bq}$ in $20\\ \\text{h}$. What is the half-life of the nuclide?",
+    "options": [
+      "1.25 h",
+      "4.0 h",
+      "5.0 h",
+      "10 h"
+    ],
+    "answer": 2,
+    "markscheme": "**C.** $800 \\to 50$ is a factor of $16 = 2^4$, so four half-lives pass in $20\\ \\text{h}$: $T_{1/2} = 5.0\\ \\text{h}$.",
+    "source": "original"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "p2-zinc-copper-cell-gibbs",
+    "paper": "2",
+    "difficulty": "hard",
+    "level": "HL",
+    "marks": 5,
+    "prompt": "A voltaic cell is made from a Zn$^{2+}$/Zn half-cell and a Cu$^{2+}$/Cu half-cell under standard conditions.\n\n$E^\\ominus(\\text{Zn}^{2+}/\\text{Zn}) = -0.76\\ \\text{V}$, $E^\\ominus(\\text{Cu}^{2+}/\\text{Cu}) = +0.34\\ \\text{V}$\n\n**(a)** Calculate the standard cell potential. **[1]**\n\n**(b)** Identify the negative electrode and state the direction of electron flow in the external circuit. **[2]**\n\n**(c)** Calculate $\\Delta G^\\ominus$ for the cell reaction in kJ mol$^{-1}$. ($F = 96\\,500\\ \\text{C mol}^{-1}$) **[2]**",
+    "markscheme": "**(a)** $E^\\ominus_{\\text{cell}} = 0.34 - (-0.76) = 1.10\\ \\text{V}$ ✓\n\n**(b)** Zinc is the negative electrode (anode) ✓; electrons flow from zinc to copper through the wire ✓\n\n**(c)** $\\Delta G^\\ominus = -nFE^\\ominus = -2 \\times 96\\,500 \\times 1.10$ ✓ $= -212\\ \\text{kJ mol}^{-1}$ ✓",
+    "source": "original"
+  }
+]

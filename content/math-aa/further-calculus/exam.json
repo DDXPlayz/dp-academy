@@ -1,0 +1,14 @@
+[
+  {
+    "id": "p1-integration-by-parts-log",
+    "paper": "1",
+    "difficulty": "hard",
+    "level": "HL",
+    "marks": 7,
+    "calculator": false,
+    "subtopic": "5.16",
+    "prompt": "**(a)** Find $\\displaystyle\\int x \\ln x \\, dx$. **[4]**\n\n**(b)** Hence find the exact value of $\\displaystyle\\int_1^{e} x \\ln x \\, dx$. **[3]**",
+    "markscheme": "**(a)** Parts with $u = \\ln x$, $v' = x$ (M1): $\\tfrac{x^2}{2}\\ln x - \\displaystyle\\int \\tfrac{x^2}{2}\\cdot\\tfrac{1}{x}\\,dx$ (A1) $= \\tfrac{x^2}{2}\\ln x - \\tfrac{x^2}{4} + C$ (A1)(A1)\n\n**(b)** $\\left[\\tfrac{x^2}{2}\\ln x - \\tfrac{x^2}{4}\\right]_1^{e}$ (M1) $= \\left(\\tfrac{e^2}{2} - \\tfrac{e^2}{4}\\right) - \\left(0 - \\tfrac{1}{4}\\right)$ (A1) $= \\tfrac{e^2 + 1}{4}$ (A1)",
+    "source": "original"
+  }
+]

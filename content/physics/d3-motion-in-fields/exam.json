@@ -1,0 +1,11 @@
+[
+  {
+    "id": "p2-proton-in-magnetic-field",
+    "paper": "2",
+    "difficulty": "hard",
+    "marks": 6,
+    "prompt": "A proton enters a uniform magnetic field of flux density $0.25\\ \\text{T}$ with a speed of $2.0 \\times 10^{6}\\ \\text{m s}^{-1}$, moving perpendicular to the field.\n\n**(a)** Explain why the proton moves in a circle. **[2]**\n\n**(b)** Calculate the radius of the circle. **[2]**\n\n**(c)** Show that the time for one revolution does not depend on the speed of the proton, and calculate it. **[2]**",
+    "markscheme": "**(a)** The magnetic force $qvB$ is always perpendicular to the velocity ✓, so it changes the direction but not the speed, and acts as a centripetal force of constant size ✓\n\n**(b)** $qvB = \\tfrac{mv^2}{r} \\Rightarrow r = \\tfrac{mv}{qB}$ ✓ $= \\tfrac{1.67 \\times 10^{-27} \\times 2.0 \\times 10^{6}}{1.60 \\times 10^{-19} \\times 0.25} \\approx 0.084\\ \\text{m}$ ✓\n\n**(c)** $T = \\tfrac{2\\pi r}{v} = \\tfrac{2\\pi m}{qB}$, which contains no $v$ ✓; $T = \\tfrac{2\\pi \\times 1.67 \\times 10^{-27}}{1.60 \\times 10^{-19} \\times 0.25} \\approx 2.6 \\times 10^{-7}\\ \\text{s}$ ✓",
+    "source": "original"
+  }
+]

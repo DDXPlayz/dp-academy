@@ -1,0 +1,11 @@
+[
+  {
+    "id": "p1b-absolute-zero-extrapolation",
+    "paper": "1B",
+    "difficulty": "medium",
+    "marks": 5,
+    "prompt": "A fixed mass of gas is kept at constant volume. Its pressure $p$ is measured at four temperatures $\\theta$.\n\n| $\\theta$ / °C | 0 | 20 | 40 | 60 |\n|---|---|---|---|---|\n| $p$ / kPa | 100.0 | 107.3 | 114.6 | 121.9 |\n\n**(a)** Determine the gradient of a graph of $p$ against $\\theta$. **[2]**\n\n**(b)** Use your answer to (a) to estimate absolute zero in °C. **[2]**\n\n**(c)** State one assumption made in the extrapolation in (b). **[1]**",
+    "markscheme": "**(a)** gradient $= \\tfrac{121.9 - 100.0}{60 - 0}$ ✓ $= 0.365\\ \\text{kPa}\\,°\\text{C}^{-1}$ ✓\n\n**(b)** At absolute zero $p = 0$: $\\theta = -\\tfrac{100.0}{0.365}$ ✓ $\\approx -274\\ °\\text{C}$ ✓ (accept $-270$ to $-275$)\n\n**(c)** The gas behaves ideally / does not liquefy down to very low temperatures / the relationship stays linear ✓",
+    "source": "original"
+  }
+]

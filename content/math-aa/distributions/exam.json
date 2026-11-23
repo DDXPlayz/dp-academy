@@ -1,0 +1,24 @@
+[
+  {
+    "id": "p2-binomial-probabilities",
+    "paper": "2",
+    "difficulty": "easy",
+    "marks": 5,
+    "calculator": true,
+    "subtopic": "4.8",
+    "prompt": "$X \\sim B(10,\\ 0.3)$.\n\n**(a)** Find $P(X = 3)$. **[2]**\n\n**(b)** Find $P(X \\le 2)$. **[2]**\n\n**(c)** Write down $E(X)$. **[1]**",
+    "markscheme": "**(a)** (M1) binomial pdf; $0.267$ (A1)\n\n**(b)** (M1) binomial cdf; $0.383$ (A1)\n\n**(c)** $E(X) = np = 3$ (A1)",
+    "source": "original"
+  },
+  {
+    "id": "p2-normal-heights",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 4,
+    "calculator": true,
+    "subtopic": "4.9",
+    "prompt": "The heights of adults in a town are normally distributed with mean $165\\ \\text{cm}$ and standard deviation $8\\ \\text{cm}$.\n\n**(a)** Find the probability that a randomly chosen adult is taller than $175\\ \\text{cm}$. **[2]**\n\n**(b)** 90 % of adults are shorter than $h$ cm. Find $h$. **[2]**",
+    "markscheme": "**(a)** (M1) $P(H > 175)$; $0.106$ (A1)\n\n**(b)** (M1) inverse normal with area $0.9$; $h \\approx 175\\ \\text{cm}$ ($175.25$) (A1)",
+    "source": "original"
+  }
+]

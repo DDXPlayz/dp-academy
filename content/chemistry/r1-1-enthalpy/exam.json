@@ -1,0 +1,11 @@
+[
+  {
+    "id": "p1b-ethanol-calorimetry",
+    "paper": "1B",
+    "difficulty": "easy",
+    "marks": 3,
+    "prompt": "A student burns $0.30\\ \\text{g}$ of ethanol under a copper can holding $50.0\\ \\text{cm}^3$ of water. The water temperature rises by $12.0\\ °\\text{C}$.\n\n**(a)** State why the mass of the water can be taken as $50.0\\ \\text{g}$. **[1]**\n\n**(b)** Calculate the heat absorbed by the water, in kJ. ($c = 4.18\\ \\text{J g}^{-1}\\,\\text{K}^{-1}$) **[1]**\n\n**(c)** Suggest one reason why the enthalpy of combustion calculated from this experiment is less exothermic than the literature value. **[1]**",
+    "markscheme": "**(a)** The density of water is (about) $1.00\\ \\text{g cm}^{-3}$ ✓\n\n**(b)** $q = mc\\Delta T = 50.0 \\times 4.18 \\times 12.0 = 2508\\ \\text{J} \\approx 2.51\\ \\text{kJ}$ ✓\n\n**(c)** Heat lost to the surroundings / heat absorbed by the can / incomplete combustion of ethanol ✓",
+    "source": "original"
+  }
+]

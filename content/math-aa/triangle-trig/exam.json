@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p2-cosine-rule-area",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 5,
+    "calculator": true,
+    "subtopic": "3.2",
+    "prompt": "In triangle $ABC$, $BC = 8\\ \\text{cm}$, $AC = 11\\ \\text{cm}$ and $\\hat{C} = 40°$.\n\n**(a)** Find $AB$. **[3]**\n\n**(b)** Find the area of the triangle. **[2]**",
+    "markscheme": "**(a)** $AB^2 = 8^2 + 11^2 - 2(8)(11)\\cos 40°$ (M1)(A1); $AB \\approx 7.08\\ \\text{cm}$ (A1)\n\n**(b)** $\\tfrac{1}{2}(8)(11)\\sin 40°$ (M1) $\\approx 28.3\\ \\text{cm}^2$ (A1)",
+    "source": "original"
+  }
+]

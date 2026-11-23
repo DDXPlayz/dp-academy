@@ -1,0 +1,27 @@
+[
+  {
+    "id": "p1a-moles-of-sodium-hydroxide",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "prompt": "What amount of sodium hydroxide, NaOH, is present in $4.0\\ \\text{g}$? ($M_r = 40.00$)",
+    "options": [
+      "0.010 mol",
+      "0.10 mol",
+      "1.0 mol",
+      "10 mol"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** $n = \\tfrac{m}{M} = \\tfrac{4.0}{40.00} = 0.10\\ \\text{mol}$.",
+    "source": "original"
+  },
+  {
+    "id": "p2-empirical-molecular-formula",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 5,
+    "prompt": "A compound contains 40.0 % carbon, 6.7 % hydrogen and 53.3 % oxygen by mass. Its relative molecular mass is 180.\n\n**(a)** Determine the empirical formula. **[2]**\n\n**(b)** Deduce the molecular formula. **[1]**\n\n**(c)** Calculate the mass of carbon dioxide produced when $0.0100\\ \\text{mol}$ of the compound burns completely. **[2]**",
+    "markscheme": "**(a)** C: $\\tfrac{40.0}{12.01} = 3.33$; H: $\\tfrac{6.7}{1.01} = 6.63$; O: $\\tfrac{53.3}{16.00} = 3.33$ ✓; ratio 1 : 2 : 1, CH$_2$O ✓\n\n**(b)** $M(\\text{CH}_2\\text{O}) = 30.0$; $\\tfrac{180}{30.0} = 6$, so C$_6$H$_{12}$O$_6$ ✓\n\n**(c)** $n(\\text{CO}_2) = 6 \\times 0.0100 = 0.0600\\ \\text{mol}$ ✓; $m = 0.0600 \\times 44.01 = 2.64\\ \\text{g}$ ✓",
+    "source": "original"
+  }
+]

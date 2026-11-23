@@ -1,0 +1,14 @@
+[
+  {
+    "id": "p3-logistic-equation",
+    "paper": "3",
+    "difficulty": "hard",
+    "level": "HL",
+    "marks": 14,
+    "calculator": true,
+    "subtopic": "5.18",
+    "prompt": "Consider the differential equation $\\dfrac{dy}{dx} = y(1 - y)$, with $y = \\tfrac{1}{2}$ when $x = 0$.\n\n**(a)** By separating variables, show that $y = \\dfrac{1}{1 + e^{-x}}$. **[6]**\n\n**(b)** Find the value of $y$ at which $\\dfrac{dy}{dx}$ is greatest, and the greatest value of $\\dfrac{dy}{dx}$. **[3]**\n\n**(c)** Using the differential equation, find the Maclaurin series for $y$ up to and including the term in $x^3$. **[5]**",
+    "markscheme": "**(a)** $\\displaystyle\\int \\frac{dy}{y(1 - y)} = \\int dx$ (M1). Partial fractions $\\tfrac{1}{y} + \\tfrac{1}{1 - y}$ (A1). $\\ln y - \\ln(1 - y) = x + C$ (A1)(A1). $y = \\tfrac{1}{2}$, $x = 0$ gives $C = 0$ (A1). $\\tfrac{y}{1 - y} = e^{x} \\Rightarrow y = \\tfrac{e^x}{1 + e^x} = \\tfrac{1}{1 + e^{-x}}$ (AG)(A1)\n\n**(b)** $\\tfrac{d}{dy}(y - y^2) = 1 - 2y = 0$ (M1), $y = \\tfrac{1}{2}$ (A1), greatest gradient $\\tfrac{1}{4}$ (A1)\n\n**(c)** $y(0) = \\tfrac{1}{2}$, $y'(0) = \\tfrac{1}{4}$ (A1). $y'' = y'(1 - 2y)$ (M1) so $y''(0) = 0$ (A1). $y^{(3)} = y''(1 - 2y) - 2(y')^2$ so $y^{(3)}(0) = -\\tfrac{1}{8}$ (A1). $y \\approx \\tfrac{1}{2} + \\tfrac{x}{4} - \\tfrac{x^3}{48}$ (A1)",
+    "source": "original"
+  }
+]

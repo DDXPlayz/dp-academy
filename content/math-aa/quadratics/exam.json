@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p1-completing-the-square",
+    "paper": "1",
+    "difficulty": "easy",
+    "marks": 4,
+    "calculator": false,
+    "subtopic": "2.6",
+    "prompt": "Let $f(x) = x^2 - 6x + 5$.\n\n**(a)** Write $f(x)$ in the form $(x - h)^2 + k$. **[2]**\n\n**(b)** Write down the coordinates of the vertex of the graph of $f$. **[1]**\n\n**(c)** Find the $x$-intercepts of the graph of $f$. **[1]**",
+    "markscheme": "**(a)** $(x - 3)^2 - 9 + 5$ (M1) $= (x - 3)^2 - 4$ (A1)\n\n**(b)** $(3, -4)$ (A1)\n\n**(c)** $(x - 1)(x - 5) = 0$, so $x = 1$ and $x = 5$ (A1)",
+    "source": "original"
+  }
+]

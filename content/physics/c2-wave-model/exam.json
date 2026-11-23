@@ -1,0 +1,18 @@
+[
+  {
+    "id": "p1a-wavelength-from-speed",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "prompt": "A sound wave of frequency $500\\ \\text{Hz}$ travels $12\\ \\text{m}$ in $0.040\\ \\text{s}$. What is its wavelength?",
+    "options": [
+      "0.60 m",
+      "1.7 m",
+      "6.0 m",
+      "24 m"
+    ],
+    "answer": 0,
+    "markscheme": "**A.** $v = \\tfrac{12}{0.040} = 300\\ \\text{m s}^{-1}$ and $\\lambda = \\tfrac{v}{f} = \\tfrac{300}{500} = 0.60\\ \\text{m}$.",
+    "source": "original"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "p1a-series-parallel-resistance",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "prompt": "Two $6.0\\ \\Omega$ resistors are connected in parallel. This combination is connected in series with a $3.0\\ \\Omega$ resistor. What is the total resistance?",
+    "options": [
+      "1.5 Ω",
+      "6.0 Ω",
+      "9.0 Ω",
+      "15 Ω"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** The parallel pair gives $\\left(\\tfrac{1}{6.0} + \\tfrac{1}{6.0}\\right)^{-1} = 3.0\\ \\Omega$; adding the series $3.0\\ \\Omega$ gives $6.0\\ \\Omega$.",
+    "source": "original"
+  },
+  {
+    "id": "p1b-ohmic-resistor-data",
+    "paper": "1B",
+    "difficulty": "easy",
+    "marks": 3,
+    "prompt": "A student measures the current $I$ through a resistor for different potential differences $V$.\n\n| $V$ / V | 1.0 | 2.0 | 3.0 | 4.0 |\n|---|---|---|---|---|\n| $I$ / A | 0.21 | 0.40 | 0.61 | 0.80 |\n\n**(a)** Calculate the resistance of the resistor using the data for $V = 4.0\\ \\text{V}$. **[1]**\n\n**(b)** State and explain whether the data support the claim that the resistor obeys Ohm's law. **[2]**",
+    "markscheme": "**(a)** $R = \\tfrac{4.0}{0.80} = 5.0\\ \\Omega$ ✓\n\n**(b)** Yes ✓. $V/I$ is (approximately) constant for every row, between $4.8$ and $5.0\\ \\Omega$ / a graph of $I$ against $V$ is a straight line through the origin, so $I \\propto V$ ✓.",
+    "source": "original"
+  }
+]

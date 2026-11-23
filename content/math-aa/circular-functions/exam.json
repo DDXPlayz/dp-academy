@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p1-trig-quadratic-equation",
+    "paper": "1",
+    "difficulty": "hard",
+    "marks": 6,
+    "calculator": false,
+    "subtopic": "3.8",
+    "prompt": "Solve $2\\sin^2 x = 3\\cos x$ for $0 \\le x \\le 2\\pi$. **[6]**",
+    "markscheme": "Use $\\sin^2 x = 1 - \\cos^2 x$ (M1): $2 - 2\\cos^2 x = 3\\cos x$\n\n$2\\cos^2 x + 3\\cos x - 2 = 0$ (A1)\n\n$(2\\cos x - 1)(\\cos x + 2) = 0$ (M1)\n\n$\\cos x = \\tfrac{1}{2}$ (A1); $\\cos x = -2$ has no solutions (R1)\n\n$x = \\tfrac{\\pi}{3}, \\tfrac{5\\pi}{3}$ (A1)",
+    "source": "original"
+  }
+]

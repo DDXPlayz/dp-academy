@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p1-log-equation",
+    "paper": "1",
+    "difficulty": "medium",
+    "marks": 5,
+    "calculator": false,
+    "subtopic": "1.7",
+    "prompt": "Solve $\\log_2 x + \\log_2 (x - 2) = 3$. **[5]**",
+    "markscheme": "$\\log_2\\big(x(x - 2)\\big) = 3$ (M1)\n\n$x(x - 2) = 2^3 = 8$ (A1)\n\n$x^2 - 2x - 8 = 0 \\Rightarrow (x - 4)(x + 2) = 0$ (M1)\n\n$x = 4$ or $x = -2$ (A1)\n\n$x = -2$ is rejected because $\\log_2 x$ is undefined for $x \\le 0$, so $x = 4$ (R1)",
+    "source": "original"
+  }
+]

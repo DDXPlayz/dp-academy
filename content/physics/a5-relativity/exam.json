@@ -1,0 +1,19 @@
+[
+  {
+    "id": "p1a-time-dilation",
+    "paper": "1A",
+    "difficulty": "hard",
+    "level": "HL",
+    "marks": 1,
+    "prompt": "A clock moves at $0.80c$ relative to the Earth. The clock records a time interval of $30\\ \\text{s}$. What time interval does an observer on the Earth measure for the same two events?",
+    "options": [
+      "18 s",
+      "30 s",
+      "50 s",
+      "83 s"
+    ],
+    "answer": 2,
+    "markscheme": "**C.** $\\gamma = \\tfrac{1}{\\sqrt{1 - 0.80^2}} = \\tfrac{1}{0.60} = \\tfrac{5}{3}$. The clock measures proper time, so $\\Delta t = \\gamma \\Delta t_0 = \\tfrac{5}{3} \\times 30 = 50\\ \\text{s}$.",
+    "source": "original"
+  }
+]

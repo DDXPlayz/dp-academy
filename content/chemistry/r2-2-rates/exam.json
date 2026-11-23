@@ -1,0 +1,21 @@
+[
+  {
+    "id": "p1b-magnesium-acid-gas-volume",
+    "paper": "1B",
+    "difficulty": "medium",
+    "marks": 5,
+    "prompt": "Magnesium ribbon reacts with excess hydrochloric acid. The volume of hydrogen collected is recorded.\n\n| $t$ / s | 0 | 10 | 20 | 30 | 40 | 60 |\n|---|---|---|---|---|---|---|\n| $V$ / cm$^3$ | 0 | 18 | 32 | 42 | 48 | 52 |\n\n**(a)** Calculate the average rate of reaction over the first 20 s. **[1]**\n\n**(b)** Explain, in terms of particles, why the rate decreases during the reaction. **[2]**\n\n**(c)** The experiment is repeated with the same mass of magnesium and acid of twice the concentration, still in excess. Predict how the curve would differ. **[2]**",
+    "markscheme": "**(a)** $\\tfrac{32}{20} = 1.6\\ \\text{cm}^3\\,\\text{s}^{-1}$ ✓\n\n**(b)** The acid concentration (and the magnesium surface area) falls ✓, so there are fewer collisions per second between acid particles and magnesium ✓\n\n**(c)** Steeper initial gradient / reaction finishes sooner ✓; same final volume because the amount of magnesium is unchanged ✓",
+    "source": "original"
+  },
+  {
+    "id": "p1b-initial-rates-orders",
+    "paper": "1B",
+    "difficulty": "hard",
+    "level": "HL",
+    "marks": 5,
+    "prompt": "The initial rate of the reaction A + B → C was measured at 298 K.\n\n| Experiment | [A] / mol dm$^{-3}$ | [B] / mol dm$^{-3}$ | initial rate / mol dm$^{-3}$ s$^{-1}$ |\n|---|---|---|---|\n| 1 | 0.10 | 0.10 | $2.0 \\times 10^{-4}$ |\n| 2 | 0.20 | 0.10 | $8.0 \\times 10^{-4}$ |\n| 3 | 0.10 | 0.20 | $4.0 \\times 10^{-4}$ |\n\n**(a)** Deduce the order with respect to A and to B. **[2]**\n\n**(b)** Write the rate equation. **[1]**\n\n**(c)** Calculate the rate constant, including its units. **[2]**",
+    "markscheme": "**(a)** A: doubling [A] quadruples the rate, second order ✓. B: doubling [B] doubles the rate, first order ✓\n\n**(b)** rate $= k[\\text{A}]^2[\\text{B}]$ ✓\n\n**(c)** $k = \\tfrac{2.0 \\times 10^{-4}}{0.10^2 \\times 0.10} = 0.20$ ✓ $\\text{dm}^6\\,\\text{mol}^{-2}\\,\\text{s}^{-1}$ ✓",
+    "source": "original"
+  }
+]

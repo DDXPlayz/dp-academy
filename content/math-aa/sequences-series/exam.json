@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p1-arithmetic-term-and-sum",
+    "paper": "1",
+    "difficulty": "easy",
+    "marks": 4,
+    "calculator": false,
+    "subtopic": "1.2",
+    "prompt": "An arithmetic sequence has first term $7$ and common difference $4$.\n\n**(a)** Find the 20th term. **[2]**\n\n**(b)** Find the sum of the first 20 terms. **[2]**",
+    "markscheme": "**(a)** $u_{20} = 7 + 19 \\times 4$ (M1) $= 83$ (A1)\n\n**(b)** $S_{20} = \\tfrac{20}{2}(7 + 83)$ (M1) $= 900$ (A1)",
+    "source": "original"
+  }
+]

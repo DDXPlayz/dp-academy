@@ -1,0 +1,18 @@
+[
+  {
+    "id": "p1a-hess-methane-formation",
+    "paper": "1A",
+    "difficulty": "hard",
+    "marks": 1,
+    "prompt": "Use the enthalpies of combustion below to find the enthalpy of formation of methane, in kJ mol$^{-1}$.\n\n| Substance | C(s) | H$_2$(g) | CH$_4$(g) |\n|---|---|---|---|\n| $\\Delta H_c$ / kJ mol$^{-1}$ | −394 | −286 | −890 |",
+    "options": [
+      "−76",
+      "+76",
+      "−210",
+      "−1570"
+    ],
+    "answer": 0,
+    "markscheme": "**A.** $\\Delta H_f = \\Delta H_c(\\text{C}) + 2\\Delta H_c(\\text{H}_2) - \\Delta H_c(\\text{CH}_4) = -394 + 2(-286) - (-890) = -76\\ \\text{kJ mol}^{-1}$.",
+    "source": "original"
+  }
+]

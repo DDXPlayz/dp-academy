@@ -1,0 +1,12 @@
+[
+  {
+    "id": "p2-photoelectric-stopping-potential",
+    "paper": "2",
+    "difficulty": "hard",
+    "level": "HL",
+    "marks": 6,
+    "prompt": "Ultraviolet light of wavelength $250\\ \\text{nm}$ falls on a metal surface whose work function is $3.2\\ \\text{eV}$.\n\n**(a)** Calculate the energy of one photon, in eV. **[2]**\n\n**(b)** Calculate the maximum kinetic energy of the emitted electrons, in eV. **[1]**\n\n**(c)** State the stopping potential. **[1]**\n\n**(d)** The intensity of the light is doubled at the same wavelength. State and explain the effect on the stopping potential and on the photocurrent. **[2]**",
+    "markscheme": "**(a)** $E = \\tfrac{hc}{\\lambda} = \\tfrac{6.63 \\times 10^{-34} \\times 3.00 \\times 10^{8}}{250 \\times 10^{-9}} = 7.96 \\times 10^{-19}\\ \\text{J}$ ✓ $= 4.97\\ \\text{eV}$ ✓\n\n**(b)** $E_{k,\\max} = 4.97 - 3.2 \\approx 1.8\\ \\text{eV}$ ✓\n\n**(c)** $1.8\\ \\text{V}$ ✓\n\n**(d)** Stopping potential unchanged because each photon still has the same energy ✓; photocurrent doubles because twice as many photons per second release twice as many electrons ✓",
+    "source": "original"
+  }
+]
