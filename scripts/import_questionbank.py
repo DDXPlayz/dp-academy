@@ -27,7 +27,12 @@ def save_data_uri(uri):
     m = re.match(r'data:image/(png|jpe?g|gif|svg\+xml);base64,(.+)', uri, re.S)
     if not m:
         return None
-    data = base64.b64decode(m.group(2))
+    raw = re.sub(r'\s+', '', m.group(2))
+    raw = raw[: len(raw) - len(raw) % 4] if len(raw) % 4 == 1 else raw + '=' * (-len(raw) % 4)
+    try:
+        data = base64.b64decode(raw)
+    except Exception:
+        return None  # damaged image in the saved page
     ext = {'jpeg': 'jpg', 'svg+xml': 'svg'}.get(m.group(1), m.group(1))
     name = hashlib.md5(data).hexdigest()[:20] + '.' + ext
     os.makedirs(IMG, exist_ok=True)
@@ -224,6 +229,64 @@ def parse_parts(container):
     return parts
 
 
+# Older-syllabus banks (2016 science guides, last assessment 2024), mapped to 2025 topic codes.
+LEGACY_BANKS = {
+    'physics': '46-dp-physics-last-assessment-2024',
+    'chemistry': '45-dp-chemistry-last-assessment-2024',
+}
+OLD_TO_NEW = {
+    'physics': {
+        '2.1': 'A.1', '2.2': 'A.2', '2.3': 'A.3', '2.4': 'A.2', '3.1': 'B.1', '3.2': 'B.3',
+        '4.1': 'C.1', '4.2': 'C.2', '4.3': 'C.3', '4.4': 'C.3', '4.5': 'C.4',
+        '5.1': 'B.5', '5.2': 'B.5', '5.3': 'B.5', '5.4': 'D.2', '6.1': 'A.2', '6.2': 'D.1',
+        '7.1': 'E.1', '7.2': 'E.3', '7.3': 'E.1', '8.1': 'E.4', '8.2': 'B.2',
+        '9.1': 'C.1', '9.2': 'C.3', '9.3': 'C.3', '9.4': 'C.3', '9.5': 'C.5',
+        '10.1': 'D.2', '10.2': 'D.1', '11.1': 'D.4', '11.2': 'D.4', '12.1': 'E.2', '12.2': 'E.3',
+        'opt:A.1': 'A.5', 'opt:A.2': 'A.5', 'opt:A.3': 'A.5', 'opt:A.4': 'A.5', 'opt:A.5': 'A.5',
+        'opt:B.1': 'A.4', 'opt:B.2': 'B.4', 'opt:B.4': 'C.4',
+        'opt:D.1': 'E.5', 'opt:D.2': 'E.5', 'opt:D.4': 'E.5',
+    },
+    'chemistry': {
+        '1.1': 'S1.1', '1.2': 'S1.4', '1.3': 'R2.1', '2.1': 'S1.2', '2.2': 'S1.3', '3.1': 'S3.1', '3.2': 'S3.1',
+        '4.1': 'S2.1', '4.2': 'S2.2', '4.3': 'S2.2', '4.4': 'S2.2', '4.5': 'S2.3',
+        '5.1': 'R1.1', '5.2': 'R1.2', '5.3': 'R1.2', '6.1': 'R2.2', '7.1': 'R2.3',
+        '8.1': 'R3.1', '8.2': 'R3.1', '8.3': 'R3.1', '8.4': 'R3.1', '8.5': 'R3.1', '9.1': 'R3.2', '9.2': 'R3.2',
+        '10.1': 'S3.2', '10.2': 'R3.4', '11.3': 'S3.2', '12.1': 'S1.3', '13.1': 'S3.1', '13.2': 'S3.1',
+        '14.1': 'S2.2', '14.2': 'S2.2', '15.1': 'R1.2', '15.2': 'R1.4', '16.1': 'R2.2', '16.2': 'R2.2',
+        '17.1': 'R2.3', '18.1': 'R3.4', '18.2': 'R3.1', '18.3': 'R3.1', '19.1': 'R3.2',
+        '20.1': 'R3.4', '20.2': 'R3.4', '20.3': 'S3.2', '21.1': 'S3.2',
+        'opt:A.5': 'S2.4', 'opt:A.8': 'S2.4', 'opt:A.9': 'S2.4', 'opt:C.1': 'R1.3', 'opt:C.2': 'R1.3', 'opt:C.6': 'R3.2',
+    },
+}
+
+
+def legacy_code(subject, labels):
+    """(2025 code or None, True if the question belongs only to an option with no 2025 home)."""
+    option_seen = False
+    for lab in labels:
+        lab = html.unescape(lab).strip()
+        m = re.match(r'^(\d+\.\d+)\b', lab)
+        if m and m.group(1) in OLD_TO_NEW[subject]:
+            return OLD_TO_NEW[subject][m.group(1)], False
+        m = re.match(r'^([A-D]\.\d+)\b', lab)
+        if m:
+            option_seen = True
+            new = OLD_TO_NEW[subject].get('opt:' + m.group(1))
+            if new:
+                return new, False
+        if re.match(r'^(Option|Options|[A-D]:)', lab):
+            option_seen = True
+    return None, option_seen
+
+
+def dedupe_key(ref):
+    """'19M.1A.HL.TZ1.16' and '19M.1.HL.TZ1.16' are the same original question."""
+    parts = ref.split('.')
+    if len(parts) >= 5:
+        parts[1] = parts[1][:1]
+    return '.'.join(parts)
+
+
 def topic_code(subject, labels):
     for lab in labels:
         lab = html.unescape(lab)
@@ -270,7 +333,7 @@ def mcq(stem_md):
     return None, None
 
 
-def run(subject, folder, topics):
+def run(subject, folder, topics, legacy=False, skip=frozenset()):
     pages = glob.glob(os.path.join(SRC, folder, 'question_node_trees', '*.html'))
     groups = defaultdict(list)
     for f in pages:
@@ -305,18 +368,34 @@ def run(subject, folder, topics):
         if not parts:
             continue
         labels = re.findall(r"syllabus_sections/\d+\.html\">([^<]+)</a>", chosen[0][2])
-        code = topic_code(subject, labels)
-        topic = topics.get(code)
         paper = info.get('Paper', '')
+        if legacy:
+            if dedupe_key(parent) in skip:
+                continue  # already in the 2025 bank as an adapted question
+            code, option_only = legacy_code(subject, labels)
+            if option_only and not code:
+                continue  # option topic that is not in the 2025 syllabus
+            paper = {'1': '1A', '2': '2'}.get(paper, '2' if code else '1B')
+        else:
+            code = topic_code(subject, labels)
+        topic = topics.get(code)
         level = 'HL' if info.get('Level', '') in ('HL', 'AHL') else 'SL'
         marks = sum(p['marks'] for p in parts) or int((re.search(r'(\d+)', info.get('Marks available', '')) or [0, 1])[1])
         number = re.sub(r'^[A-Za-z]+_', '', parent.rsplit('.', 1)[-1])
-        date = info.get('Date', '').replace('Example questions', 'Example').strip()
+        date = info.get('Date', '').strip()
+        if re.search(r'example', date, re.I):
+            date = 'IB example question'
+        elif re.search(r'specimen', date, re.I):
+            yr = re.search(r'(\d{4})', date)
+            date = 'Specimen paper' + (' ' + yr.group(1) if yr else '')
         tz = info.get('Time zone', '')
         session = ' '.join(x for x in [date, tz if tz and tz != 'TZ0' else ''] if x)
+        if legacy:
+            session = f"{session} · 2016 syllabus P{info.get('Paper', '?')}"
 
         row = {
-            'id': re.sub(r'[^a-z0-9]+', '-', f'qb-{parent}'.lower()).strip('-'),
+            'id': re.sub(r'[^a-z0-9]+', '-', f"{'qbo' if legacy else 'qb'}-{parent}".lower()).strip('-'),
+            '_ref': parent,
             'subject': subject,
             'topic': topic['id'] if topic else None,
             'paper': paper,
@@ -371,19 +450,26 @@ def clean(row):
     return {k: v for k, v in row.items() if v is not None or k == 'topic'}
 
 
+def write(name, rows):
+    with open(os.path.join(OUT, name), 'w', encoding='utf-8') as fh:
+        json.dump([{k: v for k, v in r.items() if k != '_ref'} for r in rows], fh, ensure_ascii=False)
+    by_paper = defaultdict(int)
+    for r in rows:
+        by_paper[r['paper']] += 1
+    print(name, len(rows), 'questions', dict(by_paper), 'no topic:', sum(1 for r in rows if r.get('needsReview')),
+          'mcq:', sum(1 for r in rows if 'options' in r), flush=True)
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
     for subject, folder in BANKS.items():
         j = json.load(open(os.path.join(ROOT, 'content', subject, 'subject.json'), encoding='utf-8'))
         topics = {t['code']: t for u in j['units'] for t in u['topics']}
         rows = run(subject, folder, topics)
-        with open(os.path.join(OUT, f'{subject}-qb.json'), 'w', encoding='utf-8') as fh:
-            json.dump(rows, fh, ensure_ascii=False)
-        by_paper = defaultdict(int)
-        for r in rows:
-            by_paper[r['paper']] += 1
-        print(subject, len(rows), 'questions', dict(by_paper), 'no topic:', sum(1 for r in rows if r.get('needsReview')),
-              'mcq:', sum(1 for r in rows if 'options' in r), flush=True)
+        write(f'{subject}-qb.json', rows)
+        if subject in LEGACY_BANKS and os.path.isdir(os.path.join(SRC, LEGACY_BANKS[subject])):
+            skip = frozenset(dedupe_key(r['_ref']) for r in rows)
+            write(f'{subject}-qb-2016.json', run(subject, LEGACY_BANKS[subject], topics, legacy=True, skip=skip))
 
 
 if __name__ == '__main__':

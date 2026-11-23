@@ -161,6 +161,8 @@ export const importedExamQuestionSchema = examQuestionSchema.and(
     needsReview: z.boolean().optional(),
     /** Original PDF, relative to resources/past-papers/, so the page with its diagrams can be opened. */
     sourceFile: z.string().optional(),
+    /** Page of the original PDF where the question starts. */
+    page: z.number().int().positive().optional(),
   }),
 );
 

@@ -28,7 +28,7 @@ export async function loadLocalBank(): Promise<LocalBank> {
       rejected++;
       continue;
     }
-    const { subject, topic, sourceFile, ...raw } = parsed.data;
+    const { subject, topic, sourceFile, page, ...raw } = parsed.data;
     const q = {
       ...raw,
       prompt: assets(raw.prompt),
@@ -36,7 +36,7 @@ export async function loadLocalBank(): Promise<LocalBank> {
       options: raw.options?.map(assets),
     };
     const topicKey = topic && getTopic(`${subject}/${topic}`) ? `${subject}/${topic}` : null;
-    const originalUrl = sourceFile ? `/__local/notes/file?src=papers&path=${encodeURIComponent(sourceFile)}` : undefined;
+    const originalUrl = sourceFile ? `/__local/notes/file?src=papers&path=${encodeURIComponent(sourceFile)}${page ? `#page=${page}` : ''}` : undefined;
     questions.push({ ...q, key: `local/${subject}/${q.id}`, subjectId: subject, topicKey, needsReview: q.needsReview || !topicKey, originalUrl });
   }
   return { questions, rejected };

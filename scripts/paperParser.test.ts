@@ -5,6 +5,7 @@ import {
   classifyTopic,
   cleanText,
   estimateDifficulty,
+  joinLines,
   parseMcq,
   parseMcqKey,
   parsePaperFilename,
@@ -58,6 +59,12 @@ describe('text handling', () => {
     const t = cleanText(MCQ_PAPER + '\n' + WRITTEN_PAPER);
     expect(t).not.toMatch(/M99\/4|– 2 –|Turn over|\.{8}/);
     expect(t).toMatch(/^1\. A trolley/);
+  });
+  it('rejoins wrapped lines and subscripts, and drops new-style footers', () => {
+    expect(joinLines('sucrose, C\n12\nH\n22\nO\n11\nis a sugar\n(a) State its\nformula. [1]\n(b) Next')).toBe(
+      'sucrose, C12H22O11 is a sugar\n\n(a) State its formula. [1]\n\n(b) Next',
+    );
+    expect(cleanText('D. 16 – 4 – 2225 – 6707\n. . . . . . . . . . . .\n– 5 – 2225 – 6707')).toBe('D. 16');
   });
   it('sums bracketed marks, preferring a stated maximum', () => {
     expect(sumMarks('(a) x [2]\n(b) y [3]')).toBe(5);

@@ -55,11 +55,45 @@ export function cleanText(text: string): string {
         !/^\s*[MN]\d{2}\/\d\/[A-Z]+\/[A-Z0-9]+\/[A-Z]+(\/[A-Z0-9]+)*\s*$/.test(l) && // "M24/4/PHYSI/HP2/ENG/TZ1/XX"
         !/^\s*(turn over|blank page|please do not write on this page\.?|answers written on this page will not be marked\.?)\s*$/i.test(l) &&
         !/^\s*\.{8,}\s*$/.test(l) && // answer lines
+        !/^[\s.]{12,}$/.test(l) && // spaced dot leaders ". . . ."
+        !/^\s*[–-]\s*\d+\s*[–-]\s*\d{4}\s*[–-]\s*\d{4}\s*$/.test(l) && // "– 4 – 2225 – 6707"
+        !/^\s*\d{4}\s*[–-]\s*\d{4}\s*$/.test(l) &&
+        !/^\s*\((this question continues|question \d+[a-z]?(\([a-z]+\))* continued)[^)]*\)\s*$/i.test(l) &&
+        !/^\s*\d{2}EP\d{2}\s*$/.test(l) && // "24EP02" page codes
+        !/^\s*(references|acknowledgements?):?\s*$/i.test(l) &&
         !/international baccalaureate|©/i.test(l),
     )
+    .map((l) => l.replace(/\s*[–-]\s*\d+\s*[–-]\s*\d{4}\s*[–-]\s*\d{4}\s*$/, ''))
     .join('\n')
     .replace(/\n{3,}/g, '\n\n')
     .trim();
+}
+
+/**
+ * Rejoins text that PDF extraction broke into one line per text run: short
+ * subscript digits are glued back onto formulas ("C" "12" → "C12"), wrapped
+ * lines are joined, and new paragraphs start at part markers and options.
+ */
+export function joinLines(text: string): string {
+  const out: string[] = [];
+  let inFormula = false; // the previous fragment was a subscript glued onto a formula
+  for (const raw of text.split('\n')) {
+    const line = raw.trim();
+    if (!line) {
+      if (out.length && out[out.length - 1] !== '') out.push('');
+      inFormula = false;
+      continue;
+    }
+    const prev = out.length ? out[out.length - 1] : '';
+    const newBlock = /^(\(([a-z]|[ivx]+)\)|[A-D]\.\s|\d+\.\s)/.test(line) || prev === '' || /\[\d+\]$/.test(prev);
+    const subscript: boolean = !newBlock && /^\d{1,3}[+−-]?$/.test(line) && /[A-Za-z)\]]$/.test(prev);
+    const nextElement: boolean = !newBlock && inFormula && /^[A-Z][a-z]?(\s|$)/.test(line);
+    if (subscript || nextElement) out[out.length - 1] = prev + line;
+    else if (!newBlock) out[out.length - 1] = `${prev} ${line}`;
+    else out.push(line);
+    inFormula = subscript || (nextElement && /^[A-Z][a-z]?$/.test(line));
+  }
+  return out.join('\n').replace(/\n(?!\n)/g, '\n\n').replace(/\n{3,}/g, '\n\n').trim();
 }
 
 export interface RawQuestion {
@@ -214,7 +248,7 @@ export function buildQuestions({ meta, session, paperText, markschemeText, topic
       ? answer !== undefined
         ? `Answer: **${'ABCD'[answer]}**`
         : 'Answer key not found in the markscheme.'
-      : (ms[raw.number] ?? 'Markscheme not found for this question.');
+      : joinLines(ms[raw.number] ?? '') || 'Markscheme not found for this question.';
     const row: ImportedRow = {
       id: `${idPrefix}-q${raw.number}`,
       subject: meta.subject,
@@ -227,7 +261,7 @@ export function buildQuestions({ meta, session, paperText, markschemeText, topic
       number: raw.number,
       marks,
       calculator: meta.subject === 'math-aa' ? meta.paper !== '1' : undefined,
-      prompt: mcq ? mcq.stem : raw.text,
+      prompt: joinLines(mcq ? mcq.stem : raw.text) || '(See the original paper for this question.)',
       markscheme,
       needsReview: !topic.id || (meta.paper === '1A' && (!mcq || answer === undefined)),
       sourceFile,
