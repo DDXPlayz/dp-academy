@@ -185,7 +185,7 @@ def postprocess(md):
             prev_head = key
         elif line.strip():
             prev_head = None
-        if line.strip() and not is_list and prev_list and not line.startswith('  '):
+        if line.strip() and not is_list and prev_list and not line.startswith('  ') and not line.startswith('```'):
             out.append('')
         out.append(line)
         if line.strip():
@@ -199,11 +199,20 @@ def postprocess(md):
             level = len(h.group(1))
             q, a, j, in_answer = [], [], i + 1, False
             while j < len(lines):
+                if lines[j].startswith('```'):
+                    break  # an existing block (exam tip, earlier example) ends this one
                 hj = HEAD.match(lines[j])
                 if hj and ANSWER_HEAD.search(hj.group(2)):
                     in_answer = True; j += 1; continue
                 if hj and (len(hj.group(1)) <= level or EXAMPLE.match(hj.group(2)) or TIP.match(hj.group(2))) and not ANSWER_HEAD.search(hj.group(2)):
                     break
+                mid = re.search(r'\s(Answer|Solution)\s*:\s*', lines[j]) if not in_answer else None
+                if mid and not re.match(r'^\s*(answer|solution)\s*:', lines[j], re.I):
+                    q.append(lines[j][:mid.start()])
+                    rest = lines[j][mid.end():]
+                    if rest.strip():
+                        a.append(rest)
+                    in_answer = True; j += 1; continue
                 if not in_answer and re.match(r'^\s*(answer|solution)\s*:', lines[j], re.I):
                     in_answer = True
                     rest = re.sub(r'^\s*(answer|solution)\s*:\s*', '', lines[j], flags=re.I)
@@ -218,7 +227,7 @@ def postprocess(md):
                 continue
         if h and TIP.match(h.group(2)):
             body, j = [], i + 1
-            while j < len(lines) and not HEAD.match(lines[j]):
+            while j < len(lines) and not HEAD.match(lines[j]) and not lines[j].startswith('```'):
                 body.append(lines[j]); j += 1
             if ''.join(body).strip():
                 res += ['```examtip', '\n'.join(body).strip(), '```', '']
@@ -226,7 +235,7 @@ def postprocess(md):
                 continue
         res.append(lines[i])
         i += 1
-    return '\n'.join(res)
+    return re.sub(r'\n{3,}', '\n\n', '\n'.join(res))
 
 
 def items_from_rows(rows, bullets, figures):
@@ -457,7 +466,25 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--only')
     ap.add_argument('--source')
+    ap.add_argument('--repost', action='store_true', help='re-apply Markdown post-processing to lessons already extracted')
     args = ap.parse_args()
+    if args.repost:
+        n = 0
+        for subject in os.listdir(OUT):
+            sdir = os.path.join(OUT, subject)
+            if not os.path.isdir(sdir) or subject == 'logs':
+                continue
+            for topic in os.listdir(sdir):
+                if topic.startswith('_'):
+                    continue
+                for f in glob_md(os.path.join(sdir, topic)):
+                    md = open(f, encoding='utf-8').read()
+                    new = postprocess(md).strip() + '\n'
+                    if new != md:
+                        open(f, 'w', encoding='utf-8').write(new)
+                        n += 1
+        print('reposted', n, 'lessons')
+        return
     topics = load_topics()
     # Each run writes its own index file (index-<subject>-<source>.json) so runs can go in parallel;
     # the dev server merges them.
@@ -551,6 +578,10 @@ def main():
     json.dump(index, open(index_path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     json.dump(unplaced, open(index_path.replace('index-', 'unplaced-'), 'w', encoding='utf-8'), indent=1)
     print('unplaced:', len(unplaced))
+
+
+def glob_md(d):
+    return [os.path.join(d, f) for f in os.listdir(d) if f.endswith('.md')] if os.path.isdir(d) else []
 
 
 NOISE = {'ib', 'dp', 'ibdp', 'chemistry', 'physics', 'math', 'maths', 'mathematics', 'aa', 'hl', 'sl', 'slhl', 'ahl', 'topic', 'unit',

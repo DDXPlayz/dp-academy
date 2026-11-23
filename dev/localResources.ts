@@ -86,6 +86,28 @@ function mergeLessonIndexes(dir: string) {
   return out;
 }
 
+/** Plain-text search entries for every converted lesson (images and markup stripped, capped per lesson). */
+function lessonSearchEntries(dir: string) {
+  const out: { subject: string; topic: string; slug: string; title: string; text: string }[] = [];
+  for (const [subject, topics] of Object.entries(mergeLessonIndexes(dir))) {
+    for (const [topic, list] of Object.entries(topics)) {
+      for (const e of list as (LessonEntry & { slug: string })[]) {
+        const file = path.join(dir, subject, e.file);
+        if (!fs.existsSync(file)) continue;
+        const text = fs
+          .readFileSync(file, 'utf8')
+          .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ')
+          .replace(/```\w*|---/g, ' ')
+          .replace(/[#*_>`|\\-]/g, ' ')
+          .replace(/\s+/g, ' ')
+          .slice(0, 6000);
+        out.push({ subject, topic, slug: e.slug, title: e.title, text });
+      }
+    }
+  }
+  return out;
+}
+
 function send(res: import('node:http').ServerResponse, status: number, body: unknown) {
   res.statusCode = status;
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
@@ -126,6 +148,9 @@ export function localResources(): Plugin {
           }
           if (url.pathname === '/__local/lessons/index.json') {
             return send(res, 200, mergeLessonIndexes(path.join(root, LESSONS_DIR)));
+          }
+          if (url.pathname === '/__local/lessons/search.json') {
+            return send(res, 200, lessonSearchEntries(path.join(root, LESSONS_DIR)));
           }
           if (url.pathname === '/__local/lessons/md' || url.pathname === '/__local/lessons/asset') {
             const full = resolveInside(path.join(root, LESSONS_DIR), url.searchParams.get('path'));

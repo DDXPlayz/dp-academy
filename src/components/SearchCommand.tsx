@@ -26,7 +26,12 @@ export function SearchCommand() {
   const list = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
 
-  const groups = useMemo(() => search(query), [query]);
+  // In local development, lessons converted from private notes join the index the first time search opens.
+  const [extra, setExtra] = useState(0);
+  useEffect(() => {
+    if (open && import.meta.env.DEV) import('../lib/localSearch').then((m) => m.loadLocalSearch()).then((n) => n && setExtra(n));
+  }, [open]);
+  const groups = useMemo(() => search(query), [query, extra]);
   const flat = groups.flatMap((g) => g.hits);
 
   useEffect(() => {
