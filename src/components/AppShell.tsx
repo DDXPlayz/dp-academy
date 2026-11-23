@@ -13,6 +13,7 @@ const NAV: { to: string; label: string; icon: IconName; end?: boolean }[] = [
   { to: '/', label: 'Home', icon: 'home', end: true },
   { to: '/subjects', label: 'Subjects', icon: 'book' },
   { to: '/practice', label: 'Practice', icon: 'target' },
+  { to: '/bank', label: 'Questions', icon: 'list' },
   { to: '/revise', label: 'Revise', icon: 'cards' },
   { to: '/bookmarks', label: 'Saved', icon: 'bookmark' },
 ];
@@ -141,7 +142,7 @@ function TopBar() {
 function BottomNav() {
   return (
     <nav aria-label="Main" className="pb-safe fixed inset-x-0 bottom-0 z-30 border-t border-line bg-card/95 backdrop-blur-md md:hidden">
-      <ul className="grid grid-cols-5">
+      <ul className="grid grid-cols-6">
         {NAV.map((n) => (
           <li key={n.to}>
             <NavLink

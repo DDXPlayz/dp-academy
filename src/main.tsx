@@ -11,6 +11,7 @@ const SubjectPage = lazy(() => import('./pages/SubjectPage'));
 const TopicPage = lazy(() => import('./pages/TopicPage'));
 const LessonPage = lazy(() => import('./pages/LessonPage'));
 const Practice = lazy(() => import('./pages/Practice'));
+const QuestionBank = lazy(() => import('./pages/QuestionBank'));
 const Revise = lazy(() => import('./pages/Revise'));
 const Bookmarks = lazy(() => import('./pages/Bookmarks'));
 const Settings = lazy(() => import('./pages/Settings'));
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
       { path: '/s/:subjectId/:topicId', element: wrap(<TopicPage />) },
       { path: '/s/:subjectId/:topicId/:lessonSlug', element: wrap(<LessonPage />) },
       { path: '/practice', element: wrap(<Practice />) },
+      { path: '/bank', element: wrap(<QuestionBank />) },
       { path: '/revise/:tab?', element: wrap(<Revise />) },
       { path: '/bookmarks', element: wrap(<Bookmarks />) },
       { path: '/settings', element: wrap(<Settings />) },

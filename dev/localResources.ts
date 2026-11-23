@@ -17,6 +17,8 @@ const SME_DIR = 'resources/SaveMyExams - Notes/home/ptib/SaveMyExams - Notes';
 /** Save My Exams folders whose topic files are named after 2025 topic titles. */
 const SME_FOLDERS: Record<string, string> = { physics: 'Physics HL 2025', chemistry: 'Chemistry HL 2025' };
 const BANK_DIR = 'resources/question-bank';
+/** Papers the importer read from; served so an imported question can link to its original page. */
+const PAPERS_DIR = 'resources/past-papers';
 
 interface SubjectJson {
   units: { topics: { id: string; code: string; title: string }[] }[];
@@ -84,8 +86,8 @@ export function localResources(): Plugin {
             return built ? send(res, 200, built.index) : send(res, 404, { error: 'notes folder not found' });
           }
           if (url.pathname === '/__local/notes/file') {
-            const src = (url.searchParams.get('src') ?? 'iitian') as NoteSource;
-            const base = path.join(root, src === 'sme' ? SME_DIR : IITIAN_DIR);
+            const src = (url.searchParams.get('src') ?? 'iitian') as NoteSource | 'papers';
+            const base = path.join(root, src === 'sme' ? SME_DIR : src === 'papers' ? PAPERS_DIR : IITIAN_DIR);
             const full = resolveInside(base, url.searchParams.get('path'));
             if (!full || !full.toLowerCase().endsWith('.pdf') || !fs.existsSync(full) || !fs.statSync(full).isFile()) {
               return send(res, 404, { error: 'not found' });
@@ -99,7 +101,7 @@ export function localResources(): Plugin {
           }
           if (url.pathname === '/__local/bank/index.json') {
             const dir = path.join(root, BANK_DIR);
-            if (!fs.existsSync(dir)) return send(res, 404, { error: 'no local question bank' });
+            if (!fs.existsSync(dir)) return send(res, 200, []); // nothing imported yet
             const questions = fs
               .readdirSync(dir)
               .filter((f) => f.endsWith('.json'))

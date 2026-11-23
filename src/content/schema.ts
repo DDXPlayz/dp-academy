@@ -110,6 +110,64 @@ export const flashcardSchema = z.object({
   concept: z.string().optional(),
 });
 
+/** Papers per subject: 2025 sciences (1A multiple choice, 1B data-based, 2) and Math AA 2021 (1, 2, 3). */
+export const PAPERS: Record<string, readonly string[]> = {
+  physics: ['1A', '1B', '2'],
+  chemistry: ['1A', '1B', '2'],
+  'math-aa': ['1', '2', '3'],
+};
+
+export const examDifficulty = z.enum(['easy', 'medium', 'hard']);
+export const examSource = z.enum(['original', 'past-paper', 'mock']);
+
+/**
+ * An exam-style question for the question bank. Committed files under
+ * content/ may only hold `original` questions; past-paper and mock questions
+ * live in the git-ignored resources/question-bank/ folder and are loaded in
+ * local development only.
+ */
+export const examQuestionSchema = z
+  .object({
+    id: slug,
+    paper: z.string(),
+    level: z.enum(['SL', 'HL']).optional(), // omitted = both levels
+    difficulty: examDifficulty,
+    source: examSource,
+    /** Exam session for past papers, e.g. "May 2024 TZ2" or "Specimen 2025". */
+    session: z.string().optional(),
+    /** Question number in the original paper, e.g. "3(b)". */
+    number: z.string().optional(),
+    marks: z.number().int().positive(),
+    /** Guide subtopic or understanding this targets, e.g. "A.1.3" or "5.12". */
+    subtopic: z.string().optional(),
+    calculator: z.boolean().optional(),
+    prompt: z.string().min(1),
+    /** Multiple-choice options (paper 1A); `answer` is the correct index. */
+    options: z.array(z.string()).min(2).optional(),
+    answer: z.number().int().nonnegative().optional(),
+    markscheme: z.string().min(1),
+  })
+  .refine((q) => !q.options || (q.answer !== undefined && q.answer < q.options.length), {
+    message: 'multiple-choice questions need an answer index within the options',
+    path: ['answer'],
+  });
+
+/** Locally imported questions also say which subject and topic they belong to. */
+export const importedExamQuestionSchema = examQuestionSchema.and(
+  z.object({
+    subject: z.string(),
+    topic: z.string().nullable(),
+    needsReview: z.boolean().optional(),
+    /** Original PDF, relative to resources/past-papers/, so the page with its diagrams can be opened. */
+    sourceFile: z.string().optional(),
+  }),
+);
+
+export type ExamQuestionFile = z.infer<typeof examQuestionSchema>;
+export type ImportedExamQuestion = z.infer<typeof importedExamQuestionSchema>;
+export type ExamDifficulty = z.infer<typeof examDifficulty>;
+export type ExamSource = z.infer<typeof examSource>;
+
 export type SubjectFile = z.infer<typeof subjectSchema>;
 export type TopicFile = z.infer<typeof topicSchema>;
 export type LessonMeta = z.infer<typeof lessonMetaSchema>;

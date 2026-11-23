@@ -1,10 +1,13 @@
 import { parse as parseYaml } from 'yaml';
 import type { ZodType } from 'zod';
 import {
+  PAPERS,
+  examQuestionSchema,
   flashcardSchema,
   lessonMetaSchema,
   questionSchema,
   subjectSchema,
+  type ExamQuestionFile,
   type FlashcardFile,
   type LessonMeta,
   type Question,
@@ -35,6 +38,15 @@ export interface Lesson {
 
 export type PracticeQuestion = Question & { key: string; topicKey: string; subjectId: string };
 export type Flashcard = FlashcardFile & { key: string; topicKey: string; subjectId: string };
+/** A question-bank item. `topicKey` is null for imported questions that could not be placed. */
+export type ExamQuestion = ExamQuestionFile & {
+  key: string;
+  topicKey: string | null;
+  subjectId: string;
+  needsReview?: boolean;
+  /** Local development only: link to the original paper. */
+  originalUrl?: string;
+};
 
 export interface Topic extends TopicFile {
   key: string;
@@ -45,6 +57,7 @@ export interface Topic extends TopicFile {
   lessons: Lesson[];
   questions: PracticeQuestion[];
   flashcards: Flashcard[];
+  exam: ExamQuestion[];
 }
 
 export interface Unit {
@@ -65,6 +78,7 @@ const subjectFiles = import.meta.glob<unknown>('/content/*/subject.json', { eage
 const lessonFiles = import.meta.glob<string>('/content/*/*/lessons/*.md', { eager: true, query: '?raw', import: 'default' });
 const questionFiles = import.meta.glob<unknown>('/content/*/*/questions.json', { eager: true, import: 'default' });
 const cardFiles = import.meta.glob<unknown>('/content/*/*/flashcards.json', { eager: true, import: 'default' });
+const examFiles = import.meta.glob<unknown>('/content/*/*/exam.json', { eager: true, import: 'default' });
 
 export const contentErrors: string[] = [];
 
@@ -94,6 +108,7 @@ const topicByKey = new Map<string, Topic>();
 const lessonByKey = new Map<string, Lesson>();
 const questionByKey = new Map<string, PracticeQuestion>();
 const cardByKey = new Map<string, Flashcard>();
+const examByKey = new Map<string, ExamQuestion>();
 
 for (const [path, data] of Object.entries(subjectFiles)) {
   const file = check(subjectSchema, data, path);
@@ -117,6 +132,7 @@ for (const [path, data] of Object.entries(subjectFiles)) {
         lessons: [],
         questions: [],
         flashcards: [],
+        exam: [],
       };
       unit.topics.push(topic);
       subject.topics.push(topic);
@@ -205,6 +221,29 @@ for (const [path, data] of Object.entries(cardFiles)) {
   });
 }
 
+for (const [path, data] of Object.entries(examFiles)) {
+  const topic = topicFor(path);
+  if (!topic || !Array.isArray(data)) {
+    if (topic) contentErrors.push(`${path}: expected an array of exam questions`);
+    continue;
+  }
+  data.forEach((item, i) => {
+    const q = check(examQuestionSchema, item, `${path}[${i}]`);
+    if (!q) return;
+    const key = `${topic.key}/${q.id}`;
+    if (examByKey.has(key)) contentErrors.push(`${path}: duplicate exam question id "${q.id}"`);
+    if (q.source !== 'original') {
+      contentErrors.push(`${path}: "${q.id}" is a ${q.source} question; only original questions may be committed to content/`);
+    }
+    if (!(PAPERS[topic.subjectId] ?? []).includes(q.paper)) {
+      contentErrors.push(`${path}: "${q.id}" has paper "${q.paper}", expected one of ${(PAPERS[topic.subjectId] ?? []).join(', ')}`);
+    }
+    const eq: ExamQuestion = { ...q, key, topicKey: topic.key, subjectId: topic.subjectId };
+    topic.exam.push(eq);
+    examByKey.set(key, eq);
+  });
+}
+
 // Cross-references, checked once everything is loaded.
 for (const topic of topicByKey.values()) {
   topic.lessons.sort((a, b) => a.order - b.order);
@@ -241,6 +280,8 @@ export const getFlashcard = (key: string) => cardByKey.get(key);
 export const allTopics = () => [...topicByKey.values()];
 export const allQuestions = () => [...questionByKey.values()];
 export const allFlashcards = () => [...cardByKey.values()];
+/** Original exam-style questions committed to content/, in curriculum order. */
+export const allExamQuestions = () => subjects.flatMap((s) => s.topics.flatMap((t) => t.exam));
 
 /** Neighbouring lessons within the same subject, crossing topic boundaries. */
 export function lessonNeighbours(lesson: Lesson) {
