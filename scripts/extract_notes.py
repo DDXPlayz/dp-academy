@@ -131,6 +131,7 @@ class Writer:
     def __init__(self, img_dir, rel_prefix):
         self.lines, self.img_dir, self.rel = [], img_dir, rel_prefix
         self.seen_img = set()
+        self.in_list = None  # current list depth, None outside a list
 
     def crop(self, page, rect, kind):
         rect = fitz.Rect(rect) & page.rect
@@ -253,29 +254,43 @@ def items_from_rows(rows, bullets, figures):
     return items
 
 
-def emit_items(w, page, items, classify, levels):
+def emit_items(w, page, items, classify, levels, base):
+    """Writes items as Markdown. List depth only grows one level at a time, and an
+    un-bulleted line indented like list text continues the current bullet."""
     for it in items:
         if it['type'] == 'fig':
+            w.in_list = None
+            w.add('')
             w.image(page, it['rect'], 'fig')
             continue
         rows = it['rows']
         kind = classify(rows[0], it)
         text = ' '.join(r.text for r in rows).strip()
         text = re.sub(r'^[•◦▪]\s*', '', text)
+        has_math = any(r.math for r in rows)
         if kind in ('h2', 'h3', 'h4'):
-            if any(r.math for r in rows):
-                w.image(page, union(rows), 'math')
+            w.in_list = None
+            if has_math:
+                w.add(''); w.image(page, union(rows), 'math')
             else:
                 w.add(''); w.add({'h2': '## ', 'h3': '### ', 'h4': '#### '}[kind] + md_escape(text)); w.add('')
             continue
         if kind == 'caption':
-            w.add(f'*{md_escape(text)}*'); w.add(''); continue
-        level = levels(it['x0']) if it['bullet'] else None
-        prefix = ('  ' * level + '- ') if level is not None else ''
-        if any(r.math for r in rows):
+            w.in_list = None
+            w.add(''); w.add(f'*{md_escape(text)}*'); w.add(''); continue
+        if it['bullet']:
+            level = levels(it['x0'])
+            level = 0 if w.in_list is None else min(level, w.in_list + 1)
+            w.in_list = level
+            prefix = '  ' * level + '- '
+        elif w.in_list is not None and it['x0'] > base + 10:
+            level = min(levels(it['x0']), w.in_list)
+            prefix = '  ' * level + '  '
+        else:
+            w.in_list = None
+            prefix = ''
+        if has_math:
             w.image(page, union(rows), 'math', prefix=prefix)
-            if not prefix:
-                pass
         else:
             w.add(prefix + md_escape(text))
         if not prefix:
@@ -355,7 +370,7 @@ def extract_sme(path, subject, out_dir, rel_root):
             continue
         figs = figure_rects(page, SME_CLIP)
         items = items_from_rows(rows, bullet_marks(page, SME_CLIP), figs)
-        emit_items(w, page, items, sme_classify, sme_levels)
+        emit_items(w, page, items, sme_classify, sme_levels, 18)
     return lessons
 
 
@@ -408,7 +423,7 @@ def extract_iitian(path, out_dir):
                 return 'h4'
             return 'para'
 
-        emit_items(w, page, items, classify, lambda x0: max(0, min(3, round((x0 - 68) / 30))))
+        emit_items(w, page, items, classify, lambda x0: max(0, min(3, round((x0 - 68) / 30))), 38)
     return w
 
 
