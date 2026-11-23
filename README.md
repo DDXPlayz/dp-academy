@@ -167,6 +167,35 @@ backslashes: `"$\\frac{1}{2}mv^2$"`.
 `flashcards.json` is an array of `{ "id", "front", "back", "concept"? }`,
 both sides in Markdown.
 
+### 5. Question bank
+
+`exam.json` (next to `questions.json`) holds original exam-style questions
+for the Question bank page (`/bank`):
+
+```json
+{ "id": "p2-car-resultant-force", "paper": "2", "difficulty": "easy",
+  "source": "original", "marks": 3, "level": "HL",
+  "prompt": "…", "markscheme": "…",
+  "options": ["…"], "answer": 0 }
+```
+
+`paper` is `1A`, `1B` or `2` for the sciences and `1`, `2` or `3` for Math AA.
+`level` is omitted for questions at both levels; `options` and `answer` are
+only for multiple choice. Only `"source": "original"` is allowed under
+`content/`; `content:check` fails otherwise.
+
+### Local-only material
+
+Private study material lives in the git-ignored `resources/` folder and is
+served by a dev-server plugin (`dev/localResources.ts`, `apply: 'serve'`):
+
+* Topic pages show a **Reference notes (private)** panel in `npm run dev` only.
+* `npm run import:papers -- --session "May 2024"` parses papers placed in
+  `resources/past-papers/` into `resources/question-bank/`; they appear under
+  **Past papers** in `npm run dev` only.
+
+Production builds contain none of it. Plan and structure: [`docs/`](docs/content-plan.md).
+
 ## Content policy
 
 Course *structure* (subject, unit and topic names and codes) follows the
