@@ -8,3 +8,6 @@ tsconfig.tsbuildinfo
 
 # Private study resources (textbooks, past papers, notes) - never commit
 resources/
+
+# Python bytecode
+__pycache__/

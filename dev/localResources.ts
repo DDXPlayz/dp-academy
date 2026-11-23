@@ -19,6 +19,9 @@ const SME_FOLDERS: Record<string, string> = { physics: 'Physics HL 2025', chemis
 const BANK_DIR = 'resources/question-bank';
 /** Papers the importer read from; served so an imported question can link to its original page. */
 const PAPERS_DIR = 'resources/past-papers';
+/** Lessons converted from private notes by scripts/extract_notes.py. */
+const LESSONS_DIR = 'resources/extracted';
+const ASSET_TYPES: Record<string, string> = { '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.gif': 'image/gif', '.svg': 'image/svg+xml' };
 
 interface SubjectJson {
   units: { topics: { id: string; code: string; title: string }[] }[];
@@ -60,6 +63,29 @@ export function buildIndex(root: string) {
   return { index, smeUnmatched };
 }
 
+type LessonEntry = { file: string; source: string; group: string; order: number; title: string };
+
+/** Merges the per-run index files written by scripts/extract_notes.py. */
+function mergeLessonIndexes(dir: string) {
+  const out: Record<string, Record<string, LessonEntry[]>> = {};
+  if (!fs.existsSync(dir)) return out;
+  for (const f of fs.readdirSync(dir).filter((f) => /^index.*\.json$/.test(f))) {
+    const data = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')) as typeof out;
+    for (const [subject, topics] of Object.entries(data)) {
+      for (const [topic, list] of Object.entries(topics)) {
+        const into = ((out[subject] ??= {})[topic] ??= []);
+        for (const e of list) if (!into.some((x) => x.file === e.file)) into.push(e);
+      }
+    }
+  }
+  for (const topics of Object.values(out)) {
+    for (const list of Object.values(topics)) {
+      list.sort((a, b) => Number(a.source !== 'sme') - Number(b.source !== 'sme') || a.group.localeCompare(b.group) || a.order - b.order || a.title.localeCompare(b.title));
+    }
+  }
+  return out;
+}
+
 function send(res: import('node:http').ServerResponse, status: number, body: unknown) {
   res.statusCode = status;
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
@@ -95,6 +121,30 @@ export function localResources(): Plugin {
             res.setHeader('Content-Type', 'application/pdf');
             res.setHeader('Content-Disposition', 'inline');
             res.setHeader('Cache-Control', 'no-store');
+            fs.createReadStream(full).pipe(res);
+            return;
+          }
+          if (url.pathname === '/__local/lessons/index.json') {
+            return send(res, 200, mergeLessonIndexes(path.join(root, LESSONS_DIR)));
+          }
+          if (url.pathname === '/__local/lessons/md' || url.pathname === '/__local/lessons/asset') {
+            const full = resolveInside(path.join(root, LESSONS_DIR), url.searchParams.get('path'));
+            const ext = full ? path.extname(full).toLowerCase() : '';
+            const ok = url.pathname.endsWith('/md') ? ext === '.md' : ext in ASSET_TYPES;
+            if (!full || !ok || !fs.existsSync(full) || !fs.statSync(full).isFile()) return send(res, 404, { error: 'not found' });
+            res.statusCode = 200;
+            res.setHeader('Content-Type', ext === '.md' ? 'text/markdown; charset=utf-8' : ASSET_TYPES[ext]);
+            res.setHeader('Cache-Control', ext === '.md' ? 'no-store' : 'max-age=3600');
+            fs.createReadStream(full).pipe(res);
+            return;
+          }
+          if (url.pathname === '/__local/bank/asset') {
+            const full = resolveInside(path.join(root, BANK_DIR), url.searchParams.get('path'));
+            const ext = full ? path.extname(full).toLowerCase() : '';
+            if (!full || !(ext in ASSET_TYPES) || !fs.existsSync(full)) return send(res, 404, { error: 'not found' });
+            res.statusCode = 200;
+            res.setHeader('Content-Type', ASSET_TYPES[ext]);
+            res.setHeader('Cache-Control', 'max-age=3600');
             fs.createReadStream(full).pipe(res);
             return;
           }

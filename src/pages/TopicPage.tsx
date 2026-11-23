@@ -1,4 +1,4 @@
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { getSubject, getTopic } from '../content';
 import { Page } from '../components/AppShell';
@@ -13,6 +13,7 @@ const DIFFICULTY = ['', 'Foundation', 'Standard', 'Challenging'];
 
 // Private reference notes exist only in local development; production builds drop this branch entirely.
 const ReferenceNotes = import.meta.env.DEV ? lazy(() => import('../components/ReferenceNotes')) : null;
+const LocalLessonList = import.meta.env.DEV ? lazy(() => import('../components/LocalLessonList')) : null;
 
 export default function TopicPage() {
   const { subjectId = '', topicId = '' } = useParams();
@@ -20,6 +21,7 @@ export default function TopicPage() {
   const topic = getTopic(`${subjectId}/${topicId}`);
   const state = useStudyState();
   const notes = useProgress((s) => s.notes);
+  const [localCount, setLocalCount] = useState(0);
   if (!subject || !topic) return <NotFound />;
 
   const st = topicStats(topic, state);
@@ -52,7 +54,16 @@ export default function TopicPage() {
         </p>
       </header>
 
+      {LocalLessonList && (
+        <Suspense fallback={null}>
+          <div className={localCount ? 'mb-6' : ''}>
+            <LocalLessonList subjectId={subject.id} topicId={topic.id} onCount={setLocalCount} />
+          </div>
+        </Suspense>
+      )}
+
       {topic.lessons.length === 0 ? (
+        localCount > 0 ? null : (
         <div className="card p-8 text-center">
           <p className="font-medium text-ink">Lessons for this topic are being written.</p>
           <p className="mt-1 text-sm text-muted">The curriculum outline is in place; original lessons and questions will be added here.</p>
@@ -60,6 +71,7 @@ export default function TopicPage() {
             Back to {subject.short}
           </Link>
         </div>
+        )
       ) : (
         <div className="grid gap-6 lg:grid-cols-[1fr_280px]">
           <section aria-label="Lessons" className="card p-2">

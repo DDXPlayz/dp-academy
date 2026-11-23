@@ -13,6 +13,9 @@ export interface LocalBank {
   rejected: number;
 }
 
+/** Points images saved next to the imported questions ("img/…") at the dev server. */
+const assets = (md: string) => md.replace(/\]\((img\/[^)\s]+)\)/g, (_m, p: string) => `](/__local/bank/asset?path=${encodeURIComponent(p)})`);
+
 export async function loadLocalBank(): Promise<LocalBank> {
   const res = await fetch('/__local/bank/index.json').catch(() => null);
   if (!res || !res.ok) return { questions: [], rejected: 0 };
@@ -25,7 +28,13 @@ export async function loadLocalBank(): Promise<LocalBank> {
       rejected++;
       continue;
     }
-    const { subject, topic, sourceFile, ...q } = parsed.data;
+    const { subject, topic, sourceFile, ...raw } = parsed.data;
+    const q = {
+      ...raw,
+      prompt: assets(raw.prompt),
+      markscheme: assets(raw.markscheme),
+      options: raw.options?.map(assets),
+    };
     const topicKey = topic && getTopic(`${subject}/${topic}`) ? `${subject}/${topic}` : null;
     const originalUrl = sourceFile ? `/__local/notes/file?src=papers&path=${encodeURIComponent(sourceFile)}` : undefined;
     questions.push({ ...q, key: `local/${subject}/${q.id}`, subjectId: subject, topicKey, needsReview: q.needsReview || !topicKey, originalUrl });

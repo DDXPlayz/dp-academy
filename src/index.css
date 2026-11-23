@@ -238,3 +238,27 @@
 .pb-safe {
   padding-bottom: env(safe-area-inset-bottom);
 }
+
+/* Images in lessons: cropped equations sit inline with the text; figures get a light frame. */
+.prose-lesson img.lesson-math {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  margin: 0.25rem 0;
+  vertical-align: middle;
+  mix-blend-mode: multiply;
+}
+.dark .prose-lesson img.lesson-math {
+  mix-blend-mode: normal;
+  filter: invert(0.92) hue-rotate(180deg);
+}
+.prose-lesson img.lesson-figure {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 0.75rem;
+  background: #fff;
+  padding: 0.5rem;
+  border: 1px solid var(--line);
+}

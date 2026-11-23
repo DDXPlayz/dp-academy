@@ -28,7 +28,7 @@ function textOf(node: ReactNode): string {
     .join('');
 }
 
-function Callout({ tone, icon, title, children }: { tone: 'accent' | 'warn'; icon: 'bulb' | 'alert'; title: string; children: ReactNode }) {
+function Callout({ tone, icon, title, children }: { tone: 'accent' | 'warn'; icon: 'bulb' | 'alert' | 'target'; title: string; children: ReactNode }) {
   const styles = tone === 'accent' ? 'border-accent/30 bg-accent-soft' : 'border-warn/30 bg-warn-soft';
   return (
     <aside className={`rounded-xl border px-5 py-4 ${styles}`}>
@@ -83,6 +83,20 @@ const components: Components = {
   h2: ({ children }) => <h2 id={slugify(textOf(children))}>{children}</h2>,
   h3: ({ children }) => <h3 id={slugify(textOf(children))}>{children}</h3>,
   pre: ({ children }) => <>{children}</>,
+  // "#w=240" on an image URL sets its display width; images alt-tagged "math" are cropped equations.
+  img: ({ src = '', alt }) => {
+    const [url, frag] = src.split('#');
+    const width = /^w=(\d+)$/.exec(frag ?? '')?.[1];
+    return (
+      <img
+        src={url}
+        alt={alt === 'math' ? 'Equation' : alt === 'fig' ? 'Figure' : (alt ?? '')}
+        loading="lazy"
+        className={alt === 'math' ? 'lesson-math' : 'lesson-figure'}
+        style={width ? { width: `${width}px` } : undefined}
+      />
+    );
+  },
   a: ({ href, children }) =>
     href?.startsWith('http') ? (
       <a href={href} target="_blank" rel="noreferrer noopener">
@@ -105,6 +119,12 @@ const components: Components = {
       case 'mistake':
         return (
           <Callout tone="warn" icon="alert" title="Common mistake">
+            <Markdown>{src}</Markdown>
+          </Callout>
+        );
+      case 'examtip':
+        return (
+          <Callout tone="accent" icon="target" title="Exam tip">
             <Markdown>{src}</Markdown>
           </Callout>
         );
