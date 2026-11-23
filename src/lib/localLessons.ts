@@ -8,7 +8,7 @@ export interface LocalLesson {
   file: string; // "<topicId>/<slug>.md", relative to the subject folder
   slug: string;
   title: string;
-  source: 'sme' | 'iitian';
+  source: 'sme' | 'iitian' | 'studyib';
   order: number;
   group: string;
   chars: number;
@@ -44,12 +44,12 @@ export async function loadLessonMarkdown(subjectId: string, lesson: LocalLesson)
   const res = await fetch(`/__local/lessons/md?path=${encodeURIComponent(filePath)}`);
   if (!res.ok) throw new Error(`Could not load ${lesson.title}`);
   const md = await res.text();
-  return md.replace(/\]\(((?:\.\.\/|\.\/)?[^)\s#]+\.(?:png|jpe?g|svg))(#[^)]*)?\)/g, (_m, rel: string, frag = '') => {
+  return md.replace(/\]\(((?:\.\.\/|\.\/)?[^)\s#]+\.(?:png|jpe?g|gif|svg))(#[^)]*)?\)/g, (_m, rel: string, frag = '') => {
     const p = joinPath(filePath, rel);
     return `](/__local/lessons/asset?path=${encodeURIComponent(p)}${frag})`;
   });
 }
 
-export const SOURCE_LABEL: Record<LocalLesson['source'], string> = { sme: 'Revision notes', iitian: 'Study notes' };
+export const SOURCE_LABEL: Record<LocalLesson['source'], string> = { sme: 'Revision notes', iitian: 'Study notes', studyib: 'Topic pages and quizzes' };
 
 export const lessonKey = (subjectId: string, topicId: string, slug: string) => `local/${subjectId}/${topicId}/${slug}`;

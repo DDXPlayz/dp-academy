@@ -80,7 +80,8 @@ function mergeLessonIndexes(dir: string) {
   }
   for (const topics of Object.values(out)) {
     for (const list of Object.values(topics)) {
-      list.sort((a, b) => Number(a.source !== 'sme') - Number(b.source !== 'sme') || a.group.localeCompare(b.group) || a.order - b.order || a.title.localeCompare(b.title));
+      const rank = (s: string) => ['sme', 'iitian', 'studyib'].indexOf(s);
+      list.sort((a, b) => rank(a.source) - rank(b.source) || a.group.localeCompare(b.group) || a.order - b.order || a.title.localeCompare(b.title));
     }
   }
   return out;

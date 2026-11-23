@@ -51,6 +51,7 @@ class ToMarkdown(HTMLParser):
         self.out, self.skip, self.math_alt = [], 0, None
         self.table, self.row, self.cell = None, None, None
         self.lists, self.subsup = [], None
+        self.links = []  # stack of hrefs for open <a> tags (None for links that are dropped)
 
     def emit(self, s):
         if self.cell is not None:
@@ -79,6 +80,12 @@ class ToMarkdown(HTMLParser):
             self.emit('**')
         elif tag in ('sub', 'sup'):
             self.subsup = (tag, [])
+        elif tag == 'a':
+            href = a.get('href', '')
+            keep = href.startswith(('http://', 'https://'))
+            self.links.append(href if keep else None)
+            if keep:
+                self.emit('[')
         elif tag == 'img':
             src = a.get('src', '')
             if 'answer_space' in src or not src:
@@ -110,6 +117,11 @@ class ToMarkdown(HTMLParser):
                     alt = self.math_alt or ''
                     if alt:
                         self.emit(f'\n\n$$\n{alt}\n$$\n\n' if self.math_block and self.cell is None else f'${alt}$')
+            return
+        if tag == 'a' and self.links:
+            href = self.links.pop()
+            if href:
+                self.emit(f']({href})')
             return
         if tag in ('em', 'i'):
             self.emit('*')
@@ -161,7 +173,7 @@ class ToMarkdown(HTMLParser):
 
     def markdown(self):
         md = ''.join(self.out)
-        md = re.sub(r'\*\*\s*\*\*|(?<!\*)\*\s*\*(?!\*)', '', md)  # empty emphasis
+        md = re.sub(r'\*\*[ \t]*\*\*|(?<!\*)\*[ \t]*\*(?!\*)', '', md)  # empty emphasis (never across lines)
         md = re.sub(r'[ \t]+\n', '\n', md)
         md = re.sub(r'\n{3,}', '\n\n', md)
         return md.strip()

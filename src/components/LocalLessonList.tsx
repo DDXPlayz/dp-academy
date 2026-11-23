@@ -26,7 +26,7 @@ export default function LocalLessonList({ subjectId, topicId, onCount }: { subje
   }, [subjectId, topicId]);
 
   if (!lessons?.length) return null;
-  const groups = (['sme', 'iitian'] as const).map((src) => [src, lessons.filter((l) => l.source === src)] as const).filter(([, l]) => l.length);
+  const groups = (['sme', 'iitian', 'studyib'] as const).map((src) => [src, lessons.filter((l) => l.source === src)] as const).filter(([, l]) => l.length);
 
   return (
     <div className="space-y-6">
