@@ -15,7 +15,7 @@ const KIND: Record<ResultKind, { label: string; icon: IconName }> = {
   flashcard: { label: 'Flashcard', icon: 'cards' },
 };
 
-const SUGGESTIONS = ['projectile', 'momentum', 'kinetic energy', 'the mole', 'arithmetic sequence', 'binary search'];
+const SUGGESTIONS = ['projectile', 'momentum', 'kinetic energy', 'the mole', 'arithmetic sequence'];
 
 export function SearchCommand() {
   const open = useUI((s) => s.searchOpen);

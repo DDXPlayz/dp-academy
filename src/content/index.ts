@@ -127,7 +127,7 @@ for (const [path, data] of Object.entries(subjectFiles)) {
   subjects.push(subject);
 }
 
-const SUBJECT_ORDER = ['physics', 'chemistry', 'math-aa', 'computer-science'];
+const SUBJECT_ORDER = ['physics', 'chemistry', 'math-aa'];
 subjects.sort((a, b) => {
   const ia = SUBJECT_ORDER.indexOf(a.id);
   const ib = SUBJECT_ORDER.indexOf(b.id);

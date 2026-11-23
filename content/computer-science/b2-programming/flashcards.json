@@ -1,7 +1,0 @@
-[
-  { "id": "linear", "concept": "Searching", "front": "How does a **linear search** work?", "back": "It checks each element in turn from the start until it finds the target or reaches the end. Works on unsorted data; $O(n)$." },
-  { "id": "binary", "concept": "Searching", "front": "How does a **binary search** work?", "back": "On a sorted list, compare the target with the middle element and discard the half that can’t contain it; repeat. $O(\\log n)$." },
-  { "id": "binary-precondition", "concept": "Searching", "front": "Precondition for binary search?", "back": "The list must be **sorted**." },
-  { "id": "big-o", "concept": "Efficiency", "front": "What does Big O notation describe?", "back": "How an algorithm’s running time (or memory) grows as the input size grows, usually in the worst case." },
-  { "id": "million", "concept": "Efficiency", "front": "Roughly how many comparisons does binary search need for 1 000 000 sorted items?", "back": "About 20, since $2^{20} \\approx 10^6$." }
-]
