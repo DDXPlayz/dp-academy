@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { getSubject, getTopic } from '../content';
 import { Page } from '../components/AppShell';
@@ -9,6 +10,9 @@ import { useProgress, useStudyState } from '../store/progress';
 import NotFound from './NotFound';
 
 const DIFFICULTY = ['', 'Foundation', 'Standard', 'Challenging'];
+
+// Private reference notes exist only in local development; production builds drop this branch entirely.
+const ReferenceNotes = import.meta.env.DEV ? lazy(() => import('../components/ReferenceNotes')) : null;
 
 export default function TopicPage() {
   const { subjectId = '', topicId = '' } = useParams();
@@ -140,6 +144,12 @@ export default function TopicPage() {
             </div>
           </aside>
         </div>
+      )}
+
+      {ReferenceNotes && (
+        <Suspense fallback={null}>
+          <ReferenceNotes subjectId={subject.id} topicId={topic.id} />
+        </Suspense>
       )}
     </Page>
   );
