@@ -1,0 +1,45 @@
+[
+  {
+    "id": "vol-x",
+    "type": "numeric",
+    "lesson": "volumes-revolution",
+    "concept": "Volume about the x-axis",
+    "difficulty": 2,
+    "prompt": "(HL) Find the volume when $y = x$, $0 \\le x \\le 3$, is rotated about the x-axis (3 s.f.).",
+    "answer": 28.3,
+    "tolerance": 0.003,
+    "explanation": "$\\pi\\int_0^3x^2\\,dx = 9\\pi = 28.3$ (a cone)."
+  },
+  {
+    "id": "vol-y",
+    "type": "numeric",
+    "lesson": "volumes-revolution",
+    "concept": "Volume about the y-axis",
+    "difficulty": 3,
+    "prompt": "(HL) The region between $y = x^2$ ($x \\ge 0$), the y-axis and $y = 9$ is rotated about the y-axis. Find the volume (3 s.f.).",
+    "answer": 127,
+    "tolerance": 0.003,
+    "explanation": "$\\pi\\int_0^9y\\,dy = 40.5\\pi = 127$."
+  },
+  {
+    "id": "area-y",
+    "type": "numeric",
+    "lesson": "volumes-revolution",
+    "concept": "Area with the y-axis",
+    "difficulty": 2,
+    "prompt": "(HL) Find the area between $x = y^2 + 1$, the y-axis, $y = 0$ and $y = 3$.",
+    "answer": 12,
+    "tolerance": 0,
+    "explanation": "$\\int_0^3(y^2 + 1)\\,dy = 9 + 3 = 12$."
+  },
+  {
+    "id": "washer-trap",
+    "type": "tf",
+    "lesson": "volumes-revolution",
+    "concept": "Volume about the x-axis",
+    "difficulty": 3,
+    "prompt": "(HL) Rotating the region between $y_1$ (top) and $y_2$ about the x-axis gives $V = \\pi\\int(y_1 - y_2)^2\\,dx$.",
+    "answer": false,
+    "explanation": "It is $\\pi\\int(y_1^2 - y_2^2)\\,dx$ — outer disc minus inner disc."
+  }
+]

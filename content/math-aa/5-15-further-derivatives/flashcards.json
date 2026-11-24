@@ -1,0 +1,5 @@
+[
+  { "id": "tan-sec-card", "front": "(HL) Derivatives of tan x and sec x?", "back": "$\\sec^2x$ and $\\sec x\\tan x$.", "concept": "Trig derivatives" },
+  { "id": "ax-card", "front": "(HL) Derivatives of $a^x$ and $\\log_a x$?", "back": "$a^x\\ln a$ and $\\frac{1}{x\\ln a}$.", "concept": "Exponential derivatives" },
+  { "id": "invtrig-card", "front": "(HL) Derivatives of arcsin x, arctan x?", "back": "$\\frac{1}{\\sqrt{1 - x^2}}$, $\\frac{1}{1 + x^2}$.", "concept": "Inverse trig" }
+]

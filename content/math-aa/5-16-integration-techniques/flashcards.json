@@ -1,0 +1,5 @@
+[
+  { "id": "parts-card", "front": "(HL) Integration by parts formula?", "back": "$\\int uv'\\,dx = uv - \\int vu'\\,dx$", "concept": "Integration by parts" },
+  { "id": "liate-card", "front": "(HL) Choosing u in parts?", "back": "LIATE: Logs, Inverse trig, Algebraic, Trig, Exponential.", "concept": "Integration by parts" },
+  { "id": "sub-card", "front": "(HL) Substitution with definite integrals?", "back": "Change the limits to u-values (or back-substitute before evaluating).", "concept": "Substitution" }
+]

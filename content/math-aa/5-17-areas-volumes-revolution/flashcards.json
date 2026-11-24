@@ -1,0 +1,5 @@
+[
+  { "id": "vol-x-card", "front": "(HL) Volume of revolution about the x-axis?", "back": "$V = \\pi\\int_a^b y^2\\,dx$", "concept": "Volume about the x-axis" },
+  { "id": "vol-y-card", "front": "(HL) Volume of revolution about the y-axis?", "back": "$V = \\pi\\int_c^d x^2\\,dy$", "concept": "Volume about the y-axis" },
+  { "id": "area-y-card", "front": "(HL) Area between curve and y-axis?", "back": "$\\int_c^d x\\,dy$", "concept": "Area with the y-axis" }
+]

@@ -1,0 +1,5 @@
+[
+  { "id": "mac-card", "front": "(HL) Maclaurin series formula?", "back": "$f(0) + xf'(0) + \\frac{x^2}{2!}f''(0) + \\ldots$", "concept": "Maclaurin series" },
+  { "id": "mac-std-card", "front": "(HL) Series for sin x and cos x?", "back": "$x - \\frac{x^3}{3!} + \\ldots$; $1 - \\frac{x^2}{2!} + \\ldots$", "concept": "Standard series" },
+  { "id": "mac-new-card", "front": "(HL) Getting new series quickly?", "back": "Substitute, multiply, differentiate or integrate known series.", "concept": "Substitution" }
+]

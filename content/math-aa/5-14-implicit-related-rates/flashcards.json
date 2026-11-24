@@ -1,0 +1,4 @@
+[
+  { "id": "implicit-card", "front": "(HL) Differentiating $y^n$ implicitly?", "back": "$ny^{n-1}\\frac{dy}{dx}$", "concept": "Implicit differentiation" },
+  { "id": "related-card", "front": "(HL) Related rates method?", "back": "Find an equation linking variables, differentiate w.r.t. t, then substitute values.", "concept": "Related rates" }
+]

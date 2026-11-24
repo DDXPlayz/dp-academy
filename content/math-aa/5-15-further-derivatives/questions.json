@@ -1,0 +1,46 @@
+[
+  {
+    "id": "tan-deriv",
+    "type": "numeric",
+    "lesson": "further-derivatives",
+    "concept": "Trig derivatives",
+    "difficulty": 2,
+    "prompt": "(HL) Find the gradient of $y = \\tan x$ at $x = \\dfrac\\pi4$.",
+    "answer": 2,
+    "tolerance": 0.001,
+    "explanation": "$\\sec^2\\frac\\pi4 = (\\sqrt2)^2 = 2$."
+  },
+  {
+    "id": "ax-deriv",
+    "type": "expression",
+    "lesson": "further-derivatives",
+    "concept": "Exponential derivatives",
+    "difficulty": 2,
+    "prompt": "(HL) Differentiate $y = 2^x$.",
+    "variables": ["x"],
+    "answer": "2^x*ln(2)",
+    "explanation": "$2^x\\ln2$."
+  },
+  {
+    "id": "arctan-int",
+    "type": "numeric",
+    "lesson": "further-derivatives",
+    "concept": "Standard integrals",
+    "difficulty": 3,
+    "prompt": "(HL) Evaluate $\\displaystyle\\int_0^1\\frac{1}{1 + x^2}\\,dx$ (3 s.f.).",
+    "answer": 0.785,
+    "tolerance": 0.002,
+    "explanation": "$\\arctan1 - \\arctan0 = \\frac\\pi4$."
+  },
+  {
+    "id": "arcsin-deriv",
+    "type": "numeric",
+    "lesson": "further-derivatives",
+    "concept": "Inverse trig",
+    "difficulty": 2,
+    "prompt": "(HL) Find the derivative of $\\arcsin x$ at $x = 0.6$.",
+    "answer": 1.25,
+    "tolerance": 0.001,
+    "explanation": "$\\frac{1}{\\sqrt{1 - 0.36}} = \\frac1{0.8}$."
+  }
+]

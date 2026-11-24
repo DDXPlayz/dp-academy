@@ -1,0 +1,46 @@
+[
+  {
+    "id": "implicit-grad",
+    "type": "numeric",
+    "lesson": "implicit-related-rates",
+    "concept": "Implicit differentiation",
+    "difficulty": 2,
+    "prompt": "(HL) Find $\\dfrac{dy}{dx}$ for $x^2 + y^2 = 25$ at $(3, 4)$.",
+    "answer": -0.75,
+    "tolerance": 0.001,
+    "explanation": "$2x + 2y\\,y' = 0 \\Rightarrow y' = -x/y = -3/4$."
+  },
+  {
+    "id": "implicit-xy",
+    "type": "numeric",
+    "lesson": "implicit-related-rates",
+    "concept": "Implicit differentiation",
+    "difficulty": 3,
+    "prompt": "(HL) Find $\\dfrac{dy}{dx}$ for $xy = 6$ at $(2, 3)$.",
+    "answer": -1.5,
+    "tolerance": 0.001,
+    "explanation": "$y + xy' = 0 \\Rightarrow y' = -y/x = -1.5$."
+  },
+  {
+    "id": "circle-area-rate",
+    "type": "numeric",
+    "lesson": "implicit-related-rates",
+    "concept": "Related rates",
+    "difficulty": 3,
+    "prompt": "(HL) The radius of a circle increases at 2 cm s⁻¹. How fast is the area increasing when r = 5 cm (3 s.f.)?",
+    "answer": 62.8,
+    "tolerance": 0.003,
+    "unit": "cm² s⁻¹",
+    "explanation": "$\\frac{dA}{dt} = 2\\pi r\\frac{dr}{dt} = 20\\pi = 62.8$."
+  },
+  {
+    "id": "y-squared",
+    "type": "tf",
+    "lesson": "implicit-related-rates",
+    "concept": "Implicit differentiation",
+    "difficulty": 1,
+    "prompt": "(HL) $\\dfrac{d}{dx}(y^3) = 3y^2$.",
+    "answer": false,
+    "explanation": "By the chain rule it is $3y^2\\frac{dy}{dx}$."
+  }
+]

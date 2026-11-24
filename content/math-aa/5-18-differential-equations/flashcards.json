@@ -1,0 +1,6 @@
+[
+  { "id": "euler-card", "front": "(HL) Euler’s method?", "back": "$y_{n+1} = y_n + hf(x_n, y_n)$, $x_{n+1} = x_n + h$.", "concept": "Euler’s method" },
+  { "id": "sep-card", "front": "(HL) Separable DE method?", "back": "$\\int\\frac1{g(y)}dy = \\int f(x)dx$, add C, apply initial condition.", "concept": "Separation of variables" },
+  { "id": "if-card", "front": "(HL) Integrating factor for $y' + Py = Q$?", "back": "$I = e^{\\int P\\,dx}$; then $Iy = \\int IQ\\,dx$.", "concept": "Integrating factor" },
+  { "id": "homog-card", "front": "(HL) Homogeneous DE substitution?", "back": "$y = vx$, $y' = v + xv'$.", "concept": "Homogeneous equations" }
+]

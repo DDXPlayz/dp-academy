@@ -1,0 +1,46 @@
+[
+  {
+    "id": "parts-calc",
+    "type": "numeric",
+    "lesson": "substitution-parts",
+    "concept": "Integration by parts",
+    "difficulty": 3,
+    "prompt": "(HL) Evaluate $\\displaystyle\\int_0^1 xe^x\\,dx$.",
+    "answer": 1,
+    "tolerance": 0.001,
+    "explanation": "$[xe^x - e^x]_0^1 = (e - e) - (0 - 1) = 1$."
+  },
+  {
+    "id": "sub-calc",
+    "type": "numeric",
+    "lesson": "substitution-parts",
+    "concept": "Substitution",
+    "difficulty": 3,
+    "prompt": "(HL) Evaluate $\\displaystyle\\int_0^2 2x(x^2 + 1)^2\\,dx$ (3 s.f.).",
+    "answer": 41.3,
+    "tolerance": 0.003,
+    "explanation": "$u = x^2 + 1$: $\\int_1^5u^2\\,du = \\frac{125 - 1}{3} = 41.3$."
+  },
+  {
+    "id": "liate",
+    "type": "mcq",
+    "lesson": "substitution-parts",
+    "concept": "Integration by parts",
+    "difficulty": 2,
+    "prompt": "(HL) To find $\\int x^2\\ln x\\,dx$ by parts, choose u =",
+    "options": ["$x^2$", "$\\ln x$", "$x^2\\ln x$", "$1$"],
+    "answer": 1,
+    "explanation": "Logs come first in LIATE; $\\ln x$ differentiates to $1/x$."
+  },
+  {
+    "id": "ln-int",
+    "type": "numeric",
+    "lesson": "substitution-parts",
+    "concept": "Integration by parts",
+    "difficulty": 3,
+    "prompt": "(HL) Evaluate $\\displaystyle\\int_1^e\\ln x\\,dx$.",
+    "answer": 1,
+    "tolerance": 0.001,
+    "explanation": "$[x\\ln x - x]_1^e = (e - e) - (0 - 1) = 1$."
+  }
+]
