@@ -1,0 +1,6 @@
+[
+  { "id": "geo-nth-card", "front": "Geometric nth term?", "back": "$u_n = u_1r^{n-1}$", "concept": "Geometric nth term" },
+  { "id": "geo-sum-card", "front": "Geometric sum of n terms?", "back": "$S_n = \\dfrac{u_1(r^n - 1)}{r - 1}$, $r \\ne 1$.", "concept": "Geometric series" },
+  { "id": "geo-r-card", "front": "Finding r from two terms?", "back": "Divide them: $u_m/u_k = r^{m-k}$.", "concept": "Common ratio" },
+  { "id": "geo-growth-card", "front": "Ratio for p% growth or decay?", "back": "$r = 1 + p/100$ (growth), $r = 1 - p/100$ (decay).", "concept": "Finding n" }
+]

@@ -1,0 +1,5 @@
+[
+  { "id": "identity-card", "front": "Equation vs identity?", "back": "Equation: true for some values (=). Identity: true for all values (≡).", "concept": "Identities" },
+  { "id": "proof-method-card", "front": "How to prove an identity?", "back": "Start from one side, manipulate to reach the other; never assume the result.", "concept": "Deductive proof" },
+  { "id": "int-forms-card", "front": "Algebraic forms for even, odd, consecutive integers?", "back": "$2n$, $2n + 1$, $n, n + 1, n + 2$.", "concept": "Proofs about integers" }
+]

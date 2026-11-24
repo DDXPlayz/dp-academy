@@ -1,0 +1,5 @@
+[
+  { "id": "log-def-card", "front": "Definition of a logarithm?", "back": "$a^x = b \\iff \\log_a b = x$ ($a > 0$, $a \\ne 1$, $b > 0$).", "concept": "Logarithms" },
+  { "id": "log-special-card", "front": "$\\log_a 1$ and $\\log_a a$?", "back": "0 and 1.", "concept": "Logarithms" },
+  { "id": "neg-exp-card", "front": "$a^{-n}$ and $a^0$?", "back": "$a^{-n} = 1/a^n$; $a^0 = 1$.", "concept": "Laws of exponents" }
+]

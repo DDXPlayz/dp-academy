@@ -1,0 +1,56 @@
+[
+  {
+    "id": "proof-identity",
+    "type": "mcq",
+    "lesson": "deductive-proof",
+    "concept": "Identities",
+    "difficulty": 1,
+    "prompt": "Which statement is an identity?",
+    "options": ["$x^2 - 4 = 0$", "$(x + 2)^2 \\equiv x^2 + 4x + 4$", "$2x + 1 = 7$", "$x^2 = 2x$"],
+    "answer": 1,
+    "explanation": "It is true for all $x$; the others are true only for particular values."
+  },
+  {
+    "id": "odd-form",
+    "type": "mcq",
+    "lesson": "deductive-proof",
+    "concept": "Proofs about integers",
+    "difficulty": 1,
+    "prompt": "Which expression represents any odd integer, for $n \\in \\mathbb{Z}$?",
+    "options": ["$n + 1$", "$2n$", "$2n + 1$", "$n^2$"],
+    "answer": 2,
+    "explanation": "$2n$ is even, so $2n + 1$ is odd."
+  },
+  {
+    "id": "examples-not-proof",
+    "type": "tf",
+    "lesson": "deductive-proof",
+    "concept": "Deductive proof",
+    "difficulty": 1,
+    "prompt": "Checking that a statement holds for 1, 2, 3 and 4 proves it is true for all positive integers.",
+    "answer": false,
+    "explanation": "Examples can disprove (a counterexample) but cannot prove a general statement."
+  },
+  {
+    "id": "even-sum",
+    "type": "mcq",
+    "lesson": "deductive-proof",
+    "concept": "Proofs about integers",
+    "difficulty": 2,
+    "prompt": "The sum of two odd numbers $(2m + 1) + (2n + 1)$ simplifies to:",
+    "options": ["$2(m + n) + 1$, odd", "$2(m + n + 1)$, even", "$m + n + 2$", "$4mn$"],
+    "answer": 1,
+    "explanation": "$2m + 2n + 2 = 2(m + n + 1)$ — a multiple of 2, so even."
+  },
+  {
+    "id": "identity-expand",
+    "type": "expression",
+    "lesson": "deductive-proof",
+    "concept": "Identities",
+    "difficulty": 2,
+    "prompt": "Expand and simplify $(n + 1)^2 - (n - 1)^2$.",
+    "variables": ["n"],
+    "answer": "4*n",
+    "explanation": "$(n^2 + 2n + 1) - (n^2 - 2n + 1) = 4n$ — always a multiple of 4."
+  }
+]

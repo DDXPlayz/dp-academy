@@ -1,0 +1,59 @@
+[
+  {
+    "id": "ci-monthly",
+    "type": "numeric",
+    "lesson": "compound-interest",
+    "concept": "Compound interest",
+    "difficulty": 2,
+    "prompt": "\\$2000 is invested at 6% per annum compounded quarterly. Find its value after 5 years, to the nearest cent.",
+    "answer": 2693.71,
+    "tolerance": 0.001,
+    "unit": "$",
+    "explanation": "$2000(1 + 6/400)^{20} = 2000(1.015)^{20} = 2693.71$."
+  },
+  {
+    "id": "ci-annual",
+    "type": "numeric",
+    "lesson": "compound-interest",
+    "concept": "Compound interest",
+    "difficulty": 1,
+    "prompt": "\\$1000 is invested at 5% per annum compounded annually. Find its value after 3 years.",
+    "answer": 1157.63,
+    "tolerance": 0.001,
+    "unit": "$",
+    "explanation": "$1000(1.05)^3 = 1157.63$."
+  },
+  {
+    "id": "depreciation",
+    "type": "numeric",
+    "lesson": "compound-interest",
+    "concept": "Depreciation",
+    "difficulty": 1,
+    "prompt": "A phone worth \\$900 depreciates by 20% each year. What is it worth after 3 years?",
+    "answer": 460.8,
+    "tolerance": 0.001,
+    "unit": "$",
+    "explanation": "$900(0.8)^3 = 460.80$."
+  },
+  {
+    "id": "ci-time",
+    "type": "numeric",
+    "lesson": "compound-interest",
+    "concept": "Finding the time",
+    "difficulty": 3,
+    "prompt": "An investment earns 8% per annum compounded annually. After how many complete years will it first be worth at least 3 times the original amount?",
+    "answer": 15,
+    "tolerance": 0,
+    "explanation": "$1.08^n \\ge 3 \\Rightarrow n \\ge \\ln3/\\ln1.08 = 14.3$, so 15 years."
+  },
+  {
+    "id": "compounding-more",
+    "type": "tf",
+    "lesson": "compound-interest",
+    "concept": "Compound interest",
+    "difficulty": 1,
+    "prompt": "For the same annual rate, monthly compounding gives a larger final amount than annual compounding.",
+    "answer": true,
+    "explanation": "Interest is added sooner and itself earns interest."
+  }
+]

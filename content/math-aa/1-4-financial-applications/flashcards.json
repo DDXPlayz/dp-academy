@@ -1,0 +1,5 @@
+[
+  { "id": "fv-card", "front": "Compound interest formula?", "back": "$FV = PV\\left(1 + \\dfrac{r}{100k}\\right)^{kn}$", "concept": "Compound interest" },
+  { "id": "dep-card", "front": "Depreciation formula?", "back": "$V = V_0(1 - r/100)^n$", "concept": "Depreciation" },
+  { "id": "k-card", "front": "What is k in the compound interest formula?", "back": "Compounding periods per year: 1 annual, 4 quarterly, 12 monthly.", "concept": "Compound interest" }
+]

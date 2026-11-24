@@ -1,0 +1,56 @@
+[
+  {
+    "id": "sn-multiply",
+    "type": "numeric",
+    "lesson": "standard-form",
+    "concept": "Calculating in scientific notation",
+    "difficulty": 1,
+    "prompt": "Calculate $(2.5\\times10^{4})\\times(6\\times10^{-7})$. Give your answer as a decimal or in the form a e k (e.g. 1.5e-2).",
+    "answer": 0.015,
+    "tolerance": 0.001,
+    "explanation": "$15\\times10^{-3} = 1.5\\times10^{-2}$."
+  },
+  {
+    "id": "sn-divide",
+    "type": "numeric",
+    "lesson": "standard-form",
+    "concept": "Calculating in scientific notation",
+    "difficulty": 1,
+    "prompt": "Calculate $\\dfrac{8.4\\times10^{6}}{2.1\\times10^{-2}}$.",
+    "answer": 4e8,
+    "tolerance": 0.001,
+    "explanation": "$4\\times10^{8}$."
+  },
+  {
+    "id": "sn-form",
+    "type": "mcq",
+    "lesson": "standard-form",
+    "concept": "Scientific notation",
+    "difficulty": 1,
+    "prompt": "Which is $0.000\\,407$ in scientific notation?",
+    "options": ["$4.07\\times10^{-3}$", "$4.07\\times10^{-4}$", "$40.7\\times10^{-5}$", "$4.07\\times10^{4}$"],
+    "answer": 1,
+    "explanation": "Move the point 4 places right: $4.07\\times10^{-4}$."
+  },
+  {
+    "id": "sn-add",
+    "type": "numeric",
+    "lesson": "standard-form",
+    "concept": "Calculating in scientific notation",
+    "difficulty": 2,
+    "prompt": "Calculate $3.6\\times10^{5} + 4.0\\times10^{4}$.",
+    "answer": 4e5,
+    "tolerance": 0.001,
+    "explanation": "$3.6\\times10^5 + 0.4\\times10^5 = 4.0\\times10^5$."
+  },
+  {
+    "id": "sn-valid",
+    "type": "tf",
+    "lesson": "standard-form",
+    "concept": "Scientific notation",
+    "difficulty": 1,
+    "prompt": "$12.5\\times10^{3}$ is written correctly in scientific notation.",
+    "answer": false,
+    "explanation": "$a$ must satisfy $1 \\le a < 10$: $1.25\\times10^{4}$."
+  }
+]

@@ -1,0 +1,5 @@
+[
+  { "id": "sn-card", "front": "Scientific notation form?", "back": "$a\\times10^k$ with $1 \\le a < 10$, $k$ an integer.", "concept": "Scientific notation" },
+  { "id": "sn-ops-card", "front": "Multiplying and dividing in scientific notation?", "back": "Multiply/divide the $a$ values; add/subtract the powers; renormalise.", "concept": "Calculating in scientific notation" },
+  { "id": "sn-add-card", "front": "Adding numbers in scientific notation?", "back": "Rewrite with the same power of 10, then add the $a$ values.", "concept": "Calculating in scientific notation" }
+]
