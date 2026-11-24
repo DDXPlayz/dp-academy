@@ -1,0 +1,12 @@
+[
+  { "id": "kepler-laws", "front": "Kepler’s three laws?", "back": "1. Elliptical orbits, Sun at a focus. 2. Equal areas in equal times. 3. $T^2 \\propto r^3$.", "concept": "Kepler’s laws" },
+  { "id": "newton-grav", "front": "Newton’s law of gravitation?", "back": "$F = Gm_1m_2/r^2$, G = 6.67 × 10⁻¹¹ N m² kg⁻².", "concept": "Newton’s law of gravitation" },
+  { "id": "g-def", "front": "Define gravitational field strength.", "back": "Force per unit mass on a small test mass: $g = F/m = GM/r^2$.", "concept": "Gravitational field strength" },
+  { "id": "point-mass", "front": "When can an extended body be treated as a point mass?", "back": "When it is spherically symmetric and we consider points outside it (or it is tiny compared with the separation).", "concept": "Newton’s law of gravitation" },
+  { "id": "vg-def", "front": "Define gravitational potential.", "back": "Work done per unit mass to bring a small mass from infinity to the point: $V_g = -GM/r$.", "concept": "Gravitational potential" },
+  { "id": "ep-grav", "front": "Gravitational potential energy of two masses?", "back": "$E_p = -Gm_1m_2/r$ — work to assemble from infinity.", "concept": "Gravitational potential" },
+  { "id": "g-gradient", "front": "Field strength from potential?", "back": "$g = -\\Delta V_g/\\Delta r$", "concept": "Gravitational potential" },
+  { "id": "orbital-card", "front": "Orbital speed?", "back": "$v = \\sqrt{GM/r}$", "concept": "Orbital speed" },
+  { "id": "escape-card", "front": "Escape speed?", "back": "$v_{\\text{esc}} = \\sqrt{2GM/r}$ — independent of the escaping mass.", "concept": "Escape speed" },
+  { "id": "orbit-energy", "front": "Total energy in a circular orbit?", "back": "$E = -\\dfrac{GMm}{2r}$ (E_k = GMm/2r, E_p = −GMm/r).", "concept": "Orbital energy" }
+]

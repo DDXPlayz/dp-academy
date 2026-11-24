@@ -1,0 +1,148 @@
+[
+  {
+    "id": "gravity-force",
+    "type": "numeric",
+    "lesson": "kepler-newton",
+    "concept": "Newton’s law of gravitation",
+    "difficulty": 1,
+    "prompt": "Two 1000 kg spheres have their centres 2.0 m apart. What is the gravitational force between them? (G = 6.67 × 10⁻¹¹ N m² kg⁻²)",
+    "answer": 1.6675e-5,
+    "tolerance": 0.02,
+    "unit": "N",
+    "explanation": "$F = Gm_1m_2/r^2 = 6.67\\times10^{-11} \\times 10^6/4.0 = 1.7\\times10^{-5}$ N — tiny, which is why we don’t notice attraction between everyday objects."
+  },
+  {
+    "id": "inverse-square",
+    "type": "mcq",
+    "lesson": "kepler-newton",
+    "concept": "Newton’s law of gravitation",
+    "difficulty": 1,
+    "prompt": "The distance between two masses is tripled. The gravitational force between them becomes:",
+    "options": ["one-third", "one-sixth", "one-ninth", "three times larger"],
+    "answer": 2,
+    "explanation": "$F \\propto 1/r^2$, so tripling $r$ divides the force by 9."
+  },
+  {
+    "id": "kepler-third",
+    "type": "numeric",
+    "lesson": "kepler-newton",
+    "concept": "Kepler’s laws",
+    "difficulty": 3,
+    "prompt": "Planet X orbits a star at 4 times the orbital radius of planet Y. Planet Y’s period is 1.0 year. What is planet X’s period, in years?",
+    "answer": 8,
+    "tolerance": 0.01,
+    "unit": "years",
+    "explanation": "$T^2 \\propto r^3$: $T_X = 1.0 \\times 4^{3/2} = 8.0$ years."
+  },
+  {
+    "id": "kepler-second",
+    "type": "tf",
+    "lesson": "kepler-newton",
+    "concept": "Kepler’s laws",
+    "difficulty": 2,
+    "prompt": "According to Kepler’s second law, a planet moves fastest when it is furthest from the Sun.",
+    "answer": false,
+    "explanation": "Equal areas in equal times means the planet moves fastest when **closest** to the Sun."
+  },
+  {
+    "id": "g-surface",
+    "type": "numeric",
+    "lesson": "gravitational-field",
+    "concept": "Gravitational field strength",
+    "difficulty": 2,
+    "prompt": "A planet has mass 3.0 × 10²⁴ kg and radius 4.0 × 10⁶ m. What is the gravitational field strength at its surface?",
+    "answer": 12.5,
+    "tolerance": 0.02,
+    "unit": "N kg⁻¹",
+    "explanation": "$g = GM/R^2 = 6.67\\times10^{-11} \\times 3.0\\times10^{24}/(4.0\\times10^6)^2 = 12.5$ N kg⁻¹."
+  },
+  {
+    "id": "g-height",
+    "type": "mcq",
+    "lesson": "gravitational-field",
+    "concept": "Gravitational field strength",
+    "difficulty": 2,
+    "prompt": "At a height equal to one Earth radius above the surface, g is:",
+    "options": ["g/2", "g/4", "g/8", "2g"],
+    "answer": 1,
+    "explanation": "The distance from the centre doubles (2R), so g falls to $1/2^2 = 1/4$ of its surface value."
+  },
+  {
+    "id": "field-line-density",
+    "type": "tf",
+    "lesson": "gravitational-field",
+    "concept": "Field lines",
+    "difficulty": 1,
+    "prompt": "Where gravitational field lines are closer together, the field is stronger.",
+    "answer": true,
+    "explanation": "Field line density represents field strength."
+  },
+  {
+    "id": "potential-work",
+    "type": "numeric",
+    "lesson": "gravitational-potential",
+    "concept": "Gravitational potential",
+    "difficulty": 2,
+    "prompt": "A 50 kg probe moves from a point where V_g = −6.0 × 10⁷ J kg⁻¹ to one where V_g = −2.0 × 10⁷ J kg⁻¹. How much work is needed?",
+    "answer": 2e9,
+    "tolerance": 0.02,
+    "unit": "J",
+    "explanation": "$W = m\\Delta V_g = 50 \\times (-2.0 + 6.0)\\times10^7 = 2.0\\times10^9$ J."
+  },
+  {
+    "id": "potential-sign",
+    "type": "mcq",
+    "lesson": "gravitational-potential",
+    "concept": "Gravitational potential",
+    "difficulty": 2,
+    "prompt": "Why is gravitational potential negative near a planet?",
+    "options": ["Because g points downwards", "Because zero is defined at infinity and gravity is attractive, so work is done by the field bringing a mass closer", "Because mass is negative", "Because the planet repels masses"],
+    "answer": 1,
+    "explanation": "With zero at infinity, an attractive field does positive work as a mass moves in, so the potential energy (and potential) end up below zero."
+  },
+  {
+    "id": "equipotential",
+    "type": "tf",
+    "lesson": "gravitational-potential",
+    "concept": "Equipotentials",
+    "difficulty": 1,
+    "prompt": "No work is done moving a mass along a gravitational equipotential surface.",
+    "answer": true,
+    "explanation": "$W = m\\Delta V_g$ and $\\Delta V_g = 0$ along an equipotential."
+  },
+  {
+    "id": "escape-orbital-ratio",
+    "type": "numeric",
+    "lesson": "orbits-escape",
+    "concept": "Escape speed",
+    "difficulty": 2,
+    "prompt": "A satellite orbits at 7.5 km s⁻¹. What would the escape speed be from the same radius, in km s⁻¹?",
+    "answer": 10.6,
+    "tolerance": 0.02,
+    "unit": "km s⁻¹",
+    "explanation": "$v_{\\text{esc}} = \\sqrt{2}\\,v_{\\text{orbital}} = 1.414 \\times 7.5 = 10.6$ km s⁻¹."
+  },
+  {
+    "id": "orbital-speed",
+    "type": "numeric",
+    "lesson": "orbits-escape",
+    "concept": "Orbital speed",
+    "difficulty": 2,
+    "prompt": "What is the orbital speed of a satellite in a circular orbit of radius 8.0 × 10⁶ m around Earth (M = 6.0 × 10²⁴ kg)?",
+    "answer": 7073,
+    "tolerance": 0.02,
+    "unit": "m s⁻¹",
+    "explanation": "$v = \\sqrt{GM/r} = \\sqrt{6.67\\times10^{-11} \\times 6.0\\times10^{24}/8.0\\times10^6} = 7.1\\times10^3$ m s⁻¹."
+  },
+  {
+    "id": "drag-effect",
+    "type": "mcq",
+    "lesson": "orbits-escape",
+    "concept": "Orbital decay",
+    "difficulty": 3,
+    "prompt": "A satellite in low orbit experiences a small atmospheric drag. Over time its orbital radius and speed:",
+    "options": ["both decrease", "radius decreases, speed increases", "radius increases, speed decreases", "both stay constant"],
+    "answer": 1,
+    "explanation": "Drag lowers the total energy, so the satellite drops to a smaller radius, where $v = \\sqrt{GM/r}$ is larger."
+  }
+]
