@@ -1,0 +1,117 @@
+[
+  {
+    "id": "gas-moles",
+    "type": "numeric",
+    "lesson": "ideal-gas-equation",
+    "concept": "Ideal gas equation",
+    "difficulty": 2,
+    "prompt": "How many moles of gas occupy 0.050 m³ at 1.0 × 10⁵ Pa and 20 °C? (R = 8.31 J mol⁻¹ K⁻¹)",
+    "answer": 2.05,
+    "tolerance": 0.02,
+    "unit": "mol",
+    "explanation": "$n = \\dfrac{PV}{RT} = \\dfrac{1.0\\times10^5 \\times 0.050}{8.31 \\times 293} = 2.05$ mol."
+  },
+  {
+    "id": "pressure-calc",
+    "type": "numeric",
+    "lesson": "ideal-gas-equation",
+    "concept": "Pressure",
+    "difficulty": 1,
+    "prompt": "A force of 600 N acts perpendicular to an area of 0.030 m². What is the pressure?",
+    "answer": 20000,
+    "tolerance": 0.02,
+    "unit": "Pa",
+    "explanation": "$P = F/A = 600/0.030 = 2.0\\times10^4$ Pa."
+  },
+  {
+    "id": "boyle",
+    "type": "numeric",
+    "lesson": "ideal-gas-equation",
+    "concept": "Gas laws",
+    "difficulty": 1,
+    "prompt": "A gas at 100 kPa is compressed at constant temperature from 6.0 L to 1.5 L. What is the new pressure, in kPa?",
+    "answer": 400,
+    "tolerance": 0.02,
+    "unit": "kPa",
+    "explanation": "Boyle’s law: $P_2 = P_1V_1/V_2 = 100 \\times 6.0/1.5 = 400$ kPa."
+  },
+  {
+    "id": "pressure-law",
+    "type": "numeric",
+    "lesson": "ideal-gas-equation",
+    "concept": "Gas laws",
+    "difficulty": 2,
+    "prompt": "A sealed rigid can holds gas at 1.2 × 10⁵ Pa and 27 °C. It is heated to 327 °C. What is the new pressure?",
+    "answer": 240000,
+    "tolerance": 0.02,
+    "unit": "Pa",
+    "explanation": "Constant volume, so $P \\propto T$ (kelvin): 300 K → 600 K doubles the pressure to $2.4\\times10^5$ Pa."
+  },
+  {
+    "id": "molecules-count",
+    "type": "numeric",
+    "lesson": "ideal-gas-equation",
+    "concept": "Ideal gas equation",
+    "difficulty": 2,
+    "prompt": "How many molecules are in 1.0 × 10⁻³ m³ of gas at 1.0 × 10⁵ Pa and 300 K? (k_B = 1.38 × 10⁻²³ J K⁻¹)",
+    "answer": 2.42e22,
+    "tolerance": 0.02,
+    "explanation": "$N = \\dfrac{PV}{k_BT} = \\dfrac{1.0\\times10^5 \\times 1.0\\times10^{-3}}{1.38\\times10^{-23} \\times 300} = 2.4\\times10^{22}$."
+  },
+  {
+    "id": "celsius-error",
+    "type": "tf",
+    "lesson": "ideal-gas-equation",
+    "concept": "Gas laws",
+    "difficulty": 1,
+    "prompt": "Doubling the Celsius temperature of a gas at constant volume doubles its pressure.",
+    "answer": false,
+    "explanation": "Pressure is proportional to **kelvin** temperature. From 20 °C to 40 °C is 293 K to 313 K — only about a 7% rise."
+  },
+  {
+    "id": "rms-speed",
+    "type": "numeric",
+    "lesson": "kinetic-theory",
+    "concept": "Kinetic theory",
+    "difficulty": 2,
+    "prompt": "A gas of density 0.18 kg m⁻³ is at a pressure of 1.0 × 10⁵ Pa. What is the r.m.s. speed of its molecules?",
+    "answer": 1291,
+    "tolerance": 0.02,
+    "unit": "m s⁻¹",
+    "explanation": "$c_{\\text{rms}} = \\sqrt{3P/\\rho} = \\sqrt{3 \\times 1.0\\times10^5/0.18} = 1290$ m s⁻¹."
+  },
+  {
+    "id": "kinetic-assumptions",
+    "type": "multi",
+    "lesson": "kinetic-theory",
+    "concept": "Kinetic model",
+    "difficulty": 2,
+    "prompt": "Which are assumptions of the kinetic model of an ideal gas?",
+    "options": ["Collisions are elastic", "Molecules have negligible volume", "Molecules attract each other strongly", "There are no intermolecular forces except during collisions", "All molecules move at the same speed"],
+    "answers": [0, 1, 3],
+    "explanation": "The model assumes elastic collisions, negligible volume and no forces between collisions. Molecules have a spread of speeds, and there are no attractions."
+  },
+  {
+    "id": "internal-energy-gas",
+    "type": "numeric",
+    "lesson": "kinetic-theory",
+    "concept": "Internal energy",
+    "difficulty": 2,
+    "prompt": "What is the internal energy of 3.0 mol of an ideal monatomic gas at 400 K? (R = 8.31 J mol⁻¹ K⁻¹)",
+    "answer": 14958,
+    "tolerance": 0.02,
+    "unit": "J",
+    "explanation": "$U = \\tfrac{3}{2}nRT = 1.5 \\times 3.0 \\times 8.31 \\times 400 = 1.5\\times10^4$ J."
+  },
+  {
+    "id": "real-gas",
+    "type": "mcq",
+    "lesson": "kinetic-theory",
+    "concept": "Real gases",
+    "difficulty": 2,
+    "prompt": "Under which conditions does a real gas behave most like an ideal gas?",
+    "options": ["High pressure, low temperature", "Low pressure, high temperature", "High pressure, high temperature", "Low pressure, low temperature"],
+    "answer": 1,
+    "explanation": "At low pressure the molecules are far apart (volume and attractions negligible); at high temperature they move fast enough for attractions not to matter."
+  }
+]
