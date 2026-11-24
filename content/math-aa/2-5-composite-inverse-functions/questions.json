@@ -1,0 +1,56 @@
+[
+  {
+    "id": "composite-eval",
+    "type": "numeric",
+    "lesson": "composite-inverse",
+    "concept": "Composite functions",
+    "difficulty": 1,
+    "prompt": "$f(x) = 2x + 3$ and $g(x) = x^2$. Find $(f\\circ g)(3)$.",
+    "answer": 21,
+    "tolerance": 0,
+    "explanation": "$g(3) = 9$, $f(9) = 21$."
+  },
+  {
+    "id": "composite-other",
+    "type": "numeric",
+    "lesson": "composite-inverse",
+    "concept": "Composite functions",
+    "difficulty": 1,
+    "prompt": "With the same functions, find $(g\\circ f)(3)$.",
+    "answer": 81,
+    "tolerance": 0,
+    "explanation": "$f(3) = 9$, $g(9) = 81$."
+  },
+  {
+    "id": "inverse-linear",
+    "type": "expression",
+    "lesson": "composite-inverse",
+    "concept": "Inverse functions",
+    "difficulty": 2,
+    "prompt": "Find $f^{-1}(x)$ for $f(x) = 4x - 7$.",
+    "variables": ["x"],
+    "answer": "(x + 7)/4",
+    "explanation": "$x = 4y - 7 \\Rightarrow y = (x + 7)/4$."
+  },
+  {
+    "id": "inverse-identity",
+    "type": "tf",
+    "lesson": "composite-inverse",
+    "concept": "Inverse functions",
+    "difficulty": 1,
+    "prompt": "For any function with an inverse, $f(f^{-1}(x)) = x$.",
+    "answer": true,
+    "explanation": "The inverse undoes the function — their composite is the identity."
+  },
+  {
+    "id": "composite-expression",
+    "type": "expression",
+    "lesson": "composite-inverse",
+    "concept": "Composite functions",
+    "difficulty": 2,
+    "prompt": "$f(x) = x + 1$, $g(x) = x^2$. Find $(g\\circ f)(x)$.",
+    "variables": ["x"],
+    "answer": "(x + 1)^2",
+    "explanation": "$g(f(x)) = (x + 1)^2$."
+  }
+]

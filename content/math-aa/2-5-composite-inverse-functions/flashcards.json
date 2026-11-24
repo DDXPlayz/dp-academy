@@ -1,0 +1,5 @@
+[
+  { "id": "fog-card", "front": "$(f\\circ g)(x)$?", "back": "$f(g(x))$ — apply $g$ first.", "concept": "Composite functions" },
+  { "id": "find-inv-card", "front": "Finding $f^{-1}(x)$?", "back": "Write $y = f(x)$, swap $x$ and $y$, rearrange for $y$.", "concept": "Inverse functions" },
+  { "id": "inv-reciprocal-card", "front": "Is $f^{-1}(x) = 1/f(x)$?", "back": "No — the inverse function reverses $f$; it is not the reciprocal.", "concept": "Inverse functions" }
+]

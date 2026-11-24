@@ -1,0 +1,4 @@
+[
+  { "id": "sketch-card", "front": "What must a sketch show?", "back": "Correct shape, labelled intercepts, turning points and asymptotes (dashed, with equations).", "concept": "Intercepts" },
+  { "id": "intersect-card", "front": "How to solve $f(x) = g(x)$ with a GDC?", "back": "Graph both and use intersect (or find zeros of $f - g$).", "concept": "Intersections" }
+]

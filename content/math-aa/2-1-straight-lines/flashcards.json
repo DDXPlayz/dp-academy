@@ -1,0 +1,4 @@
+[
+  { "id": "line-forms-card", "front": "Three forms of a straight line?", "back": "$y = mx + c$; $y - y_1 = m(x - x_1)$; $ax + by + d = 0$.", "concept": "Equation of a line" },
+  { "id": "par-perp-card", "front": "Parallel and perpendicular gradients?", "back": "Parallel: equal. Perpendicular: $m_1m_2 = -1$.", "concept": "Perpendicular lines" }
+]

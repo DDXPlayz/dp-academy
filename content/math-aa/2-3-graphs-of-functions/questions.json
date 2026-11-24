@@ -1,0 +1,45 @@
+[
+  {
+    "id": "yintercept",
+    "type": "numeric",
+    "lesson": "sketching-graphs",
+    "concept": "Intercepts",
+    "difficulty": 1,
+    "prompt": "Find the y-intercept of $y = (x - 3)(x + 4)$.",
+    "answer": -12,
+    "tolerance": 0,
+    "explanation": "$y(0) = (-3)(4) = -12$."
+  },
+  {
+    "id": "zeros-count",
+    "type": "numeric",
+    "lesson": "sketching-graphs",
+    "concept": "Zeros",
+    "difficulty": 2,
+    "prompt": "How many zeros does $f(x) = x^3 - 4x$ have?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "$x(x - 2)(x + 2) = 0$: $x = 0, \\pm2$."
+  },
+  {
+    "id": "intersection-gdc",
+    "type": "numeric",
+    "lesson": "sketching-graphs",
+    "concept": "Intersections",
+    "difficulty": 2,
+    "prompt": "Find the positive x-coordinate where $y = x^2$ meets $y = x + 6$.",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "$x^2 - x - 6 = 0 \\Rightarrow (x - 3)(x + 2) = 0$."
+  },
+  {
+    "id": "sketch-asymptote",
+    "type": "tf",
+    "lesson": "sketching-graphs",
+    "concept": "Asymptotes",
+    "difficulty": 1,
+    "prompt": "On a sketch, asymptotes should be drawn as dashed lines labelled with their equations.",
+    "answer": true,
+    "explanation": "That is the standard convention."
+  }
+]

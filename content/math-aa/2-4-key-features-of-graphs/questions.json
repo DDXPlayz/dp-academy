@@ -1,0 +1,45 @@
+[
+  {
+    "id": "model-max",
+    "type": "numeric",
+    "lesson": "analysing-graphs",
+    "concept": "Maxima and minima",
+    "difficulty": 2,
+    "prompt": "The profit (in \\$) from selling $x$ items is $P(x) = -2x^2 + 80x - 300$. Find the maximum profit.",
+    "answer": 500,
+    "tolerance": 0,
+    "explanation": "Vertex at $x = 20$: $P(20) = -800 + 1600 - 300 = 500$."
+  },
+  {
+    "id": "asymptote-meaning",
+    "type": "mcq",
+    "lesson": "analysing-graphs",
+    "concept": "Interpreting features",
+    "difficulty": 1,
+    "prompt": "The temperature of a cooling drink is $T(t) = 20 + 70e^{-0.1t}$. What does the horizontal asymptote $T = 20$ represent?",
+    "options": ["the initial temperature", "the room temperature the drink approaches", "the time to cool", "the maximum temperature"],
+    "answer": 1,
+    "explanation": "As $t \\to \\infty$, $T \\to 20$ — the long-term temperature."
+  },
+  {
+    "id": "initial-value",
+    "type": "numeric",
+    "lesson": "analysing-graphs",
+    "concept": "Interpreting features",
+    "difficulty": 1,
+    "prompt": "For the same model, what is the initial temperature?",
+    "answer": 90,
+    "tolerance": 0,
+    "explanation": "$T(0) = 20 + 70 = 90$."
+  },
+  {
+    "id": "reject-negative",
+    "type": "tf",
+    "lesson": "analysing-graphs",
+    "concept": "Interpreting features",
+    "difficulty": 1,
+    "prompt": "In a model of height against time, a negative zero of the function should be rejected as a landing time.",
+    "answer": true,
+    "explanation": "Time cannot be negative in the context."
+  }
+]

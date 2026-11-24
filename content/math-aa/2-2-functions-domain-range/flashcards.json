@@ -1,0 +1,6 @@
+[
+  { "id": "func-card", "front": "Function?", "back": "Each input in the domain has exactly one output.", "concept": "Function" },
+  { "id": "dom-range-card", "front": "Domain vs range?", "back": "Domain: allowed inputs. Range: resulting outputs.", "concept": "Domain" },
+  { "id": "restrict-card", "front": "Natural domain restrictions?", "back": "No zero denominators, no negative square roots, log arguments > 0.", "concept": "Domain" },
+  { "id": "inv-graph-card", "front": "Graph of $f^{-1}$?", "back": "Reflection of $y = f(x)$ in $y = x$; domain and range swap.", "concept": "Inverse functions" }
+]

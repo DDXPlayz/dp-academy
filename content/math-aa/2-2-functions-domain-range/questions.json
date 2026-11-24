@@ -1,0 +1,56 @@
+[
+  {
+    "id": "domain-sqrt",
+    "type": "mcq",
+    "lesson": "functions",
+    "concept": "Domain",
+    "difficulty": 1,
+    "prompt": "What is the largest possible domain of $f(x) = \\sqrt{5 - x}$?",
+    "options": ["$x \\ge 5$", "$x \\le 5$", "$x > 5$", "$x \\in \\mathbb{R}$"],
+    "answer": 1,
+    "explanation": "Need $5 - x \\ge 0$."
+  },
+  {
+    "id": "range-square",
+    "type": "mcq",
+    "lesson": "functions",
+    "concept": "Range",
+    "difficulty": 2,
+    "prompt": "What is the range of $f(x) = x^2 + 3$, $x \\in \\mathbb{R}$?",
+    "options": ["$f(x) \\ge 0$", "$f(x) \\ge 3$", "$f(x) > 3$", "$f(x) \\in \\mathbb{R}$"],
+    "answer": 1,
+    "explanation": "$x^2 \\ge 0$, so $x^2 + 3 \\ge 3$."
+  },
+  {
+    "id": "evaluate-f",
+    "type": "numeric",
+    "lesson": "functions",
+    "concept": "Function notation",
+    "difficulty": 1,
+    "prompt": "$f(x) = 2x^2 - 3x$. Find $f(-2)$.",
+    "answer": 14,
+    "tolerance": 0,
+    "explanation": "$2(4) + 6 = 14$."
+  },
+  {
+    "id": "inverse-value",
+    "type": "numeric",
+    "lesson": "functions",
+    "concept": "Inverse functions",
+    "difficulty": 2,
+    "prompt": "$f(x) = 5x - 4$. Find $f^{-1}(11)$.",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "Solve $5x - 4 = 11$: $x = 3$."
+  },
+  {
+    "id": "vertical-line",
+    "type": "tf",
+    "lesson": "functions",
+    "concept": "Function",
+    "difficulty": 1,
+    "prompt": "The circle $x^2 + y^2 = 4$ is the graph of a function $y = f(x)$.",
+    "answer": false,
+    "explanation": "Vertical lines meet it twice — two outputs for one input."
+  }
+]

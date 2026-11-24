@@ -1,0 +1,4 @@
+[
+  { "id": "features-meaning-card", "front": "Meaning of a horizontal asymptote in a model?", "back": "The long-term (limiting) value.", "concept": "Interpreting features" },
+  { "id": "gdc-accuracy-card", "front": "Accuracy of GDC answers?", "back": "Exact if possible, otherwise 3 significant figures.", "concept": "Maxima and minima" }
+]

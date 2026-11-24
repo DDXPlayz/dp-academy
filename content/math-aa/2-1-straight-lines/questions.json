@@ -1,0 +1,46 @@
+[
+  {
+    "id": "line-gradient",
+    "type": "numeric",
+    "lesson": "straight-lines",
+    "concept": "Gradient",
+    "difficulty": 1,
+    "prompt": "Find the gradient of the line through $(-1, 4)$ and $(3, -4)$.",
+    "answer": -2,
+    "tolerance": 0,
+    "explanation": "$\\dfrac{-4 - 4}{3 - (-1)} = -2$."
+  },
+  {
+    "id": "perp-gradient",
+    "type": "numeric",
+    "lesson": "straight-lines",
+    "concept": "Perpendicular lines",
+    "difficulty": 1,
+    "prompt": "A line has gradient $\\tfrac{4}{5}$. What is the gradient of a perpendicular line?",
+    "answer": -1.25,
+    "tolerance": 0.001,
+    "explanation": "$-\\tfrac54$."
+  },
+  {
+    "id": "line-intercept",
+    "type": "numeric",
+    "lesson": "straight-lines",
+    "concept": "Equation of a line",
+    "difficulty": 2,
+    "prompt": "The line through $(2, 5)$ with gradient 3 meets the y-axis at $(0, c)$. Find $c$.",
+    "answer": -1,
+    "tolerance": 0,
+    "explanation": "$y - 5 = 3(x - 2) \\Rightarrow y = 3x - 1$."
+  },
+  {
+    "id": "parallel-check",
+    "type": "mcq",
+    "lesson": "straight-lines",
+    "concept": "Parallel lines",
+    "difficulty": 2,
+    "prompt": "Which line is parallel to $2x + 4y = 7$?",
+    "options": ["$y = 2x + 1$", "$y = -\\tfrac12x + 3$", "$y = \\tfrac12x$", "$y = -2x$"],
+    "answer": 1,
+    "explanation": "$2x + 4y = 7 \\Rightarrow y = -\\tfrac12x + \\tfrac74$, gradient $-\\tfrac12$."
+  }
+]
