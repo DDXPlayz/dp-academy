@@ -1,0 +1,14 @@
+[
+  { "id": "inertial", "front": "What is an **inertial reference frame**?", "back": "A non-accelerating frame in which Newton’s first law holds.", "concept": "Reference frames" },
+  { "id": "galilean-principle", "front": "State the principle of **Galilean relativity**.", "back": "The laws of mechanics are the same in all inertial frames.", "concept": "Galilean relativity" },
+  { "id": "galilean-eqs", "front": "Galilean transformations?", "back": "$x' = x - vt$, $t' = t$, and $u' = u - v$.", "concept": "Galilean transformations" },
+  { "id": "postulates-card", "front": "Two **postulates** of special relativity?", "back": "1. The laws of physics are the same in all inertial frames. 2. The speed of light in a vacuum is the same for all inertial observers.", "concept": "Postulates of special relativity" },
+  { "id": "gamma-card", "front": "Lorentz factor γ?", "back": "$\\gamma = \\dfrac{1}{\\sqrt{1 - v^2/c^2}}$ — 1.25 at 0.6c, 1.67 at 0.8c.", "concept": "Lorentz factor" },
+  { "id": "lorentz-card", "front": "Lorentz transformations?", "back": "$x' = \\gamma(x - vt)$, $t' = \\gamma\\left(t - \\dfrac{vx}{c^2}\\right)$", "concept": "Lorentz transformations" },
+  { "id": "rel-add", "front": "Relativistic velocity addition?", "back": "$u' = \\dfrac{u - v}{1 - uv/c^2}$", "concept": "Relativistic velocity addition" },
+  { "id": "interval-card", "front": "Invariant space–time interval?", "back": "$(\\Delta s)^2 = (c\\Delta t)^2 - (\\Delta x)^2$ — the same in all inertial frames.", "concept": "Space–time interval" },
+  { "id": "proper-time", "front": "**Proper time** interval?", "back": "Time between two events measured where both happen at the same place; the shortest measured time. $\\Delta t = \\gamma\\Delta t_0$.", "concept": "Time dilation" },
+  { "id": "proper-length", "front": "**Proper length**?", "back": "Length measured in the object’s rest frame; the longest measured length. $L = L_0/\\gamma$.", "concept": "Length contraction" },
+  { "id": "muons-card", "front": "How do **muons** support special relativity?", "back": "Far more reach sea level than their rest half-life allows: time dilation (Earth frame) or length contraction of the atmosphere (muon frame).", "concept": "Muon decay" },
+  { "id": "worldline-card", "front": "World line angle and speed?", "back": "$\\tan\\theta = v/c$, with θ measured from the ct axis. Light is at 45°.", "concept": "Space–time diagrams" }
+]

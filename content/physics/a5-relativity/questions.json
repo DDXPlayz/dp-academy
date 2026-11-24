@@ -1,0 +1,158 @@
+[
+  {
+    "id": "galilean-velocity",
+    "type": "numeric",
+    "lesson": "galilean-relativity",
+    "concept": "Galilean velocity addition",
+    "difficulty": 1,
+    "prompt": "A boat moves at 8.0 m s⁻¹ relative to the shore. A passenger walks towards the back of the boat at 1.5 m s⁻¹ relative to the boat. What is the passenger’s speed relative to the shore?",
+    "answer": 6.5,
+    "tolerance": 0.02,
+    "unit": "m s⁻¹",
+    "explanation": "Taking the boat’s direction as positive, $u = u' + v = -1.5 + 8.0 = 6.5$ m s⁻¹ (still moving forwards relative to the shore)."
+  },
+  {
+    "id": "inertial-frame",
+    "type": "mcq",
+    "lesson": "galilean-relativity",
+    "concept": "Reference frames",
+    "difficulty": 1,
+    "prompt": "Which of these is the best example of an inertial reference frame?",
+    "options": ["A car braking at a junction", "A train moving at constant velocity on straight track", "A roundabout spinning at constant speed", "A lift accelerating upwards"],
+    "answer": 1,
+    "explanation": "An inertial frame is not accelerating. Braking, rotating and accelerating frames all have accelerations; only the train at constant velocity qualifies."
+  },
+  {
+    "id": "galilean-time",
+    "type": "tf",
+    "lesson": "galilean-relativity",
+    "concept": "Galilean transformations",
+    "difficulty": 1,
+    "prompt": "In the Galilean transformations, two observers moving relative to each other always agree on the time of an event.",
+    "answer": true,
+    "explanation": "Galilean relativity assumes absolute time: $t' = t$. Special relativity drops this assumption."
+  },
+  {
+    "id": "postulates",
+    "type": "multi",
+    "lesson": "lorentz-transformations",
+    "concept": "Postulates of special relativity",
+    "difficulty": 2,
+    "prompt": "Which statements are postulates of special relativity?",
+    "options": ["The laws of physics are the same in all inertial frames", "The speed of light in a vacuum is the same for all inertial observers", "Time is the same for all observers", "Nothing can have mass"],
+    "answers": [0, 1],
+    "explanation": "The two postulates are the principle of relativity and the constancy of $c$. Absolute time is what relativity **rejects**."
+  },
+  {
+    "id": "gamma-value",
+    "type": "numeric",
+    "lesson": "lorentz-transformations",
+    "concept": "Lorentz factor",
+    "difficulty": 1,
+    "prompt": "Calculate the Lorentz factor γ for a speed of 0.80c.",
+    "answer": 1.667,
+    "tolerance": 0.02,
+    "explanation": "$\\gamma = 1/\\sqrt{1 - 0.80^2} = 1/\\sqrt{0.36} = 1/0.60 = 1.67$."
+  },
+  {
+    "id": "rel-velocity",
+    "type": "numeric",
+    "lesson": "lorentz-transformations",
+    "concept": "Relativistic velocity addition",
+    "difficulty": 3,
+    "prompt": "Spacecraft A moves at +0.60c relative to Earth. Spacecraft B moves at −0.60c relative to Earth. What is the speed of B relative to A, as a fraction of c?",
+    "answer": 0.882,
+    "tolerance": 0.02,
+    "unit": "c",
+    "explanation": "$u' = \\dfrac{u - v}{1 - uv/c^2} = \\dfrac{-0.60 - 0.60}{1 - (-0.60)(0.60)} = \\dfrac{-1.20}{1.36} = -0.882c$, a speed of 0.882c."
+  },
+  {
+    "id": "interval-invariant",
+    "type": "mcq",
+    "lesson": "lorentz-transformations",
+    "concept": "Space–time interval",
+    "difficulty": 2,
+    "prompt": "Two events are separated by Δx = 600 m and Δt = 3.0 µs in frame S. What is (Δs)² in every inertial frame? (c = 3.0 × 10⁸ m s⁻¹)",
+    "options": ["4.5 × 10⁵ m²", "8.1 × 10⁵ m²", "3.6 × 10⁵ m²", "1.17 × 10⁶ m²"],
+    "answer": 0,
+    "explanation": "$(c\\Delta t)^2 - (\\Delta x)^2 = (900)^2 - (600)^2 = 810\\,000 - 360\\,000 = 4.5 \\times 10^5$ m². Every inertial observer gets this value."
+  },
+  {
+    "id": "proper-time-choice",
+    "type": "mcq",
+    "lesson": "time-dilation-length-contraction",
+    "concept": "Proper time",
+    "difficulty": 2,
+    "prompt": "A pion is created and decays inside a particle accelerator, moving at high speed relative to the lab. Who measures the proper lifetime of the pion?",
+    "options": ["A physicist in the lab", "An observer moving with the pion", "Any observer, because lifetime is invariant", "An observer moving opposite to the pion"],
+    "answer": 1,
+    "explanation": "Proper time is measured where both events (creation and decay) happen at the same place — in the pion’s own rest frame."
+  },
+  {
+    "id": "dilation-calc",
+    "type": "numeric",
+    "lesson": "time-dilation-length-contraction",
+    "concept": "Time dilation",
+    "difficulty": 2,
+    "prompt": "A clock on a spacecraft moving at 0.60c records 40 s between two events that happen on the craft. What time interval does an observer on Earth measure?",
+    "answer": 50,
+    "tolerance": 0.02,
+    "unit": "s",
+    "explanation": "$\\gamma = 1.25$ and 40 s is the proper time, so $\\Delta t = \\gamma\\Delta t_0 = 1.25 \\times 40 = 50$ s."
+  },
+  {
+    "id": "contraction-calc",
+    "type": "numeric",
+    "lesson": "time-dilation-length-contraction",
+    "concept": "Length contraction",
+    "difficulty": 2,
+    "prompt": "A rod has a proper length of 2.0 m. What length does an observer measure if the rod moves along its length at 0.80c?",
+    "answer": 1.2,
+    "tolerance": 0.02,
+    "unit": "m",
+    "explanation": "$\\gamma = 1.667$, so $L = L_0/\\gamma = 2.0/1.667 = 1.2$ m."
+  },
+  {
+    "id": "muon-evidence",
+    "type": "tf",
+    "lesson": "time-dilation-length-contraction",
+    "concept": "Muon decay",
+    "difficulty": 2,
+    "prompt": "In the muon’s own frame, muons reach sea level because the thickness of the atmosphere is length-contracted.",
+    "answer": true,
+    "explanation": "In the muon frame the muon’s half-life is the normal value, but the atmosphere rushing past is contracted by γ, so it is crossed in a few half-lives."
+  },
+  {
+    "id": "simultaneity",
+    "type": "tf",
+    "lesson": "time-dilation-length-contraction",
+    "concept": "Relativity of simultaneity",
+    "difficulty": 2,
+    "prompt": "If two events at different places are simultaneous in one inertial frame, they are simultaneous in every inertial frame.",
+    "answer": false,
+    "explanation": "Simultaneity is relative: from $t' = \\gamma(t - vx/c^2)$, events with equal $t$ but different $x$ have different $t'$."
+  },
+  {
+    "id": "worldline-angle",
+    "type": "numeric",
+    "lesson": "spacetime-diagrams",
+    "concept": "Space–time diagrams",
+    "difficulty": 2,
+    "prompt": "An object moves at 0.50c. What angle, in degrees, does its world line make with the ct axis?",
+    "answer": 26.57,
+    "tolerance": 0.02,
+    "unit": "°",
+    "explanation": "$\\tan\\theta = v/c = 0.50$, so $\\theta = 26.6^\\circ$."
+  },
+  {
+    "id": "light-45",
+    "type": "mcq",
+    "lesson": "spacetime-diagrams",
+    "concept": "Space–time diagrams",
+    "difficulty": 1,
+    "prompt": "On a space–time diagram with ct on the vertical axis, a light ray’s world line is:",
+    "options": ["Vertical", "Horizontal", "At 45° to the axes", "Curved"],
+    "answer": 2,
+    "explanation": "Light moves at $c$, so it covers distance $x = ct$: equal steps on both axes, a 45° line."
+  }
+]
