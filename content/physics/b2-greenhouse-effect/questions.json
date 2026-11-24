@@ -1,0 +1,102 @@
+[
+  {
+    "id": "mean-intensity",
+    "type": "numeric",
+    "lesson": "earth-energy-balance",
+    "concept": "Solar constant",
+    "difficulty": 1,
+    "prompt": "The solar constant is 1360 W m⁻². What is the mean intensity of sunlight averaged over the whole Earth’s surface?",
+    "answer": 340,
+    "tolerance": 0.02,
+    "unit": "W m⁻²",
+    "explanation": "Earth intercepts sunlight on a disc ($\\pi R^2$) but spreads it over a sphere ($4\\pi R^2$): $1360/4 = 340$ W m⁻²."
+  },
+  {
+    "id": "albedo-calc",
+    "type": "numeric",
+    "lesson": "earth-energy-balance",
+    "concept": "Albedo",
+    "difficulty": 1,
+    "prompt": "A surface receives 800 W m⁻² and reflects 240 W m⁻². What is its albedo?",
+    "answer": 0.3,
+    "tolerance": 0.02,
+    "explanation": "$\\alpha = \\dfrac{\\text{scattered}}{\\text{incident}} = \\dfrac{240}{800} = 0.30$."
+  },
+  {
+    "id": "emissivity-calc",
+    "type": "numeric",
+    "lesson": "earth-energy-balance",
+    "concept": "Emissivity",
+    "difficulty": 2,
+    "prompt": "A surface at 290 K radiates 320 W m⁻². What is its emissivity? (σ = 5.67 × 10⁻⁸ W m⁻² K⁻⁴)",
+    "answer": 0.80,
+    "tolerance": 0.03,
+    "explanation": "$e = \\dfrac{320}{\\sigma T^4} = \\dfrac{320}{5.67\\times10^{-8} \\times 290^4} = \\dfrac{320}{401} = 0.80$."
+  },
+  {
+    "id": "albedo-variation",
+    "type": "multi",
+    "lesson": "earth-energy-balance",
+    "concept": "Albedo",
+    "difficulty": 2,
+    "prompt": "Which factors make Earth’s albedo vary?",
+    "options": ["Cloud cover", "Latitude (ice and snow near the poles)", "The distance to the Sun", "Type of surface, such as ocean or desert"],
+    "answers": [0, 1, 3],
+    "explanation": "Albedo depends on what the sunlight hits — clouds, ice, oceans, deserts. Distance to the Sun changes the incoming intensity, not the fraction reflected."
+  },
+  {
+    "id": "equilibrium-temp",
+    "type": "numeric",
+    "lesson": "earth-energy-balance",
+    "concept": "Energy balance",
+    "difficulty": 3,
+    "prompt": "A planet with no atmosphere receives a solar constant of 2600 W m⁻² and has albedo 0.10. Treating it as a black body, estimate its equilibrium surface temperature.",
+    "answer": 319,
+    "tolerance": 0.02,
+    "unit": "K",
+    "explanation": "Absorbed per m²: $(1 - 0.10)\\dfrac{2600}{4} = 585$ W m⁻². Set equal to $\\sigma T^4$: $T = \\left(\\dfrac{585}{5.67\\times10^{-8}}\\right)^{1/4} = 319$ K."
+  },
+  {
+    "id": "greenhouse-gases",
+    "type": "multi",
+    "lesson": "greenhouse-gases",
+    "concept": "Greenhouse gases",
+    "difficulty": 1,
+    "prompt": "Which of these are greenhouse gases?",
+    "options": ["Carbon dioxide", "Methane", "Nitrogen", "Water vapour", "Nitrous oxide", "Oxygen"],
+    "answers": [0, 1, 3, 4],
+    "explanation": "CO₂, CH₄, H₂O and N₂O absorb infrared. N₂ and O₂ do not, despite making up most of the atmosphere."
+  },
+  {
+    "id": "greenhouse-wavelength",
+    "type": "mcq",
+    "lesson": "greenhouse-gases",
+    "concept": "Greenhouse mechanism",
+    "difficulty": 2,
+    "prompt": "Greenhouse gases mainly absorb:",
+    "options": ["Incoming visible light from the Sun", "Outgoing infrared radiation from Earth’s surface", "Ultraviolet radiation", "Microwaves from space"],
+    "answer": 1,
+    "explanation": "Earth (≈288 K) radiates mainly infrared; greenhouse gas molecules have vibrational energy levels that match infrared photons."
+  },
+  {
+    "id": "resonance-model",
+    "type": "tf",
+    "lesson": "greenhouse-gases",
+    "concept": "Greenhouse mechanism",
+    "difficulty": 2,
+    "prompt": "In the resonance model, a greenhouse gas absorbs strongly when the frequency of the infrared radiation matches the natural frequency of vibration of its molecules.",
+    "answer": true,
+    "explanation": "Matching frequencies means resonance — large energy absorption. The energy-level picture says the same thing: the photon energy equals the gap between vibrational levels."
+  },
+  {
+    "id": "enhanced-effect",
+    "type": "mcq",
+    "lesson": "greenhouse-gases",
+    "concept": "Enhanced greenhouse effect",
+    "difficulty": 1,
+    "prompt": "What is the enhanced greenhouse effect?",
+    "options": ["The natural warming that keeps Earth habitable", "Extra warming due to increased greenhouse gases from human activity", "Cooling caused by aerosols", "The thinning of the ozone layer"],
+    "answer": 1,
+    "explanation": "The natural greenhouse effect warms Earth by about 33 K; the **enhanced** effect is the additional warming from human emissions."
+  }
+]

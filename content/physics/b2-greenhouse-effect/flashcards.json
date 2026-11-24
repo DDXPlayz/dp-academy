@@ -1,0 +1,10 @@
+[
+  { "id": "emissivity-card", "front": "Define **emissivity**.", "back": "Power radiated per unit area by a surface ÷ power per unit area from a black body at the same temperature. $P = e\\sigma AT^4$.", "concept": "Emissivity" },
+  { "id": "albedo-card", "front": "Define **albedo**.", "back": "Total scattered (reflected) power ÷ total incident power. Earth’s average ≈ 0.3.", "concept": "Albedo" },
+  { "id": "solar-constant-card", "front": "What is the **solar constant**?", "back": "Intensity of sunlight at the top of the atmosphere, perpendicular to the rays: ≈ 1360 W m⁻².", "concept": "Solar constant" },
+  { "id": "s-over-4", "front": "Why is the mean incoming intensity S/4?", "back": "Sunlight is intercepted by a disc (πR²) but spread over a sphere (4πR²).", "concept": "Solar constant" },
+  { "id": "balance-card", "front": "Equilibrium condition for a planet?", "back": "$(1-\\alpha)\\dfrac{S}{4} = e\\sigma T^4$ — power absorbed = power emitted.", "concept": "Energy balance" },
+  { "id": "ghg-card", "front": "Four main greenhouse gases?", "back": "Water vapour, carbon dioxide, methane, nitrous oxide.", "concept": "Greenhouse gases" },
+  { "id": "ghg-mechanism", "front": "How do greenhouse gases warm the surface?", "back": "Surface emits IR → gases absorb (vibrational energy levels / resonance) → re-emit in all directions, some back to the surface.", "concept": "Greenhouse mechanism" },
+  { "id": "enhanced-card", "front": "Enhanced greenhouse effect?", "back": "Extra warming due to increased greenhouse gas concentrations from human activity.", "concept": "Enhanced greenhouse effect" }
+]
