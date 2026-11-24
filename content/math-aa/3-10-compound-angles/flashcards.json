@@ -1,0 +1,5 @@
+[
+  { "id": "sin-comp-card", "front": "(HL) $\\sin(A \\pm B)$?", "back": "$\\sin A\\cos B \\pm \\cos A\\sin B$", "concept": "Compound angles" },
+  { "id": "cos-comp-card", "front": "(HL) $\\cos(A \\pm B)$?", "back": "$\\cos A\\cos B \\mp \\sin A\\sin B$", "concept": "Compound angles" },
+  { "id": "tan-comp-card", "front": "(HL) $\\tan(A \\pm B)$ and $\\tan2\\theta$?", "back": "$\\frac{\\tan A \\pm \\tan B}{1 \\mp \\tan A\\tan B}$; $\\frac{2\\tan\\theta}{1 - \\tan^2\\theta}$.", "concept": "Double angle (tan)" }
+]

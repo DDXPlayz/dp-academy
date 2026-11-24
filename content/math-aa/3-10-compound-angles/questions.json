@@ -1,0 +1,46 @@
+[
+  {
+    "id": "sin-75",
+    "type": "numeric",
+    "lesson": "compound-angles",
+    "concept": "Compound angles",
+    "difficulty": 2,
+    "prompt": "(HL) Evaluate $\\sin75°$ using a compound angle identity (3 s.f.).",
+    "answer": 0.966,
+    "tolerance": 0.002,
+    "explanation": "$\\sin45\\cos30 + \\cos45\\sin30 = \\frac{\\sqrt6 + \\sqrt2}{4} = 0.966$."
+  },
+  {
+    "id": "tan-sum",
+    "type": "numeric",
+    "lesson": "compound-angles",
+    "concept": "Compound angles",
+    "difficulty": 2,
+    "prompt": "(HL) $\\tan A = 2$, $\\tan B = 3$. Find $\\tan(A + B)$.",
+    "answer": -1,
+    "tolerance": 0,
+    "explanation": "$\\frac{5}{1 - 6} = -1$."
+  },
+  {
+    "id": "tan-double",
+    "type": "numeric",
+    "lesson": "compound-angles",
+    "concept": "Double angle (tan)",
+    "difficulty": 2,
+    "prompt": "(HL) If $\\tan\\theta = \\tfrac12$, find $\\tan2\\theta$ (3 s.f.).",
+    "answer": 1.33,
+    "tolerance": 0.003,
+    "explanation": "$\\frac{1}{1 - \\frac14} = \\frac43$."
+  },
+  {
+    "id": "cos-sign",
+    "type": "mcq",
+    "lesson": "compound-angles",
+    "concept": "Compound angles",
+    "difficulty": 1,
+    "prompt": "(HL) $\\cos(A - B) =$",
+    "options": ["$\\cos A\\cos B - \\sin A\\sin B$", "$\\cos A\\cos B + \\sin A\\sin B$", "$\\sin A\\cos B - \\cos A\\sin B$", "$\\cos A - \\cos B$"],
+    "answer": 1,
+    "explanation": "The sign flips: minus in the angle gives plus in the expansion."
+  }
+]

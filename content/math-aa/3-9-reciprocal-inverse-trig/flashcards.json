@@ -1,0 +1,5 @@
+[
+  { "id": "recip-trig-card", "front": "(HL) sec, cosec, cot?", "back": "$1/\\cos$, $1/\\sin$, $\\cos/\\sin$.", "concept": "Reciprocal ratios" },
+  { "id": "sec-id-card", "front": "(HL) Pythagorean identities with sec and cosec?", "back": "$1 + \\tan^2\\theta = \\sec^2\\theta$; $1 + \\cot^2\\theta = \\csc^2\\theta$.", "concept": "Pythagorean identities" },
+  { "id": "arc-ranges-card", "front": "(HL) Ranges of arcsin, arccos, arctan?", "back": "$[-\\frac\\pi2, \\frac\\pi2]$, $[0, \\pi]$, $(-\\frac\\pi2, \\frac\\pi2)$.", "concept": "Inverse trig" }
+]

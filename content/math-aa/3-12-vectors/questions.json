@@ -1,0 +1,45 @@
+[
+  {
+    "id": "magnitude",
+    "type": "numeric",
+    "lesson": "vectors",
+    "concept": "Magnitude",
+    "difficulty": 1,
+    "prompt": "(HL) Find $|2\\mathbf i - \\mathbf j + 2\\mathbf k|$.",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "$\\sqrt{4 + 1 + 4} = 3$."
+  },
+  {
+    "id": "displacement",
+    "type": "mcq",
+    "lesson": "vectors",
+    "concept": "Displacement",
+    "difficulty": 1,
+    "prompt": "(HL) A(2, 0, 5), B(−1, 4, 3). What is $\\overrightarrow{AB}$?",
+    "options": ["$(3, -4, 2)$", "$(-3, 4, -2)$", "$(1, 4, 8)$", "$(-3, 4, 2)$"],
+    "answer": 1,
+    "explanation": "$\\mathbf b - \\mathbf a = (-3, 4, -2)$."
+  },
+  {
+    "id": "parallel-k",
+    "type": "numeric",
+    "lesson": "vectors",
+    "concept": "Parallel vectors",
+    "difficulty": 2,
+    "prompt": "(HL) $(2, -3, p)$ is parallel to $(-4, 6, 10)$. Find $p$.",
+    "answer": -5,
+    "tolerance": 0,
+    "explanation": "Scale factor $-\\tfrac12$: $p = -5$."
+  },
+  {
+    "id": "unit-length",
+    "type": "tf",
+    "lesson": "vectors",
+    "concept": "Unit vectors",
+    "difficulty": 1,
+    "prompt": "(HL) A unit vector has magnitude 1.",
+    "answer": true,
+    "explanation": "By definition; divide any vector by its magnitude to get one."
+  }
+]

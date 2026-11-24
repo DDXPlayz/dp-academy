@@ -1,0 +1,4 @@
+[
+  { "id": "dot-card", "front": "(HL) Scalar product two ways?", "back": "$v_1w_1 + v_2w_2 + v_3w_3 = |\\mathbf v||\\mathbf w|\\cos\\theta$", "concept": "Scalar product" },
+  { "id": "perp-dot-card", "front": "(HL) Test for perpendicular vectors?", "back": "$\\mathbf v\\cdot\\mathbf w = 0$", "concept": "Perpendicular vectors" }
+]

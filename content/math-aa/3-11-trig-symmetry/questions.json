@@ -1,0 +1,46 @@
+[
+  {
+    "id": "symmetry-simplify",
+    "type": "mcq",
+    "lesson": "trig-symmetry",
+    "concept": "Symmetries",
+    "difficulty": 2,
+    "prompt": "(HL) $\\cos(\\pi - x) + \\cos(-x)$ simplifies to:",
+    "options": ["$0$", "$2\\cos x$", "$-2\\cos x$", "$2\\sin x$"],
+    "answer": 0,
+    "explanation": "$-\\cos x + \\cos x = 0$."
+  },
+  {
+    "id": "comp-angle",
+    "type": "mcq",
+    "lesson": "trig-symmetry",
+    "concept": "Complementary angles",
+    "difficulty": 1,
+    "prompt": "(HL) $\\sin\\left(\\tfrac\\pi2 - x\\right) =$",
+    "options": ["$\\sin x$", "$\\cos x$", "$-\\cos x$", "$-\\sin x$"],
+    "answer": 1,
+    "explanation": "Complementary angles."
+  },
+  {
+    "id": "odd-sin",
+    "type": "numeric",
+    "lesson": "trig-symmetry",
+    "concept": "Symmetries",
+    "difficulty": 1,
+    "prompt": "(HL) If $\\sin a = 0.3$, find $\\sin(-a)$.",
+    "answer": -0.3,
+    "tolerance": 0.001,
+    "explanation": "sin is odd."
+  },
+  {
+    "id": "sin-pi-plus",
+    "type": "numeric",
+    "lesson": "trig-symmetry",
+    "concept": "Symmetries",
+    "difficulty": 2,
+    "prompt": "(HL) If $\\sin a = 0.3$, find $\\sin(\\pi + a)$.",
+    "answer": -0.3,
+    "tolerance": 0.001,
+    "explanation": "$\\sin(\\pi + a) = -\\sin a$."
+  }
+]

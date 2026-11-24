@@ -1,0 +1,5 @@
+[
+  { "id": "ab-card", "front": "(HL) Vector from A to B?", "back": "$\\overrightarrow{AB} = \\mathbf b - \\mathbf a$", "concept": "Displacement" },
+  { "id": "unit-card", "front": "(HL) Unit vector in direction of v?", "back": "$\\mathbf v/|\\mathbf v|$", "concept": "Unit vectors" },
+  { "id": "collinear-card", "front": "(HL) Showing points are collinear?", "back": "Show $\\overrightarrow{AB} = k\\overrightarrow{AC}$ (parallel, common point A).", "concept": "Parallel vectors" }
+]

@@ -1,0 +1,5 @@
+[
+  { "id": "odd-even-trig-card", "front": "(HL) Odd/even trig functions?", "back": "sin and tan odd; cos even.", "concept": "Symmetries" },
+  { "id": "supp-card", "front": "(HL) $\\sin(\\pi - x)$ and $\\cos(\\pi - x)$?", "back": "$\\sin x$ and $-\\cos x$.", "concept": "Symmetries" },
+  { "id": "compl-card", "front": "(HL) $\\cos(\\frac\\pi2 - x)$?", "back": "$\\sin x$", "concept": "Complementary angles" }
+]

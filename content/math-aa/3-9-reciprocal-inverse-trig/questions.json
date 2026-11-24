@@ -1,0 +1,56 @@
+[
+  {
+    "id": "sec-value",
+    "type": "numeric",
+    "lesson": "reciprocal-inverse-trig",
+    "concept": "Reciprocal ratios",
+    "difficulty": 1,
+    "prompt": "(HL) Find $\\sec\\dfrac{\\pi}{3}$.",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "$1/\\cos\\frac\\pi3 = 1/\\tfrac12 = 2$."
+  },
+  {
+    "id": "tan-sec-id",
+    "type": "numeric",
+    "lesson": "reciprocal-inverse-trig",
+    "concept": "Pythagorean identities",
+    "difficulty": 2,
+    "prompt": "(HL) If $\\tan\\theta = 3$, find $\\sec^2\\theta$.",
+    "answer": 10,
+    "tolerance": 0,
+    "explanation": "$1 + 9 = 10$."
+  },
+  {
+    "id": "arccos-range",
+    "type": "mcq",
+    "lesson": "reciprocal-inverse-trig",
+    "concept": "Inverse trig",
+    "difficulty": 2,
+    "prompt": "(HL) What is the range of $y = \\arccos x$?",
+    "options": ["$[-1, 1]$", "$[-\\frac\\pi2, \\frac\\pi2]$", "$[0, \\pi]$", "$(0, 2\\pi)$"],
+    "answer": 2,
+    "explanation": "cos is restricted to $[0, \\pi]$ to make it one-to-one."
+  },
+  {
+    "id": "arcsin-value",
+    "type": "numeric",
+    "lesson": "reciprocal-inverse-trig",
+    "concept": "Inverse trig",
+    "difficulty": 2,
+    "prompt": "(HL) Evaluate $\\arcsin(-\\tfrac12)$ (3 s.f.).",
+    "answer": -0.524,
+    "tolerance": 0.002,
+    "explanation": "$-\\pi/6 = -0.524$."
+  },
+  {
+    "id": "inverse-notation",
+    "type": "tf",
+    "lesson": "reciprocal-inverse-trig",
+    "concept": "Inverse trig",
+    "difficulty": 1,
+    "prompt": "(HL) $\\sin^{-1}x = \\dfrac{1}{\\sin x}$.",
+    "answer": false,
+    "explanation": "$\\sin^{-1}x$ means $\\arcsin x$; $1/\\sin x = \\csc x$."
+  }
+]
