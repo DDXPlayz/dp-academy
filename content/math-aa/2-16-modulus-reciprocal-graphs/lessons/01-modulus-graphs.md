@@ -10,7 +10,7 @@ objectives:
   - Solve modulus equations and inequalities analytically and graphically.
 definitions:
   - term: Modulus
-    definition: |x| = x if x ≥ 0 and −x if x < 0 — the distance from zero.
+    definition: The absolute value — |x| = x if x ≥ 0 and −x if x < 0, the distance from zero.
 mistakes:
   - Confusing |f(x)| with f(|x|). |f(x)| reflects the negative parts up; f(|x|) reflects the right half into the left.
   - Not checking solutions of modulus equations — squaring or splitting can introduce invalid ones.
