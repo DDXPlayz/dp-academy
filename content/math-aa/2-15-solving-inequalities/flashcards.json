@@ -1,0 +1,4 @@
+[
+  { "id": "ineq-method-card", "front": "(HL) Method for polynomial/rational inequalities?", "back": "Make one side zero, factorise, find critical values, sign diagram.", "concept": "Polynomial inequalities" },
+  { "id": "ineq-trap-card", "front": "(HL) Why not multiply by the denominator?", "back": "Its sign is unknown — a negative multiplier reverses the inequality.", "concept": "Rational inequalities" }
+]

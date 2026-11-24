@@ -1,0 +1,4 @@
+[
+  { "id": "oblique-card", "front": "(HL) When is there an oblique asymptote?", "back": "Numerator degree = denominator degree + 1; divide to find y = mx + c.", "concept": "Oblique asymptotes" },
+  { "id": "ha-zero-card", "front": "(HL) Horizontal asymptote when numerator degree < denominator degree?", "back": "$y = 0$.", "concept": "Horizontal asymptotes" }
+]

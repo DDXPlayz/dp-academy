@@ -1,0 +1,5 @@
+[
+  { "id": "factor-thm-card", "front": "(HL) Factor and remainder theorems?", "back": "Remainder of $P(x) \\div (x - a)$ is $P(a)$; $P(a) = 0 \\iff (x - a)$ is a factor.", "concept": "Factor theorem" },
+  { "id": "roots-sum-card", "front": "(HL) Sum and product of roots of a polynomial?", "back": "Sum $= -a_{n-1}/a_n$; product $= (-1)^na_0/a_n$.", "concept": "Sum and product of roots" },
+  { "id": "multiplicity-card", "front": "(HL) Graph at single, double, triple roots?", "back": "Crosses; touches; crosses with a flat inflection.", "concept": "Graphs" }
+]

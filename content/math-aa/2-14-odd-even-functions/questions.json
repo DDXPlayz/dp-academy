@@ -1,0 +1,45 @@
+[
+  {
+    "id": "odd-even",
+    "type": "mcq",
+    "lesson": "odd-even-inverse",
+    "concept": "Odd and even functions",
+    "difficulty": 1,
+    "prompt": "(HL) Which function is even?",
+    "options": ["$x^3$", "$x^2 + \\cos x$", "$\\sin x$", "$x^2 + x$"],
+    "answer": 1,
+    "explanation": "$x^2$ and $\\cos x$ are both even, so their sum is even."
+  },
+  {
+    "id": "odd-check",
+    "type": "tf",
+    "lesson": "odd-even-inverse",
+    "concept": "Odd and even functions",
+    "difficulty": 2,
+    "prompt": "(HL) $f(x) = x\\sin x$ is an odd function.",
+    "answer": false,
+    "explanation": "$(-x)\\sin(-x) = x\\sin x$: it is even."
+  },
+  {
+    "id": "restrict-domain",
+    "type": "numeric",
+    "lesson": "odd-even-inverse",
+    "concept": "Restricted domains",
+    "difficulty": 2,
+    "prompt": "(HL) $f(x) = x^2 - 6x + 2$, $x \\ge a$. Find the smallest $a$ for which $f$ has an inverse.",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "The vertex is at $x = 3$; restrict to one side of it."
+  },
+  {
+    "id": "self-inverse-check",
+    "type": "mcq",
+    "lesson": "odd-even-inverse",
+    "concept": "Self-inverse",
+    "difficulty": 3,
+    "prompt": "(HL) Which function is self-inverse?",
+    "options": ["$f(x) = 2x$", "$f(x) = 5 - x$", "$f(x) = x^2$", "$f(x) = x + 1$"],
+    "answer": 1,
+    "explanation": "$f(f(x)) = 5 - (5 - x) = x$."
+  }
+]

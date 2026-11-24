@@ -1,0 +1,45 @@
+[
+  {
+    "id": "oblique",
+    "type": "mcq",
+    "lesson": "rational-functions-hl",
+    "concept": "Oblique asymptotes",
+    "difficulty": 3,
+    "prompt": "(HL) Find the oblique asymptote of $y = \\dfrac{2x^2 + x - 1}{x - 1}$.",
+    "options": ["$y = 2x + 3$", "$y = 2x + 1$", "$y = 2x - 3$", "no oblique asymptote"],
+    "answer": 0,
+    "explanation": "$2x^2 + x - 1 = (x - 1)(2x + 3) + 2$, so $y = 2x + 3 + \\dfrac{2}{x - 1}$."
+  },
+  {
+    "id": "va-count",
+    "type": "numeric",
+    "lesson": "rational-functions-hl",
+    "concept": "Vertical asymptotes",
+    "difficulty": 2,
+    "prompt": "(HL) How many vertical asymptotes does $y = \\dfrac{3}{x^2 + 1}$ have?",
+    "answer": 0,
+    "tolerance": 0,
+    "explanation": "$x^2 + 1 > 0$ for all real $x$."
+  },
+  {
+    "id": "oblique-2",
+    "type": "mcq",
+    "lesson": "rational-functions-hl",
+    "concept": "Oblique asymptotes",
+    "difficulty": 3,
+    "prompt": "(HL) What is the oblique asymptote of $y = \\dfrac{x^2 + 1}{x}$?",
+    "options": ["$y = x$", "$y = x + 1$", "$y = 1$", "$y = 0$"],
+    "answer": 0,
+    "explanation": "$y = x + \\dfrac1x$, and $\\dfrac1x \\to 0$."
+  },
+  {
+    "id": "ha-zero",
+    "type": "tf",
+    "lesson": "rational-functions-hl",
+    "concept": "Horizontal asymptotes",
+    "difficulty": 1,
+    "prompt": "(HL) $y = \\dfrac{x + 5}{x^2 - 9}$ has horizontal asymptote $y = 0$.",
+    "answer": true,
+    "explanation": "The numerator has lower degree than the denominator."
+  }
+]

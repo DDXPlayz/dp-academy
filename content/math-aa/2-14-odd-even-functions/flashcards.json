@@ -1,0 +1,5 @@
+[
+  { "id": "even-odd-card", "front": "(HL) Even and odd function tests?", "back": "Even: $f(-x) = f(x)$ (y-axis symmetry). Odd: $f(-x) = -f(x)$ (origin symmetry).", "concept": "Odd and even functions" },
+  { "id": "self-inv-card", "front": "(HL) Self-inverse function?", "back": "$f(f(x)) = x$; graph symmetric in $y = x$.", "concept": "Self-inverse" },
+  { "id": "one-one-card", "front": "(HL) When does a function have an inverse?", "back": "When it is one-to-one — restrict the domain if needed.", "concept": "Restricted domains" }
+]

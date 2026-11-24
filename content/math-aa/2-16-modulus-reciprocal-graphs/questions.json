@@ -1,0 +1,45 @@
+[
+  {
+    "id": "modulus-eq",
+    "type": "numeric",
+    "lesson": "modulus-graphs",
+    "concept": "Modulus equations",
+    "difficulty": 2,
+    "prompt": "(HL) Solve $|3x - 1| = 8$ and give the positive solution.",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "$3x - 1 = 8 \\Rightarrow x = 3$; or $3x - 1 = -8 \\Rightarrow x = -7/3$."
+  },
+  {
+    "id": "modulus-ineq",
+    "type": "mcq",
+    "lesson": "modulus-graphs",
+    "concept": "Modulus inequalities",
+    "difficulty": 2,
+    "prompt": "(HL) Solve $|x + 1| \\le 4$.",
+    "options": ["$-5 \\le x \\le 3$", "$-3 \\le x \\le 5$", "$x \\le 3$", "$x \\ge -5$"],
+    "answer": 0,
+    "explanation": "$-4 \\le x + 1 \\le 4$."
+  },
+  {
+    "id": "reciprocal-asym",
+    "type": "numeric",
+    "lesson": "modulus-graphs",
+    "concept": "Reciprocal graphs",
+    "difficulty": 2,
+    "prompt": "(HL) How many vertical asymptotes does $y = \\dfrac{1}{x^2 - 9}$ have?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "The zeros of $x^2 - 9$, $x = \\pm3$."
+  },
+  {
+    "id": "f-abs-x",
+    "type": "tf",
+    "lesson": "modulus-graphs",
+    "concept": "Modulus graphs",
+    "difficulty": 2,
+    "prompt": "(HL) The graph of $y = f(|x|)$ is always symmetric about the y-axis.",
+    "answer": true,
+    "explanation": "$f(|-x|) = f(|x|)$: it is an even function."
+  }
+]

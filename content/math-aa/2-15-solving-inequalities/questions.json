@@ -1,0 +1,45 @@
+[
+  {
+    "id": "cubic-ineq",
+    "type": "mcq",
+    "lesson": "inequalities",
+    "concept": "Polynomial inequalities",
+    "difficulty": 2,
+    "prompt": "(HL) Solve $(x - 1)(x + 2)(x - 4) < 0$.",
+    "options": ["$x < -2$ or $1 < x < 4$", "$-2 < x < 1$ or $x > 4$", "$-2 < x < 4$", "$x < 1$"],
+    "answer": 0,
+    "explanation": "Positive cubic: negative for $x < -2$, positive on $(-2, 1)$, negative on $(1, 4)$, positive after 4."
+  },
+  {
+    "id": "rational-ineq",
+    "type": "mcq",
+    "lesson": "inequalities",
+    "concept": "Rational inequalities",
+    "difficulty": 3,
+    "prompt": "(HL) Solve $\\dfrac{1}{x - 1} > 1$.",
+    "options": ["$x < 2$", "$1 < x < 2$", "$x > 2$", "$x > 1$"],
+    "answer": 1,
+    "explanation": "$\\dfrac{1 - (x - 1)}{x - 1} > 0 \\Rightarrow \\dfrac{2 - x}{x - 1} > 0$: true for $1 < x < 2$."
+  },
+  {
+    "id": "multiply-trap",
+    "type": "tf",
+    "lesson": "inequalities",
+    "concept": "Rational inequalities",
+    "difficulty": 2,
+    "prompt": "(HL) To solve $\\dfrac{3}{x} < 1$ it is valid to multiply both sides by $x$ to get $3 < x$.",
+    "answer": false,
+    "explanation": "If $x < 0$ the inequality would reverse; the full solution is $x < 0$ or $x > 3$."
+  },
+  {
+    "id": "graph-ineq",
+    "type": "numeric",
+    "lesson": "inequalities",
+    "concept": "Graphical inequalities",
+    "difficulty": 2,
+    "prompt": "(HL) $x^2 \\le x + 2$ holds for $a \\le x \\le b$. Find $b$.",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "$x^2 - x - 2 \\le 0 \\Rightarrow (x - 2)(x + 1) \\le 0 \\Rightarrow -1 \\le x \\le 2$."
+  }
+]

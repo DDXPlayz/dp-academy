@@ -1,0 +1,5 @@
+[
+  { "id": "abs-f-card", "front": "(HL) $|f(x)|$ vs $f(|x|)$?", "back": "$|f(x)|$: reflect negative parts up. $f(|x|)$: reflect the $x \\ge 0$ part in the y-axis.", "concept": "Modulus graphs" },
+  { "id": "recip-f-card", "front": "(HL) Sketching $1/f(x)$?", "back": "Zeros of $f$ → vertical asymptotes; max ↔ min; points at $y = \\pm1$ unchanged.", "concept": "Reciprocal graphs" },
+  { "id": "abs-eq-card", "front": "(HL) Solving $|A| = B$?", "back": "$A = B$ or $A = -B$; check each solution.", "concept": "Modulus equations" }
+]
