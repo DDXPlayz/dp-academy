@@ -1,0 +1,10 @@
+[
+  { "id": "rate-card", "front": "Rate of reaction?", "back": "Change in concentration per unit time (mol dm⁻³ s⁻¹); gradient of tangent on a conc–time graph.", "concept": "Rate of reaction" },
+  { "id": "collision-card", "front": "Conditions for a successful collision?", "back": "Energy ≥ Ea and correct orientation.", "concept": "Collision theory" },
+  { "id": "temp-card", "front": "Why does temperature raise rate so much?", "back": "Many more particles have E ≥ Ea (Maxwell–Boltzmann), plus more frequent collisions.", "concept": "Collision theory" },
+  { "id": "catalyst-card", "front": "How does a catalyst work?", "back": "Alternative pathway with lower Ea; not used up.", "concept": "Catalysts" },
+  { "id": "rate-eq-card", "front": "(HL) Rate equation?", "back": "rate = k[A]ᵐ[B]ⁿ — orders found experimentally.", "concept": "Orders of reaction" },
+  { "id": "k-units-card", "front": "(HL) Units of k for orders 0, 1, 2?", "back": "mol dm⁻³ s⁻¹; s⁻¹; dm³ mol⁻¹ s⁻¹.", "concept": "Rate constant" },
+  { "id": "rds-card", "front": "(HL) Rate-determining step?", "back": "The slowest step; rate equation includes species up to and including it.", "concept": "Mechanisms" },
+  { "id": "arrhenius-card", "front": "(HL) Arrhenius equation and plot?", "back": "k = Ae^(−Ea/RT); ln k vs 1/T has gradient −Ea/R, intercept ln A.", "concept": "Arrhenius equation" }
+]

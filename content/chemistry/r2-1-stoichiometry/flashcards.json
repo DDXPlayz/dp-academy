@@ -1,0 +1,8 @@
+[
+  { "id": "three-step-card", "front": "Stoichiometry method?", "back": "Known → moles → mole ratio → moles of unknown → required quantity.", "concept": "Reacting masses" },
+  { "id": "n-forms-card", "front": "Ways to get moles?", "back": "n = m/M; n = V/22.7 (gas at STP, dm³); n = cV (V in dm³).", "concept": "Reacting masses" },
+  { "id": "concordant-card", "front": "Concordant titres?", "back": "Within 0.10 cm³ of each other — average only these.", "concept": "Titration" },
+  { "id": "limiting-card", "front": "Find the limiting reactant?", "back": "Moles ÷ coefficient for each reactant; the smallest is limiting.", "concept": "Limiting reactant" },
+  { "id": "yield-card", "front": "Percentage yield?", "back": "Experimental ÷ theoretical × 100.", "concept": "Percentage yield" },
+  { "id": "ae-card", "front": "Atom economy?", "back": "M(desired product) ÷ ΣM(reactants) × 100.", "concept": "Atom economy" }
+]

@@ -1,0 +1,154 @@
+[
+  {
+    "id": "k-expression",
+    "type": "mcq",
+    "lesson": "dynamic-equilibrium",
+    "concept": "Equilibrium constant",
+    "difficulty": 1,
+    "prompt": "What is K for 2SO₂(g) + O₂(g) ⇌ 2SO₃(g)?",
+    "options": ["[SO₃]/[SO₂][O₂]", "[SO₃]²/[SO₂]²[O₂]", "[SO₂]²[O₂]/[SO₃]²", "2[SO₃]/2[SO₂][O₂]"],
+    "answer": 1,
+    "explanation": "Products over reactants, each raised to its coefficient."
+  },
+  {
+    "id": "dynamic-tf",
+    "type": "tf",
+    "lesson": "dynamic-equilibrium",
+    "concept": "Dynamic equilibrium",
+    "difficulty": 1,
+    "prompt": "At equilibrium, the forward and backward reactions have stopped.",
+    "answer": false,
+    "explanation": "Both continue at equal rates — that is why it is called dynamic."
+  },
+  {
+    "id": "k-large",
+    "type": "mcq",
+    "lesson": "dynamic-equilibrium",
+    "concept": "Magnitude of K",
+    "difficulty": 1,
+    "prompt": "A reaction has K = 4 × 10¹⁵ at 298 K. At equilibrium the mixture contains:",
+    "options": ["mainly reactants", "mainly products", "equal amounts", "no products"],
+    "answer": 1,
+    "explanation": "A very large K means the equilibrium lies far to the right."
+  },
+  {
+    "id": "k-reverse",
+    "type": "numeric",
+    "lesson": "dynamic-equilibrium",
+    "concept": "Equilibrium constant",
+    "difficulty": 2,
+    "prompt": "K for a reaction is 25. What is K for the reverse reaction?",
+    "answer": 0.04,
+    "tolerance": 0.01,
+    "explanation": "K′ = 1/K = 1/25 = 0.040."
+  },
+  {
+    "id": "k-doubled",
+    "type": "numeric",
+    "lesson": "dynamic-equilibrium",
+    "concept": "Equilibrium constant",
+    "difficulty": 2,
+    "prompt": "K for A + B ⇌ C is 3.0. What is K for 2A + 2B ⇌ 2C?",
+    "answer": 9,
+    "tolerance": 0.01,
+    "explanation": "Doubling coefficients squares K: 3.0² = 9.0."
+  },
+  {
+    "id": "le-chat-pressure",
+    "type": "mcq",
+    "lesson": "le-chatelier",
+    "concept": "Le Châtelier’s principle",
+    "difficulty": 2,
+    "prompt": "For N₂O₄(g) ⇌ 2NO₂(g), what happens when pressure is increased at constant temperature?",
+    "options": ["shifts right, K increases", "shifts left, K unchanged", "shifts left, K decreases", "no change"],
+    "answer": 1,
+    "explanation": "Shifts towards fewer moles of gas (left). K depends only on temperature."
+  },
+  {
+    "id": "le-chat-temp",
+    "type": "mcq",
+    "lesson": "le-chatelier",
+    "concept": "Temperature and K",
+    "difficulty": 2,
+    "prompt": "A reaction has ΔH = +58 kJ mol⁻¹. When temperature increases, K:",
+    "options": ["increases", "decreases", "stays the same", "becomes zero"],
+    "answer": 0,
+    "explanation": "Higher temperature favours the endothermic (forward) direction, so K increases."
+  },
+  {
+    "id": "catalyst-eq",
+    "type": "tf",
+    "lesson": "le-chatelier",
+    "concept": "Catalysts and equilibrium",
+    "difficulty": 1,
+    "prompt": "Adding a catalyst increases the equilibrium yield of product.",
+    "answer": false,
+    "explanation": "A catalyst speeds up forward and backward reactions equally; equilibrium is reached faster but the yield is unchanged."
+  },
+  {
+    "id": "haber-compromise",
+    "type": "mcq",
+    "lesson": "le-chatelier",
+    "concept": "Industrial conditions",
+    "difficulty": 2,
+    "prompt": "Why is the Haber process run at about 450 °C rather than at a lower temperature?",
+    "options": ["Yield is higher at high temperature", "A lower temperature would make the rate too slow", "The catalyst only works above 1000 °C", "Ammonia decomposes at low temperature"],
+    "answer": 1,
+    "explanation": "Lower temperature gives a better yield (exothermic) but an unacceptably slow rate — 450 °C is a compromise."
+  },
+  {
+    "id": "add-reactant",
+    "type": "multi",
+    "lesson": "le-chatelier",
+    "concept": "Le Châtelier’s principle",
+    "difficulty": 2,
+    "prompt": "Which changes shift CH₄(g) + H₂O(g) ⇌ CO(g) + 3H₂(g) to the right?",
+    "options": ["adding steam", "removing H₂", "increasing pressure", "adding CO"],
+    "answers": [0, 1],
+    "explanation": "Adding a reactant or removing a product shifts right. Higher pressure favours the side with fewer gas moles (left)."
+  },
+  {
+    "id": "q-vs-k",
+    "type": "mcq",
+    "lesson": "equilibrium-calculations",
+    "concept": "Reaction quotient",
+    "difficulty": 2,
+    "prompt": "(HL) For a reaction, K = 50 and Q = 12. What happens?",
+    "options": ["The reaction proceeds forward", "The reaction proceeds backward", "The system is at equilibrium", "K increases"],
+    "answer": 0,
+    "explanation": "Q < K, so the reaction moves forward to make more products until Q = K."
+  },
+  {
+    "id": "ice-k",
+    "type": "numeric",
+    "lesson": "equilibrium-calculations",
+    "concept": "ICE tables",
+    "difficulty": 3,
+    "prompt": "(HL) 1.00 mol of PCl₅ is placed in a 2.00 dm³ flask: PCl₅ ⇌ PCl₃ + Cl₂. At equilibrium 0.40 mol of Cl₂ is present. Calculate K.",
+    "answer": 0.1333,
+    "tolerance": 0.02,
+    "explanation": "Equilibrium moles: PCl₅ 0.60, PCl₃ 0.40, Cl₂ 0.40; concentrations 0.30, 0.20, 0.20. K = (0.20 × 0.20)/0.30 = 0.133."
+  },
+  {
+    "id": "small-k",
+    "type": "numeric",
+    "lesson": "equilibrium-calculations",
+    "concept": "Approximations",
+    "difficulty": 3,
+    "prompt": "(HL) For X ⇌ Y + Z, K = 4.0 × 10⁻⁸ and [X]₀ = 0.10 mol dm⁻³. Calculate [Y] at equilibrium in mol dm⁻³.",
+    "answer": 6.32e-5,
+    "tolerance": 0.02,
+    "unit": "mol dm⁻³",
+    "explanation": "x²/0.10 = 4.0 × 10⁻⁸ (assuming x ≪ 0.10) → x = √(4.0 × 10⁻⁹) = 6.3 × 10⁻⁵."
+  },
+  {
+    "id": "g-k-sign",
+    "type": "tf",
+    "lesson": "equilibrium-calculations",
+    "concept": "K and Gibbs energy",
+    "difficulty": 2,
+    "prompt": "(HL) A reaction with K > 1 has a negative ΔG⦵.",
+    "answer": true,
+    "explanation": "ΔG⦵ = −RT ln K; ln K > 0 when K > 1."
+  }
+]

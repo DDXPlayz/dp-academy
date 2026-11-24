@@ -1,0 +1,11 @@
+[
+  { "id": "dyn-eq-card", "front": "Dynamic equilibrium?", "back": "Closed system; forward rate = backward rate; concentrations constant (not equal).", "concept": "Dynamic equilibrium" },
+  { "id": "k-card", "front": "Equilibrium constant expression?", "back": "K = [products]^coefficients ÷ [reactants]^coefficients, at equilibrium.", "concept": "Equilibrium constant" },
+  { "id": "k-size-card", "front": "K ≫ 1 vs K ≪ 1?", "back": "≫ 1: products favoured. ≪ 1: reactants favoured.", "concept": "Magnitude of K" },
+  { "id": "k-manip-card", "front": "K for reversed or doubled equations?", "back": "Reverse: 1/K. Doubled coefficients: K².", "concept": "Equilibrium constant" },
+  { "id": "lc-card", "front": "Le Châtelier’s principle?", "back": "A disturbed equilibrium shifts to partly oppose the change.", "concept": "Le Châtelier’s principle" },
+  { "id": "k-temp-card", "front": "What changes K?", "back": "Only temperature. Exothermic forward: K falls as T rises.", "concept": "Temperature and K" },
+  { "id": "cat-eq-card", "front": "Catalyst and equilibrium?", "back": "No shift in position; equilibrium reached faster.", "concept": "Catalysts and equilibrium" },
+  { "id": "q-card", "front": "(HL) Q vs K?", "back": "Q < K → forward; Q > K → backward; Q = K → at equilibrium.", "concept": "Reaction quotient" },
+  { "id": "ice-card", "front": "(HL) ICE table?", "back": "Initial, Change (from stoichiometry), Equilibrium — then substitute into K.", "concept": "ICE tables" }
+]

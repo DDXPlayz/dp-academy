@@ -1,0 +1,116 @@
+[
+  {
+    "id": "reacting-mass",
+    "type": "numeric",
+    "lesson": "reacting-quantities",
+    "concept": "Reacting masses",
+    "difficulty": 2,
+    "prompt": "What mass of magnesium oxide forms when 4.86 g of magnesium burns completely? 2Mg + O₂ → 2MgO (M: Mg 24.31, MgO 40.31)",
+    "answer": 8.06,
+    "tolerance": 0.01,
+    "unit": "g",
+    "explanation": "n(Mg) = 4.86/24.31 = 0.200 mol → 0.200 mol MgO → 0.200 × 40.31 = 8.06 g."
+  },
+  {
+    "id": "gas-volume-stp",
+    "type": "numeric",
+    "lesson": "reacting-quantities",
+    "concept": "Gas volumes",
+    "difficulty": 2,
+    "prompt": "What volume of hydrogen at STP, in dm³, forms when 1.30 g of zinc (M = 65.38) reacts with excess HCl? Zn + 2HCl → ZnCl₂ + H₂",
+    "answer": 0.4514,
+    "tolerance": 0.02,
+    "unit": "dm³",
+    "explanation": "n(Zn) = 0.0199 mol → 0.0199 mol H₂ → 0.0199 × 22.7 = 0.451 dm³."
+  },
+  {
+    "id": "titration-calc",
+    "type": "numeric",
+    "lesson": "reacting-quantities",
+    "concept": "Titration",
+    "difficulty": 2,
+    "prompt": "20.0 cm³ of HCl is neutralised by 24.0 cm³ of 0.150 mol dm⁻³ NaOH. What is the concentration of the HCl in mol dm⁻³?",
+    "answer": 0.18,
+    "tolerance": 0.01,
+    "unit": "mol dm⁻³",
+    "explanation": "n(NaOH) = 0.150 × 0.0240 = 3.60 × 10⁻³ mol = n(HCl); c = 3.60 × 10⁻³/0.0200 = 0.180 mol dm⁻³."
+  },
+  {
+    "id": "concordant",
+    "type": "mcq",
+    "lesson": "reacting-quantities",
+    "concept": "Titration",
+    "difficulty": 1,
+    "prompt": "Titres of 23.45, 23.10, 23.15 and 23.60 cm³ are recorded. Which should be averaged?",
+    "options": ["all four", "23.10 and 23.15", "23.45 and 23.60", "23.45, 23.10 and 23.15"],
+    "answer": 1,
+    "explanation": "Only concordant titres (within 0.10 cm³ of each other) are averaged."
+  },
+  {
+    "id": "ratio-not-mass",
+    "type": "tf",
+    "lesson": "reacting-quantities",
+    "concept": "Reacting masses",
+    "difficulty": 1,
+    "prompt": "The coefficients in a balanced equation give the ratio of masses of reactants and products.",
+    "answer": false,
+    "explanation": "They give the ratio of moles (or gas volumes), not masses."
+  },
+  {
+    "id": "limiting-id",
+    "type": "mcq",
+    "lesson": "yield-atom-economy",
+    "concept": "Limiting reactant",
+    "difficulty": 2,
+    "prompt": "0.50 mol of N₂ reacts with 1.20 mol of H₂: N₂ + 3H₂ → 2NH₃. Which is limiting?",
+    "options": ["N₂", "H₂", "neither", "both"],
+    "answer": 1,
+    "explanation": "N₂: 0.50/1 = 0.50; H₂: 1.20/3 = 0.40. H₂ has the smaller value, so it is limiting."
+  },
+  {
+    "id": "theoretical-yield",
+    "type": "numeric",
+    "lesson": "yield-atom-economy",
+    "concept": "Limiting reactant",
+    "difficulty": 3,
+    "prompt": "In the previous reaction (0.50 mol N₂ + 1.20 mol H₂), how many moles of NH₃ can form at most?",
+    "answer": 0.8,
+    "tolerance": 0.01,
+    "unit": "mol",
+    "explanation": "H₂ is limiting: 1.20 mol H₂ × 2/3 = 0.80 mol NH₃."
+  },
+  {
+    "id": "percent-yield",
+    "type": "numeric",
+    "lesson": "yield-atom-economy",
+    "concept": "Percentage yield",
+    "difficulty": 1,
+    "prompt": "A theoretical yield of 12.5 g is calculated but 9.8 g is obtained. What is the percentage yield?",
+    "answer": 78.4,
+    "tolerance": 0.01,
+    "unit": "%",
+    "explanation": "9.8/12.5 × 100 = 78.4%."
+  },
+  {
+    "id": "atom-economy-calc",
+    "type": "numeric",
+    "lesson": "yield-atom-economy",
+    "concept": "Atom economy",
+    "difficulty": 2,
+    "prompt": "CaCO₃ → CaO + CO₂. Calculate the atom economy for making CaO. (M: CaCO₃ 100.09, CaO 56.08)",
+    "answer": 56.03,
+    "tolerance": 0.01,
+    "unit": "%",
+    "explanation": "56.08/100.09 × 100 = 56.0%."
+  },
+  {
+    "id": "addition-ae",
+    "type": "tf",
+    "lesson": "yield-atom-economy",
+    "concept": "Atom economy",
+    "difficulty": 1,
+    "prompt": "An addition reaction that forms a single product has an atom economy of 100%.",
+    "answer": true,
+    "explanation": "All reactant atoms end up in the desired product."
+  }
+]

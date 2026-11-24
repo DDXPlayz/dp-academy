@@ -1,0 +1,47 @@
+[
+  {
+    "id": "p1a-le-chat-temp",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "R2.3",
+    "prompt": "For 2SO₂(g) + O₂(g) ⇌ 2SO₃(g), ΔH = −197 kJ. Which change increases the value of K?",
+    "options": [
+      "increasing pressure",
+      "decreasing temperature",
+      "adding a catalyst",
+      "adding more O₂"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** Only temperature changes K; lowering T favours the exothermic forward reaction.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-k-from-moles",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "R2.3",
+    "prompt": "At equilibrium in a 1.0 dm³ flask there are 0.20 mol H₂, 0.20 mol I₂ and 1.6 mol HI. What is K for H₂ + I₂ ⇌ 2HI?",
+    "options": [
+      "8",
+      "16",
+      "40",
+      "64"
+    ],
+    "answer": 3,
+    "markscheme": "**D.** $K = \\tfrac{1.6^2}{0.20\\times0.20} = 64$.",
+    "source": "original"
+  },
+  {
+    "id": "p2-equilibrium-ice",
+    "paper": "2",
+    "level": "HL",
+    "difficulty": "hard",
+    "marks": 6,
+    "subtopic": "R2.3",
+    "prompt": "2.00 mol of NO₂ is placed in a sealed 1.00 dm³ container and allowed to reach equilibrium: 2NO₂(g) ⇌ N₂O₄(g). At equilibrium 0.60 mol of N₂O₄ is present.\n\n**(a)** Calculate K. **[3]**\n\n**(b)** A further 0.50 mol of N₂O₄ is added. Calculate Q and predict the direction of the change. **[2]**\n\n**(c)** State the effect of this addition on the value of K. **[1]**",
+    "markscheme": "**(a)** [NO₂] at equilibrium $= 2.00 - 2(0.60) = 0.80$ ✓; $K = \\tfrac{0.60}{0.80^2}$ ✓ $= 0.94$ ✓\n\n**(b)** $Q = \\tfrac{1.10}{0.80^2} = 1.7$ ✓; Q > K so the reaction shifts backwards (towards NO₂) ✓\n\n**(c)** No change (temperature constant) ✓",
+    "source": "original"
+  }
+]

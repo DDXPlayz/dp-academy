@@ -14,5 +14,49 @@
     "answer": 2,
     "markscheme": "**C.** $n(\\text{Na}_2\\text{CO}_3) = 0.0250 \\times 0.100 = 2.50 \\times 10^{-3}$ mol, so $n(\\text{HCl}) = 5.00 \\times 10^{-3}$ mol and $V = \\tfrac{5.00 \\times 10^{-3}}{0.200} = 0.0250\\ \\text{dm}^3 = 25.0\\ \\text{cm}^3$.",
     "source": "original"
+  },
+  {
+    "id": "p1a-limiting-mg",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "R2.1",
+    "prompt": "0.10 mol of magnesium is added to 0.10 mol of HCl. Mg + 2HCl → MgCl₂ + H₂. What amount of hydrogen forms?",
+    "options": [
+      "0.050 mol",
+      "0.10 mol",
+      "0.20 mol",
+      "0.025 mol"
+    ],
+    "answer": 0,
+    "markscheme": "**A.** HCl is limiting (0.10/2 = 0.05 < 0.10/1); 0.10 mol HCl gives 0.050 mol H₂.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-atom-economy",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "R2.1",
+    "prompt": "Which type of reaction always has an atom economy of 100%?",
+    "options": [
+      "substitution",
+      "addition",
+      "elimination",
+      "condensation"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** All the reactant atoms end up in the single product.",
+    "source": "original"
+  },
+  {
+    "id": "p2-percent-yield",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 5,
+    "subtopic": "R2.1",
+    "prompt": "Aspirin (M = 180.17 g mol⁻¹) is made from salicylic acid (M = 138.13 g mol⁻¹) in a 1 : 1 reaction with excess ethanoic anhydride.\n\n**(a)** Calculate the theoretical yield of aspirin from 2.76 g of salicylic acid. **[2]**\n\n**(b)** 2.88 g of aspirin is obtained. Calculate the percentage yield. **[1]**\n\n**(c)** Suggest two reasons why the yield is less than 100%. **[2]**",
+    "markscheme": "**(a)** $n = 2.76/138.13 = 0.0200\\ \\text{mol}$ ✓; $m = 0.0200\\times180.17 = 3.60\\ \\text{g}$ ✓\n\n**(b)** $2.88/3.60\\times100 = 80.0\\%$ ✓\n\n**(c)** Any two: incomplete reaction; side reactions; loss of product during filtration/transfer/recrystallisation; product left dissolved in solvent ✓✓",
+    "source": "original"
   }
 ]

@@ -17,5 +17,51 @@
     "prompt": "The initial rate of the reaction A + B → C was measured at 298 K.\n\n| Experiment | [A] / mol dm$^{-3}$ | [B] / mol dm$^{-3}$ | initial rate / mol dm$^{-3}$ s$^{-1}$ |\n|---|---|---|---|\n| 1 | 0.10 | 0.10 | $2.0 \\times 10^{-4}$ |\n| 2 | 0.20 | 0.10 | $8.0 \\times 10^{-4}$ |\n| 3 | 0.10 | 0.20 | $4.0 \\times 10^{-4}$ |\n\n**(a)** Deduce the order with respect to A and to B. **[2]**\n\n**(b)** Write the rate equation. **[1]**\n\n**(c)** Calculate the rate constant, including its units. **[2]**",
     "markscheme": "**(a)** A: doubling [A] quadruples the rate, second order ✓. B: doubling [B] doubles the rate, first order ✓\n\n**(b)** rate $= k[\\text{A}]^2[\\text{B}]$ ✓\n\n**(c)** $k = \\tfrac{2.0 \\times 10^{-4}}{0.10^2 \\times 0.10} = 0.20$ ✓ $\\text{dm}^6\\,\\text{mol}^{-2}\\,\\text{s}^{-1}$ ✓",
     "source": "original"
+  },
+  {
+    "id": "p1a-mb-catalyst",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "R2.2",
+    "prompt": "How does a catalyst affect the Maxwell–Boltzmann distribution of a reaction mixture?",
+    "options": [
+      "The peak moves to higher energy",
+      "The curve is unchanged but Ea is lower",
+      "The area under the curve increases",
+      "The curve becomes narrower"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** The energy distribution depends only on temperature; the catalyst provides a lower-Ea pathway.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-k-units-third",
+    "paper": "1A",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "R2.2",
+    "prompt": "The rate equation for a reaction is rate = k[NO]²[O₂]. What are the units of k?",
+    "options": [
+      "mol dm⁻³ s⁻¹",
+      "s⁻¹",
+      "dm³ mol⁻¹ s⁻¹",
+      "dm⁶ mol⁻² s⁻¹"
+    ],
+    "answer": 3,
+    "markscheme": "**D.** Third order overall: $k = \\tfrac{\\text{mol dm}^{-3}\\,\\text{s}^{-1}}{(\\text{mol dm}^{-3})^3}$.",
+    "source": "original"
+  },
+  {
+    "id": "p2-arrhenius-two-temps",
+    "paper": "2",
+    "level": "HL",
+    "difficulty": "hard",
+    "marks": 5,
+    "subtopic": "R2.2",
+    "prompt": "The rate constant of a reaction is $2.5 \\times 10^{-3}\\ \\text{s}^{-1}$ at 300 K and $1.0 \\times 10^{-2}\\ \\text{s}^{-1}$ at 320 K.\n\n**(a)** State the overall order of the reaction. **[1]**\n\n**(b)** Calculate the activation energy in kJ mol⁻¹. **[3]**\n\n**(c)** Explain, using collision theory, why the rate constant increases with temperature. **[1]**",
+    "markscheme": "**(a)** First order (units of k are s⁻¹) ✓\n\n**(b)** $\\ln\\tfrac{k_2}{k_1} = \\tfrac{E_a}{R}\\left(\\tfrac{1}{T_1} - \\tfrac{1}{T_2}\\right)$ ✓; $\\ln 4 = 1.386 = \\tfrac{E_a}{8.31}(2.083\\times10^{-4})$ ✓; $E_a = 5.53\\times10^4\\ \\text{J mol}^{-1} = 55\\ \\text{kJ mol}^{-1}$ ✓\n\n**(c)** A much greater proportion of collisions have energy ≥ Ea ✓",
+    "source": "original"
   }
 ]
