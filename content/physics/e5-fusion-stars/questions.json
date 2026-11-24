@@ -1,0 +1,145 @@
+[
+  {
+    "id": "fusion-conditions",
+    "type": "mcq",
+    "lesson": "fusion-in-stars",
+    "concept": "Conditions for fusion",
+    "difficulty": 1,
+    "prompt": "Why does nuclear fusion require extremely high temperatures?",
+    "options": ["To melt the nuclei", "So nuclei move fast enough to overcome their electric repulsion", "To ionise the hydrogen atoms", "To make the strong force longer range"],
+    "answer": 1,
+    "explanation": "Nuclei repel electrically; only at very high speeds do they get close enough for the strong force to bind them."
+  },
+  {
+    "id": "fusion-be",
+    "type": "tf",
+    "lesson": "fusion-in-stars",
+    "concept": "Fusion energy",
+    "difficulty": 2,
+    "prompt": "Fusing two iron-56 nuclei would release a large amount of energy.",
+    "answer": false,
+    "explanation": "Iron is at the peak of the binding-energy-per-nucleon curve; fusing beyond it absorbs energy."
+  },
+  {
+    "id": "pp-energy",
+    "type": "numeric",
+    "lesson": "fusion-in-stars",
+    "concept": "Fusion energy",
+    "difficulty": 3,
+    "prompt": "Two deuterium nuclei (2.013553 u each) fuse to form helium-3 (3.014932 u) and a neutron (1.008665 u). What energy is released, in MeV?",
+    "answer": 3.27,
+    "tolerance": 0.02,
+    "unit": "MeV",
+    "explanation": "$\\Delta m = 2(2.013553) - 3.014932 - 1.008665 = 0.003509$ u; $E = 0.003509\\times931.5 = 3.27$ MeV."
+  },
+  {
+    "id": "equilibrium-forces",
+    "type": "mcq",
+    "lesson": "fusion-in-stars",
+    "concept": "Stellar equilibrium",
+    "difficulty": 1,
+    "prompt": "A main-sequence star is stable because:",
+    "options": ["it has a solid core", "outward radiation and gas pressure balance inward gravity", "fusion has stopped", "its magnetic field holds it together"],
+    "answer": 1,
+    "explanation": "Hydrostatic equilibrium: outward pressure from the hot core balances gravitational collapse."
+  },
+  {
+    "id": "hr-region",
+    "type": "mcq",
+    "lesson": "hr-diagram-evolution",
+    "concept": "HR diagram",
+    "difficulty": 1,
+    "prompt": "A star is very hot but has a very low luminosity. Where is it on the HR diagram and what type is it?",
+    "options": ["top-left: blue main-sequence star", "bottom-left: white dwarf", "top-right: red giant", "bottom-right: red dwarf"],
+    "answer": 1,
+    "explanation": "Hot (left) and dim (bottom) means very small: a white dwarf."
+  },
+  {
+    "id": "hr-axis",
+    "type": "tf",
+    "lesson": "hr-diagram-evolution",
+    "concept": "HR diagram",
+    "difficulty": 1,
+    "prompt": "On a Hertzsprung–Russell diagram, temperature increases from left to right.",
+    "answer": false,
+    "explanation": "By convention temperature **decreases** to the right."
+  },
+  {
+    "id": "sun-fate",
+    "type": "mcq",
+    "lesson": "hr-diagram-evolution",
+    "concept": "Stellar evolution",
+    "difficulty": 1,
+    "prompt": "What will the Sun eventually become?",
+    "options": ["a black hole", "a neutron star", "a white dwarf", "a supernova remnant"],
+    "answer": 2,
+    "explanation": "A low-mass star becomes a red giant, sheds a planetary nebula and leaves a white dwarf."
+  },
+  {
+    "id": "evolution-order",
+    "type": "multi",
+    "lesson": "hr-diagram-evolution",
+    "concept": "Stellar evolution",
+    "difficulty": 2,
+    "prompt": "Which stages are part of the evolution of a high-mass star?",
+    "options": ["red supergiant", "supernova", "planetary nebula", "neutron star or black hole"],
+    "answers": [0, 1, 3],
+    "explanation": "Planetary nebulae belong to low-mass stars; high-mass stars explode as supernovae."
+  },
+  {
+    "id": "massive-lifetime",
+    "type": "tf",
+    "lesson": "hr-diagram-evolution",
+    "concept": "Stellar evolution",
+    "difficulty": 2,
+    "prompt": "More massive main-sequence stars have longer lifetimes because they have more hydrogen.",
+    "answer": false,
+    "explanation": "They have more fuel but use it far faster (much higher luminosity), so they live shorter lives."
+  },
+  {
+    "id": "parallax-distance",
+    "type": "numeric",
+    "lesson": "parallax-radii",
+    "concept": "Parallax",
+    "difficulty": 1,
+    "prompt": "A star has a parallax angle of 0.040 arc-seconds. What is its distance in parsecs?",
+    "answer": 25,
+    "tolerance": 0.01,
+    "unit": "pc",
+    "explanation": "$d = 1/p = 1/0.040 = 25$ pc."
+  },
+  {
+    "id": "brightness-calc",
+    "type": "numeric",
+    "lesson": "parallax-radii",
+    "concept": "Apparent brightness",
+    "difficulty": 2,
+    "prompt": "A star of luminosity 3.8 × 10²⁸ W is 3.1 × 10¹⁷ m away. What is its apparent brightness?",
+    "answer": 3.15e-8,
+    "tolerance": 0.03,
+    "unit": "W m⁻²",
+    "explanation": "$b = L/4\\pi d^2 = 3.8\\times10^{28}/(4\\pi\\times(3.1\\times10^{17})^2) = 3.1\\times10^{-8}$ W m⁻²."
+  },
+  {
+    "id": "radius-ratio",
+    "type": "numeric",
+    "lesson": "parallax-radii",
+    "concept": "Stellar radii",
+    "difficulty": 3,
+    "prompt": "Star X has the same luminosity as star Y but twice its surface temperature. What is radius of X ÷ radius of Y?",
+    "answer": 0.25,
+    "tolerance": 0.01,
+    "explanation": "$L \\propto R^2T^4$: equal $L$ means $R \\propto 1/T^2$, so the ratio is $1/4$."
+  },
+  {
+    "id": "parallax-limit",
+    "type": "mcq",
+    "lesson": "parallax-radii",
+    "concept": "Parallax",
+    "difficulty": 2,
+    "prompt": "Why can stellar parallax only be used for relatively nearby stars?",
+    "options": ["Distant stars are too dim to see", "The parallax angle of distant stars is too small to measure", "Distant stars move too fast", "Earth’s orbit is not circular"],
+    "answer": 1,
+    "explanation": "$p = 1/d$ becomes tiny for large distances, below what instruments can resolve."
+  }
+]

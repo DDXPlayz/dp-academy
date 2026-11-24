@@ -1,0 +1,12 @@
+[
+  { "id": "fusion-card", "front": "Why does fusion of light nuclei release energy?", "back": "The product has higher binding energy per nucleon → less mass → Δmc² released.", "concept": "Fusion energy" },
+  { "id": "fusion-cond-card", "front": "Conditions for fusion in stars?", "back": "Very high temperature (~10⁷ K) to overcome repulsion, and high density for frequent collisions.", "concept": "Conditions for fusion" },
+  { "id": "equilibrium-card", "front": "Why is a main-sequence star stable?", "back": "Outward radiation/gas pressure balances inward gravity.", "concept": "Stellar equilibrium" },
+  { "id": "hr-card", "front": "HR diagram axes?", "back": "Luminosity (log, up) against surface temperature (log, decreasing to the right).", "concept": "HR diagram" },
+  { "id": "regions-card", "front": "Red giants vs white dwarfs on the HR diagram?", "back": "Red giants: cool, bright, large (top right). White dwarfs: hot, dim, small (bottom left).", "concept": "HR diagram" },
+  { "id": "low-mass-card", "front": "Evolution of a low-mass star?", "back": "Main sequence → red giant → planetary nebula → white dwarf.", "concept": "Stellar evolution" },
+  { "id": "high-mass-card", "front": "Evolution of a high-mass star?", "back": "Main sequence → red supergiant → supernova → neutron star or black hole.", "concept": "Stellar evolution" },
+  { "id": "parallax-card", "front": "Parallax formula?", "back": "$d$ (pc) $= 1/p$ (arc-second); 1 pc = 3.26 ly = 3.09 × 10¹⁶ m.", "concept": "Parallax" },
+  { "id": "brightness-card", "front": "Apparent brightness?", "back": "$b = L/4\\pi d^2$ (W m⁻²).", "concept": "Apparent brightness" },
+  { "id": "stellar-radius-card", "front": "How to find a star’s radius?", "back": "$L = \\sigma4\\pi R^2T^4$: T from Wien’s law, L from b and d.", "concept": "Stellar radii" }
+]

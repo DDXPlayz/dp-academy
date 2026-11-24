@@ -1,0 +1,36 @@
+[
+  {
+    "id": "p1a-moderator-role",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "E.4",
+    "prompt": "What is the role of the moderator in a nuclear reactor?",
+    "options": ["To absorb excess neutrons", "To reduce the kinetic energy of neutrons", "To transfer thermal energy to the turbines", "To absorb gamma radiation"],
+    "answer": 1,
+    "markscheme": "**B.** The moderator slows neutrons so they are more likely to cause fission of U-235.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-fission-neutrons",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "E.4",
+    "prompt": "$^1_0\\text{n} + ^{235}_{92}\\text{U} \\rightarrow\\ ^{140}_{54}\\text{Xe} + ^{94}_{Z}\\text{Sr} + x\\,^1_0\\text{n}$. What are $Z$ and $x$?",
+    "options": ["$Z = 38,\\ x = 2$", "$Z = 38,\\ x = 1$", "$Z = 36,\\ x = 2$", "$Z = 40,\\ x = 3$"],
+    "answer": 0,
+    "markscheme": "**A.** Protons: $92 = 54 + Z$ → $Z = 38$. Nucleons: $236 = 140 + 94 + x$ → $x = 2$.",
+    "source": "original"
+  },
+  {
+    "id": "p2-reactor-power",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 6,
+    "subtopic": "E.4",
+    "prompt": "Each fission of uranium-235 releases about $200\\ \\text{MeV}$. A reactor produces a thermal power of $3.0\\ \\text{GW}$.\n\n**(a)** Calculate the number of fissions per second. **[2]**\n\n**(b)** Determine the mass of U-235 used per day. (Mass of one U-235 atom $= 3.9 \\times 10^{-25}\\ \\text{kg}$.) **[2]**\n\n**(c)** Explain why control rods are needed and how they keep the power constant. **[2]**",
+    "markscheme": "**(a)** $200\\ \\text{MeV} = 200\\times10^6\\times1.6\\times10^{-19} = 3.2\\times10^{-11}\\ \\text{J}$ ✓; $\\tfrac{3.0\\times10^9}{3.2\\times10^{-11}} = 9.4\\times10^{19}\\ \\text{s}^{-1}$ ✓\n\n**(b)** Fissions per day $= 9.4\\times10^{19}\\times86400 = 8.1\\times10^{24}$ ✓; mass $= 8.1\\times10^{24}\\times3.9\\times10^{-25} \\approx 3.2\\ \\text{kg}$ ✓\n\n**(c)** Each fission releases more than one neutron, so without control the rate would grow ✓; the rods absorb neutrons and are adjusted so that on average exactly one neutron per fission causes a further fission ✓",
+    "source": "original"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "p1a-white-dwarf-size",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "E.5",
+    "prompt": "Which property of a white dwarf explains its position at the bottom left of the HR diagram?",
+    "options": ["High temperature and large radius", "High temperature and small radius", "Low temperature and large radius", "Low temperature and small radius"],
+    "answer": 1,
+    "markscheme": "**B.** Hot (left) yet dim (bottom) requires a small surface area.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-parallax-ratio",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "E.5",
+    "prompt": "Star P has a parallax angle twice that of star Q. Both have the same luminosity. What is $\\tfrac{\\text{apparent brightness of P}}{\\text{apparent brightness of Q}}$?",
+    "options": ["$\\tfrac{1}{4}$", "$\\tfrac{1}{2}$", "2", "4"],
+    "answer": 3,
+    "markscheme": "**D.** $d \\propto 1/p$, so P is half as far; $b \\propto 1/d^2$ gives 4 times the brightness.",
+    "source": "original"
+  },
+  {
+    "id": "p2-star-radius",
+    "paper": "2",
+    "difficulty": "hard",
+    "marks": 7,
+    "subtopic": "E.5",
+    "prompt": "The star Betelgeuse has a parallax angle of $5.5 \\times 10^{-3}$ arc-seconds, an apparent brightness of $1.1 \\times 10^{-7}\\ \\text{W m}^{-2}$ and a surface temperature of $3500\\ \\text{K}$.\n\n**(a)** Calculate its distance in metres. **[2]**\n\n**(b)** Calculate its luminosity. **[2]**\n\n**(c)** Determine its radius. **[2]**\n\n**(d)** State the region of the HR diagram in which Betelgeuse lies. **[1]**",
+    "markscheme": "**(a)** $d = \\tfrac{1}{5.5\\times10^{-3}} = 182\\ \\text{pc}$ ✓ $= 182\\times3.09\\times10^{16} = 5.6\\times10^{18}\\ \\text{m}$ ✓\n\n**(b)** $L = 4\\pi d^2 b$ ✓ $= 4\\pi(5.6\\times10^{18})^2\\times1.1\\times10^{-7} = 4.4\\times10^{31}\\ \\text{W}$ ✓\n\n**(c)** $R = \\sqrt{\\tfrac{L}{4\\pi\\sigma T^4}}$ ✓ $= \\sqrt{\\tfrac{4.4\\times10^{31}}{4\\pi\\times5.67\\times10^{-8}\\times3500^4}} \\approx 6.4\\times10^{11}\\ \\text{m}$ ✓\n\n**(d)** Red supergiants ✓",
+    "source": "original"
+  },
+  {
+    "id": "p2-stellar-evolution",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 5,
+    "subtopic": "E.5",
+    "prompt": "**(a)** Explain why a main-sequence star remains stable for a long time. **[2]**\n\n**(b)** Describe how the evolution of a star of 20 solar masses differs from that of the Sun after both leave the main sequence. **[3]**",
+    "markscheme": "**(a)** Gravity pulls the star’s matter inwards ✓; this is balanced by outward radiation and gas pressure produced by fusion in the core (hydrostatic equilibrium) ✓\n\n**(b)** The Sun becomes a red giant, ejects a planetary nebula and ends as a white dwarf ✓; the massive star becomes a red supergiant, fusing elements up to iron ✓; its core collapses in a supernova leaving a neutron star or black hole ✓",
+    "source": "original"
+  }
+]

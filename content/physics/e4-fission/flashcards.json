@@ -1,0 +1,10 @@
+[
+  { "id": "fission-card", "front": "Nuclear fission?", "back": "A heavy nucleus splits into two medium nuclei + 2–3 neutrons, releasing ~200 MeV.", "concept": "Fission equations" },
+  { "id": "fission-why-card", "front": "Why does fission release energy?", "back": "Products have higher binding energy per nucleon → less total mass → Δmc² released.", "concept": "Energy release" },
+  { "id": "chain-card", "front": "Chain reaction?", "back": "Neutrons from one fission trigger more fissions; steady if on average one neutron per fission does so.", "concept": "Chain reactions" },
+  { "id": "critical-card", "front": "Critical mass?", "back": "Minimum mass for a self-sustaining chain reaction — fewer neutrons escape.", "concept": "Critical mass" },
+  { "id": "moderator-card", "front": "Moderator?", "back": "Slows neutrons to thermal speeds (water, graphite).", "concept": "Moderator" },
+  { "id": "control-card", "front": "Control rods?", "back": "Absorb neutrons (boron, cadmium) to control the fission rate.", "concept": "Control rods" },
+  { "id": "exchanger-card", "front": "Heat exchanger and shielding?", "back": "Exchanger: transfers energy to make steam. Shielding: absorbs neutrons and γ to protect people.", "concept": "Reactor design" },
+  { "id": "waste-card", "front": "Managing fission waste?", "back": "Cooling ponds → reprocessing → vitrify and store deep underground.", "concept": "Nuclear waste" }
+]

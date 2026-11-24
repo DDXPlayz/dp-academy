@@ -1,0 +1,111 @@
+[
+  {
+    "id": "fission-balance",
+    "type": "numeric",
+    "lesson": "fission-energy",
+    "concept": "Fission equations",
+    "difficulty": 2,
+    "prompt": "¹₀n + ²³⁵₉₂U → ¹⁴⁴₅₆Ba + ⁸⁹₃₆Kr + x ¹₀n. What is x?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "Nucleons: $1 + 235 = 144 + 89 + x$, so $x = 3$. Protons: $92 = 56 + 36$ ✓."
+  },
+  {
+    "id": "fission-energy-source",
+    "type": "mcq",
+    "lesson": "fission-energy",
+    "concept": "Energy release",
+    "difficulty": 2,
+    "prompt": "Energy is released in the fission of uranium-235 because the fission products:",
+    "options": ["have more nucleons", "have a higher binding energy per nucleon", "have a lower binding energy per nucleon", "are lighter elements, which are always more stable"],
+    "answer": 1,
+    "explanation": "The products are more tightly bound, so their total mass is less; the mass difference is released as energy."
+  },
+  {
+    "id": "fission-mev",
+    "type": "numeric",
+    "lesson": "fission-energy",
+    "concept": "Energy release",
+    "difficulty": 3,
+    "prompt": "In a fission reaction the total mass decreases by 0.19 u. How much energy is released, in MeV?",
+    "answer": 177,
+    "tolerance": 0.02,
+    "unit": "MeV",
+    "explanation": "$E = 0.19\\times931.5 = 177$ MeV."
+  },
+  {
+    "id": "chain-reaction",
+    "type": "tf",
+    "lesson": "fission-energy",
+    "concept": "Chain reactions",
+    "difficulty": 1,
+    "prompt": "A chain reaction is possible because each fission releases more than one neutron.",
+    "answer": true,
+    "explanation": "Two or three neutrons per fission can each trigger another fission."
+  },
+  {
+    "id": "critical-mass",
+    "type": "mcq",
+    "lesson": "fission-energy",
+    "concept": "Critical mass",
+    "difficulty": 2,
+    "prompt": "Below the critical mass, a chain reaction cannot be sustained because:",
+    "options": ["the uranium is not enriched", "too many neutrons escape through the surface", "the neutrons move too slowly", "there is not enough heat"],
+    "answer": 1,
+    "explanation": "A small lump has a large surface area for its volume, so most neutrons escape before causing fission."
+  },
+  {
+    "id": "reactor-roles",
+    "type": "mcq",
+    "lesson": "nuclear-reactors",
+    "concept": "Moderator",
+    "difficulty": 1,
+    "prompt": "The function of the moderator in a thermal fission reactor is to:",
+    "options": ["absorb neutrons", "slow neutrons down", "absorb gamma rays", "transfer heat to the turbines"],
+    "answer": 1,
+    "explanation": "Slow (thermal) neutrons are much more likely to be absorbed by U-235 and cause fission."
+  },
+  {
+    "id": "control-rods",
+    "type": "mcq",
+    "lesson": "nuclear-reactors",
+    "concept": "Control rods",
+    "difficulty": 1,
+    "prompt": "To reduce the power output of a reactor, the operators:",
+    "options": ["remove the moderator", "lower the control rods further into the core", "raise the control rods out of the core", "add more fuel"],
+    "answer": 1,
+    "explanation": "Control rods absorb neutrons; pushing them in reduces the number available to cause fission."
+  },
+  {
+    "id": "reactor-parts",
+    "type": "multi",
+    "lesson": "nuclear-reactors",
+    "concept": "Reactor design",
+    "difficulty": 2,
+    "prompt": "Which pairings of reactor part and function are correct?",
+    "options": ["Shielding — absorbs neutrons and gamma rays", "Heat exchanger — transfers energy to make steam", "Control rods — slow neutrons", "Moderator — absorbs excess neutrons"],
+    "answers": [0, 1],
+    "explanation": "Control rods **absorb** neutrons; the moderator **slows** them."
+  },
+  {
+    "id": "fission-products",
+    "type": "tf",
+    "lesson": "nuclear-reactors",
+    "concept": "Nuclear waste",
+    "difficulty": 2,
+    "prompt": "Fission products are usually neutron-rich and decay by β⁻ emission.",
+    "answer": true,
+    "explanation": "Heavy nuclei have a higher N/Z ratio than medium nuclei, so the fragments have too many neutrons and β⁻ decay."
+  },
+  {
+    "id": "moderator-mass",
+    "type": "mcq",
+    "lesson": "nuclear-reactors",
+    "concept": "Moderator",
+    "difficulty": 3,
+    "prompt": "Which material is the best moderator, considered only by energy transfer per collision?",
+    "options": ["lead", "iron", "hydrogen in water", "uranium"],
+    "answer": 2,
+    "explanation": "Collisions between particles of similar mass transfer the most energy; a hydrogen nucleus has almost the same mass as a neutron."
+  }
+]
