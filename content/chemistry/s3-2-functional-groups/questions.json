@@ -1,0 +1,198 @@
+[
+  {
+    "id": "functional-group-id",
+    "type": "mcq",
+    "lesson": "formulas-homologous-series",
+    "concept": "Functional groups",
+    "difficulty": 1,
+    "prompt": "Which class of compound has the functional group –CHO?",
+    "options": ["ketone", "aldehyde", "carboxylic acid", "ester"],
+    "answer": 1,
+    "explanation": "An aldehyde has a carbonyl group at the end of the chain, –CHO."
+  },
+  {
+    "id": "homologous-diff",
+    "type": "tf",
+    "lesson": "formulas-homologous-series",
+    "concept": "Homologous series",
+    "difficulty": 1,
+    "prompt": "Successive members of a homologous series differ by CH₂.",
+    "answer": true,
+    "explanation": "That is the defining feature, along with the same functional group and general formula."
+  },
+  {
+    "id": "general-formula",
+    "type": "mcq",
+    "lesson": "formulas-homologous-series",
+    "concept": "Homologous series",
+    "difficulty": 1,
+    "prompt": "What is the molecular formula of the alkane with 7 carbon atoms?",
+    "options": ["C₇H₁₄", "C₇H₁₆", "C₇H₁₂", "C₇H₁₈"],
+    "answer": 1,
+    "explanation": "Alkanes are CₙH₂ₙ₊₂: C₇H₁₆."
+  },
+  {
+    "id": "bp-branching",
+    "type": "mcq",
+    "lesson": "formulas-homologous-series",
+    "concept": "Physical properties",
+    "difficulty": 2,
+    "prompt": "Which isomer of C₅H₁₂ has the lowest boiling point?",
+    "options": ["pentane", "2-methylbutane", "2,2-dimethylpropane", "all the same"],
+    "answer": 2,
+    "explanation": "The most branched, most spherical isomer has the smallest surface contact, so the weakest London forces."
+  },
+  {
+    "id": "ester-group",
+    "type": "mcq",
+    "lesson": "formulas-homologous-series",
+    "concept": "Functional groups",
+    "difficulty": 1,
+    "prompt": "Methyl ethanoate belongs to which class?",
+    "options": ["ether", "ester", "ketone", "carboxylic acid"],
+    "answer": 1,
+    "explanation": "Names ending in -oate are esters, containing –COO–."
+  },
+  {
+    "id": "name-alcohol",
+    "type": "mcq",
+    "lesson": "naming-isomers",
+    "concept": "IUPAC naming",
+    "difficulty": 2,
+    "prompt": "What is the IUPAC name of CH₃CH(OH)CH₂CH₃?",
+    "options": ["butan-1-ol", "butan-2-ol", "2-methylpropan-1-ol", "butan-3-ol"],
+    "answer": 1,
+    "explanation": "Four-carbon chain; numbering from either end gives the OH the lowest locant 2."
+  },
+  {
+    "id": "classify-alcohol",
+    "type": "mcq",
+    "lesson": "naming-isomers",
+    "concept": "Primary, secondary, tertiary",
+    "difficulty": 2,
+    "prompt": "2-methylpropan-2-ol is a:",
+    "options": ["primary alcohol", "secondary alcohol", "tertiary alcohol", "carboxylic acid"],
+    "answer": 2,
+    "explanation": "The C bearing –OH is bonded to three other carbons."
+  },
+  {
+    "id": "isomers-c4h10",
+    "type": "numeric",
+    "lesson": "naming-isomers",
+    "concept": "Structural isomers",
+    "difficulty": 1,
+    "prompt": "How many structural isomers does C₄H₁₀ have?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "Butane and 2-methylpropane."
+  },
+  {
+    "id": "fg-isomer",
+    "type": "mcq",
+    "lesson": "naming-isomers",
+    "concept": "Structural isomers",
+    "difficulty": 2,
+    "prompt": "Which pair are functional group isomers?",
+    "options": ["propan-1-ol and propan-2-ol", "propanal and propanone", "butane and 2-methylpropane", "but-1-ene and but-2-ene"],
+    "answer": 1,
+    "explanation": "Both are C₃H₆O but one is an aldehyde and the other a ketone."
+  },
+  {
+    "id": "name-haloalkane",
+    "type": "mcq",
+    "lesson": "naming-isomers",
+    "concept": "IUPAC naming",
+    "difficulty": 2,
+    "prompt": "Name CH₃CHBrCH₂CH₂CH₃.",
+    "options": ["4-bromopentane", "2-bromopentane", "2-bromobutane", "bromopentane"],
+    "answer": 1,
+    "explanation": "Five-carbon chain, bromine on C2 (lowest locant)."
+  },
+  {
+    "id": "chiral-identify",
+    "type": "mcq",
+    "lesson": "stereoisomers",
+    "concept": "Optical isomerism",
+    "difficulty": 2,
+    "prompt": "(HL) Which molecule has a chiral carbon?",
+    "options": ["propan-2-ol", "2-chlorobutane", "1-chloropropane", "propanone"],
+    "answer": 1,
+    "explanation": "C2 of 2-chlorobutane carries H, Cl, CH₃ and C₂H₅ — four different groups."
+  },
+  {
+    "id": "cis-trans-possible",
+    "type": "multi",
+    "lesson": "stereoisomers",
+    "concept": "Cis–trans isomerism",
+    "difficulty": 2,
+    "prompt": "(HL) Which compounds show cis–trans isomerism?",
+    "options": ["but-2-ene", "but-1-ene", "1,2-dichloroethene", "2-methylpropene"],
+    "answers": [0, 2],
+    "explanation": "Each carbon of the C=C must carry two different groups. In but-1-ene and 2-methylpropene one carbon has two identical groups."
+  },
+  {
+    "id": "racemic",
+    "type": "tf",
+    "lesson": "stereoisomers",
+    "concept": "Optical isomerism",
+    "difficulty": 2,
+    "prompt": "(HL) A racemic mixture rotates plane-polarised light.",
+    "answer": false,
+    "explanation": "Equal amounts of enantiomers rotate light equally in opposite directions, so there is no net rotation."
+  },
+  {
+    "id": "ihd-calc",
+    "type": "numeric",
+    "lesson": "spectroscopy",
+    "concept": "Index of hydrogen deficiency",
+    "difficulty": 2,
+    "prompt": "(HL) What is the index of hydrogen deficiency of C₆H₆?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "$(2\\times6 + 2 - 6)/2 = 4$: one ring and three π bonds (benzene)."
+  },
+  {
+    "id": "ir-carbonyl",
+    "type": "mcq",
+    "lesson": "spectroscopy",
+    "concept": "Infrared spectroscopy",
+    "difficulty": 2,
+    "prompt": "(HL) A strong, sharp IR absorption at 1715 cm⁻¹ indicates which bond?",
+    "options": ["O–H", "C=O", "C–H", "C=C"],
+    "answer": 1,
+    "explanation": "C=O absorbs at 1700–1750 cm⁻¹."
+  },
+  {
+    "id": "nmr-signals",
+    "type": "numeric",
+    "lesson": "spectroscopy",
+    "concept": "¹H NMR",
+    "difficulty": 2,
+    "prompt": "(HL) How many signals are in the ¹H NMR spectrum of ethanol, CH₃CH₂OH?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "Three hydrogen environments: CH₃, CH₂ and OH."
+  },
+  {
+    "id": "nmr-split",
+    "type": "mcq",
+    "lesson": "spectroscopy",
+    "concept": "¹H NMR",
+    "difficulty": 3,
+    "prompt": "(HL) In the ¹H NMR spectrum of chloroethane, CH₃CH₂Cl, the CH₂ signal is split into:",
+    "options": ["a doublet", "a triplet", "a quartet", "a singlet"],
+    "answer": 2,
+    "explanation": "The CH₂ protons have three neighbouring H (on CH₃): n + 1 = 4, a quartet."
+  },
+  {
+    "id": "ms-fragment",
+    "type": "mcq",
+    "lesson": "spectroscopy",
+    "concept": "Mass spectrometry",
+    "difficulty": 2,
+    "prompt": "(HL) A mass spectrum shows M⁺ at m/z 60 and a peak at m/z 45. Which fragment was lost?",
+    "options": ["CH₃", "OH", "C₂H₅", "COOH"],
+    "answer": 0,
+    "explanation": "60 − 45 = 15, a CH₃ group."
+  }
+]

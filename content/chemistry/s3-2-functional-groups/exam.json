@@ -1,0 +1,65 @@
+[
+  {
+    "id": "p1a-isomer-count",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "S3.2",
+    "prompt": "How many structural isomers with the formula C₃H₇Cl exist?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** 1-chloropropane and 2-chloropropane.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-name-ketone",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "S3.2",
+    "prompt": "What is the IUPAC name of CH₃COCH₂CH₃?",
+    "options": [
+      "butanal",
+      "butan-2-one",
+      "butanoic acid",
+      "propanone"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** Four-carbon chain with C=O on C2: a ketone.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-nmr-triplet",
+    "paper": "1A",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "S3.2",
+    "prompt": "How many signals, and with what splitting pattern for the CH₃ signal, appear in the ¹H NMR spectrum of propanone, CH₃COCH₃?",
+    "options": [
+      "1 signal, singlet",
+      "2 signals, triplet",
+      "2 signals, singlet",
+      "1 signal, doublet"
+    ],
+    "answer": 0,
+    "markscheme": "**A.** Both CH₃ groups are equivalent; no H on the neighbouring carbonyl carbon, so a singlet.",
+    "source": "original"
+  },
+  {
+    "id": "p2-identify-ester",
+    "paper": "2",
+    "level": "HL",
+    "difficulty": "hard",
+    "marks": 6,
+    "subtopic": "S3.2",
+    "prompt": "Compound X has molecular formula C₄H₈O₂. Its IR spectrum shows a strong absorption at 1740 cm⁻¹ and no broad absorption above 2500 cm⁻¹. Its ¹H NMR spectrum has three signals: δ 4.1 (2H, quartet), δ 2.0 (3H, singlet), δ 1.3 (3H, triplet).\n\n**(a)** Calculate the index of hydrogen deficiency. **[1]**\n\n**(b)** Identify the functional group and explain the IR evidence. **[2]**\n\n**(c)** Deduce the structure of X, explaining the NMR splitting. **[3]**",
+    "markscheme": "**(a)** $\\tfrac{(10 - 8)}{2} = 1$ ✓\n\n**(b)** Ester ✓; C=O at 1740 cm⁻¹ with no O–H absorption, so not an acid/alcohol ✓\n\n**(c)** CH₃COOCH₂CH₃ (ethyl ethanoate) ✓; quartet (2H) and triplet (3H) show a CH₂CH₃ group, the CH₂ at 4.1 ppm bonded to O ✓; singlet (3H) at 2.0 ppm is CH₃ next to C=O with no neighbouring H ✓",
+    "source": "original"
+  }
+]

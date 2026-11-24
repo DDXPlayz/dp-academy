@@ -1,0 +1,13 @@
+[
+  { "id": "period-group-card", "front": "Period and group tell you?", "back": "Period = outer main energy level; group = number of valence electrons (s/p blocks).", "concept": "Periodic table structure" },
+  { "id": "trends-across-card", "front": "Trends across a period?", "back": "Radius ↓, first IE ↑, electronegativity ↑, metallic character ↓.", "concept": "Atomic radius" },
+  { "id": "trends-down-card", "front": "Trends down a group?", "back": "Radius ↑, first IE ↓, electronegativity ↓, metallic character ↑.", "concept": "Atomic radius" },
+  { "id": "ion-size-card", "front": "Cation vs anion size?", "back": "Cations smaller than their atoms; anions larger.", "concept": "Ionic radius" },
+  { "id": "g1-g17-card", "front": "Group 1 and 17 reactivity trends?", "back": "Group 1 increases down; group 17 decreases down.", "concept": "Group trends" },
+  { "id": "oxides-card", "front": "Period 3 oxide acid–base character?", "back": "Na₂O, MgO basic; Al₂O₃ amphoteric; SiO₂, P₄O₁₀, SO₃ acidic.", "concept": "Period 3 oxides" },
+  { "id": "ox-rules-card", "front": "Oxidation state rules?", "back": "Elements 0; O −2 (peroxide −1); H +1 (hydride −1); F −1; sum = overall charge.", "concept": "Oxidation states" },
+  { "id": "acid-dep-card", "front": "Sources of acid deposition?", "back": "SO₂ from burning sulfur in fuels; NOₓ from high-temperature engines.", "concept": "Acid deposition" },
+  { "id": "ie-dips-card", "front": "(HL) First IE dips in period 3?", "back": "Mg→Al: 3p electron higher in energy. P→S: paired 3p electron repulsion.", "concept": "Ionisation energy discontinuities" },
+  { "id": "tm-props-card", "front": "(HL) Transition element properties?", "back": "Variable oxidation states, coloured complexes, catalysis, magnetism — from incomplete d sublevel.", "concept": "Transition elements" },
+  { "id": "colour-card", "front": "(HL) Why are complexes coloured?", "back": "Ligands split d orbitals; electrons absorb visible light to jump the gap; complementary colour seen.", "concept": "Coloured complexes" }
+]

@@ -1,0 +1,186 @@
+[
+  {
+    "id": "radius-trend",
+    "type": "mcq",
+    "lesson": "periodic-trends",
+    "concept": "Atomic radius",
+    "difficulty": 1,
+    "prompt": "Why does atomic radius decrease across period 3?",
+    "options": ["Shielding increases", "Nuclear charge increases while shielding stays about the same", "Electrons are added to new shells", "Atoms lose electrons"],
+    "answer": 1,
+    "explanation": "More protons pull the same outer shell closer, with little extra shielding."
+  },
+  {
+    "id": "block-identify",
+    "type": "mcq",
+    "lesson": "periodic-trends",
+    "concept": "Periodic table structure",
+    "difficulty": 1,
+    "prompt": "An element has configuration [Ne] 3s² 3p³. Which period, group and block?",
+    "options": ["period 3, group 15, p-block", "period 3, group 5, d-block", "period 5, group 3, p-block", "period 2, group 15, p-block"],
+    "answer": 0,
+    "explanation": "Outer level n = 3 → period 3; five valence electrons in s and p → group 15; last electron in p."
+  },
+  {
+    "id": "isoelectronic",
+    "type": "mcq",
+    "lesson": "periodic-trends",
+    "concept": "Ionic radius",
+    "difficulty": 2,
+    "prompt": "Which ion is the largest?",
+    "options": ["Na⁺", "Mg²⁺", "F⁻", "O²⁻"],
+    "answer": 3,
+    "explanation": "All have 10 electrons; O²⁻ has the fewest protons (8), so its electrons are held least tightly."
+  },
+  {
+    "id": "en-highest",
+    "type": "mcq",
+    "lesson": "periodic-trends",
+    "concept": "Electronegativity",
+    "difficulty": 1,
+    "prompt": "Which element has the highest electronegativity?",
+    "options": ["Cl", "O", "F", "N"],
+    "answer": 2,
+    "explanation": "Electronegativity increases across a period and up a group: fluorine is highest."
+  },
+  {
+    "id": "group1-reactivity",
+    "type": "tf",
+    "lesson": "periodic-trends",
+    "concept": "Group trends",
+    "difficulty": 1,
+    "prompt": "Potassium reacts more vigorously with water than sodium.",
+    "answer": true,
+    "explanation": "K’s outer electron is further from the nucleus and more shielded, so it is lost more easily."
+  },
+  {
+    "id": "halogen-displace",
+    "type": "multi",
+    "lesson": "periodic-trends",
+    "concept": "Group trends",
+    "difficulty": 2,
+    "prompt": "Which mixtures react?",
+    "options": ["Cl₂ + KBr(aq)", "Br₂ + KCl(aq)", "Br₂ + KI(aq)", "I₂ + KCl(aq)"],
+    "answers": [0, 2],
+    "explanation": "A halogen displaces those below it: Cl₂ displaces Br⁻; Br₂ displaces I⁻."
+  },
+  {
+    "id": "cation-smaller",
+    "type": "tf",
+    "lesson": "periodic-trends",
+    "concept": "Ionic radius",
+    "difficulty": 1,
+    "prompt": "A sodium ion is larger than a sodium atom.",
+    "answer": false,
+    "explanation": "Na⁺ has lost its entire third shell, so it is smaller."
+  },
+  {
+    "id": "oxide-character",
+    "type": "mcq",
+    "lesson": "oxides-oxidation-states",
+    "concept": "Period 3 oxides",
+    "difficulty": 1,
+    "prompt": "Which oxide is amphoteric?",
+    "options": ["Na₂O", "MgO", "Al₂O₃", "SO₂"],
+    "answer": 2,
+    "explanation": "Aluminium oxide reacts with both acids and bases."
+  },
+  {
+    "id": "so3-water",
+    "type": "mcq",
+    "lesson": "oxides-oxidation-states",
+    "concept": "Period 3 oxides",
+    "difficulty": 1,
+    "prompt": "What forms when SO₃ reacts with water?",
+    "options": ["H₂SO₃", "H₂SO₄", "H₂S", "SO₂ and O₂"],
+    "answer": 1,
+    "explanation": "SO₃ + H₂O → H₂SO₄ (sulfuric acid)."
+  },
+  {
+    "id": "ox-state-cr",
+    "type": "numeric",
+    "lesson": "oxides-oxidation-states",
+    "concept": "Oxidation states",
+    "difficulty": 2,
+    "prompt": "What is the oxidation state of chromium in Cr₂O₇²⁻?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "$2\\text{Cr} + 7(-2) = -2$ → $2\\text{Cr} = +12$ → Cr = +6."
+  },
+  {
+    "id": "ox-state-h2o2",
+    "type": "numeric",
+    "lesson": "oxides-oxidation-states",
+    "concept": "Oxidation states",
+    "difficulty": 2,
+    "prompt": "What is the oxidation state of oxygen in hydrogen peroxide, H₂O₂?",
+    "answer": -1,
+    "tolerance": 0,
+    "explanation": "$2(+1) + 2\\text{O} = 0$ → O = −1 (peroxides are the exception to −2)."
+  },
+  {
+    "id": "acid-rain-gases",
+    "type": "multi",
+    "lesson": "oxides-oxidation-states",
+    "concept": "Acid deposition",
+    "difficulty": 1,
+    "prompt": "Which gases contribute to acid deposition?",
+    "options": ["SO₂", "NO₂", "CH₄", "N₂"],
+    "answers": [0, 1],
+    "explanation": "Sulfur and nitrogen oxides form sulfuric/sulfurous and nitric/nitrous acids."
+  },
+  {
+    "id": "ie-dip-al",
+    "type": "mcq",
+    "lesson": "ie-transition-elements",
+    "concept": "Ionisation energy discontinuities",
+    "difficulty": 2,
+    "prompt": "(HL) Why is the first ionisation energy of aluminium lower than that of magnesium?",
+    "options": ["Al has a smaller nuclear charge", "Al’s outer electron is in a 3p orbital, higher in energy than 3s", "Al’s outer electron is paired", "Al is larger than Mg"],
+    "answer": 1,
+    "explanation": "The 3p electron is higher in energy and slightly shielded by the 3s electrons."
+  },
+  {
+    "id": "ie-dip-s",
+    "type": "mcq",
+    "lesson": "ie-transition-elements",
+    "concept": "Ionisation energy discontinuities",
+    "difficulty": 2,
+    "prompt": "(HL) Why is the first ionisation energy of sulfur lower than that of phosphorus?",
+    "options": ["S has more shielding", "In S the electron is removed from a paired 3p orbital, where repulsion helps", "S is in a different period", "S has fewer protons"],
+    "answer": 1,
+    "explanation": "P is 3p³ (all single); S is 3p⁴ with one pair, so electron–electron repulsion lowers the IE."
+  },
+  {
+    "id": "complex-colour",
+    "type": "mcq",
+    "lesson": "ie-transition-elements",
+    "concept": "Coloured complexes",
+    "difficulty": 2,
+    "prompt": "(HL) A complex ion absorbs red light. What colour does it appear?",
+    "options": ["red", "green-blue (cyan)", "yellow", "white"],
+    "answer": 1,
+    "explanation": "We see the complementary colour of the absorbed light; red’s complement is cyan/green-blue."
+  },
+  {
+    "id": "zn-colourless",
+    "type": "tf",
+    "lesson": "ie-transition-elements",
+    "concept": "Transition elements",
+    "difficulty": 2,
+    "prompt": "(HL) Zn²⁺ compounds are colourless because the 3d sublevel is full.",
+    "answer": true,
+    "explanation": "With 3d¹⁰ no d–d transition is possible."
+  },
+  {
+    "id": "variable-ox",
+    "type": "mcq",
+    "lesson": "ie-transition-elements",
+    "concept": "Variable oxidation states",
+    "difficulty": 3,
+    "prompt": "(HL) Transition elements show variable oxidation states because:",
+    "options": ["their 4s and 3d electrons are close in energy, so successive IEs rise gradually", "they have no d electrons", "they are all highly electronegative", "they form only ionic compounds"],
+    "answer": 0,
+    "explanation": "No large jump in successive IEs means different numbers of electrons can be lost."
+  }
+]

@@ -1,0 +1,14 @@
+[
+  { "id": "fg-card", "front": "Functional group?", "back": "The atom/group that gives a compound its characteristic chemical properties.", "concept": "Functional groups" },
+  { "id": "suffix-card", "front": "Suffixes: alcohol, aldehyde, ketone, carboxylic acid, ester?", "back": "-ol, -al, -one, -oic acid, -oate.", "concept": "Functional groups" },
+  { "id": "hom-series-card", "front": "Homologous series?", "back": "Same functional group and general formula, differ by CH₂, similar chemistry, trend in physical properties.", "concept": "Homologous series" },
+  { "id": "bp-chain-card", "front": "Effect of chain length and branching on boiling point?", "back": "Longer chain → higher bp; more branching → lower bp (London forces).", "concept": "Physical properties" },
+  { "id": "iupac-card", "front": "IUPAC naming steps?", "back": "Longest chain with group → suffix → lowest locant for group → alphabetical substituent prefixes.", "concept": "IUPAC naming" },
+  { "id": "degree-card", "front": "Primary, secondary, tertiary alcohol?", "back": "C bearing OH bonded to 1, 2 or 3 other carbons.", "concept": "Primary, secondary, tertiary" },
+  { "id": "struct-iso-card", "front": "Types of structural isomer?", "back": "Chain, position, functional group.", "concept": "Structural isomers" },
+  { "id": "cis-trans-card", "front": "(HL) Conditions for cis–trans isomerism?", "back": "Restricted rotation (C=C or ring) and two different groups on each relevant carbon.", "concept": "Cis–trans isomerism" },
+  { "id": "chiral-card", "front": "(HL) Chiral carbon and enantiomers?", "back": "C with four different groups; enantiomers are non-superimposable mirror images rotating plane-polarised light oppositely.", "concept": "Optical isomerism" },
+  { "id": "ihd-card", "front": "(HL) IHD formula?", "back": "((2C + 2 + N) − (H + X))/2 = rings + π bonds.", "concept": "Index of hydrogen deficiency" },
+  { "id": "ir-card", "front": "(HL) Key IR bands?", "back": "O–H alcohol 3200–3600 broad; O–H acid 2500–3000 very broad; C=O 1700–1750.", "concept": "Infrared spectroscopy" },
+  { "id": "nmr-card", "front": "(HL) What does ¹H NMR tell you?", "back": "Signals = environments; shift = type; integration = number of H; n + 1 splitting = neighbouring H.", "concept": "¹H NMR" }
+]

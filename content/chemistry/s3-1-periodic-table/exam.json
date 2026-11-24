@@ -14,5 +14,78 @@
     "answer": 2,
     "markscheme": "**C.** Each element down the group has an extra occupied shell, so the outer electron is further from the nucleus. Ionization energy, electronegativity and melting point all decrease.",
     "source": "original"
+  },
+  {
+    "id": "p1a-isoelectronic-radius",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "S3.1",
+    "prompt": "Which species has the smallest radius?",
+    "options": [
+      "Cl⁻",
+      "Ar",
+      "K⁺",
+      "Ca²⁺"
+    ],
+    "answer": 3,
+    "markscheme": "**D.** All have 18 electrons; Ca²⁺ has the most protons (20) pulling them in.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-oxidation-state-v",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "S3.1",
+    "prompt": "What is the oxidation state of vanadium in NH₄VO₃?",
+    "options": [
+      "+3",
+      "+4",
+      "+5",
+      "+6"
+    ],
+    "answer": 2,
+    "markscheme": "**C.** NH₄⁺ is +1, so VO₃⁻: $\\text{V} + 3(-2) = -1 \\Rightarrow \\text{V} = +5$.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-ie-period3",
+    "paper": "1A",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "S3.1",
+    "prompt": "Which element has a lower first ionisation energy than the element immediately before it in period 3?",
+    "options": [
+      "Si",
+      "P",
+      "S",
+      "Cl"
+    ],
+    "answer": 2,
+    "markscheme": "**C.** S loses an electron from a doubly occupied 3p orbital; repulsion makes it easier to remove than P’s.",
+    "source": "original"
+  },
+  {
+    "id": "p2-period3-oxides",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 5,
+    "subtopic": "S3.1",
+    "prompt": "**(a)** Write equations for the reactions of sodium oxide and of sulfur trioxide with water. **[2]**\n\n**(b)** Predict the pH of each resulting solution. **[1]**\n\n**(c)** Outline why aluminium oxide is described as amphoteric, giving one equation. **[2]**",
+    "markscheme": "**(a)** $\\text{Na}_2\\text{O} + \\text{H}_2\\text{O} \\rightarrow 2\\text{NaOH}$ ✓; $\\text{SO}_3 + \\text{H}_2\\text{O} \\rightarrow \\text{H}_2\\text{SO}_4$ ✓\n\n**(b)** NaOH solution pH > 7 (≈ 13–14) and H₂SO₄ solution pH < 7 (≈ 1) ✓\n\n**(c)** It reacts with both acids and bases ✓; e.g. $\\text{Al}_2\\text{O}_3 + 6\\text{HCl} \\rightarrow 2\\text{AlCl}_3 + 3\\text{H}_2\\text{O}$ ✓",
+    "source": "original"
+  },
+  {
+    "id": "p2-complex-colour",
+    "paper": "2",
+    "level": "HL",
+    "difficulty": "hard",
+    "marks": 5,
+    "subtopic": "S3.1",
+    "prompt": "A solution of [Ni(H₂O)₆]²⁺ is green.\n\n**(a)** Write the electron configuration of Ni²⁺ (Z = 28). **[1]**\n\n**(b)** Explain why the complex is coloured. **[3]**\n\n**(c)** Suggest why a solution containing [Zn(H₂O)₆]²⁺ is colourless. **[1]**",
+    "markscheme": "**(a)** [Ar] 3d⁸ ✓\n\n**(b)** The water ligands split the 3d orbitals into two sets of different energy ✓; electrons absorb visible light of energy matching the gap and are promoted to the higher set ✓; the complementary colour of the absorbed light (red/purple absorbed) is transmitted/observed ✓\n\n**(c)** Zn²⁺ is 3d¹⁰: the d sublevel is full, so no d–d transitions are possible ✓",
+    "source": "original"
   }
 ]
