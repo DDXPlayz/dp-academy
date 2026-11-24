@@ -14,5 +14,49 @@
     "answer": 2,
     "markscheme": "**C.** Mg forms Mg$^{2+}$ and N forms N$^{3-}$; three Mg$^{2+}$ (+6) balance two N$^{3-}$ (−6).",
     "source": "original"
+  },
+  {
+    "id": "p1a-ionic-conductivity",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "S2.1",
+    "prompt": "Which property is characteristic of solid potassium bromide?",
+    "options": [
+      "It conducts electricity",
+      "It has a low melting point",
+      "It is brittle",
+      "It is insoluble in water"
+    ],
+    "answer": 2,
+    "markscheme": "**C.** Displacing layers brings like charges together; they repel and the crystal shatters.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-lattice-order",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "S2.1",
+    "prompt": "Which lists the compounds in order of increasing lattice enthalpy?",
+    "options": [
+      "KCl < NaCl < MgO",
+      "MgO < NaCl < KCl",
+      "NaCl < KCl < MgO",
+      "KCl < MgO < NaCl"
+    ],
+    "answer": 0,
+    "markscheme": "**A.** K⁺ is larger than Na⁺; Mg²⁺ and O²⁻ are small and doubly charged.",
+    "source": "original"
+  },
+  {
+    "id": "p2-ionic-properties",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 5,
+    "subtopic": "S2.1",
+    "prompt": "Calcium reacts with chlorine to form calcium chloride.\n\n**(a)** Describe, in terms of electrons, how the ions form. **[2]**\n\n**(b)** Describe the structure and bonding in solid calcium chloride. **[2]**\n\n**(c)** Explain why calcium chloride conducts electricity when molten but not when solid. **[1]**",
+    "markscheme": "**(a)** Each calcium atom loses two electrons to form Ca²⁺ ✓; each of two chlorine atoms gains one electron to form Cl⁻ ✓\n\n**(b)** Giant (3D) lattice of alternating Ca²⁺ and Cl⁻ ions ✓; held by electrostatic attraction between oppositely charged ions ✓\n\n**(c)** In the molten state the ions are free to move and carry charge; in the solid they are fixed in position ✓",
+    "source": "original"
   }
 ]

@@ -1,0 +1,230 @@
+[
+  {
+    "id": "lewis-electrons",
+    "type": "numeric",
+    "lesson": "covalent-bonds-lewis",
+    "concept": "Lewis formulas",
+    "difficulty": 1,
+    "prompt": "How many valence electrons must be shown in the Lewis formula of the nitrate ion, NO₃⁻?",
+    "answer": 24,
+    "tolerance": 0,
+    "explanation": "N 5 + 3 × O 6 = 23, plus 1 for the negative charge = 24."
+  },
+  {
+    "id": "triple-bond",
+    "type": "mcq",
+    "lesson": "covalent-bonds-lewis",
+    "concept": "Bond order",
+    "difficulty": 1,
+    "prompt": "Which bond is the shortest?",
+    "options": ["C–C", "C=C", "C≡C", "C–H"],
+    "answer": 2,
+    "explanation": "More shared pairs pull the nuclei closer: triple bonds are shortest and strongest."
+  },
+  {
+    "id": "coordination",
+    "type": "multi",
+    "lesson": "covalent-bonds-lewis",
+    "concept": "Coordination bonds",
+    "difficulty": 2,
+    "prompt": "Which species contain a coordination bond?",
+    "options": ["NH₄⁺", "CH₄", "H₃O⁺", "CO"],
+    "answers": [0, 2, 3],
+    "explanation": "In NH₄⁺ and H₃O⁺ a lone pair is donated to H⁺; in CO one pair comes from oxygen."
+  },
+  {
+    "id": "incomplete-octet",
+    "type": "mcq",
+    "lesson": "covalent-bonds-lewis",
+    "concept": "Lewis formulas",
+    "difficulty": 2,
+    "prompt": "Which molecule has a central atom with an incomplete octet?",
+    "options": ["NH₃", "BF₃", "CCl₄", "H₂O"],
+    "answer": 1,
+    "explanation": "Boron in BF₃ has only six electrons around it."
+  },
+  {
+    "id": "shape-nh3",
+    "type": "mcq",
+    "lesson": "vsepr-shapes",
+    "concept": "VSEPR",
+    "difficulty": 1,
+    "prompt": "What is the molecular geometry of ammonia, NH₃?",
+    "options": ["trigonal planar", "trigonal pyramidal", "tetrahedral", "bent"],
+    "answer": 1,
+    "explanation": "Four electron domains (one lone pair): tetrahedral electron geometry, trigonal pyramidal molecular geometry."
+  },
+  {
+    "id": "angle-water",
+    "type": "numeric",
+    "lesson": "vsepr-shapes",
+    "concept": "Bond angles",
+    "difficulty": 1,
+    "prompt": "What is the approximate H–O–H bond angle in water, in degrees?",
+    "answer": 104.5,
+    "tolerance": 0.01,
+    "unit": "°",
+    "explanation": "Two lone pairs squeeze the tetrahedral 109.5° down to about 104.5°."
+  },
+  {
+    "id": "domains-co2",
+    "type": "tf",
+    "lesson": "vsepr-shapes",
+    "concept": "VSEPR",
+    "difficulty": 1,
+    "prompt": "CO₂ has four electron domains around carbon because there are two double bonds.",
+    "answer": false,
+    "explanation": "Each double bond counts as one domain: two domains, so CO₂ is linear (180°)."
+  },
+  {
+    "id": "shape-so2",
+    "type": "mcq",
+    "lesson": "vsepr-shapes",
+    "concept": "VSEPR",
+    "difficulty": 2,
+    "prompt": "What is the shape of SO₂?",
+    "options": ["linear", "bent", "trigonal planar", "trigonal pyramidal"],
+    "answer": 1,
+    "explanation": "Three domains on S (two bonds + one lone pair): bent, ~117°."
+  },
+  {
+    "id": "polar-molecule",
+    "type": "multi",
+    "lesson": "polarity-imf",
+    "concept": "Molecular polarity",
+    "difficulty": 2,
+    "prompt": "Which molecules are polar?",
+    "options": ["CO₂", "CHCl₃", "CCl₄", "NH₃"],
+    "answers": [1, 3],
+    "explanation": "CO₂ and CCl₄ are symmetrical so dipoles cancel; CHCl₃ and NH₃ are not."
+  },
+  {
+    "id": "highest-bp",
+    "type": "mcq",
+    "lesson": "polarity-imf",
+    "concept": "Intermolecular forces",
+    "difficulty": 2,
+    "prompt": "Which has the highest boiling point?",
+    "options": ["CH₃CH₂CH₃", "CH₃OCH₃", "CH₃CH₂OH", "CH₃CHO"],
+    "answer": 2,
+    "explanation": "Similar molar masses; only ethanol forms hydrogen bonds."
+  },
+  {
+    "id": "london-trend",
+    "type": "tf",
+    "lesson": "polarity-imf",
+    "concept": "Intermolecular forces",
+    "difficulty": 1,
+    "prompt": "The boiling points of the halogens increase down group 17 because London forces increase with the number of electrons.",
+    "answer": true,
+    "explanation": "Larger electron clouds are more polarisable, giving stronger London forces."
+  },
+  {
+    "id": "boiling-bonds",
+    "type": "mcq",
+    "lesson": "polarity-imf",
+    "concept": "Intermolecular forces",
+    "difficulty": 1,
+    "prompt": "When water boils, which are overcome?",
+    "options": ["O–H covalent bonds", "hydrogen bonds and other intermolecular forces", "ionic bonds", "metallic bonds"],
+    "answer": 1,
+    "explanation": "Boiling separates molecules; covalent bonds within molecules are not broken."
+  },
+  {
+    "id": "rf-value",
+    "type": "numeric",
+    "lesson": "polarity-imf",
+    "concept": "Chromatography",
+    "difficulty": 1,
+    "prompt": "A spot moves 3.6 cm while the solvent front moves 8.0 cm. What is its Rf value?",
+    "answer": 0.45,
+    "tolerance": 0.01,
+    "explanation": "$R_f = 3.6/8.0 = 0.45$."
+  },
+  {
+    "id": "diamond-graphite",
+    "type": "mcq",
+    "lesson": "polarity-imf",
+    "concept": "Covalent networks",
+    "difficulty": 2,
+    "prompt": "Why does graphite conduct electricity but diamond does not?",
+    "options": ["Graphite contains ions", "Each carbon in graphite has one delocalised electron", "Diamond has weaker covalent bonds", "Graphite is a metal"],
+    "answer": 1,
+    "explanation": "In graphite each C forms three bonds, leaving one electron delocalised across the layer; diamond’s carbons use all four electrons in bonds."
+  },
+  {
+    "id": "formal-charge",
+    "type": "numeric",
+    "lesson": "resonance-formal-charge",
+    "concept": "Formal charge",
+    "difficulty": 3,
+    "prompt": "(HL) What is the formal charge on the nitrogen atom in the ammonium ion, NH₄⁺?",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "$FC = 5 - \\tfrac{1}{2}(8) - 0 = +1$."
+  },
+  {
+    "id": "carbonate-bond-order",
+    "type": "mcq",
+    "lesson": "resonance-formal-charge",
+    "concept": "Resonance",
+    "difficulty": 2,
+    "prompt": "(HL) In the carbonate ion, CO₃²⁻, the three C–O bonds are:",
+    "options": ["one double and two single", "all identical, intermediate between single and double", "all double bonds", "all single bonds"],
+    "answer": 1,
+    "explanation": "Resonance delocalises the π electrons: each bond has order 1⅓."
+  },
+  {
+    "id": "xef4-shape",
+    "type": "mcq",
+    "lesson": "resonance-formal-charge",
+    "concept": "Expanded octets",
+    "difficulty": 3,
+    "prompt": "(HL) What is the molecular geometry of XeF₄?",
+    "options": ["tetrahedral", "seesaw", "square planar", "octahedral"],
+    "answer": 2,
+    "explanation": "Six domains (four bonds, two lone pairs opposite each other): square planar."
+  },
+  {
+    "id": "benzene-evidence",
+    "type": "tf",
+    "lesson": "resonance-formal-charge",
+    "concept": "Benzene",
+    "difficulty": 2,
+    "prompt": "(HL) All six carbon–carbon bonds in benzene have the same length.",
+    "answer": true,
+    "explanation": "Delocalisation makes every C–C bond identical (~139 pm), between single and double."
+  },
+  {
+    "id": "sigma-pi-count",
+    "type": "numeric",
+    "lesson": "sigma-pi-hybridisation",
+    "concept": "Sigma and pi bonds",
+    "difficulty": 2,
+    "prompt": "(HL) How many σ bonds are in ethene, C₂H₄?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "Four C–H σ bonds plus one σ in the C=C (which also has one π)."
+  },
+  {
+    "id": "hybrid-c2h2",
+    "type": "mcq",
+    "lesson": "sigma-pi-hybridisation",
+    "concept": "Hybridisation",
+    "difficulty": 2,
+    "prompt": "(HL) What is the hybridisation of carbon in ethyne, C₂H₂?",
+    "options": ["sp", "sp²", "sp³", "none"],
+    "answer": 0,
+    "explanation": "Each carbon has two electron domains → sp, linear, with two π bonds from unhybridised p orbitals."
+  },
+  {
+    "id": "pi-rotation",
+    "type": "tf",
+    "lesson": "sigma-pi-hybridisation",
+    "concept": "Sigma and pi bonds",
+    "difficulty": 2,
+    "prompt": "(HL) Rotation about a C=C double bond is restricted because of the π bond.",
+    "answer": true,
+    "explanation": "Rotating would break the sideways p-orbital overlap of the π bond."
+  }
+]

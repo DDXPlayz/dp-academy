@@ -1,0 +1,47 @@
+[
+  {
+    "id": "p1a-addition-polymer",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "S2.4",
+    "prompt": "Which monomer forms the polymer with repeating unit –CH₂–CH(CN)–?",
+    "options": [
+      "CH₃CH₂CN",
+      "CH₂=CHCN",
+      "CH≡CCN",
+      "CH₂=C(CN)₂"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** Restore the C=C between the backbone carbons.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-bonding-triangle",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "S2.4",
+    "prompt": "Electronegativities: Al 1.6, Cl 3.2, O 3.4. Which statement is correct?",
+    "options": [
+      "AlCl₃ is more ionic than Al₂O₃",
+      "Al₂O₃ is more ionic than AlCl₃",
+      "Both are purely covalent",
+      "Both are purely ionic"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** ΔEN is 1.8 for Al–O and 1.6 for Al–Cl; the larger difference gives more ionic character.",
+    "source": "original"
+  },
+  {
+    "id": "p2-condensation-polymer",
+    "paper": "2",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 4,
+    "subtopic": "S2.4",
+    "prompt": "Ethane-1,2-diol, HOCH₂CH₂OH, reacts with benzene-1,4-dicarboxylic acid to form a polymer.\n\n**(a)** State the type of polymerisation and name the functional group formed. **[2]**\n\n**(b)** Identify the other product and state how many molecules of it form for each link in the chain. **[2]**",
+    "markscheme": "**(a)** Condensation (polymerisation) ✓; ester ✓\n\n**(b)** Water ✓; one molecule per ester link ✓",
+    "source": "original"
+  }
+]

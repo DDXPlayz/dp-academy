@@ -1,0 +1,6 @@
+[
+  { "id": "metallic-card", "front": "Metallic bond?", "back": "Attraction between a lattice of cations and delocalised electrons.", "concept": "Metallic bond" },
+  { "id": "metal-props-card", "front": "Why are metals conductive and malleable?", "back": "Mobile delocalised electrons carry charge/energy; layers slide while the electron sea holds them.", "concept": "Properties of metals" },
+  { "id": "metal-strength-card", "front": "What makes metallic bonding stronger?", "back": "Higher cation charge (more delocalised electrons) and smaller cation radius.", "concept": "Strength of metallic bonding" },
+  { "id": "tm-d-card", "front": "(HL) Why are transition metals hard with high melting points?", "back": "Delocalised d electrons add to the electron sea; ions are small.", "concept": "Transition elements" }
+]

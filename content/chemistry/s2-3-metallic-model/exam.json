@@ -1,0 +1,29 @@
+[
+  {
+    "id": "p1a-metallic-mp",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "S2.3",
+    "prompt": "Which element has the highest melting point?",
+    "options": [
+      "Li",
+      "Na",
+      "K",
+      "Rb"
+    ],
+    "answer": 0,
+    "markscheme": "**A.** Li⁺ is the smallest group 1 ion, so it attracts the delocalised electrons most strongly.",
+    "source": "original"
+  },
+  {
+    "id": "p2-metal-explain",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 4,
+    "subtopic": "S2.3",
+    "prompt": "**(a)** Describe the bonding in magnesium. **[2]**\n\n**(b)** Explain why magnesium has a higher melting point than sodium. **[2]**",
+    "markscheme": "**(a)** Lattice of Mg²⁺ ions ✓ in a sea of delocalised electrons, attracted electrostatically ✓\n\n**(b)** Mg²⁺ has a greater charge and smaller radius than Na⁺ ✓; it releases two delocalised electrons per atom, so the electrostatic attraction is stronger and more energy is needed to overcome it ✓",
+    "source": "original"
+  }
+]

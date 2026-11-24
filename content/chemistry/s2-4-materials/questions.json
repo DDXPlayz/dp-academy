@@ -1,0 +1,99 @@
+[
+  {
+    "id": "triangle-ionic",
+    "type": "mcq",
+    "lesson": "bonding-triangle-alloys",
+    "concept": "Bonding triangle",
+    "difficulty": 2,
+    "prompt": "Which combination of electronegativity values indicates mainly ionic bonding?",
+    "options": ["ΔEN = 0.1, average EN = 3.0", "ΔEN = 2.5, average EN = 2.1", "ΔEN = 0.2, average EN = 1.0", "ΔEN = 0.5, average EN = 2.5"],
+    "answer": 1,
+    "explanation": "A large electronegativity difference puts the substance near the ionic corner."
+  },
+  {
+    "id": "metallic-corner",
+    "type": "tf",
+    "lesson": "bonding-triangle-alloys",
+    "concept": "Bonding triangle",
+    "difficulty": 2,
+    "prompt": "A substance with a small electronegativity difference and a low average electronegativity is mainly metallic.",
+    "answer": true,
+    "explanation": "Low average EN means atoms readily lose electrons — the metallic corner."
+  },
+  {
+    "id": "alloy-harder",
+    "type": "mcq",
+    "lesson": "bonding-triangle-alloys",
+    "concept": "Alloys",
+    "difficulty": 1,
+    "prompt": "Why is steel harder than pure iron?",
+    "options": ["Carbon atoms form ionic bonds with iron", "Different-sized atoms disrupt the layers so they cannot slide easily", "Steel has no delocalised electrons", "Carbon increases the charge on iron ions"],
+    "answer": 1,
+    "explanation": "Atoms of a different size prevent layers of iron ions from sliding over each other."
+  },
+  {
+    "id": "alloy-examples",
+    "type": "multi",
+    "lesson": "bonding-triangle-alloys",
+    "concept": "Alloys",
+    "difficulty": 1,
+    "prompt": "Which are alloys?",
+    "options": ["brass", "bronze", "graphite", "steel"],
+    "answers": [0, 1, 3],
+    "explanation": "Graphite is a pure element (carbon), not a mixture with a metal."
+  },
+  {
+    "id": "repeat-unit",
+    "type": "mcq",
+    "lesson": "polymers",
+    "concept": "Addition polymers",
+    "difficulty": 1,
+    "prompt": "What is the repeating unit of poly(chloroethene) (PVC)?",
+    "options": ["–CH₂=CHCl–", "–CH₂–CHCl–", "–CHCl–CHCl–", "–CH₂–CH₂Cl–"],
+    "answer": 1,
+    "explanation": "The C=C in CH₂=CHCl opens to C–C; the repeating unit keeps the same atoms."
+  },
+  {
+    "id": "monomer-from-polymer",
+    "type": "mcq",
+    "lesson": "polymers",
+    "concept": "Addition polymers",
+    "difficulty": 2,
+    "prompt": "A polymer has repeating unit –CH₂–C(CH₃)₂–. What is its monomer?",
+    "options": ["CH₂=CHCH₃", "(CH₃)₂C=CH₂", "CH₃CH₂CH₃", "CH₂=CH₂"],
+    "answer": 1,
+    "explanation": "Restore the double bond between the two backbone carbons: CH₂=C(CH₃)₂ (2-methylpropene)."
+  },
+  {
+    "id": "addition-byproduct",
+    "type": "tf",
+    "lesson": "polymers",
+    "concept": "Addition polymers",
+    "difficulty": 1,
+    "prompt": "Addition polymerisation produces water as a by-product.",
+    "answer": false,
+    "explanation": "Addition polymerisation has no by-product; condensation polymerisation releases a small molecule."
+  },
+  {
+    "id": "condensation-type",
+    "type": "mcq",
+    "lesson": "polymers",
+    "concept": "Condensation polymers",
+    "difficulty": 2,
+    "prompt": "(HL) A diamine reacts with a dicarboxylic acid to form a polymer. What type of polymer and link are formed?",
+    "options": ["polyester, ester link", "polyamide, amide link", "addition polymer, C–C link", "polyether, ether link"],
+    "answer": 1,
+    "explanation": "–NH₂ + –COOH → –CONH– (amide) + H₂O: a polyamide, like nylon."
+  },
+  {
+    "id": "plastic-issue",
+    "type": "multi",
+    "lesson": "polymers",
+    "concept": "Plastics and the environment",
+    "difficulty": 1,
+    "prompt": "Which are environmental problems associated with addition polymers?",
+    "options": ["They are non-biodegradable", "Burning PVC can release HCl", "They form microplastics", "They are made from renewable sugar"],
+    "answers": [0, 1, 2],
+    "explanation": "Most are made from crude oil, persist for centuries and can release toxic gases when burned."
+  }
+]

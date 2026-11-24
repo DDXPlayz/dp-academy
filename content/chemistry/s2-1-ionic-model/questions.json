@@ -1,0 +1,89 @@
+[
+  {
+    "id": "ionic-formula",
+    "type": "mcq",
+    "lesson": "ionic-bonding",
+    "concept": "Ionic formulas",
+    "difficulty": 1,
+    "prompt": "What is the formula of aluminium sulfate?",
+    "options": ["AlSO₄", "Al₂SO₄", "Al₂(SO₄)₃", "Al₃(SO₄)₂"],
+    "answer": 2,
+    "explanation": "Al³⁺ and SO₄²⁻: two Al³⁺ (+6) balance three SO₄²⁻ (−6)."
+  },
+  {
+    "id": "ion-charge-group",
+    "type": "mcq",
+    "lesson": "ionic-bonding",
+    "concept": "Forming ions",
+    "difficulty": 1,
+    "prompt": "What is the charge on a sulfide ion?",
+    "options": ["+2", "−1", "−2", "−6"],
+    "answer": 2,
+    "explanation": "Sulfur is in group 16: it gains two electrons to reach an argon configuration."
+  },
+  {
+    "id": "ionic-conduct",
+    "type": "multi",
+    "lesson": "ionic-bonding",
+    "concept": "Properties",
+    "difficulty": 1,
+    "prompt": "In which states does sodium chloride conduct electricity?",
+    "options": ["solid", "molten", "dissolved in water", "none of these"],
+    "answers": [1, 2],
+    "explanation": "Ions must be free to move — possible when molten or in solution, not in the solid lattice."
+  },
+  {
+    "id": "ionic-brittle",
+    "type": "mcq",
+    "lesson": "ionic-bonding",
+    "concept": "Properties",
+    "difficulty": 2,
+    "prompt": "Why are ionic crystals brittle?",
+    "options": ["The ionic bonds are weak", "A shift in the lattice brings ions of the same charge together, which repel", "The electrons are delocalised", "The ions are very large"],
+    "answer": 1,
+    "explanation": "Displacing a layer lines up like charges; the repulsion splits the crystal."
+  },
+  {
+    "id": "lattice-compare",
+    "type": "mcq",
+    "lesson": "ionic-bonding",
+    "concept": "Lattice enthalpy",
+    "difficulty": 2,
+    "prompt": "Which compound has the highest lattice enthalpy?",
+    "options": ["NaCl", "KCl", "MgO", "KBr"],
+    "answer": 2,
+    "explanation": "Mg²⁺ and O²⁻ are doubly charged and small, giving much stronger attractions."
+  },
+  {
+    "id": "empirical-ionic",
+    "type": "tf",
+    "lesson": "ionic-bonding",
+    "concept": "Lattice",
+    "difficulty": 1,
+    "prompt": "The formula NaCl describes a single molecule containing one sodium atom and one chlorine atom.",
+    "answer": false,
+    "explanation": "NaCl is an empirical formula: the 1 : 1 ratio of ions in a giant lattice. There are no molecules."
+  },
+  {
+    "id": "electrons-transfer",
+    "type": "numeric",
+    "lesson": "ionic-bonding",
+    "concept": "Forming ions",
+    "difficulty": 2,
+    "prompt": "How many electrons are transferred in total when one formula unit of Al₂O₃ forms from its atoms?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "Two Al atoms each lose 3 electrons (6 total), gained by three O atoms (2 each)."
+  },
+  {
+    "id": "polyatomic",
+    "type": "mcq",
+    "lesson": "ionic-bonding",
+    "concept": "Ionic formulas",
+    "difficulty": 1,
+    "prompt": "What is the formula of ammonium carbonate?",
+    "options": ["NH₄CO₃", "(NH₄)₂CO₃", "NH₄(CO₃)₂", "(NH₃)₂CO₃"],
+    "answer": 1,
+    "explanation": "NH₄⁺ (+1) and CO₃²⁻ (−2): two ammonium ions per carbonate."
+  }
+]

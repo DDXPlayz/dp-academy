@@ -1,0 +1,7 @@
+[
+  { "id": "triangle-card", "front": "Bonding triangle axes?", "back": "ΔEN (vertical) against average EN (horizontal). Ionic top, metallic bottom-left, covalent bottom-right.", "concept": "Bonding triangle" },
+  { "id": "alloy-card", "front": "Why are alloys harder than pure metals?", "back": "Different-sized atoms disrupt layers so they cannot slide.", "concept": "Alloys" },
+  { "id": "polymer-card", "front": "Polymer?", "back": "Macromolecule of many repeating monomer units.", "concept": "Polymers" },
+  { "id": "addition-card", "front": "Addition polymerisation?", "back": "C=C monomers join as double bonds open; no by-product.", "concept": "Addition polymers" },
+  { "id": "condensation-card", "front": "(HL) Condensation polymerisation?", "back": "Bifunctional monomers join releasing H₂O/HCl: polyesters (ester links), polyamides (amide links).", "concept": "Condensation polymers" }
+]

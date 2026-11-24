@@ -1,0 +1,66 @@
+[
+  {
+    "id": "metal-conduct",
+    "type": "mcq",
+    "lesson": "metallic-bonding",
+    "concept": "Properties of metals",
+    "difficulty": 1,
+    "prompt": "Why do metals conduct electricity in the solid state?",
+    "options": ["They contain free ions", "They contain delocalised electrons that can move", "Their atoms vibrate", "They have strong covalent bonds"],
+    "answer": 1,
+    "explanation": "The delocalised electrons drift through the lattice when a potential difference is applied."
+  },
+  {
+    "id": "metal-bond-def",
+    "type": "mcq",
+    "lesson": "metallic-bonding",
+    "concept": "Metallic bond",
+    "difficulty": 1,
+    "prompt": "The metallic bond is the electrostatic attraction between:",
+    "options": ["positive and negative ions", "a lattice of cations and delocalised electrons", "nuclei and shared pairs of electrons", "neighbouring metal atoms"],
+    "answer": 1,
+    "explanation": "Cations sit in a sea of delocalised valence electrons."
+  },
+  {
+    "id": "melting-order",
+    "type": "mcq",
+    "lesson": "metallic-bonding",
+    "concept": "Strength of metallic bonding",
+    "difficulty": 2,
+    "prompt": "Which metal has the strongest metallic bonding?",
+    "options": ["Na", "K", "Mg", "Al"],
+    "answer": 3,
+    "explanation": "Al³⁺ is small with a high charge and contributes three delocalised electrons per atom."
+  },
+  {
+    "id": "malleable-why",
+    "type": "tf",
+    "lesson": "metallic-bonding",
+    "concept": "Properties of metals",
+    "difficulty": 1,
+    "prompt": "Metals are malleable because layers of cations can slide over each other without breaking the metallic bonding.",
+    "answer": true,
+    "explanation": "The delocalised electrons continue to hold the shifted layers together."
+  },
+  {
+    "id": "group1-trend",
+    "type": "mcq",
+    "lesson": "metallic-bonding",
+    "concept": "Strength of metallic bonding",
+    "difficulty": 2,
+    "prompt": "Why do the melting points of the group 1 metals decrease down the group?",
+    "options": ["Ionic charge increases", "Ionic radius increases, so the attraction to delocalised electrons is weaker", "More electrons are delocalised", "The metals become non-metals"],
+    "answer": 1,
+    "explanation": "Larger ions with the same 1+ charge attract the electron sea less strongly."
+  },
+  {
+    "id": "tm-melting",
+    "type": "tf",
+    "lesson": "metallic-bonding",
+    "concept": "Transition elements",
+    "difficulty": 2,
+    "prompt": "(HL) Transition metals generally have higher melting points than group 1 metals partly because d electrons are also delocalised.",
+    "answer": true,
+    "explanation": "More delocalised electrons per atom and small ions give stronger metallic bonding."
+  }
+]

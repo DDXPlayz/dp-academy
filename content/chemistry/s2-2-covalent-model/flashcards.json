@@ -1,0 +1,18 @@
+[
+  { "id": "covalent-card", "front": "Covalent bond?", "back": "Electrostatic attraction between a shared pair of electrons and two nuclei.", "concept": "Covalent bonds" },
+  { "id": "dative-card", "front": "Coordination bond?", "back": "Both shared electrons come from one atom (NH₄⁺, H₃O⁺, CO).", "concept": "Coordination bonds" },
+  { "id": "bond-order-card", "front": "Single vs double vs triple bonds?", "back": "More shared pairs → shorter and stronger bonds.", "concept": "Bond order" },
+  { "id": "vsepr-card", "front": "VSEPR shapes for 2, 3, 4 domains?", "back": "Linear 180°, trigonal planar 120°, tetrahedral 109.5°.", "concept": "VSEPR" },
+  { "id": "lone-pair-card", "front": "Bond angles: CH₄, NH₃, H₂O?", "back": "109.5°, 107°, 104.5° — lone pairs repel more.", "concept": "Bond angles" },
+  { "id": "en-card", "front": "Electronegativity?", "back": "Ability of an atom to attract a shared pair of electrons. Increases across a period and up a group.", "concept": "Bond polarity" },
+  { "id": "mol-polar-card", "front": "When is a molecule polar?", "back": "It has polar bonds and an unsymmetrical shape so the dipoles don’t cancel.", "concept": "Molecular polarity" },
+  { "id": "imf-card", "front": "IMF order (similar M)?", "back": "London < dipole–dipole < hydrogen bonding.", "concept": "Intermolecular forces" },
+  { "id": "hbond-card", "front": "Hydrogen bond?", "back": "H bonded to N, O or F attracted to a lone pair on another N, O or F.", "concept": "Intermolecular forces" },
+  { "id": "rf-card", "front": "Rf value?", "back": "Distance moved by spot ÷ distance moved by solvent front.", "concept": "Chromatography" },
+  { "id": "network-card", "front": "Covalent network examples?", "back": "Diamond, graphite, graphene, SiO₂ — very high melting points.", "concept": "Covalent networks" },
+  { "id": "resonance-card", "front": "(HL) Resonance?", "back": "Several Lewis formulas; real structure is a hybrid with delocalised electrons and identical intermediate bonds.", "concept": "Resonance" },
+  { "id": "fc-card", "front": "(HL) Formal charge formula?", "back": "FC = V − ½B − L; prefer structures with FC closest to zero.", "concept": "Formal charge" },
+  { "id": "expanded-card", "front": "(HL) Shapes for 5 and 6 domains?", "back": "5: trigonal bipyramidal (PCl₅). 6: octahedral (SF₆). Lone pairs give seesaw, T-shaped, linear, square pyramidal, square planar.", "concept": "Expanded octets" },
+  { "id": "sigma-pi-card", "front": "(HL) σ and π bonds?", "back": "σ: head-on overlap (one per bond). π: sideways p overlap; double = σ + π, triple = σ + 2π.", "concept": "Sigma and pi bonds" },
+  { "id": "hybrid-card", "front": "(HL) Hybridisation from domains?", "back": "4 → sp³, 3 → sp², 2 → sp.", "concept": "Hybridisation" }
+]

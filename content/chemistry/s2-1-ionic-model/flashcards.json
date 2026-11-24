@@ -1,0 +1,7 @@
+[
+  { "id": "ionic-bond-card", "front": "Ionic bond?", "back": "Electrostatic attraction between oppositely charged ions.", "concept": "Ionic bonding" },
+  { "id": "group-ions-card", "front": "Ion charges for groups 1, 2, 13, 15, 16, 17?", "back": "+1, +2, +3, −3, −2, −1.", "concept": "Forming ions" },
+  { "id": "poly-card", "front": "Sulfate, nitrate, carbonate, phosphate, ammonium?", "back": "SO₄²⁻, NO₃⁻, CO₃²⁻, PO₄³⁻, NH₄⁺.", "concept": "Ionic formulas" },
+  { "id": "ionic-props-card", "front": "Properties of ionic compounds?", "back": "High mp/bp, conduct when molten/aqueous only, often water-soluble, brittle.", "concept": "Properties" },
+  { "id": "lattice-card", "front": "What increases lattice enthalpy?", "back": "Higher ionic charges and smaller ionic radii.", "concept": "Lattice enthalpy" }
+]

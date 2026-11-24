@@ -1,0 +1,92 @@
+[
+  {
+    "id": "p1a-shape-angle",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "S2.2",
+    "prompt": "Which molecule has a bond angle of approximately 107°?",
+    "options": [
+      "CH₄",
+      "NH₃",
+      "H₂O",
+      "BF₃"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** Four domains with one lone pair: trigonal pyramidal, ~107°.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-nonpolar-polar-bonds",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "S2.2",
+    "prompt": "Which molecule is non-polar but contains polar bonds?",
+    "options": [
+      "HCl",
+      "H₂O",
+      "CCl₄",
+      "Cl₂"
+    ],
+    "answer": 2,
+    "markscheme": "**C.** The C–Cl dipoles cancel in the symmetrical tetrahedral molecule.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-boiling-imf",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "S2.2",
+    "prompt": "Which substance has the highest boiling point?",
+    "options": [
+      "CH₄",
+      "SiH₄",
+      "NH₃",
+      "PH₃"
+    ],
+    "answer": 2,
+    "markscheme": "**C.** NH₃ forms hydrogen bonds; the others have weaker intermolecular forces.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-sigma-pi-hcn",
+    "paper": "1A",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "S2.2",
+    "prompt": "How many σ and π bonds are in hydrogen cyanide, H–C≡N?",
+    "options": [
+      "2 σ, 2 π",
+      "1 σ, 3 π",
+      "3 σ, 1 π",
+      "2 σ, 1 π"
+    ],
+    "answer": 0,
+    "markscheme": "**A.** C–H is one σ; C≡N is one σ and two π.",
+    "source": "original"
+  },
+  {
+    "id": "p2-shapes-polarity",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 6,
+    "subtopic": "S2.2",
+    "prompt": "Consider the molecules BF₃ and NF₃.\n\n**(a)** Draw the Lewis formula of each molecule. **[2]**\n\n**(b)** Deduce the molecular geometry of each and estimate its bond angle. **[2]**\n\n**(c)** Explain why NF₃ is polar but BF₃ is not. **[2]**",
+    "markscheme": "**(a)** BF₃: B with three single bonds to F, three lone pairs on each F, no lone pair on B ✓; NF₃: N with three single bonds to F and one lone pair on N, three lone pairs on each F ✓\n\n**(b)** BF₃ trigonal planar, 120° ✓; NF₃ trigonal pyramidal, ~107° (accept 100–108°) ✓\n\n**(c)** Both have polar B–F/N–F bonds ✓; BF₃ is symmetrical so the bond dipoles cancel, whereas NF₃’s pyramidal shape (lone pair) means they do not cancel ✓",
+    "source": "original"
+  },
+  {
+    "id": "p2-formal-charge-resonance",
+    "paper": "2",
+    "level": "HL",
+    "difficulty": "hard",
+    "marks": 5,
+    "subtopic": "S2.2",
+    "prompt": "**(a)** Draw two resonance structures for the ozone molecule, O₃. **[1]**\n\n**(b)** Calculate the formal charge on each oxygen atom in one of your structures. **[2]**\n\n**(c)** Predict, with a reason, how the two O–O bond lengths in ozone compare with the O–O single bond and the O=O double bond. **[2]**",
+    "markscheme": "**(a)** O=O⁺–O⁻ and ⁻O–O⁺=O, central O with one lone pair ✓\n\n**(b)** Double-bonded terminal O: $6 - 2 - 4 = 0$; central O: $6 - 3 - 2 = +1$ ✓; single-bonded terminal O: $6 - 1 - 6 = -1$ ✓\n\n**(c)** Both bonds are equal in length ✓; intermediate between single and double because the π electrons are delocalised (bond order 1.5) ✓",
+    "source": "original"
+  }
+]
