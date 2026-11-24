@@ -1,0 +1,165 @@
+[
+  {
+    "id": "spectrum-origin",
+    "type": "mcq",
+    "lesson": "emission-spectra",
+    "concept": "Emission spectra",
+    "difficulty": 1,
+    "prompt": "Lines in an atomic emission spectrum are produced when:",
+    "options": ["electrons absorb energy and move to higher levels", "electrons fall from higher to lower energy levels", "the nucleus emits radiation", "atoms collide with each other"],
+    "answer": 1,
+    "explanation": "Falling electrons emit photons with energy equal to the gap between levels."
+  },
+  {
+    "id": "convergence",
+    "type": "tf",
+    "lesson": "emission-spectra",
+    "concept": "Hydrogen spectrum",
+    "difficulty": 1,
+    "prompt": "Lines in the hydrogen emission spectrum get closer together at higher frequency.",
+    "answer": true,
+    "explanation": "Energy levels converge at higher energy, so the lines converge at higher frequency."
+  },
+  {
+    "id": "balmer-visible",
+    "type": "mcq",
+    "lesson": "emission-spectra",
+    "concept": "Hydrogen spectrum",
+    "difficulty": 2,
+    "prompt": "The visible lines of the hydrogen spectrum are produced by electrons falling to:",
+    "options": ["n = 1", "n = 2", "n = 3", "n = ∞"],
+    "answer": 1,
+    "explanation": "Transitions to n = 2 form the Balmer series, in the visible region; to n = 1 is UV."
+  },
+  {
+    "id": "line-continuous",
+    "type": "mcq",
+    "lesson": "emission-spectra",
+    "concept": "Emission spectra",
+    "difficulty": 1,
+    "prompt": "Why does hydrogen produce a line spectrum rather than a continuous spectrum?",
+    "options": ["Hydrogen atoms are very small", "Electrons can only have certain discrete energies", "Hydrogen only emits visible light", "The nucleus contains one proton"],
+    "answer": 1,
+    "explanation": "Only certain energy gaps exist, so only certain photon frequencies are emitted."
+  },
+  {
+    "id": "ie-from-convergence",
+    "type": "numeric",
+    "lesson": "emission-spectra",
+    "concept": "Convergence limit",
+    "difficulty": 3,
+    "prompt": "(HL) A series converges at a wavelength of 91.2 nm. What energy, in J per atom, does this correspond to? (h = 6.63 × 10⁻³⁴ J s, c = 3.00 × 10⁸ m s⁻¹)",
+    "answer": 2.18e-18,
+    "tolerance": 0.02,
+    "unit": "J",
+    "explanation": "$E = hc/\\lambda = 6.63\\times10^{-34}\\times3.00\\times10^8/91.2\\times10^{-9} = 2.18\\times10^{-18}$ J — the ionisation energy of a hydrogen atom."
+  },
+  {
+    "id": "max-electrons",
+    "type": "numeric",
+    "lesson": "electron-configuration",
+    "concept": "Energy levels",
+    "difficulty": 1,
+    "prompt": "What is the maximum number of electrons in the main energy level n = 3?",
+    "answer": 18,
+    "tolerance": 0,
+    "explanation": "$2n^2 = 2\\times9 = 18$ (3s² 3p⁶ 3d¹⁰)."
+  },
+  {
+    "id": "config-write",
+    "type": "mcq",
+    "lesson": "electron-configuration",
+    "concept": "Electron configurations",
+    "difficulty": 1,
+    "prompt": "What is the electron configuration of sulfur (Z = 16)?",
+    "options": ["1s² 2s² 2p⁶ 3s² 3p⁴", "1s² 2s² 2p⁶ 3s² 3p⁶", "1s² 2s² 2p⁸ 3s² 3p²", "[Ne] 3s¹ 3p⁵"],
+    "answer": 0,
+    "explanation": "Fill 1s, 2s, 2p, 3s, then 4 electrons in 3p: 16 in total."
+  },
+  {
+    "id": "chromium-config",
+    "type": "mcq",
+    "lesson": "electron-configuration",
+    "concept": "Exceptions",
+    "difficulty": 2,
+    "prompt": "What is the ground-state configuration of chromium (Z = 24)?",
+    "options": ["[Ar] 4s² 3d⁴", "[Ar] 4s¹ 3d⁵", "[Ar] 3d⁶", "[Ar] 4s² 4p⁴"],
+    "answer": 1,
+    "explanation": "A half-filled 3d⁵ sublevel is more stable, so one 4s electron moves into 3d."
+  },
+  {
+    "id": "fe2-config",
+    "type": "mcq",
+    "lesson": "electron-configuration",
+    "concept": "Ions",
+    "difficulty": 2,
+    "prompt": "What is the configuration of Fe²⁺ (Z = 26)?",
+    "options": ["[Ar] 4s² 3d⁴", "[Ar] 3d⁶", "[Ar] 4s¹ 3d⁵", "[Ar] 4s² 3d⁶"],
+    "answer": 1,
+    "explanation": "Fe is [Ar] 4s² 3d⁶; the two 4s electrons are lost first."
+  },
+  {
+    "id": "unpaired-n",
+    "type": "numeric",
+    "lesson": "electron-configuration",
+    "concept": "Hund’s rule",
+    "difficulty": 2,
+    "prompt": "How many unpaired electrons does a nitrogen atom have in its ground state?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "N: 1s² 2s² 2p³. By Hund’s rule the three 2p electrons occupy separate orbitals with parallel spins."
+  },
+  {
+    "id": "pauli-tf",
+    "type": "tf",
+    "lesson": "electron-configuration",
+    "concept": "Pauli principle",
+    "difficulty": 1,
+    "prompt": "Two electrons in the same orbital must have opposite spins.",
+    "answer": true,
+    "explanation": "That is the Pauli exclusion principle."
+  },
+  {
+    "id": "p-orbital-shape",
+    "type": "mcq",
+    "lesson": "electron-configuration",
+    "concept": "Orbitals",
+    "difficulty": 1,
+    "prompt": "What is the shape of a p orbital?",
+    "options": ["spherical", "dumbbell", "ring", "cube"],
+    "answer": 1,
+    "explanation": "s orbitals are spherical; p orbitals are dumbbell-shaped, three at right angles."
+  },
+  {
+    "id": "ie-group",
+    "type": "mcq",
+    "lesson": "ionisation-energies",
+    "concept": "Successive ionisation energies",
+    "difficulty": 2,
+    "prompt": "(HL) An element’s first five ionisation energies (kJ mol⁻¹) are 578, 1817, 2745, 11 577, 14 842. Which group is it in?",
+    "options": ["group 1", "group 2", "group 13", "group 15"],
+    "answer": 2,
+    "explanation": "The big jump is after the third electron: three valence electrons → group 13 (aluminium)."
+  },
+  {
+    "id": "ie-increase",
+    "type": "tf",
+    "lesson": "ionisation-energies",
+    "concept": "Successive ionisation energies",
+    "difficulty": 1,
+    "prompt": "(HL) Each successive ionisation energy of an element is larger than the one before.",
+    "answer": true,
+    "explanation": "Each electron is removed from an increasingly positive ion, so it is held more strongly."
+  },
+  {
+    "id": "ie-equation",
+    "type": "mcq",
+    "lesson": "ionisation-energies",
+    "concept": "Ionisation energy",
+    "difficulty": 2,
+    "prompt": "(HL) Which equation represents the second ionisation energy of calcium?",
+    "options": ["Ca(s) → Ca²⁺(g) + 2e⁻", "Ca⁺(g) → Ca²⁺(g) + e⁻", "Ca(g) → Ca²⁺(g) + 2e⁻", "Ca⁺(aq) → Ca²⁺(aq) + e⁻"],
+    "answer": 1,
+    "explanation": "The second IE removes one electron from a gaseous 1+ ion."
+  }
+]

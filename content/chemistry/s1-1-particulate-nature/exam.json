@@ -1,0 +1,46 @@
+[
+  {
+    "id": "p1a-state-change-temp",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "S1.1",
+    "prompt": "Which change of state is exothermic?",
+    "options": [
+      "melting",
+      "sublimation",
+      "vaporisation",
+      "deposition"
+    ],
+    "answer": 3,
+    "markscheme": "**D.** Deposition (gas → solid) forms attractions between particles, releasing energy.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-kelvin-ke",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "S1.1",
+    "prompt": "The temperature of a sample of neon is increased from $-73\\ ^\\circ\\text{C}$ to $127\\ ^\\circ\\text{C}$. By what factor does the average kinetic energy of the atoms increase?",
+    "options": [
+      "1.7",
+      "2",
+      "2.7",
+      "It cannot be determined"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** $200\\ \\text{K} \\to 400\\ \\text{K}$; average kinetic energy is proportional to the Kelvin temperature.",
+    "source": "original"
+  },
+  {
+    "id": "p2-separation-plan",
+    "paper": "2",
+    "difficulty": "easy",
+    "marks": 4,
+    "subtopic": "S1.1",
+    "prompt": "A mixture contains sand, salt (sodium chloride) and iron filings.\n\n**(a)** Classify the mixture as homogeneous or heterogeneous. **[1]**\n\n**(b)** Outline how you would obtain dry samples of each of the three components. **[3]**",
+    "markscheme": "**(a)** Heterogeneous ✓\n\n**(b)** Use a magnet to remove the iron filings ✓; add water to dissolve the salt and filter to collect the sand, then dry it ✓; evaporate/crystallise the filtrate to obtain salt ✓",
+    "source": "original"
+  }
+]

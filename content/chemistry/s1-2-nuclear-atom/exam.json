@@ -1,0 +1,47 @@
+[
+  {
+    "id": "p1a-isotope-species",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "S1.2",
+    "prompt": "Which species contains more electrons than neutrons?",
+    "options": [
+      "$^{2}_{1}\\text{H}$",
+      "$^{16}_{8}\\text{O}^{2-}$",
+      "$^{23}_{11}\\text{Na}^{+}$",
+      "$^{4}_{2}\\text{He}$"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** O²⁻ has 10 electrons and 8 neutrons. H-2: 1 and 1; Na⁺: 10 and 12; He: 2 and 2.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-ar-two-isotopes",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "S1.2",
+    "prompt": "Element X has two isotopes, $^{63}\\text{X}$ and $^{65}\\text{X}$, and a relative atomic mass of 63.5. What is the percentage abundance of $^{65}\\text{X}$?",
+    "options": [
+      "25%",
+      "50%",
+      "63%",
+      "75%"
+    ],
+    "answer": 0,
+    "markscheme": "**A.** $63(100 - x) + 65x = 6350 \\Rightarrow 2x = 50 \\Rightarrow x = 25\\%$.",
+    "source": "original"
+  },
+  {
+    "id": "p2-mass-spectrum-ar",
+    "paper": "2",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 4,
+    "subtopic": "S1.2",
+    "prompt": "The mass spectrum of a sample of zirconium shows peaks at $m/z$ 90, 91, 92, 94 and 96 with relative abundances 51.5, 11.2, 17.1, 17.4 and 2.8.\n\n**(a)** Calculate the relative atomic mass of zirconium to two decimal places. **[2]**\n\n**(b)** State why the isotopes have identical chemical properties. **[1]**\n\n**(c)** State one physical property that differs between the isotopes. **[1]**",
+    "markscheme": "**(a)** $\\tfrac{90(51.5) + 91(11.2) + 92(17.1) + 94(17.4) + 96(2.8)}{100}$ ✓ $= 91.32$ ✓\n\n**(b)** They have the same electron configuration / same number of electrons ✓\n\n**(c)** Mass / density / rate of diffusion / boiling point ✓",
+    "source": "original"
+  }
+]

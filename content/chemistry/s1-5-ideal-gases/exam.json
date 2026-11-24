@@ -1,0 +1,46 @@
+[
+  {
+    "id": "p1a-real-gas",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "S1.5",
+    "prompt": "Under which conditions does a real gas deviate most from ideal behaviour?",
+    "options": [
+      "High temperature and low pressure",
+      "High temperature and high pressure",
+      "Low temperature and low pressure",
+      "Low temperature and high pressure"
+    ],
+    "answer": 3,
+    "markscheme": "**D.** Particles are close together and slow, so particle volume and intermolecular forces matter.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-gas-law-volume",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "S1.5",
+    "prompt": "A fixed mass of gas has volume $V$ at $300\\ \\text{K}$ and $100\\ \\text{kPa}$. What is its volume at $600\\ \\text{K}$ and $400\\ \\text{kPa}$?",
+    "options": [
+      "$V/2$",
+      "$V$",
+      "$2V$",
+      "$8V$"
+    ],
+    "answer": 0,
+    "markscheme": "**A.** $V_2 = V \\times \\tfrac{600}{300} \\times \\tfrac{100}{400} = V/2$.",
+    "source": "original"
+  },
+  {
+    "id": "p1b-molar-mass-gas",
+    "paper": "1B",
+    "difficulty": "hard",
+    "marks": 5,
+    "subtopic": "S1.5",
+    "prompt": "A student finds the molar mass of a volatile liquid. A flask of volume $255\\ \\text{cm}^3$ is filled with the vapour at $373\\ \\text{K}$ and $101\\ \\text{kPa}$. The mass of vapour is $0.580\\ \\text{g}$.\n\n**(a)** Calculate the molar mass of the liquid. **[3]**\n\n**(b)** Some air remained in the flask, so the vapour did not fill the whole 255 cm³. State and explain the effect on the calculated molar mass. **[2]**",
+    "markscheme": "**(a)** $n = \\tfrac{PV}{RT} = \\tfrac{101\\times10^3 \\times 255\\times10^{-6}}{8.31\\times373}$ ✓ $= 8.31\\times10^{-3}\\ \\text{mol}$ ✓; $M = \\tfrac{0.580}{8.31\\times10^{-3}} = 69.8\\ \\text{g mol}^{-1}$ ✓\n\n**(b)** The calculated molar mass is too low ✓; the measured mass of vapour is smaller than for a full flask, but the amount $n$ is calculated from the whole flask volume, so $M = m/n$ is underestimated ✓",
+    "source": "original"
+  }
+]

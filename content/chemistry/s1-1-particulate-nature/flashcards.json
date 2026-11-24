@@ -1,0 +1,9 @@
+[
+  { "id": "element-card", "front": "Element?", "back": "One type of atom; cannot be broken down chemically.", "concept": "Elements, compounds and mixtures" },
+  { "id": "compound-card", "front": "Compound vs mixture?", "back": "Compound: chemically bonded, fixed ratio, new properties. Mixture: physically combined, any ratio, separable physically.", "concept": "Elements, compounds and mixtures" },
+  { "id": "homo-card", "front": "Homogeneous vs heterogeneous mixture?", "back": "Homogeneous: uniform, one phase (solution, air). Heterogeneous: non-uniform (sand + water).", "concept": "Mixtures" },
+  { "id": "separation-card", "front": "Separation method for miscible liquids?", "back": "Fractional distillation (different boiling points).", "concept": "Separation techniques" },
+  { "id": "kmt-card", "front": "Particles in solid, liquid, gas?", "back": "Solid: vibrate in fixed positions. Liquid: close, slide past. Gas: far apart, fast and random.", "concept": "Kinetic molecular theory" },
+  { "id": "state-temp-card", "front": "Why is temperature constant during a change of state?", "back": "Energy goes into overcoming (or forming) attractions, not into kinetic energy.", "concept": "Changes of state" },
+  { "id": "kelvin-card", "front": "Kelvin temperature means?", "back": "Proportional to the average kinetic energy of particles. T(K) = θ(°C) + 273.15.", "concept": "Kelvin temperature" }
+]

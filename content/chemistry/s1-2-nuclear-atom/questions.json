@@ -1,0 +1,122 @@
+[
+  {
+    "id": "ion-electrons",
+    "type": "numeric",
+    "lesson": "atomic-structure",
+    "concept": "Ions",
+    "difficulty": 1,
+    "prompt": "How many electrons are in the ion ²⁴Mg²⁺ (Z = 12)?",
+    "answer": 10,
+    "tolerance": 0,
+    "explanation": "Neutral Mg has 12 electrons; the 2+ ion has lost 2, leaving 10."
+  },
+  {
+    "id": "neutrons-count",
+    "type": "numeric",
+    "lesson": "atomic-structure",
+    "concept": "Nuclear symbols",
+    "difficulty": 1,
+    "prompt": "How many neutrons are in ⁵⁶₂₆Fe?",
+    "answer": 30,
+    "tolerance": 0,
+    "explanation": "$56 - 26 = 30$."
+  },
+  {
+    "id": "same-species",
+    "type": "mcq",
+    "lesson": "atomic-structure",
+    "concept": "Nuclear symbols",
+    "difficulty": 2,
+    "prompt": "Which species has 16 protons, 18 neutrons and 18 electrons?",
+    "options": ["³⁴S", "³⁴S²⁻", "³²S²⁻", "³⁴Cl⁻"],
+    "answer": 1,
+    "explanation": "16 protons → sulfur; A = 16 + 18 = 34; 18 electrons means a 2− charge."
+  },
+  {
+    "id": "isotope-chemistry",
+    "type": "tf",
+    "lesson": "atomic-structure",
+    "concept": "Isotopes",
+    "difficulty": 1,
+    "prompt": "Isotopes of an element have the same chemical properties.",
+    "answer": true,
+    "explanation": "They have the same electron configuration, which determines chemistry."
+  },
+  {
+    "id": "isotope-differ",
+    "type": "multi",
+    "lesson": "atomic-structure",
+    "concept": "Isotopes",
+    "difficulty": 2,
+    "prompt": "In which properties do ¹H and ²H (deuterium) atoms differ?",
+    "options": ["mass", "number of protons", "number of neutrons", "number of electrons"],
+    "answers": [0, 2],
+    "explanation": "Same element → same protons and electrons; deuterium has one neutron, so it is heavier."
+  },
+  {
+    "id": "electron-mass",
+    "type": "mcq",
+    "lesson": "atomic-structure",
+    "concept": "Subatomic particles",
+    "difficulty": 1,
+    "prompt": "What is the approximate relative mass of an electron (taking a proton as 1)?",
+    "options": ["1", "0", "0.0005", "1836"],
+    "answer": 2,
+    "explanation": "An electron is about 1/1836 the mass of a proton ≈ 0.0005."
+  },
+  {
+    "id": "ar-calc",
+    "type": "numeric",
+    "lesson": "relative-atomic-mass",
+    "concept": "Relative atomic mass",
+    "difficulty": 2,
+    "prompt": "Boron is 19.9% ¹⁰B and 80.1% ¹¹B. Calculate its relative atomic mass to 2 decimal places.",
+    "answer": 10.8,
+    "tolerance": 0.002,
+    "explanation": "$(10\\times19.9 + 11\\times80.1)/100 = 10.80$."
+  },
+  {
+    "id": "abundance-back",
+    "type": "numeric",
+    "lesson": "relative-atomic-mass",
+    "concept": "Relative atomic mass",
+    "difficulty": 3,
+    "prompt": "Gallium (Ar = 69.72) contains only ⁶⁹Ga and ⁷¹Ga. What is the percentage abundance of ⁶⁹Ga?",
+    "answer": 64,
+    "tolerance": 0.01,
+    "unit": "%",
+    "explanation": "$69x + 71(100 - x) = 6972$ → $2x = 128$ → $x = 64\\%$."
+  },
+  {
+    "id": "weighted-mean",
+    "type": "tf",
+    "lesson": "relative-atomic-mass",
+    "concept": "Relative atomic mass",
+    "difficulty": 1,
+    "prompt": "The relative atomic mass of an element is the simple average of its isotope masses.",
+    "answer": false,
+    "explanation": "It is a weighted mean, using the abundance of each isotope."
+  },
+  {
+    "id": "mass-spec-peak",
+    "type": "mcq",
+    "lesson": "relative-atomic-mass",
+    "concept": "Mass spectra",
+    "difficulty": 2,
+    "prompt": "(HL) In the mass spectrum of an element, the height of each peak shows:",
+    "options": ["the mass of the isotope", "the relative abundance of the isotope", "the charge on the ion", "the number of neutrons"],
+    "answer": 1,
+    "explanation": "Position (m/z) gives the isotope mass; height gives relative abundance."
+  },
+  {
+    "id": "spectrum-ar",
+    "type": "numeric",
+    "lesson": "relative-atomic-mass",
+    "concept": "Mass spectra",
+    "difficulty": 2,
+    "prompt": "(HL) A mass spectrum shows peaks at m/z 20 (height 90) and m/z 22 (height 10). What is Ar?",
+    "answer": 20.2,
+    "tolerance": 0.002,
+    "explanation": "$(20\\times90 + 22\\times10)/100 = 20.2$ (neon)."
+  }
+]

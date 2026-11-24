@@ -18,7 +18,7 @@
     "concept": "Avogadro constant",
     "difficulty": 1,
     "prompt": "How many atoms are in 0.25 mol of magnesium? ($N_A = 6.02 \\times 10^{23}$ mol⁻¹). You can type an answer like `1.2e23`.",
-    "answer": 1.505e23,
+    "answer": 1.505e+23,
     "tolerance": 0.02,
     "unit": "atoms",
     "explanation": "$N = nN_A = 0.25 \\times 6.02 \\times 10^{23} = 1.5 \\times 10^{23}$ atoms."
@@ -42,7 +42,12 @@
     "concept": "Empirical formula",
     "difficulty": 2,
     "prompt": "A hydrocarbon contains 85.6 % carbon and 14.4 % hydrogen by mass. What is its empirical formula? ($A_r$: C = 12.01, H = 1.01)",
-    "options": ["CH", "CH₂", "CH₃", "C₂H₅"],
+    "options": [
+      "CH",
+      "CH₂",
+      "CH₃",
+      "C₂H₅"
+    ],
     "answer": 1,
     "explanation": "In 100 g: C $= 85.6/12.01 = 7.13$ mol; H $= 14.4/1.01 = 14.3$ mol. Dividing by the smaller gives 1 : 2.00, so the empirical formula is CH₂."
   },
@@ -65,7 +70,10 @@
     "concept": "Molecular formula",
     "difficulty": 2,
     "prompt": "A compound has the empirical formula CH₂O and a molar mass of 180 g mol⁻¹. What is its molecular formula? (Type it without subscripts, e.g. C2H4.)",
-    "accept": ["C6H12O6", "C₆H₁₂O₆"],
+    "accept": [
+      "C6H12O6",
+      "C₆H₁₂O₆"
+    ],
     "explanation": "CH₂O has $M = 12.01 + 2(1.01) + 16.00 = 30.03$ g mol⁻¹. $180 / 30 = 6$, so multiply every subscript by 6: C₆H₁₂O₆."
   },
   {
@@ -77,5 +85,82 @@
     "prompt": "One mole of oxygen gas, O₂, contains $6.02 \\times 10^{23}$ oxygen **atoms**.",
     "answer": false,
     "explanation": "It contains $6.02 \\times 10^{23}$ **molecules**. Each molecule has two atoms, so there are $1.20 \\times 10^{24}$ atoms."
+  },
+  {
+    "id": "mr-calcium-nitrate",
+    "type": "numeric",
+    "lesson": "avogadro-gas-volumes",
+    "concept": "Relative formula mass",
+    "difficulty": 1,
+    "prompt": "Calculate Mr of Mg(OH)₂. (Mg 24.31, O 16.00, H 1.01)",
+    "answer": 58.33,
+    "tolerance": 0.002,
+    "explanation": "$24.31 + 2(16.00 + 1.01) = 58.33$."
+  },
+  {
+    "id": "mr-units",
+    "type": "tf",
+    "lesson": "avogadro-gas-volumes",
+    "concept": "Relative formula mass",
+    "difficulty": 1,
+    "prompt": "Relative formula mass Mr has units of g mol⁻¹.",
+    "answer": false,
+    "explanation": "Mr is a ratio with no units. Molar mass M is numerically equal and has units g mol⁻¹."
+  },
+  {
+    "id": "avogadro-volume",
+    "type": "numeric",
+    "lesson": "avogadro-gas-volumes",
+    "concept": "Avogadro’s law",
+    "difficulty": 2,
+    "prompt": "2C₂H₆(g) + 7O₂(g) → 4CO₂(g) + 6H₂O(l). What volume of oxygen, in cm³, reacts completely with 30 cm³ of ethane at the same T and p?",
+    "answer": 105,
+    "tolerance": 0.01,
+    "unit": "cm³",
+    "explanation": "Volume ratio = mole ratio = 2 : 7, so $30\\times7/2 = 105$ cm³."
+  },
+  {
+    "id": "avogadro-count",
+    "type": "mcq",
+    "lesson": "avogadro-gas-volumes",
+    "concept": "Avogadro’s law",
+    "difficulty": 1,
+    "prompt": "At the same temperature and pressure, 1 dm³ of hydrogen and 1 dm³ of carbon dioxide contain:",
+    "options": [
+      "the same mass",
+      "the same number of molecules",
+      "the same number of atoms",
+      "different numbers of molecules"
+    ],
+    "answer": 1,
+    "explanation": "Avogadro’s law: equal volumes of gases contain equal numbers of molecules (CO₂ has more atoms per molecule)."
+  },
+  {
+    "id": "empirical-from-percent",
+    "type": "mcq",
+    "lesson": "amount-of-substance",
+    "concept": "Empirical formula",
+    "difficulty": 2,
+    "prompt": "A compound is 40.0% C, 6.7% H and 53.3% O by mass. What is its empirical formula?",
+    "options": [
+      "CHO",
+      "CH₂O",
+      "C₂H₄O",
+      "CH₂O₂"
+    ],
+    "answer": 1,
+    "explanation": "Moles: C 3.33, H 6.6, O 3.33 → ratio 1 : 2 : 1."
+  },
+  {
+    "id": "dilution",
+    "type": "numeric",
+    "lesson": "amount-of-substance",
+    "concept": "Concentration",
+    "difficulty": 2,
+    "prompt": "25.0 cm³ of 2.00 mol dm⁻³ HCl is diluted to 250.0 cm³. What is the new concentration in mol dm⁻³?",
+    "answer": 0.2,
+    "tolerance": 0.01,
+    "unit": "mol dm⁻³",
+    "explanation": "Moles are unchanged: $c_2 = c_1V_1/V_2 = 2.00\\times25.0/250.0 = 0.200$ mol dm⁻³."
   }
 ]

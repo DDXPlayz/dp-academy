@@ -1,0 +1,116 @@
+[
+  {
+    "id": "ideal-assumptions",
+    "type": "multi",
+    "lesson": "ideal-gas-model",
+    "concept": "Ideal gas model",
+    "difficulty": 1,
+    "prompt": "Which are assumptions of the ideal gas model?",
+    "options": ["Particles have negligible volume", "There are strong attractions between particles", "Collisions are perfectly elastic", "Particles move randomly"],
+    "answers": [0, 2, 3],
+    "explanation": "Ideal gases have **no** intermolecular forces."
+  },
+  {
+    "id": "real-gas-conditions",
+    "type": "mcq",
+    "lesson": "ideal-gas-model",
+    "concept": "Real gases",
+    "difficulty": 1,
+    "prompt": "Under which conditions does a real gas behave most like an ideal gas?",
+    "options": ["low temperature, high pressure", "high temperature, low pressure", "low temperature, low pressure", "high temperature, high pressure"],
+    "answer": 1,
+    "explanation": "Fast, far-apart particles make attractions and particle volume negligible."
+  },
+  {
+    "id": "most-ideal",
+    "type": "mcq",
+    "lesson": "ideal-gas-model",
+    "concept": "Real gases",
+    "difficulty": 2,
+    "prompt": "Which gas deviates most from ideal behaviour at room temperature?",
+    "options": ["He", "H₂", "Ne", "NH₃"],
+    "answer": 3,
+    "explanation": "Ammonia is polar and hydrogen-bonded, so its intermolecular forces are strongest."
+  },
+  {
+    "id": "molar-volume-calc",
+    "type": "numeric",
+    "lesson": "ideal-gas-model",
+    "concept": "Molar volume",
+    "difficulty": 1,
+    "prompt": "What volume, in dm³, does 0.50 mol of oxygen occupy at STP? (Vm = 22.7 dm³ mol⁻¹)",
+    "answer": 11.35,
+    "tolerance": 0.01,
+    "unit": "dm³",
+    "explanation": "$V = nV_m = 0.50\\times22.7 = 11.4$ dm³."
+  },
+  {
+    "id": "gas-mass-volume",
+    "type": "numeric",
+    "lesson": "ideal-gas-model",
+    "concept": "Molar volume",
+    "difficulty": 2,
+    "prompt": "What mass of nitrogen (N₂, M = 28.02 g mol⁻¹) occupies 4.54 dm³ at STP?",
+    "answer": 5.604,
+    "tolerance": 0.02,
+    "unit": "g",
+    "explanation": "$n = 4.54/22.7 = 0.200$ mol; $m = 0.200\\times28.02 = 5.60$ g."
+  },
+  {
+    "id": "pv-nrt",
+    "type": "numeric",
+    "lesson": "ideal-gas-equation",
+    "concept": "Ideal gas equation",
+    "difficulty": 2,
+    "prompt": "What is the pressure, in kPa, of 0.200 mol of gas in a 5.00 dm³ container at 300 K? (R = 8.31 J K⁻¹ mol⁻¹)",
+    "answer": 99.72,
+    "tolerance": 0.02,
+    "unit": "kPa",
+    "explanation": "$P = nRT/V = 0.200\\times8.31\\times300/5.00\\times10^{-3} = 9.97\\times10^4$ Pa ≈ 99.7 kPa."
+  },
+  {
+    "id": "combined-law",
+    "type": "numeric",
+    "lesson": "ideal-gas-equation",
+    "concept": "Combined gas law",
+    "difficulty": 2,
+    "prompt": "A gas occupies 300 cm³ at 27 °C and 100 kPa. What volume, in cm³, does it occupy at 127 °C and 200 kPa?",
+    "answer": 200,
+    "tolerance": 0.01,
+    "unit": "cm³",
+    "explanation": "$V_2 = V_1\\dfrac{P_1T_2}{P_2T_1} = 300\\times\\dfrac{100\\times400}{200\\times300} = 200$ cm³."
+  },
+  {
+    "id": "double-kelvin",
+    "type": "mcq",
+    "lesson": "ideal-gas-equation",
+    "concept": "Combined gas law",
+    "difficulty": 2,
+    "prompt": "A fixed mass of gas at constant pressure is heated from 20 °C to 40 °C. Its volume:",
+    "options": ["doubles", "increases by about 7%", "halves", "stays the same"],
+    "answer": 1,
+    "explanation": "$V \\propto T$ in kelvin: 313/293 = 1.07, an increase of about 7% — not a doubling."
+  },
+  {
+    "id": "molar-mass-gas",
+    "type": "numeric",
+    "lesson": "ideal-gas-equation",
+    "concept": "Molar mass from gas data",
+    "difficulty": 3,
+    "prompt": "A 0.320 g gas sample occupies 0.250 dm³ at 100 kPa and 300 K. What is its molar mass?",
+    "answer": 31.9,
+    "tolerance": 0.02,
+    "unit": "g mol⁻¹",
+    "explanation": "$M = mRT/PV = 0.320\\times8.31\\times300/(100\\times10^3\\times0.250\\times10^{-3}) = 31.9$ g mol⁻¹ (O₂)."
+  },
+  {
+    "id": "unit-trap",
+    "type": "tf",
+    "lesson": "ideal-gas-equation",
+    "concept": "Ideal gas equation",
+    "difficulty": 1,
+    "prompt": "In PV = nRT with R = 8.31 J K⁻¹ mol⁻¹, temperature may be entered in °C.",
+    "answer": false,
+    "explanation": "Temperature must always be in kelvin."
+  }
+]

@@ -1,0 +1,8 @@
+[
+  { "id": "ideal-card", "front": "Ideal gas assumptions?", "back": "Random motion, negligible particle volume, no intermolecular forces, elastic collisions.", "concept": "Ideal gas model" },
+  { "id": "real-card", "front": "When do real gases deviate most?", "back": "Low temperature and high pressure.", "concept": "Real gases" },
+  { "id": "vm-card", "front": "Molar volume at STP?", "back": "22.7 dm³ mol⁻¹ at 273 K and 100 kPa.", "concept": "Molar volume" },
+  { "id": "pvnrt-card", "front": "Ideal gas equation and units?", "back": "PV = nRT: Pa, m³, mol, K; R = 8.31 J K⁻¹ mol⁻¹.", "concept": "Ideal gas equation" },
+  { "id": "combined-card", "front": "Combined gas law?", "back": "P₁V₁/T₁ = P₂V₂/T₂ (fixed amount of gas, T in K).", "concept": "Combined gas law" },
+  { "id": "m-gas-card", "front": "Molar mass from gas data?", "back": "M = mRT/PV", "concept": "Molar mass from gas data" }
+]

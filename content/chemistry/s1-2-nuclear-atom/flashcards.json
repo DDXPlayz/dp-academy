@@ -1,0 +1,8 @@
+[
+  { "id": "particles-card", "front": "Relative mass and charge of p, n, e?", "back": "Proton 1, +1. Neutron 1, 0. Electron 1/1836, −1.", "concept": "Subatomic particles" },
+  { "id": "az-card", "front": "Meaning of A and Z?", "back": "Z = protons (atomic number). A = protons + neutrons (mass number).", "concept": "Nuclear symbols" },
+  { "id": "ions-card", "front": "How do ions form?", "back": "By gaining (anion) or losing (cation) electrons — protons never change.", "concept": "Ions" },
+  { "id": "isotopes-card", "front": "Isotopes?", "back": "Same Z, different numbers of neutrons. Same chemistry, slightly different physical properties.", "concept": "Isotopes" },
+  { "id": "ar-card", "front": "Relative atomic mass?", "back": "Weighted mean mass of an atom relative to 1/12 of ¹²C: Σ(mass × abundance)/Σabundance.", "concept": "Relative atomic mass" },
+  { "id": "ms-card", "front": "(HL) Reading a mass spectrum?", "back": "Peak position = m/z (isotope mass); peak height = relative abundance.", "concept": "Mass spectra" }
+]

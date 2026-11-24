@@ -23,5 +23,39 @@
     "prompt": "A compound contains 40.0 % carbon, 6.7 % hydrogen and 53.3 % oxygen by mass. Its relative molecular mass is 180.\n\n**(a)** Determine the empirical formula. **[2]**\n\n**(b)** Deduce the molecular formula. **[1]**\n\n**(c)** Calculate the mass of carbon dioxide produced when $0.0100\\ \\text{mol}$ of the compound burns completely. **[2]**",
     "markscheme": "**(a)** C: $\\tfrac{40.0}{12.01} = 3.33$; H: $\\tfrac{6.7}{1.01} = 6.63$; O: $\\tfrac{53.3}{16.00} = 3.33$ ✓; ratio 1 : 2 : 1, CH$_2$O ✓\n\n**(b)** $M(\\text{CH}_2\\text{O}) = 30.0$; $\\tfrac{180}{30.0} = 6$, so C$_6$H$_{12}$O$_6$ ✓\n\n**(c)** $n(\\text{CO}_2) = 6 \\times 0.0100 = 0.0600\\ \\text{mol}$ ✓; $m = 0.0600 \\times 44.01 = 2.64\\ \\text{g}$ ✓",
     "source": "original"
+  },
+  {
+    "id": "p1a-avogadro-gas-ratio",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "S1.4",
+    "prompt": "What volume of oxygen, measured at the same temperature and pressure, is needed to burn 20 cm³ of propane completely? $\\text{C}_3\\text{H}_8(g) + 5\\text{O}_2(g) \\rightarrow 3\\text{CO}_2(g) + 4\\text{H}_2\\text{O}(l)$",
+    "options": [
+      "20 cm³",
+      "60 cm³",
+      "100 cm³",
+      "140 cm³"
+    ],
+    "answer": 2,
+    "markscheme": "**C.** Volume ratio = mole ratio = 1 : 5.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-atoms-in-water",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "S1.4",
+    "prompt": "How many atoms are in 9.0 g of water? ($N_A = 6.02 \\times 10^{23}\\ \\text{mol}^{-1}$)",
+    "options": [
+      "$3.0 \\times 10^{23}$",
+      "$6.0 \\times 10^{23}$",
+      "$9.0 \\times 10^{23}$",
+      "$1.8 \\times 10^{24}$"
+    ],
+    "answer": 2,
+    "markscheme": "**C.** $n = 9.0/18 = 0.50$ mol molecules; 3 atoms each → $1.5 \\times 6.02\\times10^{23} = 9.0\\times10^{23}$.",
+    "source": "original"
   }
 ]

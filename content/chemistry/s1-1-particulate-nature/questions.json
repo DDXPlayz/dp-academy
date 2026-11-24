@@ -1,0 +1,122 @@
+[
+  {
+    "id": "classify-matter",
+    "type": "mcq",
+    "lesson": "elements-states",
+    "concept": "Elements, compounds and mixtures",
+    "difficulty": 1,
+    "prompt": "Which of these is a compound?",
+    "options": ["air", "seawater", "carbon dioxide", "bronze"],
+    "answer": 2,
+    "explanation": "CO₂ is carbon and oxygen chemically bonded in a fixed 1:2 ratio. Air, seawater and bronze (an alloy) are mixtures."
+  },
+  {
+    "id": "homogeneous",
+    "type": "multi",
+    "lesson": "elements-states",
+    "concept": "Mixtures",
+    "difficulty": 1,
+    "prompt": "Which are homogeneous mixtures?",
+    "options": ["salt dissolved in water", "sand in water", "air", "oil and water"],
+    "answers": [0, 2],
+    "explanation": "Solutions and air have uniform composition; sand/water and oil/water have visible boundaries."
+  },
+  {
+    "id": "separate-ethanol",
+    "type": "mcq",
+    "lesson": "elements-states",
+    "concept": "Separation techniques",
+    "difficulty": 1,
+    "prompt": "Which technique separates ethanol (bp 78 °C) from water?",
+    "options": ["filtration", "fractional distillation", "crystallisation", "magnetic separation"],
+    "answer": 1,
+    "explanation": "Miscible liquids with different boiling points are separated by fractional distillation."
+  },
+  {
+    "id": "dyes-chromatography",
+    "type": "mcq",
+    "lesson": "elements-states",
+    "concept": "Separation techniques",
+    "difficulty": 1,
+    "prompt": "The best technique to find out how many dyes are in a black ink is:",
+    "options": ["filtration", "simple distillation", "paper chromatography", "evaporation"],
+    "answer": 2,
+    "explanation": "Chromatography separates dissolved substances by their different affinities for the paper and solvent."
+  },
+  {
+    "id": "compound-separation",
+    "type": "tf",
+    "lesson": "elements-states",
+    "concept": "Elements, compounds and mixtures",
+    "difficulty": 1,
+    "prompt": "A compound can be separated into its elements by filtration.",
+    "answer": false,
+    "explanation": "Compounds can only be broken down by chemical reactions; physical methods separate mixtures."
+  },
+  {
+    "id": "kelvin-convert",
+    "type": "numeric",
+    "lesson": "kinetic-molecular-theory",
+    "concept": "Kelvin temperature",
+    "difficulty": 1,
+    "prompt": "Convert −40 °C to kelvin.",
+    "answer": 233.15,
+    "tolerance": 0.002,
+    "unit": "K",
+    "explanation": "$T = -40 + 273.15 = 233.15$ K (233 K)."
+  },
+  {
+    "id": "kelvin-ke",
+    "type": "numeric",
+    "lesson": "kinetic-molecular-theory",
+    "concept": "Kelvin temperature",
+    "difficulty": 2,
+    "prompt": "A gas is heated from 100 K to 400 K. By what factor does the average kinetic energy of its particles increase?",
+    "answer": 4,
+    "tolerance": 0.01,
+    "explanation": "Average kinetic energy ∝ Kelvin temperature: 400/100 = 4."
+  },
+  {
+    "id": "melting-temp",
+    "type": "tf",
+    "lesson": "kinetic-molecular-theory",
+    "concept": "Changes of state",
+    "difficulty": 1,
+    "prompt": "The temperature of ice rises steadily while it melts.",
+    "answer": false,
+    "explanation": "During melting the energy overcomes attractions between particles; temperature stays at the melting point."
+  },
+  {
+    "id": "sublimation-name",
+    "type": "mcq",
+    "lesson": "kinetic-molecular-theory",
+    "concept": "Changes of state",
+    "difficulty": 1,
+    "prompt": "Solid iodine turning directly into a purple gas is called:",
+    "options": ["evaporation", "condensation", "sublimation", "deposition"],
+    "answer": 2,
+    "explanation": "Solid → gas directly is sublimation; gas → solid is deposition."
+  },
+  {
+    "id": "endothermic-changes",
+    "type": "multi",
+    "lesson": "kinetic-molecular-theory",
+    "concept": "Changes of state",
+    "difficulty": 2,
+    "prompt": "Which changes of state are endothermic?",
+    "options": ["melting", "condensation", "sublimation", "freezing"],
+    "answers": [0, 2],
+    "explanation": "Overcoming attractions needs energy: melting, vaporisation and sublimation are endothermic."
+  },
+  {
+    "id": "same-temp-speed",
+    "type": "mcq",
+    "lesson": "kinetic-molecular-theory",
+    "concept": "Kinetic molecular theory",
+    "difficulty": 2,
+    "prompt": "Hydrogen and oxygen gases are at the same temperature. Which is correct?",
+    "options": ["The molecules have the same average speed", "Hydrogen molecules have a higher average kinetic energy", "Both have the same average kinetic energy; hydrogen molecules move faster on average", "Oxygen molecules move faster on average"],
+    "answer": 2,
+    "explanation": "Same temperature → same average kinetic energy ½mv². Lighter H₂ must have a greater average speed."
+  }
+]

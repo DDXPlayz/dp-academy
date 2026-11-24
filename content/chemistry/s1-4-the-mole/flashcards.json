@@ -1,8 +1,56 @@
 [
-  { "id": "mole", "concept": "Definitions", "front": "What is **one mole**?", "back": "The amount of substance containing $6.02 \\times 10^{23}$ particles (the Avogadro constant)." },
-  { "id": "molar-mass", "concept": "Definitions", "front": "What is **molar mass**?", "back": "The mass of one mole of a substance, in g mol⁻¹ — numerically equal to its relative formula mass." },
-  { "id": "amount-mass", "concept": "Calculations", "front": "Link amount, mass and molar mass.", "back": "$n = \\dfrac{m}{M}$" },
-  { "id": "concentration", "concept": "Calculations", "front": "Concentration formula and units?", "back": "$c = \\dfrac{n}{V}$, with $V$ in dm³; $c$ in mol dm⁻³." },
-  { "id": "empirical", "concept": "Formulae", "front": "Empirical vs molecular formula?", "back": "Empirical: simplest whole-number ratio of atoms. Molecular: actual number of each atom in a molecule — a whole-number multiple of the empirical formula." },
-  { "id": "cm3-dm3", "concept": "Calculations", "front": "How do you convert cm³ to dm³?", "back": "Divide by 1000 (1 dm³ = 1000 cm³)." }
+  {
+    "id": "mole",
+    "concept": "Definitions",
+    "front": "What is **one mole**?",
+    "back": "The amount of substance containing $6.02 \\times 10^{23}$ particles (the Avogadro constant)."
+  },
+  {
+    "id": "molar-mass",
+    "concept": "Definitions",
+    "front": "What is **molar mass**?",
+    "back": "The mass of one mole of a substance, in g mol⁻¹ — numerically equal to its relative formula mass."
+  },
+  {
+    "id": "amount-mass",
+    "concept": "Calculations",
+    "front": "Link amount, mass and molar mass.",
+    "back": "$n = \\dfrac{m}{M}$"
+  },
+  {
+    "id": "concentration",
+    "concept": "Calculations",
+    "front": "Concentration formula and units?",
+    "back": "$c = \\dfrac{n}{V}$, with $V$ in dm³; $c$ in mol dm⁻³."
+  },
+  {
+    "id": "empirical",
+    "concept": "Formulae",
+    "front": "Empirical vs molecular formula?",
+    "back": "Empirical: simplest whole-number ratio of atoms. Molecular: actual number of each atom in a molecule — a whole-number multiple of the empirical formula."
+  },
+  {
+    "id": "cm3-dm3",
+    "concept": "Calculations",
+    "front": "How do you convert cm³ to dm³?",
+    "back": "Divide by 1000 (1 dm³ = 1000 cm³)."
+  },
+  {
+    "id": "mr-card",
+    "front": "Relative formula mass vs molar mass?",
+    "back": "Mr: sum of Ar values, no units. M: same number, units g mol⁻¹.",
+    "concept": "Relative formula mass"
+  },
+  {
+    "id": "avogadro-law-card",
+    "front": "Avogadro’s law?",
+    "back": "Equal volumes of gases at the same T and p contain equal numbers of molecules — volume ratio = mole ratio.",
+    "concept": "Avogadro’s law"
+  },
+  {
+    "id": "dilution-card",
+    "front": "Dilution formula?",
+    "back": "$c_1V_1 = c_2V_2$ (amount of solute unchanged).",
+    "concept": "Concentration"
+  }
 ]

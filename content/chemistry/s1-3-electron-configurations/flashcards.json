@@ -1,0 +1,12 @@
+[
+  { "id": "emission-card", "front": "Origin of emission lines?", "back": "Electrons fall from higher to lower levels, emitting photons with ΔE = hν.", "concept": "Emission spectra" },
+  { "id": "converge-card", "front": "Why do hydrogen lines converge?", "back": "Energy levels get closer together at higher energy.", "concept": "Hydrogen spectrum" },
+  { "id": "series-card", "front": "Lyman vs Balmer series?", "back": "Lyman: falls to n = 1, UV. Balmer: falls to n = 2, visible.", "concept": "Hydrogen spectrum" },
+  { "id": "2n2-card", "front": "Max electrons in level n?", "back": "2n²", "concept": "Energy levels" },
+  { "id": "sublevel-card", "front": "Electrons in s, p, d, f sublevels?", "back": "2, 6, 10, 14 (1, 3, 5, 7 orbitals).", "concept": "Orbitals" },
+  { "id": "rules-card", "front": "Aufbau, Hund, Pauli?", "back": "Fill lowest energy first; singly with parallel spins before pairing; max two per orbital with opposite spins.", "concept": "Electron configurations" },
+  { "id": "crcu-card", "front": "Cr and Cu configurations?", "back": "Cr [Ar]3d⁵4s¹; Cu [Ar]3d¹⁰4s¹.", "concept": "Exceptions" },
+  { "id": "tm-ion-card", "front": "Which electrons do transition metals lose first?", "back": "4s before 3d.", "concept": "Ions" },
+  { "id": "convergence-ie-card", "front": "(HL) Convergence limit meaning?", "back": "Electron from n = ∞; its energy equals the ionisation energy.", "concept": "Convergence limit" },
+  { "id": "succ-ie-card", "front": "(HL) What does a big jump in successive IEs show?", "back": "The next electron is in an inner shell; electrons before the jump = valence electrons.", "concept": "Successive ionisation energies" }
+]
