@@ -1,0 +1,102 @@
+[
+  {
+    "id": "wave-speed",
+    "type": "numeric",
+    "lesson": "travelling-waves",
+    "concept": "Wave equation",
+    "difficulty": 1,
+    "prompt": "A water wave has wavelength 2.4 m and period 0.80 s. What is its speed?",
+    "answer": 3,
+    "tolerance": 0.02,
+    "unit": "m s⁻¹",
+    "explanation": "$v = \\lambda/T = 2.4/0.80 = 3.0$ m s⁻¹."
+  },
+  {
+    "id": "transverse-examples",
+    "type": "multi",
+    "lesson": "travelling-waves",
+    "concept": "Transverse and longitudinal",
+    "difficulty": 1,
+    "prompt": "Which of these are transverse waves?",
+    "options": ["Light", "Sound in air", "Waves on a guitar string", "Radio waves"],
+    "answers": [0, 2, 3],
+    "explanation": "All EM waves (light, radio) are transverse, and so are waves on a string. Sound in air is longitudinal."
+  },
+  {
+    "id": "frequency-medium",
+    "type": "tf",
+    "lesson": "travelling-waves",
+    "concept": "Wave equation",
+    "difficulty": 2,
+    "prompt": "When a wave passes into a medium where it travels more slowly, its frequency decreases.",
+    "answer": false,
+    "explanation": "Frequency is fixed by the source. The speed and wavelength decrease together."
+  },
+  {
+    "id": "medium-wavelength",
+    "type": "numeric",
+    "lesson": "travelling-waves",
+    "concept": "Wave equation",
+    "difficulty": 2,
+    "prompt": "A 500 Hz sound wave passes from air (340 m s⁻¹) into water (1500 m s⁻¹). What is its wavelength in water?",
+    "answer": 3,
+    "tolerance": 0.02,
+    "unit": "m",
+    "explanation": "Frequency stays 500 Hz, so $\\lambda = 1500/500 = 3.0$ m."
+  },
+  {
+    "id": "graph-type",
+    "type": "mcq",
+    "lesson": "travelling-waves",
+    "concept": "Wave graphs",
+    "difficulty": 2,
+    "prompt": "On a displacement–time graph for one point on a wave, the distance between adjacent peaks represents:",
+    "options": ["the wavelength", "the period", "the amplitude", "the wave speed"],
+    "answer": 1,
+    "explanation": "A time graph repeats every period T; a distance graph repeats every wavelength λ."
+  },
+  {
+    "id": "em-wavelength",
+    "type": "numeric",
+    "lesson": "sound-and-em-waves",
+    "concept": "Electromagnetic waves",
+    "difficulty": 1,
+    "prompt": "What is the wavelength of a 2.4 GHz microwave signal in a vacuum?",
+    "answer": 0.125,
+    "tolerance": 0.02,
+    "unit": "m",
+    "explanation": "$\\lambda = c/f = 3.00\\times10^8/2.4\\times10^9 = 0.125$ m."
+  },
+  {
+    "id": "spectrum-order",
+    "type": "mcq",
+    "lesson": "sound-and-em-waves",
+    "concept": "EM spectrum",
+    "difficulty": 1,
+    "prompt": "Which list is in order of increasing frequency?",
+    "options": ["X-ray, UV, visible, infrared", "Radio, infrared, visible, ultraviolet", "Gamma, X-ray, microwave, radio", "Visible, infrared, UV, X-ray"],
+    "answer": 1,
+    "explanation": "Frequency increases from radio through microwave, infrared, visible, UV, X-ray to gamma."
+  },
+  {
+    "id": "sound-vacuum",
+    "type": "tf",
+    "lesson": "sound-and-em-waves",
+    "concept": "Mechanical waves",
+    "difficulty": 1,
+    "prompt": "Sound can travel through a vacuum because it is a wave.",
+    "answer": false,
+    "explanation": "Sound is a mechanical wave; it needs particles to pass on compressions and rarefactions."
+  },
+  {
+    "id": "em-nature",
+    "type": "mcq",
+    "lesson": "sound-and-em-waves",
+    "concept": "Electromagnetic waves",
+    "difficulty": 2,
+    "prompt": "What oscillates in an electromagnetic wave?",
+    "options": ["Air molecules", "Electrons in the medium", "Electric and magnetic fields", "The aether"],
+    "answer": 2,
+    "explanation": "EM waves are perpendicular oscillating electric and magnetic fields; no medium is needed."
+  }
+]

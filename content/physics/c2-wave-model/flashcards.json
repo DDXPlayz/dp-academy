@@ -1,0 +1,9 @@
+[
+  { "id": "transverse-card", "front": "Transverse wave?", "back": "Oscillation perpendicular to the direction of energy transfer (e.g. light, string waves).", "concept": "Transverse and longitudinal" },
+  { "id": "longitudinal-card", "front": "Longitudinal wave?", "back": "Oscillation parallel to the direction of energy transfer, with compressions and rarefactions (e.g. sound).", "concept": "Transverse and longitudinal" },
+  { "id": "wavelength-card", "front": "Define wavelength.", "back": "Shortest distance between two points oscillating in phase, e.g. crest to crest.", "concept": "Wave quantities" },
+  { "id": "wave-eq-card", "front": "Wave equation?", "back": "$v = f\\lambda = \\lambda/T$", "concept": "Wave equation" },
+  { "id": "sound-card", "front": "Nature of sound?", "back": "Longitudinal mechanical wave; needs a medium; ≈340 m s⁻¹ in air.", "concept": "Mechanical waves" },
+  { "id": "em-card", "front": "Nature of EM waves?", "back": "Transverse oscillating E and B fields; no medium needed; c = 3.00 × 10⁸ m s⁻¹ in a vacuum.", "concept": "Electromagnetic waves" },
+  { "id": "spectrum-card", "front": "EM spectrum from longest to shortest wavelength?", "back": "Radio, microwave, infrared, visible, ultraviolet, X-ray, gamma.", "concept": "EM spectrum" }
+]
