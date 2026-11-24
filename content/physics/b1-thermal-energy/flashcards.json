@@ -1,0 +1,15 @@
+[
+  { "id": "density-card", "front": "Density equation and unit?", "back": "$\\rho = m/V$, in kg m⁻³.", "concept": "Density" },
+  { "id": "kelvin-card", "front": "Celsius to kelvin?", "back": "$T/\\text{K} = \\theta/^\\circ\\text{C} + 273$. Temperature **changes** are the same on both scales.", "concept": "Temperature scales" },
+  { "id": "temp-meaning", "front": "What does kelvin temperature measure?", "back": "The average random kinetic energy of the particles: $\\bar{E}_k = \\tfrac{3}{2}k_BT$.", "concept": "Temperature and kinetic energy" },
+  { "id": "internal-card", "front": "Define **internal energy**.", "back": "Total random kinetic energy + total intermolecular potential energy of the particles.", "concept": "Internal energy" },
+  { "id": "direction-card", "front": "What decides the direction of thermal energy transfer?", "back": "Temperature: energy flows from higher to lower temperature until thermal equilibrium.", "concept": "Thermal equilibrium" },
+  { "id": "shc-card", "front": "Specific heat capacity — definition and equation?", "back": "Energy to raise 1 kg by 1 K. $Q = mc\\Delta T$.", "concept": "Specific heat capacity" },
+  { "id": "latent-card", "front": "Specific latent heat — definition and equation?", "back": "Energy to change the phase of 1 kg at constant temperature. $Q = mL$.", "concept": "Latent heat" },
+  { "id": "phase-card", "front": "During melting, what happens to particle KE and PE?", "back": "Average KE (temperature) is constant; intermolecular PE increases.", "concept": "Phase change" },
+  { "id": "conduction-card", "front": "Rate of conduction?", "back": "$\\dfrac{\\Delta Q}{\\Delta t} = kA\\dfrac{\\Delta T}{\\Delta x}$", "concept": "Conduction" },
+  { "id": "convection-card", "front": "What drives convection?", "back": "Density differences: warm fluid expands, becomes less dense and rises; cool fluid sinks.", "concept": "Convection" },
+  { "id": "stefan-card", "front": "Stefan–Boltzmann law?", "back": "$L = \\sigma AT^4$, σ = 5.67 × 10⁻⁸ W m⁻² K⁻⁴.", "concept": "Stefan–Boltzmann law" },
+  { "id": "wien-card", "front": "Wien’s displacement law?", "back": "$\\lambda_{\\max}T = 2.9\\times10^{-3}$ m K — hotter bodies peak at shorter wavelengths.", "concept": "Wien’s law" },
+  { "id": "brightness-card", "front": "Apparent brightness?", "back": "$b = \\dfrac{L}{4\\pi d^2}$ — inverse-square with distance.", "concept": "Apparent brightness" }
+]
