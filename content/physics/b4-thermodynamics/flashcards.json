@@ -1,0 +1,11 @@
+[
+  { "id": "first-law-card", "front": "First law of thermodynamics (with sign convention)?", "back": "$Q = \\Delta U + W$; Q into the gas, W done **by** the gas.", "concept": "First law" },
+  { "id": "work-card", "front": "Work done by a gas?", "back": "$W = P\\Delta V$ at constant pressure; in general the area under the P–V curve.", "concept": "Work done by a gas" },
+  { "id": "du-card", "front": "ΔU for a monatomic ideal gas?", "back": "$\\Delta U = \\tfrac{3}{2}nR\\Delta T$ — depends only on the temperature change.", "concept": "Internal energy" },
+  { "id": "four-processes", "front": "Isovolumetric / isobaric / isothermal / adiabatic — what is fixed?", "back": "Volume (W = 0) / pressure / temperature (ΔU = 0) / no heat transfer (Q = 0).", "concept": "Gas processes" },
+  { "id": "adiabatic-card", "front": "Adiabatic law for a monatomic ideal gas?", "back": "$PV^{5/3}$ = constant.", "concept": "Adiabatic processes" },
+  { "id": "entropy-card", "front": "Entropy — two equations?", "back": "$\\Delta S = \\Delta Q/T$ and $S = k_B\\ln\\Omega$.", "concept": "Entropy change" },
+  { "id": "second-law-card", "front": "Second law of thermodynamics?", "back": "The entropy of an isolated system never decreases; in real processes it increases.", "concept": "Second law" },
+  { "id": "engine-card", "front": "Heat engine energy flows?", "back": "Takes $Q_h$ from the hot reservoir, does work $W$, rejects $Q_c$: $W = Q_h - Q_c$, $\\eta = W/Q_h$.", "concept": "Heat engines" },
+  { "id": "carnot-card", "front": "Carnot efficiency?", "back": "$\\eta = 1 - T_c/T_h$ (kelvin) — the maximum possible for those reservoirs.", "concept": "Carnot efficiency" }
+]

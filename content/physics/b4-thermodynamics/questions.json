@@ -1,0 +1,140 @@
+[
+  {
+    "id": "first-law-sign",
+    "type": "numeric",
+    "lesson": "first-law",
+    "concept": "First law",
+    "difficulty": 2,
+    "prompt": "A gas absorbs 500 J of thermal energy and does 200 J of work on its surroundings. What is the change in its internal energy?",
+    "answer": 300,
+    "tolerance": 0.02,
+    "unit": "J",
+    "explanation": "$Q = \\Delta U + W \\Rightarrow \\Delta U = 500 - 200 = 300$ J."
+  },
+  {
+    "id": "first-law-compression",
+    "type": "numeric",
+    "lesson": "first-law",
+    "concept": "First law",
+    "difficulty": 2,
+    "prompt": "300 J of work is done on a gas while it loses 120 J of thermal energy. What is ΔU?",
+    "answer": 180,
+    "tolerance": 0.02,
+    "unit": "J",
+    "explanation": "Work done **by** the gas is $W = -300$ J and $Q = -120$ J. $\\Delta U = Q - W = -120 - (-300) = +180$ J."
+  },
+  {
+    "id": "work-isobaric",
+    "type": "numeric",
+    "lesson": "first-law",
+    "concept": "Work done by a gas",
+    "difficulty": 1,
+    "prompt": "A gas expands from 2.0 × 10⁻³ m³ to 5.0 × 10⁻³ m³ at a constant pressure of 1.5 × 10⁵ Pa. How much work does it do?",
+    "answer": 450,
+    "tolerance": 0.02,
+    "unit": "J",
+    "explanation": "$W = P\\Delta V = 1.5\\times10^5 \\times 3.0\\times10^{-3} = 450$ J."
+  },
+  {
+    "id": "process-match",
+    "type": "mcq",
+    "lesson": "first-law",
+    "concept": "Gas processes",
+    "difficulty": 2,
+    "prompt": "In which process is Q = 0?",
+    "options": ["Isovolumetric", "Isobaric", "Isothermal", "Adiabatic"],
+    "answer": 3,
+    "explanation": "Adiabatic means no thermal energy transfer, so $Q = 0$ and $W = -\\Delta U$."
+  },
+  {
+    "id": "isothermal-du",
+    "type": "tf",
+    "lesson": "first-law",
+    "concept": "Gas processes",
+    "difficulty": 2,
+    "prompt": "For an ideal gas in an isothermal expansion, all the thermal energy supplied is converted into work done by the gas.",
+    "answer": true,
+    "explanation": "Constant temperature means $\\Delta U = 0$ for an ideal gas, so $Q = W$."
+  },
+  {
+    "id": "adiabatic-pressure",
+    "type": "numeric",
+    "lesson": "first-law",
+    "concept": "Adiabatic processes",
+    "difficulty": 3,
+    "prompt": "A monatomic ideal gas at 2.0 × 10⁵ Pa expands adiabatically to 8 times its volume. What is its final pressure?",
+    "answer": 6250,
+    "tolerance": 0.02,
+    "unit": "Pa",
+    "explanation": "$P_2 = P_1(V_1/V_2)^{5/3} = 2.0\\times10^5 \\times 8^{-5/3} = 2.0\\times10^5/32 = 6250$ Pa."
+  },
+  {
+    "id": "entropy-melt",
+    "type": "numeric",
+    "lesson": "entropy-second-law",
+    "concept": "Entropy change",
+    "difficulty": 2,
+    "prompt": "0.20 kg of water boils at 373 K. (L_v = 2.3 × 10⁶ J kg⁻¹) What is its entropy change?",
+    "answer": 1233,
+    "tolerance": 0.02,
+    "unit": "J K⁻¹",
+    "explanation": "$\\Delta S = \\dfrac{mL}{T} = \\dfrac{0.20 \\times 2.3\\times10^6}{373} = 1230$ J K⁻¹."
+  },
+  {
+    "id": "entropy-total",
+    "type": "numeric",
+    "lesson": "entropy-second-law",
+    "concept": "Second law",
+    "difficulty": 3,
+    "prompt": "600 J of thermal energy flows from a body at 400 K to one at 200 K. What is the total change in entropy?",
+    "answer": 1.5,
+    "tolerance": 0.02,
+    "unit": "J K⁻¹",
+    "explanation": "$\\Delta S = -\\dfrac{600}{400} + \\dfrac{600}{200} = -1.5 + 3.0 = +1.5$ J K⁻¹."
+  },
+  {
+    "id": "local-decrease",
+    "type": "tf",
+    "lesson": "entropy-second-law",
+    "concept": "Second law",
+    "difficulty": 2,
+    "prompt": "The entropy of the inside of a working refrigerator can decrease without breaking the second law.",
+    "answer": true,
+    "explanation": "The fridge is not isolated. Its entropy falls, but it rejects more energy to the room, whose entropy rises by more, so the total increases."
+  },
+  {
+    "id": "carnot-efficiency",
+    "type": "numeric",
+    "lesson": "heat-engines",
+    "concept": "Carnot efficiency",
+    "difficulty": 2,
+    "prompt": "An engine works between reservoirs at 600 K and 300 K. What is its maximum possible efficiency, as a percentage?",
+    "answer": 50,
+    "tolerance": 0.02,
+    "unit": "%",
+    "explanation": "$\\eta = 1 - \\dfrac{T_c}{T_h} = 1 - \\dfrac{300}{600} = 0.50 = 50\\%$."
+  },
+  {
+    "id": "engine-rejected",
+    "type": "numeric",
+    "lesson": "heat-engines",
+    "concept": "Heat engines",
+    "difficulty": 2,
+    "prompt": "An engine of efficiency 25% does 500 J of work per cycle. How much energy does it reject to the cold reservoir per cycle?",
+    "answer": 1500,
+    "tolerance": 0.02,
+    "unit": "J",
+    "explanation": "$Q_h = W/\\eta = 500/0.25 = 2000$ J; $Q_c = Q_h - W = 1500$ J."
+  },
+  {
+    "id": "cycle-area",
+    "type": "mcq",
+    "lesson": "heat-engines",
+    "concept": "Heat engines",
+    "difficulty": 2,
+    "prompt": "On a P–V diagram, the net work done by a gas in one complete cycle equals:",
+    "options": ["The area under the expansion curve only", "The area enclosed by the loop", "Zero, because the gas returns to its start", "The product of the highest pressure and volume"],
+    "answer": 1,
+    "explanation": "Net work = work done in expansion − work done on the gas in compression = the enclosed area. ΔU is zero over the cycle, but W is not."
+  }
+]
