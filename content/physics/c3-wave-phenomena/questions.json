@@ -1,0 +1,161 @@
+[
+  {
+    "id": "snell-angle",
+    "type": "numeric",
+    "lesson": "reflection-refraction",
+    "concept": "Snell’s law",
+    "difficulty": 2,
+    "prompt": "Light in water (n = 1.33) hits the surface at 30° to the normal. At what angle does it emerge into air (n = 1.00)?",
+    "answer": 41.7,
+    "tolerance": 0.02,
+    "unit": "°",
+    "explanation": "$\\sin\\theta_2 = 1.33\\sin 30^\\circ = 0.665$, so $\\theta_2 = 41.7^\\circ$ — bent away from the normal."
+  },
+  {
+    "id": "critical-angle",
+    "type": "numeric",
+    "lesson": "reflection-refraction",
+    "concept": "Critical angle",
+    "difficulty": 2,
+    "prompt": "What is the critical angle for light going from diamond (n = 2.42) into air?",
+    "answer": 24.4,
+    "tolerance": 0.02,
+    "unit": "°",
+    "explanation": "$\\sin\\theta_c = 1/2.42 = 0.413$, so $\\theta_c = 24.4^\\circ$. The small critical angle is why diamonds sparkle."
+  },
+  {
+    "id": "tir-conditions",
+    "type": "multi",
+    "lesson": "reflection-refraction",
+    "concept": "Total internal reflection",
+    "difficulty": 2,
+    "prompt": "Which conditions are needed for total internal reflection?",
+    "options": ["Light travels towards a medium of lower refractive index", "Light travels towards a medium of higher refractive index", "The angle of incidence is greater than the critical angle", "The angle of incidence is less than the critical angle"],
+    "answers": [0, 2],
+    "explanation": "TIR needs the light heading into a lower refractive index **and** an angle of incidence above the critical angle."
+  },
+  {
+    "id": "speed-in-glass",
+    "type": "numeric",
+    "lesson": "reflection-refraction",
+    "concept": "Refractive index",
+    "difficulty": 1,
+    "prompt": "What is the speed of light in glass of refractive index 1.60?",
+    "answer": 1.875e8,
+    "tolerance": 0.02,
+    "unit": "m s⁻¹",
+    "explanation": "$v = c/n = 3.00\\times10^8/1.60 = 1.88\\times10^8$ m s⁻¹."
+  },
+  {
+    "id": "diffraction-gap",
+    "type": "mcq",
+    "lesson": "diffraction",
+    "concept": "Diffraction",
+    "difficulty": 1,
+    "prompt": "Diffraction through a gap is most noticeable when the gap width is:",
+    "options": ["much larger than the wavelength", "about the same as the wavelength", "much smaller than the amplitude", "equal to the frequency"],
+    "answer": 1,
+    "explanation": "Spreading is greatest when the gap is comparable to the wavelength."
+  },
+  {
+    "id": "diffraction-wavelength",
+    "type": "tf",
+    "lesson": "diffraction",
+    "concept": "Diffraction",
+    "difficulty": 1,
+    "prompt": "When a wave diffracts through a gap, its wavelength increases.",
+    "answer": false,
+    "explanation": "Diffraction changes direction only. The medium is unchanged, so speed, frequency and wavelength stay the same."
+  },
+  {
+    "id": "path-difference",
+    "type": "mcq",
+    "lesson": "interference",
+    "concept": "Interference",
+    "difficulty": 2,
+    "prompt": "Two coherent in-phase sources emit waves of wavelength 2.0 cm. At point P the path difference is 7.0 cm. What happens at P?",
+    "options": ["Constructive interference", "Destructive interference", "Neither", "It depends on the amplitude"],
+    "answer": 1,
+    "explanation": "7.0 cm = 3.5λ = (3 + ½)λ, so the waves arrive in antiphase — destructive interference."
+  },
+  {
+    "id": "coherent-def",
+    "type": "mcq",
+    "lesson": "interference",
+    "concept": "Coherence",
+    "difficulty": 1,
+    "prompt": "Two sources are coherent if they have:",
+    "options": ["the same amplitude", "the same frequency and a constant phase difference", "the same speed", "the same wavelength and amplitude"],
+    "answer": 1,
+    "explanation": "Coherence means the same frequency and a constant phase difference, so the interference pattern is stable."
+  },
+  {
+    "id": "fringe-spacing",
+    "type": "numeric",
+    "lesson": "interference",
+    "concept": "Double-slit interference",
+    "difficulty": 2,
+    "prompt": "Light of wavelength 500 nm passes through slits 0.25 mm apart. The screen is 1.5 m away. What is the fringe spacing, in mm?",
+    "answer": 3,
+    "tolerance": 0.02,
+    "unit": "mm",
+    "explanation": "$s = \\lambda D/d = 500\\times10^{-9} \\times 1.5/0.25\\times10^{-3} = 3.0\\times10^{-3}$ m = 3.0 mm."
+  },
+  {
+    "id": "fringe-change",
+    "type": "mcq",
+    "lesson": "interference",
+    "concept": "Double-slit interference",
+    "difficulty": 2,
+    "prompt": "In a double-slit experiment the slit separation is halved and the screen is moved twice as far away. The fringe spacing:",
+    "options": ["is unchanged", "doubles", "quadruples", "halves"],
+    "answer": 2,
+    "explanation": "$s = \\lambda D/d$: D ×2 and d ×½ give ×4."
+  },
+  {
+    "id": "single-slit-min",
+    "type": "numeric",
+    "lesson": "single-slit-gratings",
+    "concept": "Single-slit diffraction",
+    "difficulty": 2,
+    "prompt": "Light of wavelength 630 nm passes through a slit 0.21 mm wide. At what angle, in radians, is the first minimum?",
+    "answer": 0.003,
+    "tolerance": 0.02,
+    "unit": "rad",
+    "explanation": "$\\theta = \\lambda/b = 630\\times10^{-9}/0.21\\times10^{-3} = 3.0\\times10^{-3}$ rad."
+  },
+  {
+    "id": "grating-angle",
+    "type": "numeric",
+    "lesson": "single-slit-gratings",
+    "concept": "Diffraction grating",
+    "difficulty": 2,
+    "prompt": "A grating with 300 lines per mm is lit by 650 nm light. At what angle is the first-order maximum?",
+    "answer": 11.24,
+    "tolerance": 0.02,
+    "unit": "°",
+    "explanation": "$d = 1/(300\\times10^3) = 3.33\\times10^{-6}$ m; $\\sin\\theta = 650\\times10^{-9}/3.33\\times10^{-6} = 0.195$, so $\\theta = 11.2^\\circ$."
+  },
+  {
+    "id": "grating-max-order",
+    "type": "numeric",
+    "lesson": "single-slit-gratings",
+    "concept": "Diffraction grating",
+    "difficulty": 3,
+    "prompt": "A grating has slit spacing 2.5 × 10⁻⁶ m and is lit with 600 nm light. What is the highest order that can be seen?",
+    "answer": 4,
+    "tolerance": 0.01,
+    "explanation": "$n \\le d/\\lambda = 2.5\\times10^{-6}/600\\times10^{-9} = 4.17$, so $n_{\\max} = 4$."
+  },
+  {
+    "id": "grating-vs-double",
+    "type": "mcq",
+    "lesson": "single-slit-gratings",
+    "concept": "Diffraction grating",
+    "difficulty": 2,
+    "prompt": "Compared with a double slit of the same slit spacing, a diffraction grating gives maxima that are:",
+    "options": ["closer together and dimmer", "at the same angles but sharper and brighter", "at different angles and broader", "identical"],
+    "answer": 1,
+    "explanation": "The maxima occur at the same angles ($n\\lambda = d\\sin\\theta$), but many slits make them much sharper and brighter."
+  }
+]

@@ -1,0 +1,13 @@
+[
+  { "id": "wavefront-ray", "front": "Wavefront vs ray?", "back": "Wavefront: joins points in phase. Ray: direction of energy transfer, perpendicular to wavefronts.", "concept": "Wavefronts and rays" },
+  { "id": "snell-card", "front": "Snell’s law?", "back": "$n_1\\sin\\theta_1 = n_2\\sin\\theta_2$, and $n_1/n_2 = v_2/v_1$.", "concept": "Snell’s law" },
+  { "id": "critical-card", "front": "Critical angle?", "back": "$\\sin\\theta_c = n_2/n_1$ (going into the lower-n medium).", "concept": "Critical angle" },
+  { "id": "tir-card", "front": "Conditions for total internal reflection?", "back": "Travelling into lower refractive index, and angle of incidence > critical angle.", "concept": "Total internal reflection" },
+  { "id": "diffraction-card", "front": "When is diffraction greatest?", "back": "When the gap or obstacle is about the same size as the wavelength.", "concept": "Diffraction" },
+  { "id": "superposition-card", "front": "Principle of superposition?", "back": "Where waves overlap, the resultant displacement is the vector sum of the individual displacements.", "concept": "Superposition" },
+  { "id": "coherent-card", "front": "Coherent sources?", "back": "Same frequency and constant phase difference.", "concept": "Coherence" },
+  { "id": "path-card", "front": "Path difference for constructive / destructive interference?", "back": "Constructive: $n\\lambda$. Destructive: $(n + \\tfrac{1}{2})\\lambda$.", "concept": "Interference" },
+  { "id": "young-card", "front": "Double-slit fringe spacing?", "back": "$s = \\lambda D/d$", "concept": "Double-slit interference" },
+  { "id": "single-slit-card", "front": "Single-slit first minimum?", "back": "$\\theta = \\lambda/b$ (radians).", "concept": "Single-slit diffraction" },
+  { "id": "grating-card", "front": "Diffraction grating equation?", "back": "$n\\lambda = d\\sin\\theta$; sharp, bright, widely spaced maxima.", "concept": "Diffraction grating" }
+]
