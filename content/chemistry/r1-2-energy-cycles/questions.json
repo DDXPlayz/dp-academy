@@ -1,0 +1,136 @@
+[
+  {
+    "id": "bond-enthalpy-calc",
+    "type": "numeric",
+    "lesson": "bond-enthalpy-hess",
+    "concept": "Bond enthalpies",
+    "difficulty": 2,
+    "prompt": "Use bond enthalpies (kJ mol⁻¹: H–H 436, Cl–Cl 242, H–Cl 431) to calculate ΔH for H₂(g) + Cl₂(g) → 2HCl(g), in kJ mol⁻¹.",
+    "answer": -184,
+    "tolerance": 0.01,
+    "unit": "kJ mol⁻¹",
+    "explanation": "Broken: 436 + 242 = 678. Formed: 2 × 431 = 862. ΔH = 678 − 862 = −184 kJ mol⁻¹."
+  },
+  {
+    "id": "bond-break-sign",
+    "type": "tf",
+    "lesson": "bond-enthalpy-hess",
+    "concept": "Bond enthalpies",
+    "difficulty": 1,
+    "prompt": "Breaking a covalent bond is an exothermic process.",
+    "answer": false,
+    "explanation": "Breaking bonds requires energy — endothermic. Making bonds is exothermic."
+  },
+  {
+    "id": "bond-approx",
+    "type": "mcq",
+    "lesson": "bond-enthalpy-hess",
+    "concept": "Bond enthalpies",
+    "difficulty": 2,
+    "prompt": "Why does ΔH calculated from bond enthalpies differ from the experimental value?",
+    "options": ["Bond enthalpies are averages from many compounds", "Hess’s law does not apply", "Bonds are not broken in reactions", "Temperature is not 298 K"],
+    "answer": 0,
+    "explanation": "Average values ignore the specific molecular environment (and apply only to gases)."
+  },
+  {
+    "id": "hess-co",
+    "type": "numeric",
+    "lesson": "bond-enthalpy-hess",
+    "concept": "Hess’s law",
+    "difficulty": 2,
+    "prompt": "S(s) + O₂(g) → SO₂(g), ΔH = −297 kJ; 2SO₂(g) + O₂(g) → 2SO₃(g), ΔH = −198 kJ. Calculate ΔH for S(s) + 1½O₂(g) → SO₃(g).",
+    "answer": -396,
+    "tolerance": 0.01,
+    "unit": "kJ mol⁻¹",
+    "explanation": "Add the first equation and half the second: −297 + (−99) = −396 kJ mol⁻¹."
+  },
+  {
+    "id": "hess-reverse",
+    "type": "mcq",
+    "lesson": "bond-enthalpy-hess",
+    "concept": "Hess’s law",
+    "difficulty": 1,
+    "prompt": "If an equation in a Hess’s law calculation is reversed, its ΔH:",
+    "options": ["stays the same", "changes sign", "doubles", "becomes zero"],
+    "answer": 1,
+    "explanation": "The reverse reaction has an equal and opposite enthalpy change."
+  },
+  {
+    "id": "formation-calc",
+    "type": "numeric",
+    "lesson": "formation-combustion",
+    "concept": "Enthalpy of formation",
+    "difficulty": 3,
+    "prompt": "(HL) Calculate ΔH⦵ for CaCO₃(s) → CaO(s) + CO₂(g). ΔHf⦵ / kJ mol⁻¹: CaCO₃ −1207, CaO −635, CO₂ −394.",
+    "answer": 178,
+    "tolerance": 0.01,
+    "unit": "kJ mol⁻¹",
+    "explanation": "Products − reactants: (−635 − 394) − (−1207) = +178 kJ mol⁻¹."
+  },
+  {
+    "id": "element-zero",
+    "type": "tf",
+    "lesson": "formation-combustion",
+    "concept": "Enthalpy of formation",
+    "difficulty": 1,
+    "prompt": "(HL) The standard enthalpy of formation of O₂(g) is zero.",
+    "answer": true,
+    "explanation": "Elements in their standard states have ΔHf⦵ = 0 by definition."
+  },
+  {
+    "id": "formation-equation",
+    "type": "mcq",
+    "lesson": "formation-combustion",
+    "concept": "Enthalpy of formation",
+    "difficulty": 2,
+    "prompt": "(HL) Which equation represents the standard enthalpy of formation of water?",
+    "options": ["2H₂(g) + O₂(g) → 2H₂O(l)", "H₂(g) + ½O₂(g) → H₂O(l)", "H₂O(l) → H₂(g) + ½O₂(g)", "2H(g) + O(g) → H₂O(g)"],
+    "answer": 1,
+    "explanation": "One mole of H₂O formed from elements in their standard states."
+  },
+  {
+    "id": "combustion-route",
+    "type": "numeric",
+    "lesson": "formation-combustion",
+    "concept": "Enthalpy of combustion",
+    "difficulty": 3,
+    "prompt": "(HL) ΔHc⦵ / kJ mol⁻¹: C(graphite) −394, H₂ −286, C₃H₈(g) −2219. Calculate ΔHf⦵ of propane.",
+    "answer": -107,
+    "tolerance": 0.01,
+    "unit": "kJ mol⁻¹",
+    "explanation": "3C + 4H₂ → C₃H₈: reactants − products = [3(−394) + 4(−286)] − (−2219) = −2326 + 2219 = −107 kJ mol⁻¹."
+  },
+  {
+    "id": "born-haber-calc",
+    "type": "numeric",
+    "lesson": "born-haber",
+    "concept": "Born–Haber cycles",
+    "difficulty": 3,
+    "prompt": "(HL) Calculate the lattice enthalpy of KCl. Data / kJ mol⁻¹: ΔHf −437, ΔHat(K) +89, ΔHat(Cl) +121, IE₁(K) +419, EA(Cl) −349.",
+    "answer": 717,
+    "tolerance": 0.01,
+    "unit": "kJ mol⁻¹",
+    "explanation": "$\\Delta H_\\text{lattice} = 89 + 121 + 419 - 349 + 437 = +717$ kJ mol⁻¹."
+  },
+  {
+    "id": "atomisation-cl",
+    "type": "mcq",
+    "lesson": "born-haber",
+    "concept": "Born–Haber cycles",
+    "difficulty": 2,
+    "prompt": "(HL) The Cl–Cl bond enthalpy is 242 kJ mol⁻¹. What is the enthalpy of atomisation of chlorine?",
+    "options": ["+242 kJ mol⁻¹", "+121 kJ mol⁻¹", "−121 kJ mol⁻¹", "+484 kJ mol⁻¹"],
+    "answer": 1,
+    "explanation": "Atomisation forms one mole of Cl atoms: ½Cl₂ → Cl, half the bond enthalpy."
+  },
+  {
+    "id": "second-ea",
+    "type": "tf",
+    "lesson": "born-haber",
+    "concept": "Electron affinity",
+    "difficulty": 2,
+    "prompt": "(HL) The second electron affinity of oxygen is exothermic.",
+    "answer": false,
+    "explanation": "Adding an electron to O⁻ requires energy to overcome repulsion: it is endothermic."
+  }
+]

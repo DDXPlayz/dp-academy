@@ -1,0 +1,29 @@
+[
+  {
+    "id": "p1a-incomplete-equation",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "R1.3",
+    "prompt": "Which equation represents the incomplete combustion of methane?",
+    "options": [
+      "CH₄ + 2O₂ → CO₂ + 2H₂O",
+      "2CH₄ + 3O₂ → 2CO + 4H₂O",
+      "CH₄ + O₂ → CO₂ + 2H₂",
+      "CH₄ → C + 2H₂"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** Limited oxygen gives carbon monoxide and water; the equation is balanced.",
+    "source": "original"
+  },
+  {
+    "id": "p2-fuels-compare",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 5,
+    "subtopic": "R1.3",
+    "prompt": "Ethanol can be produced from sugar cane and used as a fuel.\n\n**(a)** Write the equation for the fermentation of glucose. **[1]**\n\n**(b)** Write the equation for the complete combustion of ethanol. **[1]**\n\n**(c)** Discuss whether bioethanol can be described as carbon-neutral. **[3]**",
+    "markscheme": "**(a)** $\\text{C}_6\\text{H}_{12}\\text{O}_6 \\rightarrow 2\\text{C}_2\\text{H}_5\\text{OH} + 2\\text{CO}_2$ ✓\n\n**(b)** $\\text{C}_2\\text{H}_5\\text{OH} + 3\\text{O}_2 \\rightarrow 2\\text{CO}_2 + 3\\text{H}_2\\text{O}$ ✓\n\n**(c)** CO₂ released on combustion (and fermentation) was recently absorbed by photosynthesis ✓; so in principle no net increase ✓; but energy for farming, fertiliser production, distillation and transport usually comes from fossil fuels, so it is not fully carbon-neutral ✓",
+    "source": "original"
+  }
+]

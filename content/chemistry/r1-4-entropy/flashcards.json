@@ -1,0 +1,8 @@
+[
+  { "id": "entropy-card", "front": "Entropy?", "back": "A measure of the dispersal of matter and energy; S(gas) ≫ S(liquid) > S(solid).", "concept": "Entropy" },
+  { "id": "ds-sign-card", "front": "When is ΔS positive?", "back": "More moles of gas, melting/boiling/dissolving, rising temperature.", "concept": "Predicting ΔS" },
+  { "id": "ds-calc-card", "front": "ΔS⦵ from data?", "back": "ΣS⦵(products) − ΣS⦵(reactants), J K⁻¹ mol⁻¹.", "concept": "Calculating ΔS" },
+  { "id": "dg-card", "front": "Gibbs equation and spontaneity?", "back": "ΔG = ΔH − TΔS; spontaneous if ΔG < 0.", "concept": "Gibbs energy" },
+  { "id": "switch-card", "front": "Temperature at which ΔG = 0?", "back": "T = ΔH/ΔS (same units: kJ and kJ K⁻¹).", "concept": "Spontaneity" },
+  { "id": "dgk-card", "front": "ΔG⦵ and K?", "back": "ΔG⦵ = −RT ln K. Negative ΔG⦵ → K > 1.", "concept": "ΔG and equilibrium" }
+]

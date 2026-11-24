@@ -7,5 +7,39 @@
     "prompt": "A student burns $0.30\\ \\text{g}$ of ethanol under a copper can holding $50.0\\ \\text{cm}^3$ of water. The water temperature rises by $12.0\\ °\\text{C}$.\n\n**(a)** State why the mass of the water can be taken as $50.0\\ \\text{g}$. **[1]**\n\n**(b)** Calculate the heat absorbed by the water, in kJ. ($c = 4.18\\ \\text{J g}^{-1}\\,\\text{K}^{-1}$) **[1]**\n\n**(c)** Suggest one reason why the enthalpy of combustion calculated from this experiment is less exothermic than the literature value. **[1]**",
     "markscheme": "**(a)** The density of water is (about) $1.00\\ \\text{g cm}^{-3}$ ✓\n\n**(b)** $q = mc\\Delta T = 50.0 \\times 4.18 \\times 12.0 = 2508\\ \\text{J} \\approx 2.51\\ \\text{kJ}$ ✓\n\n**(c)** Heat lost to the surroundings / heat absorbed by the can / incomplete combustion of ethanol ✓",
     "source": "original"
+  },
+  {
+    "id": "p1a-endothermic-temp",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "R1.1",
+    "prompt": "Which statement about an endothermic reaction is correct?",
+    "options": [
+      "ΔH is negative and the surroundings get warmer",
+      "ΔH is positive and the surroundings get cooler",
+      "ΔH is positive and the surroundings get warmer",
+      "ΔH is negative and the surroundings get cooler"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** Heat flows into the system from the surroundings.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-calorimetry-dh",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "R1.1",
+    "prompt": "When 0.0100 mol of a solid dissolves in 50.0 g of water, the temperature falls by 2.0 °C. What is ΔH of solution in kJ mol⁻¹? ($c = 4.18\\ \\text{J g}^{-1}\\,\\text{K}^{-1}$)",
+    "options": [
+      "−41.8",
+      "+41.8",
+      "−0.418",
+      "+418"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** $Q = 50.0\\times4.18\\times2.0 = 418\\ \\text{J}$ absorbed; $\\Delta H = +418/0.0100 = +41\\,800\\ \\text{J mol}^{-1}$.",
+    "source": "original"
   }
 ]

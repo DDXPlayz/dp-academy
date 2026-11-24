@@ -14,5 +14,51 @@
     "answer": 0,
     "markscheme": "**A.** $\\Delta H_f = \\Delta H_c(\\text{C}) + 2\\Delta H_c(\\text{H}_2) - \\Delta H_c(\\text{CH}_4) = -394 + 2(-286) - (-890) = -76\\ \\text{kJ mol}^{-1}$.",
     "source": "original"
+  },
+  {
+    "id": "p1a-bond-enthalpy-h2o2",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "R1.2",
+    "prompt": "Using bond enthalpies (kJ mol⁻¹: H–H 436, O=O 498, O–H 463), what is ΔH for 2H₂(g) + O₂(g) → 2H₂O(g)?",
+    "options": [
+      "−482 kJ",
+      "+482 kJ",
+      "−1852 kJ",
+      "−241 kJ"
+    ],
+    "answer": 0,
+    "markscheme": "**A.** Broken: $2(436) + 498 = 1370$. Formed: $4(463) = 1852$. $\\Delta H = 1370 - 1852 = -482$ kJ.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-born-haber-term",
+    "paper": "1A",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "R1.2",
+    "prompt": "Which process is endothermic?",
+    "options": [
+      "Cl(g) + e⁻ → Cl⁻(g)",
+      "O⁻(g) + e⁻ → O²⁻(g)",
+      "Na⁺(g) + Cl⁻(g) → NaCl(s)",
+      "Na(g) → Na(s)"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** Adding an electron to a negative ion requires energy to overcome repulsion.",
+    "source": "original"
+  },
+  {
+    "id": "p2-hess-formation",
+    "paper": "2",
+    "level": "HL",
+    "difficulty": "hard",
+    "marks": 5,
+    "subtopic": "R1.2",
+    "prompt": "Ethene reacts with hydrogen: C₂H₄(g) + H₂(g) → C₂H₆(g).\n\n**(a)** Use ΔHc⦵ values (kJ mol⁻¹: C₂H₄ −1411, H₂ −286, C₂H₆ −1561) to calculate ΔH⦵ for the reaction. **[2]**\n\n**(b)** Use bond enthalpies (kJ mol⁻¹: C=C 614, C–C 346, H–H 436, C–H 414) to calculate ΔH for the same reaction. **[2]**\n\n**(c)** Suggest why the two answers differ. **[1]**",
+    "markscheme": "**(a)** $\\Delta H = \\Sigma\\Delta H_c(\\text{reactants}) - \\Sigma\\Delta H_c(\\text{products}) = (-1411 - 286) - (-1561)$ ✓ $= -136\\ \\text{kJ mol}^{-1}$ ✓\n\n**(b)** Broken: C=C + H–H = 614 + 436 = 1050; formed: C–C + 2 C–H = 346 + 828 = 1174 ✓; $\\Delta H = -124\\ \\text{kJ mol}^{-1}$ ✓\n\n**(c)** Bond enthalpies are average values from many compounds, not specific to these molecules ✓",
+    "source": "original"
   }
 ]

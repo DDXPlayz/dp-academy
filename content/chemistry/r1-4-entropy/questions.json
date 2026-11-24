@@ -1,0 +1,112 @@
+[
+  {
+    "id": "entropy-sign",
+    "type": "mcq",
+    "lesson": "entropy",
+    "concept": "Predicting ΔS",
+    "difficulty": 2,
+    "prompt": "Which reaction has the most positive entropy change?",
+    "options": ["2SO₂(g) + O₂(g) → 2SO₃(g)", "H₂O(g) → H₂O(l)", "2NaHCO₃(s) → Na₂CO₃(s) + H₂O(g) + CO₂(g)", "N₂(g) + 3H₂(g) → 2NH₃(g)"],
+    "answer": 2,
+    "explanation": "A solid produces two moles of gas — the largest increase in dispersal."
+  },
+  {
+    "id": "entropy-states",
+    "type": "tf",
+    "lesson": "entropy",
+    "concept": "Entropy",
+    "difficulty": 1,
+    "prompt": "A substance in the gaseous state has a higher entropy than the same substance as a liquid at the same temperature.",
+    "answer": true,
+    "explanation": "Gas particles are far more dispersed and have many more ways to distribute energy."
+  },
+  {
+    "id": "entropy-calc",
+    "type": "numeric",
+    "lesson": "entropy",
+    "concept": "Calculating ΔS",
+    "difficulty": 2,
+    "prompt": "Calculate ΔS⦵ for 2H₂(g) + O₂(g) → 2H₂O(l). S⦵ / J K⁻¹ mol⁻¹: H₂ 131, O₂ 205, H₂O(l) 70.",
+    "answer": -327,
+    "tolerance": 0.01,
+    "unit": "J K⁻¹ mol⁻¹",
+    "explanation": "2(70) − [2(131) + 205] = 140 − 467 = −327 J K⁻¹ mol⁻¹."
+  },
+  {
+    "id": "element-entropy",
+    "type": "tf",
+    "lesson": "entropy",
+    "concept": "Entropy",
+    "difficulty": 2,
+    "prompt": "The standard entropy of an element in its standard state is zero.",
+    "answer": false,
+    "explanation": "Only ΔHf⦵ is zero for elements. Standard entropies of elements are positive."
+  },
+  {
+    "id": "gibbs-calc",
+    "type": "numeric",
+    "lesson": "gibbs-energy",
+    "concept": "Gibbs energy",
+    "difficulty": 2,
+    "prompt": "For a reaction ΔH⦵ = −92 kJ mol⁻¹ and ΔS⦵ = −199 J K⁻¹ mol⁻¹. Calculate ΔG⦵ at 298 K in kJ mol⁻¹.",
+    "answer": -32.7,
+    "tolerance": 0.02,
+    "unit": "kJ mol⁻¹",
+    "explanation": "ΔG = −92 − 298(−0.199) = −92 + 59.3 = −32.7 kJ mol⁻¹."
+  },
+  {
+    "id": "switch-temp",
+    "type": "numeric",
+    "lesson": "gibbs-energy",
+    "concept": "Spontaneity",
+    "difficulty": 3,
+    "prompt": "A reaction has ΔH = +56 kJ mol⁻¹ and ΔS = +140 J K⁻¹ mol⁻¹. Above what temperature, in K, is it spontaneous?",
+    "answer": 400,
+    "tolerance": 0.01,
+    "unit": "K",
+    "explanation": "T = ΔH/ΔS = 56/0.140 = 400 K."
+  },
+  {
+    "id": "spontaneity-signs",
+    "type": "mcq",
+    "lesson": "gibbs-energy",
+    "concept": "Spontaneity",
+    "difficulty": 2,
+    "prompt": "A reaction is exothermic and has a negative entropy change. It is spontaneous:",
+    "options": ["at all temperatures", "at low temperatures only", "at high temperatures only", "never"],
+    "answer": 1,
+    "explanation": "ΔG = ΔH − TΔS: the −TΔS term is positive and grows with T, so ΔG is negative only at low T."
+  },
+  {
+    "id": "dg-equilibrium",
+    "type": "mcq",
+    "lesson": "gibbs-energy",
+    "concept": "ΔG and equilibrium",
+    "difficulty": 2,
+    "prompt": "If ΔG⦵ for a reaction is positive, then:",
+    "options": ["K > 1, products favoured", "K < 1, reactants favoured", "K = 1", "the reaction cannot occur at all"],
+    "answer": 1,
+    "explanation": "ΔG⦵ = −RT ln K: positive ΔG⦵ means ln K < 0, so K < 1."
+  },
+  {
+    "id": "spontaneous-fast",
+    "type": "tf",
+    "lesson": "gibbs-energy",
+    "concept": "Spontaneity",
+    "difficulty": 1,
+    "prompt": "A spontaneous reaction must be fast.",
+    "answer": false,
+    "explanation": "ΔG says nothing about rate; that depends on activation energy (kinetics)."
+  },
+  {
+    "id": "k-from-g",
+    "type": "numeric",
+    "lesson": "gibbs-energy",
+    "concept": "ΔG and equilibrium",
+    "difficulty": 3,
+    "prompt": "ΔG⦵ = +10.0 kJ mol⁻¹ at 298 K. Calculate K. (R = 8.31 J K⁻¹ mol⁻¹)",
+    "answer": 0.0176,
+    "tolerance": 0.03,
+    "explanation": "ln K = −10 000/(8.31 × 298) = −4.04, so K = e^−4.04 = 0.0176."
+  }
+]

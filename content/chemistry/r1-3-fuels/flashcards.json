@@ -1,0 +1,8 @@
+[
+  { "id": "combustion-card", "front": "Complete vs incomplete combustion?", "back": "Complete (excess O₂): CO₂ + H₂O. Incomplete (limited O₂): CO and/or C + H₂O.", "concept": "Combustion" },
+  { "id": "co-card", "front": "Why is CO dangerous?", "back": "Binds to haemoglobin, stopping O₂ transport; colourless and odourless.", "concept": "Incomplete combustion" },
+  { "id": "fossil-card", "front": "Least and most polluting fossil fuel?", "back": "Natural gas least CO₂ per kJ; coal most (plus SO₂, particulates).", "concept": "Fossil fuels" },
+  { "id": "biofuel-card", "front": "Biofuel?", "back": "Fuel from recently photosynthesised biomass — bioethanol, biodiesel, biogas.", "concept": "Biofuels" },
+  { "id": "fermentation-card", "front": "Fermentation equation?", "back": "C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂", "concept": "Biofuels" },
+  { "id": "fuel-cell-card", "front": "H₂ fuel cell half-equations (acid)?", "back": "Anode: H₂ → 2H⁺ + 2e⁻. Cathode: O₂ + 4H⁺ + 4e⁻ → 2H₂O.", "concept": "Fuel cells" }
+]

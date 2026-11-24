@@ -1,0 +1,7 @@
+[
+  { "id": "dh-card", "front": "Enthalpy change?", "back": "Heat transferred between system and surroundings at constant pressure.", "concept": "Exothermic and endothermic" },
+  { "id": "exo-endo-card", "front": "Exothermic vs endothermic?", "back": "Exo: ΔH < 0, surroundings warm, products more stable. Endo: ΔH > 0, surroundings cool.", "concept": "Exothermic and endothermic" },
+  { "id": "standard-card", "front": "Standard conditions?", "back": "100 kPa, 298 K (usually), 1 mol dm⁻³ solutions, standard states.", "concept": "Standard conditions" },
+  { "id": "qmct-card", "front": "Calorimetry equations?", "back": "Q = mcΔT (c = 4.18 J g⁻¹ K⁻¹); ΔH = −Q/n.", "concept": "Calorimetry" },
+  { "id": "heat-loss-card", "front": "Main calorimetry error and its effect?", "back": "Heat loss — experimental ΔH less negative than literature.", "concept": "Errors" }
+]

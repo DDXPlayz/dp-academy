@@ -1,0 +1,31 @@
+[
+  {
+    "id": "p1a-dg-temperature",
+    "paper": "1A",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "R1.4",
+    "prompt": "For a reaction, ΔH = +40 kJ mol⁻¹ and ΔS = +100 J K⁻¹ mol⁻¹. At which temperature is the reaction spontaneous?",
+    "options": [
+      "100 K",
+      "200 K",
+      "300 K",
+      "500 K"
+    ],
+    "answer": 3,
+    "markscheme": "**D.** ΔG < 0 when $T > \\Delta H/\\Delta S = 40/0.100 = 400$ K.",
+    "source": "original"
+  },
+  {
+    "id": "p2-gibbs-ammonia",
+    "paper": "2",
+    "level": "HL",
+    "difficulty": "hard",
+    "marks": 6,
+    "subtopic": "R1.4",
+    "prompt": "For N₂(g) + 3H₂(g) ⇌ 2NH₃(g), ΔH⦵ = −92.2 kJ mol⁻¹ and ΔS⦵ = −199 J K⁻¹ mol⁻¹.\n\n**(a)** Explain the sign of ΔS⦵. **[1]**\n\n**(b)** Calculate ΔG⦵ at 298 K and comment on the spontaneity. **[2]**\n\n**(c)** Calculate the temperature above which the reaction is no longer spontaneous. **[1]**\n\n**(d)** Calculate the equilibrium constant at 298 K. **[2]**",
+    "markscheme": "**(a)** Four moles of gas become two, so the dispersal of matter decreases ✓\n\n**(b)** $\\Delta G = -92.2 - 298(-0.199) = -32.9\\ \\text{kJ mol}^{-1}$ ✓; negative, so spontaneous at 298 K ✓\n\n**(c)** $T = \\tfrac{92.2}{0.199} = 463\\ \\text{K}$ ✓\n\n**(d)** $\\ln K = \\tfrac{32\\,900}{8.31\\times298} = 13.3$ ✓; $K \\approx 6\\times10^5$ ✓",
+    "source": "original"
+  }
+]

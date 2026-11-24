@@ -1,0 +1,8 @@
+[
+  { "id": "bond-dh-card", "front": "ΔH from bond enthalpies?", "back": "Σ(bonds broken) − Σ(bonds formed); approximate (averages, gases only).", "concept": "Bond enthalpies" },
+  { "id": "hess-card", "front": "Hess’s law?", "back": "ΔH is independent of the route between initial and final states.", "concept": "Hess’s law" },
+  { "id": "dhf-card", "front": "(HL) ΔHf⦵ definition?", "back": "One mole of compound formed from its elements in standard states, standard conditions.", "concept": "Enthalpy of formation" },
+  { "id": "dhc-card", "front": "(HL) ΔHc⦵ definition?", "back": "One mole of substance completely burned in oxygen, standard conditions.", "concept": "Enthalpy of combustion" },
+  { "id": "formation-formula-card", "front": "(HL) ΔH from ΔHf and from ΔHc?", "back": "Formation: products − reactants. Combustion: reactants − products.", "concept": "Enthalpy of formation" },
+  { "id": "bh-card", "front": "(HL) Born–Haber equation?", "back": "ΔHf = ΔHat(metal) + ΔHat(non-metal) + IE + EA − ΔH_lattice.", "concept": "Born–Haber cycles" }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "exo-sign",
+    "type": "mcq",
+    "lesson": "exo-endo",
+    "concept": "Exothermic and endothermic",
+    "difficulty": 1,
+    "prompt": "When ammonium nitrate dissolves in water, the temperature falls. The process is:",
+    "options": ["exothermic, ΔH negative", "exothermic, ΔH positive", "endothermic, ΔH positive", "endothermic, ΔH negative"],
+    "answer": 2,
+    "explanation": "The system absorbs heat from the water: endothermic, ΔH > 0."
+  },
+  {
+    "id": "stability",
+    "type": "tf",
+    "lesson": "exo-endo",
+    "concept": "Stability",
+    "difficulty": 1,
+    "prompt": "In an exothermic reaction, the products are more stable than the reactants.",
+    "answer": true,
+    "explanation": "Products have lower enthalpy than reactants."
+  },
+  {
+    "id": "exo-examples",
+    "type": "multi",
+    "lesson": "exo-endo",
+    "concept": "Exothermic and endothermic",
+    "difficulty": 1,
+    "prompt": "Which processes are exothermic?",
+    "options": ["combustion of methane", "neutralisation", "thermal decomposition of CaCO₃", "photosynthesis"],
+    "answers": [0, 1],
+    "explanation": "Decomposition and photosynthesis need energy input — endothermic."
+  },
+  {
+    "id": "q-mct",
+    "type": "numeric",
+    "lesson": "calorimetry",
+    "concept": "Calorimetry",
+    "difficulty": 1,
+    "prompt": "How much heat, in J, raises the temperature of 75.0 g of water by 8.0 °C? (c = 4.18 J g⁻¹ K⁻¹)",
+    "answer": 2508,
+    "tolerance": 0.01,
+    "unit": "J",
+    "explanation": "$Q = mc\\Delta T = 75.0\\times4.18\\times8.0 = 2508$ J."
+  },
+  {
+    "id": "dh-neutral",
+    "type": "numeric",
+    "lesson": "calorimetry",
+    "concept": "Calorimetry",
+    "difficulty": 2,
+    "prompt": "25.0 cm³ of 2.00 mol dm⁻³ HNO₃ and 25.0 cm³ of 2.00 mol dm⁻³ KOH are mixed; the temperature rises by 13.4 °C. Calculate ΔH of neutralisation in kJ mol⁻¹.",
+    "answer": -56.0,
+    "tolerance": 0.02,
+    "unit": "kJ mol⁻¹",
+    "explanation": "$Q = 50.0\\times4.18\\times13.4 = 2801$ J; $n = 0.0500$ mol; $\\Delta H = -2801/0.0500 = -56.0$ kJ mol⁻¹."
+  },
+  {
+    "id": "combustion-dh",
+    "type": "numeric",
+    "lesson": "calorimetry",
+    "concept": "Calorimetry",
+    "difficulty": 3,
+    "prompt": "Burning 0.320 g of methanol (M = 32.05 g mol⁻¹) raises the temperature of 150 g of water by 10.5 °C. Calculate ΔHc in kJ mol⁻¹.",
+    "answer": -659,
+    "tolerance": 0.02,
+    "unit": "kJ mol⁻¹",
+    "explanation": "$Q = 150\\times4.18\\times10.5 = 6584$ J; $n = 0.00998$ mol; $\\Delta H = -6.584/0.00998 = -660$ kJ mol⁻¹."
+  },
+  {
+    "id": "heat-loss-effect",
+    "type": "mcq",
+    "lesson": "calorimetry",
+    "concept": "Errors",
+    "difficulty": 2,
+    "prompt": "Heat loss to the surroundings in a combustion experiment makes the calculated ΔHc:",
+    "options": ["more negative than the true value", "less negative than the true value", "unchanged", "positive"],
+    "answer": 1,
+    "explanation": "Less heat reaches the water, so ΔT and |ΔH| are too small."
+  },
+  {
+    "id": "standard-conditions",
+    "type": "mcq",
+    "lesson": "calorimetry",
+    "concept": "Standard conditions",
+    "difficulty": 1,
+    "prompt": "Which are IB standard conditions for ΔH⦵?",
+    "options": ["0 °C and 101 kPa", "298 K and 100 kPa, solutions 1 mol dm⁻³", "273 K and 1 atm", "25 °C and 1 kPa"],
+    "answer": 1,
+    "explanation": "100 kPa, usually 298 K, with solutions at 1 mol dm⁻³."
+  },
+  {
+    "id": "mass-to-use",
+    "type": "tf",
+    "lesson": "calorimetry",
+    "concept": "Calorimetry",
+    "difficulty": 2,
+    "prompt": "In Q = mcΔT for a solution reaction, m is the mass of the solid reactant added.",
+    "answer": false,
+    "explanation": "m is the mass of the solution/water whose temperature changes."
+  }
+]
