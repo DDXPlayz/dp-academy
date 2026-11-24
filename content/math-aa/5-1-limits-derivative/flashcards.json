@@ -1,0 +1,4 @@
+[
+  { "id": "deriv-meaning-card", "front": "Two meanings of the derivative?", "back": "Gradient of the tangent; instantaneous rate of change.", "concept": "Derivative" },
+  { "id": "secant-card", "front": "How do chords relate to the derivative?", "back": "As h → 0, chord gradients approach the tangent gradient f′(x).", "concept": "Gradient" }
+]

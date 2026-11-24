@@ -1,0 +1,4 @@
+[
+  { "id": "tangent-card", "front": "Equation of a tangent at $x_1$?", "back": "$y - f(x_1) = f'(x_1)(x - x_1)$", "concept": "Tangent" },
+  { "id": "normal-card", "front": "Gradient of the normal?", "back": "$-1/f'(x_1)$", "concept": "Normal" }
+]

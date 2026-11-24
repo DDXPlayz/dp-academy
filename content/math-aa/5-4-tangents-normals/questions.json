@@ -1,0 +1,46 @@
+[
+  {
+    "id": "tangent-eq",
+    "type": "numeric",
+    "lesson": "tangents-normals",
+    "concept": "Tangent",
+    "difficulty": 2,
+    "prompt": "The tangent to $y = x^2 + 1$ at $x = 2$ is $y = mx + c$. Find $c$.",
+    "answer": -3,
+    "tolerance": 0,
+    "explanation": "Point $(2, 5)$, gradient 4: $y = 4x - 3$."
+  },
+  {
+    "id": "normal-gradient",
+    "type": "numeric",
+    "lesson": "tangents-normals",
+    "concept": "Normal",
+    "difficulty": 1,
+    "prompt": "The gradient of a curve at a point is 4. What is the gradient of the normal there?",
+    "answer": -0.25,
+    "tolerance": 0.001,
+    "explanation": "$-1/4$."
+  },
+  {
+    "id": "given-gradient",
+    "type": "numeric",
+    "lesson": "tangents-normals",
+    "concept": "Tangent",
+    "difficulty": 2,
+    "prompt": "At what x-coordinate does $y = 2x^2 - 5x$ have gradient 3?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "$4x - 5 = 3$."
+  },
+  {
+    "id": "normal-eq",
+    "type": "numeric",
+    "lesson": "tangents-normals",
+    "concept": "Normal",
+    "difficulty": 3,
+    "prompt": "The normal to $y = x^2$ at $(1, 1)$ meets the y-axis at $(0, k)$. Find $k$.",
+    "answer": 1.5,
+    "tolerance": 0.001,
+    "explanation": "Normal gradient $-\\tfrac12$: $y - 1 = -\\tfrac12(x - 1)$; at $x = 0$, $y = 1.5$."
+  }
+]

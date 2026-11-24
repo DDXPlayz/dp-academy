@@ -1,0 +1,45 @@
+[
+  {
+    "id": "secant-estimate",
+    "type": "numeric",
+    "lesson": "limits-derivative",
+    "concept": "Gradient",
+    "difficulty": 1,
+    "prompt": "Find the gradient of the chord of $y = x^2$ from $x = 1$ to $x = 1.1$.",
+    "answer": 2.1,
+    "tolerance": 0.001,
+    "explanation": "$(1.21 - 1)/0.1 = 2.1$, approaching the true gradient 2."
+  },
+  {
+    "id": "limit-value",
+    "type": "numeric",
+    "lesson": "limits-derivative",
+    "concept": "Limits",
+    "difficulty": 2,
+    "prompt": "Find $\\displaystyle\\lim_{x\\to3}\\frac{x^2 - 9}{x - 3}$.",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "$(x + 3) \\to 6$."
+  },
+  {
+    "id": "rate-units",
+    "type": "mcq",
+    "lesson": "limits-derivative",
+    "concept": "Rates of change",
+    "difficulty": 1,
+    "prompt": "V is volume in m³ and t is time in minutes. What are the units of dV/dt?",
+    "options": ["m³", "m³ min⁻¹", "min m⁻³", "m min⁻¹"],
+    "answer": 1,
+    "explanation": "Units of V per unit of t."
+  },
+  {
+    "id": "derivative-meaning",
+    "type": "tf",
+    "lesson": "limits-derivative",
+    "concept": "Derivative",
+    "difficulty": 1,
+    "prompt": "$f'(a)$ is the gradient of the tangent to $y = f(x)$ at $x = a$.",
+    "answer": true,
+    "explanation": "That is the geometric meaning of the derivative."
+  }
+]

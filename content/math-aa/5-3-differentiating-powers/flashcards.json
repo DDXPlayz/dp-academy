@@ -1,0 +1,4 @@
+[
+  { "id": "power-rule-card", "front": "Power rule?", "back": "$\\frac{d}{dx}(ax^n) = anx^{n-1}$", "concept": "Power rule" },
+  { "id": "rewrite-card", "front": "Before differentiating $\\frac{3}{x^2}$?", "back": "Rewrite as $3x^{-2}$.", "concept": "Negative powers" }
+]

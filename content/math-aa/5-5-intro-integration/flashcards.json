@@ -1,0 +1,4 @@
+[
+  { "id": "int-power-card", "front": "Integrate $ax^n$?", "back": "$\\frac{a}{n+1}x^{n+1} + C$, $n \\ne -1$.", "concept": "Antidifferentiation" },
+  { "id": "area-card", "front": "Area under $y = f(x) \\ge 0$ from a to b?", "back": "$\\int_a^b f(x)\\,dx$", "concept": "Area under a curve" }
+]

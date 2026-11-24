@@ -1,0 +1,45 @@
+[
+  {
+    "id": "power-diff",
+    "type": "expression",
+    "lesson": "power-rule",
+    "concept": "Power rule",
+    "difficulty": 1,
+    "prompt": "Differentiate $y = 5x^4 - 3x^2 + 7$.",
+    "variables": ["x"],
+    "answer": "20*x^3 - 6*x",
+    "explanation": "$20x^3 - 6x$."
+  },
+  {
+    "id": "neg-power",
+    "type": "expression",
+    "lesson": "power-rule",
+    "concept": "Negative powers",
+    "difficulty": 2,
+    "prompt": "Differentiate $y = \\dfrac{4}{x^3}$.",
+    "variables": ["x"],
+    "answer": "-12*x^(-4)",
+    "explanation": "$4x^{-3} \\to -12x^{-4}$."
+  },
+  {
+    "id": "gradient-at",
+    "type": "numeric",
+    "lesson": "power-rule",
+    "concept": "Power rule",
+    "difficulty": 1,
+    "prompt": "Find the gradient of $y = x^3 - 4x$ at $x = 2$.",
+    "answer": 8,
+    "tolerance": 0,
+    "explanation": "$3x^2 - 4 = 12 - 4 = 8$."
+  },
+  {
+    "id": "constant-deriv",
+    "type": "tf",
+    "lesson": "power-rule",
+    "concept": "Power rule",
+    "difficulty": 1,
+    "prompt": "The derivative of a constant is 0.",
+    "answer": true,
+    "explanation": "A constant function has a horizontal graph with gradient 0."
+  }
+]

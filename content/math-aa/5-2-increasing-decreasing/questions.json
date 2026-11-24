@@ -1,0 +1,45 @@
+[
+  {
+    "id": "dec-interval",
+    "type": "mcq",
+    "lesson": "increasing-decreasing",
+    "concept": "Increasing and decreasing",
+    "difficulty": 2,
+    "prompt": "Where is $f(x) = x^2 - 8x$ increasing?",
+    "options": ["$x < 4$", "$x > 4$", "$x > 0$", "$x < 8$"],
+    "answer": 1,
+    "explanation": "$f'(x) = 2x - 8 > 0 \\Rightarrow x > 4$."
+  },
+  {
+    "id": "sign-meaning",
+    "type": "tf",
+    "lesson": "increasing-decreasing",
+    "concept": "Increasing and decreasing",
+    "difficulty": 1,
+    "prompt": "If $f'(x) < 0$ on an interval, then $f$ is decreasing there.",
+    "answer": true,
+    "explanation": "Negative gradient means the graph falls."
+  },
+  {
+    "id": "always-increasing",
+    "type": "mcq",
+    "lesson": "increasing-decreasing",
+    "concept": "Increasing and decreasing",
+    "difficulty": 2,
+    "prompt": "Which function is increasing for all real x?",
+    "options": ["$x^2$", "$x^3 + x$", "$-x^3$", "$x^2 - x$"],
+    "answer": 1,
+    "explanation": "$f'(x) = 3x^2 + 1 > 0$ always."
+  },
+  {
+    "id": "stationary-x",
+    "type": "numeric",
+    "lesson": "increasing-decreasing",
+    "concept": "Stationary points",
+    "difficulty": 1,
+    "prompt": "Find the x-coordinate of the stationary point of $y = 3x^2 - 12x + 5$.",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "$6x - 12 = 0$."
+  }
+]

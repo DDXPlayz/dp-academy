@@ -1,0 +1,45 @@
+[
+  {
+    "id": "integrate-power",
+    "type": "expression",
+    "lesson": "intro-integration",
+    "concept": "Antidifferentiation",
+    "difficulty": 1,
+    "prompt": "Find $\\int 6x^2\\,dx$ (omit the constant).",
+    "variables": ["x"],
+    "answer": "2*x^3",
+    "explanation": "$\\frac{6}{3}x^3 = 2x^3$."
+  },
+  {
+    "id": "find-c",
+    "type": "numeric",
+    "lesson": "intro-integration",
+    "concept": "Constant of integration",
+    "difficulty": 2,
+    "prompt": "$f'(x) = 2x + 3$ and $f(0) = 4$. Find $f(2)$.",
+    "answer": 14,
+    "tolerance": 0,
+    "explanation": "$f(x) = x^2 + 3x + 4$; $f(2) = 4 + 6 + 4 = 14$."
+  },
+  {
+    "id": "area-gdc",
+    "type": "numeric",
+    "lesson": "intro-integration",
+    "concept": "Area under a curve",
+    "difficulty": 2,
+    "prompt": "Find the area between $y = x^2$ and the x-axis from $x = 0$ to $x = 3$.",
+    "answer": 9,
+    "tolerance": 0,
+    "explanation": "$\\int_0^3 x^2\\,dx = 9$."
+  },
+  {
+    "id": "plus-c",
+    "type": "tf",
+    "lesson": "intro-integration",
+    "concept": "Antidifferentiation",
+    "difficulty": 1,
+    "prompt": "An indefinite integral should include a constant of integration.",
+    "answer": true,
+    "explanation": "All antiderivatives differ by a constant."
+  }
+]
