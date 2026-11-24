@@ -1,0 +1,5 @@
+[
+  { "id": "sensor-card", "front": "Common chemistry sensors?", "back": "pH, temperature, colorimeter, pressure, conductivity, gas sensors.", "concept": "Sensors" },
+  { "id": "colorimeter-card", "front": "Colorimeter principle?", "back": "Absorbance of a coloured solution is proportional to its concentration.", "concept": "Sensors" },
+  { "id": "model-card", "front": "Molecular modelling is used to…?", "back": "Visualise 3D shapes, bond angles and electron density; predict properties.", "concept": "Modelling" }
+]

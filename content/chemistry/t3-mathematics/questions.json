@@ -1,0 +1,94 @@
+[
+  {
+    "id": "titre-uncertainty",
+    "type": "numeric",
+    "lesson": "uncertainty-chemistry",
+    "concept": "Apparatus uncertainty",
+    "difficulty": 1,
+    "prompt": "Each burette reading has an uncertainty of ±0.05 cm³. What is the absolute uncertainty of a titre, in cm³?",
+    "answer": 0.1,
+    "tolerance": 0.01,
+    "unit": "cm³",
+    "explanation": "A titre is the difference of two readings: 0.05 + 0.05 = 0.10 cm³."
+  },
+  {
+    "id": "percent-unc-titre",
+    "type": "numeric",
+    "lesson": "uncertainty-chemistry",
+    "concept": "Percentage uncertainty",
+    "difficulty": 2,
+    "prompt": "A titre is 20.00 ± 0.10 cm³. What is its percentage uncertainty?",
+    "answer": 0.5,
+    "tolerance": 0.01,
+    "unit": "%",
+    "explanation": "0.10/20.00 × 100 = 0.50%."
+  },
+  {
+    "id": "percent-error",
+    "type": "numeric",
+    "lesson": "uncertainty-chemistry",
+    "concept": "Percentage error",
+    "difficulty": 1,
+    "prompt": "An experimental ΔHc of −1150 kJ mol⁻¹ is compared with a literature value of −1367 kJ mol⁻¹. What is the percentage error?",
+    "answer": 15.87,
+    "tolerance": 0.02,
+    "unit": "%",
+    "explanation": "|−1150 − (−1367)|/1367 × 100 = 15.9%."
+  },
+  {
+    "id": "error-vs-unc",
+    "type": "mcq",
+    "lesson": "uncertainty-chemistry",
+    "concept": "Percentage error",
+    "difficulty": 2,
+    "prompt": "An experiment has a 3% total uncertainty but a 20% error. What does this suggest?",
+    "options": ["only random errors", "significant systematic error", "the literature value is wrong", "the uncertainty was overestimated"],
+    "answer": 1,
+    "explanation": "An error much larger than the uncertainty cannot be explained by random error alone."
+  },
+  {
+    "id": "thermometer-unc",
+    "type": "mcq",
+    "lesson": "uncertainty-chemistry",
+    "concept": "Apparatus uncertainty",
+    "difficulty": 1,
+    "prompt": "A thermometer is graduated every 1 °C. What is the uncertainty in a temperature change?",
+    "options": ["±0.5 °C", "±1 °C", "±2 °C", "±0.1 °C"],
+    "answer": 1,
+    "explanation": "Each reading is ±0.5 °C; a change uses two readings: ±1 °C."
+  },
+  {
+    "id": "tangent-rate",
+    "type": "mcq",
+    "lesson": "graphs-chemistry",
+    "concept": "Tangents",
+    "difficulty": 1,
+    "prompt": "How is the rate at a particular time found from a concentration–time curve?",
+    "options": ["read the concentration", "find the gradient of the tangent at that time", "find the area under the curve", "divide concentration by time"],
+    "answer": 1,
+    "explanation": "The gradient of the tangent is the instantaneous rate of change."
+  },
+  {
+    "id": "first-order-plot",
+    "type": "mcq",
+    "lesson": "graphs-chemistry",
+    "concept": "Linearisation",
+    "difficulty": 2,
+    "prompt": "Which plot gives a straight line for a first-order reaction?",
+    "options": ["[A] against t", "ln[A] against t", "1/[A] against t", "[A] against 1/t"],
+    "answer": 1,
+    "explanation": "ln[A] = ln[A]₀ − kt: a straight line with gradient −k."
+  },
+  {
+    "id": "half-life-k",
+    "type": "numeric",
+    "lesson": "graphs-chemistry",
+    "concept": "Linearisation",
+    "difficulty": 2,
+    "prompt": "A plot of ln[A] against t has gradient −0.0462 s⁻¹. What is the half-life, in s?",
+    "answer": 15,
+    "tolerance": 0.02,
+    "unit": "s",
+    "explanation": "k = 0.0462 s⁻¹; t½ = 0.693/0.0462 = 15 s."
+  }
+]

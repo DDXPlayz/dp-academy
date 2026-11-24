@@ -1,0 +1,7 @@
+[
+  { "id": "volumetric-card", "front": "Apparatus for accurate volumes?", "back": "Volumetric pipette, burette, volumetric flask.", "concept": "Measuring volume" },
+  { "id": "reflux-card", "front": "Reflux vs distillation?", "back": "Reflux: vertical condenser, vapours return — long heating. Distillation: condenser collects the vapour — separation.", "concept": "Reflux" },
+  { "id": "recryst-card", "front": "Recrystallisation steps?", "back": "Min. hot solvent → hot filter (if needed) → cool → filter → wash with cold solvent → dry.", "concept": "Recrystallisation" },
+  { "id": "mp-card", "front": "Melting point and purity?", "back": "Pure: sharp, matches literature. Impure: lower and broader range.", "concept": "Melting point" },
+  { "id": "standard-soln-card", "front": "Making a standard solution?", "back": "Weigh accurately, dissolve, transfer with rinsings to volumetric flask, make up to mark, invert to mix.", "concept": "Measuring volume" }
+]

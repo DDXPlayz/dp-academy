@@ -15,7 +15,7 @@
     "difficulty": "easy",
     "marks": 1,
     "subtopic": "R3.2",
-    "prompt": "In which reaction is the underlined species reduced? (underlined species listed first)",
+    "prompt": "In which reaction is the species named before the equation reduced?",
     "options": [
       "Zn in Zn + Cu²⁺ → Zn²⁺ + Cu",
       "Cl₂ in Cl₂ + 2Br⁻ → 2Cl⁻ + Br₂",
@@ -51,7 +51,7 @@
     "marks": 5,
     "subtopic": "R3.2",
     "prompt": "Concentrated aqueous sodium chloride is electrolysed using inert electrodes.\n\n**(a)** Write half-equations for the reactions at the cathode and at the anode. **[2]**\n\n**(b)** Explain why sodium is not formed at the cathode. **[1]**\n\n**(c)** State and explain how the anode product would change if the solution were very dilute. **[2]**",
-    "markscheme": "**(a)** Cathode: $2\\text{H}_2\\text{O} + 2e^- \\rightarrow \\text{H}_2 + 2\\text{OH}^-$ ✓; anode: $2\\text{Cl}^- \\rightarrow \\text{Cl}_2 + 2e^-$ ✓\n\n**(b)** Water has a much more positive E⦵ than Na⁺/Na, so water is reduced in preference ✓\n\n**(c)** Oxygen (mixed with less chlorine) ✓; at low [Cl⁻] water is oxidised in preference because its E⦵ is lower / concentration favours chloride only when high ✓",
+    "markscheme": "**(a)** Cathode: $2\\text{H}_2\\text{O} + 2e^- \\rightarrow \\text{H}_2 + 2\\text{OH}^-$ ✓; anode: $2\\text{Cl}^- \\rightarrow \\text{Cl}_2 + 2e^-$ ✓\n\n**(b)** Water has a much more positive E⦵ than Na⁺/Na, so water is reduced in preference ✓\n\n**(c)** Oxygen (mixed with less chlorine) ✓; water is oxidised in preference at low [Cl⁻]; chloride is only discharged preferentially when its concentration is high ✓",
     "source": "original"
   }
 ]

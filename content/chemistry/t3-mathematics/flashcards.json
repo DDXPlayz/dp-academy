@@ -1,0 +1,7 @@
+[
+  { "id": "analogue-card", "front": "Uncertainty of analogue vs digital readings?", "back": "Analogue: ± half the smallest division. Digital: ± one in the last digit.", "concept": "Apparatus uncertainty" },
+  { "id": "titre-card", "front": "Uncertainty of a burette titre?", "back": "±0.10 cm³ (two readings of ±0.05).", "concept": "Apparatus uncertainty" },
+  { "id": "prop-card", "front": "Propagating uncertainties?", "back": "± : add absolute. × ÷ : add percentage.", "concept": "Percentage uncertainty" },
+  { "id": "err-card", "front": "% error vs % uncertainty?", "back": "If % error > % uncertainty, systematic error is present.", "concept": "Percentage error" },
+  { "id": "linear-card", "front": "Straight-line plots for kinetics?", "back": "ln k vs 1/T (gradient −Ea/R); ln[A] vs t for first order (gradient −k).", "concept": "Linearisation" }
+]

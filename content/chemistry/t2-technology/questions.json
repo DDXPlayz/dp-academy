@@ -1,0 +1,45 @@
+[
+  {
+    "id": "probe-calibrate",
+    "type": "mcq",
+    "lesson": "data-tools",
+    "concept": "Sensors",
+    "difficulty": 1,
+    "prompt": "How is a pH probe calibrated?",
+    "options": ["with distilled water only", "with buffer solutions of known pH", "with a strong acid", "it does not need calibrating"],
+    "answer": 1,
+    "explanation": "Buffers of known pH (e.g. 4, 7, 10) set the probe’s response."
+  },
+  {
+    "id": "colorimeter-use",
+    "type": "mcq",
+    "lesson": "data-tools",
+    "concept": "Sensors",
+    "difficulty": 2,
+    "prompt": "Which reaction’s rate could be followed with a colorimeter?",
+    "options": ["Mg + HCl", "CaCO₃ + HCl", "propanone + iodine (I₂ is brown)", "NaOH + HCl"],
+    "answer": 2,
+    "explanation": "A colorimeter tracks the concentration of a coloured species — here, iodine."
+  },
+  {
+    "id": "logger-advantage-chem",
+    "type": "tf",
+    "lesson": "data-tools",
+    "concept": "Data loggers",
+    "difficulty": 1,
+    "prompt": "A pH probe with a data logger can record more points near the equivalence point of a titration than manual readings.",
+    "answer": true,
+    "explanation": "Continuous recording captures the steep section in detail."
+  },
+  {
+    "id": "spectral-db",
+    "type": "mcq",
+    "lesson": "data-tools",
+    "concept": "Databases",
+    "difficulty": 1,
+    "prompt": "A chemist compares an unknown compound’s IR spectrum with stored reference spectra. This uses:",
+    "options": ["a simulation", "a spectral database", "a data logger", "molecular modelling"],
+    "answer": 1,
+    "explanation": "Spectral databases hold reference spectra for identification."
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "glassware-choice",
+    "type": "mcq",
+    "lesson": "lab-techniques",
+    "concept": "Measuring volume",
+    "difficulty": 1,
+    "prompt": "Which apparatus delivers exactly 25.00 cm³ of a solution into a conical flask for a titration?",
+    "options": ["measuring cylinder", "beaker", "volumetric pipette", "conical flask"],
+    "answer": 2,
+    "explanation": "A volumetric pipette delivers a fixed volume with an uncertainty of about ±0.04 cm³."
+  },
+  {
+    "id": "reflux-why",
+    "type": "mcq",
+    "lesson": "lab-techniques",
+    "concept": "Reflux",
+    "difficulty": 1,
+    "prompt": "Why is a reaction mixture heated under reflux?",
+    "options": ["to separate the products", "to heat for a long time without losing volatile substances", "to cool the mixture", "to dry the product"],
+    "answer": 1,
+    "explanation": "Vapours condense in the vertical condenser and drip back into the flask."
+  },
+  {
+    "id": "melting-purity",
+    "type": "tf",
+    "lesson": "lab-techniques",
+    "concept": "Melting point",
+    "difficulty": 1,
+    "prompt": "An impure solid melts over a range of temperatures below the pure substance’s melting point.",
+    "answer": true,
+    "explanation": "Impurities disrupt the lattice, lowering and broadening the melting range."
+  },
+  {
+    "id": "recrystallise-steps",
+    "type": "mcq",
+    "lesson": "lab-techniques",
+    "concept": "Recrystallisation",
+    "difficulty": 2,
+    "prompt": "In recrystallisation, why is the minimum volume of hot solvent used?",
+    "options": ["to save solvent", "so the solution is saturated and most product crystallises on cooling", "to make the solution boil faster", "to remove insoluble impurities"],
+    "answer": 1,
+    "explanation": "Excess solvent would keep more product dissolved when cold, lowering the yield."
+  },
+  {
+    "id": "flammable-heat",
+    "type": "mcq",
+    "lesson": "lab-techniques",
+    "concept": "Safety",
+    "difficulty": 1,
+    "prompt": "How should ethanol be heated in the lab?",
+    "options": ["directly with a Bunsen flame", "in a water bath or heating mantle", "on a hot plate in an open beaker in the open lab", "it cannot be heated"],
+    "answer": 1,
+    "explanation": "Ethanol is flammable — avoid naked flames."
+  },
+  {
+    "id": "constant-mass",
+    "type": "tf",
+    "lesson": "lab-techniques",
+    "concept": "Drying to constant mass",
+    "difficulty": 2,
+    "prompt": "Heating a hydrated salt to constant mass ensures all the water of crystallisation has been removed.",
+    "answer": true,
+    "explanation": "When successive weighings agree, no more water is being lost."
+  }
+]
