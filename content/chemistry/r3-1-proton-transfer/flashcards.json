@@ -1,0 +1,14 @@
+[
+  { "id": "bl-card", "front": "Brønsted–Lowry acid and base?", "back": "Acid: proton donor. Base: proton acceptor.", "concept": "Conjugate pairs" },
+  { "id": "conj-card", "front": "Conjugate acid–base pair?", "back": "Two species differing by one H⁺ (e.g. CH₃COOH/CH₃COO⁻).", "concept": "Conjugate pairs" },
+  { "id": "ph-card", "front": "pH definition?", "back": "pH = −log₁₀[H⁺]; [H⁺] = 10^−pH.", "concept": "pH" },
+  { "id": "kw-card", "front": "Kw at 298 K?", "back": "[H⁺][OH⁻] = 1.00 × 10⁻¹⁴.", "concept": "Ionic product of water" },
+  { "id": "strong-weak-card", "front": "Strong vs weak acid?", "back": "Strong: fully ionised. Weak: partially ionised (equilibrium).", "concept": "Strong and weak acids" },
+  { "id": "neutral-card", "front": "Neutralisation products?", "back": "Base → salt + water; carbonate → salt + water + CO₂; metal → salt + H₂.", "concept": "Neutralisation" },
+  { "id": "ka-card", "front": "(HL) Ka and pH of a weak acid?", "back": "Ka = [H⁺][A⁻]/[HA]; [H⁺] ≈ √(Ka·c).", "concept": "Ka" },
+  { "id": "kakb-card", "front": "(HL) Ka and Kb of a conjugate pair?", "back": "Ka × Kb = Kw; pKa + pKb = 14.00.", "concept": "Conjugate pairs" },
+  { "id": "salt-card", "front": "(HL) pH of salts?", "back": "Strong/strong neutral; strong acid/weak base acidic; weak acid/strong base basic.", "concept": "Salt solutions" },
+  { "id": "halfeq-card", "front": "(HL) Half-equivalence point?", "back": "[HA] = [A⁻] so pH = pKa.", "concept": "Half-equivalence" },
+  { "id": "indicator-card", "front": "(HL) Choosing an indicator?", "back": "Its colour-change range must fall within the steep part of the pH curve.", "concept": "Indicators" },
+  { "id": "buffer-card", "front": "(HL) Buffer and its pH?", "back": "Weak acid + conjugate base; pH = pKa + log([A⁻]/[HA]).", "concept": "Buffers" }
+]

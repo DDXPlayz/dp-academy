@@ -1,0 +1,29 @@
+[
+  {
+    "id": "p1a-propagation",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "R3.3",
+    "prompt": "Which equation is a termination step in the reaction of ethane with chlorine?",
+    "options": [
+      "Cl₂ → 2Cl•",
+      "C₂H₆ + Cl• → C₂H₅• + HCl",
+      "C₂H₅• + Cl₂ → C₂H₅Cl + Cl•",
+      "C₂H₅• + C₂H₅• → C₄H₁₀"
+    ],
+    "answer": 3,
+    "markscheme": "**D.** Two radicals combine, removing them from the chain.",
+    "source": "original"
+  },
+  {
+    "id": "p2-radical-mechanism",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 5,
+    "subtopic": "R3.3",
+    "prompt": "Methane reacts with bromine in the presence of ultraviolet light.\n\n**(a)** State the role of the ultraviolet light. **[1]**\n\n**(b)** Write equations for the initiation step and the two propagation steps. **[3]**\n\n**(c)** Explain why some dibromomethane is also formed. **[1]**",
+    "markscheme": "**(a)** Provides energy for homolytic fission of Br–Br to form radicals ✓\n\n**(b)** $\\text{Br}_2 \\rightarrow 2\\text{Br}\\bullet$ ✓; $\\text{CH}_4 + \\text{Br}\\bullet \\rightarrow \\text{CH}_3\\bullet + \\text{HBr}$ ✓; $\\text{CH}_3\\bullet + \\text{Br}_2 \\rightarrow \\text{CH}_3\\text{Br} + \\text{Br}\\bullet$ ✓\n\n**(c)** Br• radicals can attack CH₃Br, substituting a further hydrogen (further substitution) ✓",
+    "source": "original"
+  }
+]

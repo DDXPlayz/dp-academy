@@ -8,5 +8,40 @@
     "prompt": "2-bromo-2-methylpropane, (CH$_3$)$_3$CBr, reacts with aqueous sodium hydroxide.\n\n**(a)** State the type of mechanism and explain why this halogenoalkane reacts by it. **[2]**\n\n**(b)** Write the rate equation for the reaction. **[1]**\n\n**(c)** Describe the two steps of the mechanism, stating which is rate-determining. **[3]**",
     "markscheme": "**(a)** S$_\\text{N}$1 / unimolecular nucleophilic substitution ✓; the tertiary carbocation is stabilised by the positive inductive effect of three alkyl groups, and the bulky groups hinder backside attack ✓\n\n**(b)** rate $= k[(\\text{CH}_3)_3\\text{CBr}]$ ✓\n\n**(c)** Step 1: the C–Br bond breaks heterolytically to give (CH$_3$)$_3$C$^+$ and Br$^-$ ✓; this slow step is rate-determining ✓. Step 2: OH$^-$ (nucleophile) attacks the carbocation, forming (CH$_3$)$_3$COH ✓",
     "source": "original"
+  },
+  {
+    "id": "p1a-electrophile",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "R3.4",
+    "prompt": "Which species is an electrophile?",
+    "options": [
+      "NH₃",
+      "OH⁻",
+      "NO₂⁺",
+      "H₂O"
+    ],
+    "answer": 2,
+    "markscheme": "**C.** NO₂⁺ is electron-deficient and accepts an electron pair.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-markovnikov-product",
+    "paper": "1A",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "R3.4",
+    "prompt": "What is the major product when HBr reacts with but-1-ene?",
+    "options": [
+      "1-bromobutane",
+      "2-bromobutane",
+      "1,2-dibromobutane",
+      "butan-2-ol"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** The secondary carbocation is more stable than the primary, so Br bonds to C2.",
+    "source": "original"
   }
 ]

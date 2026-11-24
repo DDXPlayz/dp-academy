@@ -8,5 +8,50 @@
     "prompt": "A voltaic cell is made from a Zn$^{2+}$/Zn half-cell and a Cu$^{2+}$/Cu half-cell under standard conditions.\n\n$E^\\ominus(\\text{Zn}^{2+}/\\text{Zn}) = -0.76\\ \\text{V}$, $E^\\ominus(\\text{Cu}^{2+}/\\text{Cu}) = +0.34\\ \\text{V}$\n\n**(a)** Calculate the standard cell potential. **[1]**\n\n**(b)** Identify the negative electrode and state the direction of electron flow in the external circuit. **[2]**\n\n**(c)** Calculate $\\Delta G^\\ominus$ for the cell reaction in kJ mol$^{-1}$. ($F = 96\\,500\\ \\text{C mol}^{-1}$) **[2]**",
     "markscheme": "**(a)** $E^\\ominus_{\\text{cell}} = 0.34 - (-0.76) = 1.10\\ \\text{V}$ ✓\n\n**(b)** Zinc is the negative electrode (anode) ✓; electrons flow from zinc to copper through the wire ✓\n\n**(c)** $\\Delta G^\\ominus = -nFE^\\ominus = -2 \\times 96\\,500 \\times 1.10$ ✓ $= -212\\ \\text{kJ mol}^{-1}$ ✓",
     "source": "original"
+  },
+  {
+    "id": "p1a-oxidation-state-change",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "R3.2",
+    "prompt": "In which reaction is the underlined species reduced? (underlined species listed first)",
+    "options": [
+      "Zn in Zn + Cu²⁺ → Zn²⁺ + Cu",
+      "Cl₂ in Cl₂ + 2Br⁻ → 2Cl⁻ + Br₂",
+      "Fe²⁺ in 2Fe²⁺ + Cl₂ → 2Fe³⁺ + 2Cl⁻",
+      "I⁻ in 2I⁻ → I₂ + 2e⁻"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** Chlorine goes from 0 to −1 — it gains electrons.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-alcohol-product",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "R3.2",
+    "prompt": "Which alcohol is oxidised to a ketone by acidified potassium dichromate(VI)?",
+    "options": [
+      "propan-1-ol",
+      "propan-2-ol",
+      "2-methylpropan-2-ol",
+      "methanol"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** Secondary alcohols are oxidised to ketones (propanone).",
+    "source": "original"
+  },
+  {
+    "id": "p2-electrolysis-brine",
+    "paper": "2",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 5,
+    "subtopic": "R3.2",
+    "prompt": "Concentrated aqueous sodium chloride is electrolysed using inert electrodes.\n\n**(a)** Write half-equations for the reactions at the cathode and at the anode. **[2]**\n\n**(b)** Explain why sodium is not formed at the cathode. **[1]**\n\n**(c)** State and explain how the anode product would change if the solution were very dilute. **[2]**",
+    "markscheme": "**(a)** Cathode: $2\\text{H}_2\\text{O} + 2e^- \\rightarrow \\text{H}_2 + 2\\text{OH}^-$ ✓; anode: $2\\text{Cl}^- \\rightarrow \\text{Cl}_2 + 2e^-$ ✓\n\n**(b)** Water has a much more positive E⦵ than Na⁺/Na, so water is reduced in preference ✓\n\n**(c)** Oxygen (mixed with less chlorine) ✓; at low [Cl⁻] water is oxidised in preference because its E⦵ is lower / concentration favours chloride only when high ✓",
+    "source": "original"
   }
 ]

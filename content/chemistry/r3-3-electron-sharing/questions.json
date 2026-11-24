@@ -1,0 +1,66 @@
+[
+  {
+    "id": "radical-step",
+    "type": "mcq",
+    "lesson": "radical-substitution",
+    "concept": "Radical mechanism",
+    "difficulty": 2,
+    "prompt": "Which is a propagation step in the reaction of methane with chlorine?",
+    "options": ["Cl₂ → 2Cl•", "CH₄ + Cl• → CH₃• + HCl", "CH₃• + Cl• → CH₃Cl", "CH₃• + CH₃• → C₂H₆"],
+    "answer": 1,
+    "explanation": "A propagation step uses one radical and makes another."
+  },
+  {
+    "id": "homolytic",
+    "type": "mcq",
+    "lesson": "radical-substitution",
+    "concept": "Homolytic fission",
+    "difficulty": 1,
+    "prompt": "In homolytic fission of a Cl–Cl bond:",
+    "options": ["both electrons go to one atom", "each atom takes one electron", "ions are formed", "the bond becomes a double bond"],
+    "answer": 1,
+    "explanation": "Equal splitting gives two Cl• radicals."
+  },
+  {
+    "id": "uv-needed",
+    "type": "tf",
+    "lesson": "radical-substitution",
+    "concept": "Initiation",
+    "difficulty": 1,
+    "prompt": "Methane and chlorine react in the dark at room temperature.",
+    "answer": false,
+    "explanation": "UV light (or high temperature) is needed to break Cl–Cl and form radicals."
+  },
+  {
+    "id": "termination-product",
+    "type": "multi",
+    "lesson": "radical-substitution",
+    "concept": "Radical mechanism",
+    "difficulty": 2,
+    "prompt": "Which products can form in termination steps of the chlorination of methane?",
+    "options": ["Cl₂", "CH₃Cl", "C₂H₆", "HCl"],
+    "answers": [0, 1, 2],
+    "explanation": "Termination joins two radicals. HCl forms in a propagation step."
+  },
+  {
+    "id": "mixture-why",
+    "type": "mcq",
+    "lesson": "radical-substitution",
+    "concept": "Product mixture",
+    "difficulty": 2,
+    "prompt": "Why does radical substitution give a mixture of products?",
+    "options": ["Radicals are unreactive", "Further substitution of the product can occur", "The reaction is reversible", "Chlorine is a catalyst"],
+    "answer": 1,
+    "explanation": "Cl• can substitute further H atoms (CH₂Cl₂, CHCl₃…), and termination gives other products."
+  },
+  {
+    "id": "radical-def",
+    "type": "tf",
+    "lesson": "radical-substitution",
+    "concept": "Radicals",
+    "difficulty": 1,
+    "prompt": "A radical is a species with an unpaired electron.",
+    "answer": true,
+    "explanation": "The unpaired electron makes radicals highly reactive."
+  }
+]

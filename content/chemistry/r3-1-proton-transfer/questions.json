@@ -1,0 +1,209 @@
+[
+  {
+    "id": "conjugate-pair",
+    "type": "mcq",
+    "lesson": "bronsted-ph",
+    "concept": "Conjugate pairs",
+    "difficulty": 1,
+    "prompt": "What is the conjugate base of H₂PO₄⁻?",
+    "options": ["H₃PO₄", "HPO₄²⁻", "PO₄³⁻", "H₂O"],
+    "answer": 1,
+    "explanation": "Remove one H⁺: H₂PO₄⁻ → HPO₄²⁻."
+  },
+  {
+    "id": "amphiprotic",
+    "type": "multi",
+    "lesson": "bronsted-ph",
+    "concept": "Amphiprotic species",
+    "difficulty": 2,
+    "prompt": "Which species are amphiprotic?",
+    "options": ["HCO₃⁻", "H₂O", "Cl⁻", "NH₄⁺"],
+    "answers": [0, 1],
+    "explanation": "HCO₃⁻ and H₂O can both donate and accept H⁺. Cl⁻ cannot donate; NH₄⁺ cannot accept."
+  },
+  {
+    "id": "ph-calc",
+    "type": "numeric",
+    "lesson": "bronsted-ph",
+    "concept": "pH",
+    "difficulty": 1,
+    "prompt": "What is the pH of 0.025 mol dm⁻³ HNO₃?",
+    "answer": 1.6,
+    "tolerance": 0.01,
+    "explanation": "Strong acid: [H⁺] = 0.025; pH = −log 0.025 = 1.60."
+  },
+  {
+    "id": "ph-tenfold",
+    "type": "mcq",
+    "lesson": "bronsted-ph",
+    "concept": "pH",
+    "difficulty": 1,
+    "prompt": "Solution A has pH 2 and solution B has pH 5. How does [H⁺] in A compare with B?",
+    "options": ["3 times greater", "30 times greater", "1000 times greater", "1000 times smaller"],
+    "answer": 2,
+    "explanation": "Three pH units = 10³ = 1000 times."
+  },
+  {
+    "id": "kw-ph",
+    "type": "numeric",
+    "lesson": "bronsted-ph",
+    "concept": "Ionic product of water",
+    "difficulty": 2,
+    "prompt": "What is the pH of 0.0040 mol dm⁻³ KOH at 298 K?",
+    "answer": 11.6,
+    "tolerance": 0.01,
+    "explanation": "[H⁺] = 1.0 × 10⁻¹⁴/0.0040 = 2.5 × 10⁻¹²; pH = 11.60."
+  },
+  {
+    "id": "hot-water",
+    "type": "tf",
+    "lesson": "bronsted-ph",
+    "concept": "Ionic product of water",
+    "difficulty": 2,
+    "prompt": "Pure water at 50 °C has a pH below 7 and is therefore acidic.",
+    "answer": false,
+    "explanation": "Kw rises with temperature so pH falls, but [H⁺] = [OH⁻], so the water is still neutral."
+  },
+  {
+    "id": "strong-vs-weak",
+    "type": "mcq",
+    "lesson": "strong-weak-neutralisation",
+    "concept": "Strong and weak acids",
+    "difficulty": 1,
+    "prompt": "0.1 mol dm⁻³ HCl and 0.1 mol dm⁻³ CH₃COOH are compared. Which is correct for HCl?",
+    "options": ["higher pH", "lower conductivity", "reacts faster with magnesium", "needs more NaOH to neutralise"],
+    "answer": 2,
+    "explanation": "HCl is fully ionised: higher [H⁺], lower pH, higher conductivity, faster reaction. Equal amounts need equal NaOH."
+  },
+  {
+    "id": "strong-concentrated",
+    "type": "tf",
+    "lesson": "strong-weak-neutralisation",
+    "concept": "Strong and weak acids",
+    "difficulty": 1,
+    "prompt": "A dilute solution of a strong acid can have a higher pH than a concentrated solution of a weak acid.",
+    "answer": true,
+    "explanation": "Strength (degree of ionisation) and concentration are independent ideas."
+  },
+  {
+    "id": "carbonate-products",
+    "type": "mcq",
+    "lesson": "strong-weak-neutralisation",
+    "concept": "Neutralisation",
+    "difficulty": 1,
+    "prompt": "What are the products of the reaction between sodium carbonate and hydrochloric acid?",
+    "options": ["NaCl and H₂O only", "NaCl, H₂O and CO₂", "NaCl and H₂", "NaOH and CO₂"],
+    "answer": 1,
+    "explanation": "Acid + carbonate → salt + water + carbon dioxide."
+  },
+  {
+    "id": "equiv-strong",
+    "type": "numeric",
+    "lesson": "strong-weak-neutralisation",
+    "concept": "pH curves",
+    "difficulty": 1,
+    "prompt": "What is the pH at the equivalence point of a strong acid–strong base titration at 298 K?",
+    "answer": 7,
+    "tolerance": 0.001,
+    "explanation": "The salt (e.g. NaCl) does not hydrolyse, so the solution is neutral."
+  },
+  {
+    "id": "weak-acid-ph",
+    "type": "numeric",
+    "lesson": "ka-kb-salts",
+    "concept": "Ka",
+    "difficulty": 3,
+    "prompt": "(HL) Calculate the pH of 0.20 mol dm⁻³ methanoic acid, Ka = 1.8 × 10⁻⁴.",
+    "answer": 2.22,
+    "tolerance": 0.01,
+    "explanation": "[H⁺] = √(1.8 × 10⁻⁴ × 0.20) = 6.0 × 10⁻³; pH = 2.22."
+  },
+  {
+    "id": "pka-strength",
+    "type": "mcq",
+    "lesson": "ka-kb-salts",
+    "concept": "Ka",
+    "difficulty": 2,
+    "prompt": "(HL) Which acid is the strongest?",
+    "options": ["pKa = 4.76", "pKa = 3.75", "pKa = 9.21", "pKa = 10.0"],
+    "answer": 1,
+    "explanation": "Smaller pKa means larger Ka — a stronger acid."
+  },
+  {
+    "id": "kakb",
+    "type": "numeric",
+    "lesson": "ka-kb-salts",
+    "concept": "Conjugate pairs",
+    "difficulty": 2,
+    "prompt": "(HL) The pKa of NH₄⁺ is 9.25. What is the pKb of NH₃ at 298 K?",
+    "answer": 4.75,
+    "tolerance": 0.01,
+    "explanation": "pKa + pKb = 14.00 → pKb = 4.75."
+  },
+  {
+    "id": "salt-ph",
+    "type": "mcq",
+    "lesson": "ka-kb-salts",
+    "concept": "Salt solutions",
+    "difficulty": 2,
+    "prompt": "(HL) Which salt gives an alkaline solution in water?",
+    "options": ["NaCl", "NH₄Cl", "CH₃COONa", "KNO₃"],
+    "answer": 2,
+    "explanation": "Ethanoate, the conjugate base of a weak acid, accepts H⁺ from water, producing OH⁻."
+  },
+  {
+    "id": "poh-calc",
+    "type": "numeric",
+    "lesson": "ka-kb-salts",
+    "concept": "pOH",
+    "difficulty": 1,
+    "prompt": "(HL) A solution has pH 9.30 at 298 K. What is its pOH?",
+    "answer": 4.7,
+    "tolerance": 0.01,
+    "explanation": "pOH = 14.00 − 9.30 = 4.70."
+  },
+  {
+    "id": "indicator-choice",
+    "type": "mcq",
+    "lesson": "curves-indicators-buffers",
+    "concept": "Indicators",
+    "difficulty": 2,
+    "prompt": "(HL) Which indicator is most suitable for titrating ethanoic acid with sodium hydroxide?",
+    "options": ["methyl orange (3.1–4.4)", "methyl red (4.4–6.2)", "phenolphthalein (8.3–10.0)", "any indicator"],
+    "answer": 2,
+    "explanation": "The equivalence point is above 7 (~8.7); phenolphthalein’s range lies in the steep section."
+  },
+  {
+    "id": "half-equiv",
+    "type": "numeric",
+    "lesson": "curves-indicators-buffers",
+    "concept": "Half-equivalence",
+    "difficulty": 2,
+    "prompt": "(HL) In a weak acid–strong base titration the pH at half-equivalence is 3.86. What is the Ka of the acid?",
+    "answer": 1.38e-4,
+    "tolerance": 0.02,
+    "explanation": "pH = pKa at half-equivalence, so Ka = 10⁻³·⁸⁶ = 1.4 × 10⁻⁴."
+  },
+  {
+    "id": "buffer-ph",
+    "type": "numeric",
+    "lesson": "curves-indicators-buffers",
+    "concept": "Buffers",
+    "difficulty": 3,
+    "prompt": "(HL) A buffer contains 0.30 mol dm⁻³ NH₃ and 0.15 mol dm⁻³ NH₄Cl. pKa(NH₄⁺) = 9.25. What is its pH?",
+    "answer": 9.55,
+    "tolerance": 0.01,
+    "explanation": "pH = pKa + log([base]/[acid]) = 9.25 + log(0.30/0.15) = 9.25 + 0.30 = 9.55."
+  },
+  {
+    "id": "buffer-make",
+    "type": "multi",
+    "lesson": "curves-indicators-buffers",
+    "concept": "Buffers",
+    "difficulty": 2,
+    "prompt": "(HL) Which mixtures form buffer solutions?",
+    "options": ["CH₃COOH + CH₃COONa", "HCl + NaCl", "2 mol CH₃COOH + 1 mol NaOH", "NH₃ + NH₄Cl"],
+    "answers": [0, 2, 3],
+    "explanation": "A buffer needs a weak acid/base and its conjugate. HCl is strong, so HCl/NaCl is not a buffer."
+  }
+]

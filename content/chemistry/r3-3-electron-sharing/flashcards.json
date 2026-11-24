@@ -1,0 +1,6 @@
+[
+  { "id": "radical-card", "front": "Radical?", "back": "Species with an unpaired electron; highly reactive.", "concept": "Radicals" },
+  { "id": "homo-card", "front": "Homolytic fission?", "back": "Bond breaks with one electron to each atom, forming two radicals (UV/heat).", "concept": "Homolytic fission" },
+  { "id": "steps-card", "front": "Three stages of radical substitution?", "back": "Initiation (make radicals), propagation (radical in, radical out), termination (two radicals combine).", "concept": "Radical mechanism" },
+  { "id": "prop-card", "front": "Propagation steps for CH₄ + Cl₂?", "back": "CH₄ + Cl• → CH₃• + HCl; CH₃• + Cl₂ → CH₃Cl + Cl•.", "concept": "Radical mechanism" }
+]

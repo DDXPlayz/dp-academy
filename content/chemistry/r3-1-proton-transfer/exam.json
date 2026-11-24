@@ -14,5 +14,68 @@
     "answer": 3,
     "markscheme": "**D.** Each formula unit releases two OH$^-$: $[\\text{OH}^-] = 0.020$, pOH $= 1.70$, pH $= 14.00 - 1.70 = 12.30$.",
     "source": "original"
+  },
+  {
+    "id": "p1a-conjugate-base",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "R3.1",
+    "prompt": "In HSO₄⁻ + H₂O ⇌ SO₄²⁻ + H₃O⁺, which species form a conjugate acid–base pair?",
+    "options": [
+      "HSO₄⁻ and H₂O",
+      "HSO₄⁻ and SO₄²⁻",
+      "H₂O and SO₄²⁻",
+      "SO₄²⁻ and H₃O⁺"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** They differ by one proton.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-dilution-ph",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "R3.1",
+    "prompt": "10 cm³ of HCl(aq) of pH 2 is diluted with water to 1000 cm³. What is the new pH?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "7"
+    ],
+    "answer": 2,
+    "markscheme": "**C.** [H⁺] falls by a factor of 100, so pH rises by 2.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-buffer-pair",
+    "paper": "1A",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "R3.1",
+    "prompt": "Which mixture forms a buffer solution?",
+    "options": [
+      "50 cm³ 0.1 mol dm⁻³ HCl + 50 cm³ 0.1 mol dm⁻³ NaOH",
+      "50 cm³ 0.2 mol dm⁻³ CH₃COOH + 50 cm³ 0.1 mol dm⁻³ NaOH",
+      "50 cm³ 0.1 mol dm⁻³ CH₃COOH + 50 cm³ 0.1 mol dm⁻³ NaOH",
+      "50 cm³ 0.1 mol dm⁻³ HCl + 50 cm³ 0.1 mol dm⁻³ NaCl"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** Half the ethanoic acid is neutralised, leaving equal amounts of CH₃COOH and CH₃COO⁻.",
+    "source": "original"
+  },
+  {
+    "id": "p2-weak-acid-titration",
+    "paper": "2",
+    "level": "HL",
+    "difficulty": "hard",
+    "marks": 7,
+    "subtopic": "R3.1",
+    "prompt": "25.0 cm³ of 0.100 mol dm⁻³ propanoic acid (pKa = 4.87) is titrated with 0.100 mol dm⁻³ NaOH.\n\n**(a)** Calculate the initial pH of the acid. **[2]**\n\n**(b)** State the pH after 12.5 cm³ of NaOH has been added, and explain your answer. **[2]**\n\n**(c)** Explain why the pH at the equivalence point is greater than 7. **[2]**\n\n**(d)** Suggest a suitable indicator. **[1]**",
+    "markscheme": "**(a)** $K_a = 10^{-4.87} = 1.35\\times10^{-5}$; $[\\text{H}^+] = \\sqrt{1.35\\times10^{-5}\\times0.100} = 1.16\\times10^{-3}$ ✓; pH = 2.94 ✓\n\n**(b)** pH = 4.87 ✓; half-equivalence: [acid] = [conjugate base], so pH = pKa ✓\n\n**(c)** At equivalence the solution contains propanoate ions ✓, which act as a base, accepting H⁺ from water and producing OH⁻ ✓\n\n**(d)** Phenolphthalein ✓",
+    "source": "original"
   }
 ]

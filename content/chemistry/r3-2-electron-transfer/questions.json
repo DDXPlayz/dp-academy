@@ -1,0 +1,220 @@
+[
+  {
+    "id": "oxidising-agent",
+    "type": "mcq",
+    "lesson": "redox-half-equations",
+    "concept": "Oxidising and reducing agents",
+    "difficulty": 1,
+    "prompt": "In Zn + Cu²⁺ → Zn²⁺ + Cu, which is the oxidising agent?",
+    "options": ["Zn", "Cu²⁺", "Zn²⁺", "Cu"],
+    "answer": 1,
+    "explanation": "Cu²⁺ gains electrons (is reduced), so it oxidises zinc."
+  },
+  {
+    "id": "redox-definition",
+    "type": "multi",
+    "lesson": "redox-half-equations",
+    "concept": "Oxidation and reduction",
+    "difficulty": 1,
+    "prompt": "Which describe oxidation?",
+    "options": ["loss of electrons", "increase in oxidation state", "gain of hydrogen", "gain of oxygen"],
+    "answers": [0, 1, 3],
+    "explanation": "Gain of hydrogen is reduction."
+  },
+  {
+    "id": "half-eq-electrons",
+    "type": "numeric",
+    "lesson": "redox-half-equations",
+    "concept": "Half-equations",
+    "difficulty": 2,
+    "prompt": "How many electrons appear in the balanced half-equation Cr₂O₇²⁻ + 14H⁺ + ne⁻ → 2Cr³⁺ + 7H₂O?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "Charge left: −2 + 14 − n; right: +6. So 12 − n = 6 → n = 6 (each Cr goes from +6 to +3)."
+  },
+  {
+    "id": "displacement",
+    "type": "mcq",
+    "lesson": "redox-half-equations",
+    "concept": "Reactivity",
+    "difficulty": 1,
+    "prompt": "Which reaction occurs?",
+    "options": ["Cu + MgSO₄", "Ag + CuSO₄", "Zn + CuSO₄", "Cu + ZnSO₄"],
+    "answer": 2,
+    "explanation": "Zinc is more reactive than copper, so it displaces copper from solution."
+  },
+  {
+    "id": "metal-acid",
+    "type": "tf",
+    "lesson": "redox-half-equations",
+    "concept": "Reactivity",
+    "difficulty": 1,
+    "prompt": "Copper reacts with dilute hydrochloric acid to release hydrogen.",
+    "answer": false,
+    "explanation": "Copper is below hydrogen in the activity series and does not displace it from acids."
+  },
+  {
+    "id": "cell-anode",
+    "type": "mcq",
+    "lesson": "electrochemical-cells",
+    "concept": "Voltaic cells",
+    "difficulty": 1,
+    "prompt": "In a voltaic cell made from Mg and Cu half-cells, which is the anode and what is its sign?",
+    "options": ["Mg, negative", "Mg, positive", "Cu, negative", "Cu, positive"],
+    "answer": 0,
+    "explanation": "The more reactive metal (Mg) is oxidised: it is the anode, the negative electrode."
+  },
+  {
+    "id": "salt-bridge",
+    "type": "mcq",
+    "lesson": "electrochemical-cells",
+    "concept": "Voltaic cells",
+    "difficulty": 2,
+    "prompt": "What is the function of the salt bridge?",
+    "options": ["to carry electrons between half-cells", "to allow ions to move and maintain electrical neutrality", "to provide a catalyst", "to increase the voltage"],
+    "answer": 1,
+    "explanation": "Ions flow through the salt bridge; electrons flow through the external wire."
+  },
+  {
+    "id": "electrolytic-tf",
+    "type": "tf",
+    "lesson": "electrochemical-cells",
+    "concept": "Electrolytic cells",
+    "difficulty": 2,
+    "prompt": "In an electrolytic cell, oxidation occurs at the positive electrode.",
+    "answer": true,
+    "explanation": "Oxidation is always at the anode; in an electrolytic cell the anode is positive."
+  },
+  {
+    "id": "molten-products",
+    "type": "mcq",
+    "lesson": "electrochemical-cells",
+    "concept": "Electrolytic cells",
+    "difficulty": 1,
+    "prompt": "What forms at the cathode during electrolysis of molten sodium chloride?",
+    "options": ["chlorine", "sodium", "hydrogen", "oxygen"],
+    "answer": 1,
+    "explanation": "Na⁺ + e⁻ → Na at the (negative) cathode."
+  },
+  {
+    "id": "alcohol-oxidation",
+    "type": "mcq",
+    "lesson": "organic-redox",
+    "concept": "Oxidation of alcohols",
+    "difficulty": 1,
+    "prompt": "Butan-2-ol is heated with acidified potassium dichromate(VI). What forms?",
+    "options": ["butanal", "butanoic acid", "butanone", "no reaction"],
+    "answer": 2,
+    "explanation": "Secondary alcohols are oxidised to ketones."
+  },
+  {
+    "id": "distil-aldehyde",
+    "type": "mcq",
+    "lesson": "organic-redox",
+    "concept": "Oxidation of alcohols",
+    "difficulty": 2,
+    "prompt": "To obtain ethanal rather than ethanoic acid from ethanol, you should:",
+    "options": ["heat under reflux", "distil off the product immediately", "use a tertiary alcohol", "add NaBH₄"],
+    "answer": 1,
+    "explanation": "Removing the aldehyde as it forms prevents further oxidation to the acid."
+  },
+  {
+    "id": "tertiary-no",
+    "type": "tf",
+    "lesson": "organic-redox",
+    "concept": "Oxidation of alcohols",
+    "difficulty": 1,
+    "prompt": "2-methylpropan-2-ol turns acidified dichromate from orange to green.",
+    "answer": false,
+    "explanation": "It is a tertiary alcohol and is not oxidised, so the solution stays orange."
+  },
+  {
+    "id": "hydrogenation",
+    "type": "mcq",
+    "lesson": "organic-redox",
+    "concept": "Reduction",
+    "difficulty": 1,
+    "prompt": "Which catalyst is used in the hydrogenation of alkenes?",
+    "options": ["iron", "nickel", "vanadium(V) oxide", "concentrated H₂SO₄"],
+    "answer": 1,
+    "explanation": "Finely divided nickel (or Pd/Pt) catalyses addition of H₂ across C=C."
+  },
+  {
+    "id": "ecell-calc",
+    "type": "numeric",
+    "lesson": "electrode-potentials",
+    "concept": "Cell potential",
+    "difficulty": 2,
+    "prompt": "(HL) E⦵ values: Zn²⁺/Zn −0.76 V, Ag⁺/Ag +0.80 V. Calculate E⦵cell for the zinc–silver cell, in V.",
+    "answer": 1.56,
+    "tolerance": 0.01,
+    "unit": "V",
+    "explanation": "E⦵cell = E⦵cathode − E⦵anode = 0.80 − (−0.76) = +1.56 V."
+  },
+  {
+    "id": "strongest-oxidant",
+    "type": "mcq",
+    "lesson": "electrode-potentials",
+    "concept": "Electrode potentials",
+    "difficulty": 2,
+    "prompt": "(HL) Which is the strongest oxidising agent? (E⦵: Cu²⁺/Cu +0.34, Cl₂/Cl⁻ +1.36, Fe²⁺/Fe −0.45, Zn²⁺/Zn −0.76)",
+    "options": ["Cu²⁺", "Cl₂", "Fe²⁺", "Zn"],
+    "answer": 1,
+    "explanation": "The most positive E⦵ belongs to the species most easily reduced: Cl₂."
+  },
+  {
+    "id": "delta-g-cell",
+    "type": "numeric",
+    "lesson": "electrode-potentials",
+    "concept": "ΔG and E⦵",
+    "difficulty": 3,
+    "prompt": "(HL) A cell has E⦵cell = +1.10 V and n = 2. Calculate ΔG⦵ in kJ mol⁻¹. (F = 96 500 C mol⁻¹)",
+    "answer": -212.3,
+    "tolerance": 0.01,
+    "unit": "kJ mol⁻¹",
+    "explanation": "ΔG⦵ = −nFE⦵ = −2 × 96 500 × 1.10 = −212 300 J mol⁻¹ = −212 kJ mol⁻¹."
+  },
+  {
+    "id": "no-multiply",
+    "type": "tf",
+    "lesson": "electrode-potentials",
+    "concept": "Cell potential",
+    "difficulty": 2,
+    "prompt": "(HL) If a half-equation is multiplied by 2, its E⦵ value must also be doubled.",
+    "answer": false,
+    "explanation": "E⦵ is an intensive property; it does not depend on the amount."
+  },
+  {
+    "id": "aqueous-nacl",
+    "type": "mcq",
+    "lesson": "aqueous-electrolysis",
+    "concept": "Aqueous electrolysis",
+    "difficulty": 2,
+    "prompt": "(HL) What forms at each electrode during electrolysis of concentrated NaCl(aq) with inert electrodes?",
+    "options": ["Na at cathode, Cl₂ at anode", "H₂ at cathode, Cl₂ at anode", "H₂ at cathode, O₂ at anode", "Na at cathode, O₂ at anode"],
+    "answer": 1,
+    "explanation": "Water is reduced in preference to Na⁺; concentrated Cl⁻ is oxidised in preference to water."
+  },
+  {
+    "id": "plating-cathode",
+    "type": "mcq",
+    "lesson": "aqueous-electrolysis",
+    "concept": "Electroplating",
+    "difficulty": 1,
+    "prompt": "(HL) In electroplating, the object to be plated is:",
+    "options": ["the anode", "the cathode", "the salt bridge", "the electrolyte"],
+    "answer": 1,
+    "explanation": "Metal ions are reduced onto the object at the cathode."
+  },
+  {
+    "id": "cuso4-products",
+    "type": "multi",
+    "lesson": "aqueous-electrolysis",
+    "concept": "Aqueous electrolysis",
+    "difficulty": 2,
+    "prompt": "(HL) CuSO₄(aq) is electrolysed with inert electrodes. Which observations are expected?",
+    "options": ["copper deposited at the cathode", "oxygen bubbles at the anode", "hydrogen at the cathode", "the blue colour fades"],
+    "answers": [0, 1, 3],
+    "explanation": "Cu²⁺ is reduced (it is less reactive than H) so no H₂ forms; water is oxidised to O₂; Cu²⁺ is used up, so the blue fades."
+  }
+]

@@ -1,0 +1,13 @@
+[
+  { "id": "oilrig-card", "front": "OIL RIG?", "back": "Oxidation Is Loss (of electrons), Reduction Is Gain.", "concept": "Oxidation and reduction" },
+  { "id": "agents-card", "front": "Oxidising agent vs reducing agent?", "back": "Oxidising agent is reduced (gains e⁻); reducing agent is oxidised (loses e⁻).", "concept": "Oxidising and reducing agents" },
+  { "id": "balance-card", "front": "Balancing half-equations in acid?", "back": "Atoms → O with H₂O → H with H⁺ → charge with e⁻.", "concept": "Half-equations" },
+  { "id": "an-ox-card", "front": "Where do oxidation and reduction happen?", "back": "Oxidation at the anode, reduction at the cathode — in every cell.", "concept": "Voltaic cells" },
+  { "id": "voltaic-card", "front": "Voltaic vs electrolytic cell?", "back": "Voltaic: spontaneous, chemical → electrical, anode −. Electrolytic: non-spontaneous, electrical → chemical, anode +.", "concept": "Electrolytic cells" },
+  { "id": "alc-ox-card", "front": "Oxidation products of alcohols?", "back": "1°: aldehyde (distil) → acid (reflux). 2°: ketone. 3°: none. Orange → green.", "concept": "Oxidation of alcohols" },
+  { "id": "reduce-card", "front": "Reducing carbonyls and acids?", "back": "NaBH₄/LiAlH₄: aldehyde → 1° alcohol, ketone → 2° alcohol; LiAlH₄ for acids.", "concept": "Reduction" },
+  { "id": "she-card", "front": "(HL) Standard hydrogen electrode?", "back": "H₂ (100 kPa) on Pt in 1 mol dm⁻³ H⁺ at 298 K; E⦵ = 0.00 V.", "concept": "Electrode potentials" },
+  { "id": "ecell-card", "front": "(HL) E⦵cell and spontaneity?", "back": "E⦵cathode − E⦵anode; positive → spontaneous.", "concept": "Cell potential" },
+  { "id": "nfe-card", "front": "(HL) ΔG⦵ from E⦵cell?", "back": "ΔG⦵ = −nFE⦵cell, F = 96 500 C mol⁻¹.", "concept": "ΔG and E⦵" },
+  { "id": "aq-elec-card", "front": "(HL) Aqueous electrolysis rules?", "back": "Cathode: Cu/Ag deposited, else H₂. Anode: conc. halide → halogen, else O₂.", "concept": "Aqueous electrolysis" }
+]

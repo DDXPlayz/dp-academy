@@ -1,0 +1,12 @@
+[
+  { "id": "nuc-card", "front": "Nucleophile vs electrophile?", "back": "Nucleophile donates an electron pair; electrophile accepts one.", "concept": "Nucleophiles and electrophiles" },
+  { "id": "hetero-card", "front": "Heterolytic fission?", "back": "Both bonding electrons go to one fragment, forming ions.", "concept": "Heterolytic fission" },
+  { "id": "nuc-sub-card", "front": "Halogenoalkane + warm NaOH(aq)?", "back": "Nucleophilic substitution → alcohol + halide ion.", "concept": "Nucleophilic substitution" },
+  { "id": "elec-add-card", "front": "Electrophilic additions of alkenes?", "back": "H₂ (Ni) → alkane; X₂ → dihalide; HX → halogenoalkane; H₂O (H₃PO₄) → alcohol.", "concept": "Electrophilic addition" },
+  { "id": "br-water-card", "front": "Test for C=C?", "back": "Bromine water: orange → colourless.", "concept": "Test for alkenes" },
+  { "id": "lewis-card", "front": "(HL) Lewis acid and base?", "back": "Acid: electron-pair acceptor. Base: electron-pair donor. Together they form a coordination bond.", "concept": "Lewis acids and bases" },
+  { "id": "sn2-card", "front": "(HL) SN2 features?", "back": "Primary; one step; rate = k[RX][Nu]; inversion of configuration; aprotic solvent.", "concept": "SN1 and SN2" },
+  { "id": "sn1-card", "front": "(HL) SN1 features?", "back": "Tertiary; carbocation intermediate; rate = k[RX]; racemic product; protic solvent.", "concept": "SN1 and SN2" },
+  { "id": "markov-card", "front": "(HL) Markovnikov’s rule?", "back": "Major product comes from the more stable carbocation (3° > 2° > 1°).", "concept": "Markovnikov’s rule" },
+  { "id": "nitration-card", "front": "(HL) Nitration of benzene?", "back": "Conc. HNO₃ + H₂SO₄ → NO₂⁺; electrophilic substitution → nitrobenzene.", "concept": "Electrophilic substitution" }
+]
