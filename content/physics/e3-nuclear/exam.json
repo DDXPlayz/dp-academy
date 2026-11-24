@@ -14,5 +14,63 @@
     "answer": 2,
     "markscheme": "**C.** $800 \\to 50$ is a factor of $16 = 2^4$, so four half-lives pass in $20\\ \\text{h}$: $T_{1/2} = 5.0\\ \\text{h}$.",
     "source": "original"
+  },
+  {
+    "id": "p1a-decay-chain",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "E.3",
+    "prompt": "A nucleus $^{232}_{90}\\text{Th}$ emits one alpha particle and then two beta-minus particles. What nucleus is formed?",
+    "options": ["$^{228}_{90}\\text{Th}$", "$^{228}_{88}\\text{Ra}$", "$^{224}_{90}\\text{Th}$", "$^{228}_{92}\\text{U}$"],
+    "answer": 0,
+    "markscheme": "**A.** Alpha: $A - 4$, $Z - 2$ → $^{228}_{88}$. Two β⁻: $Z + 2$ → $^{228}_{90}\\text{Th}$.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-binding-curve",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "E.3",
+    "prompt": "Which nucleus has the greatest binding energy per nucleon?",
+    "options": ["$^{2}_{1}\\text{H}$", "$^{4}_{2}\\text{He}$", "$^{56}_{26}\\text{Fe}$", "$^{235}_{92}\\text{U}$"],
+    "answer": 2,
+    "markscheme": "**C.** Iron-56 lies at the peak of the binding-energy-per-nucleon curve.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-beta-spectrum",
+    "paper": "1A",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "E.3",
+    "prompt": "The energy spectrum of beta particles from a nuclide is continuous. This is evidence for",
+    "options": ["discrete nuclear energy levels", "the strong nuclear force", "the existence of the (anti)neutrino", "the wave nature of electrons"],
+    "answer": 2,
+    "markscheme": "**C.** A third particle shares the decay energy, so the beta particle can have a range of energies.",
+    "source": "original"
+  },
+  {
+    "id": "p1b-background-half-life",
+    "paper": "1B",
+    "difficulty": "medium",
+    "marks": 4,
+    "subtopic": "E.3",
+    "prompt": "A student measures the count rate from a radioactive source. The background count rate is $30\\ \\text{counts min}^{-1}$.\n\n| $t$ / min | 0 | 10 | 20 | 30 | 40 |\n|---|---|---|---|---|---|\n| Count rate / counts min⁻¹ | 990 | 510 | 270 | 150 | 90 |\n\n**(a)** Determine the half-life of the source, showing your working. **[3]**\n\n**(b)** Suggest why the student measured the background count rate. **[1]**",
+    "markscheme": "**(a)** Corrected count rates: 960, 480, 240, 120, 60 ✓; the corrected rate halves every 10 min ✓; half-life $= 10$ min ✓\n\n**(b)** The detector records background radiation as well as the source, so it must be subtracted to find the count rate due to the source alone ✓",
+    "source": "original"
+  },
+  {
+    "id": "p2-decay-constant",
+    "paper": "2",
+    "level": "HL",
+    "difficulty": "hard",
+    "marks": 6,
+    "subtopic": "E.3",
+    "prompt": "Cobalt-60 decays by β⁻ emission with a half-life of $5.27$ years. A sealed source has an initial activity of $3.7 \\times 10^{10}\\ \\text{Bq}$.\n\n**(a)** Write the decay equation for cobalt-60 ($Z = 27$). **[2]**\n\n**(b)** Calculate the decay constant in s⁻¹. **[1]**\n\n**(c)** Determine the number of cobalt-60 nuclei initially present. **[1]**\n\n**(d)** Calculate the activity after 12.0 years. **[2]**",
+    "markscheme": "**(a)** $^{60}_{27}\\text{Co} \\rightarrow\\ ^{60}_{28}\\text{Ni} + ^{\\ 0}_{-1}\\text{e}$ ✓ $+ \\bar{\\nu}_e$ ✓\n\n**(b)** $\\lambda = \\tfrac{\\ln2}{5.27 \\times 3.156\\times10^7} = 4.17\\times10^{-9}\\ \\text{s}^{-1}$ ✓\n\n**(c)** $N_0 = \\tfrac{A_0}{\\lambda} = \\tfrac{3.7\\times10^{10}}{4.17\\times10^{-9}} = 8.9\\times10^{18}$ ✓\n\n**(d)** $A = A_0e^{-\\lambda t} = 3.7\\times10^{10}e^{-(\\ln2/5.27)\\times12.0}$ ✓ $= 7.6\\times10^{9}\\ \\text{Bq}$ ✓",
+    "source": "original"
   }
 ]

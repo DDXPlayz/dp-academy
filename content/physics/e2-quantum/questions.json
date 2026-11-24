@@ -1,0 +1,158 @@
+[
+  {
+    "id": "photo-emax",
+    "type": "numeric",
+    "lesson": "photoelectric-effect",
+    "concept": "Einstein’s equation",
+    "difficulty": 2,
+    "prompt": "Photons of energy 5.0 eV strike a metal with work function 2.8 eV. What is the maximum kinetic energy of the photoelectrons, in eV?",
+    "answer": 2.2,
+    "tolerance": 0.01,
+    "unit": "eV",
+    "explanation": "$E_{\\max} = hf - \\Phi = 5.0 - 2.8 = 2.2$ eV."
+  },
+  {
+    "id": "threshold-freq",
+    "type": "numeric",
+    "lesson": "photoelectric-effect",
+    "concept": "Threshold frequency",
+    "difficulty": 2,
+    "prompt": "A metal has a work function of 4.5 eV. What is its threshold frequency?",
+    "answer": 1.086e15,
+    "tolerance": 0.02,
+    "unit": "Hz",
+    "explanation": "$f_0 = \\Phi/h = 4.5\\times1.60\\times10^{-19}/6.63\\times10^{-34} = 1.09\\times10^{15}$ Hz."
+  },
+  {
+    "id": "intensity-effect",
+    "type": "mcq",
+    "lesson": "photoelectric-effect",
+    "concept": "Photoelectric observations",
+    "difficulty": 2,
+    "prompt": "Light above the threshold frequency falls on a metal. Its intensity is increased at constant frequency. What happens?",
+    "options": ["The maximum kinetic energy increases", "More electrons are emitted per second, with the same maximum kinetic energy", "Fewer electrons are emitted, each with more energy", "Nothing changes"],
+    "answer": 1,
+    "explanation": "More photons per second → more electrons per second; each photon’s energy, and so $E_{\\max}$, is unchanged."
+  },
+  {
+    "id": "below-threshold",
+    "type": "tf",
+    "lesson": "photoelectric-effect",
+    "concept": "Threshold frequency",
+    "difficulty": 1,
+    "prompt": "Very intense red light below the threshold frequency will eventually release photoelectrons if it shines for long enough.",
+    "answer": false,
+    "explanation": "Each photon has too little energy, and one photon interacts with one electron, so no electrons are ever released."
+  },
+  {
+    "id": "stopping-v",
+    "type": "numeric",
+    "lesson": "photoelectric-effect",
+    "concept": "Stopping potential",
+    "difficulty": 2,
+    "prompt": "The fastest photoelectrons have kinetic energy 4.8 × 10⁻¹⁹ J. What is the stopping potential?",
+    "answer": 3,
+    "tolerance": 0.01,
+    "unit": "V",
+    "explanation": "$V_s = E_{\\max}/e = 4.8\\times10^{-19}/1.60\\times10^{-19} = 3.0$ V."
+  },
+  {
+    "id": "graph-gradient",
+    "type": "mcq",
+    "lesson": "photoelectric-effect",
+    "concept": "Einstein’s equation",
+    "difficulty": 2,
+    "prompt": "A graph of maximum kinetic energy of photoelectrons against light frequency is a straight line. Its gradient is:",
+    "options": ["the work function", "Planck’s constant", "the threshold frequency", "the electron charge"],
+    "answer": 1,
+    "explanation": "$E_{\\max} = hf - \\Phi$ is a straight line with gradient $h$ and y-intercept $-\\Phi$."
+  },
+  {
+    "id": "debroglie-electron",
+    "type": "numeric",
+    "lesson": "matter-waves",
+    "concept": "de Broglie wavelength",
+    "difficulty": 2,
+    "prompt": "An electron moves at 2.0 × 10⁶ m s⁻¹. What is its de Broglie wavelength? (mₑ = 9.11 × 10⁻³¹ kg)",
+    "answer": 3.64e-10,
+    "tolerance": 0.02,
+    "unit": "m",
+    "explanation": "$\\lambda = h/mv = 6.63\\times10^{-34}/(9.11\\times10^{-31}\\times2.0\\times10^6) = 3.6\\times10^{-10}$ m."
+  },
+  {
+    "id": "debroglie-voltage",
+    "type": "mcq",
+    "lesson": "matter-waves",
+    "concept": "Electron diffraction",
+    "difficulty": 2,
+    "prompt": "In an electron diffraction tube the accelerating voltage is increased. The diffraction rings:",
+    "options": ["get larger", "get smaller", "stay the same", "disappear"],
+    "answer": 1,
+    "explanation": "Higher voltage → greater momentum → shorter wavelength → less diffraction, so smaller rings."
+  },
+  {
+    "id": "duality-evidence",
+    "type": "multi",
+    "lesson": "matter-waves",
+    "concept": "Wave–particle duality",
+    "difficulty": 2,
+    "prompt": "Which observations show the particle nature of light?",
+    "options": ["Photoelectric effect", "Compton scattering", "Double-slit interference", "Electron diffraction"],
+    "answers": [0, 1],
+    "explanation": "Interference shows light’s wave nature; electron diffraction shows matter’s wave nature."
+  },
+  {
+    "id": "debroglie-ratio",
+    "type": "numeric",
+    "lesson": "matter-waves",
+    "concept": "de Broglie wavelength",
+    "difficulty": 3,
+    "prompt": "An electron is accelerated from rest through a p.d. V. The p.d. is increased to 4V. By what factor does its de Broglie wavelength change?",
+    "answer": 0.5,
+    "tolerance": 0.01,
+    "explanation": "$p = \\sqrt{2meV} \\propto \\sqrt{V}$, so $p$ doubles and $\\lambda = h/p$ halves: factor 0.5."
+  },
+  {
+    "id": "compton-shift",
+    "type": "numeric",
+    "lesson": "compton-scattering",
+    "concept": "Compton shift",
+    "difficulty": 2,
+    "prompt": "A photon is scattered by an electron through 90°. What is the change in its wavelength? (h/mₑc = 2.43 × 10⁻¹² m)",
+    "answer": 2.43e-12,
+    "tolerance": 0.01,
+    "unit": "m",
+    "explanation": "$\\Delta\\lambda = (h/m_ec)(1 - \\cos90^\\circ) = 2.43\\times10^{-12}$ m."
+  },
+  {
+    "id": "compton-max",
+    "type": "mcq",
+    "lesson": "compton-scattering",
+    "concept": "Compton shift",
+    "difficulty": 2,
+    "prompt": "At what scattering angle is the Compton wavelength shift greatest?",
+    "options": ["0°", "45°", "90°", "180°"],
+    "answer": 3,
+    "explanation": "$1 - \\cos\\theta$ is largest (= 2) at 180°."
+  },
+  {
+    "id": "compton-speed",
+    "type": "tf",
+    "lesson": "compton-scattering",
+    "concept": "Compton scattering",
+    "difficulty": 1,
+    "prompt": "After Compton scattering, the photon travels more slowly because it has lost energy.",
+    "answer": false,
+    "explanation": "Photons always travel at c. Losing energy means a lower frequency and a longer wavelength."
+  },
+  {
+    "id": "compton-incident",
+    "type": "tf",
+    "lesson": "compton-scattering",
+    "concept": "Compton shift",
+    "difficulty": 2,
+    "prompt": "The Compton shift Δλ at a given angle is the same for any incident wavelength.",
+    "answer": true,
+    "explanation": "$\\Delta\\lambda = (h/m_ec)(1 - \\cos\\theta)$ contains no $\\lambda_i$ — though it is only noticeable for short wavelengths."
+  }
+]

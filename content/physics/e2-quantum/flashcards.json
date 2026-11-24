@@ -1,0 +1,10 @@
+[
+  { "id": "photoelectric-card", "front": "Einstein’s photoelectric equation?", "back": "$E_{\\max} = hf - \\Phi$ — one photon gives all its energy to one electron.", "concept": "Einstein’s equation" },
+  { "id": "work-function-card", "front": "Define work function.", "back": "Minimum energy needed to remove an electron from a metal surface.", "concept": "Einstein’s equation" },
+  { "id": "threshold-card", "front": "Threshold frequency?", "back": "$f_0 = \\Phi/h$ — below it no electrons are emitted, however intense the light.", "concept": "Threshold frequency" },
+  { "id": "intensity-card", "front": "Effect of intensity vs frequency on photoelectrons?", "back": "Intensity → number per second. Frequency → maximum kinetic energy.", "concept": "Photoelectric observations" },
+  { "id": "stopping-card", "front": "Stopping potential?", "back": "$eV_s = E_{\\max}$", "concept": "Stopping potential" },
+  { "id": "debroglie-card", "front": "de Broglie wavelength?", "back": "$\\lambda = h/p = h/mv$", "concept": "de Broglie wavelength" },
+  { "id": "electron-diff-card", "front": "Evidence for matter waves?", "back": "Electron diffraction through graphite gives rings; higher voltage → smaller rings.", "concept": "Electron diffraction" },
+  { "id": "compton-card", "front": "Compton shift formula?", "back": "$\\Delta\\lambda = \\dfrac{h}{m_ec}(1 - \\cos\\theta)$; photons carry momentum $h/\\lambda$.", "concept": "Compton shift" }
+]

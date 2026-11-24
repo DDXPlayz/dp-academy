@@ -1,0 +1,50 @@
+[
+  {
+    "id": "p1a-gold-foil",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "E.1",
+    "prompt": "Which observation in the Geiger–Marsden–Rutherford experiment shows that the nucleus contains most of the mass of the atom?",
+    "options": ["Most alpha particles passed straight through", "A few alpha particles were deflected through very large angles", "The foil became positively charged", "Alpha particles were absorbed by the foil"],
+    "answer": 1,
+    "markscheme": "**B.** Only a massive concentrated object can reverse a fast alpha particle.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-transition-lines",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "E.1",
+    "prompt": "An atom has four energy levels. What is the maximum number of different wavelengths it can emit?",
+    "options": ["3", "4", "6", "8"],
+    "answer": 2,
+    "markscheme": "**C.** Each pair of levels gives one line: $\\tfrac{4\\times3}{2} = 6$.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-nuclear-density",
+    "paper": "1A",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "E.1",
+    "prompt": "Nucleus X has nucleon number $A$ and nucleus Y has nucleon number $8A$. What is $\\tfrac{\\text{radius of Y}}{\\text{radius of X}}$ and $\\tfrac{\\text{density of Y}}{\\text{density of X}}$?",
+    "options": ["2 and 1", "2 and 8", "8 and 1", "$\\sqrt[3]{8}$ and $\\tfrac{1}{8}$"],
+    "answer": 0,
+    "markscheme": "**A.** $R \\propto A^{1/3}$, so the radius doubles; mass and volume both scale with $A$, so density is unchanged.",
+    "source": "original"
+  },
+  {
+    "id": "p2-hydrogen-spectrum",
+    "paper": "2",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 6,
+    "subtopic": "E.1",
+    "prompt": "The energy levels of hydrogen are given by $E_n = -\\tfrac{13.6}{n^2}\\ \\text{eV}$.\n\n**(a)** Explain why the energies are negative. **[1]**\n\n**(b)** Calculate the wavelength of the photon emitted in the transition from $n = 4$ to $n = 2$ and state the region of the spectrum. **[3]**\n\n**(c)** Outline how the Bohr model accounts for the existence of discrete energy levels. **[2]**",
+    "markscheme": "**(a)** Zero energy is defined for a free (unbound) electron; energy must be supplied to free a bound electron ✓\n\n**(b)** $\\Delta E = 3.40 - 0.85 = 2.55\\ \\text{eV} = 4.08\\times10^{-19}\\ \\text{J}$ ✓; $\\lambda = \\tfrac{hc}{\\Delta E} = \\tfrac{6.63\\times10^{-34}\\times3.00\\times10^8}{4.08\\times10^{-19}} = 4.9\\times10^{-7}\\ \\text{m}$ ✓; visible (blue-green) ✓\n\n**(c)** Angular momentum is quantised, $mvr = \\tfrac{nh}{2\\pi}$ ✓; combined with the electric force providing the centripetal force this allows only certain radii and therefore certain energies ✓",
+    "source": "original"
+  }
+]

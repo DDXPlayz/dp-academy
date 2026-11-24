@@ -1,0 +1,16 @@
+[
+  { "id": "mass-defect-card", "front": "Mass defect?", "back": "Mass of separate nucleons − mass of the nucleus.", "concept": "Mass defect" },
+  { "id": "be-card", "front": "Binding energy?", "back": "Energy needed to separate a nucleus into its nucleons: $E_B = \\Delta mc^2$; 1 u = 931.5 MeV c⁻².", "concept": "Binding energy" },
+  { "id": "be-curve-card", "front": "Shape of the BE-per-nucleon curve?", "back": "Rises steeply for light nuclei, peaks near Fe-56 (~8.8 MeV), falls slowly for heavy nuclei.", "concept": "Binding-energy curve" },
+  { "id": "strong-card", "front": "Strong nuclear force?", "back": "Short range (~10⁻¹⁵ m), attracts all nucleons, repulsive at very short range.", "concept": "Strong nuclear force" },
+  { "id": "alpha-card", "front": "Alpha decay change?", "back": "Emits ⁴₂He: A − 4, Z − 2.", "concept": "Decay equations" },
+  { "id": "beta-minus-card", "front": "β⁻ decay?", "back": "n → p + e⁻ + antineutrino; Z + 1, A unchanged.", "concept": "Decay equations" },
+  { "id": "beta-plus-card", "front": "β⁺ decay?", "back": "p → n + e⁺ + neutrino; Z − 1, A unchanged.", "concept": "Decay equations" },
+  { "id": "penetration-card", "front": "Stopped by?", "back": "α: paper. β: few mm aluminium. γ: reduced by thick lead/concrete.", "concept": "Penetration and ionisation" },
+  { "id": "random-card", "front": "Random and spontaneous decay?", "back": "Random: can’t predict which nucleus decays when. Spontaneous: unaffected by external conditions.", "concept": "Random decay" },
+  { "id": "half-life-card", "front": "Half-life?", "back": "Time for half the undecayed nuclei (or the activity) to halve. $N = N_0(\\tfrac{1}{2})^n$.", "concept": "Half-life" },
+  { "id": "background-card", "front": "Background radiation in experiments?", "back": "Measure it without the source and subtract it from every reading.", "concept": "Background radiation" },
+  { "id": "decay-law-card", "front": "(HL) Decay law and activity?", "back": "$N = N_0e^{-\\lambda t}$, $A = \\lambda N$.", "concept": "Decay law" },
+  { "id": "lambda-half-card", "front": "(HL) λ and half-life?", "back": "$T_{1/2} = \\ln2/\\lambda$", "concept": "Decay constant" },
+  { "id": "spectra-nuclear-card", "front": "(HL) What do α, γ and β spectra show?", "back": "Discrete α/γ energies → nuclear energy levels. Continuous β spectrum → neutrino.", "concept": "Beta spectrum" }
+]

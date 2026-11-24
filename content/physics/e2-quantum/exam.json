@@ -8,5 +8,42 @@
     "prompt": "Ultraviolet light of wavelength $250\\ \\text{nm}$ falls on a metal surface whose work function is $3.2\\ \\text{eV}$.\n\n**(a)** Calculate the energy of one photon, in eV. **[2]**\n\n**(b)** Calculate the maximum kinetic energy of the emitted electrons, in eV. **[1]**\n\n**(c)** State the stopping potential. **[1]**\n\n**(d)** The intensity of the light is doubled at the same wavelength. State and explain the effect on the stopping potential and on the photocurrent. **[2]**",
     "markscheme": "**(a)** $E = \\tfrac{hc}{\\lambda} = \\tfrac{6.63 \\times 10^{-34} \\times 3.00 \\times 10^{8}}{250 \\times 10^{-9}} = 7.96 \\times 10^{-19}\\ \\text{J}$ ✓ $= 4.97\\ \\text{eV}$ ✓\n\n**(b)** $E_{k,\\max} = 4.97 - 3.2 \\approx 1.8\\ \\text{eV}$ ✓\n\n**(c)** $1.8\\ \\text{V}$ ✓\n\n**(d)** Stopping potential unchanged because each photon still has the same energy ✓; photocurrent doubles because twice as many photons per second release twice as many electrons ✓",
     "source": "original"
+  },
+  {
+    "id": "p1a-threshold-wavelength",
+    "paper": "1A",
+    "level": "HL",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "E.2",
+    "prompt": "The work function of a metal is $\\Phi$. What is the longest wavelength of light that can release photoelectrons?",
+    "options": ["$\\tfrac{\\Phi}{hc}$", "$\\tfrac{hc}{\\Phi}$", "$\\tfrac{h\\Phi}{c}$", "$\\tfrac{\\Phi c}{h}$"],
+    "answer": 1,
+    "markscheme": "**B.** At threshold $\\tfrac{hc}{\\lambda} = \\Phi$, so $\\lambda_{\\max} = \\tfrac{hc}{\\Phi}$.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-debroglie-proton-electron",
+    "paper": "1A",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "E.2",
+    "prompt": "An electron and a proton have the same kinetic energy. Which is correct about their de Broglie wavelengths?",
+    "options": ["They are equal", "The electron’s is longer", "The proton’s is longer", "It depends on their charges"],
+    "answer": 1,
+    "markscheme": "**B.** $p = \\sqrt{2mE_k}$, so the lighter electron has less momentum and a longer $\\lambda = h/p$.",
+    "source": "original"
+  },
+  {
+    "id": "p2-compton-xray",
+    "paper": "2",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 5,
+    "subtopic": "E.2",
+    "prompt": "X-ray photons of wavelength $5.00 \\times 10^{-11}\\ \\text{m}$ are scattered by free electrons.\n\n**(a)** Calculate the wavelength of photons scattered through $120^\\circ$. **[2]**\n\n**(b)** Calculate the kinetic energy given to the recoiling electron in this event. **[2]**\n\n**(c)** Explain why this effect cannot be explained by a wave model of light. **[1]**",
+    "markscheme": "**(a)** $\\Delta\\lambda = 2.43\\times10^{-12}(1 - \\cos120^\\circ) = 3.65\\times10^{-12}\\ \\text{m}$ ✓; $\\lambda_f = 5.37\\times10^{-11}\\ \\text{m}$ ✓\n\n**(b)** $E_k = hc\\left(\\tfrac{1}{\\lambda_i} - \\tfrac{1}{\\lambda_f}\\right)$ ✓ $= 1.989\\times10^{-25}\\left(\\tfrac{1}{5.00\\times10^{-11}} - \\tfrac{1}{5.37\\times10^{-11}}\\right) \\approx 2.7\\times10^{-16}\\ \\text{J}$ ✓\n\n**(c)** A classical wave would make the electron oscillate and re-emit at the same frequency/wavelength; a change in wavelength requires a particle (photon) collision transferring momentum ✓",
+    "source": "original"
   }
 ]
