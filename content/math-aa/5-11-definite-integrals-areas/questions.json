@@ -1,0 +1,56 @@
+[
+  {
+    "id": "def-int",
+    "type": "numeric",
+    "lesson": "definite-integrals",
+    "concept": "Definite integral",
+    "difficulty": 1,
+    "prompt": "Evaluate $\\int_1^3(2x + 1)\\,dx$.",
+    "answer": 10,
+    "tolerance": 0,
+    "explanation": "$[x^2 + x]_1^3 = 12 - 2 = 10$."
+  },
+  {
+    "id": "signed-area",
+    "type": "numeric",
+    "lesson": "definite-integrals",
+    "concept": "Area below the axis",
+    "difficulty": 2,
+    "prompt": "Find the total area between $y = x(x - 2)$ and the x-axis from $x = 0$ to $x = 2$ (3 s.f.).",
+    "answer": 1.33,
+    "tolerance": 0.003,
+    "explanation": "$\\int_0^2(x^2 - 2x)\\,dx = -\\tfrac43$; area $\\tfrac43$."
+  },
+  {
+    "id": "between-curves",
+    "type": "numeric",
+    "lesson": "definite-integrals",
+    "concept": "Area between curves",
+    "difficulty": 3,
+    "prompt": "Find the area enclosed by $y = x^2$ and $y = 4$ (3 s.f.).",
+    "answer": 10.7,
+    "tolerance": 0.003,
+    "explanation": "$\\int_{-2}^{2}(4 - x^2)\\,dx = \\tfrac{32}{3} = 10.7$."
+  },
+  {
+    "id": "exp-def",
+    "type": "numeric",
+    "lesson": "definite-integrals",
+    "concept": "Definite integral",
+    "difficulty": 2,
+    "prompt": "Evaluate $\\int_0^{\\ln 3}e^x\\,dx$.",
+    "answer": 2,
+    "tolerance": 0.001,
+    "explanation": "$e^{\\ln3} - e^0 = 3 - 1 = 2$."
+  },
+  {
+    "id": "cancel-trap",
+    "type": "tf",
+    "lesson": "definite-integrals",
+    "concept": "Area below the axis",
+    "difficulty": 2,
+    "prompt": "$\\int_0^{2\\pi}\\sin x\\,dx = 0$, so the area between $y = \\sin x$ and the x-axis on $[0, 2\\pi]$ is 0.",
+    "answer": false,
+    "explanation": "The positive and negative parts cancel in the integral; the actual area is 4."
+  }
+]

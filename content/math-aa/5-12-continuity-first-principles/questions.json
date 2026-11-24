@@ -1,0 +1,45 @@
+[
+  {
+    "id": "continuity-k",
+    "type": "numeric",
+    "lesson": "first-principles",
+    "concept": "Continuity",
+    "difficulty": 2,
+    "prompt": "(HL) $f(x) = x^2 + k$ for $x < 1$ and $f(x) = 3x$ for $x \\ge 1$. Find $k$ so that $f$ is continuous.",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "$1 + k = 3$."
+  },
+  {
+    "id": "abs-diff",
+    "type": "tf",
+    "lesson": "first-principles",
+    "concept": "Differentiability",
+    "difficulty": 1,
+    "prompt": "(HL) $f(x) = |x|$ is differentiable at $x = 0$.",
+    "answer": false,
+    "explanation": "The left and right gradients (−1 and 1) differ."
+  },
+  {
+    "id": "first-principles-limit",
+    "type": "expression",
+    "lesson": "first-principles",
+    "concept": "First principles",
+    "difficulty": 2,
+    "prompt": "(HL) For $f(x) = x^2$, simplify $\\dfrac{f(x + h) - f(x)}{h}$.",
+    "variables": ["x", "h"],
+    "answer": "2*x + h",
+    "explanation": "$\\frac{2xh + h^2}{h} = 2x + h \\to 2x$."
+  },
+  {
+    "id": "nth-deriv",
+    "type": "numeric",
+    "lesson": "first-principles",
+    "concept": "Higher derivatives",
+    "difficulty": 2,
+    "prompt": "(HL) Find $f^{(4)}(0)$ for $f(x) = e^{3x}$.",
+    "answer": 81,
+    "tolerance": 0,
+    "explanation": "$3^4e^0 = 81$."
+  }
+]

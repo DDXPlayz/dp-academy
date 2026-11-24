@@ -1,0 +1,5 @@
+[
+  { "id": "std-int-card", "front": "Integrals of 1/x, eˣ, sin x, cos x?", "back": "ln|x|, eˣ, −cos x, sin x (+ C).", "concept": "Standard integrals" },
+  { "id": "linear-int-card", "front": "$\\int f(ax + b)\\,dx$?", "back": "$\\frac1aF(ax + b) + C$", "concept": "Linear composites" },
+  { "id": "inspect-card", "front": "Integration by inspection?", "back": "Recognise $g'(x)f(g(x))$ and integrate to $F(g(x)) + C$.", "concept": "Inspection" }
+]

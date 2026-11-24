@@ -1,0 +1,4 @@
+[
+  { "id": "fp-card", "front": "(HL) Derivative from first principles?", "back": "$f'(x) = \\lim_{h\\to0}\\frac{f(x + h) - f(x)}{h}$", "concept": "First principles" },
+  { "id": "cont-diff-card", "front": "(HL) Continuity vs differentiability?", "back": "Differentiable ⇒ continuous, not conversely (e.g. |x| at 0).", "concept": "Differentiability" }
+]

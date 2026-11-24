@@ -1,0 +1,57 @@
+[
+  {
+    "id": "int-exp",
+    "type": "expression",
+    "lesson": "indefinite-integrals",
+    "concept": "Linear composites",
+    "difficulty": 2,
+    "prompt": "Find $\\int e^{4x}\\,dx$ (omit the constant).",
+    "variables": ["x"],
+    "answer": "exp(4*x)/4",
+    "explanation": "$\\tfrac14e^{4x}$."
+  },
+  {
+    "id": "int-sin",
+    "type": "expression",
+    "lesson": "indefinite-integrals",
+    "concept": "Standard integrals",
+    "difficulty": 1,
+    "prompt": "Find $\\int\\sin(2x)\\,dx$ (omit the constant).",
+    "variables": ["x"],
+    "answer": "-cos(2*x)/2",
+    "explanation": "$-\\tfrac12\\cos2x$."
+  },
+  {
+    "id": "int-recip",
+    "type": "mcq",
+    "lesson": "indefinite-integrals",
+    "concept": "Standard integrals",
+    "difficulty": 2,
+    "prompt": "$\\int\\dfrac{3}{x}\\,dx =$",
+    "options": ["$3\\ln|x| + C$", "$-\\frac{3}{x^2} + C$", "$\\ln|3x| + C$ only", "$3x^{-1} + C$"],
+    "answer": 0,
+    "explanation": "$3\\int\\frac1x\\,dx$."
+  },
+  {
+    "id": "inspection",
+    "type": "expression",
+    "lesson": "indefinite-integrals",
+    "concept": "Inspection",
+    "difficulty": 3,
+    "prompt": "Find $\\int 2x\\,e^{x^2}\\,dx$ (omit the constant).",
+    "variables": ["x"],
+    "answer": "exp(x^2)",
+    "explanation": "The derivative of $x^2$ is $2x$, so the integral is $e^{x^2}$."
+  },
+  {
+    "id": "int-linear-power",
+    "type": "expression",
+    "lesson": "indefinite-integrals",
+    "concept": "Linear composites",
+    "difficulty": 2,
+    "prompt": "Find $\\int(3x - 1)^2\\,dx$ (omit the constant).",
+    "variables": ["x"],
+    "answer": "(3*x - 1)^3/9",
+    "explanation": "$\\frac{(3x - 1)^3}{3\\times3}$."
+  }
+]

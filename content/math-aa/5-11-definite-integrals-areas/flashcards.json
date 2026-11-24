@@ -1,0 +1,5 @@
+[
+  { "id": "ftc-card", "front": "Evaluating a definite integral?", "back": "$F(b) - F(a)$ where $F' = f$.", "concept": "Definite integral" },
+  { "id": "split-card", "front": "Total area when the curve crosses the axis?", "back": "Split at the roots and add absolute values.", "concept": "Area below the axis" },
+  { "id": "between-card", "front": "Area between two curves?", "back": "$\\int_a^b(\\text{top} - \\text{bottom})\\,dx$ between intersections.", "concept": "Area between curves" }
+]

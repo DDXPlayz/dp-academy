@@ -1,0 +1,4 @@
+[
+  { "id": "lh-card", "front": "(HL) L’Hôpital’s rule?", "back": "For 0/0 or ∞/∞: $\\lim\\frac fg = \\lim\\frac{f'}{g'}$ — differentiate top and bottom separately.", "concept": "L’Hôpital’s rule" },
+  { "id": "lh-std-card", "front": "(HL) $\\lim_{x\\to0}\\frac{\\sin x}{x}$?", "back": "1", "concept": "L’Hôpital’s rule" }
+]

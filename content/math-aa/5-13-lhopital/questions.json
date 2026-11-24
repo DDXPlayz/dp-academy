@@ -1,0 +1,45 @@
+[
+  {
+    "id": "lhopital-basic",
+    "type": "numeric",
+    "lesson": "lhopital",
+    "concept": "L’Hôpital’s rule",
+    "difficulty": 2,
+    "prompt": "(HL) Find $\\displaystyle\\lim_{x\\to0}\\frac{e^{2x} - 1}{x}$.",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "$\\frac{2e^{2x}}{1} \\to 2$."
+  },
+  {
+    "id": "lhopital-ln",
+    "type": "numeric",
+    "lesson": "lhopital",
+    "concept": "L’Hôpital’s rule",
+    "difficulty": 2,
+    "prompt": "(HL) Find $\\displaystyle\\lim_{x\\to1}\\frac{\\ln x}{x - 1}$.",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "$\\frac{1/x}{1} \\to 1$."
+  },
+  {
+    "id": "lhopital-twice",
+    "type": "numeric",
+    "lesson": "lhopital",
+    "concept": "Repeated use",
+    "difficulty": 3,
+    "prompt": "(HL) Find $\\displaystyle\\lim_{x\\to0}\\frac{e^x - 1 - x}{x^2}$.",
+    "answer": 0.5,
+    "tolerance": 0.001,
+    "explanation": "$\\frac{e^x - 1}{2x} \\to \\frac{e^x}{2} \\to \\frac12$."
+  },
+  {
+    "id": "lhopital-not",
+    "type": "tf",
+    "lesson": "lhopital",
+    "concept": "Indeterminate forms",
+    "difficulty": 2,
+    "prompt": "(HL) L’Hôpital’s rule can be applied to $\\displaystyle\\lim_{x\\to0}\\frac{x + 1}{x + 2}$.",
+    "answer": false,
+    "explanation": "Direct substitution gives $\\tfrac12$ — not indeterminate."
+  }
+]
