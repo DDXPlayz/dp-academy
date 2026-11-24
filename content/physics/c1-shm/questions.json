@@ -1,0 +1,150 @@
+[
+  {
+    "id": "shm-period-omega",
+    "type": "numeric",
+    "lesson": "defining-shm",
+    "concept": "SHM quantities",
+    "difficulty": 1,
+    "prompt": "An oscillator has angular frequency 8π rad s⁻¹. What is its period?",
+    "answer": 0.25,
+    "tolerance": 0.02,
+    "unit": "s",
+    "explanation": "$T = 2\\pi/\\omega = 2\\pi/8\\pi = 0.25$ s."
+  },
+  {
+    "id": "shm-conditions",
+    "type": "multi",
+    "lesson": "defining-shm",
+    "concept": "Conditions for SHM",
+    "difficulty": 1,
+    "prompt": "For simple harmonic motion, the acceleration must be:",
+    "options": ["proportional to the displacement from equilibrium", "directed towards the equilibrium position", "constant", "proportional to the velocity"],
+    "answers": [0, 1],
+    "explanation": "SHM requires $a \\propto -x$: proportional to displacement and directed back towards equilibrium."
+  },
+  {
+    "id": "shm-amax",
+    "type": "numeric",
+    "lesson": "defining-shm",
+    "concept": "Defining equation",
+    "difficulty": 2,
+    "prompt": "A particle in SHM has amplitude 0.020 m and frequency 5.0 Hz. What is its maximum acceleration?",
+    "answer": 19.7,
+    "tolerance": 0.02,
+    "unit": "m s⁻²",
+    "explanation": "$\\omega = 2\\pi \\times 5.0 = 31.4$ rad s⁻¹; $a_{\\max} = \\omega^2x_0 = 31.4^2 \\times 0.020 = 19.7$ m s⁻²."
+  },
+  {
+    "id": "amplitude-period",
+    "type": "tf",
+    "lesson": "defining-shm",
+    "concept": "SHM quantities",
+    "difficulty": 1,
+    "prompt": "For an object in simple harmonic motion, doubling the amplitude doubles the period.",
+    "answer": false,
+    "explanation": "The period of SHM is independent of amplitude."
+  },
+  {
+    "id": "spring-period",
+    "type": "numeric",
+    "lesson": "spring-pendulum-energy",
+    "concept": "Mass–spring system",
+    "difficulty": 1,
+    "prompt": "A 0.50 kg mass hangs on a spring with k = 200 N m⁻¹. What is its period of oscillation?",
+    "answer": 0.314,
+    "tolerance": 0.02,
+    "unit": "s",
+    "explanation": "$T = 2\\pi\\sqrt{m/k} = 2\\pi\\sqrt{0.50/200} = 0.31$ s."
+  },
+  {
+    "id": "pendulum-length",
+    "type": "numeric",
+    "lesson": "spring-pendulum-energy",
+    "concept": "Simple pendulum",
+    "difficulty": 2,
+    "prompt": "A pendulum has a period of 1.5 s where g = 9.81 m s⁻². What is its length?",
+    "answer": 0.559,
+    "tolerance": 0.02,
+    "unit": "m",
+    "explanation": "$l = gT^2/4\\pi^2 = 9.81 \\times 2.25/39.5 = 0.56$ m."
+  },
+  {
+    "id": "pendulum-mass",
+    "type": "mcq",
+    "lesson": "spring-pendulum-energy",
+    "concept": "Simple pendulum",
+    "difficulty": 2,
+    "prompt": "The bob of a simple pendulum is replaced by one four times heavier. The period:",
+    "options": ["doubles", "halves", "is unchanged", "quadruples"],
+    "answer": 2,
+    "explanation": "$T = 2\\pi\\sqrt{l/g}$ does not include mass."
+  },
+  {
+    "id": "spring-mass-ratio",
+    "type": "mcq",
+    "lesson": "spring-pendulum-energy",
+    "concept": "Mass–spring system",
+    "difficulty": 2,
+    "prompt": "The mass on a spring is increased by a factor of 4. The period becomes:",
+    "options": ["4 times larger", "2 times larger", "half as large", "unchanged"],
+    "answer": 1,
+    "explanation": "$T \\propto \\sqrt{m}$, so ×4 in mass gives ×2 in period."
+  },
+  {
+    "id": "energy-position",
+    "type": "mcq",
+    "lesson": "spring-pendulum-energy",
+    "concept": "Energy in SHM",
+    "difficulty": 1,
+    "prompt": "Where is the kinetic energy of an undamped oscillator greatest?",
+    "options": ["At maximum displacement", "At the equilibrium position", "Halfway between", "It is constant"],
+    "answer": 1,
+    "explanation": "Speed is greatest at equilibrium, where all the energy is kinetic."
+  },
+  {
+    "id": "shm-speed-x",
+    "type": "numeric",
+    "lesson": "shm-equations",
+    "concept": "SHM equations",
+    "difficulty": 2,
+    "prompt": "An oscillator has ω = 4.0 rad s⁻¹ and amplitude 0.10 m. What is its speed when x = 0.060 m?",
+    "answer": 0.32,
+    "tolerance": 0.02,
+    "unit": "m s⁻¹",
+    "explanation": "$v = \\omega\\sqrt{x_0^2 - x^2} = 4.0\\sqrt{0.01 - 0.0036} = 4.0 \\times 0.080 = 0.32$ m s⁻¹."
+  },
+  {
+    "id": "shm-total-energy",
+    "type": "numeric",
+    "lesson": "shm-equations",
+    "concept": "Energy in SHM",
+    "difficulty": 2,
+    "prompt": "A 0.30 kg mass oscillates with ω = 6.0 rad s⁻¹ and amplitude 0.20 m. What is its total energy?",
+    "answer": 0.216,
+    "tolerance": 0.02,
+    "unit": "J",
+    "explanation": "$E_T = \\tfrac{1}{2}m\\omega^2x_0^2 = 0.5 \\times 0.30 \\times 36 \\times 0.04 = 0.216$ J."
+  },
+  {
+    "id": "phase-start",
+    "type": "mcq",
+    "lesson": "shm-equations",
+    "concept": "Phase",
+    "difficulty": 2,
+    "prompt": "An oscillator is released from rest at its maximum positive displacement at t = 0. Which equation describes it?",
+    "options": ["x = x₀ sin ωt", "x = x₀ cos ωt", "x = −x₀ sin ωt", "x = −x₀ cos ωt"],
+    "answer": 1,
+    "explanation": "At $t = 0$ it is at $+x_0$, so $\\phi = \\pi/2$ and $x = x_0\\sin(\\omega t + \\pi/2) = x_0\\cos\\omega t$."
+  },
+  {
+    "id": "amplitude-energy",
+    "type": "numeric",
+    "lesson": "shm-equations",
+    "concept": "Energy in SHM",
+    "difficulty": 2,
+    "prompt": "The amplitude of an oscillator is tripled. By what factor does its total energy increase?",
+    "answer": 9,
+    "tolerance": 0.01,
+    "explanation": "$E_T \\propto x_0^2$, so tripling the amplitude multiplies the energy by 9."
+  }
+]

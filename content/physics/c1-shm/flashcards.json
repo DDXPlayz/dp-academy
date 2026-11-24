@@ -1,0 +1,10 @@
+[
+  { "id": "shm-def", "front": "Define simple harmonic motion.", "back": "Acceleration proportional to displacement from equilibrium and directed towards it: $a = -\\omega^2x$.", "concept": "Conditions for SHM" },
+  { "id": "t-f-omega", "front": "Link T, f and ω.", "back": "$T = 1/f = 2\\pi/\\omega$", "concept": "SHM quantities" },
+  { "id": "spring-card", "front": "Period of a mass–spring system?", "back": "$T = 2\\pi\\sqrt{m/k}$", "concept": "Mass–spring system" },
+  { "id": "pendulum-card", "front": "Period of a simple pendulum?", "back": "$T = 2\\pi\\sqrt{l/g}$ for small angles; independent of mass.", "concept": "Simple pendulum" },
+  { "id": "energy-shm", "front": "Energy at the extremes and at equilibrium in SHM?", "back": "Extremes: all potential (v = 0). Equilibrium: all kinetic (v max).", "concept": "Energy in SHM" },
+  { "id": "phase-card", "front": "What is the phase angle φ?", "back": "Sets where in the cycle the oscillator is at t = 0: $x = x_0\\sin(\\omega t + \\phi)$.", "concept": "Phase" },
+  { "id": "v-x-card", "front": "Speed at displacement x in SHM?", "back": "$v = \\pm\\omega\\sqrt{x_0^2 - x^2}$; maximum $\\omega x_0$ at x = 0.", "concept": "SHM equations" },
+  { "id": "et-card", "front": "Total energy in SHM?", "back": "$E_T = \\tfrac{1}{2}m\\omega^2x_0^2$ — proportional to amplitude squared.", "concept": "Energy in SHM" }
+]
