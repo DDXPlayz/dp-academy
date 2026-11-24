@@ -1,0 +1,47 @@
+[
+  {
+    "id": "arc-length",
+    "type": "numeric",
+    "lesson": "radians",
+    "concept": "Arc length",
+    "difficulty": 1,
+    "prompt": "Find the arc length of a sector with radius 5 cm and angle 0.8 rad.",
+    "answer": 4,
+    "tolerance": 0.001,
+    "unit": "cm",
+    "explanation": "$l = 5\\times0.8 = 4$ cm."
+  },
+  {
+    "id": "deg-to-rad",
+    "type": "numeric",
+    "lesson": "radians",
+    "concept": "Radians",
+    "difficulty": 1,
+    "prompt": "Convert 135° to radians (as a decimal to 3 s.f.).",
+    "answer": 2.36,
+    "tolerance": 0.003,
+    "explanation": "$135\\times\\pi/180 = 3\\pi/4 = 2.36$."
+  },
+  {
+    "id": "sector-area",
+    "type": "numeric",
+    "lesson": "radians",
+    "concept": "Sector area",
+    "difficulty": 1,
+    "prompt": "Find the area of a sector with radius 10 and angle $\\pi/5$, to 3 s.f.",
+    "answer": 31.4,
+    "tolerance": 0.003,
+    "explanation": "$\\tfrac12(100)(\\pi/5) = 10\\pi = 31.4$."
+  },
+  {
+    "id": "find-angle",
+    "type": "numeric",
+    "lesson": "radians",
+    "concept": "Sector area",
+    "difficulty": 2,
+    "prompt": "A sector of radius 4 has area 12. Find its angle in radians.",
+    "answer": 1.5,
+    "tolerance": 0.001,
+    "explanation": "$\\tfrac12(16)\\theta = 12 \\Rightarrow \\theta = 1.5$."
+  }
+]

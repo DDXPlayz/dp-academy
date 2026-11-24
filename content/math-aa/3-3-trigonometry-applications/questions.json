@@ -1,0 +1,48 @@
+[
+  {
+    "id": "elevation",
+    "type": "numeric",
+    "lesson": "trig-applications",
+    "concept": "Elevation and depression",
+    "difficulty": 1,
+    "prompt": "A kite string is 50 m long and makes an angle of elevation of 40° with the ground. How high is the kite, to 3 s.f.?",
+    "answer": 32.1,
+    "tolerance": 0.003,
+    "unit": "m",
+    "explanation": "$50\\sin40° = 32.1$ m."
+  },
+  {
+    "id": "depression",
+    "type": "numeric",
+    "lesson": "trig-applications",
+    "concept": "Elevation and depression",
+    "difficulty": 2,
+    "prompt": "From the top of a 60 m cliff the angle of depression of a boat is 25°. How far is the boat from the foot of the cliff (3 s.f.)?",
+    "answer": 128.7,
+    "tolerance": 0.003,
+    "unit": "m",
+    "explanation": "$60/\\tan25° = 129$ m."
+  },
+  {
+    "id": "bearing-back",
+    "type": "numeric",
+    "lesson": "trig-applications",
+    "concept": "Bearings",
+    "difficulty": 2,
+    "prompt": "The bearing of B from A is 070°. What is the bearing of A from B, in degrees?",
+    "answer": 250,
+    "tolerance": 0,
+    "unit": "°",
+    "explanation": "Add 180°: 250°."
+  },
+  {
+    "id": "bearing-def",
+    "type": "tf",
+    "lesson": "trig-applications",
+    "concept": "Bearings",
+    "difficulty": 1,
+    "prompt": "Bearings are measured anticlockwise from north.",
+    "answer": false,
+    "explanation": "Bearings are measured clockwise from north."
+  }
+]

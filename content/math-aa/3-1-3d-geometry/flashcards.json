@@ -1,0 +1,5 @@
+[
+  { "id": "dist3d-card", "front": "Distance between two points in 3D?", "back": "$\\sqrt{\\Delta x^2 + \\Delta y^2 + \\Delta z^2}$", "concept": "Distance" },
+  { "id": "solids-card", "front": "Volumes of cone, pyramid, sphere?", "back": "$\\tfrac13\\pi r^2h$, $\\tfrac13Ah$, $\\tfrac43\\pi r^3$.", "concept": "Volume" },
+  { "id": "cone-sa-card", "front": "Curved surface area of a cone?", "back": "$\\pi rl$, slant height $l = \\sqrt{r^2 + h^2}$.", "concept": "Surface area" }
+]

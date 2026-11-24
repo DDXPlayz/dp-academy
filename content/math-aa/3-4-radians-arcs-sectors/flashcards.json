@@ -1,0 +1,5 @@
+[
+  { "id": "rad-card", "front": "Degrees ↔ radians?", "back": "π rad = 180°.", "concept": "Radians" },
+  { "id": "arc-sector-card", "front": "Arc length and sector area?", "back": "$l = r\\theta$; $A = \\tfrac12r^2\\theta$ (radians).", "concept": "Arc length" },
+  { "id": "segment-card", "front": "Area of a segment?", "back": "$\\tfrac12r^2(\\theta - \\sin\\theta)$", "concept": "Sector area" }
+]

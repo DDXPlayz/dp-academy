@@ -1,0 +1,5 @@
+[
+  { "id": "sine-rule-card", "front": "Sine rule?", "back": "$\\dfrac{a}{\\sin A} = \\dfrac{b}{\\sin B} = \\dfrac{c}{\\sin C}$", "concept": "Sine rule" },
+  { "id": "cos-rule-card", "front": "Cosine rule?", "back": "$c^2 = a^2 + b^2 - 2ab\\cos C$", "concept": "Cosine rule" },
+  { "id": "area-card", "front": "Area of a triangle (trig)?", "back": "$\\tfrac12ab\\sin C$", "concept": "Area" }
+]

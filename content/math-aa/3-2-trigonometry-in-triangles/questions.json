@@ -1,0 +1,59 @@
+[
+  {
+    "id": "cosine-rule",
+    "type": "numeric",
+    "lesson": "sine-cosine-rules",
+    "concept": "Cosine rule",
+    "difficulty": 2,
+    "prompt": "Two sides of a triangle are 7 cm and 10 cm with included angle 60°. Find the third side, to 3 s.f.",
+    "answer": 8.89,
+    "tolerance": 0.003,
+    "unit": "cm",
+    "explanation": "$c^2 = 49 + 100 - 140\\cos60° = 79 \\Rightarrow c = 8.89$."
+  },
+  {
+    "id": "sine-rule",
+    "type": "numeric",
+    "lesson": "sine-cosine-rules",
+    "concept": "Sine rule",
+    "difficulty": 2,
+    "prompt": "In triangle PQR, $p = 12$, $P = 40°$, $Q = 65°$. Find $q$, to 3 s.f.",
+    "answer": 16.9,
+    "tolerance": 0.005,
+    "explanation": "$q = 12\\sin65°/\\sin40° = 16.9$."
+  },
+  {
+    "id": "triangle-area",
+    "type": "numeric",
+    "lesson": "sine-cosine-rules",
+    "concept": "Area",
+    "difficulty": 1,
+    "prompt": "Find the area of a triangle with sides 8 and 5 and included angle 150°.",
+    "answer": 10,
+    "tolerance": 0.001,
+    "explanation": "$\\tfrac12(8)(5)\\sin150° = 20\\times0.5 = 10$."
+  },
+  {
+    "id": "which-rule",
+    "type": "mcq",
+    "lesson": "sine-cosine-rules",
+    "concept": "Choosing a rule",
+    "difficulty": 1,
+    "prompt": "You know all three sides of a triangle. Which rule finds an angle?",
+    "options": ["sine rule", "cosine rule", "area formula", "Pythagoras only"],
+    "answer": 1,
+    "explanation": "SSS: use the rearranged cosine rule."
+  },
+  {
+    "id": "sss-angle",
+    "type": "numeric",
+    "lesson": "sine-cosine-rules",
+    "concept": "Cosine rule",
+    "difficulty": 2,
+    "prompt": "A triangle has sides 4, 5 and 6. Find the smallest angle in degrees (3 s.f.).",
+    "answer": 41.4,
+    "tolerance": 0.003,
+    "unit": "°",
+    "explanation": "Opposite 4: $\\cos\\theta = \\dfrac{25 + 36 - 16}{60} = 0.75 \\Rightarrow 41.4°$."
+  }
+]

@@ -1,0 +1,4 @@
+[
+  { "id": "elev-card", "front": "Angles of elevation and depression?", "back": "Both measured from the horizontal; equal by alternate angles.", "concept": "Elevation and depression" },
+  { "id": "bearing-card", "front": "Bearings?", "back": "Three figures, clockwise from north. Back bearing = bearing ± 180°.", "concept": "Bearings" }
+]
