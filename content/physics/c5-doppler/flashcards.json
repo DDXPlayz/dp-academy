@@ -1,0 +1,8 @@
+[
+  { "id": "doppler-def", "front": "Define the Doppler effect.", "back": "Change in observed frequency/wavelength due to relative motion of source and observer.", "concept": "Doppler effect" },
+  { "id": "approach-recede", "front": "Approaching vs receding source?", "back": "Approaching: higher f, shorter λ (blueshift). Receding: lower f, longer λ (redshift).", "concept": "Doppler effect" },
+  { "id": "light-doppler", "front": "Doppler formula for light (v ≪ c)?", "back": "$\\Delta f/f = \\Delta\\lambda/\\lambda \\approx v/c$", "concept": "Doppler effect for light" },
+  { "id": "source-formula", "front": "Moving source of sound?", "back": "$f' = f\\dfrac{v}{v \\pm u_s}$ (− approaching, + receding).", "concept": "Moving source" },
+  { "id": "observer-formula", "front": "Moving observer of sound?", "back": "$f' = f\\dfrac{v \\pm u_o}{v}$ (+ approaching, − receding).", "concept": "Moving observer" },
+  { "id": "galaxy-redshift", "front": "What do galaxy redshifts show?", "back": "Galaxies are receding, faster the further away they are — evidence for an expanding universe.", "concept": "Redshift" }
+]

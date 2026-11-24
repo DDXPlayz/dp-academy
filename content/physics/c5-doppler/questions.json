@@ -1,0 +1,81 @@
+[
+  {
+    "id": "redshift-speed",
+    "type": "numeric",
+    "lesson": "doppler-effect",
+    "concept": "Doppler effect for light",
+    "difficulty": 2,
+    "prompt": "A spectral line of wavelength 500.0 nm is observed at 502.0 nm in light from a star. What is the star’s speed?",
+    "answer": 1.2e6,
+    "tolerance": 0.02,
+    "unit": "m s⁻¹",
+    "explanation": "$v = c\\,\\Delta\\lambda/\\lambda = 3.00\\times10^8 \\times 2.0/500 = 1.2\\times10^6$ m s⁻¹ (receding)."
+  },
+  {
+    "id": "approach-effect",
+    "type": "mcq",
+    "lesson": "doppler-effect",
+    "concept": "Doppler effect",
+    "difficulty": 1,
+    "prompt": "A source of sound moves towards a stationary observer. Compared with the emitted sound, the observed sound has:",
+    "options": ["higher frequency, shorter wavelength", "lower frequency, longer wavelength", "the same frequency, shorter wavelength", "higher frequency, same wavelength"],
+    "answer": 0,
+    "explanation": "The wavefronts bunch up ahead of an approaching source: shorter wavelength and higher frequency."
+  },
+  {
+    "id": "redshift-meaning",
+    "type": "tf",
+    "lesson": "doppler-effect",
+    "concept": "Redshift",
+    "difficulty": 1,
+    "prompt": "A redshift in a galaxy’s spectrum means the galaxy is moving away from us.",
+    "answer": true,
+    "explanation": "Receding sources show an increase in observed wavelength — a redshift."
+  },
+  {
+    "id": "source-unchanged",
+    "type": "tf",
+    "lesson": "doppler-effect",
+    "concept": "Doppler effect",
+    "difficulty": 2,
+    "prompt": "In the Doppler effect, the frequency emitted by the source changes when it moves.",
+    "answer": false,
+    "explanation": "The source emits the same frequency; only the observed frequency changes."
+  },
+  {
+    "id": "moving-source-freq",
+    "type": "numeric",
+    "lesson": "doppler-sound-equations",
+    "concept": "Moving source",
+    "difficulty": 2,
+    "prompt": "A car horn of 500 Hz moves away from a listener at 20 m s⁻¹. The speed of sound is 340 m s⁻¹. What frequency does the listener hear?",
+    "answer": 472.2,
+    "tolerance": 0.02,
+    "unit": "Hz",
+    "explanation": "Receding source: $f' = 500 \\times \\dfrac{340}{340 + 20} = 472$ Hz."
+  },
+  {
+    "id": "moving-observer-freq",
+    "type": "numeric",
+    "lesson": "doppler-sound-equations",
+    "concept": "Moving observer",
+    "difficulty": 2,
+    "prompt": "A listener runs away from a stationary 680 Hz source at 5.0 m s⁻¹. The speed of sound is 340 m s⁻¹. What frequency does the listener hear?",
+    "answer": 670,
+    "tolerance": 0.02,
+    "unit": "Hz",
+    "explanation": "Observer receding: $f' = 680 \\times \\dfrac{340 - 5.0}{340} = 670$ Hz."
+  },
+  {
+    "id": "find-source-speed",
+    "type": "numeric",
+    "lesson": "doppler-sound-equations",
+    "concept": "Moving source",
+    "difficulty": 3,
+    "prompt": "An approaching motorbike’s 400 Hz engine note is heard at 425 Hz. The speed of sound is 340 m s⁻¹. How fast is the motorbike moving?",
+    "answer": 20,
+    "tolerance": 0.02,
+    "unit": "m s⁻¹",
+    "explanation": "$425 = 400 \\times \\dfrac{340}{340 - u_s} \\Rightarrow 340 - u_s = 320 \\Rightarrow u_s = 20$ m s⁻¹."
+  }
+]
