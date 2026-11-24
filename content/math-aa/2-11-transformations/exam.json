@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p1-transform-describe",
+    "paper": "1",
+    "difficulty": "medium",
+    "marks": 4,
+    "calculator": false,
+    "subtopic": "2.11",
+    "prompt": "The graph of $y = f(x)$ passes through $P(2, 6)$. The graph of $g(x) = 2f(x - 3) + 1$ is obtained from it by transformations.\n\n**(a)** Describe the transformations. **[3]**\n\n**(b)** Find the image of P. **[1]**",
+    "markscheme": "**(a)** Translation 3 units right (A1); vertical stretch scale factor 2 (A1); translation 1 unit up, after the stretch (A1)\n\n**(b)** $(5, 13)$ (A1)",
+    "source": "original"
+  }
+]

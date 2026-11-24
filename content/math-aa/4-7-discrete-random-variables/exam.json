@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p1-discrete-k",
+    "paper": "1",
+    "difficulty": "medium",
+    "marks": 5,
+    "calculator": false,
+    "subtopic": "4.7",
+    "prompt": "The random variable $X$ has $P(X = x) = k(x + 1)$ for $x = 0, 1, 2, 3$.\n\n**(a)** Find $k$. **[2]**\n\n**(b)** Find $E(X)$. **[3]**",
+    "markscheme": "**(a)** $k(1 + 2 + 3 + 4) = 1$ (M1); $k = \\tfrac{1}{10}$ (A1)\n\n**(b)** $0 + 1(0.2) + 2(0.3) + 3(0.4)$ (M1)(A1) $= 2$ (A1)",
+    "source": "original"
+  }
+]

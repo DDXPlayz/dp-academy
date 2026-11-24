@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p1-binomial-constant",
+    "paper": "1",
+    "difficulty": "medium",
+    "marks": 5,
+    "calculator": false,
+    "subtopic": "1.9",
+    "prompt": "Find the constant term in the expansion of $\\left(2x - \\dfrac{1}{x^2}\\right)^6$. **[5]**",
+    "markscheme": "General term $\\binom6r(2x)^{6-r}\\left(-x^{-2}\\right)^r$ (M1)\n\nPower of $x$: $6 - r - 2r = 0 \\Rightarrow r = 2$ (M1)(A1)\n\n$\\binom62 2^4(-1)^2$ (M1) $= 15\\times16 = 240$ (A1)",
+    "source": "original"
+  }
+]

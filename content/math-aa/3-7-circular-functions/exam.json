@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p2-ferris-wheel",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 6,
+    "calculator": true,
+    "subtopic": "3.7",
+    "prompt": "The height of a seat on a Ferris wheel is $h(t) = 22 - 20\\cos\\left(\\dfrac{\\pi t}{15}\\right)$ m, where $t$ is in minutes.\n\n**(a)** Find the minimum and maximum heights. **[2]**\n\n**(b)** Find the time for one revolution. **[1]**\n\n**(c)** Find the total time during the first revolution that the seat is more than 30 m above the ground. **[3]**",
+    "markscheme": "**(a)** 2 m (A1); 42 m (A1)\n\n**(b)** $\\dfrac{2\\pi}{\\pi/15} = 30$ min (A1)\n\n**(c)** $h(t) = 30 \\Rightarrow \\cos\\left(\frac{\\pi t}{15}\right) = -0.4 \\Rightarrow t = 9.47, 20.53$ (M1)(A1); $11.1$ min (A1)",
+    "source": "original"
+  }
+]

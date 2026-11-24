@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p2-optimise-can",
+    "paper": "2",
+    "difficulty": "hard",
+    "marks": 7,
+    "calculator": true,
+    "subtopic": "5.8",
+    "prompt": "A closed cylindrical can has volume 500 cm³.\n\n**(a)** Show that its surface area is $A = 2\\pi r^2 + \\dfrac{1000}{r}$. **[2]**\n\n**(b)** Find the radius that minimises the surface area, and justify that it is a minimum. **[4]**\n\n**(c)** Find the minimum surface area. **[1]**",
+    "markscheme": "**(a)** $\\pi r^2h = 500 \\Rightarrow h = \\dfrac{500}{\\pi r^2}$ (M1); $A = 2\\pi r^2 + 2\\pi r h = 2\\pi r^2 + \\dfrac{1000}{r}$ (A1)\n\n**(b)** $A' = 4\\pi r - \\dfrac{1000}{r^2} = 0$ (M1)(A1); $r = 4.30$ cm (A1); $A'' = 4\\pi + \\dfrac{2000}{r^3} > 0$, so minimum (R1)\n\n**(c)** $A = 349$ cm² (A1)",
+    "source": "original"
+  }
+]

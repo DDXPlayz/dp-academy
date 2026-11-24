@@ -1,0 +1,14 @@
+[
+  {
+    "id": "p1-system-parameter",
+    "paper": "1",
+    "level": "HL",
+    "difficulty": "hard",
+    "marks": 6,
+    "calculator": false,
+    "subtopic": "1.16",
+    "prompt": "Consider $x + y + z = 2$, $2x + 3y + z = 5$, $x + 3y - z = k$.\n\n**(a)** Find the value of $k$ for which the system has infinitely many solutions. **[4]**\n\n**(b)** For this value of $k$, find the general solution. **[2]**",
+    "markscheme": "**(a)** R2 − 2R1: $y - z = 1$ (M1)(A1). R3 − R1: $2y - 2z = k - 2$ (A1). Consistent when $k - 2 = 2$, so $k = 4$ (A1)\n\n**(b)** Let $z = \\lambda$: $y = 1 + \\lambda$, $x = 1 - 2\\lambda$ (M1)(A1)",
+    "source": "original"
+  }
+]

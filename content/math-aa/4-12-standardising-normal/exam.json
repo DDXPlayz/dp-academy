@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p2-unknown-mean-sd",
+    "paper": "2",
+    "difficulty": "hard",
+    "marks": 6,
+    "calculator": true,
+    "subtopic": "4.12",
+    "prompt": "The masses of apples are normally distributed. 10% have mass less than 120 g and 15% have mass more than 180 g. Find the mean and standard deviation. **[6]**",
+    "markscheme": "$\\dfrac{120 - \\mu}{\\sigma} = -1.2816$ (M1)(A1); $\\dfrac{180 - \\mu}{\\sigma} = 1.0364$ (A1)\n\nSolve simultaneously (M1): $\\sigma = 25.9$ g (A1), $\\mu = 153$ g (A1)",
+    "source": "original"
+  }
+]

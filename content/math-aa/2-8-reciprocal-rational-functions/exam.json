@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p1-rational-asymptotes",
+    "paper": "1",
+    "difficulty": "easy",
+    "marks": 4,
+    "calculator": false,
+    "subtopic": "2.8",
+    "prompt": "Let $f(x) = \\dfrac{3x - 2}{x + 4}$.\n\n**(a)** Write down the equations of the asymptotes. **[2]**\n\n**(b)** Find the coordinates of the intercepts with the axes. **[2]**",
+    "markscheme": "**(a)** $x = -4$ (A1); $y = 3$ (A1)\n\n**(b)** $\\left(\\tfrac23, 0\\right)$ (A1); $\\left(0, -\\tfrac12\\right)$ (A1)",
+    "source": "original"
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p1-sector-perimeter",
+    "paper": "1",
+    "difficulty": "medium",
+    "marks": 5,
+    "calculator": false,
+    "subtopic": "3.4",
+    "prompt": "A sector of a circle has radius $r$ cm and angle 1.5 radians. Its perimeter is 21 cm.\n\n**(a)** Find $r$. **[3]**\n\n**(b)** Find the area of the sector. **[2]**",
+    "markscheme": "**(a)** $2r + 1.5r = 21$ (M1)(A1); $r = 6$ (A1)\n\n**(b)** $\\tfrac12(36)(1.5)$ (M1) $= 27$ cm² (A1)",
+    "source": "original"
+  }
+]

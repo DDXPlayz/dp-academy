@@ -1,0 +1,14 @@
+[
+  {
+    "id": "p1-complex-equation",
+    "paper": "1",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 5,
+    "calculator": false,
+    "subtopic": "1.12",
+    "prompt": "Find the complex number $z$ such that $3z + 2z^* = 10 - 4i$. **[5]**",
+    "markscheme": "Let $z = a + bi$ (M1): $3a + 3bi + 2a - 2bi = 10 - 4i$ (A1)\n\n$5a = 10$, $b = -4$ (M1)(A1)\n\n$z = 2 - 4i$ (A1)",
+    "source": "original"
+  }
+]

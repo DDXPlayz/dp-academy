@@ -1,0 +1,14 @@
+[
+  {
+    "id": "p1-implicit-tangent",
+    "paper": "1",
+    "level": "HL",
+    "difficulty": "hard",
+    "marks": 6,
+    "calculator": false,
+    "subtopic": "5.14",
+    "prompt": "A curve has equation $x^2y + y^3 = 10$. Find the equation of the tangent at the point $(3, 1)$. **[6]**",
+    "markscheme": "$2xy + x^2\\dfrac{dy}{dx} + 3y^2\\dfrac{dy}{dx} = 0$ (M1)(A1)(A1)\n\nAt $(3, 1)$: $6 + 9y' + 3y' = 0$ (M1) $\\Rightarrow y' = -\\tfrac12$ (A1)\n\n$y - 1 = -\\tfrac12(x - 3)$ (A1)",
+    "source": "original"
+  }
+]

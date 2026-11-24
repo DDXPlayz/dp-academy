@@ -1,0 +1,14 @@
+[
+  {
+    "id": "p1-maclaurin-product",
+    "paper": "1",
+    "level": "HL",
+    "difficulty": "hard",
+    "marks": 6,
+    "calculator": false,
+    "subtopic": "5.19",
+    "prompt": "**(a)** Write down the Maclaurin series for $\\ln(1 + x)$ up to the $x^3$ term. **[1]**\n\n**(b)** Hence find the Maclaurin series for $e^x\\ln(1 + x)$ up to the $x^3$ term. **[3]**\n\n**(c)** Hence find $\\displaystyle\\lim_{x\\to0}\\frac{e^x\\ln(1 + x) - x}{x^2}$. **[2]**",
+    "markscheme": "**(a)** $x - \\tfrac{x^2}2 + \\tfrac{x^3}3$ (A1)\n\n**(b)** $\\left(1 + x + \\tfrac{x^2}2\\right)\\left(x - \\tfrac{x^2}2 + \\tfrac{x^3}3\\right)$ (M1) $= x + \\tfrac{x^2}{2} + \\tfrac{x^3}{3}$ (A1)(A1)\n\n**(c)** $\\dfrac{\\tfrac{x^2}{2} + \\tfrac{x^3}3}{x^2} \\to \\tfrac12$ (M1)(A1)",
+    "source": "original"
+  }
+]

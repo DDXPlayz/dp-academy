@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p2-investment-time",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 5,
+    "calculator": true,
+    "subtopic": "1.4",
+    "prompt": "Ama invests \\$8000 at 3.6% per annum compounded monthly.\n\n**(a)** Find the value of the investment after 5 years, to the nearest dollar. **[2]**\n\n**(b)** Find the number of complete months until the investment first exceeds \\$12 000. **[3]**",
+    "markscheme": "**(a)** $8000\\left(1 + \\tfrac{3.6}{1200}\\right)^{60}$ (M1) $= \\$9575$ (A1)\n\n**(b)** $8000(1.003)^n > 12000$ (M1); $n > \\dfrac{\\ln1.5}{\\ln1.003} = 135.3$ (A1); 136 months (A1)",
+    "source": "original"
+  }
+]

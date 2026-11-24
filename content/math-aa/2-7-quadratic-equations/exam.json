@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p1-discriminant-k",
+    "paper": "1",
+    "difficulty": "medium",
+    "marks": 5,
+    "calculator": false,
+    "subtopic": "2.7",
+    "prompt": "The equation $x^2 + kx + (k + 3) = 0$ has two equal real roots. Find the possible values of $k$. **[5]**",
+    "markscheme": "$\\Delta = k^2 - 4(k + 3) = 0$ (M1)(A1)\n\n$k^2 - 4k - 12 = 0$ (A1)\n\n$(k - 6)(k + 2) = 0$ (M1)\n\n$k = 6$ or $k = -2$ (A1)",
+    "source": "original"
+  }
+]

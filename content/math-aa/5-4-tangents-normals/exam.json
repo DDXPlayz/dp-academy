@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p1-normal-equation",
+    "paper": "1",
+    "difficulty": "medium",
+    "marks": 6,
+    "calculator": false,
+    "subtopic": "5.4",
+    "prompt": "Consider $y = x^3 - 3x + 2$. Find the equation of the normal to the curve at the point where $x = 2$, giving your answer in the form $ax + by + c = 0$. **[6]**",
+    "markscheme": "$y(2) = 4$ (A1); $\\dfrac{dy}{dx} = 3x^2 - 3$ (A1) $= 9$ at $x = 2$ (A1)\n\nNormal gradient $-\\tfrac19$ (A1); $y - 4 = -\\tfrac19(x - 2)$ (M1); $x + 9y - 38 = 0$ (A1)",
+    "source": "original"
+  }
+]

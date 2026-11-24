@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p1-area-between",
+    "paper": "1",
+    "difficulty": "medium",
+    "marks": 6,
+    "calculator": false,
+    "subtopic": "5.11",
+    "prompt": "Find the area of the region enclosed by $y = 4x - x^2$ and $y = x$. **[6]**",
+    "markscheme": "Intersections: $4x - x^2 = x \\Rightarrow x = 0, 3$ (M1)(A1)\n\nArea $= \\int_0^3(3x - x^2)\\,dx$ (M1) $= \\left[\\tfrac32x^2 - \\tfrac13x^3\\right]_0^3$ (A1) $= \\tfrac{27}{2} - 9$ (A1) $= \\tfrac92$ (A1)",
+    "source": "original"
+  }
+]

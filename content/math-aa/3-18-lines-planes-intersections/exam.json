@@ -1,0 +1,14 @@
+[
+  {
+    "id": "p2-line-plane-angle",
+    "paper": "2",
+    "level": "HL",
+    "difficulty": "hard",
+    "marks": 6,
+    "calculator": true,
+    "subtopic": "3.18",
+    "prompt": "The line $L$: $\\mathbf r = (1, 2, -1) + \\lambda(2, -1, 3)$ and the plane $\\Pi$: $x + 2y + 2z = 13$.\n\n**(a)** Find the point of intersection of $L$ and $\\Pi$. **[3]**\n\n**(b)** Find the acute angle between $L$ and $\\Pi$. **[3]**",
+    "markscheme": "**(a)** $(1 + 2\\lambda) + 2(2 - \\lambda) + 2(-1 + 3\\lambda) = 13$ (M1) $\\Rightarrow 3 + 6\\lambda = 13$, $\\lambda = \\tfrac53$ (A1); point $\\left(\\tfrac{13}3, \\tfrac13, 4\\right)$ (A1)\n\n**(b)** $\\sin\\theta = \\dfrac{|(2, -1, 3)\\cdot(1, 2, 2)|}{\\sqrt{14}\\cdot3}$ (M1) $= \\dfrac{6}{3\\sqrt{14}}$ (A1); $\\theta = 32.3°$ (A1)",
+    "source": "original"
+  }
+]

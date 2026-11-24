@@ -1,0 +1,14 @@
+[
+  {
+    "id": "p1-volume-revolution",
+    "paper": "1",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 5,
+    "calculator": false,
+    "subtopic": "5.17",
+    "prompt": "The region between $y = e^x$, the x-axis, $x = 0$ and $x = 1$ is rotated through $2\\pi$ about the x-axis. Find the exact volume. **[5]**",
+    "markscheme": "$V = \\pi\\int_0^1 e^{2x}\\,dx$ (M1)(A1) $= \\pi\\left[\\tfrac12e^{2x}\\right]_0^1$ (A1) $= \\dfrac{\\pi}{2}(e^2 - 1)$ (A1)(A1)",
+    "source": "original"
+  }
+]

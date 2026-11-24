@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p1-reverse-chain",
+    "paper": "1",
+    "difficulty": "medium",
+    "marks": 5,
+    "calculator": false,
+    "subtopic": "5.10",
+    "prompt": "**(a)** Find $\\displaystyle\\int\\frac{x}{(x^2 + 1)^3}\\,dx$. **[3]**\n\n**(b)** Hence evaluate $\\displaystyle\\int_0^1\\frac{x}{(x^2 + 1)^3}\\,dx$. **[2]**",
+    "markscheme": "**(a)** Let $u = x^2 + 1$ or by inspection (M1): $-\\dfrac{1}{4(x^2 + 1)^2} + C$ (A1)(A1)\n\n**(b)** $-\\dfrac{1}{16} + \\dfrac14$ (M1) $= \\dfrac{3}{16}$ (A1)",
+    "source": "original"
+  }
+]

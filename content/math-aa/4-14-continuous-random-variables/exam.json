@@ -1,0 +1,14 @@
+[
+  {
+    "id": "p1-pdf-median",
+    "paper": "1",
+    "level": "HL",
+    "difficulty": "hard",
+    "marks": 6,
+    "calculator": false,
+    "subtopic": "4.14",
+    "prompt": "A continuous random variable has pdf $f(x) = kx$ for $0 \\le x \\le 2$, and 0 otherwise.\n\n**(a)** Find $k$. **[2]**\n\n**(b)** Find the median of $X$. **[2]**\n\n**(c)** Find $E(X)$. **[2]**",
+    "markscheme": "**(a)** $\\int_0^2 kx\\,dx = 2k = 1$ (M1); $k = \\tfrac12$ (A1)\n\n**(b)** $\\int_0^m\\tfrac x2\\,dx = \\tfrac{m^2}{4} = \\tfrac12$ (M1); $m = \\sqrt2$ (A1)\n\n**(c)** $\\int_0^2\\tfrac{x^2}{2}\\,dx$ (M1) $= \\tfrac43$ (A1)",
+    "source": "original"
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p2-regression",
+    "paper": "2",
+    "difficulty": "easy",
+    "marks": 6,
+    "calculator": true,
+    "subtopic": "4.4",
+    "prompt": "The table shows the age $x$ (years) and value $y$ (\\$000) of six cars.\n\n| x | 1 | 2 | 3 | 5 | 6 | 8 |\n|---|---|---|---|---|---|---|\n| y | 28 | 25 | 23 | 18 | 15 | 11 |\n\n**(a)** Find Pearson’s correlation coefficient $r$ and interpret it. **[2]**\n\n**(b)** Find the equation of the regression line of $y$ on $x$. **[2]**\n\n**(c)** Estimate the value of a 4-year-old car, and explain why it is reasonable. **[2]**",
+    "markscheme": "**(a)** $r = -0.998$ (A1); very strong negative linear correlation (R1)\n\n**(b)** $y = -2.44x + 30.2$ (A1)(A1)\n\n**(c)** $\\approx 20.6$ thousand dollars (A1); interpolation with strong correlation (R1)",
+    "source": "original"
+  }
+]

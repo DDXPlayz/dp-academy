@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p1-sum-to-infinity-x",
+    "paper": "1",
+    "difficulty": "hard",
+    "marks": 6,
+    "calculator": false,
+    "subtopic": "1.8",
+    "prompt": "Consider the geometric series $1 + \\dfrac{2x}{3} + \\dfrac{4x^2}{9} + \\ldots$\n\n**(a)** Find the values of $x$ for which the series has a sum to infinity. **[3]**\n\n**(b)** Given the sum to infinity is 3, find $x$. **[3]**",
+    "markscheme": "**(a)** $r = \\dfrac{2x}{3}$ (A1); $\\left|\\dfrac{2x}{3}\\right| < 1$ (M1); $-\\dfrac32 < x < \\dfrac32$ (A1)\n\n**(b)** $\\dfrac{1}{1 - \\frac{2x}{3}} = 3$ (M1); $1 - \\frac{2x}3 = \\frac13$ (A1); $x = 1$ (A1)",
+    "source": "original"
+  }
+]

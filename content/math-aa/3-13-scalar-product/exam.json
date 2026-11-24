@@ -1,0 +1,14 @@
+[
+  {
+    "id": "p1-angle-triangle-vectors",
+    "paper": "1",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 5,
+    "calculator": false,
+    "subtopic": "3.13",
+    "prompt": "Points $A(1, 0, 2)$, $B(3, 2, 1)$ and $C(2, -1, 4)$ are given. Find $\\cos B\\hat{A}C$. **[5]**",
+    "markscheme": "$\\overrightarrow{AB} = (2, 2, -1)$, $\\overrightarrow{AC} = (1, -1, 2)$ (A1)(A1)\n\n$\\overrightarrow{AB}\\cdot\\overrightarrow{AC} = 2 - 2 - 2 = -2$ (A1)\n\n$|\\overrightarrow{AB}| = 3$, $|\\overrightarrow{AC}| = \\sqrt6$ (A1)\n\n$\\cos B\\hat AC = \\dfrac{-2}{3\\sqrt6}$ (A1)",
+    "source": "original"
+  }
+]

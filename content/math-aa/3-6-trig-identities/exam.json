@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p1-double-angle",
+    "paper": "1",
+    "difficulty": "medium",
+    "marks": 6,
+    "calculator": false,
+    "subtopic": "3.6",
+    "prompt": "Given that $\\cos\\theta = -\\dfrac{3}{5}$ and $\\dfrac{\\pi}{2} < \\theta < \\pi$, find\n\n**(a)** $\\sin\\theta$ **[2]**\n\n**(b)** $\\sin2\\theta$ **[2]**\n\n**(c)** $\\cos2\\theta$ **[2]**",
+    "markscheme": "**(a)** $\\sin^2\\theta = \\tfrac{16}{25}$ (M1); $\\sin\\theta = \\tfrac45$ (positive in Q2) (A1)\n\n**(b)** $2\\cdot\\tfrac45\\cdot\\left(-\\tfrac35\\right)$ (M1) $= -\\tfrac{24}{25}$ (A1)\n\n**(c)** $2\\left(\\tfrac{9}{25}\\right) - 1$ (M1) $= -\\tfrac{7}{25}$ (A1)",
+    "source": "original"
+  }
+]

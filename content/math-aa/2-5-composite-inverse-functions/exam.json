@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p1-composite-inverse",
+    "paper": "1",
+    "difficulty": "medium",
+    "marks": 6,
+    "calculator": false,
+    "subtopic": "2.5",
+    "prompt": "Let $f(x) = 3x - 2$ and $g(x) = \\dfrac{x}{x + 1}$, $x \\ne -1$.\n\n**(a)** Find $(g\\circ f)(1)$. **[2]**\n\n**(b)** Find $g^{-1}(x)$. **[4]**",
+    "markscheme": "**(a)** $f(1) = 1$ (A1); $g(1) = \\tfrac12$ (A1)\n\n**(b)** $x = \\dfrac{y}{y + 1}$ (M1); $xy + x = y$ (A1); $y(x - 1) = -x$ (A1); $g^{-1}(x) = \\dfrac{x}{1 - x}$, $x \\ne 1$ (A1)",
+    "source": "original"
+  }
+]
