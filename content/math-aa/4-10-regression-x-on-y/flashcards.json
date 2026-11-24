@@ -1,0 +1,4 @@
+[
+  { "id": "xony-card", "front": "When do you use the x-on-y regression line?", "back": "To predict x from a given y.", "concept": "Choosing a line" },
+  { "id": "both-mean-card", "front": "What point do both regression lines pass through?", "back": "The mean point $(\\bar x, \\bar y)$.", "concept": "Two lines" }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "normal-prob",
+    "type": "numeric",
+    "lesson": "normal",
+    "concept": "Normal probabilities",
+    "difficulty": 2,
+    "prompt": "$X \\sim N(50, 4^2)$. Find $P(X < 56)$ (3 s.f.).",
+    "answer": 0.933,
+    "tolerance": 0.002,
+    "explanation": "$z = 1.5$; $P = 0.933$."
+  },
+  {
+    "id": "rule-68",
+    "type": "numeric",
+    "lesson": "normal",
+    "concept": "68–95–99.7 rule",
+    "difficulty": 1,
+    "prompt": "Approximately what percentage of a normal distribution lies within 2 standard deviations of the mean?",
+    "answer": 95,
+    "tolerance": 0,
+    "unit": "%",
+    "explanation": "The 68–95–99.7 rule."
+  },
+  {
+    "id": "inv-normal",
+    "type": "numeric",
+    "lesson": "normal",
+    "concept": "Inverse normal",
+    "difficulty": 2,
+    "prompt": "$X \\sim N(100, 15^2)$. Find $a$ such that $P(X < a) = 0.8$ (3 s.f.).",
+    "answer": 112.6,
+    "tolerance": 0.003,
+    "explanation": "invNorm(0.8, 100, 15) = 112.6."
+  },
+  {
+    "id": "symmetry",
+    "type": "numeric",
+    "lesson": "normal",
+    "concept": "Properties",
+    "difficulty": 1,
+    "prompt": "$X \\sim N(20, 9)$. Find $P(X > 20)$.",
+    "answer": 0.5,
+    "tolerance": 0.001,
+    "explanation": "By symmetry half the area lies above the mean."
+  },
+  {
+    "id": "variance-trap",
+    "type": "tf",
+    "lesson": "normal",
+    "concept": "Properties",
+    "difficulty": 1,
+    "prompt": "For $X \\sim N(30, 16)$, the standard deviation is 16.",
+    "answer": false,
+    "explanation": "16 is the variance; σ = 4."
+  }
+]

@@ -1,0 +1,6 @@
+[
+  { "id": "pdf-card", "front": "(HL) Conditions for a pdf?", "back": "$f(x) \\ge 0$ and $\\int f(x)\\,dx = 1$; probability = area.", "concept": "Probability density functions" },
+  { "id": "median-cont-card", "front": "(HL) Median of a continuous RV?", "back": "Solve $\\int_{a}^{m} f(x)\\,dx = 0.5$.", "concept": "Median" },
+  { "id": "var-card", "front": "(HL) Variance formula?", "back": "$E(X^2) - [E(X)]^2$", "concept": "Variance" },
+  { "id": "lin-card", "front": "(HL) $E(aX + b)$ and $\\text{Var}(aX + b)$?", "back": "$aE(X) + b$ and $a^2\\text{Var}(X)$.", "concept": "Linear transformations" }
+]

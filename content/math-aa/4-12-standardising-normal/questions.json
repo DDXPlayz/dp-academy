@@ -1,0 +1,45 @@
+[
+  {
+    "id": "z-score",
+    "type": "numeric",
+    "lesson": "z-scores",
+    "concept": "z-scores",
+    "difficulty": 1,
+    "prompt": "$X \\sim N(65, 5^2)$. Find the z-score of $x = 57$.",
+    "answer": -1.6,
+    "tolerance": 0.001,
+    "explanation": "$(57 - 65)/5 = -1.6$."
+  },
+  {
+    "id": "unknown-mu",
+    "type": "numeric",
+    "lesson": "z-scores",
+    "concept": "Unknown mean",
+    "difficulty": 3,
+    "prompt": "$X \\sim N(\\mu, 2^2)$ and $P(X > 15) = 0.05$. Find μ (3 s.f.).",
+    "answer": 11.7,
+    "tolerance": 0.004,
+    "explanation": "$z = 1.6449$; $\\mu = 15 - 2(1.6449) = 11.7$."
+  },
+  {
+    "id": "unknown-sigma",
+    "type": "numeric",
+    "lesson": "z-scores",
+    "concept": "Unknown standard deviation",
+    "difficulty": 3,
+    "prompt": "$X \\sim N(50, \\sigma^2)$ and $P(X < 45) = 0.2$. Find σ (3 s.f.).",
+    "answer": 5.94,
+    "tolerance": 0.003,
+    "explanation": "$z = -0.8416$; $-5/\\sigma = -0.8416 \\Rightarrow \\sigma = 5.94$."
+  },
+  {
+    "id": "z-compare",
+    "type": "tf",
+    "lesson": "z-scores",
+    "concept": "z-scores",
+    "difficulty": 1,
+    "prompt": "A negative z-score means the value is below the mean.",
+    "answer": true,
+    "explanation": "$x - \\mu < 0$."
+  }
+]

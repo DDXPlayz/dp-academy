@@ -1,0 +1,4 @@
+[
+  { "id": "z-card", "front": "z-score formula?", "back": "$z = (x - \\mu)/\\sigma$", "concept": "z-scores" },
+  { "id": "unknown-card", "front": "Finding unknown μ or σ?", "back": "invNorm on N(0, 1) to get z, then solve $z = (x - \\mu)/\\sigma$.", "concept": "Unknown mean" }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "pdf-k",
+    "type": "numeric",
+    "lesson": "continuous-rv",
+    "concept": "Probability density functions",
+    "difficulty": 2,
+    "prompt": "(HL) $f(x) = kx^2$ for $0 \\le x \\le 3$. Find $k$ (3 s.f.).",
+    "answer": 0.111,
+    "tolerance": 0.003,
+    "explanation": "$k\\cdot\\frac{27}{3} = 9k = 1 \\Rightarrow k = \\tfrac19$."
+  },
+  {
+    "id": "pdf-mean",
+    "type": "numeric",
+    "lesson": "continuous-rv",
+    "concept": "Mean",
+    "difficulty": 3,
+    "prompt": "(HL) For the same pdf, find $E(X)$.",
+    "answer": 2.25,
+    "tolerance": 0.001,
+    "explanation": "$\\frac19\\int_0^3 x^3\\,dx = \\frac19\\cdot\\frac{81}{4} = 2.25$."
+  },
+  {
+    "id": "linear-var",
+    "type": "numeric",
+    "lesson": "continuous-rv",
+    "concept": "Linear transformations",
+    "difficulty": 2,
+    "prompt": "(HL) $\\text{Var}(X) = 4$. Find $\\text{Var}(3X - 7)$.",
+    "answer": 36,
+    "tolerance": 0,
+    "explanation": "$3^2\\times4 = 36$."
+  },
+  {
+    "id": "discrete-var",
+    "type": "numeric",
+    "lesson": "continuous-rv",
+    "concept": "Variance",
+    "difficulty": 3,
+    "prompt": "(HL) X takes values 0, 1, 2 with probabilities 0.25, 0.5, 0.25. Find Var(X).",
+    "answer": 0.5,
+    "tolerance": 0.001,
+    "explanation": "$E(X) = 1$; $E(X^2) = 0.5 + 1 = 1.5$; Var $= 0.5$."
+  },
+  {
+    "id": "pdf-prob",
+    "type": "tf",
+    "lesson": "continuous-rv",
+    "concept": "Probability density functions",
+    "difficulty": 1,
+    "prompt": "(HL) For a continuous random variable, $f(2)$ is the probability that $X = 2$.",
+    "answer": false,
+    "explanation": "$P(X = 2) = 0$; probabilities are areas under f."
+  }
+]

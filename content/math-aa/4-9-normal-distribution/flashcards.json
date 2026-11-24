@@ -1,0 +1,5 @@
+[
+  { "id": "normal-props-card", "front": "Properties of a normal distribution?", "back": "Symmetric bell, mean = median = mode, area 1.", "concept": "Properties" },
+  { "id": "6895-card", "front": "68–95–99.7 rule?", "back": "≈68%, 95%, 99.7% within 1σ, 2σ, 3σ of μ.", "concept": "68–95–99.7 rule" },
+  { "id": "n-notation-card", "front": "What is the second parameter in $N(\\mu, \\sigma^2)$?", "back": "The variance — take its square root for σ.", "concept": "Properties" }
+]

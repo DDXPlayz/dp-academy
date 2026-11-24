@@ -1,0 +1,4 @@
+[
+  { "id": "cond-formal-card", "front": "Formal definition of $P(A\\mid B)$?", "back": "$\\dfrac{P(A\\cap B)}{P(B)}$", "concept": "Conditional probability" },
+  { "id": "indep-cond-card", "front": "Independence test using conditional probability?", "back": "$P(A\\mid B) = P(A) = P(A\\mid B')$", "concept": "Independence" }
+]

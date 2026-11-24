@@ -1,0 +1,45 @@
+[
+  {
+    "id": "bayes-test",
+    "type": "numeric",
+    "lesson": "bayes",
+    "concept": "Bayes’ theorem",
+    "difficulty": 3,
+    "prompt": "(HL) 5% of students cheat. A detector flags 90% of cheaters and 10% of honest students. A student is flagged. Find P(cheater | flagged) (3 s.f.).",
+    "answer": 0.321,
+    "tolerance": 0.003,
+    "explanation": "$\\frac{0.05\\times0.9}{0.05\\times0.9 + 0.95\\times0.1} = \\frac{0.045}{0.14} = 0.321$."
+  },
+  {
+    "id": "bayes-total",
+    "type": "numeric",
+    "lesson": "bayes",
+    "concept": "Total probability",
+    "difficulty": 2,
+    "prompt": "(HL) Machines X and Y make 60% and 40% of bolts; 1% and 4% are faulty. Find P(a random bolt is faulty).",
+    "answer": 0.022,
+    "tolerance": 0.001,
+    "explanation": "$0.6(0.01) + 0.4(0.04) = 0.022$."
+  },
+  {
+    "id": "bayes-y",
+    "type": "numeric",
+    "lesson": "bayes",
+    "concept": "Bayes’ theorem",
+    "difficulty": 3,
+    "prompt": "(HL) Using the same data, find P(made by Y | faulty) (3 s.f.).",
+    "answer": 0.727,
+    "tolerance": 0.003,
+    "explanation": "$0.016/0.022 = 0.727$."
+  },
+  {
+    "id": "bayes-confuse",
+    "type": "tf",
+    "lesson": "bayes",
+    "concept": "Bayes’ theorem",
+    "difficulty": 2,
+    "prompt": "(HL) If a test is 99% accurate for people with a disease, then a positive result means a 99% chance of having the disease.",
+    "answer": false,
+    "explanation": "That is P(+ | D), not P(D | +); the base rate matters."
+  }
+]

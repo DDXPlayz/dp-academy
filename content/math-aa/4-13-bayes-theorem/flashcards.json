@@ -1,0 +1,4 @@
+[
+  { "id": "bayes-card", "front": "(HL) Bayes’ theorem?", "back": "$P(B\\mid A) = \\dfrac{P(B)P(A\\mid B)}{P(B)P(A\\mid B) + P(B')P(A\\mid B')}$", "concept": "Bayes’ theorem" },
+  { "id": "prior-post-card", "front": "(HL) Prior vs posterior?", "back": "Prior P(B) before evidence; posterior P(B | A) after.", "concept": "Bayes’ theorem" }
+]

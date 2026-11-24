@@ -1,0 +1,45 @@
+[
+  {
+    "id": "cond-table",
+    "type": "numeric",
+    "lesson": "conditional-independence",
+    "concept": "Conditional probability",
+    "difficulty": 2,
+    "prompt": "Of 80 students, 50 play sport; 20 of these also play music. 10 non-sporty students play music. Find P(sport | music) (3 s.f.).",
+    "answer": 0.667,
+    "tolerance": 0.002,
+    "explanation": "30 play music, 20 of whom play sport: $\\tfrac{20}{30} = \\tfrac23$."
+  },
+  {
+    "id": "indep-cond",
+    "type": "mcq",
+    "lesson": "conditional-independence",
+    "concept": "Independence",
+    "difficulty": 2,
+    "prompt": "$P(A) = 0.4$ and $P(A\\mid B) = 0.4$. Which is true?",
+    "options": ["A and B are mutually exclusive", "A and B are independent", "$P(B) = 0.4$", "$P(A\\cap B) = 0$"],
+    "answer": 1,
+    "explanation": "Knowing B does not change the probability of A."
+  },
+  {
+    "id": "reverse-cond",
+    "type": "tf",
+    "lesson": "conditional-independence",
+    "concept": "Conditional probability",
+    "difficulty": 1,
+    "prompt": "In general, $P(A\\mid B) = P(B\\mid A)$.",
+    "answer": false,
+    "explanation": "They have the same numerator but different denominators, P(B) and P(A)."
+  },
+  {
+    "id": "cond-calc",
+    "type": "numeric",
+    "lesson": "conditional-independence",
+    "concept": "Conditional probability",
+    "difficulty": 2,
+    "prompt": "$P(A) = 0.6$, $P(B\\mid A) = 0.5$. Find $P(A\\cap B)$.",
+    "answer": 0.3,
+    "tolerance": 0.001,
+    "explanation": "$0.6\\times0.5$."
+  }
+]
