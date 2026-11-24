@@ -17,8 +17,26 @@ npm test             # unit tests + content validation
 npm run build        # type-check and build to dist/
 ```
 
-Deploy by importing the repo into Vercel — it detects Vite, and `vercel.json`
-rewrites every route to the single-page app.
+## Going online (password-protected)
+
+The site is meant to be private. `middleware.ts` is a Vercel Routing Middleware
+that asks for a username and password (HTTP Basic auth) on every request, and
+**refuses everything if no password is configured**, so a misconfigured
+deployment fails closed.
+
+1. Install the CLI and sign in: `npm i -g vercel`, then `vercel login`.
+2. From this folder run `vercel link` once (create a new project).
+3. In the Vercel dashboard → Project → Settings → Environment Variables, add
+   `SITE_PASSWORD` (and optionally `SITE_USER`, default `student`) for
+   *Production* and *Preview*.
+4. Deploy from this computer: `vercel --prod`.
+
+Deploying from your own computer matters: `vite build` copies the private
+past-paper bank from the git-ignored `resources/` folder into `dist/data/`
+when it exists. A build triggered from GitHub never sees `resources/`, so it
+works but has no Past papers. Either way the password protects everything.
+
+`vercel.json` rewrites every route to the single-page app.
 
 ## How it is organised
 
@@ -87,6 +105,7 @@ of the lesson template; the body holds the explanation.
 
 ```markdown
 ---
+code: A.1.3                # syllabus code shown in lists and on the Syllabus page
 title: Projectile motion
 summary: One sentence shown in lists and on the dashboard.
 minutes: 30
@@ -139,10 +158,40 @@ projectile
 ```question
 time-of-flight
 ```
+
+```examtip
+An exam-technique callout.
+```
+
+```svg
+caption: One-line caption shown under the figure.
+<svg viewBox="0 0 400 200"> … </svg>
+```
+
+```plot
+caption: y = sin x and its derivative
+x: 0, 6.28
+y: -1.2, 1.2
+f: sin(x) | y = sin x
+f: cos(x) | y = cos x
+point: 1.57, 1 | max
+vline: 3.14
+hline: 0
+xlabel: x
+ylabel: y
+```
 ````
 
 `diagram` takes the name of a component in `src/diagrams/index.tsx`.
 `question` embeds a question from the topic’s `questions.json` by id.
+`svg` renders inline SVG (sanitised; use `currentColor` and the CSS colour
+variables such as `var(--accent)` so it works in dark mode, and give every
+`<marker id>` a unique prefix because the Print page shows many lessons at
+once). `plot` draws function graphs with the built-in expression evaluator
+(`+ - * / ^`, `sqrt sin cos tan ln log exp abs`, `pi`, `e` — no comparisons).
+
+YAML tip: a list item in the frontmatter must not start with a quote mark,
+a `|` or contain `": "`; rephrase instead.
 
 ### 3. Questions
 
@@ -184,23 +233,45 @@ for the Question bank page (`/bank`):
 only for multiple choice. Only `"source": "original"` is allowed under
 `content/`; `content:check` fails otherwise.
 
-### Local-only material
+### 6. CBSE links
 
-Private study material lives in the git-ignored `resources/` folder and is
-served by a dev-server plugin (`dev/localResources.ts`, `apply: 'serve'`):
+Topics (or whole units) can carry `cbse` links that show a “CBSE” box on the
+topic page with the matching NCERT chapter and a Prashant Kirad video search:
 
-* Topic pages show a **Reference notes (private)** panel in `npm run dev` only.
+```json
+"cbse": [{ "class": 12, "chapter": "Ch 4 Moving Charges and Magnetism",
+           "video": "https://www.youtube.com/results?search_query=…", "note": "optional" }]
+```
+
+`python -I -X utf8 scripts/cbse_map.py` regenerates them for all subjects.
+
+## Other pages
+
+* **Syllabus** (`/syllabus`) — a checklist of every unit, topic and lesson per
+  subject, with an SL/HL filter; ticking a lesson marks it complete.
+* **Print** (`/print`) — choose topics and print (or save as PDF) their lessons
+  with formulas, definitions, mistakes and tips in a clean layout.
+* **Questions** (`/bank`) — filter by subject, unit/topic, paper and
+  difficulty; *Exam-style* holds the original questions from `exam.json`,
+  *Past papers* the private bank (below).
+
+## Private material (never committed)
+
+The git-ignored `resources/` folder holds reference material used while
+writing lessons (revision-note PDFs, textbooks) and the private past-paper
+bank. `dev/localResources.ts` serves `/data/bank.json`, `/data/bank/<image>`
+and `/data/papers/<pdf>` from it during `npm run dev`, and copies them into
+`dist/data/` during `vite build` — only when the folder exists, so the public
+repository and GitHub-triggered builds never contain them.
+
 * `npm run import:papers -- --session "May 2024"` parses papers placed in
-  `resources/past-papers/` into `resources/question-bank/`; they appear under
-  **Past papers** in `npm run dev` only.
-
-* `python -I -X utf8 scripts/extract_notes.py [--only <subject>] [--source sme|iitian]`
-  converts the revision-note PDFs into lessons in `resources/extracted/`; topic
-  pages list them and open them in the lesson reader.
+  `resources/past-papers/` into `resources/question-bank/`.
 * `python -I -X utf8 scripts/import_questionbank.py` converts a locally saved
   question bank (`resources/questionbank-src/`) into Past papers questions.
+* `python -I -X utf8 scripts/extract_notes.py` extracts text and figures from
+  the reference PDFs into `resources/extracted/` for reference while writing.
 
-Production builds contain none of it. Plan and structure: [`docs/`](docs/content-plan.md).
+Plan and structure: [`docs/`](docs/content-plan.md).
 
 ## Content policy
 
