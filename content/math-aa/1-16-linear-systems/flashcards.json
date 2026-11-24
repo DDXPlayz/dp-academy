@@ -1,0 +1,4 @@
+[
+  { "id": "sys-outcomes-card", "front": "(HL) Three outcomes for a linear system?", "back": "Unique solution; infinitely many (0 = 0, use a parameter); none (0 = non-zero).", "concept": "Types of solution" },
+  { "id": "sys-geom-card", "front": "(HL) Geometric meaning of 3 equations in 3 unknowns?", "back": "Three planes: meeting at a point, along a line, or not all meeting.", "concept": "Types of solution" }
+]

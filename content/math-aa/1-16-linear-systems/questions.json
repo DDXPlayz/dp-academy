@@ -1,0 +1,46 @@
+[
+  {
+    "id": "system-unique",
+    "type": "numeric",
+    "lesson": "linear-systems",
+    "concept": "Elimination",
+    "difficulty": 2,
+    "prompt": "(HL) Solve $x + y + z = 6$, $x - y + z = 2$, $2x + y - z = 1$. Give the value of $x$.",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "Subtract the first two: $2y = 4 \\Rightarrow y = 2$. Then $x + z = 4$ and $2x - z = -1$; adding gives $3x = 3$, so $x = 1$ (and $z = 3$)."
+  },
+  {
+    "id": "inconsistent",
+    "type": "mcq",
+    "lesson": "linear-systems",
+    "concept": "Types of solution",
+    "difficulty": 2,
+    "prompt": "(HL) After elimination a row reads $0x + 0y + 0z = 4$. The system has:",
+    "options": ["a unique solution", "infinitely many solutions", "no solution", "exactly two solutions"],
+    "answer": 2,
+    "explanation": "$0 = 4$ is impossible: the system is inconsistent."
+  },
+  {
+    "id": "infinite",
+    "type": "mcq",
+    "lesson": "linear-systems",
+    "concept": "Types of solution",
+    "difficulty": 2,
+    "prompt": "(HL) After elimination a row reads $0 = 0$ and the others are consistent. The system has:",
+    "options": ["a unique solution", "infinitely many solutions", "no solution", "two solutions"],
+    "answer": 1,
+    "explanation": "One equation is redundant; a parameter describes the solutions (a line)."
+  },
+  {
+    "id": "k-value",
+    "type": "numeric",
+    "lesson": "linear-systems",
+    "concept": "Parameters",
+    "difficulty": 3,
+    "prompt": "(HL) $x + y = 3$, $2x + 2y = k$. For which $k$ are there infinitely many solutions?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "The second equation must be twice the first: $k = 6$."
+  }
+]

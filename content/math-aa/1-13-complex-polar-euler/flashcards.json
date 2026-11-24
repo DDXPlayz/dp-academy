@@ -1,0 +1,5 @@
+[
+  { "id": "euler-card", "front": "(HL) Euler’s formula?", "back": "$e^{i\\theta} = \\cos\\theta + i\\sin\\theta$", "concept": "Converting forms" },
+  { "id": "polar-mult-card", "front": "(HL) Multiplying in polar form?", "back": "Multiply moduli, add arguments.", "concept": "Products" },
+  { "id": "polar-div-card", "front": "(HL) Dividing in polar form?", "back": "Divide moduli, subtract arguments.", "concept": "Products" }
+]

@@ -1,0 +1,6 @@
+[
+  { "id": "i-card", "front": "(HL) Powers of i?", "back": "$i, -1, -i, 1$ repeating every 4.", "concept": "Arithmetic" },
+  { "id": "mod-arg-card", "front": "(HL) Modulus and argument of $a + bi$?", "back": "$|z| = \\sqrt{a^2 + b^2}$; $\\arg z$ from a sketch, in $(-\\pi, \\pi]$.", "concept": "Modulus" },
+  { "id": "conj-card", "front": "(HL) Conjugate and $zz^*$?", "back": "$z^* = a - bi$; $zz^* = a^2 + b^2$ (real).", "concept": "Conjugate" },
+  { "id": "divide-card", "front": "(HL) Dividing complex numbers?", "back": "Multiply numerator and denominator by the conjugate of the denominator.", "concept": "Division" }
+]

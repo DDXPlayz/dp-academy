@@ -1,0 +1,56 @@
+[
+  {
+    "id": "induction-step",
+    "type": "mcq",
+    "lesson": "induction-contradiction",
+    "concept": "Induction",
+    "difficulty": 2,
+    "prompt": "(HL) In an induction proof of a sum formula, the inductive step must show that:",
+    "options": ["P(1) is true", "P(k) is true", "P(k) true implies P(k + 1) true", "P(k + 1) implies P(k)"],
+    "answer": 2,
+    "explanation": "The step links each case to the next using the assumption."
+  },
+  {
+    "id": "counterexample",
+    "type": "numeric",
+    "lesson": "induction-contradiction",
+    "concept": "Counterexample",
+    "difficulty": 2,
+    "prompt": "(HL) Claim: $2^n + 1$ is prime for all positive integers $n$. Give the smallest $n$ that is a counterexample.",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "$2^1 + 1 = 3$, $2^2 + 1 = 5$ are prime, but $2^3 + 1 = 9$ is not."
+  },
+  {
+    "id": "contradiction-start",
+    "type": "mcq",
+    "lesson": "induction-contradiction",
+    "concept": "Contradiction",
+    "difficulty": 1,
+    "prompt": "(HL) To prove ‘there is no largest prime’ by contradiction, you begin by assuming:",
+    "options": ["there are infinitely many primes", "there is a largest prime", "all numbers are prime", "2 is the only even prime"],
+    "answer": 1,
+    "explanation": "Assume the opposite of the statement to be proved."
+  },
+  {
+    "id": "induction-sum-check",
+    "type": "numeric",
+    "lesson": "induction-contradiction",
+    "concept": "Induction",
+    "difficulty": 2,
+    "prompt": "(HL) Using $\\sum_{r=1}^n r^2 = \\frac{n(n+1)(2n+1)}{6}$, evaluate the sum for $n = 10$.",
+    "answer": 385,
+    "tolerance": 0,
+    "explanation": "$\\frac{10\\times11\\times21}{6} = 385$."
+  },
+  {
+    "id": "divisibility-tf",
+    "type": "tf",
+    "lesson": "induction-contradiction",
+    "concept": "Induction",
+    "difficulty": 2,
+    "prompt": "(HL) Checking that $7^n - 1$ is divisible by 6 for $n = 1, 2, 3$ proves it for all $n$.",
+    "answer": false,
+    "explanation": "Checking cases is not a proof; induction is needed."
+  }
+]

@@ -1,0 +1,5 @@
+[
+  { "id": "dm-card", "front": "(HL) De Moivre’s theorem?", "back": "$(r\\,\\text{cis}\\,\\theta)^n = r^n\\,\\text{cis}\\,n\\theta$", "concept": "De Moivre’s theorem" },
+  { "id": "nth-roots-card", "front": "(HL) nth roots of $r\\,\\text{cis}\\,\\theta$?", "back": "$r^{1/n}\\,\\text{cis}\\frac{\\theta + 2k\\pi}{n}$, $k = 0, …, n - 1$ — a regular n-gon.", "concept": "nth roots" },
+  { "id": "conj-root-card", "front": "(HL) Conjugate root theorem?", "back": "For real-coefficient polynomials, if $z$ is a root so is $z^*$.", "concept": "Conjugate roots" }
+]

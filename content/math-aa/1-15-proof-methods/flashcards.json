@@ -1,0 +1,5 @@
+[
+  { "id": "induction-card", "front": "(HL) Four parts of induction?", "back": "Basis, assumption P(k), inductive step to P(k+1), conclusion.", "concept": "Induction" },
+  { "id": "contradiction-card", "front": "(HL) Proof by contradiction?", "back": "Assume the statement is false and derive an impossibility.", "concept": "Contradiction" },
+  { "id": "counter-card", "front": "(HL) How do you disprove a general statement?", "back": "Give one counterexample.", "concept": "Counterexample" }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "dm-power",
+    "type": "numeric",
+    "lesson": "de-moivre",
+    "concept": "De Moivre’s theorem",
+    "difficulty": 2,
+    "prompt": "Find $(\\sqrt3 + i)^6$. (It is a real number.)",
+    "answer": -64,
+    "tolerance": 0,
+    "explanation": "$\\sqrt3 + i = 2\\,\\text{cis}\\,\\frac{\\pi}{6}$; sixth power $64\\,\\text{cis}\\,\\pi = -64$."
+  },
+  {
+    "id": "conj-root",
+    "type": "mcq",
+    "lesson": "de-moivre",
+    "concept": "Conjugate roots",
+    "difficulty": 1,
+    "prompt": "A cubic with real coefficients has roots $3$ and $2 - 5i$. What is its third root?",
+    "options": ["$-2 + 5i$", "$2 + 5i$", "$-3$", "$5 - 2i$"],
+    "answer": 1,
+    "explanation": "Non-real roots of real polynomials come in conjugate pairs."
+  },
+  {
+    "id": "roots-count",
+    "type": "numeric",
+    "lesson": "de-moivre",
+    "concept": "nth roots",
+    "difficulty": 1,
+    "prompt": "How many distinct solutions does $z^5 = 1 + i$ have?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "Every non-zero complex number has exactly $n$ distinct $n$th roots."
+  },
+  {
+    "id": "roots-modulus",
+    "type": "numeric",
+    "lesson": "de-moivre",
+    "concept": "nth roots",
+    "difficulty": 2,
+    "prompt": "The solutions of $z^4 = 81i$ lie on a circle centred at the origin. What is its radius?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "$81^{1/4} = 3$."
+  },
+  {
+    "id": "unity-sum",
+    "type": "tf",
+    "lesson": "de-moivre",
+    "concept": "Roots of unity",
+    "difficulty": 2,
+    "prompt": "The sum of the five fifth roots of unity is 0.",
+    "answer": true,
+    "explanation": "They form a regular pentagon centred at the origin (and the coefficient of $z^4$ in $z^5 - 1$ is 0)."
+  },
+  {
+    "id": "quadratic-factor",
+    "type": "mcq",
+    "lesson": "de-moivre",
+    "concept": "Conjugate roots",
+    "difficulty": 3,
+    "prompt": "If $1 + 3i$ is a root of a real polynomial, which quadratic is a factor?",
+    "options": ["$z^2 - 2z + 10$", "$z^2 + 2z + 10$", "$z^2 - 2z - 8$", "$z^2 + 10$"],
+    "answer": 0,
+    "explanation": "Sum of roots $2$, product $1 + 9 = 10$: $z^2 - 2z + 10$."
+  }
+]

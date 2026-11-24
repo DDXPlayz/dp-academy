@@ -1,0 +1,56 @@
+[
+  {
+    "id": "polar-product",
+    "type": "numeric",
+    "lesson": "polar-euler",
+    "concept": "Products",
+    "difficulty": 2,
+    "prompt": "$z_1 = 3e^{i\\pi/5}$ and $z_2 = 2e^{i\\pi/10}$. Find $|z_1z_2|$.",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "Moduli multiply: $3\\times2 = 6$."
+  },
+  {
+    "id": "polar-arg-sum",
+    "type": "mcq",
+    "lesson": "polar-euler",
+    "concept": "Products",
+    "difficulty": 2,
+    "prompt": "For the same $z_1, z_2$, what is $\\arg(z_1z_2)$?",
+    "options": ["$\\pi/50$", "$3\\pi/10$", "$\\pi/10$", "$2\\pi/5$"],
+    "answer": 1,
+    "explanation": "$\\pi/5 + \\pi/10 = 3\\pi/10$."
+  },
+  {
+    "id": "euler-convert",
+    "type": "mcq",
+    "lesson": "polar-euler",
+    "concept": "Converting forms",
+    "difficulty": 2,
+    "prompt": "Write $-2i$ in Euler form.",
+    "options": ["$2e^{i\\pi/2}$", "$2e^{-i\\pi/2}$", "$-2e^{i\\pi/2}$", "$2e^{i\\pi}$"],
+    "answer": 1,
+    "explanation": "Modulus 2, pointing down the imaginary axis: argument $-\\pi/2$."
+  },
+  {
+    "id": "cis-to-cart",
+    "type": "numeric",
+    "lesson": "polar-euler",
+    "concept": "Converting forms",
+    "difficulty": 2,
+    "prompt": "Find the real part of $6\\,\\text{cis}\\,\\dfrac{2\\pi}{3}$.",
+    "answer": -3,
+    "tolerance": 0,
+    "explanation": "$6\\cos\\frac{2\\pi}{3} = 6(-\\tfrac12) = -3$."
+  },
+  {
+    "id": "times-i",
+    "type": "tf",
+    "lesson": "polar-euler",
+    "concept": "Geometric interpretation",
+    "difficulty": 1,
+    "prompt": "Multiplying a complex number by $i$ rotates it by $\\pi/2$ anticlockwise about the origin.",
+    "answer": true,
+    "explanation": "$i = e^{i\\pi/2}$: modulus 1, argument $\\pi/2$."
+  }
+]
