@@ -1,0 +1,14 @@
+[
+  { "id": "current-card", "front": "Define electric current.", "back": "Rate of flow of charge: $I = \\Delta q/\\Delta t$; 1 A = 1 C s⁻¹.", "concept": "Current" },
+  { "id": "pd-card", "front": "Define potential difference.", "back": "Work done per unit charge between two points: $V = W/q$; 1 V = 1 J C⁻¹.", "concept": "Potential difference" },
+  { "id": "emf-card", "front": "Define emf.", "back": "Work done per unit charge by a source driving charge round a complete circuit.", "concept": "Emf" },
+  { "id": "resistance-card", "front": "Resistance and its origin?", "back": "$R = V/I$; caused by collisions of charge carriers with lattice ions.", "concept": "Resistance" },
+  { "id": "resistivity-card", "front": "Resistivity equation?", "back": "$\\rho = RA/L$, in Ω m — a property of the material.", "concept": "Resistivity" },
+  { "id": "ohm-card", "front": "State Ohm’s law.", "back": "Current ∝ p.d. for a conductor at constant temperature.", "concept": "Ohm’s law" },
+  { "id": "power-card", "front": "Three forms of electrical power?", "back": "$P = IV = I^2R = V^2/R$", "concept": "Electrical power" },
+  { "id": "series-card", "front": "Series rules?", "back": "Same current; p.d.s add; $R = R_1 + R_2 + \\cdots$", "concept": "Series resistors" },
+  { "id": "parallel-card", "front": "Parallel rules?", "back": "Same p.d.; currents add; $1/R = 1/R_1 + 1/R_2 + \\cdots$", "concept": "Parallel resistors" },
+  { "id": "divider-card", "front": "Potential divider output?", "back": "$V_{\\text{out}} = V_{\\text{in}}\\dfrac{R_2}{R_1 + R_2}$", "concept": "Potential divider" },
+  { "id": "sensors-card", "front": "LDR and NTC thermistor behaviour?", "back": "LDR: resistance falls as light increases. NTC thermistor: resistance falls as temperature increases.", "concept": "Sensors" },
+  { "id": "internal-card", "front": "Emf and internal resistance equations?", "back": "$\\varepsilon = I(R + r)$, terminal p.d. $V = \\varepsilon - Ir$.", "concept": "Internal resistance" }
+]
