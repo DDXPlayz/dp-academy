@@ -1,0 +1,5 @@
+[
+  { "id": "logger-card", "front": "Advantages of data loggers?", "back": "High sampling rate, no reaction time, long unattended recording, direct transfer to computer.", "concept": "Data loggers" },
+  { "id": "sampling-card", "front": "Sampling rate?", "back": "Readings taken per second — must be high enough to capture the event.", "concept": "Sampling rate" },
+  { "id": "sim-card", "front": "Why use simulations?", "back": "To model systems too big, small, fast, slow, dangerous or costly to test — then check against data.", "concept": "Simulations" }
+]

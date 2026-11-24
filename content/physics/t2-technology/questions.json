@@ -1,0 +1,45 @@
+[
+  {
+    "id": "logger-advantage",
+    "type": "multi",
+    "lesson": "sensors-spreadsheets",
+    "concept": "Data loggers",
+    "difficulty": 1,
+    "prompt": "Which are advantages of using a data logger with sensors?",
+    "options": ["High sampling rates for fast events", "No human reaction time", "No need to calibrate the sensors", "Can record over long periods unattended"],
+    "answers": [0, 1, 3],
+    "explanation": "Sensors still need calibrating — the other three are genuine advantages."
+  },
+  {
+    "id": "sampling-rate",
+    "type": "mcq",
+    "lesson": "sensors-spreadsheets",
+    "concept": "Sampling rate",
+    "difficulty": 2,
+    "prompt": "A collision between two trolleys lasts about 0.05 s. Which sampling rate is most suitable to record the force during it?",
+    "options": ["1 reading per second", "10 readings per second", "1000 readings per second", "1 reading per minute"],
+    "answer": 2,
+    "explanation": "At 1000 Hz you get about 50 readings during the collision — enough to see its shape."
+  },
+  {
+    "id": "simulation-check",
+    "type": "tf",
+    "lesson": "sensors-spreadsheets",
+    "concept": "Simulations",
+    "difficulty": 1,
+    "prompt": "A computer simulation’s predictions should be tested against experimental data.",
+    "answer": true,
+    "explanation": "A model rests on assumptions; comparing with real data tests and refines it."
+  },
+  {
+    "id": "spreadsheet-header",
+    "type": "mcq",
+    "lesson": "sensors-spreadsheets",
+    "concept": "Spreadsheets",
+    "difficulty": 1,
+    "prompt": "Which is the best column heading for squared periods in a spreadsheet?",
+    "options": ["T squared", "T² / s²", "s²", "Period"],
+    "answer": 1,
+    "explanation": "Headings show the quantity and its unit, separated by a slash."
+  }
+]

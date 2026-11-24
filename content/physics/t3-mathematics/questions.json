@@ -1,0 +1,158 @@
+[
+  {
+    "id": "base-units-joule",
+    "type": "mcq",
+    "lesson": "units-sig-figs",
+    "concept": "SI units",
+    "difficulty": 1,
+    "prompt": "What is the joule in SI base units?",
+    "options": ["kg m s⁻²", "kg m² s⁻²", "kg m² s⁻³", "N m"],
+    "answer": 1,
+    "explanation": "$W = Fs$: kg m s⁻² × m = kg m² s⁻². (N m is correct but not in base units.)"
+  },
+  {
+    "id": "base-unit-list",
+    "type": "multi",
+    "lesson": "units-sig-figs",
+    "concept": "SI units",
+    "difficulty": 1,
+    "prompt": "Which are SI base units?",
+    "options": ["ampere", "volt", "kelvin", "newton"],
+    "answers": [0, 2],
+    "explanation": "Volt and newton are derived units."
+  },
+  {
+    "id": "sig-figs",
+    "type": "numeric",
+    "lesson": "units-sig-figs",
+    "concept": "Significant figures",
+    "difficulty": 1,
+    "prompt": "A car travels 120 m (3 s.f.) in 7.3 s (2 s.f.). Give its average speed to the correct number of significant figures, in m s⁻¹.",
+    "answer": 16,
+    "tolerance": 0.001,
+    "unit": "m s⁻¹",
+    "explanation": "$120/7.3 = 16.4…$; the least precise datum has 2 s.f., so 16 m s⁻¹."
+  },
+  {
+    "id": "order-mag",
+    "type": "mcq",
+    "lesson": "units-sig-figs",
+    "concept": "Orders of magnitude",
+    "difficulty": 2,
+    "prompt": "What is the order of magnitude of the number of seconds in a year?",
+    "options": ["10⁵", "10⁶", "10⁷", "10⁹"],
+    "answer": 2,
+    "explanation": "$365\\times24\\times3600 \\approx 3.2\\times10^7$ s."
+  },
+  {
+    "id": "random-systematic",
+    "type": "mcq",
+    "lesson": "uncertainties",
+    "concept": "Errors",
+    "difficulty": 1,
+    "prompt": "Repeating measurements and averaging reduces:",
+    "options": ["systematic errors only", "random errors only", "both random and systematic errors", "neither"],
+    "answer": 1,
+    "explanation": "Averaging cancels random scatter but cannot remove a consistent shift."
+  },
+  {
+    "id": "precise-accurate",
+    "type": "tf",
+    "lesson": "uncertainties",
+    "concept": "Accuracy and precision",
+    "difficulty": 2,
+    "prompt": "A set of readings can be precise but not accurate.",
+    "answer": true,
+    "explanation": "Readings can agree closely with each other (precise) but all be shifted by a systematic error (inaccurate)."
+  },
+  {
+    "id": "power-uncertainty",
+    "type": "numeric",
+    "lesson": "uncertainties",
+    "concept": "Propagation",
+    "difficulty": 2,
+    "prompt": "The radius of a sphere is measured with a 2% uncertainty. What is the percentage uncertainty in its volume?",
+    "answer": 6,
+    "tolerance": 0.01,
+    "unit": "%",
+    "explanation": "$V \\propto r^3$, so multiply by 3: 6%."
+  },
+  {
+    "id": "sum-uncertainty",
+    "type": "numeric",
+    "lesson": "uncertainties",
+    "concept": "Propagation",
+    "difficulty": 1,
+    "prompt": "Masses of 150 ± 2 g and 80 ± 1 g are added. What is the absolute uncertainty in the total, in g?",
+    "answer": 3,
+    "tolerance": 0.01,
+    "unit": "g",
+    "explanation": "For sums, add absolute uncertainties: 2 + 1 = 3 g."
+  },
+  {
+    "id": "quotient-uncertainty",
+    "type": "numeric",
+    "lesson": "uncertainties",
+    "concept": "Propagation",
+    "difficulty": 2,
+    "prompt": "V = 6.0 ± 0.1 V and I = 2.0 ± 0.1 A. What is the absolute uncertainty in R = V/I, in Ω?",
+    "answer": 0.2,
+    "tolerance": 0.05,
+    "unit": "Ω",
+    "explanation": "$R = 3.0\\ \\Omega$; fractional uncertainty $0.1/6.0 + 0.1/2.0 = 0.067$; $\\Delta R = 0.2\\ \\Omega$."
+  },
+  {
+    "id": "sqrt-uncertainty",
+    "type": "mcq",
+    "lesson": "uncertainties",
+    "concept": "Propagation",
+    "difficulty": 2,
+    "prompt": "L has a percentage uncertainty of 4%. What is the percentage uncertainty in √L?",
+    "options": ["16%", "8%", "4%", "2%"],
+    "answer": 3,
+    "explanation": "A square root is a power of ½, so halve the percentage uncertainty."
+  },
+  {
+    "id": "loglog-gradient",
+    "type": "mcq",
+    "lesson": "graphs",
+    "concept": "Linearisation",
+    "difficulty": 2,
+    "prompt": "A graph of ln y against ln x is a straight line with gradient 1.5. The relationship is:",
+    "options": ["y ∝ x", "y ∝ x^1.5", "y ∝ e^(1.5x)", "y ∝ ln x"],
+    "answer": 1,
+    "explanation": "$\\ln y = n\\ln x + \\ln k$, so $y = kx^n$ with $n = 1.5$."
+  },
+  {
+    "id": "pendulum-plot",
+    "type": "mcq",
+    "lesson": "graphs",
+    "concept": "Linearisation",
+    "difficulty": 2,
+    "prompt": "To find g from pendulum data using T = 2π√(L/g), which graph gives a straight line through the origin?",
+    "options": ["T against L", "T² against L", "T against √g", "ln T against L"],
+    "answer": 1,
+    "explanation": "$T^2 = (4\\pi^2/g)L$ — a straight line through the origin with gradient $4\\pi^2/g$."
+  },
+  {
+    "id": "gradient-unc",
+    "type": "numeric",
+    "lesson": "graphs",
+    "concept": "Gradient uncertainty",
+    "difficulty": 2,
+    "prompt": "The maximum and minimum gradient lines on a graph have gradients 2.4 and 1.8. What is the uncertainty in the gradient?",
+    "answer": 0.3,
+    "tolerance": 0.01,
+    "explanation": "$\\Delta m = (2.4 - 1.8)/2 = 0.3$."
+  },
+  {
+    "id": "intercept-systematic",
+    "type": "tf",
+    "lesson": "graphs",
+    "concept": "Interpreting graphs",
+    "difficulty": 2,
+    "prompt": "If theory predicts a line through the origin but the best-fit line has a clear non-zero intercept, a systematic error is likely.",
+    "answer": true,
+    "explanation": "A constant offset in every reading shifts the line without changing its gradient."
+  }
+]

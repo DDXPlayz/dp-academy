@@ -1,0 +1,10 @@
+[
+  { "id": "si-card", "front": "The seven SI base units?", "back": "kg, m, s, A, K, mol, cd.", "concept": "SI units" },
+  { "id": "sf-card", "front": "How many significant figures in a calculated answer?", "back": "The same as the least precise datum (for × and ÷).", "concept": "Significant figures" },
+  { "id": "errors-card", "front": "Random vs systematic error?", "back": "Random: scatter, reduced by averaging (precision). Systematic: consistent shift, not reduced by repeating (accuracy).", "concept": "Errors" },
+  { "id": "prop-sum-card", "front": "Uncertainty in a sum or difference?", "back": "Add the absolute uncertainties.", "concept": "Propagation" },
+  { "id": "prop-prod-card", "front": "Uncertainty in a product or quotient?", "back": "Add the fractional (percentage) uncertainties.", "concept": "Propagation" },
+  { "id": "prop-power-card", "front": "Uncertainty in aⁿ?", "back": "Multiply the fractional uncertainty of a by |n|.", "concept": "Propagation" },
+  { "id": "grad-unc-card", "front": "Gradient uncertainty from a graph?", "back": "(max gradient − min gradient)/2, using extreme lines through the error bars.", "concept": "Gradient uncertainty" },
+  { "id": "linearise-card", "front": "How to find n in y = kxⁿ?", "back": "Plot ln y against ln x: gradient n, intercept ln k.", "concept": "Linearisation" }
+]

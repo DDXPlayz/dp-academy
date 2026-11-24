@@ -1,0 +1,7 @@
+[
+  { "id": "resolution-card", "front": "Resolution of metre rule, vernier, micrometer?", "back": "1 mm, 0.1 mm, 0.01 mm.", "concept": "Choosing instruments" },
+  { "id": "multiples-card", "front": "Why time 20 oscillations instead of one?", "back": "Reaction-time uncertainty is shared over 20, cutting the percentage uncertainty.", "concept": "Reducing uncertainty" },
+  { "id": "meters-card", "front": "How are ammeters and voltmeters connected?", "back": "Ammeter in series; voltmeter in parallel.", "concept": "Electrical measurements" },
+  { "id": "parallax-err-card", "front": "Parallax error?", "back": "Reading a scale at an angle; avoid by viewing at eye level, perpendicular to the scale.", "concept": "Errors" },
+  { "id": "risk-card", "front": "Three things a risk assessment covers?", "back": "Safety, ethics and environmental impact.", "concept": "Safety" }
+]
