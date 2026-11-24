@@ -7,5 +7,51 @@
     "prompt": "A proton enters a uniform magnetic field of flux density $0.25\\ \\text{T}$ with a speed of $2.0 \\times 10^{6}\\ \\text{m s}^{-1}$, moving perpendicular to the field.\n\n**(a)** Explain why the proton moves in a circle. **[2]**\n\n**(b)** Calculate the radius of the circle. **[2]**\n\n**(c)** Show that the time for one revolution does not depend on the speed of the proton, and calculate it. **[2]**",
     "markscheme": "**(a)** The magnetic force $qvB$ is always perpendicular to the velocity ✓, so it changes the direction but not the speed, and acts as a centripetal force of constant size ✓\n\n**(b)** $qvB = \\tfrac{mv^2}{r} \\Rightarrow r = \\tfrac{mv}{qB}$ ✓ $= \\tfrac{1.67 \\times 10^{-27} \\times 2.0 \\times 10^{6}}{1.60 \\times 10^{-19} \\times 0.25} \\approx 0.084\\ \\text{m}$ ✓\n\n**(c)** $T = \\tfrac{2\\pi r}{v} = \\tfrac{2\\pi m}{qB}$, which contains no $v$ ✓; $T = \\tfrac{2\\pi \\times 1.67 \\times 10^{-27}}{1.60 \\times 10^{-19} \\times 0.25} \\approx 2.6 \\times 10^{-7}\\ \\text{s}$ ✓",
     "source": "original"
+  },
+  {
+    "id": "p1a-electron-ke-gain",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "D.3",
+    "prompt": "An electron is accelerated from rest through a potential difference of $250\\ \\text{V}$. What is its kinetic energy?",
+    "options": ["$250\\ \\text{J}$", "$4.0 \\times 10^{-17}\\ \\text{J}$", "$1.6 \\times 10^{-19}\\ \\text{J}$", "$6.4 \\times 10^{-22}\\ \\text{J}$"],
+    "answer": 1,
+    "markscheme": "**B.** $E_k = eV = 1.6\\times10^{-19} \\times 250 = 4.0\\times10^{-17}$ J.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-magnetic-ke",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "D.3",
+    "prompt": "An electron moves in a circular path in a uniform magnetic field. The magnetic flux density is doubled. What happens to the kinetic energy of the electron and the radius of its path?",
+    "options": ["Kinetic energy unchanged, radius halved", "Kinetic energy unchanged, radius doubled", "Kinetic energy doubled, radius halved", "Kinetic energy halved, radius unchanged"],
+    "answer": 0,
+    "markscheme": "**A.** The magnetic force does no work, so $E_k$ is unchanged; $r = mv/qB$ halves when $B$ doubles.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-parallel-wires-force",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "D.3",
+    "prompt": "Two long parallel wires carry currents $I$ and $2I$ in the same direction and attract each other with force per unit length $F$. Both currents are doubled and the separation is doubled. What is the new force per unit length?",
+    "options": ["$F$", "$2F$", "$4F$", "$8F$"],
+    "answer": 1,
+    "markscheme": "**B.** $F/L \\propto I_1I_2/r$: the currents give a factor of 4 and the separation divides by 2.",
+    "source": "original"
+  },
+  {
+    "id": "p2-velocity-selector-mass",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 6,
+    "subtopic": "D.3",
+    "prompt": "Singly charged positive ions pass through a region where a uniform electric field of $4.0 \\times 10^{4}\\ \\text{V m}^{-1}$ is perpendicular to a uniform magnetic field of $0.20\\ \\text{T}$. Both fields are perpendicular to the ions’ velocity.\n\n**(a)** Explain why only ions of one speed pass through undeflected and calculate that speed. **[3]**\n\n**(b)** The undeflected ions then enter a region containing only a magnetic field of $0.20\\ \\text{T}$ and move in a semicircle of radius $0.21\\ \\text{m}$. Determine the mass of an ion. **[3]**",
+    "markscheme": "**(a)** The electric force $qE$ and magnetic force $qvB$ act in opposite directions ✓; they balance only when $v = E/B$, any other speed gives a resultant force ✓; $v = \\tfrac{4.0\\times10^4}{0.20} = 2.0\\times10^5\\ \\text{m s}^{-1}$ ✓\n\n**(b)** $r = \\tfrac{mv}{qB}$ ✓; $m = \\tfrac{qBr}{v} = \\tfrac{1.6\\times10^{-19} \\times 0.20 \\times 0.21}{2.0\\times10^5}$ ✓ $\\approx 3.4\\times10^{-26}\\ \\text{kg}$ ✓",
+    "source": "original"
   }
 ]

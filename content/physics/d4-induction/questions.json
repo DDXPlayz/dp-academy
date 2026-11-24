@@ -1,0 +1,157 @@
+[
+  {
+    "id": "flux-calc",
+    "type": "numeric",
+    "lesson": "flux-faraday",
+    "concept": "Magnetic flux",
+    "difficulty": 1,
+    "prompt": "A loop of area 0.050 m² is in a 0.40 T field, with the field at 60° to the normal of the loop. What is the flux through it?",
+    "answer": 0.01,
+    "tolerance": 0.01,
+    "unit": "Wb",
+    "explanation": "$\\Phi = BA\\cos\\theta = 0.40\\times0.050\\times\\cos60^\\circ = 0.010$ Wb."
+  },
+  {
+    "id": "flux-zero",
+    "type": "mcq",
+    "lesson": "flux-faraday",
+    "concept": "Magnetic flux",
+    "difficulty": 1,
+    "prompt": "The flux through a flat loop in a uniform magnetic field is zero when:",
+    "options": ["the field is perpendicular to the plane of the loop", "the field is parallel to the plane of the loop", "the loop is at 45° to the field", "the field is very strong"],
+    "answer": 1,
+    "explanation": "If the field lies in the plane of the loop, no field lines pass through it: $\\theta = 90^\\circ$ between B and the normal, $\\cos90^\\circ = 0$."
+  },
+  {
+    "id": "faraday-coil",
+    "type": "numeric",
+    "lesson": "flux-faraday",
+    "concept": "Faraday’s law",
+    "difficulty": 2,
+    "prompt": "A 500-turn coil of area 2.0 × 10⁻³ m² is perpendicular to a field that rises uniformly from 0 to 0.30 T in 0.15 s. What is the size of the induced emf?",
+    "answer": 2,
+    "tolerance": 0.01,
+    "unit": "V",
+    "explanation": "$\\varepsilon = N\\Delta\\Phi/\\Delta t = 500\\times0.30\\times2.0\\times10^{-3}/0.15 = 2.0$ V."
+  },
+  {
+    "id": "steady-flux",
+    "type": "tf",
+    "lesson": "flux-faraday",
+    "concept": "Faraday’s law",
+    "difficulty": 1,
+    "prompt": "A coil held still in a very strong, steady magnetic field has a large emf induced in it.",
+    "answer": false,
+    "explanation": "Only a **changing** flux linkage induces an emf. Steady field, stationary coil: no emf."
+  },
+  {
+    "id": "bvl-rod",
+    "type": "numeric",
+    "lesson": "flux-faraday",
+    "concept": "Emf in a moving conductor",
+    "difficulty": 1,
+    "prompt": "A 0.50 m rod moves at 4.0 m s⁻¹ perpendicular to a 0.25 T field. What emf is induced across it?",
+    "answer": 0.5,
+    "tolerance": 0.01,
+    "unit": "V",
+    "explanation": "$\\varepsilon = BvL = 0.25\\times4.0\\times0.50 = 0.50$ V."
+  },
+  {
+    "id": "emf-ways",
+    "type": "multi",
+    "lesson": "flux-faraday",
+    "concept": "Faraday’s law",
+    "difficulty": 2,
+    "prompt": "Which of these would induce an emf in a coil?",
+    "options": ["Rotating the coil in a uniform field", "Moving a magnet towards the coil", "Switching on a current in a nearby coil", "Moving the coil parallel to the field lines inside a uniform field"],
+    "answers": [0, 1, 2],
+    "explanation": "The first three all change the flux linkage. Sliding a coil through a **uniform** field (staying fully inside it) changes nothing."
+  },
+  {
+    "id": "lenz-pole",
+    "type": "mcq",
+    "lesson": "lenz-law",
+    "concept": "Lenz’s law",
+    "difficulty": 2,
+    "prompt": "The south pole of a magnet is pulled away from the end of a coil. The induced current makes that end of the coil:",
+    "options": ["a north pole, repelling the magnet", "a north pole, attracting the magnet", "a south pole, attracting the magnet", "a south pole, repelling the magnet"],
+    "answer": 1,
+    "explanation": "The induced current opposes the magnet leaving, so it attracts it. A north pole attracts the retreating south pole."
+  },
+  {
+    "id": "lenz-energy",
+    "type": "mcq",
+    "lesson": "lenz-law",
+    "concept": "Lenz’s law",
+    "difficulty": 2,
+    "prompt": "Lenz’s law is a consequence of the conservation of:",
+    "options": ["charge", "momentum", "energy", "mass"],
+    "answer": 2,
+    "explanation": "If the induced current assisted the change, energy would be created from nothing. Opposition means work must be done."
+  },
+  {
+    "id": "lenz-change",
+    "type": "tf",
+    "lesson": "lenz-law",
+    "concept": "Lenz’s law",
+    "difficulty": 2,
+    "prompt": "The induced current always produces a magnetic field opposite in direction to the external field.",
+    "answer": false,
+    "explanation": "It opposes the **change**. If the external flux is decreasing, the induced field points the **same** way as the external field."
+  },
+  {
+    "id": "eddy-brake",
+    "type": "mcq",
+    "lesson": "lenz-law",
+    "concept": "Eddy currents",
+    "difficulty": 2,
+    "prompt": "A copper plate swings between the poles of a magnet and quickly stops. Its kinetic energy has mainly become:",
+    "options": ["magnetic energy stored in the magnet", "internal energy of the plate", "gravitational potential energy", "electrical energy stored on the plate"],
+    "answer": 1,
+    "explanation": "Eddy currents are induced in the plate; they oppose the motion and dissipate energy as heating in the plate."
+  },
+  {
+    "id": "generator-speed",
+    "type": "mcq",
+    "lesson": "generators",
+    "concept": "Generators",
+    "difficulty": 2,
+    "prompt": "The rotation frequency of a simple ac generator is doubled. What happens to the peak emf and the frequency of the output?",
+    "options": ["peak unchanged, frequency doubled", "peak doubled, frequency unchanged", "both doubled", "peak quadrupled, frequency doubled"],
+    "answer": 2,
+    "explanation": "$\\varepsilon_0 = NBA\\omega$ doubles, and the output completes twice as many cycles per second."
+  },
+  {
+    "id": "peak-emf",
+    "type": "numeric",
+    "lesson": "generators",
+    "concept": "Generators",
+    "difficulty": 3,
+    "prompt": "A 100-turn coil of area 0.020 m² rotates at 50 revolutions per second in a 0.10 T field. What is the peak emf?",
+    "answer": 62.83,
+    "tolerance": 0.02,
+    "unit": "V",
+    "explanation": "$\\omega = 2\\pi\\times50 = 314$ rad s⁻¹; $\\varepsilon_0 = NBA\\omega = 100\\times0.10\\times0.020\\times314 = 63$ V."
+  },
+  {
+    "id": "emf-max-position",
+    "type": "mcq",
+    "lesson": "generators",
+    "concept": "Generators",
+    "difficulty": 2,
+    "prompt": "The emf of a rotating coil is greatest when the plane of the coil is:",
+    "options": ["perpendicular to the field, where flux is maximum", "parallel to the field, where flux is zero", "at 45° to the field", "the emf is the same at all positions"],
+    "answer": 1,
+    "explanation": "Emf depends on the **rate of change** of flux, which is greatest as the flux passes through zero."
+  },
+  {
+    "id": "generator-load",
+    "type": "tf",
+    "lesson": "generators",
+    "concept": "Generators",
+    "difficulty": 2,
+    "prompt": "A generator becomes harder to turn when more current is drawn from it.",
+    "answer": true,
+    "explanation": "The current in the coil experiences forces that oppose the rotation (Lenz’s law), so more mechanical work is needed."
+  }
+]

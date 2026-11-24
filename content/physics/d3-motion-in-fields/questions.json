@@ -1,0 +1,182 @@
+[
+  {
+    "id": "electron-accel-speed",
+    "type": "numeric",
+    "lesson": "electric-field-motion",
+    "concept": "Acceleration through a p.d.",
+    "difficulty": 1,
+    "prompt": "A proton (m = 1.67 × 10⁻²⁷ kg) is accelerated from rest through 1000 V. What is its final speed?",
+    "answer": 4.38e5,
+    "tolerance": 0.02,
+    "unit": "m s⁻¹",
+    "explanation": "$v = \\sqrt{2qV/m} = \\sqrt{2\\times1.60\\times10^{-19}\\times1000/1.67\\times10^{-27}} = 4.4\\times10^5$ m s⁻¹."
+  },
+  {
+    "id": "ev-joules",
+    "type": "numeric",
+    "lesson": "electric-field-motion",
+    "concept": "Electronvolt",
+    "difficulty": 1,
+    "prompt": "An alpha particle (charge +2e) is accelerated through 500 V. What kinetic energy does it gain, in eV?",
+    "answer": 1000,
+    "tolerance": 0.01,
+    "unit": "eV",
+    "explanation": "$E = qV = 2e \\times 500\\ \\text{V} = 1000$ eV."
+  },
+  {
+    "id": "parabola-path",
+    "type": "mcq",
+    "lesson": "electric-field-motion",
+    "concept": "Motion across a uniform field",
+    "difficulty": 1,
+    "prompt": "An electron enters the uniform field between two parallel plates moving at right angles to the field. Its path between the plates is:",
+    "options": ["a straight line", "a circular arc", "a parabola", "a spiral"],
+    "answer": 2,
+    "explanation": "Constant velocity along the plates plus constant acceleration across them gives a parabola, like a projectile."
+  },
+  {
+    "id": "deflection-time",
+    "type": "numeric",
+    "lesson": "electric-field-motion",
+    "concept": "Motion across a uniform field",
+    "difficulty": 3,
+    "prompt": "An electron enters plates 4.0 cm long at 2.0 × 10⁷ m s⁻¹, perpendicular to a field of 5.0 × 10³ V m⁻¹. What is its sideways deflection at the exit, in mm?",
+    "answer": 1.756,
+    "tolerance": 0.03,
+    "unit": "mm",
+    "explanation": "$t = 0.040/2.0\\times10^7 = 2.0\\times10^{-9}$ s; $a = eE/m = 8.78\\times10^{14}$ m s⁻²; $y = \\tfrac{1}{2}at^2 = 1.76\\times10^{-3}$ m."
+  },
+  {
+    "id": "negative-direction",
+    "type": "tf",
+    "lesson": "electric-field-motion",
+    "concept": "Force in a uniform field",
+    "difficulty": 1,
+    "prompt": "An electron released between charged plates accelerates towards the negative plate.",
+    "answer": false,
+    "explanation": "Electrons are negative, so they are pushed against the field — towards the **positive** plate."
+  },
+  {
+    "id": "qvb-force",
+    "type": "numeric",
+    "lesson": "magnetic-field-motion",
+    "concept": "Magnetic force on a charge",
+    "difficulty": 1,
+    "prompt": "A proton moves at 3.0 × 10⁵ m s⁻¹ perpendicular to a 0.50 T field. What is the magnetic force on it?",
+    "answer": 2.4e-14,
+    "tolerance": 0.01,
+    "unit": "N",
+    "explanation": "$F = qvB = 1.60\\times10^{-19}\\times3.0\\times10^5\\times0.50 = 2.4\\times10^{-14}$ N."
+  },
+  {
+    "id": "no-work",
+    "type": "mcq",
+    "lesson": "magnetic-field-motion",
+    "concept": "Circular motion in a magnetic field",
+    "difficulty": 2,
+    "prompt": "A charged particle moves in a circle in a uniform magnetic field. Which quantity stays constant?",
+    "options": ["velocity", "momentum", "kinetic energy", "acceleration"],
+    "answer": 2,
+    "explanation": "The force is perpendicular to the motion, so it does no work: speed and kinetic energy are constant. Velocity, momentum and acceleration all change direction."
+  },
+  {
+    "id": "radius-proton",
+    "type": "numeric",
+    "lesson": "magnetic-field-motion",
+    "concept": "Radius of circular path",
+    "difficulty": 2,
+    "prompt": "A proton (m = 1.67 × 10⁻²⁷ kg) moves at 5.0 × 10⁶ m s⁻¹ perpendicular to a 0.20 T field. What is the radius of its path?",
+    "answer": 0.261,
+    "tolerance": 0.02,
+    "unit": "m",
+    "explanation": "$r = mv/qB = 1.67\\times10^{-27}\\times5.0\\times10^6/(1.60\\times10^{-19}\\times0.20) = 0.26$ m."
+  },
+  {
+    "id": "radius-double-speed",
+    "type": "mcq",
+    "lesson": "magnetic-field-motion",
+    "concept": "Radius of circular path",
+    "difficulty": 2,
+    "prompt": "The speed of a charged particle in a uniform magnetic field is doubled. What happens to the radius and the period of its circular path?",
+    "options": ["radius doubles, period doubles", "radius doubles, period unchanged", "radius unchanged, period halves", "radius quadruples, period doubles"],
+    "answer": 1,
+    "explanation": "$r = mv/qB \\propto v$, but $T = 2\\pi m/qB$ has no $v$ in it."
+  },
+  {
+    "id": "parallel-no-force",
+    "type": "tf",
+    "lesson": "magnetic-field-motion",
+    "concept": "Magnetic force on a charge",
+    "difficulty": 1,
+    "prompt": "An electron moving parallel to a magnetic field feels no magnetic force.",
+    "answer": true,
+    "explanation": "$F = qvB\\sin\\theta$ with $\\theta = 0$, so $F = 0$."
+  },
+  {
+    "id": "velocity-selector",
+    "type": "numeric",
+    "lesson": "magnetic-field-motion",
+    "concept": "Velocity selector",
+    "difficulty": 2,
+    "prompt": "A velocity selector has E = 6.0 × 10⁴ V m⁻¹ and B = 0.30 T. What speed passes straight through?",
+    "answer": 2e5,
+    "tolerance": 0.01,
+    "unit": "m s⁻¹",
+    "explanation": "$v = E/B = 6.0\\times10^4/0.30 = 2.0\\times10^5$ m s⁻¹."
+  },
+  {
+    "id": "selector-mass",
+    "type": "tf",
+    "lesson": "magnetic-field-motion",
+    "concept": "Velocity selector",
+    "difficulty": 2,
+    "prompt": "A velocity selector lets through only particles of one particular mass.",
+    "answer": false,
+    "explanation": "$qE = qvB$ gives $v = E/B$: the charge cancels and mass never appears. It selects speed only."
+  },
+  {
+    "id": "bil-force",
+    "type": "numeric",
+    "lesson": "force-on-conductors",
+    "concept": "Force on a wire",
+    "difficulty": 1,
+    "prompt": "A 0.15 m wire carries 4.0 A at 30° to a 0.20 T magnetic field. What force acts on it?",
+    "answer": 0.06,
+    "tolerance": 0.01,
+    "unit": "N",
+    "explanation": "$F = BIL\\sin\\theta = 0.20\\times4.0\\times0.15\\times0.5 = 0.060$ N."
+  },
+  {
+    "id": "wire-force",
+    "type": "numeric",
+    "lesson": "force-on-conductors",
+    "concept": "Parallel wires",
+    "difficulty": 2,
+    "prompt": "Two long parallel wires 0.10 m apart each carry 5.0 A. What is the force per metre between them? (μ₀ = 4π × 10⁻⁷ T m A⁻¹)",
+    "answer": 5e-5,
+    "tolerance": 0.01,
+    "unit": "N m⁻¹",
+    "explanation": "$F/L = \\mu_0I_1I_2/2\\pi r = 4\\pi\\times10^{-7}\\times25/(2\\pi\\times0.10) = 5.0\\times10^{-5}$ N m⁻¹."
+  },
+  {
+    "id": "parallel-attract",
+    "type": "mcq",
+    "lesson": "force-on-conductors",
+    "concept": "Parallel wires",
+    "difficulty": 1,
+    "prompt": "Two parallel wires carry currents in opposite directions. The wires:",
+    "options": ["attract", "repel", "feel no force", "twist"],
+    "answer": 1,
+    "explanation": "Antiparallel currents repel; parallel currents attract."
+  },
+  {
+    "id": "third-law-wires",
+    "type": "tf",
+    "lesson": "force-on-conductors",
+    "concept": "Parallel wires",
+    "difficulty": 2,
+    "prompt": "If wire 1 carries twice the current of wire 2, wire 1 feels twice the force that wire 2 feels.",
+    "answer": false,
+    "explanation": "By Newton’s third law the forces are equal and opposite. $F/L = \\mu_0I_1I_2/2\\pi r$ is symmetric in the two currents."
+  }
+]

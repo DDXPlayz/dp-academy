@@ -1,0 +1,12 @@
+[
+  { "id": "uniform-e-motion", "front": "Motion of a charge in a uniform electric field?", "back": "Constant force $qE$, constant acceleration $qE/m$ — along the field for +, against it for −.", "concept": "Force in a uniform field" },
+  { "id": "qv-energy", "front": "Speed after accelerating from rest through p.d. V?", "back": "$\\tfrac{1}{2}mv^2 = qV \\Rightarrow v = \\sqrt{2qV/m}$", "concept": "Acceleration through a p.d." },
+  { "id": "ev-card", "front": "What is an electronvolt?", "back": "Energy gained by an electron crossing 1 V: 1 eV = 1.60 × 10⁻¹⁹ J.", "concept": "Electronvolt" },
+  { "id": "parabola-card", "front": "Path of a charge entering a uniform E field at 90°?", "back": "A parabola — constant velocity along the plates, constant acceleration across them.", "concept": "Motion across a uniform field" },
+  { "id": "qvb-card", "front": "Magnetic force on a moving charge?", "back": "$F = qvB\\sin\\theta$, perpendicular to both v and B.", "concept": "Magnetic force on a charge" },
+  { "id": "circle-card", "front": "Why does a charge move in a circle in a uniform B field?", "back": "The force is always perpendicular to v: it does no work, so speed is constant and the force acts as a centripetal force.", "concept": "Circular motion in a magnetic field" },
+  { "id": "r-card", "front": "Radius and period in a magnetic field?", "back": "$r = mv/qB$; $T = 2\\pi m/qB$ (independent of speed).", "concept": "Radius of circular path" },
+  { "id": "selector-card", "front": "Velocity selector condition?", "back": "$qE = qvB \\Rightarrow v = E/B$, independent of q and m.", "concept": "Velocity selector" },
+  { "id": "bil-card", "front": "Force on a current-carrying wire?", "back": "$F = BIL\\sin\\theta$", "concept": "Force on a wire" },
+  { "id": "wires-card", "front": "Force per unit length between parallel wires?", "back": "$F/L = \\mu_0I_1I_2/2\\pi r$; same direction attract, opposite repel.", "concept": "Parallel wires" }
+]

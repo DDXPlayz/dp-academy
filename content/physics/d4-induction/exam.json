@@ -1,0 +1,50 @@
+[
+  {
+    "id": "p1a-flux-rotate",
+    "paper": "1A",
+    "level": "HL",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "D.4",
+    "prompt": "A flat coil of area $A$ is in a uniform field $B$, with its plane perpendicular to the field. The coil is rotated through $90^\\circ$. What is the change in the magnitude of flux through it?",
+    "options": ["$0$", "$BA/2$", "$BA$", "$2BA$"],
+    "answer": 2,
+    "markscheme": "**C.** The flux falls from $BA$ (field along the normal) to $0$ (field in the plane).",
+    "source": "original"
+  },
+  {
+    "id": "p1a-generator-graph",
+    "paper": "1A",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "D.4",
+    "prompt": "A simple generator produces an alternating emf of peak value $\\varepsilon_0$ and period $T$. The coil is rotated at half the original speed. What are the new peak emf and period?",
+    "options": ["$\\varepsilon_0,\\ 2T$", "$\\varepsilon_0/2,\\ 2T$", "$\\varepsilon_0/2,\\ T/2$", "$2\\varepsilon_0,\\ T/2$"],
+    "answer": 1,
+    "markscheme": "**B.** $\\varepsilon_0 = NBA\\omega$ halves; the period doubles.",
+    "source": "original"
+  },
+  {
+    "id": "p2-sliding-rod",
+    "paper": "2",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 7,
+    "subtopic": "D.4",
+    "prompt": "A metal rod of length $0.40\\ \\text{m}$ slides at a constant $3.0\\ \\text{m s}^{-1}$ along two horizontal rails connected by a $2.0\\ \\Omega$ resistor. A uniform vertical magnetic field of $0.50\\ \\text{T}$ acts across the rails. The rails and rod have negligible resistance.\n\n**(a)** Explain, using Faraday’s law, why an emf is induced in the circuit. **[2]**\n\n**(b)** Calculate the current in the resistor. **[2]**\n\n**(c)** Determine the force needed to keep the rod moving at constant speed and show that the rate of work done by this force equals the power dissipated in the resistor. **[3]**",
+    "markscheme": "**(a)** As the rod moves, the area of the circuit inside the field increases ✓, so the flux linkage changes and an emf equal to its rate of change is induced ✓\n\n**(b)** $\\varepsilon = BvL = 0.50\\times3.0\\times0.40 = 0.60\\ \\text{V}$ ✓; $I = 0.60/2.0 = 0.30\\ \\text{A}$ ✓\n\n**(c)** Magnetic force on the rod $F = BIL = 0.50\\times0.30\\times0.40 = 0.060\\ \\text{N}$, opposing the motion (Lenz), so an equal applied force is needed ✓; $P = Fv = 0.060\\times3.0 = 0.18\\ \\text{W}$ ✓; $I^2R = 0.30^2\\times2.0 = 0.18\\ \\text{W}$, the same ✓",
+    "source": "original"
+  },
+  {
+    "id": "p2-magnet-through-coil",
+    "paper": "2",
+    "level": "HL",
+    "difficulty": "hard",
+    "marks": 5,
+    "subtopic": "D.4",
+    "prompt": "A bar magnet is dropped, north pole first, through a vertical coil connected to a data logger that records the induced emf.\n\n**(a)** Describe and explain the shape of the emf–time graph as the magnet falls into and then out of the coil. **[3]**\n\n**(b)** Explain why the magnet’s acceleration while passing through the coil is less than $g$ when the coil is connected to a resistor, but not when the coil is open-circuit. **[2]**",
+    "markscheme": "**(a)** A pulse of one sign as the magnet enters (flux increasing) ✓; the emf passes through zero when the magnet is in the middle and the flux is momentarily not changing ✓; a pulse of opposite sign and larger peak (but shorter duration) as it leaves, since flux decreases and the magnet is moving faster ✓\n\n**(b)** With a closed circuit, an induced current flows whose magnetic field opposes the magnet’s motion (Lenz) — an upward force ✓; open-circuit, an emf is induced but no current flows, so there is no opposing force ✓",
+    "source": "original"
+  }
+]

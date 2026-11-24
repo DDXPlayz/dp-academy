@@ -1,0 +1,10 @@
+[
+  { "id": "flux-card", "front": "Magnetic flux?", "back": "$\\Phi = BA\\cos\\theta$ (θ between B and the normal); unit weber, Wb = T m².", "concept": "Magnetic flux" },
+  { "id": "linkage-card", "front": "Flux linkage?", "back": "$N\\Phi$ — flux through the coil times the number of turns.", "concept": "Magnetic flux" },
+  { "id": "faraday-card", "front": "Faraday’s law?", "back": "$\\varepsilon = -N\\Delta\\Phi/\\Delta t$ — emf equals the rate of change of flux linkage.", "concept": "Faraday’s law" },
+  { "id": "bvl-card", "front": "Emf across a moving rod?", "back": "$\\varepsilon = BvL$", "concept": "Emf in a moving conductor" },
+  { "id": "lenz-card", "front": "Lenz’s law?", "back": "The induced current opposes the change in flux that causes it — the minus sign in Faraday’s law; a result of energy conservation.", "concept": "Lenz’s law" },
+  { "id": "eddy-card", "front": "Eddy current braking?", "back": "Currents induced in a moving conductor oppose its motion, turning kinetic energy into internal energy.", "concept": "Eddy currents" },
+  { "id": "generator-card", "front": "Emf of a rotating coil?", "back": "$\\varepsilon = NBA\\omega\\sin\\omega t$; peak $NBA\\omega$, greatest when flux is zero.", "concept": "Generators" },
+  { "id": "speed-card", "front": "Effect of doubling a generator’s rotation frequency?", "back": "Output frequency doubles and the peak emf doubles.", "concept": "Generators" }
+]
