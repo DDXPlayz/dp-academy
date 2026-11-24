@@ -1,0 +1,4 @@
+[
+  { "id": "solve-factor-card", "front": "Why factorise instead of dividing by x?", "back": "Dividing loses the solution x = 0.", "concept": "Factorising" },
+  { "id": "hidden-quad-card", "front": "Hidden quadratics?", "back": "Substitute u = x², eˣ, 2ˣ, ln x… to get a quadratic in u; reject impossible u.", "concept": "Hidden quadratics" }
+]

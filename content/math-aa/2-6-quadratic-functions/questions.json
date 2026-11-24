@@ -1,0 +1,56 @@
+[
+  {
+    "id": "vertex-read",
+    "type": "mcq",
+    "lesson": "quadratic-forms",
+    "concept": "Vertex form",
+    "difficulty": 1,
+    "prompt": "What is the vertex of $y = -3(x + 2)^2 + 5$?",
+    "options": ["$(2, 5)$", "$(-2, 5)$", "$(-2, -5)$", "$(5, -2)$"],
+    "answer": 1,
+    "explanation": "$x - h = x + 2 \\Rightarrow h = -2$; $k = 5$."
+  },
+  {
+    "id": "axis-sym",
+    "type": "numeric",
+    "lesson": "quadratic-forms",
+    "concept": "Axis of symmetry",
+    "difficulty": 1,
+    "prompt": "Find the axis of symmetry of $y = 2x^2 + 8x - 1$. Give the value of $x$.",
+    "answer": -2,
+    "tolerance": 0,
+    "explanation": "$x = -\\frac{8}{4} = -2$."
+  },
+  {
+    "id": "complete-square-k",
+    "type": "numeric",
+    "lesson": "quadratic-forms",
+    "concept": "Completing the square",
+    "difficulty": 2,
+    "prompt": "$x^2 - 10x + 30 = (x - h)^2 + k$. Find $k$.",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "$(x - 5)^2 - 25 + 30 = (x - 5)^2 + 5$."
+  },
+  {
+    "id": "factor-intercepts",
+    "type": "numeric",
+    "lesson": "quadratic-forms",
+    "concept": "Factorised form",
+    "difficulty": 1,
+    "prompt": "$y = 2(x - 1)(x - 7)$. What is the x-coordinate of its vertex?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "Halfway between the roots 1 and 7."
+  },
+  {
+    "id": "opens-down",
+    "type": "tf",
+    "lesson": "quadratic-forms",
+    "concept": "Parabola",
+    "difficulty": 1,
+    "prompt": "The graph of $y = 4 - x^2$ has a maximum point.",
+    "answer": true,
+    "explanation": "The coefficient of $x^2$ is negative, so it opens downward."
+  }
+]

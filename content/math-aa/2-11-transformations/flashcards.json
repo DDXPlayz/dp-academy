@@ -1,0 +1,5 @@
+[
+  { "id": "transl-card", "front": "$y = f(x - a) + b$?", "back": "Translation $a$ right and $b$ up — vector $\\binom ab$.", "concept": "Translations" },
+  { "id": "refl-card", "front": "$y = -f(x)$ and $y = f(-x)$?", "back": "Reflections in the x-axis and y-axis respectively.", "concept": "Reflections" },
+  { "id": "stretch-card", "front": "$y = pf(x)$ and $y = f(qx)$?", "back": "Vertical stretch factor $p$; horizontal stretch factor $1/q$.", "concept": "Stretches" }
+]

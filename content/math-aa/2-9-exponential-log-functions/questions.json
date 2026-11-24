@@ -1,0 +1,56 @@
+[
+  {
+    "id": "exp-asymptote",
+    "type": "numeric",
+    "lesson": "exp-log-graphs",
+    "concept": "Asymptotes",
+    "difficulty": 1,
+    "prompt": "What is the horizontal asymptote of $y = 2e^{x} - 5$? Give the y value.",
+    "answer": -5,
+    "tolerance": 0,
+    "explanation": "As $x \\to -\\infty$, $e^x \\to 0$, so $y \\to -5$."
+  },
+  {
+    "id": "log-domain",
+    "type": "mcq",
+    "lesson": "exp-log-graphs",
+    "concept": "Logarithmic functions",
+    "difficulty": 2,
+    "prompt": "What is the domain of $y = \\ln(x - 2)$?",
+    "options": ["$x > 0$", "$x > 2$", "$x \\ge 2$", "$x \\in \\mathbb{R}$"],
+    "answer": 1,
+    "explanation": "The argument must be positive: $x - 2 > 0$."
+  },
+  {
+    "id": "growth-time",
+    "type": "numeric",
+    "lesson": "exp-log-graphs",
+    "concept": "Exponential models",
+    "difficulty": 2,
+    "prompt": "A substance decays as $m(t) = 80e^{-0.05t}$. Find $t$ when $m = 20$, to 3 s.f.",
+    "answer": 27.7,
+    "tolerance": 0.002,
+    "explanation": "$e^{-0.05t} = 0.25 \\Rightarrow t = \\ln4/0.05 = 27.7$."
+  },
+  {
+    "id": "exp-inverse",
+    "type": "tf",
+    "lesson": "exp-log-graphs",
+    "concept": "Inverse relationship",
+    "difficulty": 1,
+    "prompt": "The graph of $y = \\ln x$ is the reflection of $y = e^x$ in the line $y = x$.",
+    "answer": true,
+    "explanation": "They are inverse functions."
+  },
+  {
+    "id": "exp-intercept",
+    "type": "numeric",
+    "lesson": "exp-log-graphs",
+    "concept": "Exponential functions",
+    "difficulty": 1,
+    "prompt": "Find the y-intercept of $y = 3\\times2^{x} + 1$.",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "$3\\times1 + 1 = 4$."
+  }
+]

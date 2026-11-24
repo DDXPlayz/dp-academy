@@ -1,0 +1,57 @@
+[
+  {
+    "id": "discriminant-roots",
+    "type": "mcq",
+    "lesson": "quadratic-equations",
+    "concept": "Discriminant",
+    "difficulty": 1,
+    "prompt": "How many real roots does $2x^2 + 3x + 4 = 0$ have?",
+    "options": ["0", "1", "2", "3"],
+    "answer": 0,
+    "explanation": "$\\Delta = 9 - 32 < 0$."
+  },
+  {
+    "id": "formula-root",
+    "type": "numeric",
+    "lesson": "quadratic-equations",
+    "concept": "Quadratic formula",
+    "difficulty": 2,
+    "prompt": "Solve $x^2 - 4x - 1 = 0$. Give the larger root to 3 significant figures.",
+    "answer": 4.24,
+    "tolerance": 0.002,
+    "explanation": "$x = 2 \\pm \\sqrt5$; larger root $4.236$."
+  },
+  {
+    "id": "equal-roots-k",
+    "type": "numeric",
+    "lesson": "quadratic-equations",
+    "concept": "Discriminant",
+    "difficulty": 2,
+    "prompt": "Find the positive value of $k$ for which $kx^2 - 4x + 1 = 0$ has equal roots.",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "$16 - 4k = 0 \\Rightarrow k = 4$."
+  },
+  {
+    "id": "inequality",
+    "type": "mcq",
+    "lesson": "quadratic-equations",
+    "concept": "Quadratic inequalities",
+    "difficulty": 2,
+    "prompt": "Solve $x^2 - 5x + 4 \\le 0$.",
+    "options": ["$x \\le 1$ or $x \\ge 4$", "$1 \\le x \\le 4$", "$x \\le 4$", "$-4 \\le x \\le -1$"],
+    "answer": 1,
+    "explanation": "Roots 1 and 4; an upward parabola is ≤ 0 between them."
+  },
+  {
+    "id": "factorise-solve",
+    "type": "numeric",
+    "lesson": "quadratic-equations",
+    "concept": "Factorising",
+    "difficulty": 1,
+    "prompt": "Solve $x^2 + 2x - 15 = 0$ and give the positive root.",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "$(x + 5)(x - 3) = 0$."
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "hidden-quadratic",
+    "type": "numeric",
+    "lesson": "solving-equations",
+    "concept": "Hidden quadratics",
+    "difficulty": 2,
+    "prompt": "Solve $x^4 - 13x^2 + 36 = 0$. Give the largest solution.",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "$u = x^2$: $(u - 4)(u - 9) = 0$, so $x = \\pm2, \\pm3$."
+  },
+  {
+    "id": "factor-not-divide",
+    "type": "numeric",
+    "lesson": "solving-equations",
+    "concept": "Factorising",
+    "difficulty": 1,
+    "prompt": "How many real solutions does $x^3 = 9x$ have?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "$x(x^2 - 9) = 0$: $x = 0, \\pm3$."
+  },
+  {
+    "id": "graphical",
+    "type": "numeric",
+    "lesson": "solving-equations",
+    "concept": "Graphical solutions",
+    "difficulty": 2,
+    "prompt": "Use technology to solve $e^{x} = 4 - x$. Give your answer to 3 s.f.",
+    "answer": 1.07,
+    "tolerance": 0.005,
+    "explanation": "GDC intersection at $x \\approx 1.07$."
+  },
+  {
+    "id": "exp-sub",
+    "type": "numeric",
+    "lesson": "solving-equations",
+    "concept": "Hidden quadratics",
+    "difficulty": 3,
+    "prompt": "Solve $4^x - 3(2^x) - 4 = 0$.",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "$u = 2^x$: $(u - 4)(u + 1) = 0$; $u = -1$ is impossible, so $2^x = 4$, $x = 2$."
+  }
+]

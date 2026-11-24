@@ -1,0 +1,45 @@
+[
+  {
+    "id": "va-rational",
+    "type": "numeric",
+    "lesson": "rational-functions",
+    "concept": "Vertical asymptote",
+    "difficulty": 1,
+    "prompt": "Find the vertical asymptote of $y = \\dfrac{x + 4}{2x - 6}$. Give the x value.",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "$2x - 6 = 0 \\Rightarrow x = 3$."
+  },
+  {
+    "id": "ha-rational",
+    "type": "numeric",
+    "lesson": "rational-functions",
+    "concept": "Horizontal asymptote",
+    "difficulty": 1,
+    "prompt": "Find the horizontal asymptote of $y = \\dfrac{3x - 1}{2x + 5}$. Give the y value.",
+    "answer": 1.5,
+    "tolerance": 0.001,
+    "explanation": "$y = 3/2$."
+  },
+  {
+    "id": "xint-rational",
+    "type": "numeric",
+    "lesson": "rational-functions",
+    "concept": "Intercepts",
+    "difficulty": 1,
+    "prompt": "Find the x-intercept of $y = \\dfrac{4x - 2}{x + 1}$.",
+    "answer": 0.5,
+    "tolerance": 0.001,
+    "explanation": "Numerator zero: $x = 0.5$."
+  },
+  {
+    "id": "self-inverse",
+    "type": "tf",
+    "lesson": "rational-functions",
+    "concept": "Self-inverse",
+    "difficulty": 2,
+    "prompt": "$f(x) = \\dfrac{1}{x}$ satisfies $f(f(x)) = x$ for $x \\ne 0$.",
+    "answer": true,
+    "explanation": "$f(1/x) = x$: the function is self-inverse."
+  }
+]

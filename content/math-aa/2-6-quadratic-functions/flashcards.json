@@ -1,0 +1,4 @@
+[
+  { "id": "quad-forms-card", "front": "Three forms of a quadratic and what they show?", "back": "$ax^2 + bx + c$: y-int, axis $-b/2a$. $a(x - p)(x - q)$: roots. $a(x - h)^2 + k$: vertex.", "concept": "Vertex form" },
+  { "id": "quad-a-card", "front": "Effect of $a$ on a parabola?", "back": "$a > 0$ opens up (min), $a < 0$ opens down (max); larger $|a|$ narrower.", "concept": "Parabola" }
+]

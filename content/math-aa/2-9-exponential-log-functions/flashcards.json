@@ -1,0 +1,5 @@
+[
+  { "id": "exp-graph-card", "front": "Key features of $y = a^x$?", "back": "Through $(0, 1)$; asymptote $y = 0$; range $y > 0$.", "concept": "Exponential functions" },
+  { "id": "log-graph-card", "front": "Key features of $y = \\log_a x$?", "back": "Through $(1, 0)$; asymptote $x = 0$; domain $x > 0$.", "concept": "Logarithmic functions" },
+  { "id": "exp-ln-card", "front": "$e^{\\ln x}$ and $\\ln e^x$?", "back": "Both equal $x$ — inverse functions.", "concept": "Inverse relationship" }
+]

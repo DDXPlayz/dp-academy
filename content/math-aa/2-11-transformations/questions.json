@@ -1,0 +1,45 @@
+[
+  {
+    "id": "transform-point",
+    "type": "mcq",
+    "lesson": "transformations",
+    "concept": "Composite transformations",
+    "difficulty": 2,
+    "prompt": "$(4, -2)$ lies on $y = f(x)$. What is its image on $y = -f(x + 1)$?",
+    "options": ["$(5, 2)$", "$(3, 2)$", "$(3, -2)$", "$(-5, 2)$"],
+    "answer": 1,
+    "explanation": "Shift left 1: $x = 3$. Reflect in x-axis: $y = 2$."
+  },
+  {
+    "id": "horizontal-stretch",
+    "type": "mcq",
+    "lesson": "transformations",
+    "concept": "Stretches",
+    "difficulty": 2,
+    "prompt": "Which transformation maps $y = f(x)$ to $y = f(3x)$?",
+    "options": ["vertical stretch, factor 3", "horizontal stretch, factor 3", "horizontal stretch, factor $\\tfrac13$", "vertical stretch, factor $\\tfrac13$"],
+    "answer": 2,
+    "explanation": "Inside changes act horizontally and inversely: scale factor $1/3$."
+  },
+  {
+    "id": "translate-right",
+    "type": "tf",
+    "lesson": "transformations",
+    "concept": "Translations",
+    "difficulty": 1,
+    "prompt": "The graph of $y = (x - 5)^2$ is the graph of $y = x^2$ translated 5 units to the left.",
+    "answer": false,
+    "explanation": "$f(x - 5)$ is a translation 5 units to the right."
+  },
+  {
+    "id": "vertex-image",
+    "type": "numeric",
+    "lesson": "transformations",
+    "concept": "Composite transformations",
+    "difficulty": 2,
+    "prompt": "$y = x^2$ is translated by the vector $\\binom{-2}{3}$. What is the y-coordinate of the new vertex?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "Vertex moves from $(0, 0)$ to $(-2, 3)$."
+  }
+]
