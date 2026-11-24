@@ -1,0 +1,4 @@
+[
+  { "id": "trig-transform-card", "front": "Features of $y = a\\sin(b(x + c)) + d$?", "back": "Amplitude |a|, period 2π/b, principal axis y = d, shift left c.", "concept": "Period" },
+  { "id": "trig-model-card", "front": "Fitting a sinusoidal model from data?", "back": "a = (max − min)/2, d = (max + min)/2, b = 2π/period.", "concept": "Modelling" }
+]

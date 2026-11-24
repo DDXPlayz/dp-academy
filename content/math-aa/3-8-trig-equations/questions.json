@@ -1,0 +1,46 @@
+[
+  {
+    "id": "trig-solve-count",
+    "type": "numeric",
+    "lesson": "trig-equations",
+    "concept": "Multiple angles",
+    "difficulty": 2,
+    "prompt": "How many solutions does $\\sin3x = 0.5$ have for $0 \\le x \\le 2\\pi$?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "$3x \\in [0, 6\\pi]$: two solutions per period of $2\\pi$, three periods."
+  },
+  {
+    "id": "cos-solve",
+    "type": "mcq",
+    "lesson": "trig-equations",
+    "concept": "Finding all solutions",
+    "difficulty": 1,
+    "prompt": "Solve $\\cos x = \\tfrac{\\sqrt2}{2}$ for $0 \\le x < 2\\pi$.",
+    "options": ["$\\frac\\pi4$ only", "$\\frac\\pi4, \\frac{3\\pi}4$", "$\\frac\\pi4, \\frac{7\\pi}4$", "$\\frac{3\\pi}{4}, \\frac{5\\pi}4$"],
+    "answer": 2,
+    "explanation": "cos is positive in Q1 and Q4: $x$ and $2\\pi - x$."
+  },
+  {
+    "id": "tan-solve",
+    "type": "numeric",
+    "lesson": "trig-equations",
+    "concept": "Finding all solutions",
+    "difficulty": 2,
+    "prompt": "Solve $\\tan x = 2$ for $0 \\le x \\le 2\\pi$. Give the larger solution to 3 s.f.",
+    "answer": 4.25,
+    "tolerance": 0.003,
+    "explanation": "$x = 1.107$ or $1.107 + \\pi = 4.25$."
+  },
+  {
+    "id": "quad-trig",
+    "type": "numeric",
+    "lesson": "trig-equations",
+    "concept": "Quadratics in trig",
+    "difficulty": 3,
+    "prompt": "Solve $\\sin^2x = \\sin x$ for $0 \\le x \\le 2\\pi$. How many solutions are there?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "$\\sin x(\\sin x - 1) = 0$: $x = 0, \\pi, 2\\pi$ and $\\frac\\pi2$."
+  }
+]

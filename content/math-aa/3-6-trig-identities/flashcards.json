@@ -1,0 +1,5 @@
+[
+  { "id": "pyth-card", "front": "Pythagorean identity?", "back": "$\\cos^2\\theta + \\sin^2\\theta = 1$", "concept": "Pythagorean identity" },
+  { "id": "sin2-card", "front": "$\\sin2\\theta$?", "back": "$2\\sin\\theta\\cos\\theta$", "concept": "Double angle" },
+  { "id": "cos2-card", "front": "Three forms of $\\cos2\\theta$?", "back": "$\\cos^2\\theta - \\sin^2\\theta = 2\\cos^2\\theta - 1 = 1 - 2\\sin^2\\theta$", "concept": "Double angle" }
+]

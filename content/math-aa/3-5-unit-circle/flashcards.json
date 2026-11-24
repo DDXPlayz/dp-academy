@@ -1,0 +1,6 @@
+[
+  { "id": "unit-circle-card", "front": "Unit circle definitions?", "back": "Point at angle θ is $(\\cos\\theta, \\sin\\theta)$; $\\tan\\theta = \\sin\\theta/\\cos\\theta$.", "concept": "Unit circle" },
+  { "id": "astc-card", "front": "Which ratios are positive in each quadrant?", "back": "Q1 all, Q2 sin, Q3 tan, Q4 cos.", "concept": "Quadrant signs" },
+  { "id": "exact-card", "front": "sin and cos of π/6, π/4, π/3?", "back": "sin: ½, √2/2, √3/2. cos: √3/2, √2/2, ½.", "concept": "Exact values" },
+  { "id": "ambig-card", "front": "Ambiguous case of the sine rule?", "back": "sin B = k gives B and 180° − B; keep both if the angles sum < 180°.", "concept": "Ambiguous case" }
+]

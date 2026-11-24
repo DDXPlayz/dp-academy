@@ -1,0 +1,57 @@
+[
+  {
+    "id": "exact-value",
+    "type": "mcq",
+    "lesson": "unit-circle",
+    "concept": "Exact values",
+    "difficulty": 1,
+    "prompt": "What is $\\sin\\dfrac{2\\pi}{3}$?",
+    "options": ["$\\frac12$", "$-\\frac12$", "$\\frac{\\sqrt3}{2}$", "$-\\frac{\\sqrt3}{2}$"],
+    "answer": 2,
+    "explanation": "Q2, reference angle $\\pi/3$; sine positive."
+  },
+  {
+    "id": "quadrant-sign",
+    "type": "mcq",
+    "lesson": "unit-circle",
+    "concept": "Quadrant signs",
+    "difficulty": 1,
+    "prompt": "In which quadrant are sin θ < 0 and tan θ > 0?",
+    "options": ["I", "II", "III", "IV"],
+    "answer": 2,
+    "explanation": "Only tan is positive in Q3."
+  },
+  {
+    "id": "cos-exact",
+    "type": "numeric",
+    "lesson": "unit-circle",
+    "concept": "Exact values",
+    "difficulty": 2,
+    "prompt": "Evaluate $\\cos\\dfrac{7\\pi}{4}$ as a decimal (3 s.f.).",
+    "answer": 0.707,
+    "tolerance": 0.002,
+    "explanation": "Q4, reference $\\pi/4$: $+\\frac{\\sqrt2}{2}$."
+  },
+  {
+    "id": "ambiguous",
+    "type": "numeric",
+    "lesson": "unit-circle",
+    "concept": "Ambiguous case",
+    "difficulty": 3,
+    "prompt": "In triangle ABC, $a = 10$, $b = 12$, $A = 50°$. Find the obtuse possible value of $B$ in degrees (3 s.f.).",
+    "answer": 113.2,
+    "tolerance": 0.003,
+    "unit": "°",
+    "explanation": "$\\sin B = 12\\sin50°/10 = 0.919 \\Rightarrow B = 66.8°$ or $113.2°$."
+  },
+  {
+    "id": "tan-undefined",
+    "type": "tf",
+    "lesson": "unit-circle",
+    "concept": "Exact values",
+    "difficulty": 1,
+    "prompt": "$\\tan\\dfrac{\\pi}{2}$ is undefined.",
+    "answer": true,
+    "explanation": "$\\cos\\frac\\pi2 = 0$, so $\\sin/\\cos$ is undefined."
+  }
+]

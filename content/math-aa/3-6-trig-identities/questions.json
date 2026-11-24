@@ -1,0 +1,46 @@
+[
+  {
+    "id": "pyth-identity",
+    "type": "numeric",
+    "lesson": "identities",
+    "concept": "Pythagorean identity",
+    "difficulty": 2,
+    "prompt": "$\\cos\\theta = -\\tfrac{5}{13}$ with $\\pi < \\theta < \\tfrac{3\\pi}{2}$. Find $\\sin\\theta$ as a decimal (3 s.f.).",
+    "answer": -0.923,
+    "tolerance": 0.002,
+    "explanation": "$\\sin^2\\theta = 144/169$; Q3 so negative: $-12/13 = -0.923$."
+  },
+  {
+    "id": "sin2theta",
+    "type": "numeric",
+    "lesson": "identities",
+    "concept": "Double angle",
+    "difficulty": 2,
+    "prompt": "If $\\sin\\theta = 0.6$ and $\\cos\\theta = 0.8$, find $\\sin2\\theta$.",
+    "answer": 0.96,
+    "tolerance": 0.001,
+    "explanation": "$2(0.6)(0.8) = 0.96$."
+  },
+  {
+    "id": "cos2theta",
+    "type": "numeric",
+    "lesson": "identities",
+    "concept": "Double angle",
+    "difficulty": 2,
+    "prompt": "If $\\sin\\theta = \\tfrac13$, find $\\cos2\\theta$ as a fraction in decimal form (3 s.f.).",
+    "answer": 0.778,
+    "tolerance": 0.002,
+    "explanation": "$1 - 2(\\tfrac19) = \\tfrac79 = 0.778$."
+  },
+  {
+    "id": "identity-form",
+    "type": "mcq",
+    "lesson": "identities",
+    "concept": "Double angle",
+    "difficulty": 1,
+    "prompt": "Which is NOT equal to $\\cos2\\theta$?",
+    "options": ["$\\cos^2\\theta - \\sin^2\\theta$", "$2\\cos^2\\theta - 1$", "$1 - 2\\sin^2\\theta$", "$2\\sin\\theta\\cos\\theta$"],
+    "answer": 3,
+    "explanation": "$2\\sin\\theta\\cos\\theta = \\sin2\\theta$."
+  }
+]

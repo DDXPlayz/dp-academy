@@ -1,0 +1,4 @@
+[
+  { "id": "trig-sym-card", "front": "Second solutions of sin x = k, cos x = k, tan x = k?", "back": "π − x; 2π − x; x + π (then add periods).", "concept": "Finding all solutions" },
+  { "id": "multi-angle-card", "front": "Solving sin(bx) = k on an interval?", "back": "Let u = bx, stretch the interval by b, solve for u, divide by b.", "concept": "Multiple angles" }
+]
