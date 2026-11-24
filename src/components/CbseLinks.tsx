@@ -16,7 +16,7 @@ export function CbseLinks({ links, className = '' }: { links: CbseLink[]; classN
             {l.note && <span className="text-muted">{l.note}</span>}
             {l.video && (
               <a href={l.video} target="_blank" rel="noreferrer noopener" className="inline-flex items-center gap-1 text-accent hover:underline">
-                <Icon name="external" size={12} /> Prashant Kirad video
+                <Icon name="external" size={12} /> Prashant Kirad on YouTube
               </a>
             )}
           </li>

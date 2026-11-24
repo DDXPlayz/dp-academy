@@ -14,6 +14,7 @@ const NAV: { to: string; label: string; icon: IconName; end?: boolean }[] = [
   { to: '/subjects', label: 'Subjects', icon: 'book' },
   { to: '/practice', label: 'Practice', icon: 'target' },
   { to: '/bank', label: 'Questions', icon: 'list' },
+  { to: '/syllabus', label: 'Syllabus', icon: 'check' },
   { to: '/revise', label: 'Revise', icon: 'cards' },
   { to: '/bookmarks', label: 'Saved', icon: 'bookmark' },
 ];
@@ -142,7 +143,7 @@ function TopBar() {
 function BottomNav() {
   return (
     <nav aria-label="Main" className="pb-safe fixed inset-x-0 bottom-0 z-30 border-t border-line bg-card/95 backdrop-blur-md md:hidden">
-      <ul className="grid grid-cols-6">
+      <ul className="grid grid-cols-7">
         {NAV.map((n) => (
           <li key={n.to}>
             <NavLink
@@ -223,16 +224,20 @@ export function AppShell() {
       <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 btn-primary">
         Skip to content
       </a>
-      <aside className="fixed inset-y-0 left-0 hidden w-60 border-r border-line bg-canvas lg:block">
+      <aside className="app-chrome fixed inset-y-0 left-0 hidden w-60 border-r border-line bg-canvas lg:block">
         <Sidebar />
       </aside>
-      <div className="lg:pl-60">
-        <TopBar />
+      <div className="app-body lg:pl-60">
+        <div className="app-chrome">
+          <TopBar />
+        </div>
         <main id="main" key={pathname} className="animate-rise pb-24 md:pb-12">
           <Outlet />
         </main>
       </div>
-      <BottomNav />
+      <div className="app-chrome">
+        <BottomNav />
+      </div>
       <Drawer />
       <SearchCommand />
     </div>

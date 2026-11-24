@@ -20,21 +20,54 @@
           "code": "A.1",
           "title": "Kinematics",
           "summary": "Describing motion with displacement, velocity and acceleration, the equations of uniform acceleration, and projectiles.",
-          "hours": 9
+          "hours": 9,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 2 Motion in a Straight Line",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Motion+in+a+Straight+Line+one+shot"
+            },
+            {
+              "class": 11,
+              "chapter": "Ch 3 Motion in a Plane",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Motion+in+a+Plane+one+shot",
+              "note": "projectiles"
+            }
+          ]
         },
         {
           "id": "a2-forces-momentum",
           "code": "A.2",
           "title": "Forces and momentum",
           "summary": "Newton’s three laws, free-body diagrams, momentum and impulse, and circular motion.",
-          "hours": 12
+          "hours": 12,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 4 Laws of Motion",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Laws+of+Motion+one+shot"
+            },
+            {
+              "class": 11,
+              "chapter": "Ch 3 Motion in a Plane",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Motion+in+a+Plane+one+shot",
+              "note": "circular motion"
+            }
+          ]
         },
         {
           "id": "a3-work-energy-power",
           "code": "A.3",
           "title": "Work, energy and power",
           "summary": "Work as energy transfer, kinetic and potential energy, conservation of energy, power and efficiency.",
-          "hours": 8
+          "hours": 8,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 5 Work, Energy and Power",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Work%2C+Energy+and+Power+one+shot"
+            }
+          ]
         },
         {
           "id": "a4-rigid-body",
@@ -42,7 +75,14 @@
           "title": "Rigid body mechanics",
           "summary": "Torque, rotational equilibrium, moment of inertia and angular momentum.",
           "hours": 7,
-          "hl": true
+          "hl": true,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 6 System of Particles and Rotational Motion",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+System+of+Particles+and+Rotational+Motion+one+shot"
+            }
+          ]
         },
         {
           "id": "a5-relativity",
@@ -64,21 +104,43 @@
           "code": "B.1",
           "title": "Thermal energy transfers",
           "summary": "Temperature, internal energy, specific heat capacity, latent heat and the mechanisms of heat transfer.",
-          "hours": 7
+          "hours": 7,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 10 Thermal Properties of Matter",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Thermal+Properties+of+Matter+one+shot"
+            }
+          ]
         },
         {
           "id": "b2-greenhouse-effect",
           "code": "B.2",
           "title": "The greenhouse effect",
           "summary": "Black-body radiation, albedo, emissivity and the energy balance of the Earth.",
-          "hours": 3
+          "hours": 3,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 10 Thermal Properties of Matter",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Thermal+Properties+of+Matter+one+shot",
+              "note": "radiation"
+            }
+          ]
         },
         {
           "id": "b3-gas-laws",
           "code": "B.3",
           "title": "The gas laws",
           "summary": "Pressure, the ideal gas law and the kinetic model of an ideal gas.",
-          "hours": 5
+          "hours": 5,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 12 Kinetic Theory",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Kinetic+Theory+one+shot"
+            }
+          ]
         },
         {
           "id": "b4-thermodynamics",
@@ -86,14 +148,28 @@
           "title": "Thermodynamics",
           "summary": "The first and second laws, entropy, and heat engines.",
           "hours": 7,
-          "hl": true
+          "hl": true,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 11 Thermodynamics",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Thermodynamics+one+shot"
+            }
+          ]
         },
         {
           "id": "b5-current-circuits",
           "code": "B.5",
           "title": "Current and circuits",
           "summary": "Current, potential difference, resistance, resistivity, internal resistance and circuit analysis.",
-          "hours": 8
+          "hours": 8,
+          "cbse": [
+            {
+              "class": 12,
+              "chapter": "Ch 3 Current Electricity",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+12+Current+Electricity+one+shot"
+            }
+          ]
         }
       ]
     },
@@ -107,28 +183,57 @@
           "code": "C.1",
           "title": "Simple harmonic motion",
           "summary": "Oscillations with a restoring force proportional to displacement, and their energy.",
-          "hours": 4
+          "hours": 4,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 13 Oscillations",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Oscillations+one+shot"
+            }
+          ]
         },
         {
           "id": "c2-wave-model",
           "code": "C.2",
           "title": "The wave model",
           "summary": "Transverse and longitudinal waves, the wave equation and the electromagnetic spectrum.",
-          "hours": 5
+          "hours": 5,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 14 Waves",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Waves+one+shot"
+            }
+          ]
         },
         {
           "id": "c3-wave-phenomena",
           "code": "C.3",
           "title": "Wave phenomena",
           "summary": "Reflection, refraction, diffraction, superposition and interference.",
-          "hours": 7
+          "hours": 7,
+          "cbse": [
+            {
+              "class": 12,
+              "chapter": "Ch 10 Wave Optics",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+12+Wave+Optics+one+shot"
+            }
+          ]
         },
         {
           "id": "c4-standing-waves",
           "code": "C.4",
           "title": "Standing waves and resonance",
           "summary": "Nodes and antinodes, harmonics on strings and in pipes, resonance and damping.",
-          "hours": 4
+          "hours": 4,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 14 Waves",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Waves+one+shot",
+              "note": "standing waves"
+            }
+          ]
         },
         {
           "id": "c5-doppler",
@@ -149,21 +254,53 @@
           "code": "D.1",
           "title": "Gravitation",
           "summary": "Newton’s law of gravitation, field strength, orbits and gravitational potential.",
-          "hours": 7
+          "hours": 7,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 7 Gravitation",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Gravitation+one+shot"
+            }
+          ]
         },
         {
           "id": "d2-em-fields",
           "code": "D.2",
           "title": "Electric and magnetic fields",
           "summary": "Coulomb’s law, electric field strength, magnetic fields of currents and electric potential.",
-          "hours": 8
+          "hours": 8,
+          "cbse": [
+            {
+              "class": 12,
+              "chapter": "Ch 1 Electric Charges and Fields",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+12+Electric+Charges+and+Fields+one+shot"
+            },
+            {
+              "class": 12,
+              "chapter": "Ch 2 Electrostatic Potential and Capacitance",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+12+Electrostatic+Potential+and+Capacitance+one+shot"
+            },
+            {
+              "class": 12,
+              "chapter": "Ch 4 Moving Charges and Magnetism",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+12+Moving+Charges+and+Magnetism+one+shot",
+              "note": "magnetic fields"
+            }
+          ]
         },
         {
           "id": "d3-motion-in-fields",
           "code": "D.3",
           "title": "Motion in electric and magnetic fields",
           "summary": "Charged particles in uniform fields and the force on a current-carrying wire.",
-          "hours": 5
+          "hours": 5,
+          "cbse": [
+            {
+              "class": 12,
+              "chapter": "Ch 4 Moving Charges and Magnetism",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+12+Moving+Charges+and+Magnetism+one+shot"
+            }
+          ]
         },
         {
           "id": "d4-induction",
@@ -171,7 +308,20 @@
           "title": "Electromagnetic induction",
           "summary": "Magnetic flux, Faraday’s and Lenz’s laws and generators.",
           "hours": 6,
-          "hl": true
+          "hl": true,
+          "cbse": [
+            {
+              "class": 12,
+              "chapter": "Ch 6 Electromagnetic Induction",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+12+Electromagnetic+Induction+one+shot"
+            },
+            {
+              "class": 12,
+              "chapter": "Ch 7 Alternating Current",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+12+Alternating+Current+one+shot",
+              "note": "generators and transformers"
+            }
+          ]
         }
       ]
     },
@@ -185,7 +335,14 @@
           "code": "E.1",
           "title": "Atomic physics",
           "summary": "The nuclear model, energy levels and atomic spectra.",
-          "hours": 3
+          "hours": 3,
+          "cbse": [
+            {
+              "class": 12,
+              "chapter": "Ch 12 Atoms",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+12+Atoms+one+shot"
+            }
+          ]
         },
         {
           "id": "e2-quantum",
@@ -193,21 +350,43 @@
           "title": "Quantum physics",
           "summary": "The photoelectric effect, wave–particle duality and Compton scattering.",
           "hours": 5,
-          "hl": true
+          "hl": true,
+          "cbse": [
+            {
+              "class": 12,
+              "chapter": "Ch 11 Dual Nature of Radiation and Matter",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+12+Dual+Nature+of+Radiation+and+Matter+one+shot"
+            }
+          ]
         },
         {
           "id": "e3-nuclear",
           "code": "E.3",
           "title": "Radioactive decay",
           "summary": "Nuclear stability, binding energy, decay modes and half-life.",
-          "hours": 8
+          "hours": 8,
+          "cbse": [
+            {
+              "class": 12,
+              "chapter": "Ch 13 Nuclei",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+12+Nuclei+one+shot"
+            }
+          ]
         },
         {
           "id": "e4-fission",
           "code": "E.4",
           "title": "Nuclear fission",
           "summary": "Chain reactions, the components of a reactor and its safety.",
-          "hours": 2
+          "hours": 2,
+          "cbse": [
+            {
+              "class": 12,
+              "chapter": "Ch 13 Nuclei",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+12+Nuclei+one+shot",
+              "note": "fission"
+            }
+          ]
         },
         {
           "id": "e5-fusion-stars",
@@ -227,7 +406,14 @@
           "id": "t1-experimental-techniques",
           "code": "Tool 1",
           "title": "Experimental techniques",
-          "summary": "Measuring variables, safety, and choosing and using apparatus in practical work."
+          "summary": "Measuring variables, safety, and choosing and using apparatus in practical work.",
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 1 Units and Measurements",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Units+and+Measurements+one+shot"
+            }
+          ]
         },
         {
           "id": "t2-technology",
@@ -239,7 +425,15 @@
           "id": "t3-mathematics",
           "code": "Tool 3",
           "title": "Mathematics",
-          "summary": "Units and prefixes, uncertainties and errors, graphs, and scalars and vectors."
+          "summary": "Units and prefixes, uncertainties and errors, graphs, and scalars and vectors.",
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 1 Units and Measurements",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Units+and+Measurements+one+shot",
+              "note": "errors and significant figures"
+            }
+          ]
         }
       ]
     }

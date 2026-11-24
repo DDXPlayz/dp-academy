@@ -20,28 +20,56 @@
           "code": "S1.1",
           "title": "The particulate nature of matter",
           "summary": "Elements, compounds and mixtures; states of matter and changes of state.",
-          "hours": 2
+          "hours": 2,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 1 Some Basic Concepts of Chemistry",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Some+Basic+Concepts+of+Chemistry+one+shot"
+            }
+          ]
         },
         {
           "id": "s1-2-nuclear-atom",
           "code": "S1.2",
           "title": "The nuclear atom",
           "summary": "Subatomic particles, isotopes and mass spectra.",
-          "hours": 2
+          "hours": 2,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 2 Structure of Atom",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Structure+of+Atom+one+shot"
+            }
+          ]
         },
         {
           "id": "s1-3-electron-configurations",
           "code": "S1.3",
           "title": "Electron configurations",
           "summary": "Emission spectra, energy levels, orbitals and ionisation energy.",
-          "hours": 4
+          "hours": 4,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 2 Structure of Atom",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Structure+of+Atom+one+shot"
+            }
+          ]
         },
         {
           "id": "s1-4-the-mole",
           "code": "S1.4",
           "title": "Counting particles by mass: the mole",
           "summary": "The mole, molar mass, empirical and molecular formulae, and concentration.",
-          "hours": 4
+          "hours": 4,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 1 Some Basic Concepts of Chemistry",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Some+Basic+Concepts+of+Chemistry+one+shot"
+            }
+          ]
         },
         {
           "id": "s1-5-ideal-gases",
@@ -62,21 +90,42 @@
           "code": "S2.1",
           "title": "The ionic model",
           "summary": "Formation of ions, ionic lattices and their properties.",
-          "hours": 2
+          "hours": 2,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 4 Chemical Bonding and Molecular Structure",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Chemical+Bonding+and+Molecular+Structure+one+shot"
+            }
+          ]
         },
         {
           "id": "s2-2-covalent-model",
           "code": "S2.2",
           "title": "The covalent model",
           "summary": "Lewis structures, molecular shape, polarity and intermolecular forces.",
-          "hours": 9
+          "hours": 9,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 4 Chemical Bonding and Molecular Structure",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Chemical+Bonding+and+Molecular+Structure+one+shot"
+            }
+          ]
         },
         {
           "id": "s2-3-metallic-model",
           "code": "S2.3",
           "title": "The metallic model",
           "summary": "Metallic bonding and the properties of metals; transition elements at HL.",
-          "hours": 1
+          "hours": 1,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 4 Chemical Bonding and Molecular Structure",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Chemical+Bonding+and+Molecular+Structure+one+shot"
+            }
+          ]
         },
         {
           "id": "s2-4-materials",
@@ -97,14 +146,45 @@
           "code": "S3.1",
           "title": "The periodic table",
           "summary": "Periodic trends, oxides, oxidation states and transition-metal complexes.",
-          "hours": 4
+          "hours": 4,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 3 Classification of Elements and Periodicity in Properties",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Classification+of+Elements+and+Periodicity+in+Properties+one+shot"
+            },
+            {
+              "class": 12,
+              "chapter": "Ch 4 The d- and f-Block Elements",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+12+The+d-+and+f-Block+Elements+one+shot",
+              "note": "transition elements (HL)"
+            },
+            {
+              "class": 12,
+              "chapter": "Ch 5 Coordination Compounds",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+12+Coordination+Compounds+one+shot",
+              "note": "complex ions (HL)"
+            }
+          ]
         },
         {
           "id": "s3-2-functional-groups",
           "code": "S3.2",
           "title": "Functional groups",
           "summary": "Homologous series, IUPAC naming, isomerism and spectroscopy.",
-          "hours": 6
+          "hours": 6,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 8 Organic Chemistry: Some Basic Principles and Techniques",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Organic+Chemistry%3A+Some+Basic+Principles+and+Techniques+one+shot"
+            },
+            {
+              "class": 11,
+              "chapter": "Ch 9 Hydrocarbons",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Hydrocarbons+one+shot"
+            }
+          ]
         }
       ]
     },
@@ -118,14 +198,28 @@
           "code": "R1.1",
           "title": "Measuring enthalpy changes",
           "summary": "Exothermic and endothermic reactions and calorimetry.",
-          "hours": 2
+          "hours": 2,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 5 Thermodynamics",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Thermodynamics+one+shot"
+            }
+          ]
         },
         {
           "id": "r1-2-energy-cycles",
           "code": "R1.2",
           "title": "Energy cycles in reactions",
           "summary": "Bond enthalpies, Hess’s law and Born–Haber cycles.",
-          "hours": 3
+          "hours": 3,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 5 Thermodynamics",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Thermodynamics+one+shot"
+            }
+          ]
         },
         {
           "id": "r1-3-fuels",
@@ -140,7 +234,15 @@
           "title": "Entropy and spontaneity",
           "summary": "Entropy, Gibbs energy and the direction of change.",
           "hours": 4,
-          "hl": true
+          "hl": true,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 5 Thermodynamics",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Thermodynamics+one+shot",
+              "note": "entropy and Gibbs energy"
+            }
+          ]
         }
       ]
     },
@@ -154,21 +256,48 @@
           "code": "R2.1",
           "title": "The amount of chemical change",
           "summary": "Balanced equations, limiting reactants, yield and atom economy.",
-          "hours": 4
+          "hours": 4,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 1 Some Basic Concepts of Chemistry",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Some+Basic+Concepts+of+Chemistry+one+shot"
+            },
+            {
+              "class": 12,
+              "chapter": "Ch 1 Solutions",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+12+Solutions+one+shot",
+              "note": "concentration"
+            }
+          ]
         },
         {
           "id": "r2-2-rates",
           "code": "R2.2",
           "title": "The rate of chemical change",
           "summary": "Collision theory, factors affecting rate, rate equations and activation energy.",
-          "hours": 4
+          "hours": 4,
+          "cbse": [
+            {
+              "class": 12,
+              "chapter": "Ch 3 Chemical Kinetics",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+12+Chemical+Kinetics+one+shot"
+            }
+          ]
         },
         {
           "id": "r2-3-equilibrium",
           "code": "R2.3",
           "title": "The extent of chemical change",
           "summary": "Dynamic equilibrium, the equilibrium constant and Le Châtelier’s principle.",
-          "hours": 4
+          "hours": 4,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 6 Equilibrium",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Equilibrium+one+shot"
+            }
+          ]
         }
       ]
     },
@@ -182,28 +311,74 @@
           "code": "R3.1",
           "title": "Proton transfer reactions",
           "summary": "Brønsted–Lowry acids and bases, pH, strong and weak acids, and buffers.",
-          "hours": 6
+          "hours": 6,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 6 Equilibrium",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Equilibrium+one+shot",
+              "note": "ionic equilibrium"
+            }
+          ]
         },
         {
           "id": "r3-2-electron-transfer",
           "code": "R3.2",
           "title": "Electron transfer reactions",
           "summary": "Oxidation and reduction, electrochemical cells and electrolysis.",
-          "hours": 6
+          "hours": 6,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 7 Redox Reactions",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Redox+Reactions+one+shot"
+            },
+            {
+              "class": 12,
+              "chapter": "Ch 2 Electrochemistry",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+12+Electrochemistry+one+shot"
+            }
+          ]
         },
         {
           "id": "r3-3-electron-sharing",
           "code": "R3.3",
           "title": "Electron sharing reactions",
           "summary": "Radicals and radical substitution.",
-          "hours": 1
+          "hours": 1,
+          "cbse": [
+            {
+              "class": 11,
+              "chapter": "Ch 9 Hydrocarbons",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Hydrocarbons+one+shot"
+            }
+          ]
         },
         {
           "id": "r3-4-electron-pair-sharing",
           "code": "R3.4",
           "title": "Electron-pair sharing reactions",
           "summary": "Nucleophiles, electrophiles, substitution and addition mechanisms.",
-          "hours": 3
+          "hours": 3,
+          "cbse": [
+            {
+              "class": 12,
+              "chapter": "Ch 6 Haloalkanes and Haloarenes",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+12+Haloalkanes+and+Haloarenes+one+shot"
+            },
+            {
+              "class": 11,
+              "chapter": "Ch 9 Hydrocarbons",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+11+Hydrocarbons+one+shot",
+              "note": "addition reactions"
+            },
+            {
+              "class": 12,
+              "chapter": "Ch 5 Coordination Compounds",
+              "video": "https://www.youtube.com/results?search_query=Prashant+Kirad+class+12+Coordination+Compounds+one+shot",
+              "note": "ligands (HL)"
+            }
+          ]
         }
       ]
     },

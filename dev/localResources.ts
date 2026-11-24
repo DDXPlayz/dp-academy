@@ -69,11 +69,14 @@ function copyDir(src: string, dst: string, filter: (f: string) => boolean) {
 export function localResources(): Plugin {
   let root = process.cwd();
   let outDir = 'dist';
+  let isBuild = false;
   return {
     name: 'dp-academy:private-data',
     configResolved(config) {
       root = config.root;
       outDir = path.resolve(config.root, config.build.outDir);
+      // Only real `vite build` runs copy private data (vitest also loads this config).
+      isBuild = config.command === 'build' && !process.env.VITEST;
     },
     configureServer(server) {
       server.middlewares.use((req, res, next) => {
@@ -104,6 +107,7 @@ export function localResources(): Plugin {
       });
     },
     closeBundle() {
+      if (!isBuild) return;
       const bank = mergedBank(root);
       if (!bank.length) return; // building from a clean clone: no private data
       const data = path.join(outDir, 'data');

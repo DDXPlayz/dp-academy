@@ -262,3 +262,39 @@
   padding: 0.5rem;
   border: 1px solid var(--line);
 }
+
+/* Printing: only the page content, on white, with sensible page breaks. */
+@media print {
+  .app-chrome,
+  .no-print {
+    display: none !important;
+  }
+  .app-body {
+    padding-left: 0 !important;
+  }
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  main {
+    padding-bottom: 0 !important;
+    animation: none !important;
+  }
+  .print-lesson {
+    break-before: page;
+  }
+  .print-lesson:first-of-type {
+    break-before: auto;
+  }
+  .lesson-fig,
+  pre,
+  table,
+  aside {
+    break-inside: avoid;
+  }
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+}
