@@ -18,8 +18,7 @@ import {
   type BankFilters,
 } from '../lib/bank';
 
-// Past-paper questions come from a git-ignored local folder and are loaded in development only.
-const loadLocal = import.meta.env.DEV ? () => import('../lib/localBank').then((m) => m.loadLocalBank()) : null;
+import { loadPastPapers } from '../lib/pastPapers';
 
 const SOURCE_NAME: Record<ExamSource, string> = { original: 'Original', 'past-paper': 'Past paper', mock: 'Mock' };
 const PAGE = 20;
@@ -58,7 +57,7 @@ export default function QuestionBank() {
   const [shown, setShown] = useState(PAGE);
 
   useEffect(() => {
-    loadLocal?.().then(setLocal);
+    loadPastPapers().then(setLocal);
   }, []);
   useEffect(() => setShown(PAGE), [params]);
 
@@ -185,9 +184,7 @@ export default function QuestionBank() {
         <div className="card p-8 text-center">
           <p className="font-medium text-ink">No past-paper questions here.</p>
           <p className="mx-auto mt-1 max-w-lg text-sm text-muted">
-            {import.meta.env.DEV
-              ? 'Run the paper importer on papers you are allowed to use; imported questions appear here in your local copy only.'
-              : 'Past-paper questions are copyright of the IB and are only available in a private local copy. The General tab has original exam-style questions for every paper.'}
+            This copy of the app was built without the private past-paper collection. The General tab has exam-style questions for every paper.
           </p>
         </div>
       ) : results.length === 0 ? (

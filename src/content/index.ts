@@ -7,6 +7,7 @@ import {
   lessonMetaSchema,
   questionSchema,
   subjectSchema,
+  type CbseLink,
   type ExamQuestionFile,
   type FlashcardFile,
   type LessonMeta,
@@ -64,6 +65,7 @@ export interface Unit {
   id: string;
   code: string;
   title: string;
+  cbse: CbseLink[];
   subjectId: string;
   topics: Topic[];
 }
@@ -118,7 +120,7 @@ for (const [path, data] of Object.entries(subjectFiles)) {
   }
   const subject: Subject = { ...file, href: `/s/${file.id}`, units: [], topics: [] };
   for (const u of file.units) {
-    const unit: Unit = { id: u.id, code: u.code, title: u.title, subjectId: file.id, topics: [] };
+    const unit: Unit = { id: u.id, code: u.code, title: u.title, cbse: u.cbse, subjectId: file.id, topics: [] };
     for (const t of u.topics) {
       const key = `${file.id}/${t.id}`;
       if (topicByKey.has(key)) contentErrors.push(`${path}: duplicate topic id "${t.id}"`);

@@ -15,8 +15,6 @@ const QuestionBank = lazy(() => import('./pages/QuestionBank'));
 const Revise = lazy(() => import('./pages/Revise'));
 const Bookmarks = lazy(() => import('./pages/Bookmarks'));
 const Settings = lazy(() => import('./pages/Settings'));
-// Lessons converted from private notes exist only in local development.
-const LocalLessonPage = import.meta.env.DEV ? lazy(() => import('./pages/LocalLessonPage')) : null;
 
 const wrap = (el: React.ReactNode) => <Suspense fallback={<div className="min-h-[60vh]" />}>{el}</Suspense>;
 
@@ -28,7 +26,6 @@ const router = createBrowserRouter([
       { path: '/subjects', element: wrap(<Subjects />) },
       { path: '/s/:subjectId', element: wrap(<SubjectPage />) },
       { path: '/s/:subjectId/:topicId', element: wrap(<TopicPage />) },
-      ...(LocalLessonPage ? [{ path: '/s/:subjectId/:topicId/notes/:slug', element: wrap(<LocalLessonPage />) }] : []),
       { path: '/s/:subjectId/:topicId/:lessonSlug', element: wrap(<LessonPage />) },
       { path: '/practice', element: wrap(<Practice />) },
       { path: '/bank', element: wrap(<QuestionBank />) },

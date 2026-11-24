@@ -8,6 +8,14 @@ import { z } from 'zod';
 
 const slug = z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'use lowercase-kebab-case');
 
+/** A CBSE (NCERT) chapter that covers the same ground, with an optional video link. */
+export const cbseSchema = z.object({
+  class: z.union([z.literal(11), z.literal(12)]),
+  chapter: z.string(),
+  video: z.string().url().optional(),
+  note: z.string().optional(),
+});
+
 export const topicSchema = z.object({
   id: slug,
   code: z.string(),
@@ -16,12 +24,14 @@ export const topicSchema = z.object({
   /** Teaching hours from the guide; omitted where the guide only gives hours per unit (Math AA). */
   hours: z.number().positive().optional(),
   hl: z.boolean().default(false),
+  cbse: z.array(cbseSchema).default([]),
 });
 
 export const unitSchema = z.object({
   id: slug,
   code: z.string(),
   title: z.string(),
+  cbse: z.array(cbseSchema).default([]),
   topics: z.array(topicSchema).min(1),
 });
 
@@ -48,6 +58,8 @@ export const definitionSchema = z.object({
 });
 
 export const lessonMetaSchema = z.object({
+  /** Syllabus sub-idea code, e.g. "A.1.3". */
+  code: z.string().optional(),
   title: z.string(),
   summary: z.string(),
   minutes: z.number().int().positive(),
@@ -171,6 +183,7 @@ export type ImportedExamQuestion = z.infer<typeof importedExamQuestionSchema>;
 export type ExamDifficulty = z.infer<typeof examDifficulty>;
 export type ExamSource = z.infer<typeof examSource>;
 
+export type CbseLink = z.infer<typeof cbseSchema>;
 export type SubjectFile = z.infer<typeof subjectSchema>;
 export type TopicFile = z.infer<typeof topicSchema>;
 export type LessonMeta = z.infer<typeof lessonMetaSchema>;

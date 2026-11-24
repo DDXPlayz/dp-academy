@@ -1,7 +1,7 @@
-import { lazy, Suspense, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { getSubject, getTopic } from '../content';
 import { Page } from '../components/AppShell';
+import { CbseLinks } from '../components/CbseLinks';
 import { Icon } from '../components/Icon';
 import { ProgressBar } from '../components/ProgressBar';
 import { relativeTime } from '../lib/dates';
@@ -11,22 +11,19 @@ import NotFound from './NotFound';
 
 const DIFFICULTY = ['', 'Foundation', 'Standard', 'Challenging'];
 
-// Private reference notes exist only in local development; production builds drop this branch entirely.
-const ReferenceNotes = import.meta.env.DEV ? lazy(() => import('../components/ReferenceNotes')) : null;
-const LocalLessonList = import.meta.env.DEV ? lazy(() => import('../components/LocalLessonList')) : null;
-
 export default function TopicPage() {
   const { subjectId = '', topicId = '' } = useParams();
   const subject = getSubject(subjectId);
   const topic = getTopic(`${subjectId}/${topicId}`);
   const state = useStudyState();
   const notes = useProgress((s) => s.notes);
-  const [localCount, setLocalCount] = useState(0);
   if (!subject || !topic) return <NotFound />;
 
   const st = topicStats(topic, state);
   const firstOpen = topic.lessons.find((l) => !state.completed[l.key]) ?? topic.lessons[0];
   const unit = subject.units.find((u) => u.id === topic.unitId)!;
+  const bank = (collection: 'general' | 'past') =>
+    `/bank?${new URLSearchParams({ ...(collection === 'past' ? { c: 'past' } : {}), s: subject.id, t: topic.key })}`;
 
   return (
     <Page>
@@ -36,7 +33,7 @@ export default function TopicPage() {
         </Link>
       </nav>
 
-      <header className="mb-8">
+      <header className="mb-6">
         <p className="eyebrow mb-2">
           {unit.code} · {unit.title}
         </p>
@@ -54,24 +51,15 @@ export default function TopicPage() {
         </p>
       </header>
 
-      {LocalLessonList && (
-        <Suspense fallback={null}>
-          <div className={localCount ? 'mb-6' : ''}>
-            <LocalLessonList subjectId={subject.id} topicId={topic.id} onCount={setLocalCount} />
-          </div>
-        </Suspense>
-      )}
+      <CbseLinks links={topic.cbse.length ? topic.cbse : unit.cbse} className="mb-6" />
 
       {topic.lessons.length === 0 ? (
-        localCount > 0 ? null : (
         <div className="card p-8 text-center">
-          <p className="font-medium text-ink">Lessons for this topic are being written.</p>
-          <p className="mt-1 text-sm text-muted">The curriculum outline is in place; original lessons and questions will be added here.</p>
+          <p className="font-medium text-ink">No lessons in this topic yet.</p>
           <Link to={subject.href} className="btn-secondary mt-5">
             Back to {subject.short}
           </Link>
         </div>
-        )
       ) : (
         <div className="grid gap-6 lg:grid-cols-[1fr_280px]">
           <section aria-label="Lessons" className="card p-2">
@@ -89,7 +77,8 @@ export default function TopicPage() {
                         {done ? <Icon name="check" size={14} /> : i + 1}
                       </span>
                       <span className="min-w-0 flex-1">
-                        <span className="flex items-center gap-2">
+                        <span className="flex flex-wrap items-center gap-2">
+                          {l.meta.code && <span className="text-sm tabular-nums text-muted">{l.meta.code}</span>}
                           <span className="font-medium text-ink">{l.meta.title}</span>
                           {l.meta.hl && <span className="chip h-5 px-1.5 text-[10px]">HL</span>}
                           {notes[l.key] && <Icon name="note" size={14} className="text-muted" aria-label="Has notes" />}
@@ -153,15 +142,19 @@ export default function TopicPage() {
                 <span className="flex-1 text-sm font-medium text-ink">Quick revision</span>
                 <Icon name="chevronRight" size={16} className="text-muted" />
               </Link>
+              <Link to={bank('general')} className="flex items-center gap-3 p-4 hover:bg-sunken/60">
+                <Icon name="list" className="text-accent" />
+                <span className="flex-1 text-sm font-medium text-ink">Exam-style questions</span>
+                <Icon name="chevronRight" size={16} className="text-muted" />
+              </Link>
+              <Link to={bank('past')} className="flex items-center gap-3 p-4 hover:bg-sunken/60">
+                <Icon name="layers" className="text-accent" />
+                <span className="flex-1 text-sm font-medium text-ink">Past-paper questions</span>
+                <Icon name="chevronRight" size={16} className="text-muted" />
+              </Link>
             </div>
           </aside>
         </div>
-      )}
-
-      {ReferenceNotes && (
-        <Suspense fallback={null}>
-          <ReferenceNotes subjectId={subject.id} topicId={topic.id} />
-        </Suspense>
       )}
     </Page>
   );

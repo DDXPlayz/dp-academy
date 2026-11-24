@@ -106,12 +106,6 @@ function getIndex() {
   return index;
 }
 
-/** Adds documents to the index (used for lessons that only exist in local development). */
-export function addDocs(docs: SearchDoc[]) {
-  const idx = getIndex();
-  idx.addAll(docs.filter((d) => !idx.has(d.id)));
-}
-
 export type SearchHit = Pick<SearchDoc, 'id' | 'kind' | 'title' | 'subject' | 'context' | 'href'>;
 
 const KIND_RANK: Record<ResultKind, number> = {

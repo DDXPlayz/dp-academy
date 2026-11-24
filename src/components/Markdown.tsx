@@ -5,6 +5,7 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import { diagrams } from '../diagrams';
 import { Icon } from './Icon';
+import { PlotFigure, SvgFigure } from './LessonFigure';
 
 /*
  * Renders lesson Markdown. Besides normal Markdown and $LaTeX$, lessons can
@@ -136,6 +137,10 @@ const components: Components = {
       }
       case 'question':
         return <EmbeddedQuestion id={src.trim()} />;
+      case 'svg':
+        return <SvgFigure src={src} />;
+      case 'plot':
+        return <PlotFigure src={src} />;
       default:
         return (
           <pre className="overflow-x-auto rounded-xl border border-line bg-sunken p-4 text-sm">
