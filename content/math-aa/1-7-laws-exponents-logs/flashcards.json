@@ -1,0 +1,5 @@
+[
+  { "id": "log-laws-card", "front": "Three laws of logarithms?", "back": "$\\log xy = \\log x + \\log y$; $\\log\\frac{x}{y} = \\log x - \\log y$; $\\log x^m = m\\log x$.", "concept": "Laws of logarithms" },
+  { "id": "cob-card", "front": "Change of base?", "back": "$\\log_b a = \\dfrac{\\ln a}{\\ln b}$", "concept": "Change of base" },
+  { "id": "ratexp-card", "front": "$a^{m/n}$?", "back": "$(\\sqrt[n]{a})^m$", "concept": "Rational exponents" }
+]

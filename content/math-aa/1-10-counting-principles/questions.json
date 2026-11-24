@@ -1,0 +1,68 @@
+[
+  {
+    "id": "committee",
+    "type": "numeric",
+    "lesson": "permutations-combinations",
+    "concept": "Combinations",
+    "difficulty": 2,
+    "prompt": "How many ways can a team of 5 be chosen from 12 students?",
+    "answer": 792,
+    "tolerance": 0,
+    "explanation": "$\\binom{12}{5} = 792$."
+  },
+  {
+    "id": "arrangements",
+    "type": "numeric",
+    "lesson": "permutations-combinations",
+    "concept": "Permutations",
+    "difficulty": 1,
+    "prompt": "How many ways can gold, silver and bronze be awarded among 10 runners?",
+    "answer": 720,
+    "tolerance": 0,
+    "explanation": "Order matters: $^{10}P_3 = 10\\times9\\times8 = 720$."
+  },
+  {
+    "id": "letters-repeat",
+    "type": "numeric",
+    "lesson": "permutations-combinations",
+    "concept": "Permutations",
+    "difficulty": 3,
+    "prompt": "How many distinct arrangements are there of the letters of LETTER?",
+    "answer": 180,
+    "tolerance": 0,
+    "explanation": "$\\dfrac{6!}{2!\\,2!} = 180$ (two E’s, two T’s)."
+  },
+  {
+    "id": "together",
+    "type": "numeric",
+    "lesson": "permutations-combinations",
+    "concept": "Restrictions",
+    "difficulty": 3,
+    "prompt": "In how many ways can 5 books be arranged on a shelf if two particular books must be next to each other?",
+    "answer": 48,
+    "tolerance": 0,
+    "explanation": "$4!\\times2! = 48$."
+  },
+  {
+    "id": "ext-binom",
+    "type": "numeric",
+    "lesson": "permutations-combinations",
+    "concept": "Extended binomial theorem",
+    "difficulty": 3,
+    "prompt": "Find the coefficient of $x^2$ in the expansion of $(1 + 2x)^{-1}$.",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "$\\dfrac{(-1)(-2)}{2!}(2x)^2 = 4x^2$."
+  },
+  {
+    "id": "validity",
+    "type": "mcq",
+    "lesson": "permutations-combinations",
+    "concept": "Extended binomial theorem",
+    "difficulty": 2,
+    "prompt": "For which $x$ is the expansion of $(1 - 3x)^{1/2}$ valid?",
+    "options": ["$|x| < 3$", "$|x| < \\tfrac13$", "$|x| < 1$", "all $x$"],
+    "answer": 1,
+    "explanation": "$|3x| < 1 \\Rightarrow |x| < \\tfrac13$."
+  }
+]

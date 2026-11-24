@@ -1,0 +1,45 @@
+[
+  {
+    "id": "pf-a",
+    "type": "numeric",
+    "lesson": "partial-fractions",
+    "concept": "Partial fractions",
+    "difficulty": 2,
+    "prompt": "$\\dfrac{3x + 5}{(x + 1)(x + 3)} \\equiv \\dfrac{A}{x + 1} + \\dfrac{B}{x + 3}$. Find $A$.",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "$3x + 5 = A(x + 3) + B(x + 1)$; $x = -1$: $2 = 2A \\Rightarrow A = 1$."
+  },
+  {
+    "id": "pf-b",
+    "type": "numeric",
+    "lesson": "partial-fractions",
+    "concept": "Partial fractions",
+    "difficulty": 2,
+    "prompt": "For the same expression, find $B$.",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "$x = -3$: $-4 = -2B \\Rightarrow B = 2$."
+  },
+  {
+    "id": "pf-improper",
+    "type": "tf",
+    "lesson": "partial-fractions",
+    "concept": "Improper fractions",
+    "difficulty": 1,
+    "prompt": "$\\dfrac{x^2}{(x - 1)(x - 2)}$ can be written directly as $\\dfrac{A}{x - 1} + \\dfrac{B}{x - 2}$.",
+    "answer": false,
+    "explanation": "It is improper (degree 2 over degree 2); divide first to get $1 + $ a proper fraction."
+  },
+  {
+    "id": "pf-diff-squares",
+    "type": "numeric",
+    "lesson": "partial-fractions",
+    "concept": "Partial fractions",
+    "difficulty": 3,
+    "prompt": "$\\dfrac{4}{x^2 - 4} \\equiv \\dfrac{A}{x - 2} + \\dfrac{B}{x + 2}$. Find $A$.",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "$4 = A(x + 2) + B(x - 2)$; $x = 2$: $A = 1$ (and $B = -1$)."
+  }
+]

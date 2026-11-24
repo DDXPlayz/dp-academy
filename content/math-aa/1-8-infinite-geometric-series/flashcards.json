@@ -1,0 +1,4 @@
+[
+  { "id": "sinf-card", "front": "Sum to infinity and its condition?", "back": "$S_\\infty = \\dfrac{u_1}{1 - r}$, valid when $|r| < 1$.", "concept": "Sum to infinity" },
+  { "id": "recur-card", "front": "Recurring decimal as a fraction?", "back": "Treat as geometric series: e.g. $0.\\overline{ab} = \\dfrac{0.ab}{0.99}$.", "concept": "Recurring decimals" }
+]

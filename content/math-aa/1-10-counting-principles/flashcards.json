@@ -1,0 +1,6 @@
+[
+  { "id": "perm-card", "front": "(HL) Permutations formula?", "back": "$^nP_r = \\dfrac{n!}{(n - r)!}$ — order matters.", "concept": "Permutations" },
+  { "id": "comb-card", "front": "(HL) Combinations formula?", "back": "$^nC_r = \\dfrac{n!}{r!(n - r)!}$ — order doesn’t matter.", "concept": "Combinations" },
+  { "id": "restrict-card", "front": "(HL) Together / apart restrictions?", "back": "Together: treat as one block × internal arrangements. Apart: total − together.", "concept": "Restrictions" },
+  { "id": "extbin-card", "front": "(HL) Extended binomial and validity?", "back": "$(1 + x)^n = 1 + nx + \\frac{n(n-1)}{2!}x^2 + \\ldots$, $|x| < 1$.", "concept": "Extended binomial theorem" }
+]

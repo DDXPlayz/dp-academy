@@ -1,0 +1,57 @@
+[
+  {
+    "id": "sinf-calc",
+    "type": "numeric",
+    "lesson": "sum-to-infinity",
+    "concept": "Sum to infinity",
+    "difficulty": 1,
+    "prompt": "Find the sum to infinity of 12 + 6 + 3 + …",
+    "answer": 24,
+    "tolerance": 0,
+    "explanation": "$12/(1 - 0.5) = 24$."
+  },
+  {
+    "id": "sinf-find-r",
+    "type": "numeric",
+    "lesson": "sum-to-infinity",
+    "concept": "Sum to infinity",
+    "difficulty": 2,
+    "prompt": "A geometric series has first term 5 and sum to infinity 20. Find $r$.",
+    "answer": 0.75,
+    "tolerance": 0.001,
+    "explanation": "$5/(1 - r) = 20 \\Rightarrow 1 - r = 0.25 \\Rightarrow r = 0.75$."
+  },
+  {
+    "id": "converge-check",
+    "type": "mcq",
+    "lesson": "sum-to-infinity",
+    "concept": "Convergence",
+    "difficulty": 1,
+    "prompt": "Which geometric series has a sum to infinity?",
+    "options": ["2 + 4 + 8 + …", "1 − 1 + 1 − …", "9 + 3 + 1 + …", "1 + 1.1 + 1.21 + …"],
+    "answer": 2,
+    "explanation": "Only $r = 1/3$ satisfies $|r| < 1$."
+  },
+  {
+    "id": "recurring",
+    "type": "mcq",
+    "lesson": "sum-to-infinity",
+    "concept": "Recurring decimals",
+    "difficulty": 2,
+    "prompt": "Express $0.\\overline{7}$ as a fraction.",
+    "options": ["$7/10$", "$7/9$", "$7/99$", "$70/9$"],
+    "answer": 1,
+    "explanation": "$0.7/(1 - 0.1) = 7/9$."
+  },
+  {
+    "id": "converge-x",
+    "type": "mcq",
+    "lesson": "sum-to-infinity",
+    "concept": "Convergence",
+    "difficulty": 3,
+    "prompt": "For which values of $x$ does $\\sum_{n=0}^\\infty \\left(\\tfrac{x}{3}\\right)^n$ converge?",
+    "options": ["$x < 3$", "$-3 < x < 3$", "$0 < x < 3$", "all $x$"],
+    "answer": 1,
+    "explanation": "$|x/3| < 1 \\Rightarrow |x| < 3$."
+  }
+]

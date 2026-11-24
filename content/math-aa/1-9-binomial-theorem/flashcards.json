@@ -1,0 +1,5 @@
+[
+  { "id": "binom-card", "front": "Binomial theorem?", "back": "$(a + b)^n = \\sum_{r=0}^{n}\\binom nr a^{n-r}b^r$", "concept": "Binomial theorem" },
+  { "id": "ncr-card", "front": "$\\binom nr$ formula?", "back": "$\\dfrac{n!}{r!(n - r)!}$", "concept": "Binomial coefficient" },
+  { "id": "gen-term-card", "front": "General term of $(a + b)^n$?", "back": "$T_{r+1} = \\binom nr a^{n-r}b^r$", "concept": "General term" }
+]

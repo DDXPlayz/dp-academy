@@ -1,0 +1,5 @@
+[
+  { "id": "pf-form-card", "front": "(HL) Partial fraction form for distinct linear factors?", "back": "$\\dfrac{A}{x - a} + \\dfrac{B}{x - b}$", "concept": "Partial fractions" },
+  { "id": "pf-method-card", "front": "(HL) Fast way to find A and B?", "back": "Multiply out, then substitute the roots of each factor.", "concept": "Partial fractions" },
+  { "id": "pf-improper-card", "front": "(HL) Improper rational expression?", "back": "Divide first: polynomial + proper fraction, then decompose.", "concept": "Improper fractions" }
+]
