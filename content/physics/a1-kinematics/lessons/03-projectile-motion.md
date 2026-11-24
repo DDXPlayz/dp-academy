@@ -1,4 +1,5 @@
 ---
+code: A.1.3
 title: Projectile motion
 summary: Split the motion in two — steady sideways, accelerating vertically — and every projectile problem becomes two simple ones.
 minutes: 30

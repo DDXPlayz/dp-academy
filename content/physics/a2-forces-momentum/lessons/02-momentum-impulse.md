@@ -1,4 +1,5 @@
 ---
+code: A.2.2
 title: Momentum and impulse
 summary: Momentum is conserved in every collision and explosion — a law strong enough to solve problems where the forces are unknown.
 minutes: 30

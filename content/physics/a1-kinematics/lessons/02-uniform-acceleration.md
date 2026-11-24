@@ -1,4 +1,5 @@
 ---
+code: A.1.2
 title: Equations of uniform acceleration
 summary: Five quantities, four equations — a reliable method for any constant-acceleration problem, including free fall.
 minutes: 25

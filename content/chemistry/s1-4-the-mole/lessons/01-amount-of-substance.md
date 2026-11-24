@@ -1,4 +1,5 @@
 ---
+code: S1.4.1
 title: The mole and molar mass
 summary: Chemists count particles by weighing them. The mole is the bridge between grams on a balance and atoms in a reaction.
 minutes: 25

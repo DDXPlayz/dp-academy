@@ -1,4 +1,5 @@
 ---
+code: A.2.3
 title: Circular motion
 summary: Moving in a circle at constant speed still means accelerating — towards the centre. Find the force that provides it and the problem is half solved.
 minutes: 25

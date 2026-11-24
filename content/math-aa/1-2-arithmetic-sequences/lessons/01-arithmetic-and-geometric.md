@@ -1,4 +1,5 @@
 ---
+code: 1.2.1
 title: Arithmetic and geometric sequences
 summary: Add the same amount each time, or multiply by the same amount — two patterns that model everything from savings to population growth.
 minutes: 30

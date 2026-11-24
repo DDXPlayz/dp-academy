@@ -1,4 +1,5 @@
 ---
+code: A.3.2
 title: Power and efficiency
 summary: How quickly energy is transferred, and how much of it ends up doing something useful.
 minutes: 20
