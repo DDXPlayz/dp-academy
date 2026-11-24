@@ -1,0 +1,45 @@
+[
+  {
+    "id": "stratified",
+    "type": "numeric",
+    "lesson": "sampling",
+    "concept": "Stratified sampling",
+    "difficulty": 1,
+    "prompt": "A company has 120 managers and 480 workers. A stratified sample of 50 is taken. How many managers are chosen?",
+    "answer": 10,
+    "tolerance": 0,
+    "explanation": "$\\frac{120}{600}\\times50 = 10$."
+  },
+  {
+    "id": "data-type",
+    "type": "mcq",
+    "lesson": "sampling",
+    "concept": "Types of data",
+    "difficulty": 1,
+    "prompt": "Which is continuous data?",
+    "options": ["number of siblings", "shoe size", "time to run 100 m", "number of goals"],
+    "answer": 2,
+    "explanation": "Time is measured and can take any value in a range."
+  },
+  {
+    "id": "outlier-bound",
+    "type": "numeric",
+    "lesson": "sampling",
+    "concept": "Outliers",
+    "difficulty": 2,
+    "prompt": "$Q_1 = 20$ and $Q_3 = 32$. Above what value is a data point an outlier?",
+    "answer": 50,
+    "tolerance": 0,
+    "explanation": "$32 + 1.5\\times12 = 50$."
+  },
+  {
+    "id": "convenience-bias",
+    "type": "tf",
+    "lesson": "sampling",
+    "concept": "Bias",
+    "difficulty": 1,
+    "prompt": "Asking the first 30 people entering a gym about national exercise habits is likely to give a biased sample.",
+    "answer": true,
+    "explanation": "Gym-goers are not representative of the whole population."
+  }
+]

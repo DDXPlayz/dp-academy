@@ -1,0 +1,46 @@
+[
+  {
+    "id": "find-k",
+    "type": "numeric",
+    "lesson": "discrete-rv",
+    "concept": "Probability distributions",
+    "difficulty": 1,
+    "prompt": "$P(X = x) = kx$ for $x = 1, 2, 3, 4$. Find $k$.",
+    "answer": 0.1,
+    "tolerance": 0.001,
+    "explanation": "$k(1 + 2 + 3 + 4) = 1 \\Rightarrow k = 0.1$."
+  },
+  {
+    "id": "ex-calc",
+    "type": "numeric",
+    "lesson": "discrete-rv",
+    "concept": "Expected value",
+    "difficulty": 2,
+    "prompt": "For the same distribution, find $E(X)$.",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "$0.1(1 + 4 + 9 + 16) = 3$."
+  },
+  {
+    "id": "fair-game",
+    "type": "numeric",
+    "lesson": "discrete-rv",
+    "concept": "Fair games",
+    "difficulty": 2,
+    "prompt": "A game pays \\$20 with probability 0.15 and nothing otherwise. What entry fee makes it fair?",
+    "answer": 3,
+    "tolerance": 0,
+    "unit": "$",
+    "explanation": "Expected winnings $20\\times0.15 = 3$."
+  },
+  {
+    "id": "ex-not-value",
+    "type": "tf",
+    "lesson": "discrete-rv",
+    "concept": "Expected value",
+    "difficulty": 1,
+    "prompt": "The expected number of heads in 3 coin tosses is 1.5, even though 1.5 heads is impossible in a single experiment.",
+    "answer": true,
+    "explanation": "E(X) is a long-run average, not necessarily a possible outcome."
+  }
+]

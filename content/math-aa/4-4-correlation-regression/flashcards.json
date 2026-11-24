@@ -1,0 +1,5 @@
+[
+  { "id": "r-card", "front": "Pearson’s r?", "back": "Strength and direction of linear correlation, −1 to 1.", "concept": "Pearson’s r" },
+  { "id": "reg-card", "front": "Regression line facts?", "back": "y = ax + b from GDC; passes through (x̄, ȳ); a = change in y per unit x.", "concept": "Regression line" },
+  { "id": "extrap-card", "front": "When are predictions reliable?", "back": "Strong r and interpolation (within the data range).", "concept": "Prediction" }
+]

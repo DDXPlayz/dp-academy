@@ -1,0 +1,5 @@
+[
+  { "id": "binom-cond-card", "front": "Conditions for a binomial model?", "back": "Fixed n, independent trials, two outcomes, constant p.", "concept": "Conditions" },
+  { "id": "binom-formula-card", "front": "Binomial probability formula?", "back": "$P(X = r) = \\binom nr p^r(1 - p)^{n - r}$", "concept": "Binomial probability" },
+  { "id": "binom-mv-card", "front": "Mean and variance of B(n, p)?", "back": "$np$ and $np(1 - p)$.", "concept": "Mean and variance" }
+]

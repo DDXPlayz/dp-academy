@@ -1,0 +1,4 @@
+[
+  { "id": "change-card", "front": "Effect of adding k / multiplying by k on data?", "back": "+k: mean +k, spread same. ×k: mean ×k, SD and IQR ×k, variance ×k².", "concept": "Effect of changes" },
+  { "id": "grouped-card", "front": "Estimating a mean from grouped data?", "back": "Use class midpoints: $\\bar x = \\sum fx/n$.", "concept": "Grouped data" }
+]

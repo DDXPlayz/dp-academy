@@ -1,0 +1,56 @@
+[
+  {
+    "id": "transform-mean",
+    "type": "numeric",
+    "lesson": "centre-spread",
+    "concept": "Effect of changes",
+    "difficulty": 2,
+    "prompt": "Data have mean 40 and standard deviation 8. Every value is multiplied by 0.5 and then 3 is subtracted. Find the new standard deviation.",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "SD is scaled by 0.5; subtracting 3 has no effect."
+  },
+  {
+    "id": "grouped-mean",
+    "type": "numeric",
+    "lesson": "centre-spread",
+    "concept": "Grouped data",
+    "difficulty": 2,
+    "prompt": "Estimate the mean: 0–4 (f = 3), 4–8 (f = 5), 8–12 (f = 2).",
+    "answer": 5.6,
+    "tolerance": 0.001,
+    "explanation": "$(2\\times3 + 6\\times5 + 10\\times2)/10 = 56/10 = 5.6$."
+  },
+  {
+    "id": "median-even",
+    "type": "numeric",
+    "lesson": "centre-spread",
+    "concept": "Median",
+    "difficulty": 1,
+    "prompt": "Find the median of 3, 8, 5, 12, 9, 6.",
+    "answer": 7,
+    "tolerance": 0,
+    "explanation": "Ordered: 3, 5, 6, 8, 9, 12; median $(6 + 8)/2 = 7$."
+  },
+  {
+    "id": "add-constant",
+    "type": "tf",
+    "lesson": "centre-spread",
+    "concept": "Effect of changes",
+    "difficulty": 1,
+    "prompt": "Adding 10 to every data value increases the interquartile range by 10.",
+    "answer": false,
+    "explanation": "Adding a constant shifts all values equally; spread is unchanged."
+  },
+  {
+    "id": "variance",
+    "type": "numeric",
+    "lesson": "centre-spread",
+    "concept": "Standard deviation",
+    "difficulty": 1,
+    "prompt": "A data set has standard deviation 2.5. What is its variance?",
+    "answer": 6.25,
+    "tolerance": 0.001,
+    "explanation": "$2.5^2 = 6.25$."
+  }
+]

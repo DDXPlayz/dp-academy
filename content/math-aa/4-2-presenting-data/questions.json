@@ -1,0 +1,45 @@
+[
+  {
+    "id": "cf-median",
+    "type": "numeric",
+    "lesson": "presenting-data",
+    "concept": "Cumulative frequency",
+    "difficulty": 1,
+    "prompt": "A cumulative frequency graph shows 200 values. At what cumulative frequency do you read across to find the upper quartile?",
+    "answer": 150,
+    "tolerance": 0,
+    "explanation": "$\\tfrac34\\times200 = 150$."
+  },
+  {
+    "id": "cf-plot",
+    "type": "mcq",
+    "lesson": "presenting-data",
+    "concept": "Cumulative frequency",
+    "difficulty": 1,
+    "prompt": "Cumulative frequencies should be plotted against:",
+    "options": ["class midpoints", "lower class boundaries", "upper class boundaries", "frequency densities"],
+    "answer": 2,
+    "explanation": "By the upper boundary, all values in the class have been counted."
+  },
+  {
+    "id": "box-iqr",
+    "type": "numeric",
+    "lesson": "presenting-data",
+    "concept": "Box plots",
+    "difficulty": 1,
+    "prompt": "A box plot has its box from 15 to 27. What is the interquartile range?",
+    "answer": 12,
+    "tolerance": 0,
+    "explanation": "$Q_3 - Q_1 = 27 - 15$."
+  },
+  {
+    "id": "percentile",
+    "type": "tf",
+    "lesson": "presenting-data",
+    "concept": "Percentiles",
+    "difficulty": 1,
+    "prompt": "The median is the 50th percentile.",
+    "answer": true,
+    "explanation": "Half the data lie below it."
+  }
+]

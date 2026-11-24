@@ -1,0 +1,46 @@
+[
+  {
+    "id": "binom-mean",
+    "type": "numeric",
+    "lesson": "binomial",
+    "concept": "Mean and variance",
+    "difficulty": 1,
+    "prompt": "$X \\sim B(20, 0.3)$. Find $\\text{Var}(X)$.",
+    "answer": 4.2,
+    "tolerance": 0.001,
+    "explanation": "$20\\times0.3\\times0.7 = 4.2$."
+  },
+  {
+    "id": "binom-exact",
+    "type": "numeric",
+    "lesson": "binomial",
+    "concept": "Binomial probability",
+    "difficulty": 2,
+    "prompt": "$X \\sim B(5, 0.4)$. Find $P(X = 2)$ (3 s.f.).",
+    "answer": 0.3456,
+    "tolerance": 0.003,
+    "explanation": "$\\binom52(0.4)^2(0.6)^3 = 10\\times0.16\\times0.216 = 0.346$."
+  },
+  {
+    "id": "binom-atleast",
+    "type": "numeric",
+    "lesson": "binomial",
+    "concept": "Binomial probability",
+    "difficulty": 2,
+    "prompt": "$X \\sim B(4, 0.5)$. Find $P(X \\ge 1)$.",
+    "answer": 0.9375,
+    "tolerance": 0.001,
+    "explanation": "$1 - 0.5^4 = 0.9375$."
+  },
+  {
+    "id": "binom-conditions",
+    "type": "mcq",
+    "lesson": "binomial",
+    "concept": "Conditions",
+    "difficulty": 2,
+    "prompt": "Which situation is NOT well modelled by a binomial distribution?",
+    "options": ["number of sixes in 12 dice rolls", "number of heads in 20 coin tosses", "number of red cards when drawing 5 cards without replacement from a small deck", "number of defective items in a large batch sample of 10"],
+    "answer": 2,
+    "explanation": "Without replacement from a small deck, p changes — trials are not independent."
+  }
+]

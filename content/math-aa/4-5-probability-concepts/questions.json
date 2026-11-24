@@ -1,0 +1,45 @@
+[
+  {
+    "id": "dice-prob",
+    "type": "numeric",
+    "lesson": "probability",
+    "concept": "Probability",
+    "difficulty": 1,
+    "prompt": "Two fair dice are rolled. Find P(sum = 7) as a decimal (3 s.f.).",
+    "answer": 0.167,
+    "tolerance": 0.003,
+    "explanation": "6 of 36 outcomes: $\\tfrac16$."
+  },
+  {
+    "id": "complement",
+    "type": "numeric",
+    "lesson": "probability",
+    "concept": "Complement",
+    "difficulty": 1,
+    "prompt": "$P(A) = 0.35$. Find $P(A')$.",
+    "answer": 0.65,
+    "tolerance": 0.001,
+    "explanation": "$1 - 0.35$."
+  },
+  {
+    "id": "expected-count",
+    "type": "numeric",
+    "lesson": "probability",
+    "concept": "Expected occurrences",
+    "difficulty": 1,
+    "prompt": "The probability a seed germinates is 0.8. How many of 250 seeds are expected to germinate?",
+    "answer": 200,
+    "tolerance": 0,
+    "explanation": "$250\\times0.8$."
+  },
+  {
+    "id": "rel-freq",
+    "type": "tf",
+    "lesson": "probability",
+    "concept": "Relative frequency",
+    "difficulty": 1,
+    "prompt": "Relative frequency tends to get closer to the true probability as the number of trials increases.",
+    "answer": true,
+    "explanation": "This is the basis for estimating probabilities experimentally."
+  }
+]

@@ -1,0 +1,5 @@
+[
+  { "id": "addition-card", "front": "Addition rule?", "back": "$P(A\\cup B) = P(A) + P(B) - P(A\\cap B)$", "concept": "Addition rule" },
+  { "id": "cond-card", "front": "Conditional probability?", "back": "$P(A\\mid B) = P(A\\cap B)/P(B)$", "concept": "Conditional probability" },
+  { "id": "me-ind-card", "front": "Mutually exclusive vs independent?", "back": "ME: $P(A\\cap B) = 0$. Independent: $P(A\\cap B) = P(A)P(B)$.", "concept": "Independence" }
+]

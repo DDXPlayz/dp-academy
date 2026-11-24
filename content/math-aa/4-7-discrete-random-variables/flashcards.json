@@ -1,0 +1,5 @@
+[
+  { "id": "sum1-card", "front": "Condition for a probability distribution?", "back": "All $P \\ge 0$ and $\\sum P(X = x) = 1$.", "concept": "Probability distributions" },
+  { "id": "ex-card", "front": "Expected value of a discrete RV?", "back": "$E(X) = \\sum xP(X = x)$", "concept": "Expected value" },
+  { "id": "fair-card", "front": "Fair game?", "back": "Expected gain (winnings − cost) is 0.", "concept": "Fair games" }
+]

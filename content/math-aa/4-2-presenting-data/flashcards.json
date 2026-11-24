@@ -1,0 +1,4 @@
+[
+  { "id": "cf-card", "front": "Reading a cumulative frequency graph?", "back": "Plot at upper boundaries; Q₁, median, Q₃ at n/4, n/2, 3n/4.", "concept": "Cumulative frequency" },
+  { "id": "boxplot-card", "front": "What does a box plot show?", "back": "Min, Q₁, median, Q₃, max; outliers marked separately.", "concept": "Box plots" }
+]

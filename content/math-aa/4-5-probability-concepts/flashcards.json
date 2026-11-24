@@ -1,0 +1,5 @@
+[
+  { "id": "prob-def-card", "front": "Probability of event A (equally likely outcomes)?", "back": "$n(A)/n(U)$", "concept": "Probability" },
+  { "id": "expected-card", "front": "Expected number of occurrences?", "back": "$np$", "concept": "Expected occurrences" },
+  { "id": "atleast-card", "front": "Strategy for 'at least one'?", "back": "1 − P(none).", "concept": "Complement" }
+]

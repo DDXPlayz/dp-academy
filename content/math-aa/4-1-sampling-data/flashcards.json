@@ -1,0 +1,5 @@
+[
+  { "id": "sampling-card", "front": "Five sampling methods?", "back": "Simple random, convenience, systematic, quota, stratified.", "concept": "Stratified sampling" },
+  { "id": "outlier-card", "front": "Outlier rule?", "back": "Below $Q_1 - 1.5\\,IQR$ or above $Q_3 + 1.5\\,IQR$.", "concept": "Outliers" },
+  { "id": "disc-cont-card", "front": "Discrete vs continuous data?", "back": "Discrete: countable values. Continuous: any value in a range (measured).", "concept": "Types of data" }
+]

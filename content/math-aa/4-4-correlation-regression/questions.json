@@ -1,0 +1,45 @@
+[
+  {
+    "id": "r-interpret",
+    "type": "mcq",
+    "lesson": "correlation-regression",
+    "concept": "Pearson’s r",
+    "difficulty": 1,
+    "prompt": "Which value of r indicates the strongest linear correlation?",
+    "options": ["0.65", "−0.92", "0.05", "0.88"],
+    "answer": 1,
+    "explanation": "Strength depends on |r|; |−0.92| is largest."
+  },
+  {
+    "id": "predict",
+    "type": "numeric",
+    "lesson": "correlation-regression",
+    "concept": "Prediction",
+    "difficulty": 1,
+    "prompt": "The regression line is $y = 2.5x - 4$. Predict $y$ when $x = 10$.",
+    "answer": 21,
+    "tolerance": 0,
+    "explanation": "$25 - 4 = 21$."
+  },
+  {
+    "id": "causation",
+    "type": "tf",
+    "lesson": "correlation-regression",
+    "concept": "Correlation",
+    "difficulty": 1,
+    "prompt": "A strong positive correlation between ice-cream sales and sunburn shows that ice cream causes sunburn.",
+    "answer": false,
+    "explanation": "Both are linked to a third variable — sunny weather."
+  },
+  {
+    "id": "mean-point",
+    "type": "numeric",
+    "lesson": "correlation-regression",
+    "concept": "Regression line",
+    "difficulty": 2,
+    "prompt": "A regression line $y = 3x + b$ passes through the mean point $(4, 17)$. Find $b$.",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "$17 = 12 + b$."
+  }
+]

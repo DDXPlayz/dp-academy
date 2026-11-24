@@ -1,0 +1,56 @@
+[
+  {
+    "id": "union-prob",
+    "type": "numeric",
+    "lesson": "combined-events",
+    "concept": "Addition rule",
+    "difficulty": 1,
+    "prompt": "$P(A) = 0.5$, $P(B) = 0.4$, $P(A\\cap B) = 0.2$. Find $P(A\\cup B)$.",
+    "answer": 0.7,
+    "tolerance": 0.001,
+    "explanation": "$0.5 + 0.4 - 0.2 = 0.7$."
+  },
+  {
+    "id": "independent-check",
+    "type": "mcq",
+    "lesson": "combined-events",
+    "concept": "Independence",
+    "difficulty": 2,
+    "prompt": "$P(A) = 0.3$, $P(B) = 0.5$, $P(A\\cap B) = 0.15$. A and B are:",
+    "options": ["independent", "mutually exclusive", "both", "neither"],
+    "answer": 0,
+    "explanation": "$0.3\\times0.5 = 0.15$."
+  },
+  {
+    "id": "conditional",
+    "type": "numeric",
+    "lesson": "combined-events",
+    "concept": "Conditional probability",
+    "difficulty": 2,
+    "prompt": "$P(A\\cap B) = 0.12$ and $P(B) = 0.4$. Find $P(A\\mid B)$.",
+    "answer": 0.3,
+    "tolerance": 0.001,
+    "explanation": "$0.12/0.4 = 0.3$."
+  },
+  {
+    "id": "without-replacement",
+    "type": "numeric",
+    "lesson": "combined-events",
+    "concept": "Tree diagrams",
+    "difficulty": 2,
+    "prompt": "A box has 4 white and 6 black balls. Two are drawn without replacement. Find P(both white) (3 s.f.).",
+    "answer": 0.133,
+    "tolerance": 0.003,
+    "explanation": "$\\tfrac{4}{10}\\cdot\\tfrac39 = \\tfrac{12}{90} = 0.133$."
+  },
+  {
+    "id": "me-not-indep",
+    "type": "tf",
+    "lesson": "combined-events",
+    "concept": "Independence",
+    "difficulty": 2,
+    "prompt": "Two mutually exclusive events with non-zero probabilities are independent.",
+    "answer": false,
+    "explanation": "If A happens, B cannot — so A affects B. $P(A\\cap B) = 0 \\ne P(A)P(B)$."
+  }
+]
