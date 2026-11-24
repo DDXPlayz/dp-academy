@@ -1,0 +1,60 @@
+[
+  {
+    "id": "p1a-coulomb-ratio",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "D.2",
+    "prompt": "Two point charges repel with force $F$. Each charge is doubled and the separation is doubled. What is the new force?",
+    "options": ["$F/4$", "$F$", "$2F$", "$4F$"],
+    "answer": 1,
+    "markscheme": "**B.** $F \\propto q_1q_2/r^2$: the numerator grows by $2\\times2 = 4$ and the denominator by $2^2 = 4$.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-induction-sequence",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "D.2",
+    "prompt": "A negatively charged rod is held near a neutral metal sphere on an insulating stand. The sphere is earthed, the earth connection is removed and then the rod is removed. What is the final charge on the sphere?",
+    "options": ["Negative", "Positive", "Zero", "Negative on the near side, positive on the far side"],
+    "answer": 1,
+    "markscheme": "**B.** Electrons repelled by the rod leave through the earth; they cannot return once the earth is removed, so the sphere is positive.",
+    "source": "original"
+  },
+  {
+    "id": "p1a-potential-midpoint",
+    "paper": "1A",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "D.2",
+    "prompt": "Equal and opposite point charges $+Q$ and $-Q$ are fixed a distance apart. What are the electric field strength $E$ and electric potential $V$ at the midpoint between them?",
+    "options": ["$E = 0,\\ V = 0$", "$E = 0,\\ V \\neq 0$", "$E \\neq 0,\\ V = 0$", "$E \\neq 0,\\ V \\neq 0$"],
+    "answer": 2,
+    "markscheme": "**C.** The potentials (scalars) cancel; the fields (vectors) both point from + towards − and add.",
+    "source": "original"
+  },
+  {
+    "id": "p2-electron-between-plates",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 6,
+    "subtopic": "D.2",
+    "prompt": "Two horizontal parallel plates are $8.0\\ \\text{mm}$ apart. The upper plate is at $+400\\ \\text{V}$ and the lower plate is earthed.\n\n**(a)** Sketch the electric field between the plates. **[2]**\n\n**(b)** Calculate the electric field strength between the plates. **[1]**\n\n**(c)** An oil drop of mass $3.3 \\times 10^{-15}\\ \\text{kg}$ is held stationary between the plates. Determine the charge on the drop, stating its sign, and the number of excess electrons. **[3]**",
+    "markscheme": "**(a)** Parallel, equally spaced lines between the plates ✓ with arrows pointing downwards, from the + plate to the earthed plate ✓\n\n**(b)** $E = \\tfrac{V}{d} = \\tfrac{400}{8.0\\times10^{-3}} = 5.0 \\times 10^{4}\\ \\text{V m}^{-1}$ ✓\n\n**(c)** $qE = mg \\Rightarrow q = \\tfrac{3.3\\times10^{-15} \\times 9.8}{5.0\\times10^{4}} = 6.5 \\times 10^{-19}\\ \\text{C}$ ✓; the force must be upwards against a downward field, so the charge is **negative** ✓; $n = \\tfrac{6.5\\times10^{-19}}{1.6\\times10^{-19}} \\approx 4$ electrons ✓",
+    "source": "original"
+  },
+  {
+    "id": "p2-alpha-closest-approach",
+    "paper": "2",
+    "level": "HL",
+    "difficulty": "hard",
+    "marks": 4,
+    "subtopic": "D.2",
+    "prompt": "An alpha particle ($q = +2e$) with kinetic energy $5.0\\ \\text{MeV}$ is fired directly at a gold nucleus ($q = +79e$).\n\n**(a)** Explain why the alpha particle stops momentarily. **[1]**\n\n**(b)** Calculate the distance of closest approach. **[3]**",
+    "markscheme": "**(a)** The repulsive electric force does negative work, converting all its kinetic energy into electric potential energy ✓\n\n**(b)** $E_k = 5.0 \\times 10^6 \\times 1.6\\times10^{-19} = 8.0\\times10^{-13}\\ \\text{J}$ ✓; $E_k = \\tfrac{k(2e)(79e)}{r}$ ✓; $r = \\tfrac{8.99\\times10^9 \\times 2 \\times 79 \\times (1.6\\times10^{-19})^2}{8.0\\times10^{-13}} \\approx 4.5\\times10^{-14}\\ \\text{m}$ ✓",
+    "source": "original"
+  }
+]

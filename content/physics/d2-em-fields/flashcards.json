@@ -1,0 +1,15 @@
+[
+  { "id": "coulomb-card", "front": "Coulomb’s law?", "back": "$F = kq_1q_2/r^2$, $k = 1/4\\pi\\varepsilon_0 = 8.99\\times10^9$ N m² C⁻².", "concept": "Coulomb’s law" },
+  { "id": "charge-conservation-card", "front": "State the conservation of charge.", "back": "The total charge of an isolated system is constant — charge is transferred, never created or destroyed.", "concept": "Conservation of charge" },
+  { "id": "induction-card", "front": "Charging by induction with grounding — the result?", "back": "The conductor ends with charge **opposite** to the nearby rod (ground removed before the rod).", "concept": "Charging by induction" },
+  { "id": "millikan-card", "front": "What did Millikan’s oil-drop experiment show?", "back": "Charge is quantised: every charge is a whole multiple of $e = 1.60\\times10^{-19}$ C.", "concept": "Millikan’s experiment" },
+  { "id": "e-field-def", "front": "Define electric field strength.", "back": "Force per unit charge on a small positive test charge: $E = F/q$ (N C⁻¹ or V m⁻¹).", "concept": "Electric field strength" },
+  { "id": "point-e-card", "front": "Field of a point charge?", "back": "$E = kQ/r^2$, pointing away from + and towards −.", "concept": "Electric field strength" },
+  { "id": "plates-card", "front": "Field between parallel plates?", "back": "Uniform: $E = V/d$.", "concept": "Uniform field" },
+  { "id": "b-lines-card", "front": "Magnetic field line rules?", "back": "Show force on a north pole; N → S outside a magnet; closed loops; never cross.", "concept": "Magnetic field lines" },
+  { "id": "grip-card", "front": "Right-hand grip rule?", "back": "Thumb along the current, curled fingers give the magnetic field direction.", "concept": "Right-hand grip rule" },
+  { "id": "ve-card", "front": "Electric potential of a point charge?", "back": "$V_e = kQ/r$ — a scalar, zero at infinity, same sign as Q.", "concept": "Electric potential" },
+  { "id": "ep-elec-card", "front": "Electric potential energy of two charges?", "back": "$E_p = kq_1q_2/r$ — positive for like charges, negative for unlike.", "concept": "Electric potential energy" },
+  { "id": "gradient-card", "front": "Field from potential?", "back": "$E = -\\Delta V_e/\\Delta r$; field points from high to low potential.", "concept": "Potential gradient" },
+  { "id": "equipotential-card", "front": "Equipotentials and field lines?", "back": "Always perpendicular; no work is done moving along an equipotential.", "concept": "Equipotentials" }
+]
