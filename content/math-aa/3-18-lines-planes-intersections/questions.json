@@ -1,0 +1,46 @@
+[
+  {
+    "id": "line-plane-point",
+    "type": "numeric",
+    "lesson": "intersections-angles",
+    "concept": "Line meets plane",
+    "difficulty": 2,
+    "prompt": "(HL) The line $\\mathbf r = (0, 0, 1) + \\lambda(1, 2, 1)$ meets the plane $x + y + z = 9$. Find the value of $\\lambda$.",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "$\\lambda + 2\\lambda + 1 + \\lambda = 9 \\Rightarrow 4\\lambda = 8$."
+  },
+  {
+    "id": "plane-angle",
+    "type": "numeric",
+    "lesson": "intersections-angles",
+    "concept": "Angles",
+    "difficulty": 3,
+    "prompt": "(HL) Find the acute angle between the planes $x + y = 3$ and $y + z = 5$, in degrees.",
+    "answer": 60,
+    "tolerance": 0.001,
+    "unit": "°",
+    "explanation": "$\\cos\\theta = \\frac{1}{\\sqrt2\\sqrt2} = \\frac12$."
+  },
+  {
+    "id": "line-parallel-plane",
+    "type": "tf",
+    "lesson": "intersections-angles",
+    "concept": "Line meets plane",
+    "difficulty": 2,
+    "prompt": "(HL) If a line’s direction b satisfies b · n = 0 for a plane’s normal n, the line is parallel to the plane.",
+    "answer": true,
+    "explanation": "The direction is perpendicular to the normal, so it lies parallel to the plane."
+  },
+  {
+    "id": "two-plane-dir",
+    "type": "mcq",
+    "lesson": "intersections-angles",
+    "concept": "Two planes",
+    "difficulty": 2,
+    "prompt": "(HL) The direction of the line of intersection of two planes is:",
+    "options": ["$\\mathbf n_1 + \\mathbf n_2$", "$\\mathbf n_1\\cdot\\mathbf n_2$", "$\\mathbf n_1\\times\\mathbf n_2$", "$\\mathbf n_1 - \\mathbf n_2$"],
+    "answer": 2,
+    "explanation": "The line is perpendicular to both normals."
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "id": "classify-lines",
+    "type": "mcq",
+    "lesson": "line-relationships",
+    "concept": "Classifying lines",
+    "difficulty": 2,
+    "prompt": "(HL) Two lines in 3D have non-parallel directions, and the equations for the intersection are inconsistent. The lines are:",
+    "options": ["parallel", "coincident", "intersecting", "skew"],
+    "answer": 3,
+    "explanation": "Not parallel and not meeting: skew."
+  },
+  {
+    "id": "parallel-lines",
+    "type": "mcq",
+    "lesson": "line-relationships",
+    "concept": "Classifying lines",
+    "difficulty": 2,
+    "prompt": "(HL) $\\mathbf r = (0, 0, 0) + \\lambda(1, 2, 3)$ and $\\mathbf r = (1, 0, 0) + \\mu(2, 4, 6)$ are:",
+    "options": ["coincident", "parallel and distinct", "intersecting", "skew"],
+    "answer": 1,
+    "explanation": "Directions are parallel; $(1, 0, 0)$ is not on the first line."
+  },
+  {
+    "id": "intersect-x",
+    "type": "numeric",
+    "lesson": "line-relationships",
+    "concept": "Intersection",
+    "difficulty": 3,
+    "prompt": "(HL) $\\mathbf r = (1, 0) + \\lambda(1, 1)$ and $\\mathbf r = (5, 0) + \\mu(-1, 1)$ meet at a point. Find its y-coordinate.",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "$1 + \\lambda = 5 - \\mu$ and $\\lambda = \\mu$ ⇒ $\\lambda = 2$: point $(3, 2)$."
+  },
+  {
+    "id": "skew-2d",
+    "type": "tf",
+    "lesson": "line-relationships",
+    "concept": "Skew lines",
+    "difficulty": 1,
+    "prompt": "(HL) Two lines in a plane (2D) can be skew.",
+    "answer": false,
+    "explanation": "In 2D non-parallel lines always meet; skew lines need 3D."
+  }
+]

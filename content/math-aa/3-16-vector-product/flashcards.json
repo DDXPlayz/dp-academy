@@ -1,0 +1,4 @@
+[
+  { "id": "cross-card", "front": "(HL) Properties of v × w?", "back": "Perpendicular to both; magnitude |v||w| sin θ; w × v = −v × w; zero if parallel.", "concept": "Properties" },
+  { "id": "cross-area-card", "front": "(HL) Area of a triangle with vectors?", "back": "$\\tfrac12|\\overrightarrow{AB}\\times\\overrightarrow{AC}|$", "concept": "Areas" }
+]

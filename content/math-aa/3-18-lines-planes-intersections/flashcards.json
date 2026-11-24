@@ -1,0 +1,5 @@
+[
+  { "id": "lp-int-card", "front": "(HL) Intersection of a line and a plane?", "back": "Substitute the parametric line into the plane equation and solve for λ.", "concept": "Line meets plane" },
+  { "id": "lp-angle-card", "front": "(HL) Angle between line and plane?", "back": "$\\sin\\theta = \\frac{|\\mathbf b\\cdot\\mathbf n|}{|\\mathbf b||\\mathbf n|}$", "concept": "Angles" },
+  { "id": "pp-angle-card", "front": "(HL) Angle between two planes?", "back": "Angle between normals: $\\cos\\theta = \\frac{|\\mathbf n_1\\cdot\\mathbf n_2|}{|\\mathbf n_1||\\mathbf n_2|}$", "concept": "Angles" }
+]

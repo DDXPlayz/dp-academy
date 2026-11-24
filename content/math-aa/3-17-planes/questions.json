@@ -1,0 +1,45 @@
+[
+  {
+    "id": "plane-normal",
+    "type": "mcq",
+    "lesson": "planes",
+    "concept": "Normal vector",
+    "difficulty": 1,
+    "prompt": "(HL) What is a normal vector to the plane $2x - y + 4z = 7$?",
+    "options": ["$(2, -1, 4)$", "$(2, 1, 4)$", "$(7, 0, 0)$", "$(1, 2, 0)$"],
+    "answer": 0,
+    "explanation": "The coefficients of $x, y, z$."
+  },
+  {
+    "id": "plane-d",
+    "type": "numeric",
+    "lesson": "planes",
+    "concept": "Cartesian form",
+    "difficulty": 2,
+    "prompt": "(HL) A plane has normal $(1, 2, -2)$ and passes through $(3, 1, 4)$. Find $d$ in $x + 2y - 2z = d$.",
+    "answer": -3,
+    "tolerance": 0,
+    "explanation": "$3 + 2 - 8 = -3$."
+  },
+  {
+    "id": "point-in-plane",
+    "type": "tf",
+    "lesson": "planes",
+    "concept": "Cartesian form",
+    "difficulty": 1,
+    "prompt": "(HL) The point $(1, 1, 1)$ lies in the plane $x + y + z = 3$.",
+    "answer": true,
+    "explanation": "$1 + 1 + 1 = 3$."
+  },
+  {
+    "id": "normal-cross",
+    "type": "mcq",
+    "lesson": "planes",
+    "concept": "Normal vector",
+    "difficulty": 2,
+    "prompt": "(HL) A plane contains directions $(1, 0, 0)$ and $(0, 1, 0)$. Which is a normal?",
+    "options": ["$(1, 1, 0)$", "$(0, 0, 1)$", "$(1, 0, 1)$", "$(1, 1, 1)$"],
+    "answer": 1,
+    "explanation": "$(1, 0, 0)\\times(0, 1, 0) = (0, 0, 1)$."
+  }
+]

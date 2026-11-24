@@ -1,0 +1,46 @@
+[
+  {
+    "id": "point-on-line",
+    "type": "numeric",
+    "lesson": "vector-lines",
+    "concept": "Vector equation",
+    "difficulty": 2,
+    "prompt": "(HL) The line $\\mathbf r = (1, 0, 2) + \\lambda(2, 3, -1)$ passes through $(7, q, -1)$. Find $q$.",
+    "answer": 9,
+    "tolerance": 0,
+    "explanation": "$1 + 2\\lambda = 7 \\Rightarrow \\lambda = 3$; $q = 0 + 9 = 9$ (and $z = 2 - 3 = -1$ ✓)."
+  },
+  {
+    "id": "line-angle",
+    "type": "numeric",
+    "lesson": "vector-lines",
+    "concept": "Angle between lines",
+    "difficulty": 3,
+    "prompt": "(HL) Find the acute angle between lines with directions $(1, 0, 1)$ and $(0, 1, 1)$, in degrees.",
+    "answer": 60,
+    "tolerance": 0.001,
+    "unit": "°",
+    "explanation": "$\\cos\\theta = 1/2$."
+  },
+  {
+    "id": "speed",
+    "type": "numeric",
+    "lesson": "vector-lines",
+    "concept": "Kinematics",
+    "difficulty": 1,
+    "prompt": "(HL) A particle moves as $\\mathbf r = (2, 1) + t(6, -8)$. Find its speed.",
+    "answer": 10,
+    "tolerance": 0,
+    "explanation": "$|(6, -8)| = 10$."
+  },
+  {
+    "id": "direction-choice",
+    "type": "tf",
+    "lesson": "vector-lines",
+    "concept": "Vector equation",
+    "difficulty": 1,
+    "prompt": "(HL) $\\mathbf r = \\mathbf a + \\lambda(2, 4, 6)$ and $\\mathbf r = \\mathbf a + \\mu(1, 2, 3)$ describe the same line.",
+    "answer": true,
+    "explanation": "The direction vectors are parallel and the lines share point $\\mathbf a$."
+  }
+]

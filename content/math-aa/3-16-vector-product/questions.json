@@ -1,0 +1,45 @@
+[
+  {
+    "id": "cross-area",
+    "type": "numeric",
+    "lesson": "vector-product",
+    "concept": "Areas",
+    "difficulty": 2,
+    "prompt": "(HL) Find the area of the parallelogram spanned by $(2, 0, 0)$ and $(0, 3, 0)$.",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "Cross product $(0, 0, 6)$, magnitude 6."
+  },
+  {
+    "id": "cross-component",
+    "type": "numeric",
+    "lesson": "vector-product",
+    "concept": "Vector product",
+    "difficulty": 2,
+    "prompt": "(HL) Find the k-component of $(1, 2, 0)\\times(3, 1, 0)$.",
+    "answer": -5,
+    "tolerance": 0,
+    "explanation": "$v_1w_2 - v_2w_1 = 1 - 6 = -5$."
+  },
+  {
+    "id": "anti-comm",
+    "type": "tf",
+    "lesson": "vector-product",
+    "concept": "Properties",
+    "difficulty": 1,
+    "prompt": "(HL) $\\mathbf v\\times\\mathbf w = \\mathbf w\\times\\mathbf v$.",
+    "answer": false,
+    "explanation": "$\\mathbf w\\times\\mathbf v = -(\\mathbf v\\times\\mathbf w)$."
+  },
+  {
+    "id": "parallel-cross",
+    "type": "mcq",
+    "lesson": "vector-product",
+    "concept": "Properties",
+    "difficulty": 1,
+    "prompt": "(HL) If $\\mathbf v\\times\\mathbf w = \\mathbf 0$ for non-zero v and w, then v and w are:",
+    "options": ["perpendicular", "parallel", "unit vectors", "skew"],
+    "answer": 1,
+    "explanation": "$\\sin\\theta = 0$."
+  }
+]

@@ -1,0 +1,4 @@
+[
+  { "id": "plane-forms-card", "front": "(HL) Three forms of a plane?", "back": "$\\mathbf r = \\mathbf a + \\lambda\\mathbf b + \\mu\\mathbf c$; $\\mathbf r\\cdot\\mathbf n = \\mathbf a\\cdot\\mathbf n$; $ax + by + cz = d$.", "concept": "Cartesian form" },
+  { "id": "plane-3pts-card", "front": "(HL) Plane through three points?", "back": "Two direction vectors → cross product = normal → $d = \\mathbf a\\cdot\\mathbf n$.", "concept": "Normal vector" }
+]

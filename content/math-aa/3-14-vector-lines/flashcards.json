@@ -1,0 +1,4 @@
+[
+  { "id": "vline-card", "front": "(HL) Vector equation of a line?", "back": "$\\mathbf r = \\mathbf a + \\lambda\\mathbf b$ — point $\\mathbf a$, direction $\\mathbf b$.", "concept": "Vector equation" },
+  { "id": "line-angle-card", "front": "(HL) Angle between two lines?", "back": "Use direction vectors: $\\cos\\theta = \\frac{|\\mathbf b_1\\cdot\\mathbf b_2|}{|\\mathbf b_1||\\mathbf b_2|}$.", "concept": "Angle between lines" }
+]
