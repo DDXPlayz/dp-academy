@@ -1,0 +1,103 @@
+[
+  {
+    "id": "string-fundamental",
+    "type": "numeric",
+    "lesson": "standing-waves",
+    "concept": "Harmonics on a string",
+    "difficulty": 2,
+    "prompt": "A string 0.80 m long is fixed at both ends. Waves travel along it at 240 m s⁻¹. What is its fundamental frequency?",
+    "answer": 150,
+    "tolerance": 0.02,
+    "unit": "Hz",
+    "explanation": "$\\lambda_1 = 2L = 1.6$ m, so $f_1 = v/\\lambda_1 = 240/1.6 = 150$ Hz."
+  },
+  {
+    "id": "node-spacing",
+    "type": "mcq",
+    "lesson": "standing-waves",
+    "concept": "Nodes and antinodes",
+    "difficulty": 1,
+    "prompt": "The distance between two adjacent nodes of a standing wave is:",
+    "options": ["λ/4", "λ/2", "λ", "2λ"],
+    "answer": 1,
+    "explanation": "Adjacent nodes are half a wavelength apart."
+  },
+  {
+    "id": "closed-pipe",
+    "type": "numeric",
+    "lesson": "standing-waves",
+    "concept": "Harmonics in pipes",
+    "difficulty": 2,
+    "prompt": "A pipe closed at one end is 0.50 m long. The speed of sound is 340 m s⁻¹. What is its fundamental frequency?",
+    "answer": 170,
+    "tolerance": 0.02,
+    "unit": "Hz",
+    "explanation": "$f_1 = v/4L = 340/2.0 = 170$ Hz."
+  },
+  {
+    "id": "closed-pipe-harmonics",
+    "type": "mcq",
+    "lesson": "standing-waves",
+    "concept": "Harmonics in pipes",
+    "difficulty": 2,
+    "prompt": "A pipe closed at one end has a fundamental of 120 Hz. Which of these can it also produce?",
+    "options": ["240 Hz", "360 Hz", "480 Hz", "60 Hz"],
+    "answer": 1,
+    "explanation": "Closed pipes produce odd harmonics only: 120, 360, 600 Hz, …"
+  },
+  {
+    "id": "standing-energy",
+    "type": "tf",
+    "lesson": "standing-waves",
+    "concept": "Standing waves",
+    "difficulty": 1,
+    "prompt": "A standing wave transfers energy along its length in the same way as a travelling wave.",
+    "answer": false,
+    "explanation": "The two component waves carry equal energy in opposite directions, so there is no net energy transfer."
+  },
+  {
+    "id": "open-pipe-third",
+    "type": "numeric",
+    "lesson": "standing-waves",
+    "concept": "Harmonics in pipes",
+    "difficulty": 3,
+    "prompt": "A pipe open at both ends is 0.85 m long and the speed of sound is 340 m s⁻¹. What is the frequency of its third harmonic?",
+    "answer": 600,
+    "tolerance": 0.02,
+    "unit": "Hz",
+    "explanation": "$f_n = nv/2L$: $f_3 = 3 \\times 340/1.70 = 600$ Hz."
+  },
+  {
+    "id": "resonance-condition",
+    "type": "mcq",
+    "lesson": "resonance-damping",
+    "concept": "Resonance",
+    "difficulty": 1,
+    "prompt": "Resonance occurs when:",
+    "options": ["the damping is critical", "the driving frequency equals the natural frequency", "the amplitude is zero", "the system is overdamped"],
+    "answer": 1,
+    "explanation": "Resonance is the large amplitude produced when the driving frequency matches the natural frequency."
+  },
+  {
+    "id": "damping-effect",
+    "type": "multi",
+    "lesson": "resonance-damping",
+    "concept": "Damping",
+    "difficulty": 2,
+    "prompt": "Increasing the damping of a driven oscillator:",
+    "options": ["lowers the maximum amplitude", "makes the resonance peak broader", "raises the natural frequency a lot", "shifts the peak to a slightly lower frequency"],
+    "answers": [0, 1, 3],
+    "explanation": "More damping lowers and broadens the peak and moves it slightly to lower frequency."
+  },
+  {
+    "id": "critical-def",
+    "type": "mcq",
+    "lesson": "resonance-damping",
+    "concept": "Damping",
+    "difficulty": 2,
+    "prompt": "Which type of damping returns a displaced system to equilibrium in the shortest time without oscillation?",
+    "options": ["Light", "Critical", "Heavy", "None"],
+    "answer": 1,
+    "explanation": "Critical damping gives the fastest return without overshooting."
+  }
+]

@@ -1,0 +1,9 @@
+[
+  { "id": "standing-formation", "front": "How does a standing wave form?", "back": "Superposition of two waves with the same frequency, speed and amplitude travelling in opposite directions.", "concept": "Standing waves" },
+  { "id": "node-antinode", "front": "Node vs antinode?", "back": "Node: zero amplitude. Antinode: maximum amplitude. Adjacent nodes are λ/2 apart.", "concept": "Nodes and antinodes" },
+  { "id": "string-harmonics", "front": "Harmonics of a string fixed at both ends?", "back": "$\\lambda_n = 2L/n$, $f_n = nv/2L$, all n.", "concept": "Harmonics on a string" },
+  { "id": "closed-pipe-card", "front": "Harmonics of a pipe closed at one end?", "back": "$\\lambda_n = 4L/n$, $f_n = nv/4L$, odd n only.", "concept": "Harmonics in pipes" },
+  { "id": "open-pipe-card", "front": "Harmonics of a pipe open at both ends?", "back": "Same as a string: $\\lambda_n = 2L/n$, all harmonics.", "concept": "Harmonics in pipes" },
+  { "id": "resonance-card", "front": "Define resonance.", "back": "Large amplitude when the driving frequency equals the natural frequency.", "concept": "Resonance" },
+  { "id": "damping-types", "front": "Light, critical and heavy damping?", "back": "Light: oscillates with decaying amplitude. Critical: fastest return, no oscillation. Heavy: slow return, no oscillation.", "concept": "Damping" }
+]
