@@ -1,0 +1,56 @@
+[
+  {
+    "id": "classify-sp",
+    "type": "mcq",
+    "lesson": "stationary-optimisation",
+    "concept": "Classifying stationary points",
+    "difficulty": 2,
+    "prompt": "At a stationary point, $f''(x) = -5$. The point is:",
+    "options": ["a local minimum", "a local maximum", "a point of inflexion", "cannot tell"],
+    "answer": 1,
+    "explanation": "Negative second derivative: concave down — a maximum."
+  },
+  {
+    "id": "min-value",
+    "type": "numeric",
+    "lesson": "stationary-optimisation",
+    "concept": "Stationary points",
+    "difficulty": 2,
+    "prompt": "Find the minimum value of $f(x) = x^2 - 6x + 11$.",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "$f'(x) = 0$ at $x = 3$; $f(3) = 2$."
+  },
+  {
+    "id": "inflexion-x",
+    "type": "numeric",
+    "lesson": "stationary-optimisation",
+    "concept": "Points of inflexion",
+    "difficulty": 2,
+    "prompt": "Find the x-coordinate of the point of inflexion of $y = x^3 - 6x^2 + 4$.",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "$y'' = 6x - 12 = 0$ and changes sign."
+  },
+  {
+    "id": "optimise-box",
+    "type": "numeric",
+    "lesson": "stationary-optimisation",
+    "concept": "Optimisation",
+    "difficulty": 3,
+    "prompt": "Two positive numbers have sum 20. Find the maximum possible value of their product.",
+    "answer": 100,
+    "tolerance": 0,
+    "explanation": "$P = x(20 - x)$, $P' = 20 - 2x = 0 \\Rightarrow x = 10$; $P = 100$."
+  },
+  {
+    "id": "x4-trap",
+    "type": "tf",
+    "lesson": "stationary-optimisation",
+    "concept": "Points of inflexion",
+    "difficulty": 3,
+    "prompt": "Since $f''(0) = 0$ for $f(x) = x^4$, the origin is a point of inflexion.",
+    "answer": false,
+    "explanation": "$f''$ does not change sign at 0; it is a minimum."
+  }
+]

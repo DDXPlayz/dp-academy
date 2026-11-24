@@ -1,0 +1,5 @@
+[
+  { "id": "kin-diff-card", "front": "Links between s, v, a?", "back": "$v = ds/dt$, $a = dv/dt$; integrate to go back.", "concept": "Velocity" },
+  { "id": "kin-dist-card", "front": "Displacement vs distance from velocity?", "back": "Displacement $\\int v\\,dt$; distance $\\int|v|\\,dt$.", "concept": "Distance" },
+  { "id": "kin-speed-card", "front": "When is a particle speeding up?", "back": "When v and a have the same sign.", "concept": "Speeding up" }
+]

@@ -1,0 +1,6 @@
+[
+  { "id": "std-deriv-card", "front": "Derivatives of sin x, cos x, eˣ, ln x?", "back": "cos x, −sin x, eˣ, 1/x.", "concept": "Standard derivatives" },
+  { "id": "chain-card", "front": "Chain rule?", "back": "$\\frac{dy}{dx} = \\frac{dy}{du}\\cdot\\frac{du}{dx}$ — outside′ × inside′.", "concept": "Chain rule" },
+  { "id": "product-card", "front": "Product rule?", "back": "$(uv)' = u'v + uv'$", "concept": "Product rule" },
+  { "id": "quotient-card", "front": "Quotient rule?", "back": "$\\left(\\frac uv\\right)' = \\frac{u'v - uv'}{v^2}$", "concept": "Quotient rule" }
+]

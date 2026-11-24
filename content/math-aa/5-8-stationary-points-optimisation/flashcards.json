@@ -1,0 +1,5 @@
+[
+  { "id": "sp-test-card", "front": "Second derivative test?", "back": "At $f' = 0$: $f'' > 0$ min, $f'' < 0$ max, $f'' = 0$ inconclusive.", "concept": "Classifying stationary points" },
+  { "id": "poi-card", "front": "Point of inflexion?", "back": "$f'' = 0$ AND $f''$ changes sign (concavity changes).", "concept": "Points of inflexion" },
+  { "id": "opt-card", "front": "Optimisation method?", "back": "Express the quantity in one variable, differentiate, set to 0, justify max/min, check endpoints.", "concept": "Optimisation" }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "id": "second-deriv",
+    "type": "expression",
+    "lesson": "second-derivative",
+    "concept": "Second derivative",
+    "difficulty": 1,
+    "prompt": "Find $f''(x)$ for $f(x) = x^4 - 2x^3$.",
+    "variables": ["x"],
+    "answer": "12*x^2 - 12*x",
+    "explanation": "$f' = 4x^3 - 6x^2$, $f'' = 12x^2 - 12x$."
+  },
+  {
+    "id": "concave-down",
+    "type": "mcq",
+    "lesson": "second-derivative",
+    "concept": "Concavity",
+    "difficulty": 2,
+    "prompt": "Where is $f(x) = x^3 + 3x^2$ concave down?",
+    "options": ["$x < -1$", "$x > -1$", "$x < 0$", "$x > 1$"],
+    "answer": 0,
+    "explanation": "$f''(x) = 6x + 6 < 0 \\Rightarrow x < -1$."
+  },
+  {
+    "id": "fprime-zero",
+    "type": "tf",
+    "lesson": "second-derivative",
+    "concept": "Graphs of f and f′",
+    "difficulty": 1,
+    "prompt": "Where the graph of f′ crosses the x-axis, f has a stationary point.",
+    "answer": true,
+    "explanation": "$f'(x) = 0$ there."
+  },
+  {
+    "id": "second-sin",
+    "type": "expression",
+    "lesson": "second-derivative",
+    "concept": "Second derivative",
+    "difficulty": 2,
+    "prompt": "Find $\\dfrac{d^2y}{dx^2}$ for $y = \\sin(2x)$.",
+    "variables": ["x"],
+    "answer": "-4*sin(2*x)",
+    "explanation": "$2\\cos2x \\to -4\\sin2x$."
+  }
+]

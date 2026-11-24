@@ -1,0 +1,57 @@
+[
+  {
+    "id": "velocity-at",
+    "type": "numeric",
+    "lesson": "kinematics-calculus",
+    "concept": "Velocity",
+    "difficulty": 1,
+    "prompt": "$s(t) = 2t^3 - 5t$. Find the velocity at $t = 2$.",
+    "answer": 19,
+    "tolerance": 0,
+    "explanation": "$v = 6t^2 - 5 = 19$."
+  },
+  {
+    "id": "accel-at",
+    "type": "numeric",
+    "lesson": "kinematics-calculus",
+    "concept": "Acceleration",
+    "difficulty": 1,
+    "prompt": "$v(t) = 4t^2 - t$. Find the acceleration at $t = 3$.",
+    "answer": 23,
+    "tolerance": 0,
+    "explanation": "$a = 8t - 1 = 23$."
+  },
+  {
+    "id": "distance-total",
+    "type": "numeric",
+    "lesson": "kinematics-calculus",
+    "concept": "Distance",
+    "difficulty": 3,
+    "prompt": "$v(t) = t - 2$ for $0 \\le t \\le 4$. Find the total distance travelled.",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "Two triangles of area 2 each (v negative then positive): 4."
+  },
+  {
+    "id": "displacement-int",
+    "type": "numeric",
+    "lesson": "kinematics-calculus",
+    "concept": "Displacement",
+    "difficulty": 2,
+    "prompt": "With the same $v(t) = t - 2$, find the displacement from $t = 0$ to $t = 4$.",
+    "answer": 0,
+    "tolerance": 0,
+    "explanation": "$\\int_0^4(t - 2)\\,dt = 8 - 8 = 0$."
+  },
+  {
+    "id": "speeding",
+    "type": "mcq",
+    "lesson": "kinematics-calculus",
+    "concept": "Speeding up",
+    "difficulty": 2,
+    "prompt": "At some instant $v = -3$ m s⁻¹ and $a = -2$ m s⁻². The particle is:",
+    "options": ["speeding up", "slowing down", "at rest", "moving at constant speed"],
+    "answer": 0,
+    "explanation": "Same signs: speeding up (in the negative direction)."
+  }
+]

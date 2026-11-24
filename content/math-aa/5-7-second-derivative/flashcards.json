@@ -1,0 +1,4 @@
+[
+  { "id": "concavity-card", "front": "Sign of f″ and concavity?", "back": "$f'' > 0$ concave up; $f'' < 0$ concave down.", "concept": "Concavity" },
+  { "id": "f-fprime-card", "front": "Turning point of f′ corresponds to…?", "back": "A point of inflexion of f.", "concept": "Graphs of f and f′" }
+]

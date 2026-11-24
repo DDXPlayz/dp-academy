@@ -1,0 +1,68 @@
+[
+  {
+    "id": "chain-rule",
+    "type": "expression",
+    "lesson": "chain-product-quotient",
+    "concept": "Chain rule",
+    "difficulty": 2,
+    "prompt": "Differentiate $y = e^{5x}$.",
+    "variables": ["x"],
+    "answer": "5*exp(5*x)",
+    "explanation": "$5e^{5x}$."
+  },
+  {
+    "id": "chain-power",
+    "type": "numeric",
+    "lesson": "chain-product-quotient",
+    "concept": "Chain rule",
+    "difficulty": 2,
+    "prompt": "Find $\\dfrac{dy}{dx}$ at $x = 1$ for $y = (2x - 1)^4$.",
+    "answer": 8,
+    "tolerance": 0,
+    "explanation": "$4(2x - 1)^3\\cdot2 = 8$ at $x = 1$."
+  },
+  {
+    "id": "product-rule",
+    "type": "numeric",
+    "lesson": "chain-product-quotient",
+    "concept": "Product rule",
+    "difficulty": 2,
+    "prompt": "Find the gradient of $y = x\\ln x$ at $x = e$.",
+    "answer": 2,
+    "tolerance": 0.001,
+    "explanation": "$\\ln x + 1 = 2$ at $x = e$."
+  },
+  {
+    "id": "quotient-rule",
+    "type": "numeric",
+    "lesson": "chain-product-quotient",
+    "concept": "Quotient rule",
+    "difficulty": 3,
+    "prompt": "Find $f'(0)$ for $f(x) = \\dfrac{x + 1}{x + 2}$.",
+    "answer": 0.25,
+    "tolerance": 0.001,
+    "explanation": "$\\frac{(x + 2) - (x + 1)}{(x + 2)^2} = \\frac{1}{(x + 2)^2} = \\frac14$."
+  },
+  {
+    "id": "ln-deriv",
+    "type": "expression",
+    "lesson": "chain-product-quotient",
+    "concept": "Standard derivatives",
+    "difficulty": 1,
+    "prompt": "Differentiate $y = \\ln(3x)$.",
+    "variables": ["x"],
+    "answer": "1/x",
+    "explanation": "$\\frac{3}{3x} = \\frac1x$."
+  },
+  {
+    "id": "cos-deriv",
+    "type": "mcq",
+    "lesson": "chain-product-quotient",
+    "concept": "Standard derivatives",
+    "difficulty": 1,
+    "prompt": "$\\dfrac{d}{dx}\\cos(2x) =$",
+    "options": ["$\\sin(2x)$", "$-\\sin(2x)$", "$-2\\sin(2x)$", "$2\\sin(2x)$"],
+    "answer": 2,
+    "explanation": "$-\\sin(2x)\\times2$."
+  }
+]
