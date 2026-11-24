@@ -1,0 +1,31 @@
+[
+  {
+    "id": "p1a-first-law",
+    "paper": "1A",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "B.4",
+    "prompt": "A gas absorbs 500 J of thermal energy and does 200 J of work on its surroundings. What is the change in its internal energy?",
+    "options": [
+      "−300 J",
+      "+300 J",
+      "+700 J",
+      "−700 J"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** $\\Delta U = Q - W = 500 - 200$.",
+    "source": "original"
+  },
+  {
+    "id": "p2-carnot",
+    "paper": "2",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 4,
+    "subtopic": "B.4",
+    "prompt": "A heat engine operates between reservoirs at 600 K and 300 K.\n\n**(a)** Calculate its maximum (Carnot) efficiency. **[1]**\n\n**(b)** The engine actually takes 1200 J per cycle from the hot reservoir and does 360 J of work. Calculate its efficiency and the energy rejected per cycle. **[2]**\n\n**(c)** Explain why the actual efficiency is less than the Carnot value. **[1]**",
+    "markscheme": "**(a)** $1 - 300/600 = 0.50$ ✓\n\n**(b)** $360/1200 = 0.30$ ✓; rejected $= 840$ J ✓\n\n**(c)** Real processes are irreversible (friction, heat losses), increasing entropy ✓",
+    "source": "original"
+  }
+]

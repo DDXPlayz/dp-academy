@@ -14,5 +14,32 @@
     "answer": 2,
     "markscheme": "**C.** For uniform acceleration the average velocity is $\\tfrac{4.0 + 10.0}{2} = 7.0\\ \\text{m s}^{-1}$, so $s = 7.0 \\times 3.0 = 21\\ \\text{m}$.",
     "source": "original"
+  },
+  {
+    "id": "p1a-projectile-time",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "A.1",
+    "prompt": "A ball is thrown horizontally at 12 m s⁻¹ from a cliff 20 m high. Air resistance is negligible ($g = 9.8$ m s⁻²). How far from the base of the cliff does it land?",
+    "options": [
+      "12 m",
+      "18 m",
+      "24 m",
+      "40 m"
+    ],
+    "answer": 2,
+    "markscheme": "**C.** $t = \\sqrt{2\\times20/9.8} = 2.02$ s; $x = 12\\times2.02 \\approx 24$ m.",
+    "source": "original"
+  },
+  {
+    "id": "p2-suvat-braking",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 5,
+    "subtopic": "A.1",
+    "prompt": "A car travelling at 25 m s⁻¹ brakes uniformly and stops in 40 m.\n\n**(a)** Calculate its deceleration. **[2]**\n\n**(b)** Calculate the time taken to stop. **[1]**\n\n**(c)** The driver’s reaction time is 0.70 s. Determine the total stopping distance. **[2]**",
+    "markscheme": "**(a)** $v^2 = u^2 + 2as \\Rightarrow 0 = 625 + 80a$ (✓) $a = -7.8$ m s⁻² ✓\n\n**(b)** $t = \\dfrac{25}{7.8} = 3.2$ s ✓\n\n**(c)** Thinking distance $25\\times0.70 = 17.5$ m ✓; total $= 57.5 \\approx 58$ m ✓",
+    "source": "original"
   }
 ]

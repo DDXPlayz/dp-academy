@@ -1,0 +1,29 @@
+[
+  {
+    "id": "p1a-refraction",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "C.3",
+    "prompt": "Light passes from air into glass of refractive index 1.5 at an angle of incidence of 30°. What is the angle of refraction?",
+    "options": [
+      "19°",
+      "20°",
+      "45°",
+      "48°"
+    ],
+    "answer": 0,
+    "markscheme": "**A.** $\\sin r = \\sin30°/1.5 = 0.333$, $r = 19.5° \\approx 19°$.",
+    "source": "original"
+  },
+  {
+    "id": "p2-double-slit",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 5,
+    "subtopic": "C.3",
+    "prompt": "Light of wavelength 600 nm passes through two slits 0.30 mm apart onto a screen 2.0 m away.\n\n**(a)** Calculate the fringe separation. **[2]**\n\n**(b)** State and explain the effect of using blue light instead. **[2]**\n\n**(c)** State what happens at a point where the path difference is 1.5λ. **[1]**",
+    "markscheme": "**(a)** $s = \\dfrac{\\lambda D}{d} = \\dfrac{600\\times10^{-9}\\times2.0}{0.30\\times10^{-3}}$ ✓ $= 4.0$ mm ✓\n\n**(b)** Fringes closer together ✓, because blue light has a shorter wavelength and $s \\propto \\lambda$ ✓\n\n**(c)** Destructive interference — a dark fringe ✓",
+    "source": "original"
+  }
+]

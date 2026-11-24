@@ -1,0 +1,31 @@
+[
+  {
+    "id": "p1a-torque-balance",
+    "paper": "1A",
+    "level": "HL",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "A.4",
+    "prompt": "A uniform 2.0 m beam is pivoted at its centre. A 30 N weight hangs 0.40 m from the pivot. What force at the end of the other side keeps the beam horizontal?",
+    "options": [
+      "6 N",
+      "12 N",
+      "15 N",
+      "75 N"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** $30\\times0.40 = F\\times1.0 \\Rightarrow F = 12$ N.",
+    "source": "original"
+  },
+  {
+    "id": "p2-angular-momentum-skater",
+    "paper": "2",
+    "level": "HL",
+    "difficulty": "medium",
+    "marks": 5,
+    "subtopic": "A.4",
+    "prompt": "A skater spins at 2.0 rev s⁻¹ with arms outstretched, moment of inertia 4.5 kg m². She pulls her arms in, reducing her moment of inertia to 1.5 kg m².\n\n**(a)** Calculate her new rotation rate. **[2]**\n\n**(b)** Determine the change in rotational kinetic energy and explain where it comes from. **[3]**",
+    "markscheme": "**(a)** Angular momentum conserved: $4.5\\times2.0 = 1.5\\times f$ ✓; $f = 6.0$ rev s⁻¹ ✓\n\n**(b)** $\\omega_1 = 12.6$, $\\omega_2 = 37.7$ rad s⁻¹; $E_1 = \\tfrac12(4.5)(12.6)^2 = 355$ J, $E_2 = \\tfrac12(1.5)(37.7)^2 = 1066$ J ✓; increase ≈ 710 J ✓; work done by her muscles pulling her arms inward ✓",
+    "source": "original"
+  }
+]

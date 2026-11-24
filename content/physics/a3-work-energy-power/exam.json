@@ -7,5 +7,22 @@
     "prompt": "A $2.0\\ \\text{kg}$ block is released from rest at the top of a rough ramp. The top of the ramp is $1.5\\ \\text{m}$ above the bottom and the ramp is $3.0\\ \\text{m}$ long. The block reaches the bottom with a speed of $4.0\\ \\text{m s}^{-1}$.\n\n**(a)** Calculate the gravitational potential energy lost by the block. **[1]**\n\n**(b)** Calculate the kinetic energy of the block at the bottom. **[1]**\n\n**(c)** Determine the average frictional force on the block. **[2]**",
     "markscheme": "**(a)** $mgh = 2.0 \\times 9.8 \\times 1.5 = 29\\ \\text{J}$ ✓\n\n**(b)** $\\tfrac{1}{2}mv^2 = \\tfrac{1}{2} \\times 2.0 \\times 4.0^2 = 16\\ \\text{J}$ ✓\n\n**(c)** Work done against friction $= 29 - 16 = 13\\ \\text{J}$ ✓; $f = \\tfrac{13}{3.0} \\approx 4.5\\ \\text{N}$ ✓ (allow ECF from (a) and (b))",
     "source": "original"
+  },
+  {
+    "id": "p1a-efficiency-motor",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "A.3",
+    "prompt": "A motor lifts a 50 kg load through 6.0 m in 12 s. Its electrical input power is 400 W. What is its efficiency? ($g = 9.8$ m s⁻²)",
+    "options": [
+      "25%",
+      "49%",
+      "61%",
+      "75%"
+    ],
+    "answer": 2,
+    "markscheme": "**C.** Useful power $= 50\\times9.8\\times6.0/12 = 245$ W; $245/400 = 61\\%$.",
+    "source": "original"
   }
 ]

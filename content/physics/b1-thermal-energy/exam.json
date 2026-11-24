@@ -1,0 +1,29 @@
+[
+  {
+    "id": "p1a-latent-heat",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "B.1",
+    "prompt": "How much energy is needed to melt 0.50 kg of ice at 0 °C? (Specific latent heat of fusion $= 3.3\\times10^5$ J kg⁻¹)",
+    "options": [
+      "$6.6\\times10^4$ J",
+      "$1.65\\times10^5$ J",
+      "$3.3\\times10^5$ J",
+      "$6.6\\times10^5$ J"
+    ],
+    "answer": 1,
+    "markscheme": "**B.** $Q = mL = 0.50\\times3.3\\times10^5$.",
+    "source": "original"
+  },
+  {
+    "id": "p2-heater-water",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 5,
+    "subtopic": "B.1",
+    "prompt": "A 2.0 kW kettle heats 1.5 kg of water from 20 °C to 100 °C. ($c = 4200$ J kg⁻¹ K⁻¹, $L_v = 2.26\\times10^6$ J kg⁻¹)\n\n**(a)** Calculate the energy needed to reach boiling point. **[1]**\n\n**(b)** Estimate the time taken, stating one assumption. **[2]**\n\n**(c)** The kettle is left on for a further 2.0 minutes. Calculate the mass of water boiled away. **[2]**",
+    "markscheme": "**(a)** $1.5\\times4200\\times80 = 5.04\\times10^5$ J ✓\n\n**(b)** $t = 5.04\\times10^5/2000 = 252$ s ✓; assume no energy lost to surroundings/kettle ✓\n\n**(c)** $E = 2000\\times120 = 2.4\\times10^5$ J ✓; $m = 2.4\\times10^5/2.26\\times10^6 = 0.11$ kg ✓",
+    "source": "original"
+  }
+]

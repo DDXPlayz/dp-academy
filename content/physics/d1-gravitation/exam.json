@@ -14,5 +14,15 @@
     "answer": 1,
     "markscheme": "**B.** $g = \\tfrac{GM}{r^2}$, so doubling $r$ multiplies $g$ by $\\tfrac{1}{2^2} = \\tfrac{1}{4}$.",
     "source": "original"
+  },
+  {
+    "id": "p2-satellite-orbit",
+    "paper": "2",
+    "difficulty": "hard",
+    "marks": 6,
+    "subtopic": "D.1",
+    "prompt": "A satellite orbits Earth at a height of 400 km. (Earth radius $6.37\\times10^6$ m, mass $5.97\\times10^{24}$ kg, $G = 6.67\\times10^{-11}$ N m² kg⁻²)\n\n**(a)** Calculate its orbital speed. **[2]**\n\n**(b)** Calculate its orbital period in minutes. **[2]**\n\n**(c)** Explain why astronauts in the satellite appear weightless. **[2]**",
+    "markscheme": "**(a)** $r = 6.77\\times10^6$ m ✓; $v = \\sqrt{GM/r} = 7.67\\times10^3$ m s⁻¹ ✓\n\n**(b)** $T = 2\\pi r/v = 5.55\\times10^3$ s ✓ $\\approx 92$ min ✓\n\n**(c)** Astronauts and satellite are in free fall with the same acceleration ✓, so there is no normal (contact) force between them ✓",
+    "source": "original"
   }
 ]

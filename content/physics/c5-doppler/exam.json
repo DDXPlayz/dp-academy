@@ -1,0 +1,29 @@
+[
+  {
+    "id": "p1a-doppler-approach",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "C.5",
+    "prompt": "An ambulance siren emits sound of frequency 800 Hz. As the ambulance approaches a stationary listener, the listener hears:",
+    "options": [
+      "a higher frequency and shorter wavelength",
+      "a higher frequency and longer wavelength",
+      "a lower frequency and shorter wavelength",
+      "the same frequency"
+    ],
+    "answer": 0,
+    "markscheme": "**A.** The wavefronts are compressed ahead of a moving source.",
+    "source": "original"
+  },
+  {
+    "id": "p2-redshift-galaxy",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 3,
+    "subtopic": "C.5",
+    "prompt": "A hydrogen line with laboratory wavelength 656.3 nm is observed at 662.9 nm in the spectrum of a galaxy.\n\n**(a)** Calculate the galaxy’s speed. **[2]**\n\n**(b)** State whether it is moving towards or away from Earth. **[1]**",
+    "markscheme": "**(a)** $\\dfrac{\\Delta\\lambda}{\\lambda} = \\dfrac{6.6}{656.3} = 0.0101$ ✓; $v = 0.0101\\times3.0\\times10^8 = 3.0\\times10^6$ m s⁻¹ ✓\n\n**(b)** Away (redshift) ✓",
+    "source": "original"
+  }
+]

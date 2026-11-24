@@ -1,0 +1,29 @@
+[
+  {
+    "id": "p1a-albedo",
+    "paper": "1A",
+    "difficulty": "easy",
+    "marks": 1,
+    "subtopic": "B.2",
+    "prompt": "A surface receives 340 W m⁻² and reflects 102 W m⁻². What is its albedo?",
+    "options": [
+      "0.30",
+      "0.43",
+      "0.70",
+      "3.3"
+    ],
+    "answer": 0,
+    "markscheme": "**A.** Albedo $= 102/340 = 0.30$.",
+    "source": "original"
+  },
+  {
+    "id": "p2-greenhouse-mechanism",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 4,
+    "subtopic": "B.2",
+    "prompt": "Explain, with reference to molecular energy absorption, how greenhouse gases raise the Earth’s mean surface temperature. **[4]**",
+    "markscheme": "Earth’s surface emits infrared radiation ✓; greenhouse gas molecules (CO₂, H₂O, CH₄) absorb IR because its frequency matches their vibrational modes/resonance ✓; they re-emit IR in all directions, including back towards the surface ✓; so the surface receives extra energy and its equilibrium temperature is higher ✓",
+    "source": "original"
+  }
+]

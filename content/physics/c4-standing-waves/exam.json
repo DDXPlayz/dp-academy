@@ -1,0 +1,29 @@
+[
+  {
+    "id": "p1a-pipe-harmonic",
+    "paper": "1A",
+    "difficulty": "medium",
+    "marks": 1,
+    "subtopic": "C.4",
+    "prompt": "A pipe closed at one end has length 0.85 m. The speed of sound is 340 m s⁻¹. What is the frequency of the fundamental?",
+    "options": [
+      "100 Hz",
+      "200 Hz",
+      "400 Hz",
+      "800 Hz"
+    ],
+    "answer": 0,
+    "markscheme": "**A.** $\\lambda = 4L = 3.4$ m; $f = 340/3.4 = 100$ Hz.",
+    "source": "original"
+  },
+  {
+    "id": "p2-string-standing",
+    "paper": "2",
+    "difficulty": "medium",
+    "marks": 4,
+    "subtopic": "C.4",
+    "prompt": "A string 1.2 m long, fixed at both ends, vibrates in its third harmonic at 240 Hz.\n\n**(a)** Sketch the standing wave and label nodes and antinodes. **[1]**\n\n**(b)** Calculate the wave speed on the string. **[2]**\n\n**(c)** Outline one difference between a standing wave and a travelling wave. **[1]**",
+    "markscheme": "**(a)** Three loops with four nodes (including ends) and three antinodes ✓\n\n**(b)** $\\lambda = 2L/3 = 0.80$ m ✓; $v = 240\\times0.80 = 190$ m s⁻¹ ✓\n\n**(c)** Standing waves transfer no net energy / amplitude varies with position / points between nodes oscillate in phase ✓",
+    "source": "original"
+  }
+]
