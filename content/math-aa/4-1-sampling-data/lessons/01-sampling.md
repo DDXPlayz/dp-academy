@@ -45,6 +45,11 @@ A **population** is everyone/everything of interest; a **sample** is the part we
 | Quota | fill set numbers from each group, not randomly | fast, may be biased |
 | Stratified | random sample from each group, proportional to size | representative |
 
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-concepts-of-population-and-sample-study-no/img/fig-c7127ccfb90663f3.png
+caption: A sample is a smaller group chosen from the population; conclusions about the population are drawn from it.
+```
+
 ```example
 A school has 300 juniors and 500 seniors. A stratified sample of 40 is taken. How many seniors?
 ---

@@ -29,6 +29,16 @@ related:
 A normal curve is symmetric about μ (mean = median = mode), and the total area under it is 1. About 68% of values lie within 1σ of μ, 95% within 2σ and 99.7% within 3σ.
 ```
 
+```figure
+src: math-aa/_sme/4-6-normal-distribution/img/fig-6316acc34e0a3bdb.png
+caption: Normal distributions: changing the mean shifts the curve; changing the variance makes it wider and flatter, or narrower and taller.
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-normal-distribution-study-notes/img/fig-f9be04698de6eaa8.png
+caption: The normal curve is symmetric about μ: about 68% of the data lies within 1σ, 95% within 2σ and 99.7% within 3σ.
+```
+
 ```plot
 caption: The normal curve N(0, 1). The shaded idea — 68% within ±1σ, 95% within ±2σ.
 x: -4, 4

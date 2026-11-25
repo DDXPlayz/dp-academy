@@ -35,6 +35,21 @@ $$
 \sec\theta = \frac{1}{\cos\theta}, \qquad \csc\theta = \frac{1}{\sin\theta}, \qquad \cot\theta = \frac{1}{\tan\theta}
 $$
 
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-reciprocal-trigonometric-ratios-study-note/img/fig-0988174d4bb1b85c.png
+caption: y = cosec x is the reciprocal of sin x, with vertical asymptotes wherever sin x = 0.
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-reciprocal-trigonometric-ratios-study-note/img/fig-00adfc92ea76182e.png
+caption: y = sec x is the reciprocal of cos x, with vertical asymptotes wherever cos x = 0.
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-reciprocal-trigonometric-ratios-study-note/img/fig-890b1e17619dd865.png
+caption: y = cot x is the reciprocal of tan x: asymptotes at multiples of π and zeros where tan x has its asymptotes.
+```
+
 Their graphs have vertical asymptotes where the original function is zero.
 
 ## Two more identities
@@ -58,6 +73,21 @@ $\sec x = 1 \Rightarrow x = 0$. $\sec x = -2 \Rightarrow \cos x = -\tfrac12 \Rig
 | arcsin x | $[-1, 1]$ | $[-\frac\pi2, \frac\pi2]$ |
 | arccos x | $[-1, 1]$ | $[0, \pi]$ |
 | arctan x | $\mathbb{R}$ | $(-\frac\pi2, \frac\pi2)$ |
+
+```figure
+src: math-aa/_sme/3-7-inverse-reciprocal-trig-functions/img/fig-563d165c5c902d36.png
+caption: y = arcsin x: domain −1 ≤ x ≤ 1, range −π/2 ≤ y ≤ π/2.
+```
+
+```figure
+src: math-aa/_sme/3-7-inverse-reciprocal-trig-functions/img/fig-8042dac67a84d2dc.png
+caption: y = arccos x: domain −1 ≤ x ≤ 1, range 0 ≤ y ≤ π.
+```
+
+```figure
+src: math-aa/_sme/3-7-inverse-reciprocal-trig-functions/img/fig-681f6a053dcdb77c.png
+caption: y = arctan x: defined for all x, with horizontal asymptotes y = ±π/2.
+```
 
 ```example
 Find the exact value of $\sin\left(\arccos\tfrac{3}{5}\right)$.

@@ -31,6 +31,11 @@ related:
 A polynomial with real coefficients has non-real roots in conjugate pairs. If 2 + i is a root, so is 2 − i, and (z − (2 + i))(z − (2 − i)) = z² − 4z + 5 is a factor.
 ```
 
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-complex-roots-de-moivres-theorem-study-not/img/fig-0875656ff48eb986.png
+caption: The conjugate z* = a − bi is the reflection of z in the real axis.
+```
+
 ```example
 $z = 1 + 2i$ is a root of $z^3 - z^2 + 3z + 5 = 0$. Find the other roots.
 ---

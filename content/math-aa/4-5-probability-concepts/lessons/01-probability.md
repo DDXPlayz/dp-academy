@@ -33,6 +33,11 @@ related:
 
 A **trial** produces an **outcome**; the **sample space** $U$ lists all outcomes; an **event** is a set of outcomes.
 
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-concepts-of-trial-outcome-study-notes/img/fig-296414b0671c0958.png
+caption: Outcomes, events and the sample space: each is contained in the next.
+```
+
 $$
 P(A) = \frac{n(A)}{n(U)} \quad\text{(equally likely outcomes)}, \qquad P(A') = 1 - P(A)
 $$
@@ -47,6 +52,11 @@ The sample space has 36 outcomes. Totals of 8: (2,6), (3,5), (4,4), (5,3), (6,2)
 
 ```keyidea
 With many trials, relative frequency approaches the true probability. The expected number of occurrences in n trials is np.
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-concepts-of-trial-outcome-study-notes/img/fig-00f08d42288f05b3.png
+caption: Sample spaces for a coin, a dice and a spinner: in each, all the outcomes are equally likely.
 ```
 
 ```example

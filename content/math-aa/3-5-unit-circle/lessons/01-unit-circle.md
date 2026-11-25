@@ -31,6 +31,11 @@ related:
 For any angle θ measured anticlockwise from the positive x-axis, the point on the unit circle is (cos θ, sin θ). This extends trig to every angle, with signs set by the quadrant.
 ```
 
+```figure
+src: math-aa/_sme/3-4-trigonometry/img/fig-8a679f03af19f1c7.png
+caption: The unit circle: the point at angle θ has coordinates (cos θ, sin θ).
+```
+
 | Quadrant | Positive ratios |
 |---|---|
 | I ($0$ to $\frac\pi2$) | all |
@@ -46,6 +51,11 @@ For any angle θ measured anticlockwise from the positive x-axis, the point on t
 | cos θ | 1 | $\frac{\sqrt3}2$ | $\frac{\sqrt2}2$ | $\frac12$ | 0 |
 | tan θ | 0 | $\frac{1}{\sqrt3}$ | 1 | $\sqrt3$ | undefined |
 
+```figure
+src: math-aa/_sme/3-4-trigonometry/img/fig-1ce4a42eac501dbe.png
+caption: Exact values from an equilateral triangle of side 2 cut in half: sin(π/6) = ½, cos(π/6) = √3/2, tan(π/3) = √3.
+```
+
 ```example
 Find the exact value of $\cos\dfrac{5\pi}{6}$ and $\tan\dfrac{4\pi}{3}$.
 ---
@@ -60,6 +70,11 @@ $\frac{4\pi}{3}$ is in Q3 with reference angle $\frac\pi3$: $\tan = +\sqrt3$.
 In triangle ABC, a = 7, b = 9, A = 40°. Find the possible values of B.
 ---
 $\sin B = \dfrac{9\sin40°}{7} = 0.826 \Rightarrow B = 55.7°$ or $124.3°$. Both work since $40° + 124.3° < 180°$ — two triangles.
+```
+
+```figure
+src: math-aa/_sme/3-3-trigonometry-toolkit/img/fig-32dda4ce8412f0bc.png
+caption: The ambiguous case: given two sides and a non-included angle, the third side can lie in two places, giving an acute or an obtuse angle.
 ```
 
 ```question

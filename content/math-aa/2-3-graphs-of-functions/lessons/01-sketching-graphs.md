@@ -50,9 +50,19 @@ point: -1.732, 0 | −√3
 | horizontal asymptotes | behaviour as $x \to \pm\infty$ |
 | symmetry | e.g. axis of symmetry of a parabola |
 
+```figure
+src: math-aa/_sme/2-3-functions-toolkit/img/fig-696dc21a6c18af67.png
+caption: Key features of a graph: turning points, and intercepts with the x- and y-axes.
+```
+
 ## Intersections
 
 Points where $y = f(x)$ and $y = g(x)$ meet solve $f(x) = g(x)$.
+
+```figure
+src: math-aa/_sme/2-3-functions-toolkit/img/fig-a04299de6e1edb67.png
+caption: The intersection of two lines gives the solution of the simultaneous equations: here (2, 1).
+```
 
 ```example
 Find where $y = e^x$ and $y = x + 2$ intersect.

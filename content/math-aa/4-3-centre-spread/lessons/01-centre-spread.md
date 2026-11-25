@@ -44,6 +44,11 @@ related:
 Adding a constant k to every value adds k to the mean and median but leaves the spread unchanged. Multiplying every value by k multiplies the mean, median, SD and IQR by k (and variance by k²).
 ```
 
+```figure
+src: math-aa/_sme/4-1-statistics-toolkit/img/fig-f9c46cdb38d63a63.png
+caption: Linear transformations: E(aX + b) = aE(X) + b and Var(aX + b) = a²Var(X), so adding a constant does not change the spread.
+```
+
 ```example
 A data set has mean 12 and SD 3. Each value is doubled and then 5 is added. Find the new mean and SD.
 ---

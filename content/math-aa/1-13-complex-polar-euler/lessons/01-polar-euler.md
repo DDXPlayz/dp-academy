@@ -46,6 +46,11 @@ $r = 2$; fourth quadrant, $\theta = -\pi/3$. So $z = 2e^{-i\pi/3}$.
 In polar or Euler form, multiply the moduli and add the arguments; divide the moduli and subtract the arguments. Geometrically, multiplying by re^(iθ) enlarges by r and rotates by θ.
 ```
 
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-hl-polar-forms-eulers-form-study-notes/img/fig-5bb7576a5851c3d7.png
+caption: From Cartesian to polar form: a = r cos θ and b = r sin θ.
+```
+
 ```example
 If $z_1 = 4\,\text{cis}\,\dfrac{\pi}{3}$ and $z_2 = 2\,\text{cis}\,\dfrac{\pi}{6}$, find $z_1z_2$ and $z_1/z_2$ in Cartesian form.
 ---

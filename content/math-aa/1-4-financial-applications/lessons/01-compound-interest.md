@@ -32,6 +32,11 @@ related:
 
 Interest is added to the balance, so each period multiplies the amount by the same factor — a geometric sequence.
 
+```figure
+src: math-aa/_sme/1-3-sequences-series/img/fig-b8ed3ce955b3fca7.png
+caption: The compound interest formula, FV = PV(1 + r/100k)^(kn), with each part labelled.
+```
+
 $$
 FV = PV\left(1 + \frac{r}{100k}\right)^{kn}
 $$
@@ -53,6 +58,11 @@ More frequent compounding gives a slightly larger final amount for the same annu
 $$
 V = V_0\left(1 - \frac{r}{100}\right)^n
 $$
+
+```figure
+src: math-aa/_sme/1-3-sequences-series/img/fig-be9f4160122a17e2.png
+caption: Depreciation uses the same formula with a minus sign: FV = PV(1 − r/100)^n.
+```
 
 ```example
 A machine bought for \$80 000 depreciates by 12% per year. Find its value after 5 years.

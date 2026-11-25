@@ -29,6 +29,16 @@ related:
 Solve f′(x) = 0. Then: f″(x) > 0 → local minimum; f″(x) < 0 → local maximum; f″(x) = 0 → use the first derivative (sign) test.
 ```
 
+```figure
+src: math-aa/_sme/5-2-further-differentiation/img/fig-eb9abb79bb6dc51e.png
+caption: A local maximum and a local minimum: the gradient is zero at both, and its sign changes either side.
+```
+
+```figure
+src: math-aa/_sme/5-2-further-differentiation/img/fig-c42cb356c1afafe3.png
+caption: Stationary points of inflection: the gradient is zero but has the same sign on both sides.
+```
+
 ```example
 Find and classify the stationary points of $y = x^3 - 3x^2 - 9x + 2$.
 ---

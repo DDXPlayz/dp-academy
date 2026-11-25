@@ -33,6 +33,11 @@ related:
 |---|---|---|---|---|
 | P(X = x) | 0.1 | 0.3 | k | 0.2 |
 
+```figure
+src: math-aa/_sme/4-4-probability-distributions/img/fig-7d4f3bb31ace60f9.png
+caption: A discrete probability distribution, shown as a table and as a bar graph of P(X = x).
+```
+
 All probabilities sum to 1, so $k = 0.4$.
 
 ## Expected value

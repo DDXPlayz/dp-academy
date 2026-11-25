@@ -30,6 +30,11 @@ related:
 1. Find y₁ = f(x₁). 2. Find m = f′(x₁). 3. Tangent: y − y₁ = m(x − x₁). Normal: gradient −1/m.
 ```
 
+```figure
+src: math-aa/_sme/5-1-differentiation/img/fig-7354536c9776f191.png
+caption: The tangent touches the curve at a point with the same gradient; the normal is perpendicular to it there.
+```
+
 ```example
 Find the tangent and normal to $y = x^3 - 2x$ at $x = 1$.
 ---

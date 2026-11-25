@@ -43,6 +43,11 @@ $[\sin x]_0^{\pi/2} = 1$. $[2\ln x]_1^e = 2$.
 A definite integral gives signed area. For a total area, split at the roots and add the absolute values of each part (or integrate |f(x)| with technology).
 ```
 
+```figure
+src: math-aa/_sme/5-4-further-integration/img/fig-344d8a088a2a4332.png
+caption: A region entirely below the x-axis gives a negative integral; the area is its absolute value.
+```
+
 ```example
 Find the area between $y = x^2 - 4$ and the x-axis from $x = 0$ to $x = 3$.
 ---
@@ -55,6 +60,26 @@ Root at $x = 2$. $\int_0^2(x^2 - 4)\,dx = -\tfrac{16}{3}$; $\int_2^3(x^2 - 4)\,d
 Find the area enclosed by $y = x^2$ and $y = x + 2$.
 ---
 Intersections: $x^2 = x + 2 \Rightarrow x = -1, 2$. Area $= \int_{-1}^{2}(x + 2 - x^2)\,dx = \left[\tfrac{x^2}2 + 2x - \tfrac{x^3}3\right]_{-1}^{2} = \tfrac{10}{3} + \tfrac76 = 4.5$.
+```
+
+```figure
+src: math-aa/_sme/5-4-further-integration/img/fig-75a4b5d1715c091a.png
+caption: When a region lies partly above and partly below the axis, integrate each part separately and add the areas.
+```
+
+```figure
+src: math-aa/_sme/5-4-further-integration/img/fig-057ef08ba7d3442f.png
+caption: Area between curves: integrate (upper − lower), swapping the order where the curves cross.
+```
+
+```figure
+src: math-aa/_sme/5-4-further-integration/img/fig-6c6fb737ff7af509.png
+caption: An area found as a difference: the area under the curve minus the area of a triangle.
+```
+
+```figure
+src: math-aa/_sme/5-4-further-integration/img/fig-a1f12fe8e37e0071.png
+caption: An area found as a sum: the area under the curve from a to b plus the triangle from b to c.
 ```
 
 ```question

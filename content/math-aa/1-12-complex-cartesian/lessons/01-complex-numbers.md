@@ -52,6 +52,16 @@ $\dfrac{(5 + i)(1 - i)}{(1 + i)(1 - i)} = \dfrac{5 - 5i + i - i^2}{2} = \dfrac{6
 On an Argand diagram z = a + bi is the point (a, b). Its modulus |z| is the distance from O; its argument is the angle from the positive real axis, in (−π, π].
 ```
 
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-complex-numbers-study-notes/img/fig-e8b97c19a5ae75a6.png
+caption: The Argand diagram: z = a + bi is plotted as the point (a, b); |z| is its distance from O and arg(z) the angle from the positive real axis.
+```
+
+```figure
+src: math-aa/_sme/1-8-complex-numbers/img/fig-2f7627f4d01cffcb.png
+caption: Complex numbers as points on an Argand diagram: the real part is plotted horizontally and the imaginary part vertically.
+```
+
 ```example
 Find the modulus and argument of $z = -\sqrt3 + i$.
 ---

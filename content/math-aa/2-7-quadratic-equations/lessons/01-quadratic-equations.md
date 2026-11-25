@@ -42,6 +42,11 @@ Factorise: $(3x + 1)(x - 2) = 0 \Rightarrow x = -\tfrac13$ or $x = 2$.
 Δ = b² − 4ac tells you how many real roots there are without solving: Δ > 0 two, Δ = 0 one repeated, Δ < 0 none.
 ```
 
+```figure
+src: math-aa/_sme/2-2-quadratic-functions-graphs/img/fig-e69cb430b9c426ea.png
+caption: The discriminant: Δ > 0 gives two distinct real roots, Δ = 0 one repeated root, Δ < 0 no real roots.
+```
+
 ```example
 Find k so that $x^2 + kx + 9 = 0$ has equal roots.
 ---

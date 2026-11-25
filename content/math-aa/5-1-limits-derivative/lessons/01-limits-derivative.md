@@ -34,6 +34,11 @@ A **limit** describes what a function approaches. For example, as $x \to 2$, $\d
 The gradient of the chord between (x, f(x)) and (x + h, f(x + h)) approaches the gradient of the tangent as h → 0. That limit is the derivative f′(x).
 ```
 
+```figure
+src: math-aa/_sme/5-1-differentiation/img/fig-652887a54c6a64d8.png
+caption: As Q moves along the curve towards P, the chords PQ approach the tangent at P, whose gradient is the derivative.
+```
+
 ```example
 Estimate the gradient of $y = x^2$ at $x = 3$ using chords to $x = 3.1$ and $x = 3.01$.
 ---

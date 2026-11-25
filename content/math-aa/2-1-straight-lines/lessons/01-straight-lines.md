@@ -32,6 +32,16 @@ $$
 m = \frac{y_2 - y_1}{x_2 - x_1}
 $$
 
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-sl-equation-of-a-straight-line-sl-study-no/img/fig-b9742a41e383f01f.png
+caption: Parallel lines have equal gradients.
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-sl-equation-of-a-straight-line-sl-study-no/img/fig-e971bbeefb15a5b5.png
+caption: Perpendicular lines have gradients whose product is −1: m₂ = −1/m₁.
+```
+
 | Form | Equation | Useful when you know |
 |---|---|---|
 | gradient–intercept | $y = mx + c$ | gradient and y-intercept |

@@ -35,6 +35,11 @@ $$
 \sin(A \pm B) = \sin A\cos B \pm \cos A\sin B
 $$
 
+```figure
+src: math-aa/_sme/3-6-trigonometric-equations-identities/img/fig-699af7a8237defc2.png
+caption: Points at angles A and B on the unit circle: the distance PQ links cos(B − A) to the coordinates, which is how the compound-angle formula is derived.
+```
+
 $$
 \cos(A \pm B) = \cos A\cos B \mp \sin A\sin B
 $$

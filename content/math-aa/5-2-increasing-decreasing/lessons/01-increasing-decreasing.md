@@ -26,6 +26,11 @@ related:
 f′(x) > 0: increasing. f′(x) < 0: decreasing. f′(x) = 0: stationary (horizontal tangent).
 ```
 
+```figure
+src: math-aa/_sme/5-1-differentiation/img/fig-52612c6e5a7f02f0.png
+caption: Where f is increasing the gradient is positive, where it is decreasing the gradient is negative, and at turning points it is zero.
+```
+
 ```plot
 caption: f(x) = x³ − 3x (accent) and its derivative f′(x) = 3x² − 3. Where f′ is above the axis, f increases.
 x: -2.5, 2.5

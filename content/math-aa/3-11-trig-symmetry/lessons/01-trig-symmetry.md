@@ -31,6 +31,11 @@ related:
 sin is odd and cos is even. The sine graph is symmetric about x = π/2, so sin(π − x) = sin x. Shifting cos by π/2 gives sin: cos(π/2 − x) = sin x.
 ```
 
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-relationships-in-trigonometric-functions-s/img/fig-7650c613a5463b43.png
+caption: Symmetry of the unit circle: the points at θ, π − θ, π + θ and 2π − θ have coordinates that differ only in sign.
+```
+
 | Relationship | Reason |
 |---|---|
 | $\sin(-x) = -\sin x$ | sin is odd |

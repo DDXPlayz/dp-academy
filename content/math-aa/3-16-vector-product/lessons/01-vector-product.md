@@ -47,12 +47,27 @@ Check: $(1, 2, 3)\cdot(-2, 13, -8) = -2 + 26 - 24 = 0$ ✓.
 v × w is perpendicular to both v and w. Its magnitude |v||w| sin θ is the area of the parallelogram they span. It is anti-commutative (w × v = −v × w) and zero for parallel vectors.
 ```
 
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-vector-product-of-two-vectors-study-notes/img/fig-2dc678749421a983.png
+caption: |a × b| = |a||b| sin θ is the area of the parallelogram formed by a and b.
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-vector-product-of-two-vectors-study-notes/img/fig-232f22bcf953d7c1.png
+caption: The right-hand rule gives the direction of a × b, perpendicular to both a and b.
+```
+
 ## Areas
 
 ```example
 Find the area of the triangle with vertices A(1, 0, 0), B(0, 2, 0), C(0, 0, 3).
 ---
 $\overrightarrow{AB} = (-1, 2, 0)$, $\overrightarrow{AC} = (-1, 0, 3)$. Cross product $= (6, 3, 2)$, magnitude 7. Area $= 3.5$.
+```
+
+```figure
+src: math-aa/_sme/3-9-vector-properties/img/fig-fe0fe7bb1e64d32a.png
+caption: A normal vector to a plane is perpendicular to every line in the plane.
 ```
 
 ```question

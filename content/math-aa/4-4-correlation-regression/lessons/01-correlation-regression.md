@@ -35,6 +35,21 @@ related:
 | close to 0 | no linear correlation |
 | close to −1 | strong negative |
 
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-linear-correlation-of-bivariate-data-study/img/fig-ac3ae2cc7d7a8e57.png
+caption: Scatter plots showing positive, negative and no correlation.
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-linear-correlation-of-bivariate-data-study/img/fig-d4ed2825159e52d6.png
+caption: The value of r: close to +1 or −1 for strong linear correlation, near 0 for none.
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-linear-correlation-of-bivariate-data-study/img/fig-72ab8cf0e051022d.png
+caption: The least-squares regression line minimises the sum of the squared vertical distances (residuals) between the points and the line.
+```
+
 ```keyidea
 r measures LINEAR association only. A strong correlation does not mean one variable causes the other — there may be a hidden third variable.
 ```

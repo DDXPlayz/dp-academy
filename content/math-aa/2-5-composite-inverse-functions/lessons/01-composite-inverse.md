@@ -50,6 +50,16 @@ $(f\circ g)(1) = f(1) = 2$.
 To find f⁻¹: write y = f(x), swap x and y, then solve for y. Check that f(f⁻¹(x)) = x.
 ```
 
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-sl-composite-functions-study-notes/img/fig-1d1544620f92ea29.png
+caption: A composite function: x goes through f first, then the result goes through g, giving g∘f(x) = g(f(x)).
+```
+
+```figure
+src: math-aa/_sme/2-3-functions-toolkit/img/fig-6b5752c2c0bf159b.png
+caption: y = eˣ and y = ln x are inverse functions, so each graph is the reflection of the other in y = x.
+```
+
 ```example
 Find the inverse of $f(x) = \dfrac{2x + 1}{x - 3}$, $x \ne 3$.
 ---

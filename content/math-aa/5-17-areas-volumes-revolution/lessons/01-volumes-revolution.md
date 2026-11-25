@@ -47,6 +47,11 @@ $\int_0^2 y^2\,dy = \tfrac83$.
 Rotating about the x-axis: thin discs of radius y and thickness dx, so V = ∫πy² dx. About the y-axis: V = ∫πx² dy.
 ```
 
+```figure
+src: math-aa/_sme/5-9-advanced-integration/img/fig-16c625b868fba630.png
+caption: The area between a curve and the y-axis is found by integrating with respect to y: ∫ |x| dy.
+```
+
 ```example
 Find the volume when $y = \sqrt x$, $0 \le x \le 4$, is rotated about the x-axis.
 ---

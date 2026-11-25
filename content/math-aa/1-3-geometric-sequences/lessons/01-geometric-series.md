@@ -30,6 +30,11 @@ related:
 
 Each term is the previous one multiplied by the **common ratio** $r$:
 
+```figure
+src: math-aa/_iitian/sl-1-3-geometric-sequences-and-series-study-notes/img/fig-33b620661be213bd.png
+caption: In a geometric sequence each term is the previous one multiplied by the common ratio r.
+```
+
 $$
 u_n = u_1r^{n-1}
 $$

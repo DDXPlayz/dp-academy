@@ -32,6 +32,11 @@ $$
 \mathbf v\cdot\mathbf w = v_1w_1 + v_2w_2 + v_3w_3 = |\mathbf v||\mathbf w|\cos\theta
 $$
 
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-scalar-product-of-two-vectors-study-notes/img/fig-5a451423f693d9ed.png
+caption: The scalar product: a·b = |a||b| cos θ, where |a| cos θ is the component of a along b.
+```
+
 ```keyidea
 Equating the two forms gives the angle: cos θ = v·w/(|v||w|). If v·w = 0 (and neither is zero) the vectors are perpendicular.
 ```

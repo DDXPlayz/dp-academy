@@ -32,6 +32,16 @@ related:
 Continuous: no jumps or holes. Differentiable: continuous AND smooth — no corners. Differentiability implies continuity, but not the other way round.
 ```
 
+```figure
+src: math-aa/_sme/5-7-basic-limits-continuity/img/fig-5565cdd40282fce1.png
+caption: y = |f(x)| is continuous everywhere but not differentiable where it has a sharp corner.
+```
+
+```figure
+src: math-aa/_sme/5-7-basic-limits-continuity/img/fig-198be5a8f4979edf.png
+caption: Discontinuities: a vertical asymptote, or a jump where the left and right limits differ.
+```
+
 Example: $f(x) = |x|$ is continuous at 0, but its gradient jumps from −1 to 1, so it is not differentiable there.
 
 A piecewise function is continuous at the join if the pieces meet, and differentiable if their derivatives also match there.

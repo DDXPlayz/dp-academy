@@ -28,6 +28,11 @@ related:
 For any graph you can find the zeros, the local maxima and minima, and the intersections with another graph using the calculator’s graph-analysis tools. Always check the window shows everything.
 ```
 
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-sl-key-features-of-graphs-sl-study-notes/img/fig-6a5d588d54fec883.png
+caption: Points of intersection of two graphs give the solutions of f(x) = g(x).
+```
+
 ```example
 A ball’s height is $h(t) = -4.9t^2 + 12t + 1.5$ m. Find the maximum height and when the ball lands.
 ---
@@ -45,6 +50,16 @@ Zero with $t > 0$: $t = 2.57$ s. The negative zero is rejected because time cann
 | maximum/minimum | greatest/least value and when it occurs |
 | horizontal asymptote | long-term (limiting) value |
 | intersection | when two quantities are equal |
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-sl-key-features-of-graphs-sl-study-notes/img/fig-5929fc4638a41ee1.png
+caption: Reading a graph: y-intercept, roots (x-intercepts), and local maximum and minimum points.
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-sl-key-features-of-graphs-sl-study-notes/img/fig-31590a239dd15db1.png
+caption: A rational function with a vertical asymptote x = 1 and an oblique asymptote y = x + 1.
+```
 
 ```question
 model-max

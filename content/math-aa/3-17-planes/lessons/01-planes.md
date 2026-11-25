@@ -34,6 +34,16 @@ related:
 - **Normal (scalar product):** $\mathbf r\cdot\mathbf n = \mathbf a\cdot\mathbf n$.
 - **Cartesian:** $ax + by + cz = d$ with normal $(a, b, c)$.
 
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-vector-equation-of-a-plane-study-notes/img/fig-71832f5237e21290.png
+caption: A plane through A, B and C: the normal is AB × AC = (a, b, c), giving the Cartesian equation ax + by + cz = d.
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-vector-equation-of-a-plane-study-notes/img/fig-58049fe560378da2.png
+caption: For any point R in the plane, AR is perpendicular to the normal n, so (r − a)·n = 0.
+```
+
 ```keyidea
 The normal is the key. Find it with n = b × c from two directions in the plane, then d = a · n.
 ```

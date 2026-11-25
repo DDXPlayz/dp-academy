@@ -33,6 +33,21 @@ related:
 
 A vector has magnitude and direction:
 
+```figure
+src: math-aa/_sme/3-9-vector-properties/img/fig-c055a0171869ee36.png
+caption: Adding vectors: nose to tail on a diagram, or by adding the matching components of column vectors.
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-concept-of-a-vector-study-notes/img/fig-64a77a0b7e38de16.png
+caption: Base vectors: i and j in 2D, and i, j and k in 3D.
+```
+
+```figure
+src: math-aa/_sme/3-9-vector-properties/img/fig-f122b8735c3d3069.png
+caption: Vectors can be added in either order: the two routes round a parallelogram give the same result.
+```
+
 $$
 \mathbf v = \begin{pmatrix} v_1 \\ v_2 \\ v_3 \end{pmatrix} = v_1\mathbf i + v_2\mathbf j + v_3\mathbf k
 $$
@@ -45,6 +60,16 @@ Add and subtract component-wise; $k\mathbf v$ scales the length by $|k|$ (and re
 The vector from A to B is b − a (end minus start). Its length is the distance AB.
 ```
 
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-concept-of-a-vector-study-notes/img/fig-8d8a38491cdabb36.png
+caption: Displacement vector = final position vector − initial position vector.
+```
+
+```figure
+src: math-aa/_sme/3-9-vector-properties/img/fig-de6e3077b2400a08.png
+caption: The magnitude of a 3D vector: |a| = √(x² + y² + z²).
+```
+
 ```example
 A(1, 2, −1), B(4, −2, 11). Find $\overrightarrow{AB}$, $|\overrightarrow{AB}|$ and a unit vector in its direction.
 ---
@@ -54,6 +79,11 @@ $\overrightarrow{AB} = \begin{pmatrix}3\\-4\\12\end{pmatrix}$, $|\overrightarrow
 ## Parallel vectors and collinearity
 
 $\mathbf v \parallel \mathbf w \iff \mathbf v = k\mathbf w$.
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-concept-of-a-vector-study-notes/img/fig-5d5041f9ad4aa6c9.png
+caption: A vector has a magnitude (its length) and a direction, from tail to head.
+```
 
 ```example
 Show that P(1, 1, 1), Q(3, 4, 6), R(7, 10, 16) are collinear.

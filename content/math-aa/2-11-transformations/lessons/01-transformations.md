@@ -34,6 +34,26 @@ related:
 | $y = pf(x)$ | vertical stretch, scale factor $p$ |
 | $y = f(qx)$ | horizontal stretch, scale factor $\tfrac1q$ |
 
+```figure
+src: math-aa/_sme/2-6-transformations-of-graphs/img/fig-6626ada93f213030.png
+caption: y = f(−x) is a reflection in the y-axis: x-coordinates change sign and y-coordinates stay the same.
+```
+
+```figure
+src: math-aa/_sme/2-6-transformations-of-graphs/img/fig-ee94e612b9173d42.png
+caption: A reflection in the x-axis, y = −f(x), turns the graph upside down.
+```
+
+```figure
+src: math-aa/_sme/2-6-transformations-of-graphs/img/fig-431e267a40b243f4.png
+caption: A vertical stretch y = kf(x) multiplies every y-coordinate by k.
+```
+
+```figure
+src: math-aa/_sme/2-6-transformations-of-graphs/img/fig-fff2b5deb36335b7.png
+caption: A horizontal stretch y = f(kx) divides every x-coordinate by k.
+```
+
 ```keyidea
 Outside changes (to the output) act vertically and do what they look like. Inside changes (to the input) act horizontally and do the opposite of what they look like.
 ```
@@ -49,6 +69,11 @@ f: 2*(x-3)^2 + 1 | y = 2(x − 3)² + 1
 ## Composite transformations
 
 Order matters when stretches/reflections and translations in the **same direction** are combined.
+
+```figure
+src: math-aa/_sme/2-6-transformations-of-graphs/img/fig-232a83ed19f57303.png
+caption: Translations move the graph without changing its shape: y = f(x − a) + b shifts it a units right and b units up.
+```
 
 ```example
 The point (2, 5) lies on y = f(x). Find its image on y = 3f(x − 1) − 4.

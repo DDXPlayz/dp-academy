@@ -42,6 +42,21 @@ $$
 With θ in radians: arc length l = rθ and sector area A = ½r²θ. These are just fractions θ/2π of the circumference and area.
 ```
 
+```figure
+src: math-aa/_sme/3-1-geometry-toolkit/img/fig-11712cf982648391.png
+caption: Area of a sector: A = (θ/360) × πr² in degrees, or ½r²θ in radians.
+```
+
+```figure
+src: math-aa/_sme/3-1-geometry-toolkit/img/fig-0ddf08660fb3a3a9.png
+caption: Arc length: l = (θ/360) × 2πr in degrees, or rθ in radians.
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-the-circle-radian-measure-of-angles-study-/img/fig-42dae292086a25f5.png
+caption: Common angles in degrees and radians around a full turn.
+```
+
 ```example
 A sector has radius 8 cm and angle 1.2 rad. Find its arc length, perimeter and area.
 ---

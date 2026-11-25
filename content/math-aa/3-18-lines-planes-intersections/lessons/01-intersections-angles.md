@@ -30,6 +30,11 @@ related:
 
 Substitute the line’s parametric coordinates into the plane’s equation and solve for λ.
 
+```figure
+src: math-aa/_sme/3-11-vector-planes/img/fig-3abac00abf8e2e31.png
+caption: Three planes can meet at a single point, along a line, or not at all (for example when two or more are parallel).
+```
+
 ```example
 Find where $\mathbf r = (1, 2, 0) + \lambda(1, -1, 2)$ meets $x + y + z = 9$.
 ---
@@ -40,6 +45,11 @@ $(1 + \lambda) + (2 - \lambda) + 2\lambda = 9 \Rightarrow 3 + 2\lambda = 9 \Righ
 
 - Two non-parallel planes meet in a **line** with direction $\mathbf n_1\times\mathbf n_2$; find one point by setting e.g. $z = 0$.
 - Three planes: solve the 3 × 3 system — a point, a line, or no common point (see 1.16).
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-intersections-of-a-line-with-a-planes-stud/img/fig-228e478a24e0400f.png
+caption: Two non-parallel planes meet in a straight line.
+```
 
 ```example
 Find the line of intersection of $x + y + z = 6$ and $x - y + 2z = 5$.
@@ -53,6 +63,21 @@ $\mathbf r = (5.5, 0.5, 0) + \lambda(3, -1, -2)$.
 
 ```keyidea
 Line–plane: the angle between the line and the normal is found by the dot product; the angle with the plane is its complement, so use sin θ = |b·n|/(|b||n|). Plane–plane: the angle between the normals.
+```
+
+```figure
+src: math-aa/_sme/3-11-vector-planes/img/fig-be03d6529a4aaf20.png
+caption: The angle between a line and a plane is found using the normal: it equals 90° minus the angle between the line and the normal.
+```
+
+```figure
+src: math-aa/_sme/3-11-vector-planes/img/fig-cec1d515d464b7d1.png
+caption: The angle between two planes equals the angle between their normal vectors (or its supplement).
+```
+
+```figure
+src: math-aa/_sme/3-11-vector-planes/img/fig-37d10455f069b72e.png
+caption: The shortest distance from a point to a plane is along the normal through that point.
 ```
 
 ```example

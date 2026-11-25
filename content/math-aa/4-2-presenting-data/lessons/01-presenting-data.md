@@ -25,10 +25,25 @@ related:
 
 A **histogram** shows continuous data with no gaps between bars; in IB questions the classes are usually equal width, so bar height = frequency.
 
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-understanding-of-box-and-whisker-diagrams-/img/fig-3e8bc8c69afb8535.png
+caption: A frequency table for continuous data and its histogram: bars touch because the classes are continuous.
+```
+
 ## Cumulative frequency
 
 ```keyidea
 Plot cumulative frequency against the upper class boundary and join with a smooth curve. Read across from n/4, n/2 and 3n/4 to find Q₁, the median and Q₃.
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-understanding-of-box-and-whisker-diagrams-/img/fig-37ffe96d062741a9.png
+caption: Reading a cumulative frequency curve: the median at half the total frequency, the quartiles at a quarter and three quarters.
+```
+
+```figure
+src: math-aa/_sme/4-1-statistics-toolkit/img/fig-93b51fb0ecc4353b.png
+caption: Outliers are marked with a cross, and the whisker stops at the next value that is not an outlier.
 ```
 
 ```plot
@@ -45,6 +60,16 @@ ylabel: cumulative frequency
 ## Box-and-whisker diagrams
 
 A box plot shows the five-number summary: minimum, $Q_1$, median, $Q_3$, maximum. Outliers are plotted as separate crosses, with whiskers ending at the most extreme non-outlier values.
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-understanding-of-box-and-whisker-diagrams-/img/fig-6bfd9946ca0034ce.png
+caption: A box-and-whisker diagram shows the five-number summary: extremes, quartiles and median, with outliers marked separately.
+```
+
+```figure
+src: math-aa/_sme/4-1-statistics-toolkit/img/fig-6ae6313dc8593fde.png
+caption: The box spans the interquartile range; whiskers reach the smallest and largest values that are not outliers.
+```
 
 ```example
 Data summary: min 4, Q₁ 12, median 18, Q₃ 22, max 41. Is 41 an outlier?

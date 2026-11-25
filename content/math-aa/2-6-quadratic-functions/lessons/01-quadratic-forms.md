@@ -34,6 +34,21 @@ related:
 | $f(x) = a(x - p)(x - q)$ | x-intercepts $(p, 0)$, $(q, 0)$ |
 | $f(x) = a(x - h)^2 + k$ | vertex $(h, k)$ |
 
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-sl-the-quadratic-function-study-notes/img/fig-e2303d81e73c8edc.png
+caption: For f(x) = ax² + bx + c with a > 0: a U-shaped parabola with y-intercept c, roots α and β, and vertex at (−b/2a, −D/4a).
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-sl-the-quadratic-function-study-notes/img/fig-e10e53d35aacbadd.png
+caption: Factorised form shows the zeros; vertex form a(x − h)² + k shows the vertex.
+```
+
+```figure
+src: math-aa/_sme/2-2-quadratic-functions-graphs/img/fig-1e2f437c40e397b2.png
+caption: A positive quadratic (a > 0) has a minimum point; a negative one (a < 0) has a maximum point.
+```
+
 ```plot
 caption: y = (x − 1)² − 4 = (x + 1)(x − 3) = x² − 2x − 3: vertex (1, −4), roots −1 and 3, y-intercept −3.
 x: -3, 5

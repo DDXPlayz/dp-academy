@@ -45,6 +45,16 @@ $f'(x) = 3x^2 - 12x$, $f''(x) = 6x - 12 > 0 \Rightarrow x > 2$.
 | point of inflexion | turning point |
 | concave up | increasing |
 
+```figure
+src: math-aa/_sme/5-2-further-differentiation/img/fig-4e82b3d9e770b8c2.png
+caption: The graphs of f, f′ and f″ together: turning points of f are zeros of f′, and points of inflection of f are zeros of f″.
+```
+
+```figure
+src: math-aa/_sme/5-2-further-differentiation/img/fig-afac3115ac716e94.png
+caption: Concave down where f″(x) < 0, concave up where f″(x) > 0; at a point of inflection the concavity changes.
+```
+
 ```plot
 caption: f(x) = x³ − 3x² (accent), f′(x) = 3x² − 6x and f″(x) = 6x − 6. f′ is zero at f’s turning points; f″ is zero at f’s inflexion (x = 1).
 x: -1.5, 3.5

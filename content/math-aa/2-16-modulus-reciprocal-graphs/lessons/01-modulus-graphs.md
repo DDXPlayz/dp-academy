@@ -29,6 +29,21 @@ related:
 | $y = \dfrac{1}{f(x)}$ | zeros → vertical asymptotes; maxima ↔ minima; points with $y = \pm1$ unchanged |
 | $y = [f(x)]^2$ | always ≥ 0; zeros become touch points; values between −1 and 1 shrink |
 
+```figure
+src: math-aa/_sme/2-9-further-functions-graphs/img/fig-aeacbc908de02a03.png
+caption: The graph of y = f(x) with a maximum at A(−1, 5) and a minimum at B(3, −3), used for the modulus graphs below.
+```
+
+```figure
+src: math-aa/_sme/2-9-further-functions-graphs/img/fig-e759b36af82390a0.png
+caption: y = |f(x)|: parts of the graph below the x-axis are reflected above it, so B(3, −3) becomes (3, 3).
+```
+
+```figure
+src: math-aa/_sme/2-9-further-functions-graphs/img/fig-3e9afe9837d213ea.png
+caption: y = f(|x|): keep the graph for x ≥ 0 and reflect it in the y-axis; A disappears and B stays at (3, −3).
+```
+
 ```plot
 caption: y = x² − 4 and y = |x² − 4|: the part below the x-axis is reflected up.
 x: -4, 4

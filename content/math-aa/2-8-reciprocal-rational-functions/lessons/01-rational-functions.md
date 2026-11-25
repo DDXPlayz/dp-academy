@@ -36,6 +36,11 @@ $f(x) = \dfrac1x$ has asymptotes $x = 0$ and $y = 0$ and lies in the first and t
 Vertical asymptote where the denominator is zero: x = −d/c. Horizontal asymptote from the ratio of leading coefficients: y = a/c.
 ```
 
+```figure
+src: math-aa/_sme/2-5-reciprocal-rational-functions/img/fig-38504afba5da896d.png
+caption: Graphs of the form y = (ax + b)/(cx² + dx + e) can have one or two vertical asymptotes.
+```
+
 ```plot
 caption: y = (2x + 1)/(x − 3): vertical asymptote x = 3, horizontal asymptote y = 2, x-intercept −0.5, y-intercept −1/3.
 x: -8, 12

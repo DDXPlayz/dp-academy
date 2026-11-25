@@ -37,6 +37,11 @@ $x$: $1 + \lambda = 2 \Rightarrow \lambda = 1$. $y$: $2 - \lambda = \mu \Rightar
 Directions are not parallel and the equations are inconsistent, so the lines are **skew**.
 ```
 
+```figure
+src: math-aa/_sme/3-10-vector-equations-of-lines/img/fig-a0f8114139c35cf3.png
+caption: Skew lines are neither parallel nor intersecting; the shortest distance between them is along the common perpendicular.
+```
+
 ```example
 $L_1: \mathbf r = (1, 1, 0) + \lambda(1, 2, 1)$; $L_2: \mathbf r = (2, 1, 3) + \mu(0, 1, -1)$. Find their intersection.
 ---

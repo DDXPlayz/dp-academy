@@ -55,6 +55,16 @@ A bacteria count is $N(t) = 500e^{0.3t}$ (t in hours). Find the initial count an
 $N(0) = 500$. $500e^{0.3t} = 10000 \Rightarrow e^{0.3t} = 20 \Rightarrow t = \dfrac{\ln20}{0.3} = 9.99$ hours.
 ```
 
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-sl-exponential-logarithmic-functions-study/img/fig-dbda98488931ff82.png
+caption: Exponential growth (b > 1) and decay (0 < b < 1): both pass through (0, 1) and approach the x-axis on one side.
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-sl-exponential-logarithmic-functions-study/img/fig-c6ddee1fb8eede10.png
+caption: y = eˣ passes through (0, 1) and (1, e ≈ 2.72) and is always positive.
+```
+
 ```question
 exp-asymptote
 ```

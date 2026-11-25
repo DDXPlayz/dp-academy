@@ -31,6 +31,16 @@ related:
 
 A polynomial of degree $n$ has at most $n$ real roots and at most $n - 1$ turning points. The leading term decides end behaviour.
 
+```figure
+src: math-aa/_sme/2-7-polynomial-functions/img/fig-8dbdf243690b4808.png
+caption: A single factor (x − k) means the curve crosses the axis at k; (x − k)² means it touches; (x − k)³ means it crosses at a point of inflection.
+```
+
+```figure
+src: math-aa/_sme/2-7-polynomial-functions/img/fig-80dc370ef94af0bb.png
+caption: The end behaviour of a polynomial depends on the sign of the leading coefficient and whether the degree is odd or even.
+```
+
 - **Single root:** the graph crosses the axis.
 - **Double root:** the graph touches the axis (turning point).
 - **Triple root:** the graph crosses with a horizontal point of inflection.

@@ -49,6 +49,11 @@ $P(D\mid +) = \dfrac{0.01\times0.95}{0.01\times0.95 + 0.99\times0.08} = \dfrac{0
 Only about 11% — most positives are false because the disease is rare.
 ```
 
+```figure
+src: math-aa/_sme/4-3-probability/img/fig-6c8ba2173074b8c8.png
+caption: Bayes' theorem with three events: the denominator adds up every branch that leads to A.
+```
+
 ## Three events
 
 ```example
@@ -57,6 +62,11 @@ Factories A, B and C make 50%, 30% and 20% of items, with defect rates 2%, 3% an
 Total P(defect) $= 0.5(0.02) + 0.3(0.03) + 0.2(0.05) = 0.029$.
 
 $P(C\mid \text{defect}) = \dfrac{0.2\times0.05}{0.029} = 0.345$.
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-use-of-bayes-theorem-study-notes/img/fig-234d07a8f93576e8.png
+caption: Bayes' theorem: the posterior P(A|B) comes from the likelihood P(B|A), the prior P(A) and the total probability P(B).
 ```
 
 ```question

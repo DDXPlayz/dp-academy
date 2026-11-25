@@ -48,6 +48,11 @@ Prove that the sum of any three consecutive integers is a multiple of 3.
 Let the integers be $n$, $n + 1$, $n + 2$ where $n \in \mathbb{Z}$. Their sum is $3n + 3 = 3(n + 1)$, which is a multiple of 3. ∎
 ```
 
+```figure
+src: math-aa/_sme/1-4-simple-proof-reasoning/img/fig-5877b398588d269f.png
+caption: The number sets nest inside each other: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ.
+```
+
 ```example
 Prove that the square of an odd number is odd.
 ---

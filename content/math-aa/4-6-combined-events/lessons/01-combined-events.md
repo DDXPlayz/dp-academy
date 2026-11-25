@@ -43,6 +43,11 @@ For **mutually exclusive** events $P(A\cap B) = 0$.
 P(A | B) is the probability of A given that B has happened: P(A ∩ B)/P(B). A and B are independent exactly when P(A ∩ B) = P(A)P(B).
 ```
 
+```figure
+src: math-aa/_sme/4-3-probability/img/fig-e60a297d5e976eac.png
+caption: A tree diagram for two events: multiply along the branches; the conditional probabilities sit on the second set of branches.
+```
+
 ```example
 In a class of 30, 18 study French (F), 12 study Spanish (S), and 5 study both. Find P(F ∪ S) and P(F | S).
 ---

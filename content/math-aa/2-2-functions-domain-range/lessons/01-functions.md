@@ -30,12 +30,27 @@ related:
 
 A **function** gives exactly one output for each input. $f(x) = 3x - 1$ means "the output when the input is $x$"; $f(2) = 5$.
 
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-sl-function-and-their-domain-range-graph-s/img/fig-2a6431c8e0736532.png
+caption: Function notation: y = f(x) gives the output for the input x.
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-sl-function-and-their-domain-range-graph-s/img/fig-ecc2cb8b3feee5b4.png
+caption: A function sends every input to exactly one output; a mapping that sends one input to two outputs is not a function.
+```
+
 Functions are used as **models**: $h(t)$ for height after $t$ seconds, $C(n)$ for cost of $n$ items.
 
 ## Domain and range
 
 ```keyidea
 The domain is the set of allowed inputs; the range is the set of outputs. Look for values that make the expression undefined — zero denominators, negative square roots, non-positive log arguments.
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-sl-function-and-their-domain-range-graph-s/img/fig-c921fb735c429623.png
+caption: The domain is the set of x-values used; the range is the set of y-values the function produces.
 ```
 
 | Function | Domain | Range |
@@ -48,6 +63,21 @@ The domain is the set of allowed inputs; the range is the set of outputs. Look f
 ## Inverse functions
 
 The inverse $f^{-1}$ undoes $f$. Its graph is the reflection of $y = f(x)$ in the line $y = x$. Only one-to-one functions have inverses.
+
+```figure
+src: math-aa/_sme/2-3-functions-toolkit/img/fig-6dda7006c83afce2.png
+caption: Many-to-one and one-to-one mappings are both functions; only one-to-one functions have an inverse.
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-sl-function-and-their-domain-range-graph-s/img/fig-5335118dbc16f2a3.png
+caption: f maps x to y and the inverse f⁻¹ maps y back to x: the domain of f is the range of f⁻¹, and vice versa.
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-sl-function-and-their-domain-range-graph-s/img/fig-20511ac2471aa620.png
+caption: The graph of an inverse function is the reflection of the original graph in the line y = x.
+```
 
 ```example
 f(x) = 2x + 6. Find f⁻¹(10) without finding f⁻¹(x).

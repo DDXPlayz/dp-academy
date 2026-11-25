@@ -48,6 +48,16 @@ $\sqrt{16 + 4 + 49} = \sqrt{69} = 8.31$.
 | sphere | $\tfrac43\pi r^3$ | $4\pi r^2$ |
 | hemisphere | $\tfrac23\pi r^3$ | $3\pi r^2$ (incl. flat face) |
 
+```figure
+src: math-aa/_sme/3-2-geometry-of-3d-shapes/img/fig-c85d308f880adf05.png
+caption: A composite solid, a hemisphere on a cone: add the volumes of the parts.
+```
+
+```figure
+src: math-aa/_sme/3-2-geometry-of-3d-shapes/img/fig-ab0dfed4fe40d6c6.png
+caption: A right pyramid on a square base: the apex is directly above the centre of the base.
+```
+
 ```example
 A cone has radius 5 cm and height 12 cm. Find its total surface area.
 ---
@@ -58,6 +68,16 @@ $l = \sqrt{25 + 144} = 13$. $A = \pi(25) + \pi(5)(13) = 90\pi = 283$ cm².
 
 ```keyidea
 Find a right-angled triangle that contains the angle. For a line and a plane, the angle is between the line and its projection onto the plane.
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-distance-volume-and-surface-area-study-not/img/fig-cc99b5f0c443ec3e.png
+caption: The distance between two points in 3D: d = √((x₁ − x₂)² + (y₁ − y₂)² + (z₁ − z₂)²).
+```
+
+```figure
+src: math-aa/_iitian/ib-mathematics-aa-distance-volume-and-surface-area-study-not/img/fig-5d6c31a996c157dd.png
+caption: The midpoint of AB in 3D is the mean of the coordinates: ((x₁ + x₂)/2, (y₁ + y₂)/2, (z₁ + z₂)/2).
 ```
 
 ```example
