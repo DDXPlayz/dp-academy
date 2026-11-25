@@ -11,3 +11,8 @@ resources/
 
 # Python bytecode
 __pycache__/
+
+# Local dev database (accounts and progress from `npm run dev`)
+.data/
+.vercel
+.env*

@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import { Page, PageHeader } from '../components/AppShell';
 import { Icon } from '../components/Icon';
 import { exportableState, useProgress, type Theme } from '../store/progress';
+import { AccountCard, PeopleCard } from '../components/AccountSettings';
 
 export default function Settings() {
   const name = useProgress((s) => s.name);
@@ -33,8 +34,11 @@ export default function Settings() {
 
   return (
     <Page>
-      <PageHeader title="Settings">Your progress is stored only in this browser. Export it to move to another device.</PageHeader>
+      <PageHeader title="Settings">Your progress is saved to your account and syncs automatically to every device you sign in on.</PageHeader>
       <div className="max-w-xl space-y-6">
+        <AccountCard />
+        <PeopleCard />
+
         <section className="card p-5">
           <label htmlFor="name" className="text-sm font-medium text-ink">
             Name
@@ -65,7 +69,7 @@ export default function Settings() {
 
         <section className="card p-5">
           <p className="text-sm font-medium text-ink">Your data</p>
-          <p className="mt-1 text-sm text-muted">Lessons completed, answers, notes, bookmarks and flashcard schedule.</p>
+          <p className="mt-1 text-sm text-muted">Lessons completed, answers, notes, bookmarks and flashcard schedule. Export a backup copy, or import one into this account.</p>
           <div className="mt-4 flex flex-wrap gap-2">
             <button type="button" className="btn-secondary" onClick={download}>
               <Icon name="download" size={16} /> Export
@@ -78,7 +82,7 @@ export default function Settings() {
               type="button"
               className="btn-ghost text-bad hover:text-bad"
               onClick={() => {
-                if (confirm('Erase all progress, notes and bookmarks in this browser? This cannot be undone.')) {
+                if (confirm('Erase all progress, notes and bookmarks in this account, on every device? This cannot be undone.')) {
                   reset();
                   setMessage('Progress erased.');
                 }

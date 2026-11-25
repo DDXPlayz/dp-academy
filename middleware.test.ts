@@ -1,33 +1,49 @@
 import { afterEach, describe, expect, it } from 'vitest';
 import middleware from './middleware';
+import { SESSION_COOKIE, signSession } from './server/auth';
 
-const req = (auth?: string) => new Request('https://example.test/s/physics', { headers: auth ? { authorization: auth } : {} });
-const basic = (u: string, p: string) => `Basic ${btoa(`${u}:${p}`)}`;
+const page = (path: string, cookie?: string) =>
+  new Request(`https://example.test${path}`, { headers: { accept: 'text/html', ...(cookie ? { cookie } : {}) } });
 
-describe('password middleware', () => {
+describe('session middleware', () => {
   afterEach(() => {
-    delete process.env.SITE_PASSWORD;
-    delete process.env.SITE_USER;
+    delete process.env.SESSION_SECRET;
   });
 
-  it('fails closed when no password is configured', () => {
-    const res = middleware(req(basic('student', 'anything')));
+  it('fails closed when no secret is configured', async () => {
+    const token = await signSession({ u: 'me', r: 'admin' }, 'whatever');
+    const res = await middleware(page('/s/physics', `${SESSION_COOKIE}=${token}`));
+    expect(res.status).toBe(302);
+  });
+
+  it('redirects signed-out page requests to /login, keeping the destination', async () => {
+    process.env.SESSION_SECRET = 'secret';
+    const res = await middleware(page('/s/physics?x=1'));
+    expect(res.status).toBe(302);
+    const loc = new URL(res.headers.get('location')!);
+    expect(loc.pathname).toBe('/login');
+    expect(loc.searchParams.get('next')).toBe('/s/physics?x=1');
+  });
+
+  it('blocks private files without a session', async () => {
+    process.env.SESSION_SECRET = 'secret';
+    const res = await middleware(new Request('https://example.test/data/bank.json'));
     expect(res.status).toBe(401);
   });
 
-  it('asks for credentials, and rejects wrong ones', () => {
-    process.env.SITE_PASSWORD = 'correct horse';
-    expect(middleware(req()).status).toBe(401);
-    expect(middleware(req()).headers.get('WWW-Authenticate')).toMatch(/^Basic/);
-    expect(middleware(req(basic('student', 'wrong'))).status).toBe(401);
-    expect(middleware(req(basic('someone', 'correct horse'))).status).toBe(401);
-    expect(middleware(req('Basic !!!not-base64')).status).toBe(401);
+  it('lets the login page, the app bundle and the API through', async () => {
+    for (const p of ['/login', '/assets/index-abc.js', '/api/auth/login', '/favicon.svg']) {
+      expect((await middleware(page(p))).headers.get('x-middleware-next')).toBe('1');
+    }
   });
 
-  it('lets the right user through, including passwords containing ":"', () => {
-    process.env.SITE_PASSWORD = 'a:b:c';
-    process.env.SITE_USER = 'me';
-    const res = middleware(req(basic('me', 'a:b:c')));
-    expect(res.headers.get('x-middleware-next')).toBe('1');
+  it('accepts a valid session and rejects a forged or expired one', async () => {
+    process.env.SESSION_SECRET = 'secret';
+    const good = await signSession({ u: 'me', r: 'member' }, 'secret');
+    expect((await middleware(page('/', `${SESSION_COOKIE}=${good}`))).headers.get('x-middleware-next')).toBe('1');
+    const forged = await signSession({ u: 'me', r: 'admin' }, 'other-secret');
+    expect((await middleware(page('/', `${SESSION_COOKIE}=${forged}`))).status).toBe(302);
+    const old = await signSession({ u: 'me', r: 'member' }, 'secret', Date.now() - 30 * 86400_000);
+    expect((await middleware(page('/', `${SESSION_COOKIE}=${old}`))).status).toBe(302);
   });
 });

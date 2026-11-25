@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { subjects } from '../content';
 import { useProgress } from '../store/progress';
+import { useAccount } from '../lib/account';
 import { useUI } from '../store/ui';
 import { subjectStats } from '../lib/stats';
 import { Icon, type IconName } from './Icon';
@@ -29,6 +30,8 @@ export function Logo() {
 }
 
 function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
+  const username = useAccount((s) => s.username);
+  const sync = useAccount((s) => s.sync);
   const completed = useProgress((s) => s.completed);
   const visited = useProgress((s) => s.visited);
   const attempts = useProgress((s) => s.attempts);
@@ -85,7 +88,13 @@ function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
           className="flex h-9 items-center gap-3 rounded-lg px-2 text-sm text-muted hover:bg-sunken hover:text-ink"
         >
           <Icon name="settings" />
-          Settings
+          <span className="flex-1">Settings</span>
+          {username && (
+            <span className="flex min-w-0 items-center gap-1 text-xs" title={sync === 'offline' ? 'Offline — will sync later' : `Signed in as ${username}`}>
+              <Icon name={sync === 'offline' || sync === 'error' ? 'alert' : 'user'} size={14} />
+              <span className="truncate">{username}</span>
+            </span>
+          )}
         </NavLink>
       </div>
     </nav>

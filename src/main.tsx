@@ -4,6 +4,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { AppShell } from './components/AppShell';
 import Dashboard from './pages/Dashboard';
 import NotFound from './pages/NotFound';
+import Login from './pages/Login';
+import { AccountGate } from './components/AccountGate';
 import './index.css';
 
 const Subjects = lazy(() => import('./pages/Subjects'));
@@ -41,8 +43,16 @@ const router = createBrowserRouter([
   },
 ]);
 
+const onLogin = /^\/login\/?$/.test(window.location.pathname);
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    {onLogin ? (
+      <Login />
+    ) : (
+      <AccountGate>
+        <RouterProvider router={router} />
+      </AccountGate>
+    )}
   </StrictMode>,
 );

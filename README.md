@@ -17,24 +17,42 @@ npm test             # unit tests + content validation
 npm run build        # type-check and build to dist/
 ```
 
-## Going online (password-protected)
+## Going online (accounts that sync across devices)
 
-The site is meant to be private. `middleware.ts` is a Vercel Routing Middleware
-that asks for a username and password (HTTP Basic auth) on every request, and
-**refuses everything if no password is configured**, so a misconfigured
-deployment fails closed.
+The deployed site is private: everyone signs in with their own username and
+password, and each account’s progress is saved on the server and synced to
+every device they use. `middleware.ts` sends signed-out visitors to `/login`
+and blocks the private files; `api/index.ts` (code in `server/`) handles
+sign-in, accounts and progress.
 
 1. Install the CLI and sign in: `npm i -g vercel`, then `vercel login`.
 2. From this folder run `vercel link` once (create a new project).
-3. In the Vercel dashboard → Project → Settings → Environment Variables, add
-   `SITE_PASSWORD` (and optionally `SITE_USER`, default `student`) for
-   *Production* and *Preview*.
-4. Deploy from this computer: `vercel --prod`.
+3. In the Vercel dashboard → your project → **Storage** (or Marketplace), add
+   **Upstash for Redis** (free tier) and connect it to the project. It sets
+   `KV_REST_API_URL` and `KV_REST_API_TOKEN` for you.
+4. In Settings → Environment Variables add, for Production and Preview:
+   * `ADMIN_USER` — your username (lowercase, e.g. `owner`)
+   * `ADMIN_PASSWORD` — your password (long and unique)
+   * `SESSION_SECRET` — a long random string, e.g. the output of
+     `node -e "console.log(crypto.randomUUID()+crypto.randomUUID())"`
+5. Deploy from this computer: `vercel --prod`.
+6. Open the site, sign in as yourself, and go to **Settings → People** to add
+   an account for each friend. Send them the link, their username and the
+   password; they can change it in Settings.
 
-Deploying from your own computer matters: `vite build` copies the private
-past-paper bank from the git-ignored `resources/` folder into `dist/data/`
-when it exists. A build triggered from GitHub never sees `resources/`, so it
-works but has no Past papers. Either way the password protects everything.
+The first time you sign in on a device that already has progress from before
+accounts existed, it is moved into your (owner) account automatically.
+Removing a friend deletes their saved progress and stops their access to the
+API at once; their browser session expires within 7 days at most.
+
+If any of the variables is missing the site refuses to let anyone in (it
+fails closed). Locally, `npm run dev` runs the same API with a file database
+in `.data/` (git-ignored) and the login `admin` / `admin-dev-pass`.
+
+Deploy from your own computer: `vite build` copies the private past-paper
+bank from the git-ignored `resources/` folder into `dist/data/` when it
+exists. A build triggered from GitHub never sees `resources/`, so it works
+but has no Past papers.
 
 `vercel.json` rewrites every route to the single-page app.
 
@@ -56,10 +74,12 @@ src/
   diagrams/                  ← original SVG diagrams referenced by lessons
 ```
 
-Progress lives only in the browser (`localStorage`, key `dp-academy:v1`).
-Settings → Export/Import moves it between devices. Every read and write goes
-through `src/store/progress.ts`, so a hosted backend (Supabase, Firebase…)
-can replace the `storage` option there later without touching pages.
+Progress is kept in `src/store/progress.ts` (one localStorage copy per
+account, so people sharing a device never mix) and synced to the server by
+`src/lib/sync.ts`: changes are sent a couple of seconds after they happen,
+fetched again when the tab regains focus, and merged without losing work if
+two devices changed at once (`src/lib/syncMerge.ts`). It keeps working
+offline and catches up when the connection returns.
 
 ## Adding content
 

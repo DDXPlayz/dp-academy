@@ -15,5 +15,5 @@
     "noEmit": true,
     "types": ["vite/client", "vitest/importMeta"]
   },
-  "include": ["src", "dev", "scripts", "vite.config.ts", "middleware.ts", "middleware.test.ts"]
+  "include": ["src", "dev", "server", "api", "scripts", "vite.config.ts", "middleware.ts", "middleware.test.ts"]
 }

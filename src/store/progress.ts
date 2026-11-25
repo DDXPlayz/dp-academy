@@ -3,11 +3,12 @@ import { createJSONStorage, persist } from 'zustand/middleware';
 import { useShallow } from 'zustand/react/shallow';
 import { review, type CardState, type Grade } from '../lib/srs';
 import { today } from '../lib/dates';
+import { MAX_ATTEMPTS, normalise } from '../lib/syncMerge';
 
 /*
- * Everything a student does lives here and is persisted to localStorage.
- * Components read through hooks; nothing else touches storage, so moving to
- * a hosted backend later means replacing the `storage` option only.
+ * Everything a student does lives here. It is persisted to localStorage under
+ * a key per account (set by src/lib/account.ts before hydration) and synced to
+ * the account on the server by src/lib/sync.ts.
  */
 
 export type Theme = 'system' | 'light' | 'dark';
@@ -43,6 +44,7 @@ interface ProgressState {
   setNote: (key: string, text: string) => void;
   gradeCard: (key: string, grade: Grade) => void;
   importData: (data: unknown) => boolean;
+  replaceData: (data: unknown) => void;
   reset: () => void;
 }
 
@@ -58,8 +60,6 @@ const initial = {
   cards: {},
   studyDays: [],
 };
-
-const MAX_ATTEMPTS = 5000;
 
 function markStudied(days: string[]): string[] {
   const d = today();
@@ -116,12 +116,15 @@ export const useProgress = create<ProgressState>()(
         set({ ...initial, ...d });
         return true;
       },
+      replaceData: (data) => set({ ...normalise(data) }),
       reset: () => set({ ...initial }),
     }),
     {
       name: 'dp-academy:v1',
       version: 1,
       storage: createJSONStorage(() => localStorage),
+      // Hydrated by src/lib/account.ts once we know whose progress to load.
+      skipHydration: true,
     },
   ),
 );
