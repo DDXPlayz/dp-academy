@@ -10,6 +10,11 @@ import type { CardState } from './srs';
 export type ExamResult = 'got' | 'partial' | 'missed';
 export type TextSize = 'sm' | 'md' | 'lg';
 export type Level = 'SL' | 'HL';
+/** A lesson flagged (or un-flagged) for revision. Un-flagging keeps the record so it syncs; the newest `at` wins. */
+export interface RevisitMark {
+  on: boolean;
+  at: number;
+}
 
 export interface SyncedProgress {
   name: string;
@@ -24,6 +29,8 @@ export interface SyncedProgress {
   exam: Record<string, { r: ExamResult; at: number }>;
   completed: Record<string, string>;
   visited: Record<string, number>;
+  /** Lesson key → "needs revision" flag. */
+  revisit: Record<string, RevisitMark>;
   lastLesson: string | null;
   attempts: { key: string; topicKey: string; concept: string; correct: boolean; ms: number; at: number }[];
   bookmarks: Record<string, { kind: 'lesson' | 'question' | 'flashcard'; at: number }>;
@@ -53,6 +60,12 @@ export function normalise(raw: unknown): SyncedProgress {
     exam: obj(d.exam),
     completed: obj(d.completed),
     visited: obj(d.visited),
+    revisit: Object.fromEntries(
+      Object.entries(obj<unknown>(d.revisit)).filter(([, v]) => {
+        const r = v as Partial<RevisitMark> | null;
+        return !!r && typeof r === 'object' && typeof r.on === 'boolean' && typeof r.at === 'number';
+      }),
+    ) as Record<string, RevisitMark>,
     lastLesson: typeof d.lastLesson === 'string' ? d.lastLesson : null,
     attempts: arr(d.attempts),
     bookmarks: obj(d.bookmarks),
@@ -72,6 +85,7 @@ function since(p: SyncedProgress, epoch: number): SyncedProgress {
     exam: keep(p.exam, (v) => v.at),
     completed: keep(p.completed, (v) => Date.parse(v) || 0),
     visited: keep(p.visited, (v) => v),
+    revisit: keep(p.revisit, (v) => v.at),
     lastLesson: p.lastLesson && (p.visited[p.lastLesson] ?? 0) > epoch ? p.lastLesson : null,
     attempts: p.attempts.filter((a) => a.at > epoch),
     bookmarks: keep(p.bookmarks, (v) => v.at),
@@ -117,6 +131,9 @@ export function mergeProgress(mineRaw: unknown, theirsRaw: unknown): SyncedProgr
   const cards = { ...theirs.cards };
   for (const [k, v] of Object.entries(mine.cards)) cards[k] = cards[k] ? pickCard(v, cards[k]) : v;
 
+  const revisit = { ...theirs.revisit };
+  for (const [k, v] of Object.entries(mine.revisit)) if (!revisit[k] || revisit[k].at <= v.at) revisit[k] = v;
+
   const exam = { ...theirs.exam };
   for (const [k, v] of Object.entries(mine.exam)) if (!exam[k] || exam[k].at <= v.at) exam[k] = v;
 
@@ -132,6 +149,7 @@ export function mergeProgress(mineRaw: unknown, theirsRaw: unknown): SyncedProgr
     exam,
     completed,
     visited,
+    revisit,
     lastLesson: lastOf(mine) >= lastOf(theirs) ? mine.lastLesson ?? theirs.lastLesson : theirs.lastLesson,
     attempts,
     bookmarks,

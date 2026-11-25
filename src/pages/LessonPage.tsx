@@ -9,7 +9,7 @@ import { NotesPanel } from '../components/NotesPanel';
 import { ProgressBar } from '../components/ProgressBar';
 import { QuestionCard } from '../components/QuestionCard';
 import { ReferenceLinks } from '../components/ReferenceLinks';
-import { useProgress } from '../store/progress';
+import { isRevisit, useProgress } from '../store/progress';
 import NotFound from './NotFound';
 
 const DIFFICULTY = ['', 'Foundation', 'Standard', 'Challenging'];
@@ -225,6 +225,8 @@ export default function LessonPage() {
   const visit = useProgress((s) => s.visitLesson);
   const completedAt = useProgress((s) => (lesson ? s.completed[lesson.key] : undefined));
   const setComplete = useProgress((s) => s.setComplete);
+  const revisit = useProgress((s) => (lesson ? isRevisit(s, lesson.key) : false));
+  const setRevisit = useProgress((s) => s.setRevisit);
   const hasNote = useProgress((s) => (lesson ? !!s.notes[lesson.key] : false));
   const article = useRef<HTMLElement>(null);
   const [notesOpen, setNotesOpen] = useState(false);
@@ -236,7 +238,7 @@ export default function LessonPage() {
     if (lesson) visit(lesson.key);
   }, [lesson, visit]);
 
-  // Keyboard: ← → move between lessons, M toggles complete, N opens notes.
+  // Keyboard: ← → move between lessons, M toggles complete, R toggles revisit, N opens notes.
   useEffect(() => {
     if (!lesson) return;
     const { prev, next } = lessonNeighbours(lesson);
@@ -246,6 +248,7 @@ export default function LessonPage() {
       if (e.key === 'ArrowLeft' && prev) navigate(prev.href);
       else if (e.key === 'ArrowRight' && next) navigate(next.href);
       else if (e.key === 'm' || e.key === 'M') setComplete(lesson.key, !useProgress.getState().completed[lesson.key]);
+      else if (e.key === 'r' || e.key === 'R') setRevisit(lesson.key, !isRevisit(useProgress.getState(), lesson.key));
       else if (e.key === 'n' || e.key === 'N') {
         e.preventDefault();
         setNotesOpen(true);
@@ -253,7 +256,7 @@ export default function LessonPage() {
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [lesson, navigate, setComplete]);
+  }, [lesson, navigate, setComplete, setRevisit]);
 
   const toc = useMemo(() => {
     if (!lesson) return [];
@@ -407,10 +410,23 @@ export default function LessonPage() {
                   </Link>
                 )}
               </div>
-              <button type="button" className={done ? 'btn-secondary' : 'btn-primary'} onClick={() => setComplete(lesson.key, !done)} aria-pressed={done}>
-                <Icon name="check" size={16} />
-                {done ? 'Completed' : 'Mark complete'}
-              </button>
+              <div className="flex flex-wrap items-center justify-center gap-2">
+                <button type="button" className={done ? 'btn-secondary' : 'btn-primary'} onClick={() => setComplete(lesson.key, !done)} aria-pressed={done}>
+                  <Icon name="check" size={16} />
+                  {done ? 'Completed' : 'Mark complete'}
+                </button>
+                <button
+                  type="button"
+                  className={`btn-ghost px-3 ${revisit ? 'bg-warn-soft text-warn' : 'text-muted'}`}
+                  onClick={() => setRevisit(lesson.key, !revisit)}
+                  aria-pressed={revisit}
+                  aria-label="Revisit"
+                  title={revisit ? 'Flagged to revisit (R)' : 'Flag this lesson to revisit (R)'}
+                >
+                  <Icon name="rotate" size={16} />
+                  <span className="hidden sm:inline">{revisit ? 'Revisit flagged' : 'Revisit'}</span>
+                </button>
+              </div>
               <div className="text-right">
                 {next && (
                   <button type="button" onClick={completeAndNext} className="btn-ghost -mr-3 ml-auto h-auto max-w-full flex-col items-end gap-0 py-2 text-right">
