@@ -1,8 +1,20 @@
 [
-  { "id": "ideal-card", "front": "Ideal gas assumptions?", "back": "Random motion, negligible particle volume, no intermolecular forces, elastic collisions.", "concept": "Ideal gas model" },
-  { "id": "real-card", "front": "When do real gases deviate most?", "back": "Low temperature and high pressure.", "concept": "Real gases" },
-  { "id": "vm-card", "front": "Molar volume at STP?", "back": "22.7 dm³ mol⁻¹ at 273 K and 100 kPa.", "concept": "Molar volume" },
-  { "id": "pvnrt-card", "front": "Ideal gas equation and units?", "back": "PV = nRT: Pa, m³, mol, K; R = 8.31 J K⁻¹ mol⁻¹.", "concept": "Ideal gas equation" },
-  { "id": "combined-card", "front": "Combined gas law?", "back": "P₁V₁/T₁ = P₂V₂/T₂ (fixed amount of gas, T in K).", "concept": "Combined gas law" },
-  { "id": "m-gas-card", "front": "Molar mass from gas data?", "back": "M = mRT/PV", "concept": "Molar mass from gas data" }
+  { "id": "ideal-card", "front": "Ideal gas assumptions?", "back": "Random motion, negligible particle volume, no intermolecular forces, elastic collisions.", "concept": "Ideal gas model", "kind": "definition" },
+  { "id": "real-card", "front": "When do real gases deviate most?", "back": "Low temperature and high pressure.", "concept": "Real gases", "kind": "condition" },
+  { "id": "vm-card", "front": "Molar volume at STP?", "back": "22.7 dm³ mol⁻¹ at 273 K and 100 kPa.", "concept": "Molar volume", "kind": "unit" },
+  { "id": "pvnrt-card", "front": "Ideal gas equation and units?", "back": "PV = nRT: Pa, m³, mol, K; R = 8.31 J K⁻¹ mol⁻¹.", "concept": "Ideal gas equation", "kind": "formula" },
+  { "id": "combined-card", "front": "Combined gas law?", "back": "P₁V₁/T₁ = P₂V₂/T₂ (fixed amount of gas, T in K).", "concept": "Combined gas law", "kind": "formula" },
+  { "id": "m-gas-card", "front": "Molar mass from gas data?", "back": "M = mRT/PV", "concept": "Molar mass from gas data", "kind": "formula" },
+  { "id": "real-why-card", "front": "Why do real gases deviate at high pressure and low temperature?", "back": "High p: particles close, so their own volume is significant. Low T: particles slow, so intermolecular attractions become significant.", "concept": "Real gases", "kind": "concept" },
+  { "id": "boyle-card", "front": "Boyle’s law?", "back": "At constant T and n: p ∝ 1/V, so p₁V₁ = p₂V₂.", "concept": "Gas laws", "kind": "formula" },
+  { "id": "charles-card", "front": "Charles’s law?", "back": "At constant p and n: V ∝ T (in K), so V₁/T₁ = V₂/T₂.", "concept": "Gas laws", "kind": "formula" },
+  { "id": "gay-lussac-card", "front": "Pressure–temperature law?", "back": "At constant V and n: p ∝ T (in K), so p₁/T₁ = p₂/T₂.", "concept": "Gas laws", "kind": "formula" },
+  { "id": "pv-graph-card", "front": "Shapes of p vs V and p vs 1/V graphs (constant T)?", "back": "p vs V: curve (inverse proportion). p vs 1/V: straight line through the origin.", "concept": "Gas laws", "kind": "graph" },
+  { "id": "vt-graph-card", "front": "V vs T graph at constant pressure?", "back": "Straight line; through the origin if T is in K. With T in °C it extrapolates to −273 °C at V = 0.", "concept": "Gas laws", "kind": "graph" },
+  { "id": "unit-conv-card", "front": "Unit conversions for pV = nRT?", "back": "kPa × 10³ → Pa; dm³ × 10⁻³ → m³; cm³ × 10⁻⁶ → m³; °C + 273.15 → K.", "concept": "Ideal gas equation", "kind": "unit" },
+  { "id": "pressure-kmt-card", "front": "What causes gas pressure (kinetic model)?", "back": "Collisions of particles with the container walls; more frequent or more energetic collisions give higher pressure.", "concept": "Ideal gas model", "kind": "concept" },
+  { "id": "compress-card", "front": "Compression factor pV/nRT for real gases?", "back": "Equals 1 for an ideal gas. < 1 when attractions dominate (moderate p, low T); > 1 when particle volume dominates (very high p).", "concept": "Real gases", "kind": "concept" },
+  { "id": "stp-misc-card", "front": "Is 22.7 dm³ mol⁻¹ valid for liquids or at room temperature?", "back": "No. It applies only to (ideal) gases at STP: 273 K and 100 kPa. Otherwise use pV = nRT.", "concept": "Molar volume", "kind": "misconception" },
+  { "id": "density-gas-card", "front": "Density of an ideal gas?", "back": "ρ = m/V = pM/RT — denser at higher pressure, lower temperature and higher molar mass.", "concept": "Ideal gas equation", "kind": "formula" },
+  { "id": "high-t-ideal-card", "front": "Conditions where real gases behave most ideally?", "back": "High temperature and low pressure; small, non-polar molecules (e.g. He, H₂) behave most ideally.", "concept": "Real gases", "kind": "condition" }
 ]

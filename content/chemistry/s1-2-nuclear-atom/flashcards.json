@@ -1,8 +1,21 @@
 [
-  { "id": "particles-card", "front": "Relative mass and charge of p, n, e?", "back": "Proton 1, +1. Neutron 1, 0. Electron 1/1836, −1.", "concept": "Subatomic particles" },
-  { "id": "az-card", "front": "Meaning of A and Z?", "back": "Z = protons (atomic number). A = protons + neutrons (mass number).", "concept": "Nuclear symbols" },
-  { "id": "ions-card", "front": "How do ions form?", "back": "By gaining (anion) or losing (cation) electrons — protons never change.", "concept": "Ions" },
-  { "id": "isotopes-card", "front": "Isotopes?", "back": "Same Z, different numbers of neutrons. Same chemistry, slightly different physical properties.", "concept": "Isotopes" },
-  { "id": "ar-card", "front": "Relative atomic mass?", "back": "Weighted mean mass of an atom relative to 1/12 of ¹²C: Σ(mass × abundance)/Σabundance.", "concept": "Relative atomic mass" },
-  { "id": "ms-card", "front": "(HL) Reading a mass spectrum?", "back": "Peak position = m/z (isotope mass); peak height = relative abundance.", "concept": "Mass spectra" }
+  { "id": "particles-card", "front": "Relative mass and charge of p, n, e?", "back": "Proton 1, +1. Neutron 1, 0. Electron 1/1836, −1.", "concept": "Subatomic particles", "kind": "definition" },
+  { "id": "az-card", "front": "Meaning of A and Z?", "back": "Z = protons (atomic number). A = protons + neutrons (mass number).", "concept": "Nuclear symbols", "kind": "definition" },
+  { "id": "ions-card", "front": "How do ions form?", "back": "By gaining (anion) or losing (cation) electrons — protons never change.", "concept": "Ions", "kind": "concept" },
+  { "id": "isotopes-card", "front": "Isotopes?", "back": "Same Z, different numbers of neutrons. Same chemistry, slightly different physical properties.", "concept": "Isotopes", "kind": "definition" },
+  { "id": "ar-card", "front": "Relative atomic mass?", "back": "Weighted mean mass of an atom relative to 1/12 of ¹²C: Σ(mass × abundance)/Σabundance.", "concept": "Relative atomic mass", "kind": "definition" },
+  { "id": "ms-card", "front": "(HL) Reading a mass spectrum?", "back": "Peak position = m/z (isotope mass); peak height = relative abundance.", "concept": "Mass spectra", "kind": "graph" },
+  { "id": "nuclide-notation-card", "front": "In the nuclear symbol $^{A}_{Z}X^{c}$, how do you find neutrons and electrons?", "back": "Neutrons = A − Z. Electrons = Z − charge (c). E.g. $^{32}_{16}$S²⁻: 16 p, 16 n, 18 e⁻.", "concept": "Nuclear symbol", "kind": "structure" },
+  { "id": "nucleus-card", "front": "Where is the mass and charge of an atom concentrated?", "back": "Almost all the mass and all the positive charge are in a tiny, dense nucleus (protons + neutrons); electrons occupy the space around it.", "concept": "Nuclear atom", "kind": "structure" },
+  { "id": "rutherford-card", "front": "What did the gold-foil (Rutherford) experiment show?", "back": "Most α particles passed straight through (atom mostly empty space); a few deflected strongly (small, dense, positive nucleus).", "concept": "Nuclear atom", "kind": "application" },
+  { "id": "isotope-phys-card", "front": "Why do isotopes differ in physical but not chemical properties?", "back": "Chemistry depends on electron configuration (same). Different neutron numbers change mass, so density, rate of diffusion and mp/bp differ slightly.", "concept": "Isotopes", "kind": "concept" },
+  { "id": "ar-calc-card", "front": "Ar of chlorine from ³⁵Cl (75%) and ³⁷Cl (25%)?", "back": "Ar = (35 × 75 + 37 × 25)/100 = 35.5", "concept": "Relative atomic mass", "kind": "method" },
+  { "id": "abundance-calc-card", "front": "Finding isotope abundances from Ar (two isotopes)?", "back": "Let abundance of one isotope = x and the other = 100 − x; solve Ar = [m₁x + m₂(100 − x)]/100.", "concept": "Relative atomic mass", "kind": "method" },
+  { "id": "ar-not-whole-card", "front": "Why is Ar rarely a whole number?", "back": "It is a weighted mean over the naturally occurring isotopes (and isotope masses are not exactly whole numbers).", "concept": "Relative atomic mass", "kind": "misconception" },
+  { "id": "radioisotope-card", "front": "Uses of radioisotopes?", "back": "¹⁴C: radiocarbon dating. ⁶⁰Co: radiotherapy/sterilisation. ¹³¹I: thyroid treatment and medical tracer.", "concept": "Isotopes", "kind": "application" },
+  { "id": "ms-stages-card", "front": "(HL) What a mass spectrometer does to a sample?", "back": "Vaporises and ionises the atoms (forming positive ions), accelerates and separates them by m/z, then detects them to give relative abundances.", "concept": "Mass spectrometry", "kind": "method" },
+  { "id": "ms-cl2-card", "front": "(HL) Peaks in the mass spectrum of Cl₂ in the molecular-ion region?", "back": "m/z 70, 72, 74 (³⁵Cl³⁵Cl, ³⁵Cl³⁷Cl, ³⁷Cl³⁷Cl) in ratio 9 : 6 : 1.", "concept": "Mass spectrometry", "kind": "graph" },
+  { "id": "ms-ar-card", "front": "(HL) Calculating Ar from a mass spectrum?", "back": "Ar = Σ(m/z × relative abundance) ÷ Σ(relative abundances), using each peak.", "concept": "Mass spectrometry", "kind": "method" },
+  { "id": "electron-mass-card", "front": "Do electrons contribute to the mass number?", "back": "No. A counts only protons and neutrons; an electron is ~1/1836 of a proton’s mass, so ions have essentially the same mass as their atoms.", "concept": "Subatomic particles", "kind": "misconception" },
+  { "id": "isoelectronic-card", "front": "Isoelectronic species?", "back": "Species with the same number of electrons (e.g. Na⁺, Mg²⁺, F⁻, Ne — all 10 e⁻).", "concept": "Ions", "kind": "definition" }
 ]

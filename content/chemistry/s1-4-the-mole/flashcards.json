@@ -1,56 +1,23 @@
 [
-  {
-    "id": "mole",
-    "concept": "Definitions",
-    "front": "What is **one mole**?",
-    "back": "The amount of substance containing $6.02 \\times 10^{23}$ particles (the Avogadro constant)."
-  },
-  {
-    "id": "molar-mass",
-    "concept": "Definitions",
-    "front": "What is **molar mass**?",
-    "back": "The mass of one mole of a substance, in g mol⁻¹ — numerically equal to its relative formula mass."
-  },
-  {
-    "id": "amount-mass",
-    "concept": "Calculations",
-    "front": "Link amount, mass and molar mass.",
-    "back": "$n = \\dfrac{m}{M}$"
-  },
-  {
-    "id": "concentration",
-    "concept": "Calculations",
-    "front": "Concentration formula and units?",
-    "back": "$c = \\dfrac{n}{V}$, with $V$ in dm³; $c$ in mol dm⁻³."
-  },
-  {
-    "id": "empirical",
-    "concept": "Formulae",
-    "front": "Empirical vs molecular formula?",
-    "back": "Empirical: simplest whole-number ratio of atoms. Molecular: actual number of each atom in a molecule — a whole-number multiple of the empirical formula."
-  },
-  {
-    "id": "cm3-dm3",
-    "concept": "Calculations",
-    "front": "How do you convert cm³ to dm³?",
-    "back": "Divide by 1000 (1 dm³ = 1000 cm³)."
-  },
-  {
-    "id": "mr-card",
-    "front": "Relative formula mass vs molar mass?",
-    "back": "Mr: sum of Ar values, no units. M: same number, units g mol⁻¹.",
-    "concept": "Relative formula mass"
-  },
-  {
-    "id": "avogadro-law-card",
-    "front": "Avogadro’s law?",
-    "back": "Equal volumes of gases at the same T and p contain equal numbers of molecules — volume ratio = mole ratio.",
-    "concept": "Avogadro’s law"
-  },
-  {
-    "id": "dilution-card",
-    "front": "Dilution formula?",
-    "back": "$c_1V_1 = c_2V_2$ (amount of solute unchanged).",
-    "concept": "Concentration"
-  }
+  { "id": "mole", "front": "What is **one mole**?", "back": "The amount of substance containing $6.02 \\times 10^{23}$ particles (the Avogadro constant).", "concept": "Definitions", "kind": "definition" },
+  { "id": "molar-mass", "front": "What is **molar mass**?", "back": "The mass of one mole of a substance, in g mol⁻¹ — numerically equal to its relative formula mass.", "concept": "Definitions", "kind": "definition" },
+  { "id": "amount-mass", "front": "Link amount, mass and molar mass.", "back": "$n = \\dfrac{m}{M}$", "concept": "Calculations", "kind": "formula" },
+  { "id": "concentration", "front": "Concentration formula and units?", "back": "$c = \\dfrac{n}{V}$, with $V$ in dm³; $c$ in mol dm⁻³.", "concept": "Calculations", "kind": "formula" },
+  { "id": "empirical", "front": "Empirical vs molecular formula?", "back": "Empirical: simplest whole-number ratio of atoms. Molecular: actual number of each atom in a molecule — a whole-number multiple of the empirical formula.", "concept": "Formulae", "kind": "distinction" },
+  { "id": "cm3-dm3", "front": "How do you convert cm³ to dm³?", "back": "Divide by 1000 (1 dm³ = 1000 cm³).", "concept": "Calculations", "kind": "unit" },
+  { "id": "mr-card", "front": "Relative formula mass vs molar mass?", "back": "Mr: sum of Ar values, no units. M: same number, units g mol⁻¹.", "concept": "Relative formula mass", "kind": "distinction" },
+  { "id": "avogadro-law-card", "front": "Avogadro’s law?", "back": "Equal volumes of gases at the same T and p contain equal numbers of molecules — volume ratio = mole ratio.", "concept": "Avogadro’s law", "kind": "definition" },
+  { "id": "dilution-card", "front": "Dilution formula?", "back": "$c_1V_1 = c_2V_2$ (amount of solute unchanged).", "concept": "Concentration", "kind": "formula" },
+  { "id": "particles-n-card", "front": "Linking number of particles and amount?", "back": "$N = n \\times N_A$, with $N_A = 6.02 \\times 10^{23}$ mol⁻¹.", "concept": "The mole", "kind": "formula" },
+  { "id": "atoms-in-mol-card", "front": "How many atoms are in 1 mol of H₂O?", "back": "3 mol of atoms ($3 \\times 6.02 \\times 10^{23}$) — one mole of molecules contains 3 moles of atoms. State which particle you are counting.", "concept": "The mole", "kind": "misconception" },
+  { "id": "ef-method-card", "front": "Empirical formula from % composition?", "back": "Assume 100 g → mass of each element ÷ Ar → divide by smallest → multiply to whole numbers if needed (e.g. 1.5 → ×2).", "concept": "Empirical formula", "kind": "method" },
+  { "id": "mf-method-card", "front": "Molecular formula from empirical formula?", "back": "Multiplier = M ÷ M(empirical formula); multiply every subscript. E.g. CH₂O with M = 180 g mol⁻¹ → C₆H₁₂O₆.", "concept": "Molecular formula", "kind": "method" },
+  { "id": "combustion-ef-card", "front": "Empirical formula from combustion data?", "back": "All C → CO₂ (n(C) = n(CO₂)); all H → H₂O (n(H) = 2n(H₂O)); O by difference in mass; then find the ratio.", "concept": "Empirical formula", "kind": "method" },
+  { "id": "mass-conc-card", "front": "Mass concentration vs molar concentration?", "back": "Mass concentration in g dm⁻³; molar concentration in mol dm⁻³. Convert: g dm⁻³ = mol dm⁻³ × M.", "concept": "Concentration", "kind": "unit" },
+  { "id": "square-bracket-card", "front": "What does [HCl] mean?", "back": "The concentration of HCl in mol dm⁻³. 1 mol dm⁻³ is also written 1 M (molar).", "concept": "Concentration", "kind": "definition" },
+  { "id": "ppm-card", "front": "Parts per million (ppm)?", "back": "Mass of solute per 10⁶ units of mass of solution (≈ mg per kg, or mg dm⁻³ for dilute aqueous solutions); used for very low concentrations.", "concept": "Concentration", "kind": "unit" },
+  { "id": "gas-volume-ratio-card", "front": "Volume of O₂ needed to burn 10 cm³ of CH₄ (same T, p)?", "back": "CH₄ + 2O₂ → CO₂ + 2H₂O; volume ratio = mole ratio, so 20 cm³ of O₂.", "concept": "Avogadro’s law", "kind": "method" },
+  { "id": "ar-mol-card", "front": "SI unit and symbol for amount of substance?", "back": "Mole, symbol mol; quantity symbol n.", "concept": "The mole", "kind": "unit" },
+  { "id": "percent-comp-card", "front": "Percentage by mass of an element in a compound?", "back": "% = (number of atoms × Ar) ÷ Mr × 100. E.g. N in NH₄NO₃: 28/80 × 100 = 35%.", "concept": "Empirical formula", "kind": "formula" },
+  { "id": "hydrate-card", "front": "Finding x in CuSO₄·xH₂O?", "back": "Heat to constant mass; n(H₂O lost) = mass lost/18.02; n(CuSO₄) = mass of residue/159.6; x = ratio.", "concept": "Empirical formula", "kind": "method" }
 ]
