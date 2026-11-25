@@ -7,9 +7,14 @@ import type { CardState } from './srs';
  * days are unions; per-item values keep the more advanced/newer copy.
  */
 
+export type ExamResult = 'got' | 'partial' | 'missed';
+export type TextSize = 'sm' | 'md' | 'lg';
+
 export interface SyncedProgress {
   name: string;
   theme: 'system' | 'light' | 'dark';
+  textSize: TextSize;
+  exam: Record<string, { r: ExamResult; at: number }>;
   completed: Record<string, string>;
   visited: Record<string, number>;
   lastLesson: string | null;
@@ -32,6 +37,8 @@ export function normalise(raw: unknown): SyncedProgress {
   return {
     name: typeof d.name === 'string' ? d.name : '',
     theme,
+    textSize: d.textSize === 'sm' || d.textSize === 'lg' ? d.textSize : 'md',
+    exam: obj(d.exam),
     completed: obj(d.completed),
     visited: obj(d.visited),
     lastLesson: typeof d.lastLesson === 'string' ? d.lastLesson : null,
@@ -76,11 +83,16 @@ export function mergeProgress(mineRaw: unknown, theirsRaw: unknown): SyncedProgr
   const cards = { ...theirs.cards };
   for (const [k, v] of Object.entries(mine.cards)) cards[k] = cards[k] ? pickCard(v, cards[k]) : v;
 
+  const exam = { ...theirs.exam };
+  for (const [k, v] of Object.entries(mine.exam)) if (!exam[k] || exam[k].at <= v.at) exam[k] = v;
+
   const lastOf = (p: SyncedProgress) => (p.lastLesson ? p.visited[p.lastLesson] ?? 0 : 0);
 
   return {
     name: mine.name || theirs.name,
     theme: mine.theme,
+    textSize: mine.textSize,
+    exam,
     completed,
     visited,
     lastLesson: lastOf(mine) >= lastOf(theirs) ? mine.lastLesson ?? theirs.lastLesson : theirs.lastLesson,

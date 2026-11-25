@@ -3,7 +3,9 @@ import { createJSONStorage, persist } from 'zustand/middleware';
 import { useShallow } from 'zustand/react/shallow';
 import { review, type CardState, type Grade } from '../lib/srs';
 import { today } from '../lib/dates';
-import { MAX_ATTEMPTS, normalise } from '../lib/syncMerge';
+import { MAX_ATTEMPTS, normalise, type ExamResult, type TextSize } from '../lib/syncMerge';
+
+export type { ExamResult, TextSize };
 
 /*
  * Everything a student does lives here. It is persisted to localStorage under
@@ -26,6 +28,8 @@ export interface Attempt {
 interface ProgressState {
   name: string;
   theme: Theme;
+  textSize: TextSize;
+  exam: Record<string, { r: ExamResult; at: number }>; // exam-bank question key → self-marked result
   completed: Record<string, string>; // lesson key → ISO date completed
   visited: Record<string, number>; // lesson key → last opened (epoch ms)
   lastLesson: string | null;
@@ -37,6 +41,8 @@ interface ProgressState {
 
   setName: (name: string) => void;
   setTheme: (theme: Theme) => void;
+  setTextSize: (size: TextSize) => void;
+  markExam: (key: string, result: ExamResult | null) => void;
   visitLesson: (key: string) => void;
   setComplete: (key: string, done: boolean) => void;
   recordAttempt: (a: Omit<Attempt, 'at'>) => void;
@@ -51,6 +57,8 @@ interface ProgressState {
 const initial = {
   name: '',
   theme: 'system' as Theme,
+  textSize: 'md' as TextSize,
+  exam: {} as Record<string, { r: ExamResult; at: number }>,
   completed: {},
   visited: {},
   lastLesson: null,
@@ -72,6 +80,14 @@ export const useProgress = create<ProgressState>()(
       ...initial,
       setName: (name) => set({ name: name.trim().slice(0, 40) }),
       setTheme: (theme) => set({ theme }),
+      setTextSize: (textSize) => set({ textSize }),
+      markExam: (key, result) =>
+        set((s) => {
+          const exam = { ...s.exam };
+          if (result) exam[key] = { r: result, at: Date.now() };
+          else delete exam[key];
+          return { exam, studyDays: markStudied(s.studyDays) };
+        }),
       visitLesson: (key) =>
         set((s) => ({
           visited: { ...s.visited, [key]: Date.now() },
@@ -130,9 +146,9 @@ export const useProgress = create<ProgressState>()(
 );
 
 export const exportableState = () => {
-  const { name, theme, completed, visited, lastLesson, attempts, bookmarks, notes, cards, studyDays } =
+  const { name, theme, textSize, exam, completed, visited, lastLesson, attempts, bookmarks, notes, cards, studyDays } =
     useProgress.getState();
-  return { name, theme, completed, visited, lastLesson, attempts, bookmarks, notes, cards, studyDays };
+  return { name, theme, textSize, exam, completed, visited, lastLesson, attempts, bookmarks, notes, cards, studyDays };
 };
 
 /** The slice the statistics functions need, with shallow equality. */

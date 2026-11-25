@@ -1,7 +1,8 @@
 import { useRef, useState } from 'react';
 import { Page, PageHeader } from '../components/AppShell';
 import { Icon } from '../components/Icon';
-import { exportableState, useProgress, type Theme } from '../store/progress';
+import { exportableState, useProgress, type TextSize, type Theme } from '../store/progress';
+import { useUI } from '../store/ui';
 import { AccountCard, PeopleCard } from '../components/AccountSettings';
 
 export default function Settings() {
@@ -9,6 +10,9 @@ export default function Settings() {
   const setName = useProgress((s) => s.setName);
   const theme = useProgress((s) => s.theme);
   const setTheme = useProgress((s) => s.setTheme);
+  const textSize = useProgress((s) => s.textSize);
+  const setTextSize = useProgress((s) => s.setTextSize);
+  const setHelp = useUI((s) => s.setHelp);
   const importData = useProgress((s) => s.importData);
   const reset = useProgress((s) => s.reset);
   const [message, setMessage] = useState('');
@@ -65,6 +69,29 @@ export default function Settings() {
               </button>
             ))}
           </div>
+        </section>
+
+        <section className="card p-5">
+          <p className="text-sm font-medium text-ink">Lesson text size</p>
+          <div role="radiogroup" aria-label="Lesson text size" className="mt-3 grid grid-cols-3 gap-2">
+            {(['sm', 'md', 'lg'] as TextSize[]).map((t, i) => (
+              <button
+                key={t}
+                type="button"
+                role="radio"
+                aria-checked={textSize === t}
+                onClick={() => setTextSize(t)}
+                className={`flex h-14 items-center justify-center rounded-lg border ${
+                  textSize === t ? 'border-accent bg-accent-soft text-ink' : 'border-line text-ink-2 hover:bg-sunken'
+                }`}
+              >
+                <span style={{ fontSize: ['0.85rem', '1rem', '1.2rem'][i] }}>{['Small', 'Medium', 'Large'][i]}</span>
+              </button>
+            ))}
+          </div>
+          <button type="button" className="mt-4 text-sm text-accent hover:underline" onClick={() => setHelp(true)}>
+            Keyboard shortcuts
+          </button>
         </section>
 
         <section className="card p-5">

@@ -6,10 +6,20 @@
     <meta name="description" content="DP Academy — a free, independent study platform for the IB Diploma Programme." />
     <meta name="theme-color" content="#f7f7f5" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="DP Academy" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <title>DP Academy</title>
     <script>
+      // Apply the saved theme and text size before first paint (per account since accounts exist).
       try {
-        var t = JSON.parse(localStorage.getItem('dp-academy:v1') || '{}').state?.theme || 'system';
+        var last = JSON.parse(localStorage.getItem('dp-academy:last-user') || 'null');
+        var key = last && last.username ? 'dp-academy:v1:u:' + last.username : 'dp-academy:v1';
+        var st = JSON.parse(localStorage.getItem(key) || '{}').state || {};
+        var t = st.theme || 'system';
+        if (st.textSize) document.documentElement.dataset.text = st.textSize;
         var dark = t === 'dark' || (t === 'system' && matchMedia('(prefers-color-scheme: dark)').matches);
         if (dark) document.documentElement.classList.add('dark');
       } catch (e) {}

@@ -13,6 +13,53 @@ import NotFound from './NotFound';
 
 const DIFFICULTY = ['', 'Foundation', 'Standard', 'Challenging'];
 
+/* Where you stopped reading each lesson, on this device (not synced: screens differ). */
+const SCROLL_KEY = 'dp-academy:scroll';
+function readScroll(): Record<string, number> {
+  try {
+    return JSON.parse(localStorage.getItem(SCROLL_KEY) ?? '{}');
+  } catch {
+    return {};
+  }
+}
+function saveScroll(key: string, y: number) {
+  try {
+    const all = readScroll();
+    delete all[key];
+    if (y > 0) all[key] = y;
+    const trimmed = Object.fromEntries(Object.entries(all).slice(-40));
+    localStorage.setItem(SCROLL_KEY, JSON.stringify(trimmed));
+  } catch {
+    /* ignore */
+  }
+}
+
+/** Offers to jump back to where you stopped last time, and remembers the new position. */
+function useResumeReading(lessonKey: string | undefined, article: React.RefObject<HTMLElement | null>) {
+  const [resumeAt, setResumeAt] = useState<number | null>(null);
+  useEffect(() => {
+    if (!lessonKey) return;
+    const saved = readScroll()[lessonKey];
+    setResumeAt(saved && saved > 800 && !window.location.hash ? saved : null);
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    const onScroll = () => {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        const el = article.current;
+        const nearEnd = el ? el.getBoundingClientRect().bottom < window.innerHeight * 1.2 : false;
+        saveScroll(lessonKey, nearEnd ? 0 : Math.round(window.scrollY));
+        if (window.scrollY > 800) setResumeAt(null);
+      }, 400);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('scroll', onScroll);
+    };
+  }, [lessonKey, article]);
+  return [resumeAt, () => setResumeAt(null)] as const;
+}
+
 /** Fraction of the article scrolled past. */
 function useReadingProgress(ref: React.RefObject<HTMLElement | null>) {
   const [p, setP] = useState(0);
@@ -182,10 +229,30 @@ export default function LessonPage() {
   const [notesOpen, setNotesOpen] = useState(false);
   const [tocOpen, setTocOpen] = useState(false);
   const navigate = useNavigate();
+  const [resumeAt, dismissResume] = useResumeReading(lesson?.key, article);
 
   useEffect(() => {
     if (lesson) visit(lesson.key);
   }, [lesson, visit]);
+
+  // Keyboard: ← → move between lessons, M toggles complete, N opens notes.
+  useEffect(() => {
+    if (!lesson) return;
+    const { prev, next } = lessonNeighbours(lesson);
+    const onKey = (e: KeyboardEvent) => {
+      if (e.metaKey || e.ctrlKey || e.altKey || e.defaultPrevented) return;
+      if ((e.target as HTMLElement)?.closest('input, textarea, select, [contenteditable], [role="dialog"]')) return;
+      if (e.key === 'ArrowLeft' && prev) navigate(prev.href);
+      else if (e.key === 'ArrowRight' && next) navigate(next.href);
+      else if (e.key === 'm' || e.key === 'M') setComplete(lesson.key, !useProgress.getState().completed[lesson.key]);
+      else if (e.key === 'n' || e.key === 'N') {
+        e.preventDefault();
+        setNotesOpen(true);
+      } else return;
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [lesson, navigate, setComplete]);
 
   const toc = useMemo(() => {
     if (!lesson) return [];
@@ -284,6 +351,24 @@ export default function LessonPage() {
               </div>
             )}
             <ReadingProgress target={article} variant="inline" />
+            {resumeAt !== null && (
+              <div className="animate-rise mt-4 flex flex-wrap items-center gap-3 rounded-lg border border-line bg-sunken/60 px-4 py-3 text-sm">
+                <span className="text-ink-2">You were partway through this lesson.</span>
+                <button
+                  type="button"
+                  className="font-medium text-accent hover:underline"
+                  onClick={() => {
+                    window.scrollTo({ top: resumeAt, behavior: 'smooth' });
+                    dismissResume();
+                  }}
+                >
+                  Continue where you left off
+                </button>
+                <button type="button" className="icon-btn ml-auto size-7" onClick={dismissResume} aria-label="Dismiss">
+                  <Icon name="x" size={14} />
+                </button>
+              </div>
+            )}
           </header>
 
           <div className="prose-lesson mt-8">

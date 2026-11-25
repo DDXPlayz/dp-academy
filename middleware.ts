@@ -13,7 +13,15 @@ import { SESSION_COOKIE, readCookie, verifySession } from './server/auth';
 export const config = { matcher: '/:path*' };
 
 /** Paths anyone may load: the login screen and the (public-repo) app bundle. */
-const PUBLIC = [/^\/login\/?$/, /^\/api(\/|$)/, /^\/assets\//, /^\/favicon\.svg$/, /^\/robots\.txt$/];
+const PUBLIC = [
+  /^\/login\/?$/,
+  /^\/api(\/|$)/,
+  /^\/assets\//,
+  /^\/favicon\.svg$/,
+  /^\/robots\.txt$/,
+  /^\/manifest\.webmanifest$/,
+  /^\/(apple-touch-icon|icon-[\w-]+)\.png$/,
+];
 
 export default async function middleware(request: Request): Promise<Response> {
   const url = new URL(request.url);

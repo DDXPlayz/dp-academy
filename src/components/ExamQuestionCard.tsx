@@ -4,6 +4,38 @@ import { getTopic, type ExamQuestion } from '../content';
 import { sourceLabel } from '../lib/bank';
 import { Icon } from './Icon';
 import { Inline, Markdown } from './Markdown';
+import { useProgress, type ExamResult } from '../store/progress';
+
+export const RESULT_LABEL: Record<ExamResult, string> = { got: 'Got it', partial: 'Partly', missed: 'Missed' };
+const RESULT_STYLE: Record<ExamResult, string> = {
+  got: 'border-good bg-good-soft text-good',
+  partial: 'border-accent bg-accent-soft text-accent',
+  missed: 'border-bad bg-bad-soft text-bad',
+};
+
+/** Self-marking after reading the markscheme; click the chosen result again to clear it. */
+function SelfMark({ qKey }: { qKey: string }) {
+  const result = useProgress((s) => s.exam[qKey]?.r);
+  const markExam = useProgress((s) => s.markExam);
+  return (
+    <div className="mt-4 flex flex-wrap items-center gap-2">
+      <span className="text-sm text-muted">How did you do?</span>
+      {(Object.keys(RESULT_LABEL) as ExamResult[]).map((r) => (
+        <button
+          key={r}
+          type="button"
+          aria-pressed={result === r}
+          onClick={() => markExam(qKey, result === r ? null : r)}
+          className={`h-8 rounded-lg border px-3 text-sm font-medium transition-colors ${
+            result === r ? RESULT_STYLE[r] : 'border-line text-ink-2 hover:bg-sunken'
+          }`}
+        >
+          {RESULT_LABEL[r]}
+        </button>
+      ))}
+    </div>
+  );
+}
 
 const DIFF_STYLE = {
   easy: 'bg-good-soft text-good',
@@ -17,6 +49,12 @@ export function ExamQuestionCard({ q, index }: { q: ExamQuestion; index: number 
   const topic = q.topicKey ? getTopic(q.topicKey) : undefined;
   const isMcq = !!q.options && q.answer !== undefined;
   const revealed = open || (isMcq && choice !== null);
+  const result = useProgress((s) => s.exam[q.key]?.r);
+  const markExam = useProgress((s) => s.markExam);
+  const choose = (i: number) => {
+    setChoice(i);
+    markExam(q.key, i === q.answer ? 'got' : 'missed');
+  };
 
   return (
     <article className="card p-5 md:p-6">
@@ -31,6 +69,7 @@ export function ExamQuestionCard({ q, index }: { q: ExamQuestion; index: number 
         {q.level === 'HL' && <span className="chip">HL only</span>}
         {q.calculator === false && <span className="chip">No calculator</span>}
         {q.needsReview && <span className="chip bg-bad-soft text-bad">Topic needs review</span>}
+        {result && <span className={`chip border ${RESULT_STYLE[result]}`}>{RESULT_LABEL[result]}</span>}
         {topic && (
           <Link to={topic.href} className="ml-auto text-muted hover:text-ink">
             {topic.code} {topic.title}
@@ -52,7 +91,7 @@ export function ExamQuestionCard({ q, index }: { q: ExamQuestion; index: number 
                 <button
                   type="button"
                   disabled={choice !== null}
-                  onClick={() => setChoice(i)}
+                  onClick={() => choose(i)}
                   className={`flex w-full items-start gap-3 rounded-lg border px-4 py-3 text-left transition-colors ${
                     state === 'correct'
                       ? 'border-good bg-good-soft'
@@ -94,6 +133,7 @@ export function ExamQuestionCard({ q, index }: { q: ExamQuestion; index: number 
             </div>
           </div>
         )}
+        {revealed && !isMcq && <SelfMark qKey={q.key} />}
       </div>
     </article>
   );

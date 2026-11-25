@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { ExamQuestion } from '../content';
-import { DEFAULT_FILTERS, facetCounts, filterBank, filtersFromParams, filtersToParams, sourceLabel, type BankFilters } from './bank';
+import { DEFAULT_FILTERS, byStatus, facetCounts, filterBank, filtersFromParams, filtersToParams, shuffled, sourceLabel, type BankFilters } from './bank';
 
 let n = 0;
 function q(p: Partial<ExamQuestion>): ExamQuestion {
@@ -83,9 +83,29 @@ describe('labels and URL round-trip', () => {
   });
 
   it('round-trips filters through URL params and ignores junk values', () => {
-    const f = F({ collection: 'past', subject: 'chemistry', papers: ['1A', '2'], difficulties: ['medium', 'hard'], sources: ['mock'], level: 'SL' });
+    const f = F({ collection: 'past', subject: 'chemistry', papers: ['1A', '2'], difficulties: ['medium', 'hard'], sources: ['mock'], level: 'SL', status: 'review' });
     expect(filtersFromParams(filtersToParams(f))).toEqual(f);
     expect(filtersFromParams(new URLSearchParams('d=hard,nonsense&src=pirated'))).toEqual(F({ difficulties: ['hard'] }));
     expect(filtersToParams(DEFAULT_FILTERS).toString()).toBe('');
+  });
+});
+
+describe('progress status and shuffle', () => {
+  const items = [{ key: 'a' }, { key: 'b' }, { key: 'c' }, { key: 'd' }];
+  const results = { a: { r: 'got' }, b: { r: 'missed' }, c: { r: 'partial' } };
+
+  it('filters by self-marked result', () => {
+    expect(byStatus(items, 'all', results)).toHaveLength(4);
+    expect(byStatus(items, 'new', results).map((i) => i.key)).toEqual(['d']);
+    expect(byStatus(items, 'review', results).map((i) => i.key)).toEqual(['b', 'c']);
+    expect(byStatus(items, 'done', results).map((i) => i.key)).toEqual(['a']);
+  });
+
+  it('shuffles deterministically without losing items', () => {
+    const many = Array.from({ length: 50 }, (_, i) => i);
+    const a = shuffled(many, 42);
+    expect(a).toEqual(shuffled(many, 42));
+    expect(a).not.toEqual(many);
+    expect([...a].sort((x, y) => x - y)).toEqual(many);
   });
 });

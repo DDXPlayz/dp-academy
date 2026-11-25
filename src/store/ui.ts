@@ -4,6 +4,8 @@ import { create } from 'zustand';
 interface UIState {
   searchOpen: boolean;
   drawerOpen: boolean;
+  helpOpen: boolean;
+  setHelp: (open: boolean) => void;
   setSearch: (open: boolean) => void;
   setDrawer: (open: boolean) => void;
 }
@@ -11,6 +13,8 @@ interface UIState {
 export const useUI = create<UIState>((set) => ({
   searchOpen: false,
   drawerOpen: false,
+  helpOpen: false,
+  setHelp: (helpOpen) => set({ helpOpen }),
   setSearch: (searchOpen) => set({ searchOpen }),
   setDrawer: (drawerOpen) => set({ drawerOpen }),
 }));

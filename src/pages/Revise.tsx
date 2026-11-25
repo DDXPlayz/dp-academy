@@ -3,6 +3,7 @@ import { Link, NavLink, useParams, useSearchParams } from 'react-router-dom';
 import { allTopics, getSubject, getTopic, subjects, type Flashcard as Card, type Topic } from '../content';
 import { Page, PageHeader } from '../components/AppShell';
 import { Flashcard } from '../components/Flashcard';
+import { FormulaSheet } from '../components/FormulaSheet';
 import { FormulaCard } from '../components/FormulaCard';
 import { Icon } from '../components/Icon';
 import { Markdown } from '../components/Markdown';
@@ -15,6 +16,7 @@ import { useProgress, useStudyState } from '../store/progress';
 const TABS = [
   { to: '/revise', label: 'Quick revision', end: true },
   { to: '/revise/flashcards', label: 'Flashcards' },
+  { to: '/revise/formulas', label: 'Formula sheet' },
   { to: '/revise/weak', label: 'Weak topics' },
 ];
 
@@ -322,21 +324,21 @@ export default function Revise() {
   return (
     <Page>
       <PageHeader title="Revise">Condensed sheets, spaced-repetition flashcards and the topics that need you most.</PageHeader>
-      <nav className="mb-8 flex gap-1 border-b border-line" aria-label="Revision sections">
+      <nav className="no-print mb-8 flex gap-1 overflow-x-auto overflow-y-hidden border-b border-line [scrollbar-width:none]" aria-label="Revision sections">
         {TABS.map((t) => (
           <NavLink
             key={t.to}
             to={t.to}
             end={t.end}
             className={({ isActive }) =>
-              `-mb-px border-b-2 px-3 pb-3 text-sm font-medium transition-colors ${isActive ? 'border-accent text-ink' : 'border-transparent text-muted hover:text-ink'}`
+              `-mb-px shrink-0 whitespace-nowrap border-b-2 px-3 pb-3 text-sm font-medium transition-colors ${isActive ? 'border-accent text-ink' : 'border-transparent text-muted hover:text-ink'}`
             }
           >
             {t.label}
           </NavLink>
         ))}
       </nav>
-      {tab === 'flashcards' ? <Flashcards /> : tab === 'weak' ? <WeakTopics /> : <QuickRevision />}
+      {tab === 'flashcards' ? <Flashcards /> : tab === 'formulas' ? <FormulaSheet /> : tab === 'weak' ? <WeakTopics /> : <QuickRevision />}
     </Page>
   );
 }

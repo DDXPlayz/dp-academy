@@ -271,9 +271,20 @@ topic page with the matching NCERT chapter and a Prashant Kirad video search:
   subject, with an SL/HL filter; ticking a lesson marks it complete.
 * **Print** (`/print`) — choose topics and print (or save as PDF) their lessons
   with formulas, definitions, mistakes and tips in a clean layout.
-* **Questions** (`/bank`) — filter by subject, unit/topic, paper and
-  difficulty; *Exam-style* holds the original questions from `exam.json`,
-  *Past papers* the private bank (below).
+* **Questions** (`/bank`) — filter by subject, unit/topic, paper,
+  difficulty and your own progress (not tried / to review / got it), or
+  shuffle; *General* holds the original questions from `exam.json`, *Past
+  papers* the private bank (below). After reading a markscheme, mark yourself
+  *Got it / Partly / Missed*; multiple-choice answers are marked automatically.
+* **Revise → Formula sheet** — every formula in a subject, by topic,
+  searchable and printable.
+* **Keyboard shortcuts** — press `?` anywhere; in lessons `←`/`→` move between
+  lessons, `M` marks complete, `N` opens notes.
+* **Reading** — lessons offer to continue where you stopped; lesson text size
+  is in Settings. The Revise tab shows how many flashcards are due.
+* **Install** — the site has a web-app manifest, so “Add to Home Screen”
+  (iPhone/iPad) or “Install app” (Android/Chrome) gives it an app icon.
+  `python -I -X utf8 scripts/make_icons.py` regenerates the icons.
 
 ## Private material (never committed)
 

@@ -1,0 +1,20 @@
+{
+  "name": "DP Academy",
+  "short_name": "DP Academy",
+  "description": "IB Diploma study notes, practice questions, flashcards and past papers.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7f7f5",
+  "theme_color": "#4338ca",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Revise flashcards", "url": "/revise/flashcards" },
+    { "name": "Question bank", "url": "/bank" },
+    { "name": "Formula sheet", "url": "/revise/formulas" }
+  ]
+}

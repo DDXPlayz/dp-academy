@@ -139,6 +139,13 @@
 .prose-lesson {
   @apply text-[1.0625rem] leading-[1.75] text-ink-2;
 }
+/* Reading size preference (Settings → Appearance). */
+html[data-text='sm'] .prose-lesson {
+  font-size: 0.975rem;
+}
+html[data-text='lg'] .prose-lesson {
+  font-size: 1.1875rem;
+}
 .prose-lesson > * + * {
   margin-top: 1.1em;
 }

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { subjects } from '../content';
 import { useProgress } from '../store/progress';
@@ -9,6 +9,9 @@ import { Icon, type IconName } from './Icon';
 import { ThemeToggle, useApplyTheme } from './ThemeToggle';
 import { SearchCommand } from './SearchCommand';
 import { ProgressRing } from './ProgressBar';
+import { ShortcutsDialog } from './ShortcutsDialog';
+import { dueCards } from '../lib/recommend';
+import { useStudyState } from '../store/progress';
 
 const NAV: { to: string; label: string; icon: IconName; end?: boolean }[] = [
   { to: '/', label: 'Home', icon: 'home', end: true },
@@ -20,6 +23,27 @@ const NAV: { to: string; label: string; icon: IconName; end?: boolean }[] = [
   { to: '/bookmarks', label: 'Saved', icon: 'bookmark' },
 ];
 
+/** Flashcards due today, shown as a badge on Revise. */
+function useDueCount() {
+  const cards = useProgress((s) => s.cards);
+  const state = useStudyState();
+  return useMemo(() => dueCards(state, cards).length, [state, cards]);
+}
+
+function Badge({ n, compact = false }: { n: number; compact?: boolean }) {
+  if (!n) return null;
+  const text = n > 99 ? '99+' : String(n);
+  return compact ? (
+    <span className="absolute -right-2 -top-1 min-w-4 rounded-full bg-accent px-1 text-center text-[10px] font-semibold leading-4 text-on-accent" aria-label={`${n} due`}>
+      {text}
+    </span>
+  ) : (
+    <span className="ml-auto rounded-full bg-accent-soft px-2 text-xs font-semibold leading-5 text-accent" aria-label={`${n} flashcards due`}>
+      {text}
+    </span>
+  );
+}
+
 export function Logo() {
   return (
     <Link to="/" className="flex items-center gap-2.5 font-semibold tracking-tight text-ink">
@@ -30,6 +54,7 @@ export function Logo() {
 }
 
 function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
+  const due = useDueCount();
   const username = useAccount((s) => s.username);
   const sync = useAccount((s) => s.sync);
   const completed = useProgress((s) => s.completed);
@@ -56,6 +81,7 @@ function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
             >
               <Icon name={n.icon} />
               {n.label}
+              {n.to === '/revise' && <Badge n={due} />}
             </NavLink>
           </li>
         ))}
@@ -150,6 +176,7 @@ function TopBar() {
 }
 
 function BottomNav() {
+  const due = useDueCount();
   return (
     <nav aria-label="Main" className="pb-safe fixed inset-x-0 bottom-0 z-30 border-t border-line bg-card/95 backdrop-blur-md md:hidden">
       <ul className="grid grid-cols-7">
@@ -162,7 +189,10 @@ function BottomNav() {
                 `flex h-14 flex-col items-center justify-center gap-0.5 text-[11px] font-medium ${isActive ? 'text-accent' : 'text-muted'}`
               }
             >
-              <Icon name={n.icon} size={20} />
+              <span className="relative">
+                <Icon name={n.icon} size={20} />
+                {n.to === '/revise' && <Badge n={due} compact />}
+              </span>
               {n.label}
             </NavLink>
           </li>
@@ -198,6 +228,12 @@ export function AppShell() {
   useApplyTheme();
   const { pathname, hash } = useLocation();
   const setSearch = useUI((s) => s.setSearch);
+  const setHelp = useUI((s) => s.setHelp);
+  const textSize = useProgress((s) => s.textSize);
+
+  useEffect(() => {
+    document.documentElement.dataset.text = textSize;
+  }, [textSize]);
 
   // New page: start at the top, or at the #anchor once the (lazy) page has rendered it.
   useEffect(() => {
@@ -222,11 +258,14 @@ export function AppShell() {
       if ((e.key === 'k' && (e.metaKey || e.ctrlKey)) || (e.key === '/' && !typing)) {
         e.preventDefault();
         setSearch(true);
+      } else if (e.key === '?' && !typing) {
+        e.preventDefault();
+        setHelp(true);
       }
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [setSearch]);
+  }, [setSearch, setHelp]);
 
   return (
     <div className="min-h-dvh">
@@ -249,6 +288,7 @@ export function AppShell() {
       </div>
       <Drawer />
       <SearchCommand />
+      <ShortcutsDialog />
     </div>
   );
 }

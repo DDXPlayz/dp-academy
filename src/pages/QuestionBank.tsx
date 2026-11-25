@@ -9,14 +9,18 @@ import {
   COLLECTION_SOURCES,
   DEFAULT_FILTERS,
   DIFFICULTIES,
+  byStatus,
   facetCounts,
   filterBank,
+  shuffled,
   filtersFromParams,
   filtersToParams,
   toggle,
   type BankCollection,
   type BankFilters,
+  type BankStatus,
 } from '../lib/bank';
+import { useProgress } from '../store/progress';
 
 import { loadPastPapers } from '../lib/pastPapers';
 
@@ -55,6 +59,8 @@ export default function QuestionBank() {
   const set = (patch: Partial<BankFilters>) => setParams(filtersToParams({ ...f, ...patch }), { replace: true });
   const [local, setLocal] = useState<{ questions: ExamQuestion[]; rejected: number } | null>(null);
   const [shown, setShown] = useState(PAGE);
+  const [seed, setSeed] = useState(0);
+  const examResults = useProgress((s) => s.exam);
 
   useEffect(() => {
     loadPastPapers().then(setLocal);
@@ -62,7 +68,25 @@ export default function QuestionBank() {
   useEffect(() => setShown(PAGE), [params]);
 
   const pool = useMemo(() => [...allExamQuestions(), ...(local?.questions ?? [])], [local]);
-  const results = useMemo(() => filterBank(pool, f), [pool, f]);
+  const matching = useMemo(() => filterBank(pool, f), [pool, f]);
+  // Status counts use the other filters; the status itself is applied afterwards.
+  const statusCounts = useMemo(() => {
+    const c: Record<BankStatus, number> = { all: matching.length, new: 0, review: 0, done: 0 };
+    for (const q of matching) {
+      const r = examResults[q.key]?.r;
+      if (!r) c.new++;
+      else if (r === 'got') c.done++;
+      else c.review++;
+    }
+    return c;
+  }, [matching, examResults]);
+  // Freeze the status filter while answering, so a question doesn't vanish the moment you mark it.
+  const [frozen, setFrozen] = useState(examResults);
+  useEffect(() => setFrozen(useProgress.getState().exam), [params]);
+  const results = useMemo(() => {
+    const list = byStatus(matching, f.status, frozen);
+    return seed ? shuffled(list, seed) : list;
+  }, [matching, f.status, frozen, seed]);
   const paperCounts = facetCounts(pool, f, 'paper');
   const diffCounts = facetCounts(pool, f, 'difficulty');
   const sourceCounts = facetCounts(pool, f, 'source');
@@ -71,6 +95,7 @@ export default function QuestionBank() {
   const pastTotal = pool.filter((q) => q.source !== 'original').length;
 
   const switchCollection = (collection: BankCollection) => setParams(filtersToParams({ ...DEFAULT_FILTERS, subject: f.subject, level: f.level, collection }), { replace: true });
+  const STATUS_LABEL: Record<BankStatus, string> = { all: 'All', new: 'Not tried', review: 'To review', done: 'Got it' };
 
   return (
     <Page wide>
@@ -115,6 +140,13 @@ export default function QuestionBank() {
           {DIFFICULTIES.map((d) => (
             <Chip key={d} on={f.difficulties.includes(d)} onClick={() => set({ difficulties: toggle(f.difficulties, d) })} count={diffCounts[d] ?? 0}>
               <span className="capitalize">{d}</span>
+            </Chip>
+          ))}
+        </Facet>
+        <Facet label="Progress">
+          {(['all', 'new', 'review', 'done'] as BankStatus[]).map((st) => (
+            <Chip key={st} on={f.status === st} onClick={() => set({ status: st })} count={statusCounts[st]}>
+              {STATUS_LABEL[st]}
             </Chip>
           ))}
         </Facet>
@@ -172,9 +204,22 @@ export default function QuestionBank() {
         <span>
           {results.length} question{results.length === 1 ? '' : 's'}
         </span>
-        {(f.papers.length > 0 || f.difficulties.length > 0 || f.topics.length > 0 || f.sources.length > 0) && (
-          <button type="button" className="text-accent hover:underline" onClick={() => set({ papers: [], difficulties: [], topics: [], sources: [] })}>
+        {(f.papers.length > 0 || f.difficulties.length > 0 || f.topics.length > 0 || f.sources.length > 0 || f.status !== 'all') && (
+          <button type="button" className="text-accent hover:underline" onClick={() => set({ papers: [], difficulties: [], topics: [], sources: [], status: 'all' })}>
             Clear filters
+          </button>
+        )}
+        {results.length > 1 && (
+          <button
+            type="button"
+            className="ml-auto inline-flex items-center gap-1.5 text-ink-2 hover:text-ink"
+            onClick={() => {
+              setSeed(seed ? 0 : Math.floor(Math.random() * 2 ** 31) + 1);
+              setShown(PAGE);
+            }}
+            aria-pressed={!!seed}
+          >
+            <Icon name="shuffle" size={15} /> {seed ? 'Original order' : 'Shuffle'}
           </button>
         )}
         {local && local.rejected > 0 && <span className="text-bad">{local.rejected} imported rows failed validation</span>}

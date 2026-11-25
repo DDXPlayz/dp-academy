@@ -9,6 +9,9 @@ import type { ExamDifficulty, ExamSource } from '../content/schema';
  */
 
 export type BankCollection = 'general' | 'past';
+/** Your own self-marked results: not tried yet, needs another go (partly/missed), or got it. */
+export type BankStatus = 'all' | 'new' | 'review' | 'done';
+export const STATUSES: BankStatus[] = ['all', 'new', 'review', 'done'];
 
 export interface BankFilters {
   collection: BankCollection;
@@ -18,6 +21,7 @@ export interface BankFilters {
   topics: string[];
   sources: ExamSource[];
   level: 'SL' | 'HL';
+  status: BankStatus;
 }
 
 export const DIFFICULTIES: ExamDifficulty[] = ['easy', 'medium', 'hard'];
@@ -34,6 +38,7 @@ export const DEFAULT_FILTERS: BankFilters = {
   topics: [],
   sources: [],
   level: 'HL',
+  status: 'all',
 };
 
 export function collectionOf(q: Pick<ExamQuestion, 'source'>): BankCollection {
@@ -50,6 +55,34 @@ export function matches(q: ExamQuestion, f: BankFilters): boolean {
   // SL students don't see HL-only questions; HL students see everything.
   if (f.level === 'SL' && q.level === 'HL') return false;
   return true;
+}
+
+/** Applies the status filter using the student's self-marked results. */
+export function byStatus<Q extends { key: string }>(questions: Q[], status: BankStatus, results: Record<string, { r: string }>): Q[] {
+  if (status === 'all') return questions;
+  return questions.filter((q) => {
+    const r = results[q.key]?.r;
+    if (status === 'new') return !r;
+    if (status === 'done') return r === 'got';
+    return r === 'partial' || r === 'missed';
+  });
+}
+
+/** Deterministic shuffle so "Show more" pages stay stable for one seed. */
+export function shuffled<T>(items: T[], seed: number): T[] {
+  const out = [...items];
+  let x = seed || 1;
+  const rand = () => {
+    x ^= x << 13;
+    x ^= x >>> 17;
+    x ^= x << 5;
+    return (x >>> 0) / 4294967296;
+  };
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(rand() * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
 }
 
 const PAPER_ORDER = ['1', '1A', '1B', '2', '3'];
@@ -107,6 +140,7 @@ export function filtersFromParams(p: URLSearchParams): BankFilters {
     topics: list('t'),
     sources: list('src').filter((s): s is ExamSource => ['original', 'past-paper', 'mock'].includes(s)),
     level: p.get('l') === 'SL' ? 'SL' : 'HL',
+    status: (STATUSES as string[]).includes(p.get('st') ?? '') ? (p.get('st') as BankStatus) : 'all',
   };
 }
 
@@ -119,6 +153,7 @@ export function filtersToParams(f: BankFilters): URLSearchParams {
   if (f.topics.length) p.set('t', f.topics.join(','));
   if (f.sources.length) p.set('src', f.sources.join(','));
   if (f.level !== 'HL') p.set('l', f.level);
+  if (f.status !== 'all') p.set('st', f.status);
   return p;
 }
 
