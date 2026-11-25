@@ -30,7 +30,7 @@ export function ReferenceLinks({ lesson, topic }: { lesson: Lesson; topic: Topic
           const base = `${topic.href}/notes/${c.id}`;
           return (
             <div key={c.id} className="card flex flex-col p-4">
-              <Link to={c.matched[0] ? `${base}#${c.matched[0].id}` : base} className="group flex items-center gap-3">
+              <Link to={c.matched[0] ? `${base}/${c.matched[0].id}` : base} className="group flex items-center gap-3">
                 <span className="grid size-10 shrink-0 place-items-center rounded-lg bg-accent-soft text-sm font-semibold text-accent">{c.short.slice(0, 3)}</span>
                 <span className="flex-1">
                   <span className="block font-medium text-ink group-hover:text-accent">{c.name} notes</span>
@@ -44,7 +44,7 @@ export function ReferenceLinks({ lesson, topic }: { lesson: Lesson; topic: Topic
                 <ul className="mt-3 flex flex-wrap gap-1.5 border-t border-line pt-3">
                   {c.matched.map((n) => (
                     <li key={n.id}>
-                      <Link to={`${base}#${n.id}`} className="chip hover:border-accent hover:text-accent">
+                      <Link to={`${base}/${n.id}`} className="chip hover:border-accent hover:text-accent">
                         {n.title}
                       </Link>
                     </li>

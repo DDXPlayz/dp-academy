@@ -31,7 +31,7 @@ const router = createBrowserRouter([
       { path: '/subjects', element: wrap(<Subjects />) },
       { path: '/s/:subjectId', element: wrap(<SubjectPage />) },
       { path: '/s/:subjectId/:topicId', element: wrap(<TopicPage />) },
-      { path: '/s/:subjectId/:topicId/notes/:source', element: wrap(<ReferenceNotes />) },
+      { path: '/s/:subjectId/:topicId/notes/:source/:noteId?', element: wrap(<ReferenceNotes />) },
       { path: '/s/:subjectId/:topicId/:lessonSlug', element: wrap(<LessonPage />) },
       { path: '/practice', element: wrap(<Practice />) },
       { path: '/bank', element: wrap(<QuestionBank />) },

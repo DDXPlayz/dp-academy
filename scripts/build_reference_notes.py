@@ -125,6 +125,19 @@ def clean_body(text: str, subject: str, source: str) -> str:
     return re.sub(r"\n{3,}", "\n\n", body).strip()
 
 
+def fix_first_line(body: str, title: str) -> str:
+    """A note's first line is often its section heading without heading markup (or an
+    "IB MATHEMATICS AA … STUDY NOTES" banner): drop banners and title repeats, mark the rest as a heading."""
+    first, _, rest = body.partition("\n")
+    line = first.strip()
+    if not line or line.startswith(("#", "-", "*", "!", "`", "|")) or len(line) > 80 or line.endswith((".", ":", ",")):
+        return body
+    norm = lambda s: re.sub(r"[^a-z0-9]", "", s.lower())
+    if re.match(r"^IB MATHEMATICS\b.*STUDY NOTES$", line, re.I) or norm(line) == norm(title) or norm(line) in norm(title):
+        return rest.lstrip("\n")
+    return f"### {line}\n{rest}"
+
+
 MATH_LINE = re.compile(r"^(\s*)!\[math\]\([^)]+\)\s*$")
 
 
@@ -238,6 +251,7 @@ def main():
                     body = clean_body(raw, subject, source)
                     # drop the note's own first heading when it repeats the title
                     body = re.sub(rf"^#{{3,5}}\s+{re.escape(title)}\s*:?\s*\n", "", body, count=1)
+                    body = fix_first_line(body, title)
                     images.update(re.findall(r"\]\((/data/notes/[^)#\s]+)", body))
                     parts.append({"id": n["slug"], "title": title, "body": body})
                     bodies[(subject, topic, source, n["slug"])] = f"{title} {title} {title} " + " ".join(re.findall(r"^#+ (.+)$", body, re.M)) + " " + body[:3000]
