@@ -85,6 +85,87 @@ def tidy(title: str) -> str:
     return title
 
 
+STRUCTURE = ROOT / "resources" / "structure"
+IITIAN_DIR = ROOT / "resources" / "IITian Academy Notes"
+
+
+def natural(s: str) -> list:
+    """"1-10-x" after "1-2-x"; "R1.2.10" after "R1.2.9"."""
+    return [int(p) if p.isdigit() else p for p in re.split(r"(\d+)", s)]
+
+
+def _load_iitian() -> tuple[dict, dict]:
+    """IITian's own order and names (resources/structure/iitian_order.txt, read from their course
+    index pages) and, from notes_index.csv, each saved note's URL and syllabus subtopic."""
+    order: dict[tuple[str, str], tuple[int, str, str]] = {}
+    path = STRUCTURE / "iitian_order.txt"
+    if path.exists():
+        for i, line in enumerate(l for l in path.read_text(encoding="utf-8").splitlines() if l and not l.startswith("#")):
+            subject, code, title, url = line.split("|")
+            shown = f"{code} {title}" if subject == "chemistry" else title
+            order[(subject, url.lower())] = (i, shown, code)
+    files: dict[str, tuple[str, str]] = {}  # pdf stem (lower) -> (url slug, subtopic)
+    csv_path = IITIAN_DIR / "notes_index.csv"
+    if csv_path.exists():
+        import csv
+
+        with open(csv_path, encoding="utf-8-sig") as fh:
+            for row in csv.DictReader(fh):
+                if row["Syllabus version"].startswith("Legacy"):
+                    continue
+                stem = Path(row["Local file"].replace("\\", "/")).stem
+                stem = stem.split(" - ", 1)[-1].lower()
+                files[stem] = (row["Original URL"].rstrip("/").split("/")[-1].lower(), row["Subtopic"])
+    return order, files
+
+
+IITIAN_ORDER, IITIAN_FILES = _load_iitian()
+
+
+def iitian_source(slug: str) -> tuple[str, str] | None:
+    """The IITian URL slug and subtopic of an extracted note ("iitian-<pdf stem, maybe cut short>")."""
+    squash = lambda s: re.sub(r"%[0-9a-f]{2}|[^a-z0-9]", "", s.lower())  # "δg", "%ce%b4g" and "g" all match
+    stem = squash(slug.removeprefix("iitian-"))
+    hits = [v for k, v in IITIAN_FILES.items() if squash(k).startswith(stem)]
+    return hits[0] if hits else None
+
+
+def regroup_by_code(subject: str, source: str, data: dict) -> dict:
+    """Puts each IITian note in the app topic its IITian syllabus code names (e.g. a note listed
+    under S1.2 that the extraction filed under S2.1), so topics hold their own subtopics."""
+    if source != "iitian" or subject == "math-aa":
+        return data
+    spec = json.loads((CONTENT / subject / "subject.json").read_text(encoding="utf-8"))
+    by_code = {t["code"]: t["id"] for u in spec["units"] for t in u["topics"]}
+    out: dict = {}
+    for topic, notes in data.items():
+        for n in notes:
+            listed = iitian_listing(subject, n["slug"])
+            code = re.match(r"^([A-Z]\d?\.\d+)", listed[2]) if listed else None
+            target = by_code.get(code.group(1), topic) if code else topic
+            if target != topic:
+                print(f"  move {n['slug'][:50]}: {topic} -> {target}")
+            out.setdefault(target, []).append(n)
+    return out
+
+
+def iitian_listing(subject: str, slug: str) -> tuple[int, str, str] | None:
+    src = iitian_source(slug)
+    return IITIAN_ORDER.get((subject, src[0])) if src else None
+
+
+def note_sort_key(subject: str, source: str, n: dict) -> tuple:
+    if source == "iitian":
+        listed = iitian_listing(subject, n["slug"])
+        if listed:
+            return (0, listed[0], [], n["slug"])
+        # not on IITian's index page: after the listed notes, by syllabus subtopic
+        src = iitian_source(n["slug"])
+        return (1, 0, natural(src[1] if src else "~"), n["slug"])
+    # SME: SME's own section order, then its numbering inside the section
+    return (0, 0, natural(n["group"]), n["order"], n["slug"])
+
+
 def clean_title(raw: str, text: str, source: str) -> str:
     return tidy(_clean_title(raw, text, source))
 
@@ -236,18 +317,19 @@ def main():
             path = NOTES / f"index-{subject}-{source}.json"
             if not path.exists():
                 continue
-            data = json.loads(path.read_text(encoding="utf-8"))[subject]
+            data = regroup_by_code(subject, source, json.loads(path.read_text(encoding="utf-8"))[subject])
             for topic, notes in data.items():
                 if topic not in topics:
                     print(f"  skip {subject}/{topic}: no such topic in content/")
                     continue
                 parts, entries = [], []
-                for n in sorted(notes, key=lambda n: (n["group"], n["order"], n["slug"])):
+                for n in sorted(notes, key=lambda n: note_sort_key(subject, source, n)):
                     f = NOTES / subject / n["file"]
                     if not f.exists():
                         continue
                     raw = f.read_text(encoding="utf-8")
-                    title = clean_title(n["title"], raw, source)
+                    listed = iitian_listing(subject, n["slug"]) if source == "iitian" else None
+                    title = listed[1] if listed else clean_title(n["title"], raw, source)
                     body = clean_body(raw, subject, source)
                     # drop the note's own first heading when it repeats the title
                     body = re.sub(rf"^#{{3,5}}\s+{re.escape(title)}\s*:?\s*\n", "", body, count=1)
