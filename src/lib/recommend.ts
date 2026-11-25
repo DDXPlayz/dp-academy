@@ -92,7 +92,7 @@ export function todaysFocus(
       id: 'cards',
       label: due ? `Review ${due} flashcard${due === 1 ? '' : 's'}` : 'Flashcards reviewed',
       detail: due ? 'Spaced repetition keeps them fresh' : 'All caught up for today',
-      href: '/revise/flashcards',
+      href: '/revise/flashcards?start=1',
       done: due === 0,
     });
   }
