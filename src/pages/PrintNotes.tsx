@@ -588,7 +588,7 @@ export default function PrintNotes() {
                 if (!keys.length) return null;
                 const st = triState(keys, picked);
                 return (
-                  <fieldset key={u.id}>
+                  <fieldset key={u.id} className="min-w-0">
                     <legend className="flex items-center gap-2">
                       <label className="inline-flex items-center gap-2 font-medium text-ink">
                         <TriCheck state={st} onChange={() => pick(keys, st !== true)} />
@@ -622,7 +622,7 @@ export default function PrintNotes() {
                               </label>
                               <span className="shrink-0 text-xs tabular-nums text-muted">
                                 {ts === 'mixed' ? `${n}/${lk.length}` : plural(lk.length, 'lesson')}
-                                {extra.length ? ` · ${extra.join(', ')}` : ''}
+                                {extra.length ? <span className="hidden sm:inline"> · {extra.join(', ')}</span> : null}
                               </span>
                             </div>
                             {open && (
