@@ -228,6 +228,25 @@
   color: var(--muted);
 }
 
+/* Two columns: about 40% fewer pages and a comfortable line length at 10pt. */
+.print-area.print-compact.pc-cols-2 .pc-section {
+  column-count: 2;
+  column-gap: 6mm;
+  column-rule: 0.5pt solid var(--line);
+}
+.print-area.print-compact.pc-cols-2 .pc-topic,
+.print-area.print-compact.pc-cols-2 .pc-pack {
+  column-span: all;
+}
+.print-area.print-compact.pc-cols-2 .lesson-fig svg,
+.print-area.print-compact.pc-cols-2 .prose-lesson img.lesson-figure,
+.print-area.print-compact.pc-cols-2 .lesson-fig img {
+  max-height: 5.5cm;
+}
+.print-area.print-compact.pc-cols-2 .pc-table td:first-child {
+  width: 36%;
+}
+
 @media print {
   .print-area.print-compact .pc-section + .pc-section {
     break-before: page;

@@ -5,6 +5,7 @@ import { getLesson, getQuestion, getTopic, subjects, type Lesson, type Subject, 
 import { Page, PageHeader } from '../components/AppShell';
 import { Icon } from '../components/Icon';
 import { Inline, Markdown } from '../components/Markdown';
+import { blocksOf, sectionOf, stripChecks } from '../lib/printText';
 import { NOTE_SOURCES, loadTopicNotes, sourceName, useNotesIndex, type NotesIndex, type NoteSource, type ReferenceNote } from '../lib/referenceNotes';
 
 /*
@@ -32,7 +33,8 @@ const isHl = (title: string) => /\((A?HL)( only)?\)/i.test(title);
 const plural = (n: number, w: string) => `${n} ${w}${n === 1 ? '' : 's'}`;
 
 const STORE = 'dpa-print';
-type Saved = { picked: string[]; parts: Part[]; layout: Layout; arrange: Arrange; examples: boolean; checks: boolean; hl: boolean };
+type Detail = 'full' | 'condensed';
+type Saved = { picked: string[]; parts: Part[]; layout: Layout; arrange: Arrange; columns: 1 | 2; detail: Detail; examples: boolean; checks: boolean; hl: boolean };
 function readSaved(): Partial<Saved> {
   try {
     return JSON.parse(sessionStorage.getItem(STORE) ?? '{}') as Partial<Saved>;
@@ -105,6 +107,21 @@ function imagesLoaded(root: Element, timeout = 20000): Promise<void> {
     ),
   ).then(() => undefined);
   return Promise.race([all, new Promise<void>((resolve) => setTimeout(resolve, timeout))]);
+}
+
+/**
+ * Shrinks display equations wider than the printed text column (A4 minus margins,
+ * one or two columns) so they are never clipped on paper.
+ */
+function fitEquations(root: Element, columnPx: number) {
+  const range = document.createRange();
+  root.querySelectorAll<HTMLElement>('.katex-display > .katex').forEach((k) => {
+    k.style.fontSize = '';
+    // Measure only the visible rendering (.katex-html), not the hidden MathML copy.
+    range.selectNodeContents(k.querySelector('.katex-html') ?? k);
+    const w = range.getBoundingClientRect().width;
+    if (w > columnPx) k.style.fontSize = `${Math.max(0.6, columnPx / w) * 100}%`;
+  });
 }
 
 /* ---------- Standard layout (unchanged from before: one lesson / note set per page) ---------- */
@@ -214,7 +231,40 @@ function PrintedLesson({ lesson, topic, checks }: { lesson: Lesson; topic: Topic
 
 /* ---------- Compact layout: dense revision notes (styles in print.css) ---------- */
 
-function CompactLesson({ lesson, topic, checks }: { lesson: Lesson; topic: Topic; checks: boolean }) {
+
+/** Condensed lesson: its key ideas and summary only (formulas, definitions etc. follow as usual). */
+function CondensedBody({ body }: { body: string }) {
+  const ideas = [...new Set(blocksOf(body, 'keyidea'))];
+  const summary = stripChecks(sectionOf(body, 'Summary'));
+  return (
+    <>
+      {ideas.length > 0 && (
+        <>
+          <div className="pc-label">Key ideas</div>
+          <div className="prose-lesson">
+            <ul>
+              {ideas.map((i) => (
+                <li key={i}>
+                  <Markdown>{i}</Markdown>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </>
+      )}
+      {summary && (
+        <>
+          <div className="pc-label">Summary</div>
+          <div className="prose-lesson">
+            <Markdown>{summary}</Markdown>
+          </div>
+        </>
+      )}
+    </>
+  );
+}
+
+function CompactLesson({ lesson, topic, checks, condensed }: { lesson: Lesson; topic: Topic; checks: boolean; condensed: boolean }) {
   const m = lesson.meta;
   const embed = (id: string) => {
     const q = checks ? getQuestion(`${topic.key}/${id}`) : undefined;
@@ -232,9 +282,13 @@ function CompactLesson({ lesson, topic, checks }: { lesson: Lesson; topic: Topic
         {m.title}
         {m.hl && <small>HL</small>}
       </h3>
-      <div className="prose-lesson">
-        <Markdown embedQuestion={embed}>{lesson.body}</Markdown>
-      </div>
+      {condensed ? (
+        <CondensedBody body={lesson.body} />
+      ) : (
+        <div className="prose-lesson">
+          <Markdown embedQuestion={embed}>{checks ? lesson.body : stripChecks(lesson.body)}</Markdown>
+        </div>
+      )}
       {m.formulas.length > 0 && (
         <>
           <div className="pc-label">Formulas</div>
@@ -348,6 +402,8 @@ export default function PrintNotes() {
   });
   const [layout, setLayout] = useState<Layout>(saved.layout === 'standard' ? 'standard' : 'compact');
   const [arrange, setArrange] = useState<Arrange>(saved.arrange === 'source' ? 'source' : 'topic');
+  const [columns, setColumns] = useState<1 | 2>(saved.columns === 1 ? 1 : 2);
+  const [detail, setDetail] = useState<Detail>(saved.detail === 'condensed' ? 'condensed' : 'full');
   const [examples, setExamples] = useState(saved.examples ?? true);
   const [checks, setChecks] = useState(saved.checks ?? false);
   const [hl, setHl] = useState(saved.hl ?? true);
@@ -357,12 +413,12 @@ export default function PrintNotes() {
 
   useEffect(() => {
     try {
-      const s: Saved = { picked: [...picked], parts: [...parts], layout, arrange, examples, checks, hl };
+      const s: Saved = { picked: [...picked], parts: [...parts], layout, arrange, columns, detail, examples, checks, hl };
       sessionStorage.setItem(STORE, JSON.stringify(s));
     } catch {
       /* private mode: the selection just isn't remembered */
     }
-  }, [picked, parts, layout, arrange, examples, checks, hl]);
+  }, [picked, parts, layout, arrange, columns, detail, examples, checks, hl]);
 
   // Selection resolved against the syllabus, in syllabus order, grouped by subject.
   const plan = useMemo(
@@ -419,6 +475,8 @@ export default function PrintNotes() {
     window.addEventListener('afterprint', restore);
     setPreparing(true);
     await imagesLoaded(area); // diagrams load lazily on screen; all of them must be there on paper
+    // A4 is 210mm; 13mm side margins; 6mm column gap. 1mm ≈ 3.78px.
+    if (layout === 'compact') fitEquations(area, (columns === 2 ? 89 : 182) * 3.78 - 8);
     setPreparing(false);
     setTimeout(() => window.print(), 50);
   };
@@ -437,7 +495,7 @@ export default function PrintNotes() {
             <Fragment key="lessons">
               {compact && multi && arrange === 'topic' && <p className="pc-source">DP Academy</p>}
               {c.lessons.map((l) =>
-                compact ? <CompactLesson key={l.key} lesson={l} topic={c.topic} checks={checks} /> : <PrintedLesson key={l.key} lesson={l} topic={c.topic} checks={checks} />,
+                compact ? <CompactLesson key={l.key} lesson={l} topic={c.topic} checks={checks} condensed={detail === 'condensed'} /> : <PrintedLesson key={l.key} lesson={l} topic={c.topic} checks={checks} />,
               )}
             </Fragment>
           ) : null;
@@ -676,7 +734,29 @@ export default function PrintNotes() {
                 <label className="flex items-center gap-2">
                   <input type="radio" name="layout" checked={!compact} onChange={() => setLayout('standard')} /> Standard (one lesson per page)
                 </label>
+                {compact && (
+                  <div className="mt-1 flex items-center gap-4 pl-6">
+                    <label className="flex items-center gap-2">
+                      <input type="radio" name="columns" checked={columns === 2} onChange={() => setColumns(2)} /> 2 columns
+                    </label>
+                    <label className="flex items-center gap-2">
+                      <input type="radio" name="columns" checked={columns === 1} onChange={() => setColumns(1)} /> 1 column
+                    </label>
+                  </div>
+                )}
               </fieldset>
+              {compact && parts.has('lessons') && (
+                <fieldset>
+                  <legend className="mb-1 font-medium text-ink">DP Academy lessons</legend>
+                  <label className="flex items-center gap-2">
+                    <input type="radio" name="detail" checked={detail === 'full'} onChange={() => setDetail('full')} /> Full notes
+                  </label>
+                  <label className="flex items-center gap-2">
+                    <input type="radio" name="detail" checked={detail === 'condensed'} onChange={() => setDetail('condensed')} /> Condensed: key ideas, summary,
+                    formulas, definitions
+                  </label>
+                </fieldset>
+              )}
               <fieldset>
                 <legend className="mb-1 font-medium text-ink">Include</legend>
                 <label className="flex items-center gap-2">
@@ -697,7 +777,7 @@ export default function PrintNotes() {
         </div>
       </div>
 
-      <div className={`print-area${compact ? ' print-compact' : ''}${examples ? '' : ' no-examples'}`}>
+      <div className={`print-area${compact ? ` print-compact${columns === 2 ? ' pc-cols-2' : ''}` : ''}${examples ? '' : ' no-examples'}`}>
         {sections.length === 0 ? (
           <p className="no-print text-center text-muted">
             {plan.length ? 'Nothing to print from the chosen sources for this selection.' : 'Pick at least one topic or lesson to preview it here.'}
