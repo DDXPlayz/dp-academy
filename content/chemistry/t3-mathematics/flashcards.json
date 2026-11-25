@@ -1,7 +1,23 @@
 [
-  { "id": "analogue-card", "front": "Uncertainty of analogue vs digital readings?", "back": "Analogue: ± half the smallest division. Digital: ± one in the last digit.", "concept": "Apparatus uncertainty" },
-  { "id": "titre-card", "front": "Uncertainty of a burette titre?", "back": "±0.10 cm³ (two readings of ±0.05).", "concept": "Apparatus uncertainty" },
-  { "id": "prop-card", "front": "Propagating uncertainties?", "back": "± : add absolute. × ÷ : add percentage.", "concept": "Percentage uncertainty" },
-  { "id": "err-card", "front": "% error vs % uncertainty?", "back": "If % error > % uncertainty, systematic error is present.", "concept": "Percentage error" },
-  { "id": "linear-card", "front": "Straight-line plots for kinetics?", "back": "ln k vs 1/T (gradient −Ea/R); ln[A] vs t for first order (gradient −k).", "concept": "Linearisation" }
+  { "id": "analogue-card", "front": "Uncertainty of analogue vs digital readings?", "back": "Analogue: ± half the smallest division. Digital: ± one in the last digit.", "concept": "Apparatus uncertainty", "kind": "unit" },
+  { "id": "titre-card", "front": "Uncertainty of a burette titre?", "back": "±0.10 cm³ (two readings of ±0.05).", "concept": "Apparatus uncertainty", "kind": "unit" },
+  { "id": "prop-card", "front": "Propagating uncertainties?", "back": "± : add absolute. × ÷ : add percentage.", "concept": "Percentage uncertainty", "kind": "method" },
+  { "id": "err-card", "front": "% error vs % uncertainty?", "back": "If % error > % uncertainty, systematic error is present.", "concept": "Percentage error", "kind": "distinction" },
+  { "id": "linear-card", "front": "Straight-line plots for kinetics?", "back": "ln k vs 1/T (gradient −Ea/R); ln[A] vs t for first order (gradient −k).", "concept": "Linearisation", "kind": "graph" },
+  { "id": "sf-card", "front": "How many significant figures in an answer?", "back": "Use the fewest significant figures in the data for × and ÷; for + and − use the fewest decimal places.", "concept": "Significant figures", "kind": "method" },
+  { "id": "sf-zero-card", "front": "Significant figures in 0.00450 and 4500?", "back": "0.00450: three (leading zeros not significant, trailing zero after decimal is). 4500: ambiguous — write 4.5 × 10³ (2 s.f.) or 4.500 × 10³ (4 s.f.).", "concept": "Significant figures", "kind": "definition" },
+  { "id": "random-systematic-card", "front": "Random vs systematic error?", "back": "Random: unpredictable scatter, reduced by repeating. Systematic: consistent bias in one direction (e.g. heat loss, uncalibrated balance), not reduced by repeats.", "concept": "Errors", "kind": "distinction" },
+  { "id": "accuracy-precision-card", "front": "Accuracy vs precision?", "back": "Accuracy: closeness to the true value. Precision: closeness of repeated measurements to each other.", "concept": "Errors", "kind": "distinction" },
+  { "id": "percent-unc-card", "front": "Percentage uncertainty?", "back": "% uncertainty = (absolute uncertainty ÷ measured value) × 100.", "concept": "Uncertainty", "kind": "formula" },
+  { "id": "percent-err-card", "front": "Percentage error?", "back": "% error = |experimental − accepted| ÷ accepted × 100.", "concept": "Errors", "kind": "formula" },
+  { "id": "power-unc-card", "front": "Uncertainty in a quantity raised to a power (e.g. [A]²)?", "back": "Multiply the percentage uncertainty by the power: 2% in [A] → 4% in [A]².", "concept": "Uncertainty", "kind": "method" },
+  { "id": "mean-unc-card", "front": "Uncertainty of a mean from repeats?", "back": "Commonly ± half the range: (max − min)/2, or the largest instrument uncertainty if greater.", "concept": "Uncertainty", "kind": "method" },
+  { "id": "delta-t-card", "front": "Uncertainty in ΔT from a thermometer of ±0.5 °C?", "back": "Two readings, so ±1.0 °C (absolute uncertainties add for subtraction).", "concept": "Uncertainty", "kind": "method" },
+  { "id": "gradient-card", "front": "Finding the rate at a point on a curve?", "back": "Draw a tangent at that point and calculate its gradient = Δy/Δx using a large triangle (with units).", "concept": "Graphs", "kind": "method" },
+  { "id": "best-fit-card", "front": "Drawing a line of best fit?", "back": "Straight line or smooth curve with points evenly scattered either side; do not join dot-to-dot; ignore clear outliers.", "concept": "Graphs", "kind": "graph" },
+  { "id": "error-bars-card", "front": "Max/min gradient lines from error bars?", "back": "Draw the steepest and shallowest lines passing through all error bars; uncertainty in gradient = (max − min)/2.", "concept": "Graphs", "kind": "graph" },
+  { "id": "log-card", "front": "Logarithms used in chemistry?", "back": "pH = −log₁₀[H⁺]; ln k vs 1/T (Arrhenius); ln[A] vs t (first order); ΔG⦵ = −RT ln K.", "concept": "Mathematics", "kind": "method" },
+  { "id": "sci-notation-card", "front": "Standard form and SI prefixes?", "back": "Write a × 10ⁿ with 1 ≤ a < 10; k = 10³, m = 10⁻³, μ = 10⁻⁶, n = 10⁻⁹.", "concept": "Mathematics", "kind": "method" },
+  { "id": "interp-card", "front": "Interpolation vs extrapolation?", "back": "Interpolation: reading values within the range of data. Extrapolation: extending the line beyond the data (less reliable).", "concept": "Graphs", "kind": "distinction" },
+  { "id": "proportional-card", "front": "How do you show y is directly proportional to x?", "back": "A straight line passing through the origin; y = kx where the gradient is the constant k.", "concept": "Graphs", "kind": "graph" }
 ]

@@ -1,8 +1,22 @@
 [
-  { "id": "entropy-card", "front": "Entropy?", "back": "A measure of the dispersal of matter and energy; S(gas) ≫ S(liquid) > S(solid).", "concept": "Entropy" },
-  { "id": "ds-sign-card", "front": "When is ΔS positive?", "back": "More moles of gas, melting/boiling/dissolving, rising temperature.", "concept": "Predicting ΔS" },
-  { "id": "ds-calc-card", "front": "ΔS⦵ from data?", "back": "ΣS⦵(products) − ΣS⦵(reactants), J K⁻¹ mol⁻¹.", "concept": "Calculating ΔS" },
-  { "id": "dg-card", "front": "Gibbs equation and spontaneity?", "back": "ΔG = ΔH − TΔS; spontaneous if ΔG < 0.", "concept": "Gibbs energy" },
-  { "id": "switch-card", "front": "Temperature at which ΔG = 0?", "back": "T = ΔH/ΔS (same units: kJ and kJ K⁻¹).", "concept": "Spontaneity" },
-  { "id": "dgk-card", "front": "ΔG⦵ and K?", "back": "ΔG⦵ = −RT ln K. Negative ΔG⦵ → K > 1.", "concept": "ΔG and equilibrium" }
+  { "id": "entropy-card", "front": "Entropy?", "back": "A measure of the dispersal of matter and energy; S(gas) ≫ S(liquid) > S(solid).", "concept": "Entropy", "kind": "definition" },
+  { "id": "ds-sign-card", "front": "When is ΔS positive?", "back": "More moles of gas, melting/boiling/dissolving, rising temperature.", "concept": "Predicting ΔS", "kind": "trend" },
+  { "id": "ds-calc-card", "front": "ΔS⦵ from data?", "back": "ΣS⦵(products) − ΣS⦵(reactants), J K⁻¹ mol⁻¹.", "concept": "Calculating ΔS", "kind": "formula" },
+  { "id": "dg-card", "front": "Gibbs equation and spontaneity?", "back": "ΔG = ΔH − TΔS; spontaneous if ΔG < 0.", "concept": "Gibbs energy", "kind": "formula" },
+  { "id": "switch-card", "front": "Temperature at which ΔG = 0?", "back": "T = ΔH/ΔS (same units: kJ and kJ K⁻¹).", "concept": "Spontaneity", "kind": "method" },
+  { "id": "dgk-card", "front": "ΔG⦵ and K?", "back": "ΔG⦵ = −RT ln K. Negative ΔG⦵ → K > 1.", "concept": "ΔG and equilibrium", "kind": "formula" },
+  { "id": "spont-def-card", "front": "Spontaneous (thermodynamically favourable) reaction?", "back": "One that proceeds in the stated direction without continuous external energy input; ΔG < 0. Says nothing about rate.", "concept": "Spontaneity", "kind": "definition" },
+  { "id": "spont-rate-card", "front": "Does a negative ΔG mean a reaction is fast?", "back": "No. ΔG predicts feasibility only; a large Ea can make it immeasurably slow (e.g. diamond → graphite).", "concept": "Spontaneity", "kind": "misconception" },
+  { "id": "abs-entropy-card", "front": "Why are standard entropies of elements not zero?", "back": "Entropy is absolute: only a perfect crystal at 0 K has S = 0, so all substances at 298 K have positive S⦵ (unlike ΔHf⦵).", "concept": "Entropy", "kind": "concept" },
+  { "id": "entropy-order-card", "front": "Factors that increase the entropy of a substance?", "back": "Gas > liquid > solid; higher temperature; more complex molecules (more atoms); mixing/dissolving.", "concept": "Entropy", "kind": "trend" },
+  { "id": "ds-sign-eg-card", "front": "Sign of ΔS for N₂(g) + 3H₂(g) → 2NH₃(g)?", "back": "Negative: 4 mol of gas become 2 mol of gas (fewer ways to disperse energy and matter).", "concept": "Entropy", "kind": "application" },
+  { "id": "ds-units-card", "front": "Unit trap in ΔG = ΔH − TΔS?", "back": "ΔH is in kJ mol⁻¹ but ΔS in J K⁻¹ mol⁻¹: divide ΔS by 1000 before combining. T in K.", "concept": "Gibbs energy", "kind": "unit" },
+  { "id": "dg-four-card", "front": "Spontaneity for the four sign combinations of ΔH and ΔS?", "back": "−,+: always spontaneous. +,−: never. −,−: spontaneous at low T. +,+: spontaneous at high T.", "concept": "Gibbs energy", "kind": "condition" },
+  { "id": "dgf-card", "front": "ΔG⦵ from standard Gibbs energies of formation?", "back": "ΔG⦵ = ΣΔGf⦵(products) − ΣΔGf⦵(reactants); ΔGf⦵ of elements in their standard states is zero.", "concept": "Gibbs energy", "kind": "formula" },
+  { "id": "dg-dsurr-card", "front": "How does ΔG relate to total entropy?", "back": "ΔS(surroundings) = −ΔH/T, so ΔG = −TΔS(total); ΔG < 0 means total entropy increases (second law).", "concept": "Gibbs energy", "kind": "concept" },
+  { "id": "dg-graph-card", "front": "Graph of ΔG against T?", "back": "Straight line: gradient = −ΔS, y-intercept = ΔH; it crosses ΔG = 0 at T = ΔH/ΔS.", "concept": "Gibbs energy", "kind": "graph" },
+  { "id": "dg-eq-card", "front": "Value of ΔG at equilibrium and what ΔG⦵ tells you?", "back": "ΔG = 0 at equilibrium. ΔG⦵ < 0 → K > 1 (products favoured); ΔG⦵ > 0 → K < 1.", "concept": "Gibbs energy and equilibrium", "kind": "concept" },
+  { "id": "dgk-units-card", "front": "Calculating K from ΔG⦵?", "back": "K = e^(−ΔG⦵/RT), with ΔG⦵ in J mol⁻¹, R = 8.31 J K⁻¹ mol⁻¹ and T in K.", "concept": "Gibbs energy and equilibrium", "kind": "method" },
+  { "id": "dissolve-ds-card", "front": "Why does NH₄NO₃ dissolve spontaneously though endothermic?", "back": "Dissolving increases entropy greatly (ions dispersed), so TΔS > ΔH and ΔG < 0.", "concept": "Entropy", "kind": "application" },
+  { "id": "dg-mixture-card", "front": "Why do reactions stop at equilibrium instead of going to completion?", "back": "Gibbs energy of the mixture reaches a minimum at the equilibrium composition (mixing of reactants and products lowers G).", "concept": "Gibbs energy and equilibrium", "kind": "concept" }
 ]
