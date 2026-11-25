@@ -9,11 +9,16 @@ import type { CardState } from './srs';
 
 export type ExamResult = 'got' | 'partial' | 'missed';
 export type TextSize = 'sm' | 'md' | 'lg';
+export type Level = 'SL' | 'HL';
 
 export interface SyncedProgress {
   name: string;
   theme: 'system' | 'light' | 'dark';
   textSize: TextSize;
+  /** Date of the student's first exam (YYYY-MM-DD), or '' if not set. */
+  examDate: string;
+  /** Level taken per subject id; subjects not listed are treated as HL. */
+  levels: Record<string, Level>;
   exam: Record<string, { r: ExamResult; at: number }>;
   completed: Record<string, string>;
   visited: Record<string, number>;
@@ -23,6 +28,8 @@ export interface SyncedProgress {
   notes: Record<string, string>;
   cards: Record<string, CardState>;
   studyDays: string[];
+  /** When this copy was last reset (epoch ms). A copy reset earlier than the other keeps only what happened after the later reset. */
+  resetAt: number;
 }
 
 export const MAX_ATTEMPTS = 3000;
@@ -38,6 +45,8 @@ export function normalise(raw: unknown): SyncedProgress {
     name: typeof d.name === 'string' ? d.name : '',
     theme,
     textSize: d.textSize === 'sm' || d.textSize === 'lg' ? d.textSize : 'md',
+    examDate: typeof d.examDate === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(d.examDate) ? d.examDate : '',
+    levels: Object.fromEntries(Object.entries(obj<unknown>(d.levels)).filter(([, v]) => v === 'SL' || v === 'HL')) as Record<string, Level>,
     exam: obj(d.exam),
     completed: obj(d.completed),
     visited: obj(d.visited),
@@ -47,6 +56,26 @@ export function normalise(raw: unknown): SyncedProgress {
     notes: obj(d.notes),
     cards: obj(d.cards),
     studyDays: arr(d.studyDays),
+    resetAt: typeof d.resetAt === 'number' ? d.resetAt : 0,
+  };
+}
+
+/** Drops everything in `p` that happened before `epoch` (a reset made on another device). */
+function since(p: SyncedProgress, epoch: number): SyncedProgress {
+  const keep = <T>(o: Record<string, T>, at: (v: T) => number) => Object.fromEntries(Object.entries(o).filter(([, v]) => at(v) > epoch));
+  const day = new Date(epoch).toISOString().slice(0, 10);
+  return {
+    ...p,
+    exam: keep(p.exam, (v) => v.at),
+    completed: keep(p.completed, (v) => Date.parse(v) || 0),
+    visited: keep(p.visited, (v) => v),
+    lastLesson: p.lastLesson && (p.visited[p.lastLesson] ?? 0) > epoch ? p.lastLesson : null,
+    attempts: p.attempts.filter((a) => a.at > epoch),
+    bookmarks: keep(p.bookmarks, (v) => v.at),
+    notes: {}, // notes carry no timestamp, so a reset clears them
+    cards: {}, // card states only make sense as a whole history
+    studyDays: p.studyDays.filter((d) => d >= day),
+    resetAt: epoch,
   };
 }
 
@@ -57,8 +86,10 @@ function pickCard(a: CardState, b: CardState): CardState {
 
 /** `mine` is this device; its name, theme, last lesson and notes win ties. */
 export function mergeProgress(mineRaw: unknown, theirsRaw: unknown): SyncedProgress {
-  const mine = normalise(mineRaw);
-  const theirs = normalise(theirsRaw);
+  let mine = normalise(mineRaw);
+  let theirs = normalise(theirsRaw);
+  if (mine.resetAt > theirs.resetAt) theirs = since(theirs, mine.resetAt);
+  else if (theirs.resetAt > mine.resetAt) mine = since(mine, theirs.resetAt);
 
   const completed = { ...theirs.completed };
   for (const [k, v] of Object.entries(mine.completed)) completed[k] = completed[k] && completed[k] < v ? completed[k] : v;
@@ -92,6 +123,8 @@ export function mergeProgress(mineRaw: unknown, theirsRaw: unknown): SyncedProgr
     name: mine.name || theirs.name,
     theme: mine.theme,
     textSize: mine.textSize,
+    examDate: mine.examDate || theirs.examDate,
+    levels: { ...theirs.levels, ...mine.levels },
     exam,
     completed,
     visited,
@@ -101,5 +134,6 @@ export function mergeProgress(mineRaw: unknown, theirsRaw: unknown): SyncedProgr
     notes: { ...theirs.notes, ...mine.notes },
     cards,
     studyDays: [...new Set([...theirs.studyDays, ...mine.studyDays])].sort().slice(-400),
+    resetAt: Math.max(mine.resetAt, theirs.resetAt),
   };
 }

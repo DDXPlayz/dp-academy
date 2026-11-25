@@ -4,16 +4,17 @@ import { Page, PageHeader } from '../components/AppShell';
 import { Icon } from '../components/Icon';
 import { ProgressBar } from '../components/ProgressBar';
 import { pct, subjectStats } from '../lib/stats';
-import { useStudyState } from '../store/progress';
+import { useProgress, useStudyState } from '../store/progress';
 
 export default function Subjects() {
   const state = useStudyState();
+  const levels = useProgress((s) => s.levels);
   return (
     <Page>
       <PageHeader title="Subjects">Every subject follows the current IB syllabus structure. Pick one to see its full curriculum.</PageHeader>
       <div className="grid gap-4 md:grid-cols-2">
         {subjects.map((s) => {
-          const st = subjectStats(s, state);
+          const st = subjectStats(s, state, levels[s.id]);
           return (
             <Link key={s.id} to={s.href} className="card card-hover group flex flex-col p-6">
               <div className="flex items-center gap-3">

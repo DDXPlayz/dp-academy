@@ -77,7 +77,8 @@ export interface SubjectStats {
   started: boolean;
 }
 
-export function subjectStats(subject: Subject, s: StudyState): SubjectStats {
+/** `level` 'SL' leaves out HL-only topics, so an SL student can reach 100%. */
+export function subjectStats(subject: Subject, s: StudyState, level: 'SL' | 'HL' = 'HL'): SubjectStats {
   const latest = latestAttempts(s.attempts);
   let weight = 0;
   let sum = 0;
@@ -85,6 +86,7 @@ export function subjectStats(subject: Subject, s: StudyState): SubjectStats {
   let lessonsTotal = 0;
   let questionsTotal = 0;
   for (const t of subject.topics) {
+    if (level === 'SL' && t.hl) continue;
     const st = topicStats(t, s, latest);
     lessonsDone += st.lessonsDone;
     lessonsTotal += st.lessonsTotal;

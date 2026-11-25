@@ -43,6 +43,28 @@ function NamePrompt() {
   );
 }
 
+/** Days until the first exam, from the date set in Settings. */
+function ExamCountdown({ date }: { date: string }) {
+  if (!date) {
+    return (
+      <Link to="/settings" className="mt-3 inline-flex items-center gap-1.5 text-sm text-muted hover:text-ink">
+        <Icon name="calendar" size={14} /> Set your exam date for a countdown
+      </Link>
+    );
+  }
+  const start = new Date();
+  start.setHours(0, 0, 0, 0);
+  const days = Math.round((new Date(`${date}T00:00:00`).getTime() - start.getTime()) / 86_400_000);
+  if (days < 0) return null;
+  const weeks = Math.floor(days / 7);
+  return (
+    <p className="mt-3 inline-flex items-center gap-2 rounded-full bg-accent-soft px-3 py-1 text-sm text-ink">
+      <Icon name="calendar" size={14} />
+      {days === 0 ? 'Exams start today. Good luck!' : `${days} day${days === 1 ? '' : 's'} until your exams${weeks >= 2 ? ` (${weeks} weeks)` : ''}`}
+    </p>
+  );
+}
+
 function EmptyNote({ children }: { children: React.ReactNode }) {
   return <p className="rounded-xl border border-dashed border-line px-4 py-5 text-sm text-muted">{children}</p>;
 }
@@ -53,7 +75,9 @@ export default function Dashboard() {
   const cards = useProgress((s) => s.cards);
   const bookmarks = useProgress((s) => s.bookmarks);
   const studyDays = useProgress((s) => s.studyDays);
+  const examDate = useProgress((s) => s.examDate);
   const state = useStudyState();
+  const levels = useProgress((s) => s.levels);
 
   const lesson = useMemo(() => continueLesson({ ...state, lastLesson }), [state, lastLesson]);
   const focus = useMemo(() => todaysFocus({ ...state, lastLesson }, cards), [state, lastLesson, cards]);
@@ -81,6 +105,7 @@ export default function Dashboard() {
           {name ? `, ${name}` : ''}
         </h1>
         {!name && <NamePrompt />}
+        <ExamCountdown date={examDate} />
       </header>
 
       <div className="grid gap-6 lg:grid-cols-[1.4fr_1fr]">
@@ -144,7 +169,7 @@ export default function Dashboard() {
         >
           <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
             {subjects.map((s) => (
-              <SubjectCard key={s.id} subject={s} stats={subjectStats(s, state)} />
+              <SubjectCard key={s.id} subject={s} stats={subjectStats(s, state, levels[s.id])} />
             ))}
           </div>
         </Section>

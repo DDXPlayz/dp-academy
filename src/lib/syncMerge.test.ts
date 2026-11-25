@@ -44,4 +44,31 @@ describe('mergeProgress', () => {
     expect(normalise({ attempts: 'x', theme: 'neon' })).toMatchObject({ attempts: [], theme: 'system' });
     expect(mergeProgress(undefined, { completed: { a: '1' } }).completed).toEqual({ a: '1' });
   });
+
+  it('a reset wins over older progress from the account or another device', () => {
+    const resetAt = Date.parse('2026-03-01T12:00:00Z');
+    const fresh = { resetAt, completed: { new: '2026-03-02T00:00:00Z' }, visited: { new: resetAt + 10 } };
+    const old = {
+      completed: { a: '2026-01-01T00:00:00Z', late: '2026-03-05T00:00:00Z' },
+      visited: { a: 5 },
+      attempts: [
+        { key: 'q1', topicKey: 't', concept: 'c', correct: true, ms: 1, at: 5 },
+        { key: 'q2', topicKey: 't', concept: 'c', correct: true, ms: 1, at: resetAt + 1 },
+      ],
+      notes: { a: 'old note' },
+      bookmarks: { x: { kind: 'lesson', at: 1 } },
+      cards: { f: card(4, '2026-02-01') },
+      studyDays: ['2026-01-01', '2026-03-03'],
+      lastLesson: 'a',
+    };
+    for (const m of [mergeProgress(fresh, old), mergeProgress(old, fresh)]) {
+      expect(m.completed).toEqual({ new: '2026-03-02T00:00:00Z', late: '2026-03-05T00:00:00Z' });
+      expect(m.attempts.map((a) => a.key)).toEqual(['q2']);
+      expect(m.notes).toEqual({});
+      expect(m.bookmarks).toEqual({});
+      expect(m.cards).toEqual({});
+      expect(m.studyDays).toEqual(['2026-03-03']);
+      expect(m.resetAt).toBe(resetAt);
+    }
+  });
 });

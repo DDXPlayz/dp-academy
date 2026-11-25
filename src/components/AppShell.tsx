@@ -61,6 +61,7 @@ function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
   const visited = useProgress((s) => s.visited);
   const attempts = useProgress((s) => s.attempts);
   const state = { completed, visited, attempts };
+  const levels = useProgress((s) => s.levels);
   return (
     <nav aria-label="Main" className="flex h-full flex-col gap-6 overflow-y-auto px-3 py-5">
       <div className="px-2">
@@ -100,7 +101,7 @@ function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
                   }`
                 }
               >
-                <ProgressRing value={subjectStats(s, state).progress} size={18} colour={s.colour} />
+                <ProgressRing value={subjectStats(s, state, levels[s.id]).progress} size={18} colour={s.colour} />
                 <span className="truncate">{s.short}</span>
               </NavLink>
             </li>

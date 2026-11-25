@@ -1,9 +1,11 @@
 import { useRef, useState } from 'react';
 import { Page, PageHeader } from '../components/AppShell';
 import { Icon } from '../components/Icon';
-import { exportableState, useProgress, type TextSize, type Theme } from '../store/progress';
+import { exportableState, useProgress, type Level, type TextSize, type Theme } from '../store/progress';
+import { subjects } from '../content';
 import { useUI } from '../store/ui';
 import { AccountCard, PeopleCard } from '../components/AccountSettings';
+import { flushSync } from '../lib/sync';
 
 export default function Settings() {
   const name = useProgress((s) => s.name);
@@ -15,7 +17,12 @@ export default function Settings() {
   const setHelp = useUI((s) => s.setHelp);
   const importData = useProgress((s) => s.importData);
   const reset = useProgress((s) => s.reset);
+  const examDate = useProgress((s) => s.examDate);
+  const setExamDate = useProgress((s) => s.setExamDate);
+  const levels = useProgress((s) => s.levels);
+  const setLevel = useProgress((s) => s.setLevel);
   const [message, setMessage] = useState('');
+  const [confirming, setConfirming] = useState(false);
   const file = useRef<HTMLInputElement>(null);
 
   const download = () => {
@@ -30,6 +37,7 @@ export default function Settings() {
   const upload = async (f: File) => {
     try {
       const ok = importData(JSON.parse(await f.text()));
+      if (ok) void flushSync();
       setMessage(ok ? 'Progress restored.' : 'That file doesn’t look like a DP Academy export.');
     } catch {
       setMessage('Couldn’t read that file.');
@@ -48,6 +56,45 @@ export default function Settings() {
             Name
           </label>
           <input id="name" className="input mt-2" defaultValue={name} onBlur={(e) => setName(e.target.value)} placeholder="Shown in your greeting" />
+        </section>
+
+        <section className="card p-5">
+          <p className="text-sm font-medium text-ink">Your exams</p>
+          <p className="mt-1 text-sm text-muted">Used for the countdown on Home and to hide HL-only topics in subjects you take at SL.</p>
+          <label htmlFor="exam-date" className="mt-4 block text-sm text-ink-2">
+            Date of your first exam
+          </label>
+          <div className="mt-1 flex gap-2">
+            <input id="exam-date" type="date" className="input max-w-xs" value={examDate} onChange={(e) => setExamDate(e.target.value)} />
+            {examDate && (
+              <button type="button" className="btn-ghost" onClick={() => setExamDate('')}>
+                Clear
+              </button>
+            )}
+          </div>
+          <div className="mt-4 space-y-2">
+            {subjects
+              .filter((sub) => sub.levels.length > 1)
+              .map((sub) => (
+                <div key={sub.id} className="flex items-center justify-between gap-3">
+                  <span className="text-sm text-ink">{sub.title}</span>
+                  <div role="radiogroup" aria-label={`${sub.title} level`} className="flex rounded-lg bg-sunken p-1">
+                    {(['SL', 'HL'] as Level[]).map((l) => (
+                      <button
+                        key={l}
+                        type="button"
+                        role="radio"
+                        aria-checked={(levels[sub.id] ?? 'HL') === l}
+                        onClick={() => setLevel(sub.id, l)}
+                        className={`h-7 rounded-md px-3 text-sm font-medium ${(levels[sub.id] ?? 'HL') === l ? 'bg-card text-ink shadow-sm' : 'text-muted hover:text-ink'}`}
+                      >
+                        {l}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              ))}
+          </div>
         </section>
 
         <section className="card p-5">
@@ -105,19 +152,41 @@ export default function Settings() {
               <Icon name="upload" size={16} /> Import
             </button>
             <input ref={file} type="file" accept="application/json" className="hidden" onChange={(e) => e.target.files?.[0] && upload(e.target.files[0])} />
-            <button
-              type="button"
-              className="btn-ghost text-bad hover:text-bad"
-              onClick={() => {
-                if (confirm('Erase all progress, notes and bookmarks in this account, on every device? This cannot be undone.')) {
-                  reset();
-                  setMessage('Progress erased.');
-                }
-              }}
-            >
+            <button type="button" className="btn-ghost text-bad hover:text-bad" onClick={() => setConfirming(true)} disabled={confirming}>
               Reset progress
             </button>
           </div>
+          {confirming && (
+            <div className="mt-4 rounded-lg border border-bad/40 bg-bad/5 p-4" role="alertdialog" aria-labelledby="reset-title">
+              <p id="reset-title" className="text-sm font-medium text-ink">
+                Erase all progress in this account?
+              </p>
+              <p className="mt-1 text-sm text-ink-2">
+                Completed lessons, answers, exam marks, notes, bookmarks and flashcard reviews are deleted on every device you use. Your name,
+                display settings and exam details are kept. This cannot be undone, so download a backup first if you might want it back.
+              </p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                <button type="button" className="btn-secondary" onClick={download}>
+                  <Icon name="download" size={16} /> Download backup
+                </button>
+                <button
+                  type="button"
+                  className="btn-primary bg-bad hover:bg-bad/90"
+                  onClick={() => {
+                    reset();
+                    void flushSync();
+                    setConfirming(false);
+                    setMessage('Progress erased on all your devices.');
+                  }}
+                >
+                  Erase everything
+                </button>
+                <button type="button" className="btn-ghost" onClick={() => setConfirming(false)}>
+                  Cancel
+                </button>
+              </div>
+            </div>
+          )}
           {message && (
             <p className="mt-3 text-sm text-ink-2" role="status">
               {message}

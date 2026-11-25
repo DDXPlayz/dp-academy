@@ -38,6 +38,13 @@ export default function Practice() {
       const pool = allQuestions().filter((q) => topics.has(q.topicKey) || concepts.has(`${q.topicKey}::${q.concept}`));
       return { title: 'Weak areas', questions: shuffle(pool).slice(0, 12), start: 0 };
     }
+    if (mode === 'mistakes') {
+      // Questions whose most recent answer was wrong, newest mistakes first.
+      const wrong = [...latestAttempts(state.attempts).values()].filter((a) => !a.correct).sort((a, b) => b.at - a.at);
+      const byKey = new Map(allQuestions().map((q) => [q.key, q]));
+      const pool = wrong.map((a) => byKey.get(a.key)).filter((q): q is PracticeQuestion => !!q);
+      return { title: 'Retry mistakes', questions: pool.slice(0, 15), start: 0 };
+    }
     if (mode === 'mixed') {
       const studied = new Set(state.attempts.map((a) => a.topicKey));
       const pool = allQuestions().filter((q) => !studied.size || studied.has(q.topicKey));
@@ -66,7 +73,7 @@ export default function Practice() {
             <Quiz key={`${topicKey}-${mode}`} questions={session.questions} startAt={session.start} title={session.title} onExit={() => setParams({})} />
           ) : (
             <div className="card p-8 text-center text-ink-2">
-              {mode === 'weak' ? 'No weak areas yet — answer more questions and they will be identified automatically.' : 'No questions here yet.'}
+              {mode === 'mistakes' ? 'No mistakes to retry. Every question you have answered, your latest answer was right.' : mode === 'weak' ? 'No weak areas yet — answer more questions and they will be identified automatically.' : 'No questions here yet.'}
             </div>
           )}
         </div>
@@ -76,6 +83,7 @@ export default function Practice() {
 
   const latest = latestAttempts(state.attempts);
   const weak = weakTopics(state);
+  const mistakes = [...latest.values()].filter((a) => !a.correct).length;
 
   return (
     <Page>
@@ -83,7 +91,7 @@ export default function Practice() {
         Original exam-style questions with full explanations. Your accuracy feeds the weak-topic tracker.
       </PageHeader>
 
-      <div className="mb-10 grid gap-3 sm:grid-cols-2">
+      <div className="mb-10 grid gap-3 sm:grid-cols-3">
         <button type="button" onClick={() => setParams({ mode: 'mixed' })} className="card card-hover flex items-center gap-4 p-5 text-left">
           <Icon name="shuffle" size={22} className="text-accent" />
           <span className="flex-1">
@@ -102,6 +110,20 @@ export default function Practice() {
             <span className="block font-medium text-ink">Weak areas</span>
             <span className="block text-sm text-muted">
               {weak.length ? `${weak.length} topic${weak.length > 1 ? 's' : ''} below 60%` : 'Nothing flagged yet'}
+            </span>
+          </span>
+        </button>
+        <button
+          type="button"
+          onClick={() => setParams({ mode: 'mistakes' })}
+          disabled={!mistakes}
+          className="card card-hover flex items-center gap-4 p-5 text-left disabled:opacity-60"
+        >
+          <Icon name="rotate" size={22} className="text-accent" />
+          <span className="flex-1">
+            <span className="block font-medium text-ink">Retry mistakes</span>
+            <span className="block text-sm text-muted">
+              {mistakes ? `${mistakes} question${mistakes > 1 ? 's' : ''} you last got wrong` : 'No mistakes to retry'}
             </span>
           </span>
         </button>

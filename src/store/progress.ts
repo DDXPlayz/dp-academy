@@ -3,9 +3,9 @@ import { createJSONStorage, persist } from 'zustand/middleware';
 import { useShallow } from 'zustand/react/shallow';
 import { review, type CardState, type Grade } from '../lib/srs';
 import { today } from '../lib/dates';
-import { MAX_ATTEMPTS, normalise, type ExamResult, type TextSize } from '../lib/syncMerge';
+import { MAX_ATTEMPTS, normalise, type ExamResult, type Level, type TextSize } from '../lib/syncMerge';
 
-export type { ExamResult, TextSize };
+export type { ExamResult, Level, TextSize };
 
 /*
  * Everything a student does lives here. It is persisted to localStorage under
@@ -29,6 +29,8 @@ interface ProgressState {
   name: string;
   theme: Theme;
   textSize: TextSize;
+  examDate: string;
+  levels: Record<string, Level>;
   exam: Record<string, { r: ExamResult; at: number }>; // exam-bank question key → self-marked result
   completed: Record<string, string>; // lesson key → ISO date completed
   visited: Record<string, number>; // lesson key → last opened (epoch ms)
@@ -38,10 +40,13 @@ interface ProgressState {
   notes: Record<string, string>;
   cards: Record<string, CardState>;
   studyDays: string[];
+  resetAt: number;
 
   setName: (name: string) => void;
   setTheme: (theme: Theme) => void;
   setTextSize: (size: TextSize) => void;
+  setExamDate: (date: string) => void;
+  setLevel: (subjectId: string, level: Level) => void;
   markExam: (key: string, result: ExamResult | null) => void;
   visitLesson: (key: string) => void;
   setComplete: (key: string, done: boolean) => void;
@@ -58,6 +63,8 @@ const initial = {
   name: '',
   theme: 'system' as Theme,
   textSize: 'md' as TextSize,
+  examDate: '',
+  levels: {} as Record<string, Level>,
   exam: {} as Record<string, { r: ExamResult; at: number }>,
   completed: {},
   visited: {},
@@ -66,7 +73,8 @@ const initial = {
   bookmarks: {},
   notes: {},
   cards: {},
-  studyDays: [],
+  studyDays: [] as string[],
+  resetAt: 0,
 };
 
 function markStudied(days: string[]): string[] {
@@ -81,6 +89,8 @@ export const useProgress = create<ProgressState>()(
       setName: (name) => set({ name: name.trim().slice(0, 40) }),
       setTheme: (theme) => set({ theme }),
       setTextSize: (textSize) => set({ textSize }),
+      setExamDate: (examDate) => set({ examDate: /^\d{4}-\d{2}-\d{2}$/.test(examDate) ? examDate : '' }),
+      setLevel: (subjectId, level) => set((s) => ({ levels: { ...s.levels, [subjectId]: level } })),
       markExam: (key, result) =>
         set((s) => {
           const exam = { ...s.exam };
@@ -129,11 +139,13 @@ export const useProgress = create<ProgressState>()(
         if (!data || typeof data !== 'object') return false;
         const d = data as Partial<typeof initial>;
         if (!d.completed || !Array.isArray(d.attempts)) return false;
-        set({ ...initial, ...d });
+        // An imported backup replaces this account's progress everywhere (like a reset followed by a restore).
+        set({ ...initial, ...d, resetAt: Date.now() });
         return true;
       },
       replaceData: (data) => set({ ...normalise(data) }),
-      reset: () => set({ ...initial }),
+      // Keeps the name and display preferences; everything else is cleared on every device (see resetAt in syncMerge).
+      reset: () => set((s) => ({ ...initial, name: s.name, theme: s.theme, textSize: s.textSize, examDate: s.examDate, levels: s.levels, resetAt: Date.now() })),
     }),
     {
       name: 'dp-academy:v1',
@@ -146,9 +158,9 @@ export const useProgress = create<ProgressState>()(
 );
 
 export const exportableState = () => {
-  const { name, theme, textSize, exam, completed, visited, lastLesson, attempts, bookmarks, notes, cards, studyDays } =
+  const { name, theme, textSize, examDate, levels, exam, completed, visited, lastLesson, attempts, bookmarks, notes, cards, studyDays, resetAt } =
     useProgress.getState();
-  return { name, theme, textSize, exam, completed, visited, lastLesson, attempts, bookmarks, notes, cards, studyDays };
+  return { name, theme, textSize, examDate, levels, exam, completed, visited, lastLesson, attempts, bookmarks, notes, cards, studyDays, resetAt };
 };
 
 /** The slice the statistics functions need, with shallow equality. */

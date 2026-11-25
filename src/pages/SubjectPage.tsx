@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { getSubject } from '../content';
 import { Page, PageHeader } from '../components/AppShell';
@@ -6,19 +5,20 @@ import { Icon } from '../components/Icon';
 import { ProgressBar } from '../components/ProgressBar';
 import { TopicCard, UnitCard } from '../components/TopicCard';
 import { latestAttempts, pct, subjectStats, topicStats } from '../lib/stats';
-import { useStudyState } from '../store/progress';
+import { useProgress, useStudyState, type Level } from '../store/progress';
 import NotFound from './NotFound';
-
-type Level = 'HL' | 'SL';
 
 export default function SubjectPage() {
   const { subjectId = '' } = useParams();
   const subject = getSubject(subjectId);
   const state = useStudyState();
-  const [level, setLevel] = useState<Level>('HL');
+  // The level is remembered per subject (and synced), so friends taking SL see only SL content.
+  const level = useProgress((s) => s.levels[subjectId] ?? 'HL');
+  const saveLevel = useProgress((s) => s.setLevel);
+  const setLevel = (l: Level) => saveLevel(subjectId, l);
   if (!subject) return <NotFound />;
 
-  const st = subjectStats(subject, state);
+  const st = subjectStats(subject, state, level);
   const latest = latestAttempts(state.attempts);
   const hasLevels = subject.levels.length > 1;
   const visible = (hl: boolean) => level === 'HL' || !hl;
