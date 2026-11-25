@@ -3,9 +3,9 @@ import { createJSONStorage, persist } from 'zustand/middleware';
 import { useShallow } from 'zustand/react/shallow';
 import { review, type CardState, type Grade } from '../lib/srs';
 import { today } from '../lib/dates';
-import { MAX_ATTEMPTS, normalise, type ExamResult, type Level, type TextSize } from '../lib/syncMerge';
+import { MAX_ATTEMPTS, normalise, type ExamResult, type Level, type RevisitMark, type TextSize } from '../lib/syncMerge';
 
-export type { ExamResult, Level, TextSize };
+export type { ExamResult, Level, RevisitMark, TextSize };
 
 /*
  * Everything a student does lives here. It is persisted to localStorage under
@@ -34,6 +34,7 @@ interface ProgressState {
   exam: Record<string, { r: ExamResult; at: number }>; // exam-bank question key → self-marked result
   completed: Record<string, string>; // lesson key → ISO date completed
   visited: Record<string, number>; // lesson key → last opened (epoch ms)
+  revisit: Record<string, RevisitMark>; // lesson key → "needs revision" flag (un-flags kept so they sync)
   lastLesson: string | null;
   attempts: Attempt[];
   bookmarks: Record<string, { kind: BookmarkKind; at: number }>;
@@ -50,6 +51,7 @@ interface ProgressState {
   markExam: (key: string, result: ExamResult | null) => void;
   visitLesson: (key: string) => void;
   setComplete: (key: string, done: boolean) => void;
+  setRevisit: (key: string, on: boolean) => void;
   recordAttempt: (a: Omit<Attempt, 'at'>) => void;
   toggleBookmark: (key: string, kind: BookmarkKind) => void;
   setNote: (key: string, text: string) => void;
@@ -68,6 +70,7 @@ const initial = {
   exam: {} as Record<string, { r: ExamResult; at: number }>,
   completed: {},
   visited: {},
+  revisit: {} as Record<string, RevisitMark>,
   lastLesson: null,
   attempts: [],
   bookmarks: {},
@@ -111,6 +114,8 @@ export const useProgress = create<ProgressState>()(
           else delete completed[key];
           return { completed, studyDays: markStudied(s.studyDays) };
         }),
+      setRevisit: (key, on) =>
+        set((s) => (!!s.revisit[key]?.on === on ? s : { revisit: { ...s.revisit, [key]: { on, at: Date.now() } } })),
       recordAttempt: (a) =>
         set((s) => ({
           attempts: [...s.attempts, { ...a, at: Date.now() }].slice(-MAX_ATTEMPTS),
@@ -158,10 +163,13 @@ export const useProgress = create<ProgressState>()(
 );
 
 export const exportableState = () => {
-  const { name, theme, textSize, examDate, levels, exam, completed, visited, lastLesson, attempts, bookmarks, notes, cards, studyDays, resetAt } =
+  const { name, theme, textSize, examDate, levels, exam, completed, visited, revisit, lastLesson, attempts, bookmarks, notes, cards, studyDays, resetAt } =
     useProgress.getState();
-  return { name, theme, textSize, examDate, levels, exam, completed, visited, lastLesson, attempts, bookmarks, notes, cards, studyDays, resetAt };
+  return { name, theme, textSize, examDate, levels, exam, completed, visited, revisit, lastLesson, attempts, bookmarks, notes, cards, studyDays, resetAt };
 };
+
+/** Whether a lesson is currently flagged for revision. Usable as `useProgress((s) => isRevisit(s, key))`. */
+export const isRevisit = (state: { revisit: Record<string, RevisitMark> }, key: string): boolean => !!state.revisit?.[key]?.on;
 
 /** The slice the statistics functions need, with shallow equality. */
 export const useStudyState = () =>

@@ -45,6 +45,33 @@ describe('mergeProgress', () => {
     expect(mergeProgress(undefined, { completed: { a: '1' } }).completed).toEqual({ a: '1' });
   });
 
+  it('merges revisit flags: newest change wins, including un-flagging', () => {
+    const phone = { revisit: { a: { on: false, at: 30 }, b: { on: true, at: 10 }, c: { on: true, at: 5 } } };
+    const laptop = { revisit: { a: { on: true, at: 20 }, b: { on: false, at: 40 }, d: { on: true, at: 1 } } };
+    for (const m of [mergeProgress(phone, laptop), mergeProgress(laptop, phone)]) {
+      expect(m.revisit).toEqual({
+        a: { on: false, at: 30 }, // un-flagged later on the phone
+        b: { on: false, at: 40 }, // un-flagged later on the laptop
+        c: { on: true, at: 5 },
+        d: { on: true, at: 1 },
+      });
+    }
+  });
+
+  it('normalises data from before revisit flags existed', () => {
+    expect(normalise({ completed: { a: '2026-01-01' } }).revisit).toEqual({});
+    expect(normalise({ revisit: { a: { on: true, at: 1 }, bad: 'x', worse: { on: 'yes', at: 1 }, none: null } }).revisit).toEqual({
+      a: { on: true, at: 1 },
+    });
+    expect(mergeProgress({ completed: {} }, { revisit: { a: { on: true, at: 2 } } }).revisit).toEqual({ a: { on: true, at: 2 } });
+  });
+
+  it('a reset drops revisit flags set before it', () => {
+    const resetAt = 1000;
+    const m = mergeProgress({ resetAt }, { revisit: { old: { on: true, at: 500 }, late: { on: true, at: 1500 } } });
+    expect(m.revisit).toEqual({ late: { on: true, at: 1500 } });
+  });
+
   it('a reset wins over older progress from the account or another device', () => {
     const resetAt = Date.parse('2026-03-01T12:00:00Z');
     const fresh = { resetAt, completed: { new: '2026-03-02T00:00:00Z' }, visited: { new: resetAt + 10 } };
