@@ -1,0 +1,258 @@
+/*
+ * Compact print layout for the Print notes page (/print).
+ *
+ * Everything is scoped to `.print-area.print-compact`, so the standard layout and
+ * the rest of the app are untouched. The same rules apply on screen, so the
+ * preview shows what the paper will look like.
+ */
+
+@page {
+  size: A4;
+  margin: 12mm 13mm 13mm;
+}
+
+.print-area.print-compact {
+  font-size: 10pt;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+/* Lesson / note typography: small, dense, still readable. */
+.print-area.print-compact .prose-lesson {
+  font-size: 10pt;
+  line-height: 1.42;
+  color: var(--ink);
+}
+.print-area.print-compact .prose-lesson > * + * {
+  margin-top: 0.45em;
+}
+.print-area.print-compact .prose-lesson h2 {
+  font-size: 10.5pt;
+  margin-top: 0.85em;
+  letter-spacing: 0;
+}
+.print-area.print-compact .prose-lesson h3,
+.print-area.print-compact .prose-lesson h4 {
+  font-size: 10pt;
+  margin-top: 0.65em;
+}
+.print-area.print-compact .prose-lesson ul,
+.print-area.print-compact .prose-lesson ol {
+  padding-left: 1.15em;
+}
+.print-area.print-compact .prose-lesson ul > *,
+.print-area.print-compact .prose-lesson ol > * {
+  margin-block: 0 !important;
+}
+.print-area.print-compact .prose-lesson li + li {
+  margin-top: 0.12em !important;
+}
+.print-area.print-compact .prose-lesson table {
+  font-size: 9.5pt;
+}
+.print-area.print-compact .prose-lesson th,
+.print-area.print-compact .prose-lesson td {
+  padding: 0.15em 0.6em 0.15em 0;
+}
+.print-area.print-compact .katex-display {
+  margin: 0.3em 0 !important;
+  padding: 0 !important;
+}
+
+/* Callouts (key idea, common mistake, exam tip): a thin rule instead of a coloured box. */
+.print-area.print-compact .md-callout {
+  border: 0;
+  border-left: 2px solid var(--line-strong);
+  border-radius: 0;
+  background: none;
+  padding: 0 0 0 0.6em;
+}
+.print-area.print-compact .md-callout > p:first-child {
+  margin: 0;
+  font-size: 8pt;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.print-area.print-compact .md-callout > p:first-child svg {
+  display: none;
+}
+.print-area.print-compact .md-callout .prose-lesson > * + * {
+  margin-top: 0.3em;
+}
+
+/* Worked examples and reference-note answers: no cards, solution flows straight after. */
+.print-area.print-compact .md-example,
+.print-area.print-compact .md-answer {
+  border: 0;
+  border-left: 2px solid var(--line);
+  border-radius: 0;
+  background: none;
+  overflow: visible;
+}
+.print-area.print-compact .md-example > div,
+.print-area.print-compact .md-example details > div,
+.print-area.print-compact .md-answer > div {
+  border: 0;
+  background: none;
+  padding: 0 0 0 0.6em;
+}
+.print-area.print-compact .md-example .eyebrow {
+  margin: 0;
+  font-size: 8pt;
+}
+.print-area.print-compact .md-example summary,
+.print-area.print-compact .md-answer summary {
+  padding: 0.1em 0 0.1em 0.6em;
+  font-size: 8.5pt;
+}
+.print-area.no-examples .md-example {
+  display: none;
+}
+
+/* Figures: no frames, capped height so one diagram never eats half a page. */
+.print-area.print-compact .lesson-fig {
+  margin: 0.4em 0;
+}
+.print-area.print-compact .lesson-fig > div {
+  border: 0;
+  padding: 0;
+  background: none;
+}
+.print-area.print-compact .lesson-fig figcaption {
+  margin-top: 0.15em;
+  font-size: 8.5pt;
+}
+.print-area.print-compact .lesson-fig svg {
+  max-height: 6.5cm;
+  width: auto;
+  max-width: 100%;
+}
+.print-area.print-compact .prose-lesson img.lesson-figure,
+.print-area.print-compact .lesson-fig img {
+  max-height: 7cm;
+  width: auto;
+  max-width: 100%;
+  margin: 0.4em auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+/* Structure of the compact document. */
+.print-area.print-compact .pc-head {
+  margin-bottom: 0.6em;
+  padding-bottom: 0.3em;
+  border-bottom: 1.5px solid var(--ink);
+}
+.print-area.print-compact .pc-head h1 {
+  font-size: 14pt;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.print-area.print-compact .pc-head p {
+  font-size: 8.5pt;
+  color: var(--muted);
+}
+.print-area.print-compact .pc-pack {
+  margin: 1.2em 0 0.2em;
+  font-size: 8.5pt;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.print-area.print-compact .pc-topic {
+  margin: 1em 0 0.25em;
+  padding-bottom: 0.1em;
+  border-bottom: 1px solid var(--ink);
+  font-size: 12.5pt;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.print-area.print-compact .pc-source {
+  margin: 0.7em 0 0.1em;
+  font-size: 8pt;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.print-area.print-compact .pc-item {
+  margin: 0.75em 0 0.2em;
+  font-size: 11pt;
+  font-weight: 650;
+  line-height: 1.25;
+}
+.print-area.print-compact .pc-item small {
+  margin-left: 0.4em;
+  font-size: 8pt;
+  font-weight: 500;
+  color: var(--muted);
+}
+.print-area.print-compact .pc-label {
+  margin-top: 0.6em;
+  font-size: 8pt;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.print-area.print-compact .pc-table {
+  width: 100%;
+  margin-top: 0.15em;
+  border-collapse: collapse;
+  font-size: 9.5pt;
+}
+.print-area.print-compact .pc-table td {
+  padding: 0.12em 0.6em 0.12em 0;
+  border-bottom: 0.5pt solid var(--line);
+  vertical-align: top;
+}
+.print-area.print-compact .pc-table td:first-child {
+  width: 30%;
+  font-weight: 600;
+}
+.print-area.print-compact .pc-list {
+  margin-top: 0.15em;
+  padding-left: 1.15em;
+  list-style: disc;
+  font-size: 9.5pt;
+}
+.print-area.print-compact .pc-check {
+  font-size: 9.5pt;
+}
+.print-area.print-compact .pc-copy {
+  margin-top: 0.3em;
+  font-size: 7.5pt;
+  color: var(--muted);
+}
+
+@media print {
+  .print-area.print-compact .pc-section + .pc-section {
+    break-before: page;
+  }
+  .print-area.print-compact .pc-topic,
+  .print-area.print-compact .pc-item,
+  .print-area.print-compact .pc-source,
+  .print-area.print-compact .pc-label,
+  .print-area.print-compact .prose-lesson h2,
+  .print-area.print-compact .prose-lesson h3,
+  .print-area.print-compact .prose-lesson h4 {
+    break-after: avoid;
+  }
+  .print-area.print-compact p,
+  .print-area.print-compact li {
+    orphans: 2;
+    widows: 2;
+  }
+  .print-area.print-compact tr,
+  .print-area.print-compact .md-callout,
+  .print-area.print-compact .katex-display {
+    break-inside: avoid;
+  }
+  /* Solutions are opened before printing; the "Solution" toggle itself is not needed on paper. */
+  .print-area.print-compact summary {
+    display: none;
+  }
+}

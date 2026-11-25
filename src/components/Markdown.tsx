@@ -32,7 +32,7 @@ function textOf(node: ReactNode): string {
 function Callout({ tone, icon, title, children }: { tone: 'accent' | 'warn'; icon: 'bulb' | 'alert' | 'target'; title: string; children: ReactNode }) {
   const styles = tone === 'accent' ? 'border-accent/30 bg-accent-soft' : 'border-warn/30 bg-warn-soft';
   return (
-    <aside className={`rounded-xl border px-5 py-4 ${styles}`}>
+    <aside className={`md-callout rounded-xl border px-5 py-4 ${styles}`}>
       <p className={`mb-1.5 flex items-center gap-2 text-sm font-semibold ${tone === 'accent' ? 'text-accent' : 'text-warn'}`}>
         <Icon name={icon} size={16} />
         {title}
@@ -45,7 +45,7 @@ function Callout({ tone, icon, title, children }: { tone: 'accent' | 'warn'; ico
 function WorkedExample({ source }: { source: string }) {
   const [question, solution] = source.split(/\n---\n/);
   return (
-    <div className="overflow-hidden rounded-xl border border-line bg-card">
+    <div className="md-example overflow-hidden rounded-xl border border-line bg-card">
       <div className="border-b border-line px-5 py-4">
         <p className="eyebrow mb-1.5">Worked example</p>
         <div className="prose-lesson prose-tight">
@@ -71,7 +71,7 @@ function WorkedExample({ source }: { source: string }) {
 /** A collapsed answer (reference notes: "Answer/Explanation"). */
 function Answer({ source }: { source: string }) {
   return (
-    <details className="group overflow-hidden rounded-xl border border-line bg-card">
+    <details className="md-answer group overflow-hidden rounded-xl border border-line bg-card">
       <summary className="flex cursor-pointer list-none items-center gap-2 px-5 py-3 text-sm font-medium text-accent hover:bg-sunken [&::-webkit-details-marker]:hidden">
         <Icon name="chevronRight" size={16} className="transition-transform group-open:rotate-90" />
         <span className="group-open:hidden">Show answer</span>
