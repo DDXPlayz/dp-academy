@@ -84,6 +84,24 @@ main sequence → **red supergiant** (fuses successively heavier elements up to 
 
 Fusion stops at iron because iron has the highest binding energy per nucleon: fusing it would absorb energy, not release it.
 
+### How a star forms
+
+1. A cold cloud of gas and dust (a **nebula**), mainly hydrogen, begins to collapse under its own gravity.
+2. As it contracts, gravitational potential energy is converted into thermal energy, and the hot, dense centre becomes a **protostar**.
+3. When the core is hot enough (about 10⁷ K) for hydrogen to fuse into helium, the outward radiation and gas pressure balance gravity and the star settles onto the **main sequence**.
+
+### What stops the collapse at the end
+
+Once fusion stops, gravity squeezes the core until another kind of pressure can hold it up:
+
+- In a **white dwarf**, **electron degeneracy pressure** supports the core. This only works up to the **Chandrasekhar limit** of about **1.4 solar masses**.
+- A core above that limit collapses further into a **neutron star**, supported by **neutron degeneracy pressure**, up to the **Oppenheimer–Volkoff limit** of about 2–3 solar masses.
+- A core above that limit collapses to a **black hole**.
+
+```keyidea
+The limits apply to the mass of the remnant core, not to the star's original mass. A star of 5 solar masses still ends as a white dwarf because it loses most of its mass in its outer layers.
+```
+
 ```question
 hr-region
 ```

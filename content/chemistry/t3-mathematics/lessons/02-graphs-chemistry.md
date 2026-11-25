@@ -93,6 +93,17 @@ caption: Interpolation reads values within the range of the data; extrapolation 
 tangent-rate
 ```
 
+## Describing relationships
+
+- **Qualitative** data are descriptions (colour change, smell, precipitate formed); **quantitative** data are numbers with units.
+- Two variables are **directly proportional** if $y = kx$: the graph is a straight line through the origin, and doubling x doubles y.
+- They are **inversely proportional** if $y = k/x$: doubling x halves y, and a graph of y against 1/x is a straight line through the origin (for example, gas volume against pressure at constant temperature).
+- The **coefficient of determination, R²**, given by spreadsheet trend lines, shows how well the line fits the data: R² = 1 is a perfect fit, values near 0 mean almost no fit. It says nothing about cause and effect.
+
+```keyidea
+Approximation is useful when an effect is too small to matter: for example, treating the change in concentration of a weak acid as negligible when working out its pH, or ignoring the heat capacity of a polystyrene cup in calorimetry. Always say which approximation you made and why it is reasonable.
+```
+
 ## Summary
 
 - Label axes with units; draw best-fit lines/curves.

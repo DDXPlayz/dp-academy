@@ -69,6 +69,20 @@ $$
 
 Neutrinos and antineutrinos are almost massless, uncharged and interact extremely weakly with matter.
 
+### Deflection in electric and magnetic fields
+
+The three radiations can be told apart by how they bend in a field:
+
+- **Alpha** particles are positive (+2e) and heavy, so they are deflected only slightly, towards the negative plate.
+- **Beta-minus** particles are negative and very light, so they are deflected strongly, the opposite way to alpha. (Beta-plus particles bend the same way as alpha.)
+- **Gamma** rays are uncharged electromagnetic radiation, so they are **not** deflected at all.
+
+In a magnetic field the same pattern holds: alpha and beta curve in opposite directions (use the right-hand rule for the force on a moving charge), beta far more tightly, and gamma goes straight through.
+
+```keyidea
+Charge decides the direction of deflection; the charge-to-mass ratio decides how much. Beta particles have a far larger charge-to-mass ratio than alpha particles, so they bend much more.
+```
+
 ## Penetration and ionisation
 
 ```svg

@@ -116,6 +116,15 @@ src: chemistry/_iitian/ib-dp-chemistry-s2-2-7-covalent-network-structures-study-
 caption: Graphite consists of stacked layers; a single layer is graphene.
 ```
 
+**Fullerenes** are a fourth form of carbon. Buckminsterfullerene, C₆₀, is a hollow sphere of 60 carbon atoms arranged in hexagons and pentagons, like a football. Unlike diamond and graphite it is **molecular**: separate C₆₀ molecules are held together only by London forces, so it has a much lower melting point (it sublimes rather than melts, at roughly 500–600 °C) and dissolves in some non-polar solvents. Each carbon forms three bonds, but the electrons are not free to move between molecules, so solid C₆₀ is a poor conductor.
+
+| Allotrope | Bonds per C | Structure | Conducts? |
+|---|---|---|---|
+| Diamond | 4 | Giant 3D tetrahedral network | No |
+| Graphite | 3 | Layers held by London forces | Yes, along the layers |
+| Graphene | 3 | A single layer of graphite | Yes, very well |
+| C₆₀ fullerene | 3 | Separate spherical molecules | Poorly |
+
 ## Chromatography
 
 Components of a mixture separate according to their relative attraction to the **stationary phase** (e.g. paper) and the **mobile phase** (solvent). A component strongly attracted to the mobile phase travels further.

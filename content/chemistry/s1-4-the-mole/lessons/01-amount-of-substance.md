@@ -129,6 +129,30 @@ $$c = \frac{0.0500}{0.250} = 0.200\ \text{mol dm}^{-3}$$
 Using 250 instead of 0.250 for the volume gives an answer a thousand times too small. Convert cm³ to dm³ by dividing by 1000.
 ```
 
+### Dilution
+
+Adding water changes the volume but not the amount of solute, so
+
+$$c_1V_1 = c_2V_2$$
+
+```example
+What volume of 2.00 mol dm⁻³ hydrochloric acid is needed to make 250 cm³ of 0.100 mol dm⁻³ acid?
+---
+$$V_1 = \frac{c_2V_2}{c_1} = \frac{0.100 \times 250}{2.00} = 12.5\ \text{cm}^3$$
+
+Measure 12.5 cm³ of the concentrated acid with a pipette or burette, transfer it to a 250 cm³ volumetric flask and make up to the mark with distilled water.
+```
+
+### Other units of concentration
+
+Concentration can also be given as a mass per volume, in **g dm⁻³** ($= c \times M$), or for very dilute solutions and pollutants in **parts per million (ppm)**: the number of parts of solute in one million parts of solution, by mass. For dilute aqueous solutions, 1 ppm ≈ 1 mg dm⁻³.
+
+```example
+A water sample contains 0.0040 g of lead ions in 2.0 dm³. Express this in ppm.
+---
+0.0040 g in 2.0 dm³ is 2.0 mg dm⁻³, which is about **2.0 ppm** (2.0 dm³ of water has a mass of about 2.0 kg, and 0.0040 g / 2000 g × 10⁶ = 2.0).
+```
+
 ## Try it yourself
 
 ```question

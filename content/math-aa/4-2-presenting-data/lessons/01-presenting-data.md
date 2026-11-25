@@ -81,6 +81,18 @@ IQR = 10; upper fence $22 + 15 = 37$. Since $41 > 37$, it is an outlier: mark it
 cf-median
 ```
 
+## Comparing data sets
+
+When comparing two data sets, always compare **a measure of centre** (median or mean) **and a measure of spread** (IQR or standard deviation), and write the comparison in the context of the question.
+
+```example
+Class A test scores: median 62, IQR 18. Class B: median 70, IQR 9. Compare the two classes.
+---
+Class B scored higher on average (median 70 compared with 62). Class B's scores were also more consistent, since its interquartile range (9) is half that of class A (18).
+```
+
+Box plots drawn on the same scale are the quickest way to compare data sets visually. Use the median and IQR when there are outliers or the data are skewed, since they are not affected by extreme values.
+
 ## Summary
 
 - Histograms for continuous data.

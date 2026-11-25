@@ -107,6 +107,29 @@ Short-circuiting a cell (R ≈ 0) does not give infinite current — the current
 terminal-pd
 ```
 
+## Primary and secondary cells
+
+A **cell** converts chemical energy into electrical energy.
+
+- A **primary cell** (for example an alkaline AA battery) is used once: when its chemicals are used up it is thrown away.
+- A **secondary cell** (for example a lithium-ion phone battery or a lead–acid car battery) is **rechargeable**: driving a current through it in the opposite direction reverses the chemical reactions.
+
+The **capacity** of a cell is the total charge it can deliver, usually given in ampere-hours (A h) or milliampere-hours (mA h). A 3000 mA h cell could supply 3.0 A for one hour, or 0.30 A for ten hours.
+
+```keyidea
+The discharge graph of a cell (terminal p.d. against time) has three parts: a quick initial drop, a long flat region where the p.d. is almost constant, and a final rapid fall when the cell is nearly exhausted.
+```
+
+When a secondary cell is recharged, the charger must have a larger emf than the cell, so that current is pushed into the positive terminal.
+
+```example
+A phone battery has a capacity of 4000 mA h and an emf of 3.7 V. Estimate the energy it stores.
+---
+Charge: $Q = 4.000\ \text{A} \times 3600\ \text{s} = 1.44 \times 10^4\ \text{C}$.
+
+Energy: $E = Q\varepsilon = 1.44 \times 10^4 \times 3.7 \approx 5.3 \times 10^4\ \text{J}$, about 53 kJ.
+```
+
 ## Summary
 
 - A real cell = emf $\varepsilon$ in series with internal resistance $r$.

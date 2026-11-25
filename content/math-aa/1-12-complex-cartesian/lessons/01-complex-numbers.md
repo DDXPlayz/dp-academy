@@ -46,6 +46,22 @@ $(3 + 2i)(1 - 4i) = 3 - 12i + 2i - 8i^2 = 11 - 10i$.
 $\dfrac{(5 + i)(1 - i)}{(1 + i)(1 - i)} = \dfrac{5 - 5i + i - i^2}{2} = \dfrac{6 - 4i}{2} = 3 - 2i$.
 ```
 
+### Powers of i
+
+The powers of $i$ repeat in a cycle of four:
+
+$$i^1 = i, \quad i^2 = -1, \quad i^3 = -i, \quad i^4 = 1$$
+
+To simplify $i^n$, divide $n$ by 4 and use the remainder. For example $i^{23} = i^{20}\cdot i^3 = 1 \cdot (-i) = -i$.
+
+### Conjugates and division
+
+The **complex conjugate** of $z = a + bi$ is $z^* = a - bi$. Multiplying a number by its conjugate always gives a real number:
+
+$$zz^* = (a + bi)(a - bi) = a^2 + b^2$$
+
+That is why we divide by multiplying the top and bottom by the conjugate of the denominator, as in the example above. Also, $z + z^* = 2a$ is real, and the non-real roots of a polynomial with real coefficients always come in conjugate pairs.
+
 ## Modulus, argument and the Argand diagram
 
 ```keyidea

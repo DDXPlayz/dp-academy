@@ -83,6 +83,16 @@ How would you obtain pure, dry salt from a mixture of sand and salt?
 Add water and stir to dissolve the salt; filter off the sand; evaporate some water from the filtrate and leave it to crystallise; filter and dry the crystals.
 ```
 
+### Dissolving and recrystallisation
+
+When a solid dissolves, solvent molecules surround its particles and pull them into solution. This is **solvation** (called **hydration** when the solvent is water).
+
+**Recrystallisation** purifies a solid: dissolve the impure solid in the minimum volume of hot solvent, filter while hot to remove insoluble impurities, then let the solution cool slowly. The pure compound crystallises out, while the small amounts of soluble impurities stay dissolved. Filter off the crystals, wash with a little cold solvent and dry them.
+
+```keyidea
+Recrystallisation works because the compound is much more soluble in hot solvent than in cold, while the impurities are present in too small an amount to reach saturation.
+```
+
 ```question
 classify-matter
 ```

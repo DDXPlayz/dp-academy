@@ -100,6 +100,20 @@ $\dfrac{R}{R_\odot} = \sqrt{\dfrac{L}{L_\odot}}\left(\dfrac{T_\odot}{T}\right)^2
 parallax-distance
 ```
 
+## What starlight tells us
+
+Light from a star's hot interior has a continuous spectrum, but on its way out it passes through the cooler outer layers of the star. Atoms there absorb photons of exactly the energies that match their electron transitions, leaving dark **absorption lines** in the spectrum.
+
+- Each element absorbs its own set of wavelengths, so the absorption lines reveal the star's **chemical composition**.
+- The peak wavelength of the continuous spectrum gives the **surface temperature** by Wien's law, $\lambda_{\max} T = 2.9 \times 10^{-3}\ \text{m K}$.
+- A shift of all the lines towards longer wavelengths (redshift) or shorter ones (blueshift) shows the star is moving away from or towards us.
+
+Stars are sorted into **spectral classes** by temperature, from hottest to coolest: **O B A F G K M**. The Sun is a G star at about 5800 K.
+
+```keyidea
+Distances are measured in astronomical units, light-years or parsecs: 1 AU ≈ 1.5 × 10¹¹ m (the mean Earth–Sun distance), 1 ly ≈ 9.46 × 10¹⁵ m, and 1 pc ≈ 3.09 × 10¹⁶ m ≈ 3.26 ly.
+```
+
 ## Summary
 
 - Parallax: $d$ (pc) $= 1/p$ (arc-second), for nearby stars.

@@ -66,6 +66,30 @@ Expected winnings $= 10(0.1) + 3(0.2) = 1.6$. Expected gain $= 1.6 - 2 = -0.40$ 
 find-k
 ```
 
+## (HL) Variance and linear transformations
+
+The variance of a discrete random variable measures its spread:
+
+$$\text{Var}(X) = E\big((X - \mu)^2\big) = E(X^2) - \big(E(X)\big)^2, \qquad E(X^2) = \sum x^2 P(X = x)$$
+
+```mistake
+$E(X^2)$ is not the same as $\big(E(X)\big)^2$. Square each value first, then weight by the probabilities.
+```
+
+If every value is scaled and shifted, $Y = aX + b$:
+
+$$E(aX + b) = aE(X) + b, \qquad \text{Var}(aX + b) = a^2\,\text{Var}(X)$$
+
+Adding $b$ moves the distribution but does not change its spread; multiplying by $a$ multiplies the standard deviation by $|a|$.
+
+```example
+X takes the values 0, 1, 2 with probabilities 0.5, 0.3, 0.2. Find Var(X), and the mean and variance of Y = 10X − 4.
+---
+$E(X) = 0.3 + 0.4 = 0.7$. $E(X^2) = 0.3 + 0.8 = 1.1$. $\text{Var}(X) = 1.1 - 0.49 = 0.61$.
+
+$E(Y) = 10(0.7) - 4 = 3$, and $\text{Var}(Y) = 100 \times 0.61 = 61$.
+```
+
 ## Summary
 
 - Probabilities sum to 1.

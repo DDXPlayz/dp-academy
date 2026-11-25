@@ -102,6 +102,35 @@ $$\eta = \frac{441}{600} = 0.735 \approx 74\,\%$$
 The other 159 W heats the motor and its surroundings.
 ```
 
+## Energy density of fuels
+
+When we choose a fuel we care about how much energy it stores. Two measures are used:
+
+- **Specific energy** is the energy released per unit **mass**, in J kg⁻¹.
+- **Energy density** is the energy released per unit **volume**, in J m⁻³.
+
+$$\text{energy density} = \frac{E}{V} \qquad \text{specific energy} = \frac{E}{m}$$
+
+| Fuel | Specific energy / MJ kg⁻¹ | Notes |
+|---|---|---|
+| Wood | about 16 | bulky, low energy density |
+| Coal | about 24–30 | solid, easy to store |
+| Petrol (gasoline) | about 46 | liquid, very high energy density, easy to transport |
+| Hydrogen | about 140 | highest specific energy, but as a gas its energy density is low unless it is compressed or liquefied |
+| Uranium-235 (fission) | about 8 × 10⁷ | around a million times more than chemical fuels |
+
+```keyidea
+Specific energy tells you how heavy the fuel is for the energy you get; energy density tells you how much space it takes up. Vehicles and aircraft need fuels that score well on both.
+```
+
+```example
+A car uses 6.5 kg of petrol to travel 100 km. Petrol has a specific energy of 46 MJ kg⁻¹ and the engine is 25 % efficient. How much useful energy is delivered per 100 km?
+---
+Energy released: $6.5 \times 46 = 299\ \text{MJ}$.
+
+Useful energy: $0.25 \times 299 \approx 75\ \text{MJ}$. The other 224 MJ is dissipated, mostly as thermal energy in the exhaust and the cooling system.
+```
+
 ## Try it yourself
 
 ```question

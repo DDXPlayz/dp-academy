@@ -66,6 +66,28 @@ $P(x) = x^3 + kx^2 - 5x + 6$ has a factor $(x - 3)$. Find $k$ and factorise full
 $P(3) = 27 + 9k - 15 + 6 = 0 \Rightarrow k = -2$. Then $x^3 - 2x^2 - 5x + 6 = (x - 3)(x^2 + x - 2) = (x - 3)(x + 2)(x - 1)$.
 ```
 
+### Polynomial division
+
+Dividing a polynomial $P(x)$ by $(x - a)$ gives a quotient $Q(x)$ and a remainder $R$:
+
+$$P(x) = (x - a)\,Q(x) + R, \qquad R = P(a)$$
+
+Do the division by long division or by comparing coefficients.
+
+```example
+Divide $P(x) = 2x^3 - 3x^2 + 4x - 5$ by $(x - 2)$.
+---
+Write $2x^3 - 3x^2 + 4x - 5 = (x - 2)(2x^2 + bx + c) + R$.
+
+Comparing $x^2$: $-3 = b - 4$, so $b = 1$. Comparing $x$: $4 = c - 2b = c - 2$, so $c = 6$. Constant: $-5 = -2c + R = -12 + R$, so $R = 7$.
+
+$Q(x) = 2x^2 + x + 6$ and $R = 7$. Check: $P(2) = 16 - 12 + 8 - 5 = 7$. ✓
+```
+
+### How many roots?
+
+A polynomial of degree $n$ has exactly $n$ roots, counted with multiplicity, if complex roots are included (the **fundamental theorem of algebra**). If its coefficients are real, any non-real roots come in **conjugate pairs**, so a cubic with real coefficients always has at least one real root.
+
 ## Sum and product of roots
 
 For $a_nx^n + a_{n-1}x^{n-1} + \ldots + a_0 = 0$:

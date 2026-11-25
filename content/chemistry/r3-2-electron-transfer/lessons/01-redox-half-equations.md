@@ -108,6 +108,32 @@ caption: Magnesium displaces hydrogen from acid: Mg is oxidised to Mg²⁺ and H
 oxidising-agent
 ```
 
+## Redox titrations
+
+The amount of an oxidising or reducing agent can be found by titration, just as for acids and bases. Two common examples:
+
+**Manganate(VII) titrations.** Acidified potassium manganate(VII) oxidises Fe²⁺ (and other reducing agents):
+
+$$\text{MnO}_4^- + 8\text{H}^+ + 5\text{Fe}^{2+} \rightarrow \text{Mn}^{2+} + 5\text{Fe}^{3+} + 4\text{H}_2\text{O}$$
+
+MnO₄⁻ is deep purple and Mn²⁺ is almost colourless, so no indicator is needed: the end point is the first permanent pale pink colour.
+
+**Iodine–thiosulfate titrations.** An oxidising agent is first reacted with excess iodide ions, releasing iodine. The iodine is then titrated with sodium thiosulfate:
+
+$$\text{I}_2 + 2\text{S}_2\text{O}_3^{2-} \rightarrow 2\text{I}^- + \text{S}_4\text{O}_6^{2-}$$
+
+Starch is added near the end point; it turns blue-black with iodine, and the end point is when the blue-black colour disappears.
+
+```example
+25.0 cm³ of an Fe²⁺ solution needs 20.0 cm³ of 0.0200 mol dm⁻³ KMnO₄. Find [Fe²⁺].
+---
+$n(\text{MnO}_4^-) = 0.0200 \times 0.0200 = 4.00 \times 10^{-4}$ mol.
+
+$n(\text{Fe}^{2+}) = 5 \times 4.00 \times 10^{-4} = 2.00 \times 10^{-3}$ mol.
+
+$[\text{Fe}^{2+}] = \dfrac{2.00 \times 10^{-3}}{0.0250} = 0.0800\ \text{mol dm}^{-3}$
+```
+
 ## Summary
 
 - OIL RIG; oxidation state up = oxidised.

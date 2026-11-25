@@ -83,6 +83,15 @@ $54.2 - 21.6 = 32.6$ cm, uncertainty $0.1 + 0.1 = 0.2$ cm: $32.6 \pm 0.2$ cm.
 power-uncertainty
 ```
 
+## Reliability and validity
+
+- An experiment is **reliable** (repeatable and reproducible) if repeating it, or someone else doing it, gives results that agree closely. Repeats and averaging improve reliability and reveal anomalies.
+- An experiment is **valid** if it actually measures what it claims to, with the other variables controlled. A precise measurement of the wrong quantity is not valid.
+
+```keyidea
+Random errors affect precision and are reduced by repeating; systematic errors affect accuracy and are not reduced by repeating. Validity is about the design of the experiment: are you testing what you think you are testing?
+```
+
 ## Summary
 
 - Random errors → precision; systematic errors → accuracy.

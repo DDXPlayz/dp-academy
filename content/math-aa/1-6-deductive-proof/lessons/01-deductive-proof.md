@@ -63,6 +63,20 @@ An odd number is $2n + 1$. $(2n + 1)^2 = 4n^2 + 4n + 1 = 2(2n^2 + 2n) + 1$, whic
 proof-identity
 ```
 
+## Disproof by counterexample
+
+To show that a general statement is **false**, one example where it fails is enough. This is a **counterexample**.
+
+```example
+Prove that the statement "$n^2 + n + 41$ is prime for every positive integer $n$" is false.
+---
+Try $n = 40$: $40^2 + 40 + 41 = 1600 + 81 = 1681 = 41^2$, which is not prime. So the statement is false.
+```
+
+```keyidea
+Checking many examples can never prove a statement true for all cases (the expression above is prime for n = 1 to 39), but a single counterexample always proves it false.
+```
+
 ## Summary
 
 - Identity (≡) holds for all values; equation (=) for some.

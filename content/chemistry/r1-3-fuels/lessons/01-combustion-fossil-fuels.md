@@ -68,6 +68,20 @@ src: chemistry/_iitian/energy-from-fuelsr1-3-3-fossil-fuels-ib-dp-chemistry-stud
 caption: Natural gas, petroleum and coal are mainly carbon and hydrogen, with smaller amounts of sulfur, nitrogen and oxygen.
 ```
 
+Fossil fuels are **non-renewable**: they formed over millions of years from buried plant and animal remains and are being used far faster than they can form. Renewable sources (solar, wind, hydroelectric, biofuels) are replenished on a human timescale.
+
+The **carbon footprint** of an activity is the total amount of greenhouse gases it releases, expressed as the mass of CO₂ that would have the same warming effect.
+
+```example
+Which fuel releases the least CO₂ per kJ: methane (ΔH_c = −891 kJ mol⁻¹) or octane, C₈H₁₈ (ΔH_c = −5470 kJ mol⁻¹)?
+---
+Methane: 1 mol CO₂ per 891 kJ, so 1.12 × 10⁻³ mol CO₂ per kJ.
+
+Octane: 8 mol CO₂ per 5470 kJ, so 1.46 × 10⁻³ mol CO₂ per kJ.
+
+Methane releases less CO₂ for the same energy, because a larger fraction of its energy comes from forming water.
+```
+
 ## Climate change
 
 Burning fossil fuels releases carbon that was locked away for millions of years. CO₂ (and CH₄, H₂O) absorb infrared radiation emitted by the Earth, enhancing the greenhouse effect and raising the average global temperature, with effects on sea level, weather patterns and ecosystems.

@@ -95,6 +95,23 @@ $\overrightarrow{PQ} = (2, 3, 5)$, $\overrightarrow{PR} = (6, 9, 15) = 3\overrig
 magnitude
 ```
 
+## Proving geometric results with vectors
+
+Vectors turn geometry into algebra:
+
+- Two lines are **parallel** if one vector is a scalar multiple of the other: $\vec{AB} = k\vec{CD}$.
+- Three points A, B, C are **collinear** if $\vec{AB} = k\vec{AC}$ (parallel and sharing the point A).
+- The **midpoint** of AB has position vector $\tfrac12(\mathbf{a} + \mathbf{b})$.
+- A quadrilateral is a **parallelogram** if $\vec{AB} = \vec{DC}$.
+
+```example
+In triangle OAB, $\vec{OA} = \mathbf{a}$ and $\vec{OB} = \mathbf{b}$. M and N are the midpoints of OA and OB. Prove that MN is parallel to AB and half its length.
+---
+$\vec{MN} = \vec{ON} - \vec{OM} = \tfrac12\mathbf{b} - \tfrac12\mathbf{a} = \tfrac12(\mathbf{b} - \mathbf{a})$.
+
+$\vec{AB} = \mathbf{b} - \mathbf{a}$, so $\vec{MN} = \tfrac12\vec{AB}$: MN is parallel to AB and half its length.
+```
+
 ## Summary
 
 - Components; add/subtract/scale component-wise.

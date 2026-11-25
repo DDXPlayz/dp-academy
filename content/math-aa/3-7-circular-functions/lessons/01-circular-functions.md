@@ -61,6 +61,10 @@ Amplitude $= 4$; principal axis $d = 6$; $b = \dfrac{2\pi}{12} = \dfrac\pi6$. Hi
 period-find
 ```
 
+### Limits of a trigonometric model
+
+A sine or cosine model assumes the pattern repeats exactly, with the same amplitude and period for ever. Real data (tides, temperatures, daylight hours) only approximately follow this: the amplitude may change with the seasons, the period may drift, and the model should not be trusted far outside the range of the data used to build it.
+
 ## Summary
 
 - sin/cos period 2π; tan period π.

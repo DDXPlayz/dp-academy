@@ -83,6 +83,11 @@ HCl is fully ionised: [H⁺] = 0.0050; pH = −log(0.0050) = 2.30.
 [H⁺] = 10⁻³·⁴⁰ = 4.0 × 10⁻⁴ mol dm⁻³.
 ```
 
+### Measuring pH
+
+- **Universal indicator** (paper or solution) gives an approximate pH from its colour, usually to the nearest whole number.
+- A **pH meter** (a pH probe connected to a meter or data logger) gives a precise reading, often to 0.01. It must be calibrated first with buffer solutions of known pH, and rinsed with distilled water between samples.
+
 ## The ionic product of water
 
 Water ionises very slightly: $\text{H}_2\text{O} \rightleftharpoons \text{H}^+ + \text{OH}^-$.
