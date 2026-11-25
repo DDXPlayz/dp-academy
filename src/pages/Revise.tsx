@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { Link, NavLink, useParams, useSearchParams } from 'react-router-dom';
-import { allTopics, getSubject, getTopic, subjects, type Topic } from '../content';
+import { allTopics, getLesson, getSubject, getTopic, subjects, type Topic } from '../content';
 import { Page, PageHeader } from '../components/AppShell';
 import { FormulaSheet } from '../components/FormulaSheet';
 import { FormulaCard } from '../components/FormulaCard';
@@ -9,13 +9,13 @@ import { Icon } from '../components/Icon';
 import { Markdown } from '../components/Markdown';
 import { ProgressBar } from '../components/ProgressBar';
 import { pct, weakConcepts, weakTopics } from '../lib/stats';
-import { useStudyState } from '../store/progress';
+import { useProgress, useStudyState } from '../store/progress';
 
 const TABS = [
   { to: '/revise', label: 'Quick revision', end: true },
   { to: '/revise/flashcards', label: 'Flashcards' },
   { to: '/revise/formulas', label: 'Formula sheet' },
-  { to: '/revise/weak', label: 'Weak topics' },
+  { to: '/revise/weak', label: 'Weak & flagged' },
 ];
 
 function TopicPicker({ value, onChange, filter }: { value: string; onChange: (key: string) => void; filter: (t: Topic) => boolean }) {
@@ -158,11 +158,55 @@ function QuickRevision() {
   );
 }
 
+/** Lessons the student flagged "Revisit" (lesson page or Syllabus), newest first. */
+function FlaggedLessons() {
+  const revisit = useProgress((s) => s.revisit);
+  const setRevisit = useProgress((s) => s.setRevisit);
+  const lessons = Object.entries(revisit)
+    .filter(([, v]) => v.on)
+    .sort((a, b) => b[1].at - a[1].at)
+    .map(([k]) => getLesson(k))
+    .filter((l) => !!l);
+  if (!lessons.length) return null;
+  return (
+    <section>
+      <div className="mb-3 flex items-baseline justify-between">
+        <h2 className="font-semibold text-ink">Flagged to revisit</h2>
+        <Link to="/syllabus" className="text-sm text-accent hover:underline">
+          Open syllabus
+        </Link>
+      </div>
+      <ul className="card divide-y divide-line">
+        {lessons.map((l) => {
+          const t = getTopic(l.topicKey);
+          return (
+            <li key={l.key} className="flex items-center gap-3 px-4 py-3">
+              <Link to={l.href} className="min-w-0 flex-1 hover:text-accent">
+                <span className="block truncate font-medium text-ink">
+                  {l.meta.code ? <span className="mr-2 tabular-nums text-muted">{l.meta.code}</span> : null}
+                  {l.meta.title}
+                </span>
+                <span className="block truncate text-xs text-muted">
+                  {getSubject(l.subjectId)?.short} · {t?.code} {t?.title}
+                </span>
+              </Link>
+              <button type="button" className="btn-ghost shrink-0 text-sm" onClick={() => setRevisit(l.key, false)}>
+                <Icon name="check" size={14} /> Done
+              </button>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
+}
+
 function WeakTopics() {
   const state = useStudyState();
   const topics = weakTopics(state);
   const concepts = weakConcepts(state);
-  if (!topics.length && !concepts.length) {
+  const flagged = useProgress((s) => Object.values(s.revisit).some((v) => v.on));
+  if (!topics.length && !concepts.length && !flagged) {
     return (
       <div className="card p-8 text-center">
         <p className="font-medium text-ink">Nothing needs attention yet</p>
@@ -180,6 +224,7 @@ function WeakTopics() {
     .filter((g) => g.items.length);
   return (
     <div className="space-y-8">
+      <FlaggedLessons />
       {bySubject.length > 0 && (
         <section>
           <div className="mb-3 flex items-baseline justify-between">

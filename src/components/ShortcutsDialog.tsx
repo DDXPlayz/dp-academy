@@ -16,6 +16,7 @@ const GROUPS: { title: string; keys: [string, string][] }[] = [
     keys: [
       ['←  →', 'Previous / next lesson'],
       ['M', 'Mark complete (or not)'],
+      ['R', 'Flag to revisit (or not)'],
       ['N', 'Open notes'],
     ],
   },

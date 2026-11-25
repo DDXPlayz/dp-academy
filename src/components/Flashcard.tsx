@@ -44,7 +44,8 @@ export function Flashcard({ card, context, onGrade }: { card: Card; context?: st
           <section className={face} aria-hidden={flipped}>
             <div className="flex items-center justify-between">
               <span className="eyebrow">{context ?? 'Question'}</span>
-              <BookmarkButton id={card.key} kind="flashcard" />
+              {/* Definition/formula review cards ("review:…") come from lessons and have nothing to bookmark. */}
+              {!card.key.startsWith('review:') && <BookmarkButton id={card.key} kind="flashcard" />}
             </div>
             <div className="prose-lesson flex flex-1 items-center justify-center text-center text-xl font-medium text-ink md:text-2xl">
               <div>
