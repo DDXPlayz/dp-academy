@@ -68,6 +68,22 @@ function WorkedExample({ source }: { source: string }) {
   );
 }
 
+/** A collapsed answer (reference notes: "Answer/Explanation"). */
+function Answer({ source }: { source: string }) {
+  return (
+    <details className="group overflow-hidden rounded-xl border border-line bg-card">
+      <summary className="flex cursor-pointer list-none items-center gap-2 px-5 py-3 text-sm font-medium text-accent hover:bg-sunken [&::-webkit-details-marker]:hidden">
+        <Icon name="chevronRight" size={16} className="transition-transform group-open:rotate-90" />
+        <span className="group-open:hidden">Show answer</span>
+        <span className="hidden group-open:inline">Answer</span>
+      </summary>
+      <div className="prose-lesson prose-tight border-t border-line bg-sunken/40 px-5 py-4">
+        <Markdown>{source}</Markdown>
+      </div>
+    </details>
+  );
+}
+
 const EmbedContext = createContext<EmbedQuestion | undefined>(undefined);
 
 function EmbeddedQuestion({ id }: { id: string }) {
@@ -131,6 +147,15 @@ const components: Components = {
         );
       case 'example':
         return <WorkedExample source={src} />;
+      case 'answer':
+        return <Answer source={src} />;
+      case 'mathstack':
+        // One display equation that the source cropped line by line: stack the pieces tightly.
+        return (
+          <div className="math-stack">
+            <Markdown>{src.split('\n').join('\n\n')}</Markdown>
+          </div>
+        );
       case 'diagram': {
         const D = diagrams[src.trim()];
         return D ? <D /> : <p className="text-bad">Missing diagram “{src}”</p>;

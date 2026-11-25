@@ -47,6 +47,7 @@ const TYPES: Record<string, string> = {
   '.gif': 'image/gif',
   '.svg': 'image/svg+xml',
   '.pdf': 'application/pdf',
+  '.json': 'application/json; charset=utf-8', // reference notes under resources/extracted/_site
   '.html': 'text/html; charset=utf-8', // dev-only contact sheets under resources/extracted/_sheets
 };
 
@@ -89,6 +90,35 @@ function copyDir(src: string, dst: string, filter: (f: string) => boolean) {
   return n;
 }
 
+/** Copies a file unless an identical-size copy is already there (dist/ keeps them between builds). */
+function copyIfChanged(src: string, dst: string): boolean {
+  if (fs.existsSync(dst) && fs.statSync(dst).size === fs.statSync(src).size && fs.statSync(dst).mtimeMs >= fs.statSync(src).mtimeMs) return false;
+  fs.mkdirSync(path.dirname(dst), { recursive: true });
+  fs.copyFileSync(src, dst);
+  return true;
+}
+
+/**
+ * The Save My Exams / IITian reference notes built by scripts/build_reference_notes.py
+ * (resources/extracted/_site) and every image they use.
+ */
+function copyReferenceNotes(root: string, notesOut: string): string {
+  const site = path.join(root, NOTES_DIR, '_site');
+  const list = path.join(site, 'images.json');
+  if (!fs.existsSync(list)) return 'no reference notes (run scripts/build_reference_notes.py)';
+  const files = copyDir(site, path.join(notesOut, '_site'), (f) => f.endsWith('.json'));
+  let images = 0;
+  for (const url of JSON.parse(fs.readFileSync(list, 'utf8')) as string[]) {
+    const rel = url.replace(/^\/data\/notes\//, '');
+    const src = resolveInside(path.join(root, NOTES_DIR), rel);
+    const dst = resolveInside(notesOut, rel);
+    if (!src || !dst || !fs.existsSync(src)) continue;
+    copyIfChanged(src, dst);
+    images++;
+  }
+  return `${files} reference-note files with ${images} images`;
+}
+
 export function localResources(): Plugin {
   let root = process.cwd();
   let outDir = 'dist';
@@ -127,7 +157,7 @@ export function localResources(): Plugin {
           return;
         }
         res.setHeader('Content-Type', type);
-        res.setHeader('Cache-Control', 'max-age=3600');
+        res.setHeader('Cache-Control', type.startsWith('application/json') ? 'no-store' : 'max-age=3600');
         fs.createReadStream(full).pipe(res);
       });
     },
@@ -149,7 +179,8 @@ export function localResources(): Plugin {
         fs.copyFileSync(src, dst);
         figs++;
       }
-      this.info?.(`private data: ${bank.length} questions, ${imgs} images, ${papers} papers, ${figs} lesson diagrams`);
+      const notes = copyReferenceNotes(root, path.join(data, 'notes'));
+      this.info?.(`private data: ${bank.length} questions, ${imgs} images, ${papers} papers, ${figs} lesson diagrams, ${notes}`);
     },
   };
 }

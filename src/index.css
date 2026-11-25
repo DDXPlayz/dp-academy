@@ -332,3 +332,28 @@ html[data-text='lg'] .prose-lesson {
     text-decoration: none !important;
   }
 }
+
+/* Reference notes (Save My Exams / IITian): equations cropped line by line, stacked as one. */
+.prose-lesson .math-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+}
+.prose-lesson .math-stack > * {
+  margin: 0 !important;
+}
+.prose-lesson .math-stack img.lesson-math {
+  margin: 0;
+}
+.prose-lesson.reference-note h4 {
+  margin-top: 1.5rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+@media print {
+  .prose-lesson img,
+  .math-stack {
+    break-inside: avoid;
+  }
+}

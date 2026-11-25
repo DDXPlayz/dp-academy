@@ -19,6 +19,7 @@ const PrintNotes = lazy(() => import('./pages/PrintNotes'));
 const Revise = lazy(() => import('./pages/Revise'));
 const Bookmarks = lazy(() => import('./pages/Bookmarks'));
 const Settings = lazy(() => import('./pages/Settings'));
+const ReferenceNotes = lazy(() => import('./pages/ReferenceNotes'));
 
 const wrap = (el: React.ReactNode) => <Suspense fallback={<div className="min-h-[60vh]" />}>{el}</Suspense>;
 
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
       { path: '/subjects', element: wrap(<Subjects />) },
       { path: '/s/:subjectId', element: wrap(<SubjectPage />) },
       { path: '/s/:subjectId/:topicId', element: wrap(<TopicPage />) },
+      { path: '/s/:subjectId/:topicId/notes/:source', element: wrap(<ReferenceNotes />) },
       { path: '/s/:subjectId/:topicId/:lessonSlug', element: wrap(<LessonPage />) },
       { path: '/practice', element: wrap(<Practice />) },
       { path: '/bank', element: wrap(<QuestionBank />) },

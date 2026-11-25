@@ -301,6 +301,13 @@ repository and GitHub-triggered builds never contain them.
   question bank (`resources/questionbank-src/`) into Past papers questions.
 * `python -I -X utf8 scripts/extract_notes.py` extracts text and figures from
   the reference PDFs into `resources/extracted/` for reference while writing.
+* `python -I -X utf8 scripts/build_reference_notes.py` turns the extracted Save
+  My Exams and IITian Academy notes into the in-app reference notes
+  (`resources/extracted/_site/`): one reader page per topic and source
+  (`/s/<subject>/<topic>/notes/<sme|iitian>`), "Read it another way" links at
+  the end of each lesson pointing at the best-matching notes, and SME / IITian
+  options on the Print notes page. Re-run it after re-extracting; builds
+  without the folder simply hide these links.
 
 Plan and structure: [`docs/`](docs/content-plan.md).
 

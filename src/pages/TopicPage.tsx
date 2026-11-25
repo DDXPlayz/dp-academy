@@ -7,12 +7,14 @@ import { ProgressBar } from '../components/ProgressBar';
 import { relativeTime } from '../lib/dates';
 import { pct, topicStats } from '../lib/stats';
 import { useProgress, useStudyState } from '../store/progress';
+import { NOTE_SOURCES, useNotesIndex } from '../lib/referenceNotes';
 import NotFound from './NotFound';
 
 const DIFFICULTY = ['', 'Foundation', 'Standard', 'Challenging'];
 
 export default function TopicPage() {
   const { subjectId = '', topicId = '' } = useParams();
+  const notesIndex = useNotesIndex();
   const subject = getSubject(subjectId);
   const topic = getTopic(`${subjectId}/${topicId}`);
   const state = useStudyState();
@@ -152,6 +154,13 @@ export default function TopicPage() {
                 <span className="flex-1 text-sm font-medium text-ink">Past-paper questions</span>
                 <Icon name="chevronRight" size={16} className="text-muted" />
               </Link>
+              {NOTE_SOURCES.filter((s) => notesIndex?.topics[topic.key]?.[s.id]?.length).map((s) => (
+                <Link key={s.id} to={`${topic.href}/notes/${s.id}`} className="flex items-center gap-3 p-4 hover:bg-sunken/60">
+                  <Icon name="book" className="text-accent" />
+                  <span className="flex-1 text-sm font-medium text-ink">{s.name} notes</span>
+                  <span className="text-sm text-muted">{notesIndex?.topics[topic.key]?.[s.id]?.length}</span>
+                </Link>
+              ))}
             </div>
           </aside>
         </div>

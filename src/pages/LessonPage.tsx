@@ -8,6 +8,7 @@ import { Markdown, headingsOf } from '../components/Markdown';
 import { NotesPanel } from '../components/NotesPanel';
 import { ProgressBar } from '../components/ProgressBar';
 import { QuestionCard } from '../components/QuestionCard';
+import { ReferenceLinks } from '../components/ReferenceLinks';
 import { useProgress } from '../store/progress';
 import NotFound from './NotFound';
 
@@ -421,6 +422,7 @@ export default function LessonPage() {
                 )}
               </div>
             </div>
+            <ReferenceLinks lesson={lesson} topic={topic} />
             {topic.questions.length > 0 && (
               <Link
                 to={`/practice?topic=${encodeURIComponent(topic.key)}`}
