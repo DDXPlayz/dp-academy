@@ -91,3 +91,38 @@ export function useTopicNotes(topicKey: string, source: NoteSource): ReferenceNo
   }, [topicKey, source, key]);
   return state?.key === key ? state.notes : undefined;
 }
+
+/*
+ * The original Save My Exams PDFs, mapped to topics by scripts/map_sme_pdfs.py
+ * (resources/extracted/_site/pdfs.json). Served privately under /data/sme/<file>
+ * like the past papers; on a build without them the list is null and the
+ * links stay hidden.
+ */
+export type SmePdf = { file: string; title: string; page?: number; sections?: number };
+export type SmePdfIndex = Record<string, SmePdf[]>; // "physics/a1-kinematics" -> PDFs
+
+let pdfPromise: Promise<SmePdfIndex | null> | null = null;
+
+export function loadSmePdfs(): Promise<SmePdfIndex | null> {
+  pdfPromise ??= getJson<SmePdfIndex>(`${BASE}/pdfs.json`);
+  return pdfPromise;
+}
+
+/** URL of an original PDF; opens at the topic's first page when the PDF covers several topics. */
+export function smePdfUrl(pdf: SmePdf, withPage = true): string {
+  const url = `/data/sme/${pdf.file.split('/').map(encodeURIComponent).join('/')}`;
+  return withPage && pdf.page && pdf.page > 1 ? `${url}#page=${pdf.page}` : url;
+}
+
+/** The topic's original SME PDFs: undefined while loading, null when unavailable, [] when none. */
+export function useSmePdfs(topicKey: string): SmePdf[] | null | undefined {
+  const [index, setIndex] = useState<SmePdfIndex | null | undefined>(undefined);
+  useEffect(() => {
+    let live = true;
+    loadSmePdfs().then((i) => live && setIndex(i));
+    return () => {
+      live = false;
+    };
+  }, []);
+  return index === undefined || index === null ? index : (index[topicKey] ?? []);
+}

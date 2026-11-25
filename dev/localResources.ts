@@ -6,6 +6,8 @@
  *   /data/bank.json        every imported question (merged from resources/question-bank/*.json)
  *   /data/bank/<file>      diagrams referenced by those questions
  *   /data/papers/<path>    original paper PDFs, so a question can open its source page
+ *   /data/sme/<path>       original Save My Exams revision-note PDFs (resources/<subject folder>/...),
+ *                          listed per topic in resources/extracted/_site/pdfs.json (scripts/map_sme_pdfs.py)
  *
  * `vite` serves these from disk; `vite build` copies them into dist/ only when
  * the private folders exist on the machine running the build. The deployed
@@ -19,6 +21,8 @@ import type { Plugin } from 'vite';
 const BANK_DIR = 'resources/question-bank';
 const PAPERS_DIR = 'resources/past-papers';
 const NOTES_DIR = 'resources/extracted';
+/** Folders of resources/ whose PDFs may be served under /data/sme/ (nothing else in resources/ is). */
+const SME_PDF_DIRS = ['Physics HL 2025', 'Chemistry HL 2025', 'Maths AA HL'];
 
 /** Every diagram referenced by a ```figure block in the committed lessons. */
 export function referencedFigures(root: string): string[] {
@@ -61,6 +65,13 @@ export function resolveInside(base: string, rel: string | null): string | null {
   return full === root || full.startsWith(root + path.sep) ? full : null;
 }
 
+/** Full path of an original SME PDF (resources/-relative), or null when it is outside the allowed folders. */
+export function smePdfPath(root: string, rel: string | null): string | null {
+  const clean = rel?.replace(/\\/g, '/') ?? '';
+  if (!SME_PDF_DIRS.some((d) => clean.startsWith(d + '/')) || !clean.toLowerCase().endsWith('.pdf')) return null;
+  return resolveInside(path.join(root, 'resources'), clean);
+}
+
 export function mergedBank(root: string): unknown[] {
   const dir = path.join(root, BANK_DIR);
   if (!fs.existsSync(dir)) return [];
@@ -96,6 +107,25 @@ function copyIfChanged(src: string, dst: string): boolean {
   fs.mkdirSync(path.dirname(dst), { recursive: true });
   fs.copyFileSync(src, dst);
   return true;
+}
+
+/** The original SME PDFs mapped to topics (resources/extracted/_site/pdfs.json), copied as they are. */
+function copySmePdfs(root: string, smeOut: string): string {
+  const list = path.join(root, NOTES_DIR, '_site', 'pdfs.json');
+  if (!fs.existsSync(list)) return 'no SME PDFs (run scripts/map_sme_pdfs.py)';
+  const mapping = JSON.parse(fs.readFileSync(list, 'utf8')) as Record<string, { file: string }[]>;
+  const files = new Set(Object.values(mapping).flatMap((l) => l.map((e) => e.file)));
+  let n = 0;
+  let bytes = 0;
+  for (const rel of files) {
+    const src = smePdfPath(root, rel);
+    const dst = resolveInside(smeOut, rel);
+    if (!src || !dst || !fs.existsSync(src)) continue;
+    copyIfChanged(src, dst);
+    bytes += fs.statSync(src).size;
+    n++;
+  }
+  return `${n} SME PDFs (${Math.round(bytes / 1e6)} MB)`;
 }
 
 /**
@@ -148,8 +178,10 @@ export function localResources(): Plugin {
             ? [path.join(root, PAPERS_DIR), file.slice('/data/papers/'.length)]
             : file.startsWith('/data/notes/')
               ? [path.join(root, NOTES_DIR), file.slice('/data/notes/'.length)]
-              : [null, null];
-        const full = base ? resolveInside(base, rel) : null;
+              : file.startsWith('/data/sme/')
+                ? ['sme', file.slice('/data/sme/'.length)]
+                : [null, null];
+        const full = base === 'sme' ? smePdfPath(root, rel) : base ? resolveInside(base, rel) : null;
         const type = full ? TYPES[path.extname(full).toLowerCase()] : undefined;
         if (!full || !type || !fs.existsSync(full) || !fs.statSync(full).isFile()) {
           res.statusCode = 404;
@@ -180,7 +212,8 @@ export function localResources(): Plugin {
         figs++;
       }
       const notes = copyReferenceNotes(root, path.join(data, 'notes'));
-      this.info?.(`private data: ${bank.length} questions, ${imgs} images, ${papers} papers, ${figs} lesson diagrams, ${notes}`);
+      const sme = copySmePdfs(root, path.join(data, 'sme'));
+      this.info?.(`private data: ${bank.length} questions, ${imgs} images, ${papers} papers, ${figs} lesson diagrams, ${notes}, ${sme}`);
     },
   };
 }
