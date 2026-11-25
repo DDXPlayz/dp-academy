@@ -1,17 +1,15 @@
-import { useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import { Link, NavLink, useParams, useSearchParams } from 'react-router-dom';
-import { allTopics, getSubject, getTopic, subjects, type Flashcard as Card, type Topic } from '../content';
+import { allTopics, getSubject, getTopic, subjects, type Topic } from '../content';
 import { Page, PageHeader } from '../components/AppShell';
-import { Flashcard } from '../components/Flashcard';
 import { FormulaSheet } from '../components/FormulaSheet';
 import { FormulaCard } from '../components/FormulaCard';
+import { RevisionStudio } from '../components/RevisionStudio';
 import { Icon } from '../components/Icon';
 import { Markdown } from '../components/Markdown';
 import { ProgressBar } from '../components/ProgressBar';
-import { dueCards } from '../lib/recommend';
-import { isDue, isLearned } from '../lib/srs';
 import { pct, weakConcepts, weakTopics } from '../lib/stats';
-import { useProgress, useStudyState } from '../store/progress';
+import { useStudyState } from '../store/progress';
 
 const TABS = [
   { to: '/revise', label: 'Quick revision', end: true },
@@ -160,92 +158,6 @@ function QuickRevision() {
   );
 }
 
-function Flashcards() {
-  const [params, setParams] = useSearchParams();
-  const key = params.get('topic') ?? '';
-  const topic = getTopic(key);
-  const cards = useProgress((s) => s.cards);
-  const grade = useProgress((s) => s.gradeCard);
-  const state = useStudyState();
-
-  // The deck is fixed when the session starts; "again" sends a card to the back.
-  const initialDeck = useMemo((): Card[] => {
-    if (topic) {
-      const due = topic.flashcards.filter((c) => isDue(cards[c.key]));
-      return due.length ? due : topic.flashcards;
-    }
-    return dueCards(state, cards);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [key]);
-  const [queue, setQueue] = useState<Card[]>(initialDeck);
-  const [reviewed, setReviewed] = useState(0);
-  const [deckKey, setDeckKey] = useState(key);
-  if (deckKey !== key) {
-    setDeckKey(key);
-    setQueue(initialDeck);
-    setReviewed(0);
-  }
-
-  const withCards = (t: Topic) => t.flashcards.length > 0;
-  const card = queue[0];
-
-  return (
-    <div>
-      <TopicPicker value={key} onChange={(k) => setParams(k ? { topic: k } : {})} filter={withCards} />
-
-      {!card ? (
-        <div className="mt-8">
-          {reviewed > 0 ? (
-            <div className="card animate-rise p-8 text-center">
-              <Icon name="check" size={28} className="mx-auto text-good" />
-              <p className="mt-3 text-lg font-semibold text-ink">Deck done — {reviewed} reviews</p>
-              <p className="mt-1 text-sm text-muted">Cards will come back when they are due.</p>
-            </div>
-          ) : (
-            <p className="mb-6 text-ink-2">{key ? 'This topic has no flashcards yet.' : 'Nothing is due right now. Pick a topic to study its cards.'}</p>
-          )}
-          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {allTopics()
-              .filter(withCards)
-              .map((t) => {
-                const learned = t.flashcards.filter((c) => isLearned(cards[c.key])).length;
-                const due = t.flashcards.filter((c) => cards[c.key] && isDue(cards[c.key])).length;
-                return (
-                  <button key={t.key} type="button" onClick={() => setParams({ topic: t.key })} className="card card-hover p-4 text-left">
-                    <p className="text-xs text-muted">{getSubject(t.subjectId)!.short}</p>
-                    <p className="mt-1 font-medium text-ink">
-                      {t.code} {t.title}
-                    </p>
-                    <p className="mt-1 text-sm text-muted">
-                      {t.flashcards.length} cards · {learned} learned{due ? ` · ${due} due` : ''}
-                    </p>
-                    <ProgressBar value={learned / t.flashcards.length} size="sm" className="mt-3" label="Cards learned" />
-                  </button>
-                );
-              })}
-          </div>
-        </div>
-      ) : (
-        <div className="mx-auto mt-8 max-w-xl">
-          <div className="mb-3 flex justify-between text-sm text-muted">
-            <span>{topic ? topic.title : 'Due today'}</span>
-            <span>{queue.length} left</span>
-          </div>
-          <Flashcard
-            card={card}
-            context={`${getTopic(card.topicKey)!.code} · ${card.concept ?? getTopic(card.topicKey)!.title}`}
-            onGrade={(g) => {
-              grade(card.key, g);
-              setReviewed((n) => n + 1);
-              setQueue((q) => (g === 'again' ? [...q.slice(1), q[0]] : q.slice(1)));
-            }}
-          />
-        </div>
-      )}
-    </div>
-  );
-}
-
 function WeakTopics() {
   const state = useStudyState();
   const topics = weakTopics(state);
@@ -338,7 +250,7 @@ export default function Revise() {
           </NavLink>
         ))}
       </nav>
-      {tab === 'flashcards' ? <Flashcards /> : tab === 'formulas' ? <FormulaSheet /> : tab === 'weak' ? <WeakTopics /> : <QuickRevision />}
+      {tab === 'flashcards' ? <RevisionStudio /> : tab === 'formulas' ? <FormulaSheet /> : tab === 'weak' ? <WeakTopics /> : <QuickRevision />}
     </Page>
   );
 }

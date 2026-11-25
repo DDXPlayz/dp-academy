@@ -116,11 +116,55 @@ export const questionSchema = z.discriminatedUnion('type', [
   }),
 ]);
 
+/**
+ * What a flashcard tests. Optional: a card without a kind counts as a
+ * "concept" card. Revision sessions filter on these (see src/lib/revision.ts).
+ */
+export const CARD_KIND_IDS = [
+  'definition',
+  'formula',
+  'unit',
+  'graph',
+  'concept',
+  'distinction',
+  'misconception',
+  'method',
+  'derivation',
+  'application',
+  'reaction',
+  'trend',
+  'structure',
+  'condition',
+] as const;
+
+export type CardKind = (typeof CARD_KIND_IDS)[number];
+
+/** Every card kind with a human label, in display order. */
+export const CARD_KINDS: readonly { id: CardKind; label: string }[] = [
+  { id: 'definition', label: 'Definition' },
+  { id: 'formula', label: 'Formula' },
+  { id: 'unit', label: 'Unit' },
+  { id: 'graph', label: 'Graph' },
+  { id: 'concept', label: 'Concept' },
+  { id: 'distinction', label: 'Distinction' },
+  { id: 'misconception', label: 'Misconception' },
+  { id: 'method', label: 'Method' },
+  { id: 'derivation', label: 'Derivation' },
+  { id: 'application', label: 'Application' },
+  { id: 'reaction', label: 'Reaction' },
+  { id: 'trend', label: 'Trend' },
+  { id: 'structure', label: 'Structure' },
+  { id: 'condition', label: 'Condition' },
+];
+
+export const cardKindSchema = z.enum(CARD_KIND_IDS);
+
 export const flashcardSchema = z.object({
   id: slug,
   front: z.string(),
   back: z.string(),
   concept: z.string().optional(),
+  kind: cardKindSchema.optional(),
 });
 
 /** Papers per subject: 2025 sciences (1A multiple choice, 1B data-based, 2) and Math AA 2021 (1, 2, 3). */
