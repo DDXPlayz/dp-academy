@@ -1,0 +1,41 @@
+[
+ {
+  "id": "g-modulus-graphs-compare",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "2.16.1",
+  "concept": "Graphs of |f(x)|, f(|x|) and 1/f(x)",
+  "calculator": false,
+  "prompt": "Let $f(x)=x^{2}-4$.\n\n**(a)** Describe how the graph of $y=|f(x)|$ is obtained from $y=f(x)$. **[1]**\n\n**(b)** Describe how the graph of $y=f(|x|)$ is obtained from $y=f(x)$, and explain why it is the same as $y=f(x)$ in this case. **[1]**\n\n**(c)** For $y=\\dfrac{1}{f(x)}$, write down the vertical asymptotes and the coordinates of the local maximum. **[2]**",
+  "markscheme": "**(a)** Parts below the $x$-axis are reflected in the $x$-axis (here $-2<x<2$) **(A1)**\n\n**(b)** Keep the part for $x\\ge0$ and reflect it in the $y$-axis; $f$ is already even, so nothing changes **(A1)**\n\n**(c)** Zeros of $f$ become asymptotes: $x=-2$, $x=2$ **(A1)**; the minimum $(0,-4)$ of $f$ becomes a maximum $\\left(0,-\\tfrac14\\right)$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-modulus-equation",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "2.16.2",
+  "concept": "Modulus equations",
+  "calculator": false,
+  "prompt": "Solve $|2x-3|=x+1$.",
+  "markscheme": "Case 1: $2x-3=x+1\\Rightarrow x=4$ **(A1)**\n\nCase 2: $2x-3=-(x+1)\\Rightarrow x=\\tfrac23$ **(A1)**\n\nCheck: both give $x+1>0$ (a modulus cannot equal a negative number), so both are valid **(R1)**. $x=4$ or $x=\\tfrac23$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-modulus-inequality-squaring",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "2.16.2",
+  "concept": "Modulus inequalities",
+  "calculator": false,
+  "prompt": "Solve $|x-2|<|2x+1|$.",
+  "markscheme": "Both sides are non-negative, so squaring preserves the inequality **(R1)**:\n\n$x^{2}-4x+4<4x^{2}+4x+1\\Rightarrow3x^{2}+8x-3>0$ **(M1)(A1)**\n\n$(3x-1)(x+3)>0$: $x<-3$ or $x>\\tfrac13$ **(A2)**",
+  "source": "original"
+ }
+]

@@ -1,0 +1,74 @@
+[
+ {
+  "id": "g-grouped-mean-modal-class",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "4.3.2",
+  "concept": "Mean of grouped data and modal class",
+  "calculator": true,
+  "prompt": "The times, $t$ minutes, that 60 students took to complete a task are shown.\n\n| Time | $0<t\\le10$ | $10<t\\le20$ | $20<t\\le30$ | $30<t\\le40$ | $40<t\\le50$ |\n|---|---|---|---|---|---|\n| Frequency | 6 | 14 | 22 | 12 | 6 |\n\n**(a)** Write down the modal class. **[1]**\n\n**(b)** Estimate the mean time. **[2]**",
+  "markscheme": "**(a)** $20<t\\le30$ **(A1)**\n\n**(b)** Use midpoints $5,15,25,35,45$: $\\dfrac{30+210+550+420+270}{60}$ **(M1)** $\\approx24.7$ min **(A1)**\n\nIt is an *estimate* because the exact times within each class are unknown.",
+  "source": "original"
+ },
+ {
+  "id": "g-modal-class-meaning",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "4.3.3",
+  "concept": "Modal class",
+  "calculator": false,
+  "prompt": "Explain why the modal class of grouped data does not tell you the mode of the original data.",
+  "markscheme": "The modal class is the class with the highest frequency; the individual values inside it are unknown, and the most common single value could even lie in a different class **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-mean-median-outlier-choice",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "4.3.1",
+  "concept": "Measures of central tendency",
+  "calculator": false,
+  "prompt": "For the data $2,\\ 3,\\ 3,\\ 5,\\ 7,\\ 8,\\ 30$:\n\n**(a)** find the mean, median and mode; **[2]**\n\n**(b)** state which measure best represents a typical value, with a reason. **[1]**",
+  "markscheme": "**(a)** Mean $=\\dfrac{58}{7}\\approx8.29$, median $5$, mode $3$ **(A2)**\n\n**(b)** The median: the outlier 30 pulls the mean above six of the seven values, while the median is unaffected **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-standard-deviation-small-set",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "4.3.4",
+  "concept": "Standard deviation and variance",
+  "calculator": true,
+  "prompt": "Find the standard deviation and variance of $4,\\ 7,\\ 7,\\ 9,\\ 13$.",
+  "markscheme": "Mean $8$; squared deviations $16,1,1,1,25$, sum $44$ **(M1)**\n\nVariance $\\dfrac{44}{5}=8.8$; standard deviation $\\sqrt{8.8}\\approx2.97$ **(A1)**\n\n(IB uses the population standard deviation $\\sigma$, dividing by $n$; this is what the GDC labels $\\sigma_x$.)",
+  "source": "original"
+ },
+ {
+  "id": "g-effect-of-constant-changes",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "4.3.5",
+  "concept": "Effect of constant changes",
+  "calculator": false,
+  "prompt": "A data set has mean 8 and standard deviation 2.97. Each value is doubled and then 5 is added. Find the new mean, standard deviation and variance.",
+  "markscheme": "Mean: $2(8)+5=21$ **(A1)**\n\nStandard deviation: $2(2.97)=5.93$ — adding a constant shifts every value equally, so spread is unchanged by $+5$ **(A1)**\n\nVariance: $2^{2}\\times8.8=35.2$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-quartiles-discrete",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "4.3.6",
+  "concept": "Quartiles of discrete data",
+  "calculator": false,
+  "prompt": "Find the median and the interquartile range of $3,\\ 5,\\ 6,\\ 8,\\ 9,\\ 11,\\ 12,\\ 15$.",
+  "markscheme": "Median $=\\dfrac{8+9}{2}=8.5$ **(A1)**\n\n$Q_1$ = median of $3,5,6,8$ $=5.5$; $Q_3$ = median of $9,11,12,15$ $=11.5$ **(A1)**\n\nIQR $=6$ **(A1)**",
+  "source": "original"
+ }
+]

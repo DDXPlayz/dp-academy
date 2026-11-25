@@ -1,0 +1,75 @@
+[
+ {
+  "id": "g-standing-wave-formation",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "C.4.1",
+  "concept": "Formation of standing waves",
+  "prompt": "Explain how a standing wave forms on a string fixed at both ends, and state one way it differs from a travelling wave.",
+  "markscheme": "Waves reflected from the ends superpose with the incident waves: two identical waves travelling in opposite directions **(R1)**. A standing wave transfers no net energy along the string (or: has nodes and antinodes, with amplitude varying with position) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-phase-along-standing-wave",
+  "paper": "1A",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "C.4.2",
+  "concept": "Nodes, antinodes and phase",
+  "prompt": "Points P and Q lie on a standing wave, in adjacent loops (one node between them). What is their phase difference?",
+  "options": [
+   "0",
+   "$\\tfrac\\pi2$",
+   "$\\pi$",
+   "depends on their distance apart"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** All points between two adjacent nodes oscillate in phase; points in neighbouring loops oscillate in antiphase ($\\pi$ rad), whatever their amplitudes.",
+  "source": "original"
+ },
+ {
+  "id": "g-string-and-pipes",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "C.4.3",
+  "concept": "Standing waves in strings and pipes",
+  "prompt": "**(a)** A string 0.80 m long fixed at both ends carries waves at $240\\ \\text{m s}^{-1}$. Calculate the fundamental frequency and the frequency of the third harmonic. **[2]**\n\n**(b)** A pipe of length 0.34 m is closed at one end. Calculate its two lowest resonant frequencies. (Speed of sound $=340\\ \\text{m s}^{-1}$) **[2]**\n\n**(c)** State the lowest frequency if the pipe is open at both ends. **[1]**",
+  "markscheme": "**(a)** $\\lambda_1=2L=1.6$ m, $f_1=150$ Hz **(A1)**; $f_3=450$ Hz **(A1)**\n\n**(b)** Node at the closed end, antinode at the open end: $\\lambda_1=4L=1.36$ m, $f_1=250$ Hz **(A1)**; only odd harmonics, so next is 750 Hz **(A1)**\n\n**(c)** $\\lambda=2L$: 500 Hz **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-resonance-nature",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "C.4.4",
+  "concept": "Resonance",
+  "prompt": "Explain what is meant by resonance and give one example where it is useful.",
+  "markscheme": "When a system is driven at a frequency equal (or very close) to its natural frequency, energy is transferred most efficiently and the amplitude becomes maximum **(R1)**. Useful e.g. in musical instruments, microwave ovens, tuning a radio, MRI **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-damping-resonance-curve",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "C.4.5",
+  "concept": "Effect of damping on resonance",
+  "prompt": "Describe how increasing the damping of a driven oscillator changes its graph of amplitude against driving frequency.",
+  "markscheme": "The peak amplitude is lower and the peak is broader **(A1)**; the frequency of maximum amplitude moves slightly below the natural frequency **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-damping-types-suspension",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "C.4.6",
+  "concept": "Light, critical and heavy damping",
+  "prompt": "A car's suspension is designed to be critically damped. Describe light, critical and heavy damping, and explain why critical damping is chosen.",
+  "markscheme": "Light: oscillates with gradually decreasing amplitude; heavy: returns to equilibrium very slowly without oscillating **(A1)**; critical: returns to equilibrium in the shortest time without oscillating **(A1)**\n\nAfter a bump the car settles quickly without bouncing (comfort and road grip) **(R1)**",
+  "source": "original"
+ }
+]

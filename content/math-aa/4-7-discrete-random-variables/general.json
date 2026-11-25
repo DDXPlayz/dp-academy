@@ -1,0 +1,38 @@
+[
+ {
+  "id": "g-discrete-distribution-k",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "4.7.1",
+  "concept": "Discrete probability distributions",
+  "calculator": false,
+  "prompt": "$P(X=x)=kx$ for $x=1,2,3,4$.\n\n**(a)** Find $k$. **[1]**\n\n**(b)** Find $P(X\\ge3)$. **[1]**\n\n**(c)** Find $E(X)$. **[1]**",
+  "markscheme": "**(a)** Probabilities sum to 1: $10k=1$, $k=0.1$ **(A1)**\n\n**(b)** $0.3+0.4=0.7$ **(A1)**\n\n**(c)** $E(X)=0.1(1+4+9+16)=3$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-fair-game",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "4.7.3",
+  "concept": "Expected value: fair games",
+  "calculator": false,
+  "prompt": "A game costs \\$2 to play. A player wins \\$10 with probability 0.15, wins \\$5 with probability 0.1, and otherwise wins nothing. Determine whether the game is fair.",
+  "markscheme": "$E(\\text{winnings})=10(0.15)+5(0.1)=2$ **(M1)(A1)**\n\nExpected gain $=2-2=0$, so the game is fair **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-expected-value-meaning",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "4.7.2",
+  "concept": "Expected value",
+  "calculator": false,
+  "prompt": "For the score on a fair six-sided die, $E(X)=3.5$. Explain what this means, given that 3.5 can never be rolled.",
+  "markscheme": "It is the long-run mean: over many rolls the average score approaches 3.5 **(R1)**",
+  "source": "original"
+ }
+]

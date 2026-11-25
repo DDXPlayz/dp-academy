@@ -1,0 +1,28 @@
+[
+ {
+  "id": "g-system-unique",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "1.16.1",
+  "concept": "3×3 linear systems (unique solution)",
+  "calculator": true,
+  "prompt": "Solve the system\n$$\\begin{aligned}x+y+z&=6\\\\2x-y+z&=3\\\\x+2y-z&=2\\end{aligned}$$",
+  "markscheme": "Eliminate $z$: (1)+(3) gives $2x+3y=8$; (2)−(1) gives $x-2y=-3$ **(M1)(A1)**\n\nSolve: $x=2y-3\\Rightarrow 7y=14$, so $y=2$, $x=1$, $z=3$ **(A2)**\n\n(A GDC may be used; check by substituting into all three equations.)",
+  "source": "original"
+ },
+ {
+  "id": "g-system-parameter-cases",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 7,
+  "subtopic": "1.16.1",
+  "concept": "Unique, infinite or no solutions",
+  "calculator": false,
+  "prompt": "Consider the system\n$$\\begin{aligned}x+2y-z&=1\\\\2x+3y+z&=4\\\\3x+5y+kz&=m\\end{aligned}$$\n\n**(a)** Find the value of $k$ for which the system does not have a unique solution. **[2]**\n\n**(b)** For this value of $k$, find the value of $m$ for which the system has infinitely many solutions. **[2]**\n\n**(c)** For these values of $k$ and $m$, find the general solution. **[3]**",
+  "markscheme": "**(a)** Adding the first two equations gives $3x+5y+0z=5$ **(M1)**. The third equation's left side is a combination of the first two exactly when $k=0$ **(A1)** (equivalently, the determinant of the coefficients is zero).\n\n**(b)** Then the third equation must be $3x+5y=5$ to be consistent, so $m=5$ **(A1)**; if $m\\ne5$ the planes have no common point **(R1)**.\n\n**(c)** Let $z=t$: $x+2y=1+t$ and $2x+3y=4-t$ **(M1)**\n\n$y=3t-2$, $x=5-5t$ **(A1)**; general solution $(x,y,z)=(5-5t,\\ 3t-2,\\ t)$, $t\\in\\mathbb{R}$ — a line of intersection **(A1)**",
+  "source": "original"
+ }
+]

@@ -1,0 +1,41 @@
+[
+ {
+  "id": "g-scalar-product-definition",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "3.13.1",
+  "concept": "The scalar product",
+  "calculator": false,
+  "prompt": "**(a)** For $\\mathbf a=\\begin{pmatrix}1\\\\2\\\\2\\end{pmatrix}$ and $\\mathbf b=\\begin{pmatrix}4\\\\0\\\\-3\\end{pmatrix}$, find $\\mathbf a\\cdot\\mathbf b$. **[1]**\n\n**(b)** Explain why $\\mathbf a\\cdot\\mathbf a=|\\mathbf a|^{2}$. **[1]**",
+  "markscheme": "**(a)** $4+0-6=-2$ **(A1)**\n\n**(b)** $\\mathbf a\\cdot\\mathbf a=|\\mathbf a||\\mathbf a|\\cos0=|\\mathbf a|^{2}$ (equivalently $a_1^{2}+a_2^{2}+a_3^{2}$) **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-angle-between-vectors",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "3.13.2",
+  "concept": "Angle between two vectors",
+  "calculator": true,
+  "prompt": "Find the angle between $\\mathbf a=\\begin{pmatrix}1\\\\2\\\\2\\end{pmatrix}$ and $\\mathbf b=\\begin{pmatrix}4\\\\0\\\\-3\\end{pmatrix}$.",
+  "markscheme": "$|\\mathbf a|=3$, $|\\mathbf b|=5$ **(A1)**\n\n$\\cos\\theta=\\dfrac{-2}{15}$ **(M1)** $\\Rightarrow\\theta=97.7^{\\circ}$ **(A1)**\n\nA negative scalar product means the angle is obtuse.",
+  "source": "original"
+ },
+ {
+  "id": "g-perpendicular-vectors-k",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "3.13.3",
+  "concept": "Perpendicular vectors",
+  "calculator": false,
+  "prompt": "Find $k$ such that $\\begin{pmatrix}k\\\\2\\\\-1\\end{pmatrix}$ and $\\begin{pmatrix}3\\\\k\\\\4\\end{pmatrix}$ are perpendicular.",
+  "markscheme": "Perpendicular $\\iff$ scalar product zero: $3k+2k-4=0$ **(M1)**, $k=\\dfrac45$ **(A1)**",
+  "source": "original"
+ }
+]

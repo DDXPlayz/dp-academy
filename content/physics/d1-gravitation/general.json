@@ -1,0 +1,216 @@
+[
+ {
+  "id": "g-kepler-third-law",
+  "paper": "1A",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "D.1.1",
+  "concept": "Kepler's laws",
+  "prompt": "Planet X orbits a star at four times the orbital radius of planet Y. What is $\\dfrac{T_X}{T_Y}$?",
+  "options": [
+   "2",
+   "4",
+   "8",
+   "16"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** Kepler's third law: $T^{2}\\propto r^{3}$, so $T\\propto r^{3/2}=4^{3/2}=8$.",
+  "source": "original"
+ },
+ {
+  "id": "g-kepler-second-law",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "D.1.1",
+  "concept": "Kepler's second law",
+  "prompt": "State Kepler's second law and use it to explain where a comet on an elliptical orbit moves fastest.",
+  "markscheme": "The line joining a planet (or comet) to the Sun sweeps out equal areas in equal times **(A1)**; to sweep the same area when close to the Sun the comet must move faster, so it is fastest at its closest approach (perihelion) **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-earth-moon-force",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "D.1.2",
+  "concept": "Newton's law of gravitation",
+  "prompt": "Calculate the gravitational force between the Earth and the Moon. $G=6.67\\times10^{-11}\\ \\text{N m}^{2}\\,\\text{kg}^{-2}$; Earth: mass $5.97\\times10^{24}$ kg, radius $6.37\\times10^{6}$ m. Moon mass $7.35\\times10^{22}$ kg; Earth–Moon distance $3.84\\times10^{8}$ m.",
+  "markscheme": "$F=\\dfrac{Gm_1m_2}{r^{2}}=\\dfrac{6.67\\times10^{-11}\\times5.97\\times10^{24}\\times7.35\\times10^{22}}{(3.84\\times10^{8})^{2}}$ **(M1)** $=2.0\\times10^{20}$ N **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-point-mass-conditions",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "D.1.3",
+  "concept": "Treating extended bodies as point masses",
+  "prompt": "State two situations in which an extended body can be treated as a point mass when calculating gravitational forces.",
+  "markscheme": "When the body is spherically symmetric (outside it, it acts as if all its mass were at its centre) **(A1)**; when the separation is very large compared with the sizes of the bodies **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-at-iss",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "D.1.4",
+  "concept": "Gravitational field strength",
+  "prompt": "The International Space Station orbits 400 km above the Earth's surface. $G=6.67\\times10^{-11}\\ \\text{N m}^{2}\\,\\text{kg}^{-2}$; Earth: mass $5.97\\times10^{24}$ kg, radius $6.37\\times10^{6}$ m.\n\n**(a)** Calculate the gravitational field strength at this height. **[2]**\n\n**(b)** Explain why astronauts on board feel weightless even though $g$ is not zero. **[1]**",
+  "markscheme": "**(a)** $g=\\dfrac{GM}{r^{2}}$ with $r=6.77\\times10^{6}$ m **(M1)**: $g=8.7\\ \\text{N kg}^{-1}$ **(A1)**\n\n**(b)** The station and astronauts are in free fall together, accelerating at $g$; there is no normal contact force on the astronauts **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-gravitational-field-lines",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "D.1.5",
+  "concept": "Gravitational field lines",
+  "prompt": "Which statement about the gravitational field lines of an isolated planet is correct?",
+  "options": [
+   "They point radially outwards.",
+   "They point radially inwards and get further apart with distance.",
+   "They are evenly spaced at all distances.",
+   "They form closed loops."
+  ],
+  "answer": 1,
+  "markscheme": "**B.** Field lines show the direction of force on a small mass: radially inwards. They are closer together near the planet, where the field is stronger; close to the surface over a small region they are approximately parallel (uniform field).",
+  "source": "original"
+ },
+ {
+  "id": "g-gpe-meaning-negative",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "D.1.6",
+  "concept": "Gravitational potential energy of a system",
+  "prompt": "Explain why the gravitational potential energy of a satellite–Earth system is negative.",
+  "markscheme": "$E_p$ is defined as the work done to assemble the system from infinite separation, where $E_p=0$ **(R1)**; gravity is attractive, so the field does positive work as the bodies come together and external work done is negative — energy must be supplied to separate them again **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-satellite-ep",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "D.1.7",
+  "concept": "E_p = −Gm₁m₂/r",
+  "prompt": "Calculate the gravitational potential energy of a 1000 kg satellite at a distance of $7.0\\times10^{6}$ m from the Earth's centre. $G=6.67\\times10^{-11}\\ \\text{N m}^{2}\\,\\text{kg}^{-2}$; Earth: mass $5.97\\times10^{24}$ kg, radius $6.37\\times10^{6}$ m.",
+  "markscheme": "$E_p=-\\dfrac{GMm}{r}=-\\dfrac{6.67\\times10^{-11}\\times5.97\\times10^{24}\\times1000}{7.0\\times10^{6}}$ **(M1)** $=-5.7\\times10^{10}$ J **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-potential-at-surface",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "D.1.8",
+  "concept": "Gravitational potential",
+  "prompt": "What is the gravitational potential at the Earth's surface? (Earth mass $5.97\\times10^{24}$ kg, radius $6.37\\times10^{6}$ m, $G=6.67\\times10^{-11}$ SI units)",
+  "options": [
+   "$-6.3\\times10^{7}\\ \\text{J kg}^{-1}$",
+   "$+6.3\\times10^{7}\\ \\text{J kg}^{-1}$",
+   "$-9.8\\ \\text{J kg}^{-1}$",
+   "$-4.0\\times10^{14}\\ \\text{J kg}^{-1}$"
+  ],
+  "answer": 0,
+  "markscheme": "**A.** $V_g=-\\dfrac{GM}{R}=-6.3\\times10^{7}\\ \\text{J kg}^{-1}$ — negative because the zero is at infinity.",
+  "source": "original"
+ },
+ {
+  "id": "g-potential-gradient",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "D.1.9",
+  "concept": "g as the potential gradient",
+  "prompt": "Near the Earth's surface, $g=9.8\\ \\text{N kg}^{-1}$. Estimate the height difference between the equipotential surfaces $V_g=-62.5\\ \\text{MJ kg}^{-1}$ and $V_g=-62.4\\ \\text{MJ kg}^{-1}$.",
+  "markscheme": "$|g|=\\dfrac{\\Delta V_g}{\\Delta r}\\Rightarrow\\Delta r=\\dfrac{0.1\\times10^{6}}{9.8}$ **(M1)** $\\approx1.0\\times10^{4}$ m $=10$ km **(A1)** — the less negative surface is higher.",
+  "source": "original"
+ },
+ {
+  "id": "g-work-raise-satellite",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "D.1.10",
+  "concept": "W = mΔV_g",
+  "prompt": "Calculate the minimum work needed to move a 1000 kg satellite from the Earth's surface to a distance of $7.0\\times10^{6}$ m from the Earth's centre (ignoring its kinetic energy). $G=6.67\\times10^{-11}\\ \\text{N m}^{2}\\,\\text{kg}^{-2}$; Earth: mass $5.97\\times10^{24}$ kg, radius $6.37\\times10^{6}$ m.",
+  "markscheme": "$V_1=-\\dfrac{GM}{6.37\\times10^{6}}=-6.25\\times10^{7}$, $V_2=-\\dfrac{GM}{7.0\\times10^{6}}=-5.69\\times10^{7}\\ \\text{J kg}^{-1}$ **(A1)**\n\n$W=m\\Delta V_g=1000\\times5.6\\times10^{6}$ **(M1)** $=5.6\\times10^{9}$ J **(A1)**\n\nUsing $mg\\Delta h$ would overestimate this, because $g$ falls with height.",
+  "source": "original"
+ },
+ {
+  "id": "g-equipotentials-no-work",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "D.1.11",
+  "concept": "Gravitational equipotential surfaces",
+  "prompt": "How much work is done by the gravitational field when a mass moves along an equipotential surface?",
+  "options": [
+   "zero",
+   "mgh",
+   "it depends on the path",
+   "it depends on the speed"
+  ],
+  "answer": 0,
+  "markscheme": "**A.** $W=m\\Delta V_g$ and $\\Delta V_g=0$ on an equipotential, so no work is done.",
+  "source": "original"
+ },
+ {
+  "id": "g-equipotentials-vs-field-lines",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "D.1.12",
+  "concept": "Equipotentials and field lines",
+  "prompt": "Describe the relationship between gravitational field lines and equipotential surfaces around a planet, and how the spacing of equipotentials for equal steps of $V_g$ changes with distance.",
+  "markscheme": "Field lines are everywhere perpendicular to equipotential surfaces (concentric spheres) **(A1)**; for equal steps in $V_g$ the spheres get further apart with distance because the field (potential gradient) becomes weaker **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-escape-speed-earth",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "D.1.13",
+  "concept": "Escape speed",
+  "prompt": "**(a)** Show that the escape speed from the Earth's surface is about $11\\ \\text{km s}^{-1}$. $G=6.67\\times10^{-11}\\ \\text{N m}^{2}\\,\\text{kg}^{-2}$; Earth: mass $5.97\\times10^{24}$ kg, radius $6.37\\times10^{6}$ m. **[2]**\n\n**(b)** Explain why the escape speed does not depend on the mass of the projectile. **[1]**",
+  "markscheme": "**(a)** $\\tfrac12mv^{2}=\\dfrac{GMm}{R}\\Rightarrow v=\\sqrt{\\dfrac{2GM}{R}}$ **(M1)** $=1.1\\times10^{4}\\ \\text{m s}^{-1}$ **(A1)**\n\n**(b)** Both the kinetic energy and the potential energy needed are proportional to $m$, so it cancels **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-orbital-speed-geostationary",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "D.1.14",
+  "concept": "Orbital speed",
+  "prompt": "$G=6.67\\times10^{-11}\\ \\text{N m}^{2}\\,\\text{kg}^{-2}$; Earth: mass $5.97\\times10^{24}$ kg, radius $6.37\\times10^{6}$ m.\n\n**(a)** Calculate the orbital speed and period of a satellite 400 km above the surface. **[3]**\n\n**(b)** Calculate the orbital radius of a geostationary satellite (period $8.62\\times10^{4}$ s). **[2]**",
+  "markscheme": "**(a)** $r=6.77\\times10^{6}$ m; $v=\\sqrt{\\dfrac{GM}{r}}=7.7\\times10^{3}\\ \\text{m s}^{-1}$ **(M1)(A1)**; $T=\\dfrac{2\\pi r}{v}=5.5\\times10^{3}$ s (about 92 min) **(A1)**\n\n**(b)** $\\dfrac{GMm}{r^{2}}=\\dfrac{4\\pi^{2}mr}{T^{2}}\\Rightarrow r=\\left(\\dfrac{GMT^{2}}{4\\pi^{2}}\\right)^{1/3}$ **(M1)** $=4.2\\times10^{7}$ m **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-orbital-decay-drag",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "D.1.15",
+  "concept": "Effect of atmospheric drag on orbits",
+  "prompt": "A satellite in a low orbit experiences a small drag force from the upper atmosphere. Explain what happens to its orbital radius and its speed.",
+  "markscheme": "Drag removes mechanical energy, so the total energy $-\\dfrac{GMm}{2r}$ becomes more negative and the radius decreases **(R1)**\n\n$v=\\sqrt{\\dfrac{GM}{r}}$, so the speed **increases** as $r$ decreases **(A1)**; the loss of potential energy is twice the gain in kinetic energy, with the difference transferred to internal energy by drag **(R1)**",
+  "source": "original"
+ }
+]

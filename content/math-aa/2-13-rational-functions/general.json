@@ -1,0 +1,28 @@
+[
+ {
+  "id": "g-rational-quadratic-denominator",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "2.13.1",
+  "concept": "Rational functions with quadratic denominator",
+  "calculator": false,
+  "prompt": "Let $f(x)=\\dfrac{x+1}{x^{2}-x-6}$.\n\n**(a)** Write down the equations of all asymptotes. **[2]**\n\n**(b)** Find the intercepts with the axes. **[2]**",
+  "markscheme": "**(a)** $x^{2}-x-6=(x-3)(x+2)$: vertical asymptotes $x=3$ and $x=-2$ **(A1)**; the denominator has higher degree, so $y=0$ is the horizontal asymptote **(A1)**\n\n**(b)** $x$-intercept $(-1,0)$ **(A1)**; $y$-intercept $\\left(0,-\\tfrac16\\right)$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-rational-oblique-asymptote",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "2.13.1",
+  "concept": "Oblique asymptotes",
+  "calculator": false,
+  "prompt": "Let $g(x)=\\dfrac{x^{2}+1}{x-1}$.\n\n**(a)** Write $g(x)$ in the form $px+q+\\dfrac{r}{x-1}$. **[2]**\n\n**(b)** Hence write down the equations of the asymptotes of the graph of $g$. **[2]**",
+  "markscheme": "**(a)** $x^{2}+1=(x-1)(x+1)+2$ **(M1)**, so $g(x)=x+1+\\dfrac{2}{x-1}$ **(A1)**\n\n**(b)** Vertical $x=1$ **(A1)**; oblique $y=x+1$, since $\\dfrac{2}{x-1}\\to0$ as $x\\to\\pm\\infty$ **(A1)**",
+  "source": "original"
+ }
+]

@@ -1,0 +1,48 @@
+[
+ {
+  "id": "g-cross-product-compute",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "3.16.1",
+  "concept": "The vector product",
+  "calculator": false,
+  "prompt": "Find $\\begin{pmatrix}1\\\\2\\\\3\\end{pmatrix}\\times\\begin{pmatrix}4\\\\5\\\\6\\end{pmatrix}$ and verify that it is perpendicular to $\\begin{pmatrix}1\\\\2\\\\3\\end{pmatrix}$.",
+  "markscheme": "$\\begin{pmatrix}2\\cdot6-3\\cdot5\\\\3\\cdot4-1\\cdot6\\\\1\\cdot5-2\\cdot4\\end{pmatrix}=\\begin{pmatrix}-3\\\\6\\\\-3\\end{pmatrix}$ **(A1)**\n\n$(-3)(1)+(6)(2)+(-3)(3)=0$ ✓ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-cross-product-properties",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "3.16.2",
+  "concept": "Properties of the vector product",
+  "calculator": false,
+  "prompt": "Which statement is **false** for all non-zero vectors $\\mathbf v$ and $\\mathbf w$?",
+  "options": [
+   "$\\mathbf v\\times\\mathbf v=\\mathbf 0$",
+   "$\\mathbf v\\times\\mathbf w=\\mathbf w\\times\\mathbf v$",
+   "$(\\mathbf v\\times\\mathbf w)\\cdot\\mathbf v=0$",
+   "$\\mathbf v\\times\\mathbf w=\\mathbf 0\\iff\\mathbf v\\parallel\\mathbf w$"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** The vector product is anti-commutative: $\\mathbf w\\times\\mathbf v=-(\\mathbf v\\times\\mathbf w)$, so they are equal only when the product is $\\mathbf 0$ (parallel vectors) — not for all vectors. A, C and D are true: $\\mathbf v\\times\\mathbf v=\\mathbf 0$, the product is perpendicular to both, and it is zero exactly when the vectors are parallel.",
+  "source": "original"
+ },
+ {
+  "id": "g-triangle-area-cross",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "3.16.3",
+  "concept": "Area using |v × w|",
+  "calculator": false,
+  "prompt": "Find the area of the triangle with vertices $A(1,0,0)$, $B(0,2,0)$ and $C(0,0,3)$.",
+  "markscheme": "$\\overrightarrow{AB}=\\begin{pmatrix}-1\\\\2\\\\0\\end{pmatrix}$, $\\overrightarrow{AC}=\\begin{pmatrix}-1\\\\0\\\\3\\end{pmatrix}$, $\\overrightarrow{AB}\\times\\overrightarrow{AC}=\\begin{pmatrix}6\\\\3\\\\2\\end{pmatrix}$ **(M1)(A1)**\n\nArea $=\\tfrac12\\sqrt{36+9+4}=\\tfrac72$ **(A1)**\n\n$|\\mathbf v\\times\\mathbf w|$ is the area of the parallelogram spanned by $\\mathbf v$ and $\\mathbf w$; the triangle is half of it.",
+  "source": "original"
+ }
+]

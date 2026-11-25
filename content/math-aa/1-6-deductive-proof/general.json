@@ -1,0 +1,38 @@
+[
+ {
+  "id": "g-proof-three-consecutive",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "1.6.1",
+  "concept": "Simple deductive proof",
+  "calculator": false,
+  "prompt": "Prove that the sum of any three consecutive integers is divisible by 3.",
+  "markscheme": "Let the integers be $n,\\ n+1,\\ n+2$ where $n\\in\\mathbb{Z}$ **(M1)**\n\nSum $=3n+3$ **(A1)** $=3(n+1)$, and $n+1$ is an integer, so the sum is a multiple of 3 **(R1)**.\n\n**Common mistake:** checking a few examples such as $1+2+3$. Examples illustrate a statement; they do not prove it for all integers.",
+  "source": "original"
+ },
+ {
+  "id": "g-proof-lhs-rhs-fractions",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "1.6.1",
+  "concept": "LHS to RHS proof",
+  "calculator": false,
+  "prompt": "Show that $\\dfrac{1}{n}-\\dfrac{1}{n+1}\\equiv\\dfrac{1}{n(n+1)}$ for $n\\neq0,-1$.",
+  "markscheme": "Start from the left-hand side only:\n\n$\\text{LHS}=\\dfrac{(n+1)-n}{n(n+1)}$ **(M1)** $=\\dfrac{1}{n(n+1)}$ **(A1)** $=\\text{RHS}$ **(AG)**\n\nA clear layout works on one side until it becomes the other side; it does not do the same operation to both sides of an identity you are trying to prove **(R1 for valid layout)**.",
+  "source": "original"
+ },
+ {
+  "id": "g-identity-vs-equation",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "1.6.2",
+  "concept": "Equality vs identity",
+  "calculator": false,
+  "prompt": "Explain the difference between the statements\n$$x^{2}-1\\equiv(x-1)(x+1)\\qquad\\text{and}\\qquad x^{2}-1=3.$$",
+  "markscheme": "The first is an **identity**: it is true for every value of $x$. **(R1)**\n\nThe second is an **equation**: it is true only for particular values ($x=\\pm2$). **(R1)**",
+  "source": "original"
+ }
+]

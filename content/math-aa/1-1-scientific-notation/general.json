@@ -1,0 +1,26 @@
+[
+ {
+  "id": "g-standard-form-operations",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "1.1.1",
+  "concept": "Operations in standard form",
+  "calculator": false,
+  "prompt": "Without a calculator, find the value of\n$$\\frac{(3.6\\times10^{5})\\times(5\\times10^{-2})}{1.2\\times10^{7}}$$\ngiving your answer in the form $a\\times10^{k}$ where $1\\le a<10$ and $k\\in\\mathbb{Z}$.",
+  "markscheme": "**Answer:** $1.5\\times10^{-3}$\n\n- Numerator: $3.6\\times5=18$ and $10^{5}\\times10^{-2}=10^{3}$, so $18\\times10^{3}=1.8\\times10^{4}$ **(M1)**\n- Divide: $\\dfrac{1.8}{1.2}=1.5$ and $\\dfrac{10^{4}}{10^{7}}=10^{-3}$ **(M1)**\n- $1.5\\times10^{-3}$ **(A1)**\n\n**Common mistake:** leaving $18\\times10^{3}$ — that is not standard form because $a$ must satisfy $1\\le a<10$.",
+  "source": "original"
+ },
+ {
+  "id": "g-standard-form-light-time",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "1.1.1",
+  "concept": "Operations in standard form",
+  "calculator": true,
+  "prompt": "Light travels at $3.00\\times10^{8}\\ \\text{m s}^{-1}$. The mean distance from the Sun to the Earth is $1.50\\times10^{11}$ m.\n\n**(a)** Calculate the time light takes to travel from the Sun to the Earth, giving your answer in seconds in standard form. **[2]**\n\n**(b)** Convert your answer to minutes, correct to three significant figures. **[1]**",
+  "markscheme": "**(a)** $t=\\dfrac{1.50\\times10^{11}}{3.00\\times10^{8}}$ **(M1)** $=5.00\\times10^{2}$ s **(A1)**\n\n**(b)** $500\\div60=8.33$ minutes **(A1)**\n\nDividing the mantissas ($1.50/3.00=0.5$) and subtracting the powers ($11-8=3$) gives $0.5\\times10^{3}$, which must then be rewritten as $5.00\\times10^{2}$.",
+  "source": "original"
+ }
+]

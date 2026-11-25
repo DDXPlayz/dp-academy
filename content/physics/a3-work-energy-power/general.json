@@ -1,0 +1,155 @@
+[
+ {
+  "id": "g-conservation-energy-statement",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "A.3.1",
+  "concept": "Conservation of energy",
+  "prompt": "State the principle of conservation of energy, and explain why a ball dropped onto a hard floor does not bounce back to its original height.",
+  "markscheme": "Energy cannot be created or destroyed, only transferred or transformed; the total energy of an isolated system is constant **(A1)**\n\nOn impact some kinetic energy is transferred to internal energy (heating) and sound, so less is available to convert back to gravitational potential energy **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-work-lifting",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "A.3.2",
+  "concept": "Work as energy transfer",
+  "prompt": "A 20 kg box is lifted vertically through 1.5 m at constant speed. How much work is done by the lifting force? ($g=9.8\\ \\text{m s}^{-2}$)",
+  "options": [
+   "30 J",
+   "290 J",
+   "590 J",
+   "2900 J"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** At constant speed the lifting force equals the weight, 196 N; $W=Fs=196\\times1.5=294$ J $\\approx290$ J, transferred to gravitational potential energy.",
+  "source": "original"
+ },
+ {
+  "id": "g-sankey-lamp",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "A.3.3",
+  "concept": "Sankey diagrams",
+  "prompt": "A lamp takes in 60 W of electrical power and emits 12 W as visible light; the rest is thermal energy.\n\n**(a)** Calculate its efficiency. **[1]**\n\n**(b)** Describe the Sankey diagram for the lamp. **[2]**",
+  "markscheme": "**(a)** $\\dfrac{12}{60}=0.20$ (20%) **(A1)**\n\n**(b)** An input arrow of width representing 60 W splits into a useful light arrow one-fifth of the width (12 W) continuing forward **(A1)**, and a wasted thermal arrow four-fifths of the width (48 W) bending away **(A1)**. Widths are proportional to power.",
+  "source": "original"
+ },
+ {
+  "id": "g-work-angle-sled",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "A.3.4",
+  "concept": "W = Fs cos θ",
+  "prompt": "A sled is pulled 30 m along level ground by a rope with tension 80 N at $25^{\\circ}$ above the horizontal.\n\n**(a)** Calculate the work done by the tension. **[2]**\n\n**(b)** State the work done on the sled by the normal force, with a reason. **[1]**",
+  "markscheme": "**(a)** $W=Fs\\cos\\theta=80\\times30\\times\\cos25^{\\circ}$ **(M1)** $=2.2\\times10^{3}$ J **(A1)**\n\n**(b)** Zero: the normal force is perpendicular to the displacement ($\\cos90^{\\circ}=0$) **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-work-energy-theorem-car",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "A.3.5",
+  "concept": "Work by the resultant force",
+  "prompt": "A 1200 kg car accelerates from $10\\ \\text{m s}^{-1}$ to $20\\ \\text{m s}^{-1}$ over 150 m on level ground. Calculate the average resultant force on the car.",
+  "markscheme": "Work by resultant force = change in kinetic energy: $\\Delta E_k=\\tfrac12(1200)(20^{2}-10^{2})=1.8\\times10^{5}$ J **(M1)(A1)**\n\n$F=\\dfrac{1.8\\times10^{5}}{150}=1.2\\times10^{3}$ N **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-mechanical-energy-components",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "A.3.6",
+  "concept": "Mechanical energy",
+  "prompt": "A child on a trampoline is momentarily at rest at the lowest point, with the trampoline fully stretched. Their mechanical energy at this instant is stored mainly as:",
+  "options": [
+   "kinetic energy",
+   "gravitational potential energy",
+   "elastic potential energy",
+   "internal energy"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** At rest, $E_k=0$; at the lowest point the gravitational potential energy is at its minimum, and the stretched trampoline stores elastic potential energy. Mechanical energy = $E_k+E_p+E_H$.",
+  "source": "original"
+ },
+ {
+  "id": "g-roller-coaster-speed",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "A.3.7",
+  "concept": "Conservation of mechanical energy",
+  "prompt": "A roller-coaster car starts from rest at a height of 20 m and runs down a frictionless track. Take $g=9.8\\ \\text{m s}^{-2}$.\n\n**(a)** Calculate its speed at a height of 8.0 m. **[2]**\n\n**(b)** Explain why the answer does not depend on the shape of the track or the mass of the car. **[1]**",
+  "markscheme": "**(a)** $mg\\Delta h=\\tfrac12mv^{2}\\Rightarrow v=\\sqrt{2\\times9.8\\times12}$ **(M1)** $=15\\ \\text{m s}^{-1}$ **(A1)**\n\n**(b)** With no resistive forces, mechanical energy is conserved; only the change in height matters, and $m$ cancels from both sides **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-spring-launcher-height",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "A.3.8",
+  "concept": "Elastic and gravitational potential energy",
+  "prompt": "A spring with $k=400\\ \\text{N m}^{-1}$ is compressed by 0.10 m and used to launch a 0.050 kg ball vertically upwards. Ignoring air resistance and the spring's mass, calculate the height the ball rises above its launch point. Take $g=9.8\\ \\text{m s}^{-2}$.",
+  "markscheme": "$E_H=\\tfrac12k(\\Delta x)^{2}=\\tfrac12(400)(0.10)^{2}=2.0$ J **(A1)**\n\n$mgh=2.0\\Rightarrow h=\\dfrac{2.0}{0.050\\times9.8}$ **(M1)** $=4.1$ m **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-ke-same-momentum",
+  "paper": "1A",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "A.3.8",
+  "concept": "E_k = p²/2m",
+  "prompt": "A truck and a bicycle have the same momentum. The truck's mass is 100 times the bicycle's. What is $\\dfrac{E_k(\\text{bicycle})}{E_k(\\text{truck})}$?",
+  "options": [
+   "0.01",
+   "1",
+   "10",
+   "100"
+  ],
+  "answer": 3,
+  "markscheme": "**D.** $E_k=\\dfrac{p^{2}}{2m}$: with equal $p$, kinetic energy is inversely proportional to mass, so the bicycle has 100 times the kinetic energy.",
+  "source": "original"
+ },
+ {
+  "id": "g-power-lift-and-car",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "A.3.9",
+  "concept": "Power P = Fv",
+  "prompt": "**(a)** A motor lifts a 50 kg load at a constant $0.80\\ \\text{m s}^{-1}$. Calculate the useful power output. **[2]**\n\n**(b)** A car travels at a constant $30\\ \\text{m s}^{-1}$ against total resistive forces of 800 N. Calculate the power developed by the engine. **[2]**\n\nTake $g=9.8\\ \\text{m s}^{-2}$.",
+  "markscheme": "**(a)** $F=mg=490$ N at constant speed; $P=Fv=490\\times0.80$ **(M1)** $=390$ W **(A1)**\n\n**(b)** Constant velocity, so driving force $=800$ N **(M1)**; $P=800\\times30=2.4\\times10^{4}$ W **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-efficiency-motor",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "A.3.10",
+  "concept": "Efficiency",
+  "prompt": "An electric motor takes 500 W of electrical power and lifts a 50 kg mass through 6.0 m in 8.0 s at constant speed. Calculate the efficiency of the motor. Take $g=9.8\\ \\text{m s}^{-2}$.",
+  "markscheme": "Useful power $=\\dfrac{mgh}{t}=\\dfrac{50\\times9.8\\times6.0}{8.0}=368$ W **(M1)(A1)**\n\n$\\eta=\\dfrac{368}{500}=0.74$ (74%) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-fuel-energy-density",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "A.3.11",
+  "concept": "Energy density of fuels",
+  "prompt": "A car needs 180 MJ of stored energy for a journey. Petrol stores about 46 MJ per kilogram; a lithium-ion battery stores about 0.90 MJ per kilogram.\n\n**(a)** Calculate the mass of each needed to store 180 MJ. **[2]**\n\n**(b)** Suggest why electric cars are nonetheless competitive. **[1]**",
+  "markscheme": "**(a)** Petrol: $\\dfrac{180}{46}=3.9$ kg; battery: $\\dfrac{180}{0.90}=200$ kg **(A1)(A1)**\n\n**(b)** Electric motors are far more efficient (about 90% vs about 25–30% for a petrol engine), so less stored energy is needed for the same journey; energy can also be recovered in braking **(R1)**\n\n(Energy per unit mass is often called specific energy; energy per unit volume is energy density. Both matter for vehicles.)",
+  "source": "original"
+ }
+]

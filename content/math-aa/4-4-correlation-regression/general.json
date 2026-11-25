@@ -1,0 +1,74 @@
+[
+ {
+  "id": "g-correlation-not-causation",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "4.4.1",
+  "concept": "Linear correlation",
+  "calculator": false,
+  "prompt": "Across many towns, ice-cream sales and the number of drownings show a strong positive correlation. Explain why this does not show that eating ice cream causes drowning.",
+  "markscheme": "Correlation measures association, not cause **(R1)**; both are likely driven by a third variable — hot weather increases both ice-cream sales and swimming **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-pearson-r",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "4.4.2",
+  "concept": "Pearson's correlation coefficient",
+  "calculator": true,
+  "prompt": "The hours of revision, $x$, and test scores, $y$, of five students are:\n\n| $x$ | 2 | 4 | 5 | 7 | 8 |\n|---|---|---|---|---|---|\n| $y$ | 52 | 60 | 63 | 72 | 78 |\n\n**(a)** Find Pearson's product-moment correlation coefficient $r$. **[2]**\n\n**(b)** Interpret its value. **[1]**",
+  "markscheme": "**(a)** $r=0.996$ (GDC) **(A2)**\n\n**(b)** Very strong positive linear correlation: more revision is associated with higher scores **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-mean-point-line-by-eye",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "4.4.3",
+  "concept": "Line of best fit through the mean point",
+  "calculator": false,
+  "prompt": "The hours of revision, $x$, and test scores, $y$, of five students are:\n\n| $x$ | 2 | 4 | 5 | 7 | 8 |\n|---|---|---|---|---|---|\n| $y$ | 52 | 60 | 63 | 72 | 78 |\n\nFind the mean point and explain its role when drawing a line of best fit by eye.",
+  "markscheme": "$(\\bar x,\\bar y)=(5.2,\\ 65)$ **(A1)**; a line of best fit should pass through the mean point, with points roughly balanced on either side **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-regression-y-on-x",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 5,
+  "subtopic": "4.4.4",
+  "concept": "Regression line of y on x",
+  "calculator": true,
+  "prompt": "The hours of revision, $x$, and test scores, $y$, of five students are:\n\n| $x$ | 2 | 4 | 5 | 7 | 8 |\n|---|---|---|---|---|---|\n| $y$ | 52 | 60 | 63 | 72 | 78 |\n\n**(a)** Find the equation of the regression line of $y$ on $x$. **[2]**\n\n**(b)** Interpret the gradient and the $y$-intercept in context. **[2]**\n\n**(c)** Use the line to predict the score of a student who revised for 6 hours. **[1]**",
+  "markscheme": "**(a)** $y=4.25x+42.9$ (GDC) **(A2)**\n\n**(b)** Gradient: each extra hour of revision is associated with about 4.25 more marks **(A1)**; intercept: predicted score with no revision, about 43 (an extrapolation, so treat with caution) **(A1)**\n\n**(c)** $4.25(6)+42.9\\approx68$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-regression-extrapolation",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "4.4.5",
+  "concept": "Predictions from a regression line",
+  "calculator": false,
+  "prompt": "The hours of revision, $x$, and test scores, $y$, of five students are:\n\n| $x$ | 2 | 4 | 5 | 7 | 8 |\n|---|---|---|---|---|---|\n| $y$ | 52 | 60 | 63 | 72 | 78 |\n\nThe regression line is $y=4.25x+42.9$. Explain why it would be unwise to use it to predict the score of a student who revised for 20 hours.",
+  "markscheme": "$x=20$ lies far outside the data range $2\\le x\\le8$ (extrapolation) **(R1)**; the linear trend may not continue — the prediction $128$ even exceeds the maximum possible score **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-interpret-a-b",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "4.4.6",
+  "concept": "Meaning of a and b in y = ax + b",
+  "calculator": false,
+  "prompt": "A model for the price $y$ (in \\$1000s) of a used car of age $x$ years is $y=-1.8x+24$. Interpret the values $-1.8$ and $24$.",
+  "markscheme": "$-1.8$: the price falls by about \\$1800 for each additional year of age **(A1)**; $24$: the predicted price of a new car (age 0) is about \\$24 000 **(A1)**",
+  "source": "original"
+ }
+]

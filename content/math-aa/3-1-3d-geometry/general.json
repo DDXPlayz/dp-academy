@@ -1,0 +1,50 @@
+[
+ {
+  "id": "g-3d-distance-midpoint",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "3.1.1",
+  "concept": "Distance and midpoint in 3D",
+  "calculator": false,
+  "prompt": "Let $A(1,-2,3)$ and $B(5,2,-1)$.\n\n**(a)** Find the exact distance $AB$. **[2]**\n\n**(b)** Find the midpoint of $AB$. **[1]**",
+  "markscheme": "**(a)** $AB=\\sqrt{4^{2}+4^{2}+(-4)^{2}}$ **(M1)** $=\\sqrt{48}=4\\sqrt3$ **(A1)**\n\n**(b)** $\\left(\\tfrac{1+5}{2},\\tfrac{-2+2}{2},\\tfrac{3-1}{2}\\right)=(3,0,1)$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-cone-volume-surface",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "3.1.2",
+  "concept": "Volume and surface area of a cone",
+  "calculator": true,
+  "prompt": "A solid right cone has base radius 5 cm and height 12 cm.\n\n**(a)** Find its volume. **[1]**\n\n**(b)** Find its slant height and total surface area. **[3]**",
+  "markscheme": "**(a)** $V=\\tfrac13\\pi(5)^{2}(12)=100\\pi\\approx314\\ \\text{cm}^{3}$ **(A1)**\n\n**(b)** $l=\\sqrt{5^{2}+12^{2}}=13$ cm **(A1)**; $A=\\pi rl+\\pi r^{2}=65\\pi+25\\pi$ **(M1)** $=90\\pi\\approx283\\ \\text{cm}^{2}$ **(A1)**\n\n**Common mistake:** using the vertical height $12$ instead of the slant height in $\\pi rl$.",
+  "source": "original"
+ },
+ {
+  "id": "g-composite-solid",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "3.1.2",
+  "concept": "Combinations of solids",
+  "calculator": true,
+  "prompt": "An ornament is made from a solid right cone of radius 3 cm and height 10 cm, with a solid hemisphere of radius 3 cm on its base.\n\n**(a)** Find the volume of the ornament. **[2]**\n\n**(b)** Find its total outer surface area. **[3]**",
+  "markscheme": "**(a)** $\\tfrac13\\pi(9)(10)+\\tfrac23\\pi(27)=30\\pi+18\\pi$ **(M1)** $=48\\pi\\approx151\\ \\text{cm}^{3}$ **(A1)**\n\n**(b)** Slant height $l=\\sqrt{109}$ **(A1)**; curved cone $\\pi(3)\\sqrt{109}$ plus curved hemisphere $2\\pi(3)^{2}$ **(M1)** $\\approx155\\ \\text{cm}^{2}$ **(A1)**\n\nThe circular base faces are joined, so they are **not** part of the outer surface.",
+  "source": "original"
+ },
+ {
+  "id": "g-angle-line-plane-cuboid",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "3.1.3",
+  "concept": "Angle between a line and a plane",
+  "calculator": true,
+  "prompt": "A cuboid $ABCDEFGH$ has base $ABCD$ with $AB=6$ cm, $BC=4$ cm, and height $CG=3$ cm. Find the angle between the diagonal $AG$ and the base $ABCD$.",
+  "markscheme": "The projection of $AG$ onto the base is $AC=\\sqrt{6^{2}+4^{2}}=\\sqrt{52}$ **(M1)(A1)**\n\n$\\tan\\theta=\\dfrac{3}{\\sqrt{52}}\\Rightarrow\\theta\\approx22.6^{\\circ}$ **(A1)**\n\nThe angle with a plane is measured to the line's projection on the plane, not to any line in it.",
+  "source": "original"
+ }
+]

@@ -1,0 +1,50 @@
+[
+ {
+  "id": "g-right-triangle-ladder",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "3.2.1",
+  "concept": "Right-angled trigonometry",
+  "calculator": true,
+  "prompt": "A 5.0 m ladder leans against a vertical wall, making an angle of $70^{\\circ}$ with the horizontal ground. Find how far up the wall it reaches.",
+  "markscheme": "$h=5\\sin70^{\\circ}$ **(M1)** $=4.70$ m **(A1)**\n\nThe wall height is opposite the $70^{\\circ}$ angle and the ladder is the hypotenuse, so use sine.",
+  "source": "original"
+ },
+ {
+  "id": "g-sine-rule-side",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "3.2.2",
+  "concept": "The sine rule",
+  "calculator": true,
+  "prompt": "In triangle $ABC$, $A=40^{\\circ}$, $B=65^{\\circ}$ and $a=12$ cm. Find $b$.",
+  "markscheme": "$\\dfrac{b}{\\sin65^{\\circ}}=\\dfrac{12}{\\sin40^{\\circ}}$ **(M1)** $\\Rightarrow b=16.9$ cm **(A1)**\n\nUse the sine rule when you know a side and its opposite angle.",
+  "source": "original"
+ },
+ {
+  "id": "g-cosine-rule-side-angle",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "3.2.3",
+  "concept": "The cosine rule",
+  "calculator": true,
+  "prompt": "**(a)** In triangle $PQR$, $p=7$, $q=9$ and $R=50^{\\circ}$. Find $r$. **[2]**\n\n**(b)** A triangle has sides 5 cm, 7 cm and 10 cm. Find its largest angle. **[2]**",
+  "markscheme": "**(a)** $r^{2}=49+81-2(7)(9)\\cos50^{\\circ}$ **(M1)** $\\Rightarrow r=7.00$ **(A1)**\n\n**(b)** The largest angle is opposite the longest side: $\\cos\\theta=\\dfrac{25+49-100}{2(5)(7)}=-\\dfrac{26}{70}$ **(M1)**, $\\theta=112^{\\circ}$ **(A1)**\n\nA negative cosine signals an obtuse angle — the cosine rule handles this automatically, unlike the sine rule.",
+  "source": "original"
+ },
+ {
+  "id": "g-triangle-area-two-angles",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "3.2.4",
+  "concept": "Area of a triangle ½ab sin C",
+  "calculator": true,
+  "prompt": "**(a)** Find the area of a triangle with sides 8 cm and 11 cm and included angle $35^{\\circ}$. **[1]**\n\n**(b)** A different triangle has sides 8 cm and 11 cm and area $30\\ \\text{cm}^{2}$. Find the possible sizes of the included angle. **[3]**",
+  "markscheme": "**(a)** $\\tfrac12(8)(11)\\sin35^{\\circ}=25.2\\ \\text{cm}^{2}$ **(A1)**\n\n**(b)** $\\tfrac12(8)(11)\\sin C=30\\Rightarrow\\sin C=\\dfrac{60}{88}$ **(M1)**\n\n$C=43.0^{\\circ}$ **(A1)** or $C=180^{\\circ}-43.0^{\\circ}=137^{\\circ}$ **(A1)**\n\nBoth are valid because $\\sin C=\\sin(180^{\\circ}-C)$.",
+  "source": "original"
+ }
+]

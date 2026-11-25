@@ -1,0 +1,257 @@
+[
+ {
+  "id": "g-newton-third-law-pair",
+  "paper": "1A",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "A.2.1",
+  "concept": "Newton's third law",
+  "prompt": "A book rests on a table. The Newton's third law partner of the book's weight is the:",
+  "options": [
+   "normal force of the table on the book",
+   "normal force of the book on the table",
+   "friction force on the book",
+   "gravitational force of the book on the Earth"
+  ],
+  "answer": 3,
+  "markscheme": "**D.** Third-law pairs are the same type of force acting on *different* bodies. The weight is the Earth's gravitational pull on the book, so its partner is the book's gravitational pull on the Earth. The normal force also acts on the book, so it is not the partner (it balances the weight by Newton's *first* law).",
+  "source": "original"
+ },
+ {
+  "id": "g-rocket-in-space",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "A.2.2",
+  "concept": "Forces as interactions",
+  "prompt": "Explain, in terms of forces as interactions, how a rocket can accelerate in empty space where there is nothing to push against.",
+  "markscheme": "The rocket pushes exhaust gas backwards (exerts a force on the gas) **(A1)**; by Newton's third law the gas exerts an equal and opposite force forwards on the rocket, so the interaction is between rocket and gas, not rocket and surroundings **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-fbd-pulled-box-friction",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "A.2.4",
+  "concept": "Free-body diagram analysis",
+  "prompt": "A 12 kg box is pulled across a rough horizontal floor by a rope at $30^{\\circ}$ above the horizontal. The tension is 50 N and the coefficient of dynamic friction is 0.25. Take $g=9.8\\ \\text{m s}^{-2}$.\n\n**(a)** Draw a free-body diagram for the box. **[1]**\n\n**(b)** Calculate the normal force. **[2]**\n\n**(c)** Calculate the acceleration of the box. **[2]**",
+  "markscheme": "**(a)** Weight down, normal force up, tension at $30^{\\circ}$ above horizontal, friction opposing motion **(A1)**\n\n**(b)** Vertically: $F_N+50\\sin30^{\\circ}=12\\times9.8$ **(M1)**, $F_N=92.6$ N **(A1)**\n\n**(c)** $F_f=0.25\\times92.6=23.2$ N; $a=\\dfrac{50\\cos30^{\\circ}-23.2}{12}$ **(M1)** $=1.7\\ \\text{m s}^{-2}$ **(A1)**\n\n**Common mistake:** taking $F_N=mg$. The rope's upward component reduces the normal force and hence the friction.",
+  "source": "original"
+ },
+ {
+  "id": "g-fbd-hanging-lamp",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "A.2.3",
+  "concept": "Free-body diagrams",
+  "prompt": "A lamp hangs at rest from a single vertical cable. Which forces belong on the free-body diagram **of the lamp**?",
+  "options": [
+   "Weight only",
+   "Weight and tension in the cable",
+   "Weight, tension and the lamp's pull on the cable",
+   "Tension and the lamp's pull on the Earth"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** A free-body diagram shows only forces acting **on** the chosen body: its weight and the tension pulling up on it. The lamp's pull on the cable and on the Earth act on other bodies.",
+  "source": "original"
+ },
+ {
+  "id": "g-incline-static-friction",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "A.2.5",
+  "concept": "Static friction on an incline",
+  "prompt": "A 2.0 kg block rests on a plane inclined at $25^{\\circ}$. The coefficient of static friction is 0.50. Take $g=9.8\\ \\text{m s}^{-2}$.\n\n**(a)** Show that the block does not slide. **[2]**\n\n**(b)** Calculate the friction force acting on the block. **[2]**",
+  "markscheme": "**(a)** It stays at rest if the required friction $mg\\sin\\theta\\le\\mu_sF_N=\\mu_smg\\cos\\theta$, i.e. $\\tan\\theta\\le\\mu_s$ **(M1)**; $\\tan25^{\\circ}=0.47<0.50$ ✓ **(A1)**\n\n**(b)** Friction balances the component of weight down the slope: $2.0\\times9.8\\times\\sin25^{\\circ}=8.3$ N **(M1)(A1)**\n\n**Common mistake:** answering $\\mu_sF_N=8.9$ N. $F_f\\le\\mu_sF_N$ — static friction only rises as high as needed.",
+  "source": "original"
+ },
+ {
+  "id": "g-stokes-terminal-speed",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "A.2.5",
+  "concept": "Viscous drag and buoyancy",
+  "prompt": "A steel sphere of radius 1.0 mm falls through glycerol. Density of steel $=7800\\ \\text{kg m}^{-3}$, density of glycerol $=1260\\ \\text{kg m}^{-3}$, viscosity of glycerol $=1.41$ Pa s. Take $g=9.8\\ \\text{m s}^{-2}$.\n\n**(a)** Identify the three forces on the sphere at terminal speed. **[1]**\n\n**(b)** Calculate the terminal speed. **[4]**",
+  "markscheme": "**(a)** Weight (down), buoyancy and viscous drag (both up) **(A1)**\n\n**(b)** $mg=F_b+F_d$: $\\rho_sVg=\\rho_fVg+6\\pi\\eta rv$ **(M1)(A1)**\n\n$V=\\tfrac43\\pi r^{3}=4.19\\times10^{-9}\\ \\text{m}^{3}$ **(A1)**\n\n$v=\\dfrac{(\\rho_s-\\rho_f)Vg}{6\\pi\\eta r}=\\dfrac{6540\\times4.19\\times10^{-9}\\times9.8}{6\\pi\\times1.41\\times1.0\\times10^{-3}}=1.0\\times10^{-2}\\ \\text{m s}^{-1}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-hooke-spring",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "A.2.5",
+  "concept": "Hooke's law",
+  "prompt": "A spring of spring constant $200\\ \\text{N m}^{-1}$ hangs vertically. A 0.50 kg mass is attached. What is the extension? ($g=9.8\\ \\text{m s}^{-2}$)",
+  "options": [
+   "1.0 cm",
+   "2.5 cm",
+   "4.9 cm",
+   "25 cm"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** At equilibrium $kx=mg$: $x=\\dfrac{4.9}{200}=0.0245$ m $\\approx2.5$ cm.",
+  "source": "original"
+ },
+ {
+  "id": "g-buoyancy-submerged",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "A.2.5",
+  "concept": "Buoyancy",
+  "prompt": "A sealed container of volume $2.0\\times10^{-3}\\ \\text{m}^{3}$ is held completely under water (density $1000\\ \\text{kg m}^{-3}$). Calculate the buoyancy force on it. Take $g=9.8\\ \\text{m s}^{-2}$.",
+  "markscheme": "$F_b=\\rho Vg=1000\\times2.0\\times10^{-3}\\times9.8$ **(M1)** $=19.6$ N **(A1)** — $V$ is the volume of fluid **displaced**, which here equals the container's volume.",
+  "source": "original"
+ },
+ {
+  "id": "g-weight-vs-mass-moon",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "A.2.6",
+  "concept": "Gravitational force (weight)",
+  "prompt": "An astronaut of mass 80 kg goes to the Moon, where $g=1.6\\ \\text{N kg}^{-1}$. Which is correct?",
+  "options": [
+   "mass 80 kg, weight 128 N",
+   "mass 13 kg, weight 128 N",
+   "mass 80 kg, weight 784 N",
+   "mass 13 kg, weight 80 N"
+  ],
+  "answer": 0,
+  "markscheme": "**A.** Mass (amount of matter, inertia) is unchanged; weight $F_g=mg=80\\times1.6=128$ N on the Moon.",
+  "source": "original"
+ },
+ {
+  "id": "g-perfectly-inelastic-trolleys",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "A.2.7",
+  "concept": "Conservation of momentum",
+  "prompt": "A 2.0 kg trolley moving at $3.0\\ \\text{m s}^{-1}$ collides with a stationary 1.0 kg trolley and they stick together.\n\n**(a)** Calculate their common velocity. **[2]**\n\n**(b)** Show that kinetic energy is not conserved. **[2]**",
+  "markscheme": "**(a)** $2.0\\times3.0=3.0v$ **(M1)**, $v=2.0\\ \\text{m s}^{-1}$ **(A1)**\n\n**(b)** Before: $\\tfrac12(2.0)(3.0)^{2}=9.0$ J; after: $\\tfrac12(3.0)(2.0)^{2}=6.0$ J **(M1)**; 3.0 J transferred to internal energy/sound, so the collision is inelastic **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-impulse-force-time-graph",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "A.2.8",
+  "concept": "Impulse from a force–time graph",
+  "prompt": "A 0.20 kg ball at rest is struck. The force on it rises linearly from 0 to 400 N and falls linearly back to 0 over a total contact time of 0.050 s.\n\n**(a)** Determine the impulse on the ball. **[2]**\n\n**(b)** Calculate the speed of the ball after the impact. **[1]**",
+  "markscheme": "**(a)** Impulse = area under the $F$–$t$ graph $=\\tfrac12\\times0.050\\times400$ **(M1)** $=10$ N s **(A1)**\n\n**(b)** $v=\\dfrac{J}{m}=50\\ \\text{m s}^{-1}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-rebound-change-momentum",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "A.2.9",
+  "concept": "Impulse equals change in momentum",
+  "prompt": "A 0.15 kg ball hits a wall at $20\\ \\text{m s}^{-1}$ and rebounds along the same line at $15\\ \\text{m s}^{-1}$. The contact time is 0.010 s. Calculate the average force exerted by the wall on the ball.",
+  "markscheme": "Taking the rebound direction as positive: $\\Delta p=0.15(15-(-20))=5.25$ N s **(M1)(A1)**\n\n$F=\\dfrac{\\Delta p}{\\Delta t}=525$ N $\\approx530$ N, directed away from the wall **(A1)**\n\n**Common mistake:** $\\Delta p=0.15(20-15)$. Reversing direction means the velocities add.",
+  "source": "original"
+ },
+ {
+  "id": "g-variable-mass-conveyor",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "A.2.10",
+  "concept": "F = Δp/Δt with changing mass",
+  "prompt": "Sand falls vertically onto a horizontal conveyor belt at a rate of $5.0\\ \\text{kg s}^{-1}$. The belt moves at a constant $2.0\\ \\text{m s}^{-1}$.\n\n**(a)** Explain why $F=ma$ cannot be used to find the extra force needed to keep the belt moving. **[1]**\n\n**(b)** Calculate this force. **[2]**",
+  "markscheme": "**(a)** The belt's speed is constant ($a=0$) but its mass is increasing; $F=ma$ assumes constant mass **(R1)**\n\n**(b)** $F=\\dfrac{\\Delta p}{\\Delta t}=v\\dfrac{\\Delta m}{\\Delta t}=2.0\\times5.0$ **(M1)** $=10$ N **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-elastic-equal-masses",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "A.2.11",
+  "concept": "Elastic and inelastic collisions",
+  "prompt": "A ball of mass $m$ moving at $u$ collides elastically and head-on with an identical ball at rest. Show that the first ball stops and the second moves off at $u$.",
+  "markscheme": "Momentum: $mu=mv_1+mv_2\\Rightarrow u=v_1+v_2$ **(M1)**\n\nKinetic energy (elastic): $u^{2}=v_1^{2}+v_2^{2}$ **(M1)**\n\nSquaring the first: $u^{2}=v_1^{2}+2v_1v_2+v_2^{2}$, so $v_1v_2=0$ **(A1)**; $v_2=0$ would mean no collision, so $v_1=0$, $v_2=u$ **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-explosion-shell",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "A.2.12",
+  "concept": "Explosions",
+  "prompt": "A 3.0 kg object at rest explodes into two pieces. A 1.0 kg piece moves off at $30\\ \\text{m s}^{-1}$.\n\n**(a)** Calculate the velocity of the other piece. **[2]**\n\n**(b)** Calculate the total kinetic energy released. **[2]**",
+  "markscheme": "**(a)** Total momentum stays zero: $0=1.0(30)+2.0v$ **(M1)**, $v=-15\\ \\text{m s}^{-1}$ (opposite direction) **(A1)**\n\n**(b)** $\\tfrac12(1.0)(30)^{2}+\\tfrac12(2.0)(15)^{2}=450+225=675$ J **(M1)(A1)** — supplied by the chemical energy of the explosion.",
+  "source": "original"
+ },
+ {
+  "id": "g-explosion-energy-share",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "A.2.13",
+  "concept": "Energy in collisions and explosions",
+  "prompt": "Using $E_k=\\dfrac{p^{2}}{2m}$, show that when an object at rest explodes into two fragments, the kinetic energies are shared in the inverse ratio of the masses.",
+  "markscheme": "Momentum conservation from rest: the fragments have equal and opposite momenta, $|p_1|=|p_2|=p$ **(R1)**\n\n$\\dfrac{E_1}{E_2}=\\dfrac{p^{2}/2m_1}{p^{2}/2m_2}$ **(M1)** $=\\dfrac{m_2}{m_1}$ **(A1)** — the lighter fragment takes most of the energy (e.g. 450 J vs 225 J for 1 kg and 2 kg).",
+  "source": "original"
+ },
+ {
+  "id": "g-centripetal-acceleration-wheel",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "A.2.14",
+  "concept": "Centripetal acceleration",
+  "prompt": "A point on the rim of a wheel of radius 0.30 m rotates at 1200 revolutions per minute.\n\n**(a)** Calculate the angular velocity. **[1]**\n\n**(b)** Calculate the centripetal acceleration of the point. **[2]**",
+  "markscheme": "**(a)** $\\omega=\\dfrac{1200\\times2\\pi}{60}=126\\ \\text{rad s}^{-1}$ **(A1)**\n\n**(b)** $a=\\omega^{2}r=126^{2}\\times0.30$ **(M1)** $=4.7\\times10^{3}\\ \\text{m s}^{-2}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-max-speed-flat-bend",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "A.2.15",
+  "concept": "Centripetal force",
+  "prompt": "A car goes round a flat bend of radius 40 m. The coefficient of static friction between tyres and road is 0.80. Take $g=9.8\\ \\text{m s}^{-2}$. Calculate the maximum speed at which the car can take the bend without skidding, and state what provides the centripetal force.",
+  "markscheme": "Friction provides the centripetal force **(A1)**\n\n$\\mu_smg=\\dfrac{mv^{2}}{r}\\Rightarrow v=\\sqrt{\\mu_sgr}=\\sqrt{0.80\\times9.8\\times40}$ **(M1)** $=18\\ \\text{m s}^{-1}$ **(A1)** — independent of the car's mass.",
+  "source": "original"
+ },
+ {
+  "id": "g-constant-speed-accelerating",
+  "paper": "1A",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "A.2.16",
+  "concept": "Changing direction at constant speed",
+  "prompt": "An object moves in a horizontal circle at constant speed. Which statement is correct?",
+  "options": [
+   "Its velocity is constant.",
+   "No resultant force acts on it.",
+   "The resultant force does no work on it.",
+   "Its acceleration is directed along its velocity."
+  ],
+  "answer": 2,
+  "markscheme": "**C.** The velocity changes direction, so there is an acceleration, towards the centre. The centripetal force is perpendicular to the velocity, so it does no work and the kinetic energy is constant.",
+  "source": "original"
+ },
+ {
+  "id": "g-vertical-circle-tension",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "A.2.17",
+  "concept": "Angular velocity and circular motion",
+  "prompt": "A 0.50 kg mass on a string of length 0.80 m is whirled in a vertical circle. At the lowest point its speed is $4.0\\ \\text{m s}^{-1}$. Take $g=9.8\\ \\text{m s}^{-2}$.\n\n**(a)** Calculate its angular velocity at the lowest point. **[1]**\n\n**(b)** Calculate the tension in the string at the lowest point. **[3]**",
+  "markscheme": "**(a)** $\\omega=\\dfrac vr=5.0\\ \\text{rad s}^{-1}$ **(A1)**\n\n**(b)** The resultant force points up to the centre: $T-mg=\\dfrac{mv^{2}}{r}$ **(M1)(A1)**\n\n$T=4.9+\\dfrac{0.50\\times16}{0.80}=14.9$ N $\\approx15$ N **(A1)**",
+  "source": "original"
+ }
+]

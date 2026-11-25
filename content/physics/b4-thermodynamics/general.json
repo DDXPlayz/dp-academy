@@ -1,0 +1,179 @@
+[
+ {
+  "id": "g-first-law-signs",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "B.4.1",
+  "concept": "First law of thermodynamics",
+  "prompt": "A gas absorbs 500 J of thermal energy and does 200 J of work on its surroundings. What is the change in its internal energy?",
+  "options": [
+   "−300 J",
+   "+300 J",
+   "+500 J",
+   "+700 J"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** $Q=\\Delta U+W\\Rightarrow\\Delta U=500-200=300$ J (with $W$ = work done **by** the gas).",
+  "source": "original"
+ },
+ {
+  "id": "g-work-isobaric",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "B.4.2",
+  "concept": "W = PΔV",
+  "prompt": "A gas expands at a constant pressure of $1.0\\times10^{5}$ Pa from 2.0 L to 5.0 L. Calculate the work done by the gas.",
+  "markscheme": "$W=P\\Delta V=1.0\\times10^{5}\\times3.0\\times10^{-3}$ **(M1)** $=300$ J **(A1)** (1 L $=10^{-3}\\ \\text{m}^{3}$)",
+  "source": "original"
+ },
+ {
+  "id": "g-constant-volume-vs-pressure",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "B.4.3",
+  "concept": "ΔU = (3/2)nRΔT",
+  "prompt": "0.50 mol of an ideal monatomic gas is heated so that its temperature rises by 40 K.\n\n**(a)** Calculate the thermal energy needed if the volume is constant. **[2]**\n\n**(b)** Calculate the thermal energy needed if the pressure is constant, and explain the difference. **[2]**",
+  "markscheme": "**(a)** $W=0$, so $Q=\\Delta U=\\tfrac32nR\\Delta T=1.5\\times0.50\\times8.31\\times40=249$ J **(M1)(A1)**\n\n**(b)** $W=P\\Delta V=nR\\Delta T=166$ J, so $Q=249+166=415$ J **(A1)**; the same $\\Delta U$ is needed, but at constant pressure the gas also does work expanding **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-entropy-disorder",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "B.4.4",
+  "concept": "Entropy and disorder",
+  "prompt": "Which process involves a decrease in the entropy of the substance?",
+  "options": [
+   "Ice melting",
+   "Water evaporating",
+   "A gas expanding into a vacuum",
+   "Water freezing"
+  ],
+  "answer": 3,
+  "markscheme": "**D.** Freezing puts molecules into an ordered lattice, so the substance's entropy falls (the surroundings' entropy rises by more as the released latent heat is absorbed). The others increase disorder.",
+  "source": "original"
+ },
+ {
+  "id": "g-entropy-melting-microstates",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "B.4.5",
+  "concept": "ΔS = ΔQ/T and S = k_B ln Ω",
+  "prompt": "**(a)** Calculate the entropy change when 0.50 kg of ice melts at 273 K. ($L_f=3.34\\times10^{5}\\ \\text{J kg}^{-1}$) **[2]**\n\n**(b)** The number of microstates of a system doubles. Write down its change in entropy in terms of $k_B$. **[1]**",
+  "markscheme": "**(a)** $\\Delta S=\\dfrac{\\Delta Q}{T}=\\dfrac{0.50\\times3.34\\times10^{5}}{273}$ **(M1)** $=610\\ \\text{J K}^{-1}$ **(A1)**\n\n**(b)** $\\Delta S=k_B\\ln2\\Omega-k_B\\ln\\Omega=k_B\\ln2$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-second-law-heat-flow",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "B.4.6",
+  "concept": "Second law of thermodynamics",
+  "prompt": "1000 J of thermal energy flows from a reservoir at 400 K to one at 300 K. Show that the total entropy increases, and explain why the reverse flow cannot happen spontaneously.",
+  "markscheme": "$\\Delta S=-\\dfrac{1000}{400}+\\dfrac{1000}{300}=-2.5+3.33=+0.83\\ \\text{J K}^{-1}$ **(M1)(A1)**\n\nThe reverse flow would give $\\Delta S<0$ for the isolated system, which the second law forbids **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-irreversible-processes",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "B.4.7",
+  "concept": "Irreversibility in real isolated systems",
+  "prompt": "Explain why real processes such as a hot drink cooling in a room are irreversible.",
+  "markscheme": "The process increases the total entropy of the isolated system (drink + room) **(R1)**; reversing it would require a decrease in total entropy, which is overwhelmingly improbable for the huge number of particles involved **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-local-entropy-decrease",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "B.4.8",
+  "concept": "Local entropy decrease in non-isolated systems",
+  "prompt": "A refrigerator makes ice, decreasing the entropy of the water. Explain why this does not violate the second law.",
+  "markscheme": "The freezer is not an isolated system **(R1)**; it releases more thermal energy (including the work done by the compressor) to the warmer room, increasing the room's entropy by more than the water's decrease, so total entropy still increases **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-identify-processes",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "B.4.9",
+  "concept": "Thermodynamic processes",
+  "prompt": "A gas undergoes a process in which no thermal energy is exchanged with the surroundings. The process is:",
+  "options": [
+   "isothermal",
+   "isobaric",
+   "isovolumetric",
+   "adiabatic"
+  ],
+  "answer": 3,
+  "markscheme": "**D.** Adiabatic means $Q=0$, so $\\Delta U=-W$. Isothermal is constant temperature, isobaric constant pressure, isovolumetric constant volume.",
+  "source": "original"
+ },
+ {
+  "id": "g-adiabatic-compression",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "B.4.10",
+  "concept": "Adiabatic processes PV^(5/3) = constant",
+  "prompt": "An ideal monatomic gas at $1.0\\times10^{5}$ Pa, 3.0 L and 300 K is compressed adiabatically to 1.0 L.\n\n**(a)** Calculate the final pressure. **[2]**\n\n**(b)** Calculate the final temperature and explain why it rises. **[2]**",
+  "markscheme": "**(a)** $P_2=P_1\\left(\\dfrac{V_1}{V_2}\\right)^{5/3}=1.0\\times10^{5}\\times3^{5/3}=6.2\\times10^{5}$ Pa **(M1)(A1)**\n\n**(b)** $T_2=\\dfrac{P_2V_2}{P_1V_1}T_1=624$ K $\\approx620$ K **(A1)**; work done **on** the gas increases its internal energy because no heat can leave ($Q=0$) **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-cycle-work-area",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "B.4.11",
+  "concept": "Cyclic processes",
+  "prompt": "A gas is taken round a rectangular cycle on a $P$–$V$ diagram between pressures $1.0\\times10^{5}$ Pa and $3.0\\times10^{5}$ Pa and volumes 1.0 L and 4.0 L, clockwise.\n\n**(a)** Calculate the net work done by the gas per cycle. **[2]**\n\n**(b)** State the change in internal energy over one full cycle. **[1]**",
+  "markscheme": "**(a)** Net work = enclosed area $=(2.0\\times10^{5})(3.0\\times10^{-3})$ **(M1)** $=600$ J **(A1)** (positive for a clockwise cycle)\n\n**(b)** Zero — the gas returns to its initial state **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-engine-efficiency",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "B.4.12",
+  "concept": "Heat engine efficiency",
+  "prompt": "A heat engine does 600 J of net work per cycle and absorbs 2000 J from the hot reservoir. Calculate its efficiency and the thermal energy rejected per cycle.",
+  "markscheme": "$\\eta=\\dfrac{600}{2000}=0.30$ **(A1)**; rejected $=2000-600=1400$ J **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-carnot-limit-claim",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "B.4.13",
+  "concept": "Carnot efficiency",
+  "prompt": "An inventor claims an engine working between 800 K and 300 K has an efficiency of 70%. Evaluate the claim.",
+  "markscheme": "$\\eta_{\\text{Carnot}}=1-\\dfrac{300}{800}=0.625$ **(M1)(A1)**\n\nThe claim (0.70) exceeds the Carnot maximum, which no engine operating between these temperatures can beat, so it is impossible **(R1)**",
+  "source": "original"
+ }
+]

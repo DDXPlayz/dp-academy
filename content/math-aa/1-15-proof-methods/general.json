@@ -1,0 +1,54 @@
+[
+ {
+  "id": "g-induction-sum",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 7,
+  "subtopic": "1.15.1",
+  "concept": "Proof by induction (series)",
+  "calculator": false,
+  "prompt": "Prove by mathematical induction that $\\displaystyle\\sum_{r=1}^{n}r(r+1)=\\frac{n(n+1)(n+2)}{3}$ for all $n\\in\\mathbb{Z}^{+}$.",
+  "markscheme": "**Base case** $n=1$: LHS $=1\\times2=2$, RHS $=\\frac{1\\cdot2\\cdot3}{3}=2$, so true for $n=1$ **(A1)**\n\n**Assume** true for $n=k$: $\\sum_{r=1}^{k}r(r+1)=\\frac{k(k+1)(k+2)}{3}$ **(M1)**\n\n**Consider** $n=k+1$: $\\sum_{r=1}^{k+1}r(r+1)=\\frac{k(k+1)(k+2)}{3}+(k+1)(k+2)$ **(M1)**\n\n$=\\frac{(k+1)(k+2)(k+3)}{3}$ **(A1)(A1)** (factor out $\\frac{(k+1)(k+2)}{3}$)\n\nwhich is the formula with $n=k+1$ **(R1)**.\n\n**Conclusion:** true for $n=1$, and true for $n=k$ implies true for $n=k+1$, so by induction it is true for all $n\\in\\mathbb{Z}^{+}$ **(R1)**\n\n**Common mistake:** losing the final mark by omitting the conclusion sentence, or writing “let $n=k$, it is true” instead of *assuming* it.",
+  "source": "original"
+ },
+ {
+  "id": "g-induction-divisibility",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 6,
+  "subtopic": "1.15.1",
+  "concept": "Proof by induction (divisibility)",
+  "calculator": false,
+  "prompt": "Prove by induction that $7^{n}-1$ is divisible by 6 for all $n\\in\\mathbb{Z}^{+}$.",
+  "markscheme": "$n=1$: $7-1=6$, divisible by 6 **(A1)**\n\nAssume $7^{k}-1=6m$ for some $m\\in\\mathbb{Z}$ **(M1)**\n\n$7^{k+1}-1=7\\cdot7^{k}-1=7(6m+1)-1$ **(M1)** $=42m+6=6(7m+1)$ **(A1)**, which is divisible by 6 **(R1)**\n\nTrue for $n=1$ and true for $n=k\\Rightarrow$ true for $n=k+1$, so true for all $n\\in\\mathbb{Z}^{+}$ **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-contradiction-sqrt2",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "1.15.2",
+  "concept": "Proof by contradiction",
+  "calculator": false,
+  "prompt": "Prove by contradiction that $\\sqrt2$ is irrational.",
+  "markscheme": "Assume $\\sqrt2=\\dfrac pq$ with $p,q\\in\\mathbb{Z}$, $q\\neq0$, and the fraction in lowest terms (no common factor) **(M1)**\n\n$p^{2}=2q^{2}$, so $p^{2}$ is even and hence $p$ is even; write $p=2k$ **(A1)**\n\n$4k^{2}=2q^{2}\\Rightarrow q^{2}=2k^{2}$, so $q$ is also even **(A1)**\n\nThen $p$ and $q$ share the factor 2, contradicting lowest terms **(R1)**. So the assumption is false and $\\sqrt2$ is irrational **(R1)**.\n\nThe key step “$p^{2}$ even $\\Rightarrow p$ even” holds because the square of an odd number is odd.",
+  "source": "original"
+ },
+ {
+  "id": "g-counterexample-euler-polynomial",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "1.15.3",
+  "concept": "Counterexamples",
+  "calculator": false,
+  "prompt": "Show that the statement “$n^{2}+n+41$ is prime for every $n\\in\\mathbb{N}$” is false.",
+  "markscheme": "A single counterexample disproves a universal statement. Take $n=40$: $40^{2}+40+41=1681=41^{2}$ **(M1)**, which is not prime **(A1)**.\n\n(It is prime for $n=0,1,\\dots,39$, which is why checking many cases is never a proof.)",
+  "source": "original"
+ }
+]

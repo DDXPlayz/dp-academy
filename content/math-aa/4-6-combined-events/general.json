@@ -1,0 +1,74 @@
+[
+ {
+  "id": "g-tree-without-replacement",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "4.6.1",
+  "concept": "Tree diagrams",
+  "calculator": false,
+  "prompt": "A bag contains 5 red and 3 blue counters. Two are taken without replacement. Find the probability that they are different colours.",
+  "markscheme": "$P(RB)+P(BR)=\\dfrac58\\cdot\\dfrac37+\\dfrac38\\cdot\\dfrac57$ **(M1)(A1)** $=\\dfrac{30}{56}=\\dfrac{15}{28}$ **(A1)**\n\nWithout replacement, the second-stage probabilities have denominator 7.",
+  "source": "original"
+ },
+ {
+  "id": "g-union-formula-independence",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "4.6.3",
+  "concept": "P(A ∪ B) and independence",
+  "calculator": false,
+  "prompt": "$P(A)=0.5$, $P(B)=0.4$ and $P(A\\cup B)=0.7$.\n\n**(a)** Find $P(A\\cap B)$. **[2]**\n\n**(b)** Determine whether $A$ and $B$ are independent. **[1]**",
+  "markscheme": "**(a)** $0.7=0.5+0.4-P(A\\cap B)$ **(M1)**, so $P(A\\cap B)=0.2$ **(A1)**\n\n**(b)** $P(A)P(B)=0.2=P(A\\cap B)$, so independent **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-exclusive-vs-independent",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "4.6.4",
+  "concept": "Mutually exclusive vs independent",
+  "calculator": false,
+  "prompt": "$A$ and $B$ are mutually exclusive events with $P(A)=0.3$ and $P(B)=0.4$. Explain why $A$ and $B$ cannot be independent.",
+  "markscheme": "Mutually exclusive: $P(A\\cap B)=0$ **(A1)**. Independence would need $P(A\\cap B)=0.3\\times0.4=0.12\\ne0$. Knowing $A$ happened tells you $B$ did not, so they are dependent **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-conditional-from-table",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "4.6.5",
+  "concept": "Conditional probability",
+  "calculator": false,
+  "prompt": "| | Walk | Bus | Total |\n|---|---|---|---|\n| Year 10 | 30 | 20 | 50 |\n| Year 11 | 15 | 35 | 50 |\n\nA student is chosen at random. Find\n\n**(a)** $P(\\text{Bus}\\mid\\text{Year 11})$ **[1]**\n\n**(b)** $P(\\text{Year 11}\\mid\\text{Bus})$ **[2]**",
+  "markscheme": "**(a)** $\\dfrac{35}{50}=0.7$ **(A1)**\n\n**(b)** The condition restricts to the 55 bus users **(M1)**: $\\dfrac{35}{55}=\\dfrac{7}{11}$ **(A1)**\n\n$P(A\\mid B)$ and $P(B\\mid A)$ are generally different — the denominators are different groups.",
+  "source": "original"
+ },
+ {
+  "id": "g-independent-product",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "4.6.6",
+  "concept": "Independent events",
+  "calculator": false,
+  "prompt": "Two machines work independently. The probability that machine A breaks down in a week is 0.1, and for machine B it is 0.05. Find the probability that in a given week exactly one machine breaks down.",
+  "markscheme": "$0.1(0.95)+0.9(0.05)$ **(M1)** $=0.095+0.045=0.14$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-venn-three-regions",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "4.6.2",
+  "concept": "Venn diagrams",
+  "calculator": false,
+  "prompt": "In a class of 30, 18 study French, 12 study Spanish and 5 study both.\n\n**(a)** Find how many study neither. **[2]**\n\n**(b)** A student who studies French is chosen. Find the probability they also study Spanish. **[1]**",
+  "markscheme": "**(a)** French or Spanish: $18+12-5=25$ **(M1)**; neither: $5$ **(A1)**\n\n**(b)** $\\dfrac{5}{18}$ **(A1)**",
+  "source": "original"
+ }
+]

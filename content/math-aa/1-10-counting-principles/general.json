@@ -1,0 +1,67 @@
+[
+ {
+  "id": "g-arrangements-academy",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 5,
+  "subtopic": "1.10.1",
+  "concept": "Permutations with repeated items",
+  "calculator": false,
+  "prompt": "Consider the letters of the word **ACADEMY**.\n\n**(a)** Find the number of different arrangements of all seven letters. **[2]**\n\n**(b)** Find the number of these arrangements in which the two A's are next to each other. **[2]**\n\n**(c)** Hence find the number of arrangements in which the two A's are not next to each other. **[1]**",
+  "markscheme": "**(a)** $\\dfrac{7!}{2!}$ **(M1)** $=2520$ **(A1)** (divide by $2!$ because swapping the two A's gives the same word)\n\n**(b)** Treat AA as one block: 6 items, all different, $6!=720$ **(M1)(A1)**\n\n**(c)** $2520-720=1800$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-committee-at-least-one",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "1.10.1",
+  "concept": "Combinations with a condition",
+  "calculator": false,
+  "prompt": "A committee of 4 is chosen from 6 girls and 5 boys. Find the number of committees that contain at least one boy.",
+  "markscheme": "Total committees $\\binom{11}{4}=330$ **(A1)**; committees with no boys $\\binom64=15$ **(A1)**\n\nAt least one boy $=330-15$ **(M1)** $=315$ **(A1)**\n\n**Common mistake:** $\\binom51\\binom{10}{3}=600$ — this counts some committees more than once (a committee with two boys is counted once for each of its boys).",
+  "source": "original"
+ },
+ {
+  "id": "g-row-not-adjacent",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "1.10.1",
+  "concept": "Permutations with a restriction",
+  "calculator": false,
+  "prompt": "Eight people, including Ana and Ben, stand in a row. In how many ways can they stand if Ana and Ben must **not** be next to each other?",
+  "markscheme": "Total $8!=40320$. Ana and Ben together: treat as a block that can be arranged in 2 ways: $2\\times7!=10080$ **(M1)(A1)**\n\nNot together: $40320-10080=30240$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-binomial-fractional-index",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "1.10.2",
+  "concept": "Binomial theorem with rational index",
+  "calculator": false,
+  "prompt": "**(a)** Find the first four terms in the expansion of $(1-2x)^{\\frac12}$ in ascending powers of $x$. **[3]**\n\n**(b)** State the values of $x$ for which the expansion is valid. **[1]**\n\n**(c)** Use $x=0.01$ to estimate $\\sqrt{0.98}$. **[1]**",
+  "markscheme": "**(a)** $(1+u)^{\\frac12}=1+\\tfrac12u+\\dfrac{\\frac12(-\\frac12)}{2!}u^{2}+\\dfrac{\\frac12(-\\frac12)(-\\frac32)}{3!}u^{3}+\\dots$ with $u=-2x$ **(M1)**\n\n$=1-x-\\tfrac12x^{2}-\\tfrac12x^{3}$ **(A2)**\n\n**(b)** $|2x|<1$, i.e. $|x|<\\tfrac12$ **(A1)**\n\n**(c)** $1-0.01-0.00005-0.0000005\\approx0.98995$ **(A1)**\n\nFor non-integer $n$ the series never terminates, which is why it only converges when $|u|<1$.",
+  "source": "original"
+ },
+ {
+  "id": "g-binomial-negative-index",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "1.10.2",
+  "concept": "Binomial theorem with negative index",
+  "calculator": false,
+  "prompt": "Find the first three terms in the expansion of $(2+x)^{-2}$ and state the interval of validity.",
+  "markscheme": "$(2+x)^{-2}=2^{-2}\\left(1+\\tfrac x2\\right)^{-2}$ **(M1)**\n\n$=\\tfrac14\\left(1-2\\cdot\\tfrac x2+\\dfrac{(-2)(-3)}{2}\\left(\\tfrac x2\\right)^{2}+\\dots\\right)=\\tfrac14-\\tfrac14x+\\tfrac{3}{16}x^{2}$ **(A2)**\n\nValid for $\\left|\\tfrac x2\\right|<1$, i.e. $|x|<2$ **(A1)**\n\n**Common mistake:** expanding $(2+x)^{-2}$ directly as if the first term were 1 — factor out $2^{-2}$ first.",
+  "source": "original"
+ }
+]

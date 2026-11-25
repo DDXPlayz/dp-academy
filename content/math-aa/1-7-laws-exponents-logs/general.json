@@ -1,0 +1,62 @@
+[
+ {
+  "id": "g-rational-exponents-equation",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "1.7.1",
+  "concept": "Rational exponents",
+  "calculator": false,
+  "prompt": "**(a)** Find the exact value of $27^{-\\frac{2}{3}}$. **[2]**\n\n**(b)** Solve $4^{x+1}=8^{x-1}$. **[2]**",
+  "markscheme": "**(a)** $27^{\\frac13}=3$, so $27^{\\frac23}=9$ **(M1)** and $27^{-\\frac23}=\\dfrac19$ **(A1)**\n\n**(b)** Write both sides as powers of 2: $2^{2x+2}=2^{3x-3}$ **(M1)**, so $2x+2=3x-3$ and $x=5$ **(A1)**\n\nFor $a^{m/n}$: the denominator is the root, the numerator the power, and the minus sign the reciprocal.",
+  "source": "original"
+ },
+ {
+  "id": "g-log-laws-solve-domain",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 5,
+  "subtopic": "1.7.2",
+  "concept": "Laws of logarithms",
+  "calculator": false,
+  "prompt": "Solve $\\log_2x+\\log_2(x-2)=3$.",
+  "markscheme": "$\\log_2\\big(x(x-2)\\big)=3$ **(M1)**, so $x(x-2)=2^{3}=8$ **(M1)**\n\n$x^{2}-2x-8=0 \\Rightarrow (x-4)(x+2)=0$, so $x=4$ or $x=-2$ **(A1)**\n\n$\\log_2x$ requires $x>0$ (and $\\log_2(x-2)$ requires $x>2$), so reject $x=-2$ **(R1)**. Answer $x=4$ **(A1)**.\n\n**Common mistake:** giving both roots. Always check solutions of log equations against the domain.",
+  "source": "original"
+ },
+ {
+  "id": "g-log-laws-expand",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "1.7.3",
+  "concept": "Laws of logarithms",
+  "calculator": false,
+  "prompt": "Given that $a,b,c>0$, express $\\log\\left(\\dfrac{a^{2}\\sqrt b}{c}\\right)$ in terms of $\\log a$, $\\log b$ and $\\log c$.",
+  "markscheme": "$\\log a^{2}+\\log b^{\\frac12}-\\log c$ **(M1)**\n\n$=2\\log a+\\tfrac12\\log b-\\log c$ **(A1)(A1)**\n\n**Common mistake:** writing $\\log(a^{2}\\sqrt b)$ as $\\log a^{2}\\times\\log\\sqrt b$. The log of a product is a *sum* of logs.",
+  "source": "original"
+ },
+ {
+  "id": "g-change-of-base",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "1.7.4",
+  "concept": "Change of base",
+  "calculator": false,
+  "prompt": "Given that $\\log_3 5=p$, express in terms of $p$:\n\n**(a)** $\\log_9 25$ **[2]**\n\n**(b)** $\\log_5 9$ **[2]**",
+  "markscheme": "**(a)** $\\log_9 25=\\dfrac{\\log_3 25}{\\log_3 9}$ **(M1)** $=\\dfrac{2\\log_3 5}{2}=p$ **(A1)**\n\n**(b)** $\\log_5 9=\\dfrac{\\log_3 9}{\\log_3 5}$ **(M1)** $=\\dfrac{2}{p}$ **(A1)**\n\nChange of base: $\\log_a x=\\dfrac{\\log_b x}{\\log_b a}$ for any convenient base $b$.",
+  "source": "original"
+ },
+ {
+  "id": "g-exponential-quadratic-substitution",
+  "paper": "1",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "1.7.4",
+  "concept": "Solving exponential equations",
+  "calculator": false,
+  "prompt": "**(a)** Solve $5^{2x}-6\\cdot5^{x}+5=0$. **[3]**\n\n**(b)** Solve $3^{x}=2^{x+1}$, giving your answer in the form $\\dfrac{\\ln a}{\\ln b}$. **[2]**",
+  "markscheme": "**(a)** Let $y=5^{x}$: $y^{2}-6y+5=0$ **(M1)**, $(y-1)(y-5)=0$ **(A1)**; $5^{x}=1\\Rightarrow x=0$, $5^{x}=5\\Rightarrow x=1$ **(A1)**\n\n**(b)** Take logs: $x\\ln3=(x+1)\\ln2$ **(M1)** $\\Rightarrow x(\\ln3-\\ln2)=\\ln2 \\Rightarrow x=\\dfrac{\\ln2}{\\ln1.5}$ **(A1)** ($\\approx1.71$)\n\n**Common mistake (b):** writing $\\ln(2^{x+1})=x+1\\ln2$ — the whole exponent multiplies the log.",
+  "source": "original"
+ }
+]

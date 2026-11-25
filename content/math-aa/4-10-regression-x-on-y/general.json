@@ -1,0 +1,26 @@
+[
+ {
+  "id": "g-regression-x-on-y",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "4.10.1",
+  "concept": "Regression line of x on y",
+  "calculator": true,
+  "prompt": "The hours of revision, $x$, and test scores, $y$, of five students are:\n\n| $x$ | 2 | 4 | 5 | 7 | 8 |\n|---|---|---|---|---|---|\n| $y$ | 52 | 60 | 63 | 72 | 78 |\n\nA student scored 70 on the test. Use the appropriate regression line to estimate how many hours they revised, and explain your choice of line.",
+  "markscheme": "To predict $x$ from $y$, use the regression line of $x$ on $y$: $x=0.233y-9.96$ **(M1)(A1)**\n\n$x\\approx0.233(70)-9.96\\approx6.4$ hours **(A1)**\n\nThe $y$-on-$x$ line minimises vertical errors and is designed for predicting $y$; rearranging it does not give the best predictor of $x$.",
+  "source": "original"
+ },
+ {
+  "id": "g-which-regression-line",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "4.10.2",
+  "concept": "Choosing the regression line for prediction",
+  "calculator": false,
+  "prompt": "A scientist has the regression lines of $y$ on $x$ and of $x$ on $y$ for a data set with $r=0.6$. Which line should be used to estimate $y$ when $x$ is known, and what happens to the two lines as $r\\to\\pm1$?",
+  "markscheme": "Use $y$ on $x$ to estimate $y$ **(A1)**. As $|r|\\to1$ the two lines get closer, becoming identical when the correlation is perfect. Both always pass through $(\\bar x,\\bar y)$.",
+  "source": "original"
+ }
+]

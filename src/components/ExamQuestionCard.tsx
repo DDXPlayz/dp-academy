@@ -78,6 +78,7 @@ export function ExamQuestionCard({ q, index }: { q: ExamQuestion; index: number 
         )}
       </header>
 
+      {q.concept && <p className="eyebrow mb-2">{q.concept}</p>}
       <div className="prose-lesson !text-base">
         <Markdown>{q.prompt}</Markdown>
       </div>

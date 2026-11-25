@@ -1,0 +1,38 @@
+[
+ {
+  "id": "g-infinite-gp-sum",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "1.8.1",
+  "concept": "Sum of an infinite geometric series",
+  "calculator": false,
+  "prompt": "**(a)** Find the sum to infinity of $12+8+\\dfrac{16}{3}+\\dots$ **[2]**\n\n**(b)** Explain why $1+1.1+1.21+\\dots$ has no sum to infinity. **[1]**",
+  "markscheme": "**(a)** $r=\\dfrac{8}{12}=\\dfrac23$ **(A1)**; $S_\\infty=\\dfrac{12}{1-\\frac23}=36$ **(A1)**\n\n**(b)** $r=1.1$ and $|r|\\ge1$, so the terms do not shrink and the partial sums grow without bound. **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-infinite-gp-convergence-x",
+  "paper": "1",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "1.8.1",
+  "concept": "Convergence condition",
+  "calculator": false,
+  "prompt": "Consider the geometric series $1+(2x-1)+(2x-1)^{2}+\\dots$\n\n**(a)** Find the values of $x$ for which the series converges. **[2]**\n\n**(b)** Find an expression for the sum to infinity in terms of $x$. **[1]**\n\n**(c)** Find $x$ given that the sum to infinity is 2. **[2]**",
+  "markscheme": "**(a)** $|2x-1|<1$ **(M1)** $\\iff 0<x<1$ **(A1)**\n\n**(b)** $S_\\infty=\\dfrac{1}{1-(2x-1)}=\\dfrac{1}{2-2x}$ **(A1)**\n\n**(c)** $\\dfrac{1}{2-2x}=2 \\Rightarrow 2-2x=\\tfrac12$ **(M1)** $\\Rightarrow x=\\tfrac34$, which lies in $0<x<1$ **(A1)**\n\nAlways check that the value found satisfies the convergence condition.",
+  "source": "original"
+ },
+ {
+  "id": "g-recurring-decimal",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "1.8.1",
+  "concept": "Recurring decimals as infinite series",
+  "calculator": false,
+  "prompt": "By writing $0.\\overline{45}=0.454545\\dots$ as an infinite geometric series, express it as a fraction in its simplest form.",
+  "markscheme": "$0.\\overline{45}=0.45+0.0045+0.000045+\\dots$ with $a=0.45$, $r=0.01$ **(M1)**\n\n$S_\\infty=\\dfrac{0.45}{1-0.01}=\\dfrac{45}{99}$ **(A1)** $=\\dfrac{5}{11}$ **(A1)**",
+  "source": "original"
+ }
+]

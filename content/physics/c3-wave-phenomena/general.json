@@ -1,0 +1,187 @@
+[
+ {
+  "id": "g-wavefronts-rays",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "C.3.1",
+  "concept": "Wavefronts and rays",
+  "prompt": "Which describes the relationship between wavefronts and rays?",
+  "options": [
+   "Rays are parallel to wavefronts",
+   "Rays are perpendicular to wavefronts",
+   "Rays join points of equal amplitude",
+   "Rays are only defined for longitudinal waves"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** A ray shows the direction of energy transfer and is always perpendicular to the wavefronts (lines joining points in phase).",
+  "source": "original"
+ },
+ {
+  "id": "g-light-into-glass",
+  "paper": "1A",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "C.3.2",
+  "concept": "Behaviour at a boundary",
+  "prompt": "Light passes from air into glass. What happens to its speed, frequency and wavelength?",
+  "options": [
+   "speed decreases, frequency decreases, wavelength unchanged",
+   "speed unchanged, frequency decreases, wavelength decreases",
+   "speed decreases, frequency unchanged, wavelength decreases",
+   "speed decreases, frequency increases, wavelength decreases"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** The frequency is fixed by the source and cannot change at the boundary; the speed falls, so $\\lambda=\\dfrac vf$ falls too. Some light is also reflected at the boundary.",
+  "source": "original"
+ },
+ {
+  "id": "g-diffraction-sound-vs-light",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "C.3.3",
+  "concept": "Diffraction",
+  "prompt": "Explain why you can hear someone talking around a corner but cannot see them.",
+  "markscheme": "Diffraction is significant when the gap or obstacle is comparable to the wavelength **(R1)**; sound wavelengths (about 0.1–10 m) are similar to doorways, while light wavelengths (~500 nm) are far smaller, so light diffracts negligibly **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-wavefront-refraction-diagram",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "C.3.4",
+  "concept": "Wavefront diagrams for refraction",
+  "prompt": "Plane water waves travel from deep water into shallow water, where they are slower, crossing the boundary at an angle. Describe the wavefront–ray diagram.",
+  "markscheme": "Wavefronts are closer together in the shallow region (shorter wavelength, same frequency) **(A1)**\n\nWavefronts are continuous across the boundary but change direction, with the part of each wavefront that enters first slowing first **(A1)**\n\nRays (perpendicular to wavefronts) bend towards the normal in the shallow water **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-critical-angle-fibre",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "C.3.5",
+  "concept": "Critical angle and total internal reflection",
+  "prompt": "**(a)** Calculate the critical angle for glass of refractive index 1.50 in air. **[1]**\n\n**(b)** An optical fibre has a core of index 1.50 and cladding of index 1.46. Calculate the critical angle at the core–cladding boundary. **[2]**\n\n**(c)** State the two conditions for total internal reflection. **[1]**",
+  "markscheme": "**(a)** $\\sin c=\\dfrac{1}{1.50}\\Rightarrow c=42^{\\circ}$ **(A1)**\n\n**(b)** $\\sin c=\\dfrac{1.46}{1.50}$ **(M1)** $\\Rightarrow c=77^{\\circ}$ **(A1)**\n\n**(c)** Light travels from higher to lower refractive index, and the angle of incidence exceeds the critical angle **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-snell-water",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "C.3.6",
+  "concept": "Snell's law",
+  "prompt": "Light in air strikes water (refractive index 1.33) at $40^{\\circ}$ to the normal. Calculate the angle of refraction and the speed of light in the water ($c=3.0\\times10^{8}\\ \\text{m s}^{-1}$).",
+  "markscheme": "$\\sin\\theta_2=\\dfrac{\\sin40^{\\circ}}{1.33}$ **(M1)**, $\\theta_2=29^{\\circ}$ **(A1)**; $v=\\dfrac{c}{n}=2.3\\times10^{8}\\ \\text{m s}^{-1}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-superposition-pulses",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "C.3.7",
+  "concept": "Superposition",
+  "prompt": "A pulse of amplitude +3 cm and a pulse of amplitude −2 cm travel towards each other on a rope. What is the displacement where they fully overlap, and what happens afterwards?",
+  "options": [
+   "+5 cm; the pulses merge",
+   "+1 cm; the pulses continue unchanged",
+   "+1 cm; the pulses cancel permanently",
+   "−1 cm; the pulses reflect"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** Displacements add algebraically: $3+(-2)=+1$ cm. After passing, each pulse continues unchanged.",
+  "source": "original"
+ },
+ {
+  "id": "g-coherence-headlights",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "C.3.8",
+  "concept": "Coherent sources",
+  "prompt": "Explain why the light from two car headlights does not produce a visible interference pattern.",
+  "markscheme": "A stable pattern needs coherent sources, with a constant phase difference (and the same frequency) **(R1)**; light from two separate lamps is emitted randomly with rapidly changing phase, so any pattern changes too fast to observe **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-path-difference-speakers",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "C.3.9",
+  "concept": "Constructive and destructive interference",
+  "prompt": "Two loudspeakers emit the same 680 Hz note in phase. Point P is 3.00 m from one speaker and 3.75 m from the other. Determine whether P is a point of loud or quiet sound. (Speed of sound $=340\\ \\text{m s}^{-1}$)",
+  "markscheme": "$\\lambda=\\dfrac{340}{680}=0.50$ m **(A1)**; path difference $0.75$ m $=1.5\\lambda$ **(M1)**\n\nA half-integer number of wavelengths: destructive interference, quiet **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-destructive-condition",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "C.3.10",
+  "concept": "Condition for destructive interference",
+  "prompt": "Two coherent sources are in phase. For destructive interference at a point, the path difference must be:",
+  "options": [
+   "$n\\lambda$",
+   "$2n\\lambda$",
+   "$\\left(n+\\tfrac12\\right)\\lambda$",
+   "$\\tfrac{\\lambda}{4}$"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** $\\left(n+\\tfrac12\\right)\\lambda$ — the waves arrive half a cycle out of phase.",
+  "source": "original"
+ },
+ {
+  "id": "g-young-double-slit",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "C.3.11",
+  "concept": "Young's double-slit experiment",
+  "prompt": "Light of wavelength 600 nm passes through two slits 0.30 mm apart onto a screen 2.0 m away.\n\n**(a)** Calculate the fringe separation. **[2]**\n\n**(b)** State the effect on the fringe separation of moving the slits closer together. **[1]**",
+  "markscheme": "**(a)** $s=\\dfrac{\\lambda D}{d}=\\dfrac{600\\times10^{-9}\\times2.0}{0.30\\times10^{-3}}=4.0\\times10^{-3}$ m **(M1)(A1)**\n\n**(b)** $s\\propto\\dfrac1d$, so the fringes become further apart **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-single-slit-central-width",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "C.3.12",
+  "concept": "Single-slit diffraction",
+  "prompt": "Light of wavelength 600 nm passes through a single slit of width 0.10 mm onto a screen 2.0 m away.\n\n**(a)** Calculate the angle to the first minimum. **[1]**\n\n**(b)** Calculate the width of the central maximum on the screen. **[1]**\n\n**(c)** State the effect of making the slit narrower. **[1]**",
+  "markscheme": "**(a)** $\\theta=\\dfrac\\lambda b=6.0\\times10^{-3}$ rad **(A1)**\n\n**(b)** $2D\\theta=2\\times2.0\\times6.0\\times10^{-3}=0.024$ m $=24$ mm **(A1)** — twice the width of the other maxima\n\n**(c)** $\\theta$ increases: the central maximum becomes wider (and dimmer) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-missing-orders",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "C.3.13",
+  "concept": "Single-slit modulation of double-slit fringes",
+  "prompt": "In a double-slit experiment the slits are 0.30 mm apart and each slit is 0.10 mm wide. Explain why the third-order interference maximum is missing.",
+  "markscheme": "Interference maxima: $d\\sin\\theta=n\\lambda$; single-slit minima: $b\\sin\\theta=m\\lambda$ **(M1)**\n\nFor $n=3$: $\\sin\\theta=\\dfrac{3\\lambda}{d}=\\dfrac{\\lambda}{b}$, the first diffraction minimum **(M1)**\n\nThe single-slit envelope has zero intensity there, so the interference maximum is suppressed **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-grating-orders",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "C.3.14",
+  "concept": "Diffraction gratings",
+  "prompt": "Light of wavelength 550 nm falls normally on a grating with 600 lines per mm.\n\n**(a)** Calculate the angle of the first-order maximum. **[2]**\n\n**(b)** Determine the highest order visible. **[1]**\n\n**(c)** State one advantage of a grating over a double slit for measuring wavelengths. **[1]**",
+  "markscheme": "**(a)** $d=\\dfrac{1}{600\\times10^{3}}=1.67\\times10^{-6}$ m **(A1)**; $\\sin\\theta=\\dfrac{\\lambda}{d}=0.33$, $\\theta=19^{\\circ}$ **(A1)**\n\n**(b)** $n\\le\\dfrac d\\lambda=3.03$, so $n=3$ **(A1)**\n\n**(c)** Maxima are much sharper and brighter, and widely spaced, so angles can be measured precisely **(A1)**",
+  "source": "original"
+ }
+]

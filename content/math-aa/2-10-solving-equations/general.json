@@ -1,0 +1,50 @@
+[
+ {
+  "id": "g-dont-divide-by-x",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "2.10.1",
+  "concept": "Solving equations analytically",
+  "calculator": false,
+  "prompt": "Solve $x^{3}=4x$.",
+  "markscheme": "$x^{3}-4x=0\\Rightarrow x(x-2)(x+2)=0$ **(M1)**\n\n$x=0,\\ 2,\\ -2$ **(A2)**\n\n**Common mistake:** dividing both sides by $x$ and getting only $x=\\pm2$. Dividing by an expression that can be zero loses solutions — factorise instead.",
+  "source": "original"
+ },
+ {
+  "id": "g-exponential-substitution",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "2.10.1",
+  "concept": "Solving equations analytically",
+  "calculator": false,
+  "prompt": "Solve $2^{x}=8-2^{x+1}$, giving your answer in the form $\\log_2 k$.",
+  "markscheme": "$2^{x+1}=2\\cdot2^{x}$, so $2^{x}+2\\cdot2^{x}=8$ **(M1)**\n\n$3\\cdot2^{x}=8\\Rightarrow2^{x}=\\tfrac83$ **(A1)**, $x=\\log_2\\tfrac83$ **(A1)** ($\\approx1.42$)",
+  "source": "original"
+ },
+ {
+  "id": "g-technology-no-analytic",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "2.10.2",
+  "concept": "Solving equations with technology",
+  "calculator": true,
+  "prompt": "**(a)** Explain why $e^{x}=x+2$ cannot be solved using only algebraic manipulation. **[1]**\n\n**(b)** Use technology to solve it. **[2]**",
+  "markscheme": "**(a)** $x$ appears both in an exponent and as a linear term, so it cannot be isolated with logs or algebra alone **(R1)**\n\n**(b)** Graph $y=e^{x}$ and $y=x+2$ (or find the zeros of $e^{x}-x-2$) **(M1)**: $x=-1.84$ or $x=1.15$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-projectile-height-model",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "2.10.3",
+  "concept": "Applications of solving equations",
+  "calculator": true,
+  "prompt": "The height, in metres, of a ball $t$ seconds after it is thrown is $h(t)=1.5+18t-4.9t^{2}$.\n\n**(a)** Find the maximum height of the ball. **[2]**\n\n**(b)** Find the time at which the ball hits the ground. **[2]**",
+  "markscheme": "**(a)** Maximum at $t=\\dfrac{18}{9.8}=1.84$ s **(M1)**; $h=18.0$ m **(A1)**\n\n**(b)** $1.5+18t-4.9t^{2}=0$ **(M1)**; $t=3.75$ s (reject the negative root, which is before the throw) **(A1)**",
+  "source": "original"
+ }
+]

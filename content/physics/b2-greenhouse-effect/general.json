@@ -1,0 +1,119 @@
+[
+ {
+  "id": "g-earth-energy-balance",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "B.2.1",
+  "concept": "Conservation of energy for the Earth",
+  "prompt": "Explain how conservation of energy determines the Earth's mean surface temperature.",
+  "markscheme": "In equilibrium the power absorbed from the Sun equals the power radiated by the Earth **(R1)**; if absorption exceeds emission, the temperature rises until the (strongly temperature-dependent) emitted power increases to match **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-emissivity-power",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "B.2.2",
+  "concept": "Emissivity",
+  "prompt": "A surface at 300 K has emissivity 0.90. Calculate the power radiated per unit area. $\\sigma=5.67\\times10^{-8}\\ \\text{W m}^{-2}\\,\\text{K}^{-4}$",
+  "markscheme": "$\\dfrac PA=e\\sigma T^{4}=0.90\\times5.67\\times10^{-8}\\times300^{4}$ **(M1)** $=410\\ \\text{W m}^{-2}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-albedo-ratio",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "B.2.3",
+  "concept": "Albedo",
+  "prompt": "Of the $340\\ \\text{W m}^{-2}$ of sunlight reaching the top of a planet's atmosphere, $102\\ \\text{W m}^{-2}$ is scattered back to space. What is the planet's albedo?",
+  "options": [
+   "0.23",
+   "0.30",
+   "0.70",
+   "3.3"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** Albedo $=\\dfrac{\\text{scattered power}}{\\text{incident power}}=\\dfrac{102}{340}=0.30$.",
+  "source": "original"
+ },
+ {
+  "id": "g-albedo-variation-feedback",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "B.2.4",
+  "concept": "Variation of Earth's albedo",
+  "prompt": "**(a)** State two factors that cause the Earth's albedo to vary. **[2]**\n\n**(b)** Explain why melting polar ice can increase global warming. **[1]**",
+  "markscheme": "**(a)** Any two: cloud cover (changes daily); latitude/angle of incidence; surface type — ice and snow reflect strongly, oceans and forests weakly; season **(A2)**\n\n**(b)** Ice is replaced by darker water or land with lower albedo, so more radiation is absorbed, causing further warming and melting (positive feedback) **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-solar-constant-def",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "B.2.5",
+  "concept": "The solar constant",
+  "prompt": "Define the solar constant.",
+  "markscheme": "The intensity of the Sun's radiation (power per unit area) at the mean Earth–Sun distance, measured perpendicular to the rays above the atmosphere, about $1.36\\times10^{3}\\ \\text{W m}^{-2}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-equilibrium-temperature-s4",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "B.2.6",
+  "concept": "Mean incoming intensity S/4 and equilibrium temperature",
+  "prompt": "The solar constant is $1360\\ \\text{W m}^{-2}$ and the Earth's albedo is 0.30. $\\sigma=5.67\\times10^{-8}\\ \\text{W m}^{-2}\\,\\text{K}^{-4}$\n\n**(a)** Explain why the mean intensity received over the Earth's surface is $\\dfrac S4$. **[1]**\n\n**(b)** Calculate the equilibrium temperature of the Earth, treating it as a black body with no atmosphere. **[2]**\n\n**(c)** The actual mean surface temperature is 288 K. Calculate the effective emissivity of the Earth–atmosphere system and suggest what this indicates. **[2]**",
+  "markscheme": "**(a)** The Earth intercepts sunlight over its cross-section $\\pi R^{2}$ but radiates from (and averages over) its whole surface $4\\pi R^{2}$ **(R1)**\n\n**(b)** $(1-0.30)\\dfrac{1360}{4}=\\sigma T^{4}$ **(M1)**, $T=255$ K **(A1)**\n\n**(c)** $e=\\dfrac{238}{\\sigma(288)^{4}}=0.61$ **(A1)**; the atmosphere absorbs and re-radiates infrared back to the surface, so the surface must be warmer to lose the same net power — the greenhouse effect **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-greenhouse-gases-sources",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "B.2.7",
+  "concept": "Main greenhouse gases and their origins",
+  "prompt": "For carbon dioxide and methane, state one natural source and one source due to human activity.",
+  "markscheme": "CO₂: natural — respiration, volcanic activity, decay; human — burning fossil fuels, deforestation **(A1)**\n\nCH₄: natural — wetlands, decay in anaerobic conditions; human — livestock, rice paddies, landfill, gas leaks **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-ir-absorption-energy-levels",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "B.2.8",
+  "concept": "Absorption of infrared by greenhouse gases",
+  "prompt": "Explain, in terms of molecular energy levels, how greenhouse gases warm the Earth's surface.",
+  "markscheme": "Infrared photons emitted by the surface have energies matching the gaps between vibrational (and rotational) energy levels of the molecules, so they are absorbed **(R1)**\n\nThe excited molecules then de-excite and emit infrared photons in **all** directions **(R1)**\n\nSome of this radiation returns to the surface, so the surface receives more energy than from the Sun alone **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-resonance-model",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "B.2.9",
+  "concept": "Resonance model of the greenhouse effect",
+  "prompt": "Describe the resonance model of infrared absorption by a carbon dioxide molecule.",
+  "markscheme": "The bonds behave like springs with natural frequencies of vibration in the infrared range **(R1)**; infrared radiation of the same frequency drives the vibration at resonance, so energy is absorbed strongly at those frequencies **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-enhanced-greenhouse",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "B.2.10",
+  "concept": "The enhanced greenhouse effect",
+  "prompt": "Distinguish between the greenhouse effect and the enhanced greenhouse effect.",
+  "markscheme": "Greenhouse effect: natural warming of the surface because atmospheric gases absorb and re-emit infrared; without it the Earth would be about 255 K **(A1)**\n\nEnhanced greenhouse effect: the additional warming caused by increased concentrations of greenhouse gases from human activities **(A1)**",
+  "source": "original"
+ }
+]

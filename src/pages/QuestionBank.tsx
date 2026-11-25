@@ -10,6 +10,7 @@ import {
   DEFAULT_FILTERS,
   DIFFICULTIES,
   byStatus,
+  conceptsIn,
   facetCounts,
   filterBank,
   shuffled,
@@ -92,6 +93,10 @@ export default function QuestionBank() {
   const sourceCounts = facetCounts(pool, f, 'source');
   const subject = f.subject ? getSubject(f.subject) : undefined;
   const papers = subject ? PAPERS[subject.id] ?? [] : [...new Set(Object.values(PAPERS).flat())].sort();
+  const concepts = useMemo(
+    () => (f.topics.length === 1 ? conceptsIn(pool.filter((q) => q.source === 'original' || f.collection === 'past'), f.topics[0], examResults) : []),
+    [pool, f.topics, f.collection, examResults],
+  );
   const pastTotal = pool.filter((q) => q.source !== 'original').length;
 
   const switchCollection = (collection: BankCollection) => setParams(filtersToParams({ ...DEFAULT_FILTERS, subject: f.subject, level: f.level, collection }), { replace: true });
@@ -120,11 +125,11 @@ export default function QuestionBank() {
 
       <section aria-label="Filters" className="card mb-6 space-y-4 p-4 md:p-5">
         <Facet label="Subject">
-          <Chip on={!f.subject} onClick={() => set({ subject: null, papers: [], topics: [] })}>
+          <Chip on={!f.subject} onClick={() => set({ subject: null, papers: [], topics: [], subtopic: null })}>
             All
           </Chip>
           {subjects.map((s) => (
-            <Chip key={s.id} on={f.subject === s.id} onClick={() => set({ subject: s.id, papers: [], topics: [] })}>
+            <Chip key={s.id} on={f.subject === s.id} onClick={() => set({ subject: s.id, papers: [], topics: [], subtopic: null })}>
               {s.short}
             </Chip>
           ))}
@@ -167,7 +172,7 @@ export default function QuestionBank() {
             id="bank-topic"
             className="input h-10 max-w-md"
             value={f.topics[0] ?? ''}
-            onChange={(e) => set({ topics: e.target.value ? [e.target.value] : [] })}
+            onChange={(e) => set({ topics: e.target.value ? [e.target.value] : [], subtopic: null })}
           >
             <option value="">All topics{subject ? ` in ${subject.short}` : ''}</option>
             {(subject ? [subject] : subjects).map((s) => (
@@ -198,14 +203,30 @@ export default function QuestionBank() {
             ))}
           </div>
         </div>
+        {concepts.length > 0 && (
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
+            <label htmlFor="bank-concept" className="w-24 shrink-0 text-xs font-medium uppercase tracking-wider text-muted">
+              Concept
+            </label>
+            <select id="bank-concept" className="input h-10 max-w-md" value={f.subtopic ?? ''} onChange={(e) => set({ subtopic: e.target.value || null })}>
+              <option value="">All concepts in this topic</option>
+              {concepts.map((c) => (
+                <option key={c.code} value={c.code}>
+                  {c.code} {c.concept} ({c.total}
+                  {c.review ? `, ${c.review} to review` : ''})
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
       </section>
 
       <p className="mb-4 flex flex-wrap items-center gap-x-3 text-sm text-muted" aria-live="polite">
         <span>
           {results.length} question{results.length === 1 ? '' : 's'}
         </span>
-        {(f.papers.length > 0 || f.difficulties.length > 0 || f.topics.length > 0 || f.sources.length > 0 || f.status !== 'all') && (
-          <button type="button" className="text-accent hover:underline" onClick={() => set({ papers: [], difficulties: [], topics: [], sources: [], status: 'all' })}>
+        {(f.papers.length > 0 || f.difficulties.length > 0 || f.topics.length > 0 || !!f.subtopic || f.sources.length > 0 || f.status !== 'all') && (
+          <button type="button" className="text-accent hover:underline" onClick={() => set({ papers: [], difficulties: [], topics: [], subtopic: null, sources: [], status: 'all' })}>
             Clear filters
           </button>
         )}

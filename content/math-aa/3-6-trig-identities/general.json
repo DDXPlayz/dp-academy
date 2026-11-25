@@ -1,0 +1,38 @@
+[
+ {
+  "id": "g-pythagorean-identity-obtuse",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "3.6.1",
+  "concept": "Pythagorean identity",
+  "calculator": false,
+  "prompt": "Given that $\\sin\\theta=\\dfrac35$ and $\\dfrac\\pi2<\\theta<\\pi$, find the exact values of $\\cos\\theta$ and $\\tan\\theta$.",
+  "markscheme": "$\\cos^{2}\\theta=1-\\dfrac{9}{25}=\\dfrac{16}{25}$ **(M1)**; $\\theta$ is obtuse, so $\\cos\\theta=-\\dfrac45$ **(A1)**\n\n$\\tan\\theta=\\dfrac{3/5}{-4/5}=-\\dfrac34$ **(A1)**\n\n**Common mistake:** taking the positive square root without checking the quadrant.",
+  "source": "original"
+ },
+ {
+  "id": "g-double-angle-values",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "3.6.2",
+  "concept": "Double angle identities",
+  "calculator": false,
+  "prompt": "Using $\\sin\\theta=\\dfrac35$ and $\\cos\\theta=-\\dfrac45$, find the exact values of $\\sin2\\theta$ and $\\cos2\\theta$.",
+  "markscheme": "$\\sin2\\theta=2\\sin\\theta\\cos\\theta=2\\left(\\tfrac35\\right)\\left(-\\tfrac45\\right)=-\\dfrac{24}{25}$ **(M1)(A1)**\n\n$\\cos2\\theta=1-2\\sin^{2}\\theta=1-\\dfrac{18}{25}=\\dfrac{7}{25}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-prove-identity-double-angle",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "3.6.3",
+  "concept": "Relationships between trig ratios",
+  "calculator": false,
+  "prompt": "Show that $\\dfrac{\\sin2x}{1+\\cos2x}\\equiv\\tan x$.",
+  "markscheme": "Use $\\cos2x=2\\cos^{2}x-1$, so $1+\\cos2x=2\\cos^{2}x$ **(M1)**\n\nLHS $=\\dfrac{2\\sin x\\cos x}{2\\cos^{2}x}$ **(A1)** $=\\dfrac{\\sin x}{\\cos x}=\\tan x$ **(AG)(A1)**\n\nChoosing the form of $\\cos2x$ that cancels the 1 is the key decision.",
+  "source": "original"
+ }
+]

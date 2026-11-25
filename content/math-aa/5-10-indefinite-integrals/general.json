@@ -1,0 +1,50 @@
+[
+ {
+  "id": "g-standard-integrals",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 4,
+  "subtopic": "5.10.1",
+  "concept": "Standard indefinite integrals",
+  "calculator": false,
+  "prompt": "Find $\\displaystyle\\int\\left(3x^{2}-\\frac4x+e^{x}-\\cos x\\right)dx$.",
+  "markscheme": "$x^{3}-4\\ln|x|+e^{x}-\\sin x+C$ **(A4)** (one mark for each of the four terms with $+C$)",
+  "source": "original"
+ },
+ {
+  "id": "g-linear-composites-integrals",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "5.10.2",
+  "concept": "Integrals of f(ax+b)",
+  "calculator": false,
+  "prompt": "Find **(a)** $\\displaystyle\\int e^{3x-1}dx$ **(b)** $\\displaystyle\\int\\frac{1}{2x+5}dx$ **(c)** $\\displaystyle\\int\\sin4x\\,dx$ **(d)** $\\displaystyle\\int(2x+1)^{5}dx$",
+  "markscheme": "**(a)** $\\tfrac13e^{3x-1}+C$ **(A1)** **(b)** $\\tfrac12\\ln|2x+5|+C$ **(A1)** **(c)** $-\\tfrac14\\cos4x+C$ **(A1)** **(d)** $\\dfrac{(2x+1)^{6}}{12}+C$ **(A1)**\n\nDivide by $a$, the coefficient of $x$ — differentiating back checks this.",
+  "source": "original"
+ },
+ {
+  "id": "g-reverse-chain-rule",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "5.10.4",
+  "concept": "Integration by inspection",
+  "calculator": false,
+  "prompt": "Find **(a)** $\\displaystyle\\int x(x^{2}+1)^{4}dx$ **(b)** $\\displaystyle\\int\\cos x\\,e^{\\sin x}dx$ **(c)** $\\displaystyle\\int\\frac{2x}{x^{2}+3}dx$",
+  "markscheme": "Each is of the form $\\int kg'(x)f(g(x))\\,dx$:\n\n**(a)** $\\dfrac{(x^{2}+1)^{5}}{10}+C$ **(A1)** **(b)** $e^{\\sin x}+C$ **(A1)** **(c)** $\\ln(x^{2}+3)+C$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-substitution-sl",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "5.10.3",
+  "concept": "Integration by substitution",
+  "calculator": false,
+  "prompt": "Use the substitution $u=x^{3}+2$ to find $\\displaystyle\\int x^{2}\\sqrt{x^{3}+2}\\,dx$.",
+  "markscheme": "$du=3x^{2}dx$ **(M1)**; $\\displaystyle\\int\\frac13\\sqrt u\\,du=\\frac29u^{3/2}$ **(A1)** $=\\dfrac29(x^{3}+2)^{3/2}+C$ **(A1)**",
+  "source": "original"
+ }
+]

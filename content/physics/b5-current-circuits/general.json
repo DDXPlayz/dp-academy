@@ -1,0 +1,217 @@
+[
+ {
+  "id": "g-emf-vs-pd",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "B.5.1",
+  "concept": "Emf of a cell",
+  "prompt": "Distinguish between the emf of a cell and the potential difference across a resistor.",
+  "markscheme": "Emf: energy transferred **to** each unit of charge by the source (e.g. from chemical energy) **(A1)**; pd: energy transferred **from** each unit of charge to other forms as it passes through the component **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-solar-vs-chemical-cells",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "B.5.2",
+  "concept": "Chemical and solar cells",
+  "prompt": "State one energy transfer in a chemical cell and one in a solar cell, and one factor on which the output of a solar cell depends.",
+  "markscheme": "Chemical: chemical energy → electrical energy; solar: light (radiant) energy → electrical energy **(A1)**; output depends on light intensity (also area, angle and temperature) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-meter-placement",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "B.5.3",
+  "concept": "Circuit diagrams",
+  "prompt": "To measure the current through and the pd across a lamp, the ammeter and voltmeter should be connected:",
+  "options": [
+   "ammeter in series, voltmeter in parallel",
+   "ammeter in parallel, voltmeter in series",
+   "both in series",
+   "both in parallel"
+  ],
+  "answer": 0,
+  "markscheme": "**A.** Ammeters go in series (same current flows through them) and have very low resistance; voltmeters go in parallel (same pd) and have very high resistance.",
+  "source": "original"
+ },
+ {
+  "id": "g-charge-and-electrons",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "B.5.4",
+  "concept": "Current I = Δq/Δt",
+  "prompt": "A current of 3.0 A flows for 2.0 minutes. Calculate the charge passing a point and the number of electrons. ($e=1.6\\times10^{-19}$ C)",
+  "markscheme": "$q=It=3.0\\times120=360$ C **(A1)**; $N=\\dfrac{360}{1.6\\times10^{-19}}=2.3\\times10^{21}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-pd-work-per-charge",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "B.5.5",
+  "concept": "Potential difference V = W/q",
+  "prompt": "How much energy is transferred when 5.0 C of charge passes through a component with a pd of 12 V across it?",
+  "options": [
+   "0.42 J",
+   "2.4 J",
+   "60 J",
+   "120 J"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** $W=qV=5.0\\times12=60$ J.",
+  "source": "original"
+ },
+ {
+  "id": "g-conductors-insulators",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "B.5.6",
+  "concept": "Conductors and insulators",
+  "prompt": "Explain the difference between electrical conductors and insulators in terms of charge carriers.",
+  "markscheme": "Conductors have a high density of mobile charge carriers (e.g. delocalised electrons in metals) that move freely when a pd is applied **(R1)**; in insulators the electrons are bound to atoms, so there are almost no mobile carriers **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-origin-of-resistance",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "B.5.7",
+  "concept": "Origin of resistance",
+  "prompt": "Explain the origin of resistance in a metal and why it increases with temperature.",
+  "markscheme": "Moving electrons collide with the vibrating lattice ions, transferring energy and impeding their drift **(R1)**; at higher temperature the ions vibrate with larger amplitude, so collisions are more frequent **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-resistance-calc",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "B.5.8",
+  "concept": "Resistance R = V/I",
+  "prompt": "A pd of 6.0 V across a resistor produces a current of 0.25 A. What is its resistance?",
+  "options": [
+   "$1.5\\ \\Omega$",
+   "$4.2\\ \\Omega$",
+   "$24\\ \\Omega$",
+   "$36\\ \\Omega$"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** $R=\\dfrac VI=\\dfrac{6.0}{0.25}=24\\ \\Omega$.",
+  "source": "original"
+ },
+ {
+  "id": "g-resistivity-wire",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "B.5.9",
+  "concept": "Resistivity",
+  "prompt": "A copper wire is 2.0 m long with diameter 0.50 mm. The resistivity of copper is $1.7\\times10^{-8}\\ \\Omega$ m.\n\n**(a)** Calculate its resistance. **[2]**\n\n**(b)** A second copper wire has twice the length and twice the diameter. State its resistance. **[1]**",
+  "markscheme": "**(a)** $A=\\pi(0.25\\times10^{-3})^{2}=1.96\\times10^{-7}\\ \\text{m}^{2}$; $R=\\dfrac{\\rho L}{A}=0.17\\ \\Omega$ **(M1)(A1)**\n\n**(b)** $L\\times2$ and $A\\times4$, so $R\\times\\tfrac12$: $0.087\\ \\Omega$ **(A1)**\n\n**Common mistake:** using the diameter as the radius.",
+  "source": "original"
+ },
+ {
+  "id": "g-ohms-law-statement",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "B.5.10",
+  "concept": "Ohm's law",
+  "prompt": "State Ohm's law.",
+  "markscheme": "The current through a conductor is directly proportional to the potential difference across it, **provided the temperature (and other physical conditions) remain constant** **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-filament-iv",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "B.5.11",
+  "concept": "Ohmic and non-ohmic behaviour",
+  "prompt": "Describe and explain the shape of the $I$–$V$ graph for a filament lamp.",
+  "markscheme": "A curve through the origin whose gradient decreases as $V$ increases (symmetric for negative $V$) **(A1)**\n\nLarger current heats the filament **(R1)**; the higher temperature increases resistance (more lattice collisions), so $I$ rises less than proportionally — non-ohmic **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-bulbs-in-series",
+  "paper": "1A",
+  "difficulty": "hard",
+  "marks": 1,
+  "subtopic": "B.5.12",
+  "concept": "Electrical power",
+  "prompt": "A 60 W lamp and a 100 W lamp, each rated for 230 V, are connected **in series** across 230 V. Assuming constant resistances, which is correct?",
+  "options": [
+   "The 60 W lamp is brighter.",
+   "The 100 W lamp is brighter.",
+   "They are equally bright.",
+   "Neither lamp lights."
+  ],
+  "answer": 0,
+  "markscheme": "**A.** $R=\\dfrac{V^{2}}{P}$: $882\\ \\Omega$ for the 60 W lamp, $529\\ \\Omega$ for the 100 W lamp. In series the current is the same, so $P=I^{2}R$ is larger for the larger resistance — the 60 W lamp is brighter.",
+  "source": "original"
+ },
+ {
+  "id": "g-kettle-power",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "B.5.12",
+  "concept": "P = IV = I²R = V²/R",
+  "prompt": "A 2.0 kW kettle operates on 230 V. Calculate the current and the resistance of its element.",
+  "markscheme": "$I=\\dfrac PV=8.7$ A **(A1)**; $R=\\dfrac{V^{2}}{P}=26\\ \\Omega$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-series-parallel-network",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "B.5.13",
+  "concept": "Series and parallel combinations",
+  "prompt": "A $4.0\\ \\Omega$ resistor is connected in series with a parallel pair of $6.0\\ \\Omega$ and $12\\ \\Omega$ resistors, across a 12 V supply of negligible internal resistance.\n\n**(a)** Calculate the total resistance. **[2]**\n\n**(b)** Calculate the current in the $12\\ \\Omega$ resistor. **[2]**",
+  "markscheme": "**(a)** Parallel: $\\left(\\tfrac16+\\tfrac1{12}\\right)^{-1}=4.0\\ \\Omega$ **(M1)**; total $8.0\\ \\Omega$ **(A1)**\n\n**(b)** $I=1.5$ A; pd across the parallel pair $=1.5\\times4.0=6.0$ V **(M1)**; $I_{12}=\\dfrac{6.0}{12}=0.50$ A **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-internal-resistance-from-data",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "B.5.14",
+  "concept": "Emf and internal resistance",
+  "prompt": "A cell's terminal pd is 1.45 V when it supplies 0.10 A and 1.30 V when it supplies 0.40 A. Determine its emf and internal resistance.",
+  "markscheme": "$V=\\varepsilon-Ir$ **(M1)**: $1.45=\\varepsilon-0.10r$ and $1.30=\\varepsilon-0.40r$\n\nSubtract: $0.15=0.30r$, $r=0.50\\ \\Omega$ **(A1)**; $\\varepsilon=1.45+0.05=1.50$ V **(A1)**\n\nOn a $V$–$I$ graph the intercept is $\\varepsilon$ and the gradient is $-r$ **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-lost-volts",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "B.5.14",
+  "concept": "ε = I(R + r)",
+  "prompt": "A battery of emf 9.0 V and internal resistance $1.5\\ \\Omega$ is connected to a $6.0\\ \\Omega$ resistor. Calculate the current and the terminal pd.",
+  "markscheme": "$I=\\dfrac{\\varepsilon}{R+r}=\\dfrac{9.0}{7.5}=1.2$ A **(M1)(A1)**; terminal pd $=IR=7.2$ V (1.8 V “lost” inside the battery) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-ldr-potential-divider",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "B.5.15",
+  "concept": "Variable resistors in potential dividers",
+  "prompt": "A potential divider consists of a fixed $1.0\\ \\text{k}\\Omega$ resistor and a light-dependent resistor (LDR) in series across 9.0 V. The output is taken across the LDR, whose resistance is $5.0\\ \\text{k}\\Omega$ in the dark and $0.50\\ \\text{k}\\Omega$ in bright light.\n\nCalculate the output voltage in the dark and in bright light, and suggest a use for the circuit.",
+  "markscheme": "Dark: $9.0\\times\\dfrac{5.0}{6.0}=7.5$ V **(A1)**; light: $9.0\\times\\dfrac{0.50}{1.5}=3.0$ V **(A1)**\n\nThe output rises when it gets dark, so it can switch on a street light **(A1)**",
+  "source": "original"
+ }
+]

@@ -1,0 +1,26 @@
+[
+ {
+  "id": "g-key-features-cubic",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 5,
+  "subtopic": "2.4.1",
+  "concept": "Key features of graphs",
+  "calculator": true,
+  "prompt": "Let $f(x)=x^{3}-6x^{2}+9x+1$.\n\n**(a)** Write down the $y$-intercept. **[1]**\n\n**(b)** Find the coordinates of the local maximum and local minimum points. **[2]**\n\n**(c)** Find the zero of $f$. **[1]**\n\n**(d)** Hence state the number of solutions of $f(x)=3$. **[1]**",
+  "markscheme": "**(a)** $(0,1)$ **(A1)**\n\n**(b)** Local maximum $(1,5)$, local minimum $(3,1)$ **(A1)(A1)** (from the GDC, or $f'(x)=3(x-1)(x-3)$)\n\n**(c)** $x\\approx-0.104$ **(A1)**\n\n**(d)** The line $y=3$ lies between the minimum value 1 and the maximum value 5, so it crosses the graph three times: **3** solutions **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-intersection-gdc",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "2.4.2",
+  "concept": "Intersection of curves using technology",
+  "calculator": true,
+  "prompt": "Find the coordinates of the points where the curves $y=e^{x}-3$ and $y=2-x^{2}$ intersect.",
+  "markscheme": "Graph both and use the intersect function **(M1)**\n\n$(-2.21,\\ -2.89)$ and $(1.24,\\ 0.460)$ **(A1)**",
+  "source": "original"
+ }
+]

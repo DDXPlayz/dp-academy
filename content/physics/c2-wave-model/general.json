@@ -1,0 +1,64 @@
+[
+ {
+  "id": "g-transverse-longitudinal",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "C.2.1",
+  "concept": "Transverse and longitudinal waves",
+  "prompt": "Distinguish between transverse and longitudinal waves, giving one example of each.",
+  "markscheme": "Transverse: oscillations perpendicular to the direction of energy transfer, e.g. light, waves on a string **(A1)**; longitudinal: oscillations parallel to the direction of energy transfer, e.g. sound **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-wave-equation-calcs",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "C.2.2",
+  "concept": "v = fλ",
+  "prompt": "**(a)** Calculate the wavelength of a 100 MHz radio wave ($c=3.0\\times10^{8}\\ \\text{m s}^{-1}$). **[1]**\n\n**(b)** Crests 0.40 m apart pass a point at a rate of 5 per second. Calculate the wave speed. **[1]**",
+  "markscheme": "**(a)** $\\lambda=\\dfrac cf=3.0$ m **(A1)**\n\n**(b)** $f=5$ Hz, $v=f\\lambda=2.0\\ \\text{m s}^{-1}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-sound-nature",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "C.2.3",
+  "concept": "Nature of sound waves",
+  "prompt": "Describe the nature of a sound wave in air, and explain why sound cannot travel through a vacuum.",
+  "markscheme": "A longitudinal wave: air molecules oscillate parallel to the direction of travel **(A1)**, forming compressions (high pressure) and rarefactions (low pressure) **(A1)**. It is a mechanical wave that needs particles to pass on the oscillation, and a vacuum has none **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-em-wave-nature",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "C.2.4",
+  "concept": "Nature of electromagnetic waves",
+  "prompt": "Which statement about electromagnetic waves is **incorrect**?",
+  "options": [
+   "They are transverse.",
+   "They consist of oscillating electric and magnetic fields.",
+   "They can travel through a vacuum.",
+   "Gamma rays travel faster than radio waves in a vacuum."
+  ],
+  "answer": 3,
+  "markscheme": "**D.** All EM waves travel at the same speed $c$ in a vacuum; they differ in frequency and wavelength. They are transverse oscillations of electric and magnetic fields, and can be polarised.",
+  "source": "original"
+ },
+ {
+  "id": "g-mechanical-vs-em",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "C.2.5",
+  "concept": "Mechanical vs electromagnetic waves",
+  "prompt": "State two differences between sound waves and light waves.",
+  "markscheme": "Any two **(A2)**: sound needs a medium, light does not; sound is longitudinal, light is transverse (so only light can be polarised); light travels about $10^{6}$ times faster; sound travels faster in solids, light slower in denser media.",
+  "source": "original"
+ }
+]

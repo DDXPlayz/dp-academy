@@ -1,0 +1,26 @@
+[
+ {
+  "id": "g-binomial-probabilities",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "4.8.1",
+  "concept": "The binomial distribution",
+  "calculator": true,
+  "prompt": "30% of seeds in a packet are a red variety. Ten seeds are chosen at random.\n\n**(a)** State two assumptions needed to model the number of red seeds by $B(10,\\,0.3)$. **[2]**\n\n**(b)** Find the probability that exactly 3 are red. **[1]**\n\n**(c)** Find the probability that at least 2 are red. **[1]**",
+  "markscheme": "**(a)** Each seed is independently red or not; the probability 0.3 is constant for each seed (e.g. a large packet) **(R2)**\n\n**(b)** $\\binom{10}{3}0.3^{3}0.7^{7}\\approx0.267$ **(A1)**\n\n**(c)** $1-P(X\\le1)\\approx0.851$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-binomial-find-n-p",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "4.8.2",
+  "concept": "Mean and variance of the binomial",
+  "calculator": false,
+  "prompt": "$X\\sim B(n,p)$ with $E(X)=6$ and $\\operatorname{Var}(X)=4.2$. Find $n$ and $p$.",
+  "markscheme": "$np=6$ and $np(1-p)=4.2$ **(M1)**; dividing: $1-p=0.7$, $p=0.3$ **(A1)**; $n=20$ **(A1)**",
+  "source": "original"
+ }
+]

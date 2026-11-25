@@ -1,0 +1,15 @@
+[
+ {
+  "id": "g-trig-symmetry",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "3.11.1",
+  "concept": "Symmetry properties of trig graphs",
+  "calculator": false,
+  "prompt": "Given $\\sin\\alpha=0.3$, write down the value of\n\n**(a)** $\\sin(\\pi+\\alpha)$ **(b)** $\\cos\\left(\\dfrac\\pi2-\\alpha\\right)$ **(c)** $\\sin(-\\alpha)$",
+  "markscheme": "**(a)** $-0.3$ — a half-turn on the unit circle changes the sign of both coordinates **(A1)**\n\n**(b)** $0.3$ — complementary angles swap sine and cosine **(A1)**\n\n**(c)** $-0.3$ — sine is an odd function **(A1)**",
+  "source": "original"
+ }
+]

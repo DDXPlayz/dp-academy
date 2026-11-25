@@ -1,0 +1,50 @@
+[
+ {
+  "id": "g-composite-no-solution",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 5,
+  "subtopic": "2.5.1",
+  "concept": "Composite functions",
+  "calculator": false,
+  "prompt": "Let $f(x)=2x+1$ and $g(x)=x^{2}-3$.\n\n**(a)** Find $(f\\circ g)(x)$ and $(g\\circ f)(x)$. **[3]**\n\n**(b)** Show that the equation $(f\\circ g)(x)=(g\\circ f)(x)$ has no real solutions. **[2]**",
+  "markscheme": "**(a)** $(f\\circ g)(x)=f(x^{2}-3)=2x^{2}-5$ **(A1)**; $(g\\circ f)(x)=(2x+1)^{2}-3=4x^{2}+4x-2$ **(M1)(A1)**\n\n**(b)** $2x^{2}-5=4x^{2}+4x-2\\Rightarrow2x^{2}+4x+3=0$ **(M1)**; $\\Delta=16-24<0$, so no real solutions **(R1)**\n\n$f\\circ g$ means “do $g$ first”; composition is generally not commutative.",
+  "source": "original"
+ },
+ {
+  "id": "g-composite-domain",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "2.5.1",
+  "concept": "Domain of a composite",
+  "calculator": false,
+  "prompt": "Let $f(x)=\\sqrt x$, $x\\ge0$, and $g(x)=x-4$. Find the domain of $f\\circ g$.",
+  "markscheme": "$(f\\circ g)(x)=\\sqrt{x-4}$, which needs $x-4\\ge0$ **(M1)**, so the domain is $x\\ge4$ **(A1)**\n\nThe output of $g$ must lie in the domain of $f$.",
+  "source": "original"
+ },
+ {
+  "id": "g-inverse-rational",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "2.5.2",
+  "concept": "Finding an inverse function",
+  "calculator": false,
+  "prompt": "Let $f(x)=\\dfrac{2x+3}{x-1}$, $x\\neq1$. Find $f^{-1}(x)$ and state its domain.",
+  "markscheme": "$y(x-1)=2x+3$ **(M1)**, $x(y-2)=y+3$, so $x=\\dfrac{y+3}{y-2}$ **(A1)**\n\n$f^{-1}(x)=\\dfrac{x+3}{x-2}$ **(A1)**, domain $x\\neq2$ (the range of $f$, since $y=2$ is a horizontal asymptote of $f$) **(A1)**\n\nCheck: $f(f^{-1}(x))=x$ — composing a function with its inverse gives the identity function.",
+  "source": "original"
+ },
+ {
+  "id": "g-inverse-exponential",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "2.5.2",
+  "concept": "Inverse of an exponential function",
+  "calculator": false,
+  "prompt": "Let $f(x)=3e^{x-2}$, $x\\in\\mathbb{R}$. Find $f^{-1}(x)$, stating its domain.",
+  "markscheme": "$y=3e^{x-2}\\Rightarrow\\dfrac y3=e^{x-2}\\Rightarrow x=2+\\ln\\dfrac y3$ **(M1)**\n\n$f^{-1}(x)=2+\\ln\\dfrac x3$ **(A1)**, $x>0$ **(A1)**",
+  "source": "original"
+ }
+]

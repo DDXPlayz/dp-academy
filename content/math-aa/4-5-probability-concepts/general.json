@@ -1,0 +1,50 @@
+[
+ {
+  "id": "g-relative-frequency-fair",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "4.5.1",
+  "concept": "Relative frequency",
+  "calculator": false,
+  "prompt": "A die is thrown 200 times and lands on six 41 times. Find the relative frequency of a six and comment on whether the die appears fair.",
+  "markscheme": "$\\dfrac{41}{200}=0.205$ **(A1)**; a fair die gives $\\frac16\\approx0.167$ (about 33 sixes). 41 is higher, which hints at bias, but more trials would be needed to be confident **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-two-dice-sum",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "4.5.2",
+  "concept": "P(A) = n(A)/n(U)",
+  "calculator": false,
+  "prompt": "Two fair dice are thrown. Find the probability that the total is 8.",
+  "markscheme": "$n(U)=36$; outcomes $(2,6),(3,5),(4,4),(5,3),(6,2)$, so $n(A)=5$ **(M1)**; $P=\\dfrac{5}{36}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-complement-at-least-one",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "4.5.3",
+  "concept": "Complementary events",
+  "calculator": false,
+  "prompt": "A fair die is rolled 4 times. Find the probability of getting at least one six.",
+  "markscheme": "$P(\\text{no six})=\\left(\\tfrac56\\right)^{4}$ **(M1)**; $P(\\text{at least one})=1-\\left(\\tfrac56\\right)^{4}=\\dfrac{671}{1296}\\approx0.518$ **(A1)**\n\n“At least one” is almost always easiest through the complement.",
+  "source": "original"
+ },
+ {
+  "id": "g-expected-occurrences",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "4.5.4",
+  "concept": "Expected number of occurrences",
+  "calculator": false,
+  "prompt": "The probability that an item from a factory is defective is 0.15. Find the expected number of defective items in a batch of 400.",
+  "markscheme": "$400\\times0.15=60$ **(A1)**",
+  "source": "original"
+ }
+]

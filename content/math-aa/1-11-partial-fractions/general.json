@@ -1,0 +1,28 @@
+[
+ {
+  "id": "g-partial-fractions-basic",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "1.11.1",
+  "concept": "Partial fractions",
+  "calculator": false,
+  "prompt": "Express $\\dfrac{x+7}{x^{2}-x-6}$ in partial fractions.",
+  "markscheme": "$x^{2}-x-6=(x-3)(x+2)$ **(A1)**\n\n$\\dfrac{x+7}{(x-3)(x+2)}\\equiv\\dfrac{A}{x-3}+\\dfrac{B}{x+2}\\Rightarrow x+7\\equiv A(x+2)+B(x-3)$ **(M1)**\n\n$x=3$: $10=5A\\Rightarrow A=2$; $x=-2$: $5=-5B\\Rightarrow B=-1$ **(A1)**\n\n$\\dfrac{2}{x-3}-\\dfrac{1}{x+2}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-partial-fractions-telescoping",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "1.11.1",
+  "concept": "Partial fractions in a series",
+  "calculator": false,
+  "prompt": "**(a)** Express $\\dfrac{1}{r(r+1)}$ in partial fractions. **[2]**\n\n**(b)** Hence show that $\\displaystyle\\sum_{r=1}^{n}\\frac{1}{r(r+1)}=\\frac{n}{n+1}$. **[3]**",
+  "markscheme": "**(a)** $1\\equiv A(r+1)+Br$: $r=0\\Rightarrow A=1$, $r=-1\\Rightarrow B=-1$, so $\\dfrac1r-\\dfrac1{r+1}$ **(M1)(A1)**\n\n**(b)** $\\left(1-\\tfrac12\\right)+\\left(\\tfrac12-\\tfrac13\\right)+\\dots+\\left(\\tfrac1n-\\tfrac1{n+1}\\right)$ **(M1)**\n\nAll intermediate terms cancel **(R1)**, leaving $1-\\dfrac{1}{n+1}=\\dfrac{n}{n+1}$ **(A1)(AG)**",
+  "source": "original"
+ }
+]

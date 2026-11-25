@@ -1,0 +1,26 @@
+[
+ {
+  "id": "g-trig-equation-interval",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "3.8.1",
+  "concept": "Solving trig equations in an interval",
+  "calculator": false,
+  "prompt": "**(a)** Solve $2\\sin x=\\sqrt3$ for $0\\le x\\le2\\pi$. **[2]**\n\n**(b)** Solve $\\tan2x=1$ for $0\\le x\\le\\pi$. **[2]**",
+  "markscheme": "**(a)** $\\sin x=\\dfrac{\\sqrt3}{2}$: $x=\\dfrac\\pi3,\\ \\dfrac{2\\pi}{3}$ **(A1)(A1)**\n\n**(b)** $0\\le2x\\le2\\pi$ and $\\tan2x=1$: $2x=\\dfrac\\pi4,\\ \\dfrac{5\\pi}{4}$ **(M1)**, so $x=\\dfrac\\pi8,\\ \\dfrac{5\\pi}{8}$ **(A1)**\n\n**Common mistake (b):** dividing too early and missing $\\frac{5\\pi}{8}$. Find all values of $2x$ in the doubled interval first.",
+  "source": "original"
+ },
+ {
+  "id": "g-trig-quadratic-cos2x",
+  "paper": "1",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "3.8.2",
+  "concept": "Trig equations leading to quadratics",
+  "calculator": false,
+  "prompt": "Solve $\\cos2x=\\sin x$ for $0\\le x\\le2\\pi$.",
+  "markscheme": "$1-2\\sin^{2}x=\\sin x$ **(M1)** $\\Rightarrow2\\sin^{2}x+\\sin x-1=0$ **(A1)**\n\n$(2\\sin x-1)(\\sin x+1)=0$, so $\\sin x=\\tfrac12$ or $\\sin x=-1$ **(A1)**\n\n$x=\\dfrac\\pi6,\\ \\dfrac{5\\pi}{6},\\ \\dfrac{3\\pi}{2}$ **(A2)**",
+  "source": "original"
+ }
+]

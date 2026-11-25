@@ -1,0 +1,28 @@
+[
+ {
+  "id": "g-skew-lines",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "3.15.1",
+  "concept": "Skew lines",
+  "calculator": false,
+  "prompt": "Show that the lines $L_1:\\ \\mathbf r=\\begin{pmatrix}1\\\\0\\\\2\\end{pmatrix}+\\lambda\\begin{pmatrix}1\\\\-1\\\\2\\end{pmatrix}$ and $L_2:\\ \\mathbf r=\\begin{pmatrix}3\\\\1\\\\0\\end{pmatrix}+\\mu\\begin{pmatrix}2\\\\1\\\\-1\\end{pmatrix}$ are skew.",
+  "markscheme": "Directions are not scalar multiples, so the lines are not parallel **(R1)**\n\nEquate: $1+\\lambda=3+2\\mu$, $-\\lambda=1+\\mu$, $2+2\\lambda=-\\mu$ **(M1)**\n\nFrom the first two: $\\mu=-1$, $\\lambda=0$ **(A1)**; third: $2+0=2$ but $-\\mu=1$, so $2\\ne1$ — inconsistent **(A1)**\n\nNot parallel and not intersecting, so skew **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-intersecting-lines-point",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "3.15.2",
+  "concept": "Point of intersection of two lines",
+  "calculator": false,
+  "prompt": "Find the point of intersection of $\\mathbf r=\\begin{pmatrix}1\\\\2\\\\3\\end{pmatrix}+\\lambda\\begin{pmatrix}1\\\\0\\\\-1\\end{pmatrix}$ and $\\mathbf r=\\begin{pmatrix}0\\\\1\\\\5\\end{pmatrix}+\\mu\\begin{pmatrix}1\\\\1\\\\-2\\end{pmatrix}$.",
+  "markscheme": "$1+\\lambda=\\mu$, $2=1+\\mu$, $3-\\lambda=5-2\\mu$ **(M1)**\n\n$\\mu=1$, $\\lambda=0$ **(A1)**; check third: $3=3$ ✓ **(R1)**\n\nPoint $(1,2,3)$ **(A1)**",
+  "source": "original"
+ }
+]

@@ -1,0 +1,124 @@
+[
+ {
+  "id": "g-shm-conditions",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "C.1.1",
+  "concept": "Conditions for simple harmonic motion",
+  "prompt": "State the two conditions on the resultant force for a body to undergo simple harmonic motion.",
+  "markscheme": "The force (and so acceleration) is proportional to the displacement from the equilibrium position **(A1)**, and is always directed towards the equilibrium position — opposite to the displacement **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-a-x-graph-shm",
+  "paper": "1A",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "C.1.2",
+  "concept": "a = −ω²x",
+  "prompt": "Which graph of acceleration $a$ against displacement $x$ shows simple harmonic motion?",
+  "options": [
+   "A straight line through the origin with positive gradient",
+   "A straight line through the origin with negative gradient",
+   "A horizontal line",
+   "A curve with a ∝ x²"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** $a=-\\omega^{2}x$ is a straight line through the origin with negative gradient $-\\omega^{2}$. A positive gradient would push the body away from equilibrium.",
+  "source": "original"
+ },
+ {
+  "id": "g-shm-terms",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "C.1.3",
+  "concept": "Describing SHM: amplitude, period, frequency",
+  "prompt": "A particle oscillates between $x=-4.0$ cm and $x=+4.0$ cm, completing 10 oscillations in 4.0 s. State its amplitude, period and frequency.",
+  "markscheme": "Amplitude $=4.0$ cm (maximum displacement from equilibrium, not the full 8.0 cm swing) **(A1)**; $T=0.40$ s, $f=2.5$ Hz **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-period-angular-frequency",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "C.1.4",
+  "concept": "T = 1/f = 2π/ω",
+  "prompt": "An oscillator has frequency 2.5 Hz. What is its angular frequency?",
+  "options": [
+   "$0.40\\ \\text{rad s}^{-1}$",
+   "$2.5\\ \\text{rad s}^{-1}$",
+   "$15.7\\ \\text{rad s}^{-1}$",
+   "$31.4\\ \\text{rad s}^{-1}$"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** $\\omega=2\\pi f=2\\pi\\times2.5=15.7\\ \\text{rad s}^{-1}$.",
+  "source": "original"
+ },
+ {
+  "id": "g-mass-spring-period",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "C.1.5",
+  "concept": "Period of a mass–spring system",
+  "prompt": "A 0.40 kg mass oscillates on a spring of spring constant $160\\ \\text{N m}^{-1}$.\n\n**(a)** Calculate the period. **[2]**\n\n**(b)** State the period if the mass is replaced by a 1.6 kg mass, with a reason. **[1]**",
+  "markscheme": "**(a)** $T=2\\pi\\sqrt{\\dfrac mk}=2\\pi\\sqrt{\\dfrac{0.40}{160}}=0.31$ s **(M1)(A1)**\n\n**(b)** $T\\propto\\sqrt m$; four times the mass doubles the period: 0.63 s **(A1)** (independent of amplitude)",
+  "source": "original"
+ },
+ {
+  "id": "g-pendulum-length-moon",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "C.1.6",
+  "concept": "Period of a simple pendulum",
+  "prompt": "**(a)** Calculate the length of a simple pendulum with period 2.0 s on Earth. Take $g=9.8\\ \\text{m s}^{-2}$. **[2]**\n\n**(b)** Calculate its period on the Moon, where $g=1.6\\ \\text{m s}^{-2}$. **[1]**\n\n**(c)** Explain how a graph of $T^{2}$ against $l$ can be used to determine $g$. **[1]**",
+  "markscheme": "**(a)** $l=\\dfrac{gT^{2}}{4\\pi^{2}}=\\dfrac{9.8\\times4.0}{4\\pi^{2}}=0.99$ m **(M1)(A1)**\n\n**(b)** $T=2\\pi\\sqrt{\\dfrac{0.99}{1.6}}=4.9$ s **(A1)**\n\n**(c)** $T^{2}=\\dfrac{4\\pi^{2}}{g}l$: a straight line through the origin with gradient $\\dfrac{4\\pi^{2}}{g}$, so $g=\\dfrac{4\\pi^{2}}{\\text{gradient}}$ **(R1)** (valid for small angles)",
+  "source": "original"
+ },
+ {
+  "id": "g-shm-energy-changes",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "C.1.7",
+  "concept": "Energy changes during an oscillation",
+  "prompt": "For an undamped mass–spring oscillator, at which position is the kinetic energy maximum and the potential energy minimum?",
+  "options": [
+   "At the equilibrium position",
+   "At maximum displacement",
+   "Halfway between equilibrium and maximum displacement",
+   "Kinetic energy is constant throughout"
+  ],
+  "answer": 0,
+  "markscheme": "**A.** At equilibrium the speed is greatest and the displacement is zero; at the extremes all the energy is potential. The total energy stays constant without damping.",
+  "source": "original"
+ },
+ {
+  "id": "g-phase-difference-oscillators",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "C.1.8",
+  "concept": "Phase angle in SHM",
+  "prompt": "Two identical oscillators have displacements $x_1=x_0\\sin\\omega t$ and $x_2=x_0\\sin\\left(\\omega t+\\dfrac\\pi2\\right)$. State their phase difference and describe the position of oscillator 2 when oscillator 1 passes through equilibrium.",
+  "markscheme": "Phase difference $\\dfrac\\pi2$ (a quarter cycle) **(A1)**; when $x_1=0$, oscillator 2 is at maximum displacement, momentarily at rest **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-shm-equations-full",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 6,
+  "subtopic": "C.1.9",
+  "concept": "SHM equations",
+  "prompt": "A 0.20 kg mass oscillates in SHM with amplitude 0.050 m and frequency 2.0 Hz, starting from the equilibrium position at $t=0$.\n\n**(a)** Calculate the maximum speed and the total energy. **[3]**\n\n**(b)** Calculate the speed when the displacement is 0.030 m. **[1]**\n\n**(c)** Calculate the time taken to first reach a displacement of 0.025 m. **[2]**",
+  "markscheme": "**(a)** $\\omega=4\\pi=12.6\\ \\text{rad s}^{-1}$ **(A1)**; $v_{max}=\\omega x_0=0.63\\ \\text{m s}^{-1}$ **(A1)**; $E_T=\\tfrac12m\\omega^{2}x_0^{2}=0.039$ J **(A1)**\n\n**(b)** $v=\\omega\\sqrt{x_0^{2}-x^{2}}=12.6\\times0.040=0.50\\ \\text{m s}^{-1}$ **(A1)**\n\n**(c)** $x=x_0\\sin\\omega t$: $\\sin\\omega t=0.5\\Rightarrow\\omega t=\\dfrac\\pi6$ **(M1)**, $t=0.042$ s **(A1)** — this is $\\tfrac{T}{12}$, only a third of the quarter-period, because the mass moves fastest near equilibrium.",
+  "source": "original"
+ }
+]

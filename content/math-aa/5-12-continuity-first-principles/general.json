@@ -1,0 +1,54 @@
+[
+ {
+  "id": "g-continuity-differentiability-piecewise",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "5.12.1",
+  "concept": "Continuity and differentiability",
+  "calculator": false,
+  "prompt": "$f(x)=\\begin{cases}x^{2}, & x\\le1\\\\ ax+b, & x>1\\end{cases}$\n\nFind $a$ and $b$ so that $f$ is both continuous and differentiable at $x=1$.",
+  "markscheme": "Continuity: $1=a+b$ **(M1)**\n\nDifferentiability: the one-sided gradients agree: $2(1)=a$ **(M1)**, so $a=2$ **(A1)**, $b=-1$ **(A1)**\n\nContinuity alone is not enough: $|x|$ is continuous at 0 but has a corner there, so it is not differentiable.",
+  "source": "original"
+ },
+ {
+  "id": "g-limits-at-infinity",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "5.12.2",
+  "concept": "Convergence and divergence of limits",
+  "calculator": false,
+  "prompt": "**(a)** Find $\\displaystyle\\lim_{x\\to\\infty}\\frac{3x^{2}+1}{2x^{2}-x}$. **[2]**\n\n**(b)** Explain why $\\displaystyle\\lim_{x\\to0}\\frac1x$ does not exist. **[1]**",
+  "markscheme": "**(a)** Divide by $x^{2}$: $\\dfrac{3+1/x^{2}}{2-1/x}\\to\\dfrac32$ **(M1)(A1)**\n\n**(b)** As $x\\to0^{+}$, $\\frac1x\\to+\\infty$; as $x\\to0^{-}$, $\\frac1x\\to-\\infty$; the function does not approach a finite value **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-first-principles-reciprocal",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "5.12.3",
+  "concept": "Differentiation from first principles",
+  "calculator": false,
+  "prompt": "Use the definition $f'(x)=\\displaystyle\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}$ to differentiate $f(x)=\\dfrac1x$.",
+  "markscheme": "$\\dfrac{\\frac{1}{x+h}-\\frac1x}{h}=\\dfrac{x-(x+h)}{hx(x+h)}$ **(M1)(A1)** $=\\dfrac{-1}{x(x+h)}$ **(A1)**\n\nAs $h\\to0$: $f'(x)=-\\dfrac{1}{x^{2}}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-higher-derivatives-pattern",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "5.12.4",
+  "concept": "Higher derivatives",
+  "calculator": false,
+  "prompt": "Let $f(x)=xe^{x}$. Find $f'(x)$, $f''(x)$ and $f'''(x)$, and conjecture an expression for $f^{(n)}(x)$.",
+  "markscheme": "$f'=(x+1)e^{x}$, $f''=(x+2)e^{x}$, $f'''=(x+3)e^{x}$ **(A2)**\n\nConjecture $f^{(n)}(x)=(x+n)e^{x}$ **(A1)** (provable by induction)",
+  "source": "original"
+ }
+]

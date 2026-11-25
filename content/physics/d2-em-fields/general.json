@@ -1,0 +1,261 @@
+[
+ {
+  "id": "g-charge-forces",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "D.2.1",
+  "concept": "Forces between charges",
+  "prompt": "Sphere A attracts sphere B, and sphere B repels sphere C, which is positive. What are the charges on A and B?",
+  "options": [
+   "A positive, B positive",
+   "A positive, B negative",
+   "A negative, B positive",
+   "A negative, B negative"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** B repels positive C, so B is positive; A attracts B, so A is negative (or neutral, through induced charge — but of the options only negative fits).",
+  "source": "original"
+ },
+ {
+  "id": "g-coulomb-two-charges",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "D.2.2",
+  "concept": "Coulomb's law",
+  "prompt": "Calculate the force between charges of $+3.0\\ \\mu\\text{C}$ and $-2.0\\ \\mu\\text{C}$ placed 5.0 cm apart, and state whether it is attractive or repulsive. ($k=8.99\\times10^{9}\\ \\text{N m}^{2}\\,\\text{C}^{-2}$, $e=1.60\\times10^{-19}$ C)",
+  "markscheme": "$F=\\dfrac{kq_1q_2}{r^{2}}=\\dfrac{8.99\\times10^{9}\\times3.0\\times10^{-6}\\times2.0\\times10^{-6}}{0.050^{2}}$ **(M1)** $=22$ N, attractive **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-electric-vs-gravity-hydrogen",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "D.2.2",
+  "concept": "Electric vs gravitational forces",
+  "prompt": "Compare the electric and gravitational forces between the electron and proton in a hydrogen atom by calculating their ratio. (Electron mass $9.11\\times10^{-31}$ kg, proton mass $1.67\\times10^{-27}$ kg, $G=6.67\\times10^{-11}$ SI units, $k=8.99\\times10^{9}\\ \\text{N m}^{2}\\,\\text{C}^{-2}$, $e=1.60\\times10^{-19}$ C)",
+  "markscheme": "Both follow inverse-square laws, so $r$ cancels **(R1)**:\n\n$\\dfrac{F_e}{F_g}=\\dfrac{ke^{2}}{Gm_em_p}$ **(M1)** $\\approx2.3\\times10^{39}$ **(A1)** — gravity is negligible at atomic scale.",
+  "source": "original"
+ },
+ {
+  "id": "g-charge-conservation-spheres",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "D.2.3",
+  "concept": "Conservation of charge",
+  "prompt": "Two identical conducting spheres carry $+6$ nC and $-2$ nC. They touch and are then separated. What is the charge on each?",
+  "options": [
+   "+4 nC",
+   "+2 nC",
+   "+3 nC and −1 nC",
+   "0"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** Total charge $+4$ nC is conserved and shared equally by identical spheres: $+2$ nC each.",
+  "source": "original"
+ },
+ {
+  "id": "g-millikan-quantisation",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "D.2.4",
+  "concept": "Millikan's experiment",
+  "prompt": "In a Millikan-type experiment, an oil drop of mass $3.27\\times10^{-15}$ kg is held stationary between plates where the field strength is $5.0\\times10^{4}\\ \\text{V m}^{-1}$. ($g=9.8\\ \\text{m s}^{-2}$)\n\n**(a)** Calculate the charge on the drop. **[2]**\n\n**(b)** Explain how many such measurements provide evidence for the quantisation of charge. **[1]**",
+  "markscheme": "**(a)** $qE=mg\\Rightarrow q=\\dfrac{3.27\\times10^{-15}\\times9.8}{5.0\\times10^{4}}=6.4\\times10^{-19}$ C $=4e$ **(M1)(A1)**\n\n**(b)** All measured charges are whole-number multiples of $1.6\\times10^{-19}$ C; no smaller or fractional values are found **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-charging-by-induction",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "D.2.5",
+  "concept": "Charging by friction, contact and induction",
+  "prompt": "Describe how an isolated metal sphere can be given a positive charge using a negatively charged rod, without the rod touching the sphere.",
+  "markscheme": "Bring the negative rod near the sphere: electrons in the sphere are repelled to the far side **(A1)**\n\nEarth the far side (touch it briefly with a wire to earth) while the rod is held near: electrons flow to earth **(A1)**\n\nRemove the earth connection **first**, then the rod: the sphere is left with a net positive charge, spread over its surface **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-field-strength-def",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "D.2.6",
+  "concept": "Electric field strength E = F/q",
+  "prompt": "An electron in a uniform field experiences a force of $3.2\\times10^{-15}$ N. What is the field strength? ($e=1.6\\times10^{-19}$ C)",
+  "options": [
+   "$5.1\\times10^{-34}\\ \\text{N C}^{-1}$",
+   "$2.0\\times10^{-4}\\ \\text{N C}^{-1}$",
+   "$2.0\\times10^{4}\\ \\text{N C}^{-1}$",
+   "$5.0\\times10^{5}\\ \\text{N C}^{-1}$"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** $E=\\dfrac Fq=\\dfrac{3.2\\times10^{-15}}{1.6\\times10^{-19}}=2.0\\times10^{4}\\ \\text{N C}^{-1}$. The force on the electron is opposite to the field direction.",
+  "source": "original"
+ },
+ {
+  "id": "g-field-lines-dipole",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "D.2.7",
+  "concept": "Electric field lines",
+  "prompt": "Sketch (describe) the electric field pattern between a positive and a negative point charge of equal magnitude.",
+  "markscheme": "Lines start on the positive charge and end on the negative charge, with arrows from + to − **(A1)**; lines are curved, never cross, are densest near the charges and along the line joining them **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-line-density-strength",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "D.2.8",
+  "concept": "Field line density and strength",
+  "prompt": "In a field-line diagram, the field is strongest where the lines are:",
+  "options": [
+   "longest",
+   "closest together",
+   "furthest apart",
+   "curved most"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** The number of lines per unit area perpendicular to them is proportional to the field strength.",
+  "source": "original"
+ },
+ {
+  "id": "g-parallel-plates-field",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "D.2.9",
+  "concept": "Uniform field between parallel plates",
+  "prompt": "Two parallel plates 3.0 mm apart have a pd of 1500 V between them. Calculate the field strength and the force on an electron between the plates. ($e=1.6\\times10^{-19}$ C)",
+  "markscheme": "$E=\\dfrac Vd=\\dfrac{1500}{3.0\\times10^{-3}}=5.0\\times10^{5}\\ \\text{V m}^{-1}$ **(M1)(A1)**\n\n$F=eE=8.0\\times10^{-14}$ N — the same anywhere between the plates (uniform field) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-magnetic-field-patterns",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "D.2.10",
+  "concept": "Magnetic field lines",
+  "prompt": "Describe the magnetic field pattern **(a)** around a long straight current-carrying wire and **(b)** of a current-carrying solenoid.",
+  "markscheme": "**(a)** Concentric circles centred on the wire, in planes perpendicular to it, direction given by the right-hand grip rule; further apart with distance **(A1)**\n\n**(b)** Uniform, parallel lines inside; outside, like a bar magnet's field with N and S ends **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-electric-ep-assembly",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "D.2.11",
+  "concept": "Electric potential energy of a system",
+  "prompt": "Explain why the electric potential energy of two positive charges is positive, whereas for a positive and a negative charge it is negative.",
+  "markscheme": "$E_p$ is the work done to bring the charges together from infinity: like charges repel, so positive work must be done (positive $E_p$); unlike charges attract, so the work done is negative **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-proton-proton-energy",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "D.2.12",
+  "concept": "E_p = kq₁q₂/r",
+  "prompt": "Calculate the electric potential energy of two protons $1.0\\times10^{-15}$ m apart, in MeV. ($k=8.99\\times10^{9}\\ \\text{N m}^{2}\\,\\text{C}^{-2}$, $e=1.60\\times10^{-19}$ C)",
+  "markscheme": "$E_p=\\dfrac{ke^{2}}{r}=2.3\\times10^{-13}$ J **(A1)** $=\\dfrac{2.3\\times10^{-13}}{1.6\\times10^{-13}}=1.4$ MeV **(A1)** — why fusion needs very high temperatures.",
+  "source": "original"
+ },
+ {
+  "id": "g-potential-scalar-square",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "D.2.13",
+  "concept": "Electric potential is a scalar",
+  "prompt": "Charges $+q$, $+q$, $-q$ and $-q$ are placed at the corners of a square. What is the electric potential at the centre?",
+  "options": [
+   "zero",
+   "$\\dfrac{kq}{r}$",
+   "$\\dfrac{2kq}{r}$",
+   "$\\dfrac{4kq}{r}$"
+  ],
+  "answer": 0,
+  "markscheme": "**A.** Potential is a scalar: each charge is the same distance from the centre, so the contributions $+V,+V,-V,-V$ add to zero (the field there need not be zero).",
+  "source": "original"
+ },
+ {
+  "id": "g-potential-point-charge",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "D.2.14",
+  "concept": "V_e = kQ/r",
+  "prompt": "Calculate the electric potential 0.10 m from a point charge of $+5.0$ nC, and state its meaning. ($k=8.99\\times10^{9}\\ \\text{N m}^{2}\\,\\text{C}^{-2}$, $e=1.60\\times10^{-19}$ C)",
+  "markscheme": "$V=\\dfrac{kQ}{r}=\\dfrac{8.99\\times10^{9}\\times5.0\\times10^{-9}}{0.10}=450$ V **(A1)**; 450 J of work is needed per coulomb to bring a positive test charge from infinity to that point **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-e-from-equipotentials",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "D.2.15",
+  "concept": "E as the potential gradient",
+  "prompt": "Two equipotential surfaces differ by 2.0 V and are 0.50 cm apart in a uniform field. Calculate the field strength and state its direction relative to the equipotentials.",
+  "markscheme": "$E=\\dfrac{\\Delta V}{\\Delta r}=\\dfrac{2.0}{0.0050}=400\\ \\text{V m}^{-1}$ **(A1)**; perpendicular to the equipotentials, from higher to lower potential **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-work-moving-charge",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "D.2.16",
+  "concept": "W = qΔV_e",
+  "prompt": "An electron is accelerated from rest through a potential difference of 100 V. Calculate its final kinetic energy in joules and in electronvolts.",
+  "markscheme": "The field does work $|q\\Delta V|=1.6\\times10^{-19}\\times100=1.6\\times10^{-17}$ J on it, so $E_k=1.6\\times10^{-17}$ J **(A1)** $=100$ eV **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-equipotential-point-charge",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "D.2.17",
+  "concept": "Electric equipotential surfaces",
+  "prompt": "Describe the equipotential surfaces around an isolated point charge, and explain why they are further apart at larger distances for equal steps of potential.",
+  "markscheme": "Concentric spheres centred on the charge **(A1)**; $V\\propto\\frac1r$ changes more slowly at large $r$ (weaker field), so a larger $\\Delta r$ is needed for the same $\\Delta V$ **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-field-perpendicular-equipotential",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "D.2.18",
+  "concept": "Equipotentials and field lines",
+  "prompt": "The angle between an electric field line and an equipotential surface where they cross is always:",
+  "options": [
+   "$0^{\\circ}$",
+   "$45^{\\circ}$",
+   "it depends on the charge",
+   "$90^{\\circ}$"
+  ],
+  "answer": 3,
+  "markscheme": "**D.** $90^{\\circ}$ — if the field had a component along the surface, moving a charge along it would involve work, contradicting constant potential.",
+  "source": "original"
+ }
+]

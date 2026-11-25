@@ -1,0 +1,54 @@
+[
+ {
+  "id": "g-powers-of-i",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "1.12.1",
+  "concept": "The number i",
+  "calculator": false,
+  "prompt": "**(a)** Simplify $i^{23}$. **[1]**\n\n**(b)** Express $(2+3i)(1-i)$ in the form $a+bi$. **[2]**",
+  "markscheme": "**(a)** Powers of $i$ repeat every 4: $i^{23}=i^{20}\\cdot i^{3}=1\\cdot(-i)=-i$ **(A1)**\n\n**(b)** $2-2i+3i-3i^{2}$ **(M1)** $=2+i+3=5+i$ **(A1)** (using $i^{2}=-1$)",
+  "source": "original"
+ },
+ {
+  "id": "g-complex-division-modulus-arg",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 6,
+  "subtopic": "1.12.2",
+  "concept": "Real/imaginary parts, conjugate, modulus, argument",
+  "calculator": false,
+  "prompt": "Let $z=\\dfrac{3+4i}{1-2i}$.\n\n**(a)** Express $z$ in the form $a+bi$. **[3]**\n\n**(b)** Find $|z|$ and write down $z^{*}$. **[2]**\n\n**(c)** State the quadrant in which $z$ lies and hence explain why $\\arg z\\neq\\arctan(-2)$. **[1]**",
+  "markscheme": "**(a)** Multiply by the conjugate of the denominator: $\\dfrac{(3+4i)(1+2i)}{(1-2i)(1+2i)}$ **(M1)** $=\\dfrac{-5+10i}{5}$ **(A1)** $=-1+2i$ **(A1)**\n\n**(b)** $|z|=\\sqrt{1+4}=\\sqrt5$ **(A1)**; $z^{*}=-1-2i$ **(A1)**\n\n**(c)** Real part negative, imaginary part positive: second quadrant. $\\arctan(-2)$ lies in the fourth quadrant, so $\\arg z=\\pi-\\arctan2\\approx2.03$ **(R1)**.",
+  "source": "original"
+ },
+ {
+  "id": "g-complex-equation-conjugate",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "1.12.2",
+  "concept": "Equating real and imaginary parts",
+  "calculator": false,
+  "prompt": "Solve $z+2z^{*}=6-3i$.",
+  "markscheme": "Let $z=a+bi$: $(a+bi)+2(a-bi)=3a-bi$ **(M1)(A1)**\n\nEquate real and imaginary parts: $3a=6$, $-b=-3$ **(M1)**, so $z=2+3i$ **(A1)**\n\nTwo complex numbers are equal only when both real parts and both imaginary parts are equal — one complex equation gives two real equations.",
+  "source": "original"
+ },
+ {
+  "id": "g-argand-multiply-by-i",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "1.12.3",
+  "concept": "The complex plane",
+  "calculator": false,
+  "prompt": "Let $z=3+i$.\n\n**(a)** Plot $z$, $z^{*}$ and $iz$ on an Argand diagram. **[2]**\n\n**(b)** Describe the geometric transformation that maps $z$ to $iz$. **[1]**",
+  "markscheme": "**(a)** $z=(3,1)$, $z^{*}=(3,-1)$ (reflection in the real axis), $iz=3i+i^{2}=-1+3i$, i.e. $(-1,3)$ **(A2)**\n\n**(b)** Rotation by $\\dfrac{\\pi}{2}$ anticlockwise about the origin **(A1)** — multiplying by $i=\\operatorname{cis}\\frac\\pi2$ adds $\\frac\\pi2$ to the argument and leaves the modulus unchanged.",
+  "source": "original"
+ }
+]

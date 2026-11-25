@@ -80,7 +80,9 @@ const subjectFiles = import.meta.glob<unknown>('/content/*/subject.json', { eage
 const lessonFiles = import.meta.glob<string>('/content/*/*/lessons/*.md', { eager: true, query: '?raw', import: 'default' });
 const questionFiles = import.meta.glob<unknown>('/content/*/*/questions.json', { eager: true, import: 'default' });
 const cardFiles = import.meta.glob<unknown>('/content/*/*/flashcards.json', { eager: true, import: 'default' });
-const examFiles = import.meta.glob<unknown>('/content/*/*/exam.json', { eager: true, import: 'default' });
+// exam.json: exam-style practice by paper; general.json: the concept-level general question bank
+// (one question per guide understanding or more). Both are original questions in the "General" collection.
+const examFiles = import.meta.glob<unknown>('/content/*/*/{exam,general}.json', { eager: true, import: 'default' });
 
 export const contentErrors: string[] = [];
 

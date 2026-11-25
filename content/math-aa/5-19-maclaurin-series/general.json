@@ -1,0 +1,41 @@
+[
+ {
+  "id": "g-maclaurin-ln",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "5.19.1",
+  "concept": "Maclaurin series",
+  "calculator": false,
+  "prompt": "Use repeated differentiation to find the Maclaurin series of $\\ln(1+x)$ up to the $x^{3}$ term, and state the values of $x$ for which the full series converges.",
+  "markscheme": "$f(0)=0$, $f'(0)=1$, $f''(0)=-1$, $f'''(0)=2$ **(M1)(A1)**\n\n$\\ln(1+x)=x-\\dfrac{x^{2}}{2}+\\dfrac{x^{3}}{3}-\\dots$ **(A1)**; converges for $-1<x\\le1$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-series-substitution-integral",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "5.19.2",
+  "concept": "Series by substitution and integration",
+  "calculator": false,
+  "prompt": "**(a)** Using $e^{u}=1+u+\\dfrac{u^{2}}{2}+\\dots$, find the first three non-zero terms of the series for $e^{-x^{2}}$. **[2]**\n\n**(b)** Hence estimate $\\displaystyle\\int_0^{0.5}e^{-x^{2}}dx$. **[2]**",
+  "markscheme": "**(a)** $u=-x^{2}$: $1-x^{2}+\\dfrac{x^{4}}{2}$ **(A2)**\n\n**(b)** $\\left[x-\\dfrac{x^{3}}{3}+\\dfrac{x^{5}}{10}\\right]_0^{0.5}=0.5-0.04167+0.00313\\approx0.4615$ **(M1)(A1)** (true value 0.4613)\n\nThis integral has no elementary antiderivative, which is why series are useful.",
+  "source": "original"
+ },
+ {
+  "id": "g-series-from-de",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "5.19.3",
+  "concept": "Maclaurin series from a differential equation",
+  "calculator": false,
+  "prompt": "$y$ satisfies $\\dfrac{dy}{dx}=x+y^{2}$ with $y(0)=1$. Find the Maclaurin series for $y$ up to the $x^{3}$ term.",
+  "markscheme": "$y'(0)=0+1=1$ **(A1)**\n\n$y''=1+2yy'\\Rightarrow y''(0)=3$ **(M1)(A1)**\n\n$y'''=2(y')^{2}+2yy''\\Rightarrow y'''(0)=2+6=8$ **(A1)**\n\n$y\\approx1+x+\\dfrac32x^{2}+\\dfrac43x^{3}$ **(A1)**",
+  "source": "original"
+ }
+]

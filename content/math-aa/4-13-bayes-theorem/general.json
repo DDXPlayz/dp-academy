@@ -1,0 +1,28 @@
+[
+ {
+  "id": "g-bayes-medical-test",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "4.13.1",
+  "concept": "Bayes' theorem",
+  "calculator": true,
+  "prompt": "A disease affects 1% of a population. A test is positive for 95% of people with the disease and for 8% of people without it. A randomly chosen person tests positive. Find the probability that they have the disease, and comment on the result.",
+  "markscheme": "$P(+)=0.01(0.95)+0.99(0.08)=0.0887$ **(M1)(A1)**\n\n$P(D\\mid+)=\\dfrac{0.0095}{0.0887}\\approx0.107$ **(A1)**\n\nOnly about 11%: because the disease is rare, most positives come from the large healthy group **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-bayes-three-factories",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "4.13.1",
+  "concept": "Bayes' theorem with three events",
+  "calculator": true,
+  "prompt": "Factories A, B and C make 50%, 30% and 20% of a company's phones. The defect rates are 2%, 3% and 5% respectively. A phone is found to be defective. Find the probability that it was made in factory C.",
+  "markscheme": "$P(\\text{def})=0.5(0.02)+0.3(0.03)+0.2(0.05)=0.029$ **(M1)(A1)**\n\n$P(C\\mid\\text{def})=\\dfrac{0.2(0.05)}{0.029}$ **(M1)** $\\approx0.345$ **(A1)**",
+  "source": "original"
+ }
+]

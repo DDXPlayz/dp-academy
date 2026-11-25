@@ -1,0 +1,74 @@
+[
+ {
+  "id": "g-describe-transformations",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "2.11.1",
+  "concept": "Transformations of graphs",
+  "calculator": false,
+  "prompt": "Describe fully the transformations that map the graph of $y=f(x)$ onto the graph of $y=-f(x+2)$.",
+  "markscheme": "A translation of 2 units to the **left** (by $\\binom{-2}{0}$) **(A1)** and a reflection in the $x$-axis **(A1)** (in either order).\n\n**Common mistake:** “2 right”. Replacing $x$ by $x+2$ moves the graph in the negative $x$-direction.",
+  "source": "original"
+ },
+ {
+  "id": "g-translation-image-point",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "2.11.2",
+  "concept": "Translations",
+  "calculator": false,
+  "prompt": "The point $(1,5)$ lies on the graph of $y=f(x)$. Write down the coordinates of its image on\n\n**(a)** $y=f(x-3)$ **[1]**\n\n**(b)** $y=f(x)+2$ **[1]**",
+  "markscheme": "**(a)** $(4,5)$ — horizontal translation 3 right **(A1)**\n\n**(b)** $(1,7)$ — vertical translation 2 up **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-reflections-image",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "2.11.3",
+  "concept": "Reflections in the axes",
+  "calculator": false,
+  "prompt": "The point $(2,-3)$ lies on the graph of $y=f(x)$. Write down its image on\n\n**(a)** $y=-f(x)$ **[1]**\n\n**(b)** $y=f(-x)$ **[1]**",
+  "markscheme": "**(a)** $(2,3)$ — reflection in the $x$-axis changes the sign of $y$ **(A1)**\n\n**(b)** $(-2,-3)$ — reflection in the $y$-axis changes the sign of $x$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-vertical-stretch",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "2.11.4",
+  "concept": "Vertical stretch",
+  "calculator": false,
+  "prompt": "The graph of $y=f(x)$ has a maximum point at $(3,4)$. Write down the coordinates of the maximum point of $y=\\tfrac12f(x)$.",
+  "markscheme": "$(3,2)$ — a vertical stretch with scale factor $\\tfrac12$ multiplies $y$-coordinates by $\\tfrac12$ and leaves $x$ unchanged **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-horizontal-stretch",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "2.11.5",
+  "concept": "Horizontal stretch",
+  "calculator": false,
+  "prompt": "The point $(4,1)$ lies on $y=f(x)$. Find its image on $y=3f(2x)$.",
+  "markscheme": "$f(2x)$ is a horizontal stretch with scale factor $\\tfrac12$: $x$-coordinate $4\\to2$ **(A1)**\n\n$3f(\\dots)$ is a vertical stretch with scale factor 3: $y$-coordinate $1\\to3$. Image $(2,3)$ **(A1)**\n\n**Common mistake:** multiplying $x$ by 2. $f(qx)$ *divides* $x$-coordinates by $q$.",
+  "source": "original"
+ },
+ {
+  "id": "g-composite-transformation-order",
+  "paper": "1",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "2.11.6",
+  "concept": "Composite transformations",
+  "calculator": false,
+  "prompt": "**(a)** Describe a sequence of transformations that maps $y=f(x)$ onto $y=f(2x-6)$. **[2]**\n\n**(b)** The point $(4,1)$ lies on $y=f(x)$. Find its image on $y=f(2x-6)$. **[2]**",
+  "markscheme": "**(a)** $f(2x-6)=f\\big(2(x-3)\\big)$: a horizontal stretch with scale factor $\\tfrac12$ followed by a translation of 3 units right **(A1)(A1)**\n\n(Equivalently: translate 6 right, *then* stretch by $\\tfrac12$ — the order changes the translation.)\n\n**(b)** Need $2x-6=4$ **(M1)**, so $x=5$: image $(5,1)$ **(A1)**\n\nCheck by the first description: $(4,1)\\to(2,1)\\to(5,1)$.",
+  "source": "original"
+ }
+]

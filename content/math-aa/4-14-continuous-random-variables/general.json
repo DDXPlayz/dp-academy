@@ -1,0 +1,67 @@
+[
+ {
+  "id": "g-variance-discrete",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "4.14.1",
+  "concept": "Variance of a discrete random variable",
+  "calculator": false,
+  "prompt": "$P(X=x)=0.1x$ for $x=1,2,3,4$, so $E(X)=3$. Find $\\operatorname{Var}(X)$.",
+  "markscheme": "$E(X^{2})=0.1(1+8+27+64)=10$ **(M1)(A1)**\n\n$\\operatorname{Var}(X)=E(X^{2})-[E(X)]^{2}=10-9=1$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-pdf-find-k",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "4.14.2",
+  "concept": "Probability density functions",
+  "calculator": false,
+  "prompt": "$X$ has probability density function $f(x)=kx^{2}$ for $0\\le x\\le3$ (and 0 otherwise).\n\n**(a)** Find $k$. **[2]**\n\n**(b)** Find $P(X>2)$. **[1]**",
+  "markscheme": "**(a)** $\\displaystyle\\int_0^3kx^{2}\\,dx=9k=1$ **(M1)**, $k=\\dfrac19$ **(A1)**\n\n**(b)** $\\displaystyle\\int_2^3\\frac{x^{2}}{9}dx=\\frac{27-8}{27}=\\frac{19}{27}$ **(A1)**\n\nFor a continuous variable, probabilities are areas; $P(X=2)=0$.",
+  "source": "original"
+ },
+ {
+  "id": "g-pdf-mode-median",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "4.14.3",
+  "concept": "Mode and median of a continuous random variable",
+  "calculator": false,
+  "prompt": "For $f(x)=\\dfrac{x^{2}}{9}$, $0\\le x\\le3$, find **(a)** the mode and **(b)** the median of $X$.",
+  "markscheme": "**(a)** $f$ is increasing on $[0,3]$, so the mode (where $f$ is greatest) is $x=3$ **(A1)**\n\n**(b)** $\\displaystyle\\int_0^m\\frac{x^{2}}{9}dx=\\frac{m^{3}}{27}=\\frac12$ **(M1)**, $m=\\dfrac{3}{\\sqrt[3]2}\\approx2.38$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-pdf-mean-variance",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "4.14.4",
+  "concept": "Mean and variance of a continuous random variable",
+  "calculator": false,
+  "prompt": "For $f(x)=\\dfrac{x^{2}}{9}$, $0\\le x\\le3$, find $E(X)$ and $\\operatorname{Var}(X)$.",
+  "markscheme": "$E(X)=\\displaystyle\\int_0^3\\frac{x^{3}}{9}dx=\\frac{81}{36}=\\frac94$ **(M1)(A1)**\n\n$E(X^{2})=\\displaystyle\\int_0^3\\frac{x^{4}}{9}dx=\\frac{243}{45}=\\frac{27}{5}$ **(A1)**\n\n$\\operatorname{Var}(X)=\\dfrac{27}{5}-\\dfrac{81}{16}=\\dfrac{27}{80}\\approx0.338$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-linear-transformation-rv",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "4.14.5",
+  "concept": "Linear transformations of X",
+  "calculator": false,
+  "prompt": "$E(X)=\\dfrac94$ and $\\operatorname{Var}(X)=\\dfrac{27}{80}$. Find $E(2X+3)$ and $\\operatorname{Var}(2X+3)$.",
+  "markscheme": "$E(2X+3)=2\\cdot\\tfrac94+3=7.5$ **(A1)**\n\n$\\operatorname{Var}(2X+3)=4\\cdot\\tfrac{27}{80}=1.35$ **(A1)** — the $+3$ shifts but does not spread the distribution.",
+  "source": "original"
+ }
+]

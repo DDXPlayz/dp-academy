@@ -1,0 +1,28 @@
+[
+ {
+  "id": "g-rational-inequality",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "2.15.1",
+  "concept": "Solving inequalities analytically",
+  "calculator": false,
+  "prompt": "Solve $\\dfrac{x-1}{x+2}\\ge2$.",
+  "markscheme": "Bring to one side: $\\dfrac{x-1}{x+2}-2\\ge0\\Rightarrow\\dfrac{-x-5}{x+2}\\ge0$ **(M1)(A1)**\n\n$\\iff\\dfrac{x+5}{x+2}\\le0$. Critical values $-5$ and $-2$ **(A1)**; a sign chart gives $-5\\le x<-2$ **(A1)(A1)** ($x=-2$ excluded because the expression is undefined).\n\n**Common mistake:** multiplying both sides by $(x+2)$, whose sign is unknown — that can reverse the inequality.",
+  "source": "original"
+ },
+ {
+  "id": "g-inequality-graphical",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "2.15.1",
+  "concept": "Solving inequalities graphically",
+  "calculator": true,
+  "prompt": "Solve $e^{x}\\ge x+2$.",
+  "markscheme": "Graph $y=e^{x}$ and $y=x+2$; they meet at $x=-1.84$ and $x=1.15$ **(M1)(A1)**\n\n$e^{x}$ is above the line outside these values: $x\\le-1.84$ or $x\\ge1.15$ **(A1)**",
+  "source": "original"
+ }
+]

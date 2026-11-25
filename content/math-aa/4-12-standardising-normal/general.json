@@ -1,0 +1,26 @@
+[
+ {
+  "id": "g-z-score-compare",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "4.12.1",
+  "concept": "Standardising normal variables",
+  "calculator": false,
+  "prompt": "Ali scored 72 in a maths test (mean 60, standard deviation 8) and 68 in a physics test (mean 55, standard deviation 5). In which test did he perform better relative to the class?",
+  "markscheme": "$z_{\\text{maths}}=\\dfrac{72-60}{8}=1.5$, $z_{\\text{physics}}=\\dfrac{68-55}{5}=2.6$ **(M1)**\n\nPhysics: his score is more standard deviations above the mean **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-unknown-mean-sd",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "4.12.2",
+  "concept": "Finding unknown mean and standard deviation",
+  "calculator": true,
+  "prompt": "$X\\sim N(\\mu,\\sigma^{2})$ with $P(X<30)=0.2$ and $P(X>50)=0.1$. Find $\\mu$ and $\\sigma$.",
+  "markscheme": "$\\dfrac{30-\\mu}{\\sigma}=-0.8416$ and $\\dfrac{50-\\mu}{\\sigma}=1.2816$ **(M1)(A1)(A1)**\n\nSubtract: $\\dfrac{20}{\\sigma}=2.1232\\Rightarrow\\sigma\\approx9.42$ **(A1)**; $\\mu=30+0.8416\\sigma\\approx37.9$ **(A1)**",
+  "source": "original"
+ }
+]

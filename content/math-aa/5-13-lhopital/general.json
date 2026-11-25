@@ -1,0 +1,28 @@
+[
+ {
+  "id": "g-lhopital-basic",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "5.13.1",
+  "concept": "L'Hôpital's rule",
+  "calculator": false,
+  "prompt": "Find **(a)** $\\displaystyle\\lim_{x\\to0}\\frac{\\sin3x}{x}$ **(b)** $\\displaystyle\\lim_{x\\to0}\\frac{1-\\cos x}{x^{2}}$",
+  "markscheme": "**(a)** Form $\\frac00$: $\\displaystyle\\lim\\frac{3\\cos3x}{1}=3$ **(M1)(A1)**\n\n**(b)** $\\frac00$ twice: $\\displaystyle\\lim\\frac{\\sin x}{2x}=\\lim\\frac{\\cos x}{2}=\\frac12$ **(A1)** — or use $\\cos x\\approx1-\\frac{x^{2}}{2}$ from the Maclaurin series.",
+  "source": "original"
+ },
+ {
+  "id": "g-lhopital-repeated-infinity",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "5.13.2",
+  "concept": "Repeated use of l'Hôpital's rule",
+  "calculator": false,
+  "prompt": "Find **(a)** $\\displaystyle\\lim_{x\\to0}\\frac{e^{x}-1-x}{x^{2}}$ **(b)** $\\displaystyle\\lim_{x\\to\\infty}\\frac{x^{2}}{e^{x}}$",
+  "markscheme": "**(a)** $\\frac00\\to\\displaystyle\\lim\\frac{e^{x}-1}{2x}$, still $\\frac00$ **(M1)** $\\to\\displaystyle\\lim\\frac{e^{x}}{2}=\\frac12$ **(A1)**\n\n**(b)** $\\frac\\infty\\infty\\to\\displaystyle\\lim\\frac{2x}{e^{x}}\\to\\lim\\frac{2}{e^{x}}=0$ **(M1)(A1)**\n\nCheck the indeterminate form before **each** application of the rule.",
+  "source": "original"
+ }
+]

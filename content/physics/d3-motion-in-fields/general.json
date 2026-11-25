@@ -1,0 +1,75 @@
+[
+ {
+  "id": "g-electron-between-plates",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "D.3.1",
+  "concept": "Charged particle in a uniform electric field",
+  "prompt": "An electron enters the region between two parallel plates horizontally at $2.0\\times10^{7}\\ \\text{m s}^{-1}$. The plates are 5.0 cm long and the vertical field is $2.0\\times10^{4}\\ \\text{V m}^{-1}$. ($e=1.6\\times10^{-19}$ C, $m_e=9.11\\times10^{-31}$ kg)\n\n**(a)** Calculate the vertical deflection of the electron as it leaves the plates. **[3]**\n\n**(b)** State the shape of its path between the plates. **[1]**",
+  "markscheme": "**(a)** $a=\\dfrac{eE}{m}=3.5\\times10^{15}\\ \\text{m s}^{-2}$ **(A1)**; $t=\\dfrac{0.050}{2.0\\times10^{7}}=2.5\\times10^{-9}$ s **(A1)**; $y=\\tfrac12at^{2}=1.1\\times10^{-2}$ m **(A1)**\n\n**(b)** A parabola — constant horizontal velocity with constant vertical acceleration, like a projectile **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-proton-circle-radius",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "D.3.2",
+  "concept": "Charged particle in a uniform magnetic field",
+  "prompt": "A proton moves at $2.0\\times10^{6}\\ \\text{m s}^{-1}$ perpendicular to a uniform 0.20 T magnetic field. ($m_p=1.67\\times10^{-27}$ kg)\n\n**(a)** Calculate the radius of its circular path. **[2]**\n\n**(b)** Show that its period does not depend on its speed, and explain why its speed stays constant. **[2]**",
+  "markscheme": "**(a)** $qvB=\\dfrac{mv^{2}}{r}\\Rightarrow r=\\dfrac{mv}{qB}=0.10$ m **(M1)(A1)**\n\n**(b)** $T=\\dfrac{2\\pi r}{v}=\\dfrac{2\\pi m}{qB}$ — no $v$ **(A1)**; the magnetic force is always perpendicular to the velocity, so it does no work **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-velocity-selector",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "D.3.3",
+  "concept": "Crossed electric and magnetic fields",
+  "prompt": "In a region with perpendicular fields $E=4.0\\times10^{4}\\ \\text{V m}^{-1}$ and $B=0.10$ T, charged particles of a certain speed pass straight through undeflected. Calculate this speed and explain why it is independent of the particles' charge.",
+  "markscheme": "$qE=qvB\\Rightarrow v=\\dfrac EB=4.0\\times10^{5}\\ \\text{m s}^{-1}$ **(A1)**; both forces are proportional to $q$, so it cancels **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-force-direction-charge",
+  "paper": "1A",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "D.3.4",
+  "concept": "Direction of the magnetic force on a charge",
+  "prompt": "A positive ion moves to the right across the page through a magnetic field directed into the page. The magnetic force on it is:",
+  "options": [
+   "up the page",
+   "down the page",
+   "into the page",
+   "to the left"
+  ],
+  "answer": 0,
+  "markscheme": "**A.** By the left-hand (or right-hand) rule, $\\vec F=q\\vec v\\times\\vec B$ points up the page. An electron would be pushed down.",
+  "source": "original"
+ },
+ {
+  "id": "g-force-on-wire-angle",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "D.3.5",
+  "concept": "F = BIL sin θ",
+  "prompt": "A 0.20 m wire carrying 3.0 A lies in a 0.050 T field at $30^{\\circ}$ to the field lines. Calculate the force on it and the maximum force for any orientation.",
+  "markscheme": "$F=BIL\\sin\\theta=0.050\\times3.0\\times0.20\\times\\sin30^{\\circ}=0.015$ N **(A1)**; maximum at $90^{\\circ}$: $0.030$ N **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-parallel-wires-force",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "D.3.6",
+  "concept": "Force between parallel wires",
+  "prompt": "Two long parallel wires 2.0 cm apart carry currents of 5.0 A and 8.0 A in the same direction. ($\\mu_0=4\\pi\\times10^{-7}\\ \\text{T m A}^{-1}$)\n\n**(a)** Calculate the force per unit length between them. **[2]**\n\n**(b)** State whether the force is attractive or repulsive. **[1]**",
+  "markscheme": "**(a)** $\\dfrac FL=\\dfrac{\\mu_0I_1I_2}{2\\pi r}=\\dfrac{4\\pi\\times10^{-7}\\times5.0\\times8.0}{2\\pi\\times0.020}$ **(M1)** $=4.0\\times10^{-4}\\ \\text{N m}^{-1}$ **(A1)**\n\n**(b)** Attractive (currents in the same direction attract) — and each wire feels the same force, by Newton's third law **(A1)**",
+  "source": "original"
+ }
+]

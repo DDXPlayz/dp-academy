@@ -1,0 +1,50 @@
+[
+ {
+  "id": "g-data-types-population",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "4.1.1",
+  "concept": "Population, sample, discrete and continuous data",
+  "calculator": false,
+  "prompt": "A researcher records, for 80 students chosen at random from a school of 1200, their shoe size and the time they take to run 100 m.\n\n**(a)** Identify the population and the sample. **[1]**\n\n**(b)** Classify each variable as discrete or continuous. **[2]**",
+  "markscheme": "**(a)** Population: all 1200 students; sample: the 80 chosen **(A1)**\n\n**(b)** Shoe size: discrete (only certain values, e.g. 6, 6.5, 7) **(A1)**; time: continuous (any value in a range, limited only by measurement) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-sampling-bias",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "4.1.2",
+  "concept": "Bias and reliability of data",
+  "calculator": false,
+  "prompt": "To estimate how many hours per day teenagers spend online, a researcher posts a survey on a social media site. Explain why the results are likely to be biased.",
+  "markscheme": "Only people who use that site (and choose to respond) can take part **(R1)**; they are likely to spend more time online than teenagers in general, so the estimate will probably be too high **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-outlier-test",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "4.1.3",
+  "concept": "Outliers",
+  "calculator": false,
+  "prompt": "A data set has lower quartile 12 and upper quartile 20.\n\n**(a)** Determine whether the value 35 is an outlier. **[2]**\n\n**(b)** State what should be done before removing an outlier from a data set. **[1]**",
+  "markscheme": "**(a)** IQR $=8$; upper boundary $20+1.5(8)=32$ **(M1)**; $35>32$, so it is an outlier **(A1)**\n\n**(b)** Check whether it is an error (recording/measurement) or a genuine value; genuine extreme values should not simply be deleted **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-stratified-sample",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "4.1.4",
+  "concept": "Sampling techniques",
+  "calculator": false,
+  "prompt": "A school has 480 students in Year 11 and 720 in Year 12. A sample of 50 students is to be taken.\n\n**(a)** Find the number from each year in a stratified sample. **[2]**\n\n**(b)** Explain one advantage of stratified sampling over simple random sampling here. **[1]**",
+  "markscheme": "**(a)** Year 11: $\\dfrac{480}{1200}\\times50=20$; Year 12: $30$ **(M1)(A1)**\n\n**(b)** Each year group is represented in proportion to its size, so the sample cannot by chance over-represent one year **(R1)**",
+  "source": "original"
+ }
+]

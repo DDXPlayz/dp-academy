@@ -1,0 +1,38 @@
+[
+ {
+  "id": "g-antiderivative-boundary",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "5.5.1",
+  "concept": "Anti-differentiation with a boundary condition",
+  "calculator": false,
+  "prompt": "Given $f'(x)=6x^{2}-4x$ and $f(1)=5$, find $f(x)$.",
+  "markscheme": "$f(x)=2x^{3}-2x^{2}+c$ **(A1)**; $f(1)=2-2+c=5$, so $c=5$ **(M1)**\n\n$f(x)=2x^{3}-2x^{2}+5$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-definite-integral-technology",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "5.5.2",
+  "concept": "Definite integrals using technology",
+  "calculator": true,
+  "prompt": "Find $\\displaystyle\\int_0^{1}\\sqrt{1+x^{3}}\\,dx$.",
+  "markscheme": "$1.11$ (GDC: $1.1114\\ldots$) **(A2)**\n\nThis integral has no elementary antiderivative, so technology is the intended method.",
+  "source": "original"
+ },
+ {
+  "id": "g-area-under-positive-curve",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "5.5.3",
+  "concept": "Area under a curve",
+  "calculator": false,
+  "prompt": "Find the area of the region enclosed by $y=4x-x^{2}$ and the $x$-axis.",
+  "markscheme": "Roots $x=0$ and $x=4$; the curve is above the axis between them **(A1)**\n\n$\\displaystyle\\int_0^4(4x-x^{2})dx=\\left[2x^{2}-\\frac{x^{3}}{3}\\right]_0^4$ **(M1)** $=32-\\dfrac{64}{3}=\\dfrac{32}{3}$ **(A1)**",
+  "source": "original"
+ }
+]

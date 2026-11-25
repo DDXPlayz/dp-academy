@@ -1,0 +1,38 @@
+[
+ {
+  "id": "g-exponential-graph-features",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "2.9.1",
+  "concept": "Exponential functions and their graphs",
+  "calculator": false,
+  "prompt": "Let $f(x)=3-e^{-x}$.\n\n**(a)** Write down the equation of the horizontal asymptote. **[1]**\n\n**(b)** Find the $y$-intercept. **[1]**\n\n**(c)** Write down the range of $f$. **[1]**",
+  "markscheme": "**(a)** As $x\\to\\infty$, $e^{-x}\\to0$, so $y=3$ **(A1)**\n\n**(b)** $f(0)=3-1=2$ **(A1)**\n\n**(c)** $e^{-x}>0$ for all $x$, so $f(x)<3$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-exponential-any-base",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "2.9.2",
+  "concept": "Writing a^x with base e",
+  "calculator": false,
+  "prompt": "Show that $a^{x}=e^{x\\ln a}$ for $a>0$, and hence write $5^{x}$ in the form $e^{kx}$.",
+  "markscheme": "$a=e^{\\ln a}$, so $a^{x}=(e^{\\ln a})^{x}=e^{x\\ln a}$ **(M1)**\n\n$5^{x}=e^{x\\ln5}$, so $k=\\ln5\\approx1.61$ **(A1)**\n\nThis is why every exponential function is a horizontal stretch of $y=e^{x}$.",
+  "source": "original"
+ },
+ {
+  "id": "g-log-graph-features",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "2.9.3",
+  "concept": "Logarithmic functions and their graphs",
+  "calculator": false,
+  "prompt": "Let $g(x)=\\ln(x-2)$.\n\n**(a)** Write down the domain of $g$. **[1]**\n\n**(b)** Write down the equation of the vertical asymptote. **[1]**\n\n**(c)** Find the $x$-intercept. **[1]**",
+  "markscheme": "**(a)** $x>2$ **(A1)**\n\n**(b)** $x=2$ **(A1)**\n\n**(c)** $\\ln(x-2)=0\\Rightarrow x-2=1\\Rightarrow x=3$, so $(3,0)$ **(A1)**\n\n$y=\\ln(x-2)$ is $y=\\ln x$ translated 2 units right; it is the inverse of $y=e^{x}+2$.",
+  "source": "original"
+ }
+]

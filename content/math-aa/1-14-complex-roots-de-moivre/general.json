@@ -1,0 +1,54 @@
+[
+ {
+  "id": "g-conjugate-root-cubic",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 5,
+  "subtopic": "1.14.1",
+  "concept": "Conjugate roots of real polynomials",
+  "calculator": false,
+  "prompt": "Given that $2+i$ is a root of $z^{3}-5z^{2}+9z-5=0$:\n\n**(a)** Explain why $2-i$ is also a root. **[1]**\n\n**(b)** Find the third root. **[4]**",
+  "markscheme": "**(a)** The polynomial has real coefficients, so non-real roots occur in conjugate pairs **(R1)**.\n\n**(b)** $(z-(2+i))(z-(2-i))=(z-2)^{2}+1=z^{2}-4z+5$ **(M1)(A1)**\n\n$z^{3}-5z^{2}+9z-5=(z^{2}-4z+5)(z-1)$ **(M1)**, so the third root is $z=1$ **(A1)**\n\n(Check: the product of the roots $=(5)(1)=5=-\\frac{-5}{1}$.)",
+  "source": "original"
+ },
+ {
+  "id": "g-de-moivre-powers",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 4,
+  "subtopic": "1.14.2",
+  "concept": "De Moivre's theorem",
+  "calculator": false,
+  "prompt": "Use De Moivre's theorem to evaluate\n\n**(a)** $(1+i)^{8}$ **[2]**\n\n**(b)** $(\\sqrt3+i)^{6}$ **[2]**",
+  "markscheme": "**(a)** $1+i=\\sqrt2\\operatorname{cis}\\frac\\pi4$, so $(1+i)^{8}=(\\sqrt2)^{8}\\operatorname{cis}2\\pi$ **(M1)** $=16$ **(A1)**\n\n**(b)** $\\sqrt3+i=2\\operatorname{cis}\\frac\\pi6$, so $(\\sqrt3+i)^{6}=64\\operatorname{cis}\\pi$ **(M1)** $=-64$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-cube-roots-of-8i",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 6,
+  "subtopic": "1.14.3",
+  "concept": "Roots of complex numbers",
+  "calculator": false,
+  "prompt": "**(a)** Solve $z^{3}=8i$, giving your answers in Cartesian form. **[5]**\n\n**(b)** Describe the shape formed by the solutions on an Argand diagram. **[1]**",
+  "markscheme": "**(a)** $8i=8\\operatorname{cis}\\left(\\frac\\pi2+2k\\pi\\right)$ **(M1)**\n\n$z=2\\operatorname{cis}\\left(\\dfrac\\pi6+\\dfrac{2k\\pi}{3}\\right)$, $k=0,1,2$ **(M1)(A1)**\n\n$z=\\sqrt3+i,\\quad -\\sqrt3+i,\\quad -2i$ **(A2)**\n\n**(b)** An equilateral triangle centred at the origin (vertices on the circle $|z|=2$, spaced $\\frac{2\\pi}{3}$ apart) **(A1)**\n\n**Common mistake:** finding only $2\\operatorname{cis}\\frac\\pi6$. An $n$th root problem has $n$ solutions; add $2k\\pi$ *before* dividing the argument.",
+  "source": "original"
+ },
+ {
+  "id": "g-de-moivre-cos3theta",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "1.14.2",
+  "concept": "De Moivre and multiple-angle identities",
+  "calculator": false,
+  "prompt": "Use De Moivre's theorem to show that $\\cos3\\theta=4\\cos^{3}\\theta-3\\cos\\theta$.",
+  "markscheme": "$(\\cos\\theta+i\\sin\\theta)^{3}=\\cos3\\theta+i\\sin3\\theta$ **(M1)**\n\nWrite $c=\\cos\\theta$, $s=\\sin\\theta$. Expand: $c^{3}+3c^{2}(is)+3c(is)^{2}+(is)^{3}=c^{3}-3cs^{2}+i(3c^{2}s-s^{3})$ **(A1)**\n\nEquate real parts: $\\cos3\\theta=c^{3}-3cs^{2}$ **(M1)**\n\nUse $s^{2}=1-c^{2}$: $c^{3}-3c(1-c^{2})$ **(A1)** $=4c^{3}-3c$ **(AG)(A1)**",
+  "source": "original"
+ }
+]

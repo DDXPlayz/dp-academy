@@ -1,0 +1,50 @@
+[
+ {
+  "id": "g-quadratic-inequalities",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "2.7.1",
+  "concept": "Quadratic inequalities",
+  "calculator": false,
+  "prompt": "Solve\n\n**(a)** $x^{2}-x-6<0$ **[2]**\n\n**(b)** $2x^{2}+5x\\ge3$ **[2]**",
+  "markscheme": "**(a)** $(x-3)(x+2)<0$; the parabola is below the axis between its roots: $-2<x<3$ **(M1)(A1)**\n\n**(b)** $2x^{2}+5x-3\\ge0\\Rightarrow(2x-1)(x+3)\\ge0$ **(M1)**: $x\\le-3$ or $x\\ge\\tfrac12$ **(A1)**\n\n**Common mistake:** solving the equation and stopping. Sketch the parabola to see which side of the roots satisfies the inequality.",
+  "source": "original"
+ },
+ {
+  "id": "g-quadratic-formula-surd",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "2.7.2",
+  "concept": "The quadratic formula",
+  "calculator": false,
+  "prompt": "Solve $3x^{2}-4x-2=0$, giving your answers in the form $\\dfrac{a\\pm\\sqrt b}{c}$.",
+  "markscheme": "$x=\\dfrac{4\\pm\\sqrt{16+24}}{6}$ **(M1)** $=\\dfrac{4\\pm2\\sqrt{10}}{6}=\\dfrac{2\\pm\\sqrt{10}}{3}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-discriminant-equal-roots",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "2.7.3",
+  "concept": "The discriminant",
+  "calculator": false,
+  "prompt": "The equation $x^{2}+kx+(k+3)=0$ has two equal real roots. Find the possible values of $k$.",
+  "markscheme": "Equal roots $\\iff\\Delta=0$: $k^{2}-4(k+3)=0$ **(M1)(A1)**\n\n$k^{2}-4k-12=0\\Rightarrow(k-6)(k+2)=0$, so $k=6$ or $k=-2$ **(A1)(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-discriminant-line-misses-curve",
+  "paper": "1",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "2.7.3",
+  "concept": "Discriminant: line and curve",
+  "calculator": false,
+  "prompt": "Find the values of $m$ for which the line $y=mx+1$ does **not** meet the curve $y=x^{2}+4$.",
+  "markscheme": "Intersections satisfy $x^{2}+4=mx+1$, i.e. $x^{2}-mx+3=0$ **(M1)**\n\nNo intersection $\\iff$ no real roots $\\iff\\Delta<0$ **(R1)**: $m^{2}-12<0$ **(A1)**\n\n$-2\\sqrt3<m<2\\sqrt3$ **(A2)**\n\nAt $m=\\pm2\\sqrt3$ the line is tangent to the curve ($\\Delta=0$).",
+  "source": "original"
+ }
+]

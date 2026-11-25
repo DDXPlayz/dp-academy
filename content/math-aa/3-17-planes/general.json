@@ -1,0 +1,54 @@
+[
+ {
+  "id": "g-plane-through-three-points",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 5,
+  "subtopic": "3.17.4",
+  "concept": "Cartesian equation of a plane",
+  "calculator": false,
+  "prompt": "Find the Cartesian equation of the plane through $A(1,0,2)$, $B(2,1,0)$ and $C(0,3,1)$.",
+  "markscheme": "$\\overrightarrow{AB}=\\begin{pmatrix}1\\\\1\\\\-2\\end{pmatrix}$, $\\overrightarrow{AC}=\\begin{pmatrix}-1\\\\3\\\\-1\\end{pmatrix}$ **(A1)**\n\n$\\mathbf n=\\overrightarrow{AB}\\times\\overrightarrow{AC}=\\begin{pmatrix}5\\\\3\\\\4\\end{pmatrix}$ **(M1)(A1)**\n\n$5x+3y+4z=5(1)+0+4(2)=13$ **(M1)(A1)**\n\nCheck: $B$: $10+3+0=13$ ✓, $C$: $0+9+4=13$ ✓.",
+  "source": "original"
+ },
+ {
+  "id": "g-plane-parametric",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "3.17.2",
+  "concept": "Parametric vector equation of a plane",
+  "calculator": false,
+  "prompt": "Using $A(1,0,2)$, $B(2,1,0)$ and $C(0,3,1)$, write down a vector equation of the plane $ABC$ in the form $\\mathbf r=\\mathbf a+\\lambda\\mathbf b+\\mu\\mathbf c$, and explain why $\\mathbf b$ and $\\mathbf c$ must not be parallel.",
+  "markscheme": "$\\mathbf r=\\begin{pmatrix}1\\\\0\\\\2\\end{pmatrix}+\\lambda\\begin{pmatrix}1\\\\1\\\\-2\\end{pmatrix}+\\mu\\begin{pmatrix}-1\\\\3\\\\-1\\end{pmatrix}$ **(A1)**\n\nTwo parallel directions only describe a line; two non-parallel directions are needed to span a plane **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-plane-normal-form",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "3.17.3",
+  "concept": "r · n = a · n",
+  "calculator": false,
+  "prompt": "Write the plane through $(2,-1,3)$ with normal $\\mathbf n=\\begin{pmatrix}1\\\\4\\\\-2\\end{pmatrix}$ in the forms $\\mathbf r\\cdot\\mathbf n=\\mathbf a\\cdot\\mathbf n$ and $ax+by+cz=d$.",
+  "markscheme": "$\\mathbf a\\cdot\\mathbf n=2-4-6=-8$ **(A1)**: $\\mathbf r\\cdot\\begin{pmatrix}1\\\\4\\\\-2\\end{pmatrix}=-8$, i.e. $x+4y-2z=-8$ **(A1)**\n\nEvery point $\\mathbf r$ on the plane has $\\mathbf r-\\mathbf a$ perpendicular to $\\mathbf n$, which is what $(\\mathbf r-\\mathbf a)\\cdot\\mathbf n=0$ says.",
+  "source": "original"
+ },
+ {
+  "id": "g-plane-forms-concept",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "3.17.1",
+  "concept": "Vector equations of a plane",
+  "calculator": false,
+  "prompt": "Explain why the equation $\\mathbf r=\\mathbf a+\\lambda\\mathbf b$ cannot describe a plane, but $\\mathbf r\\cdot\\mathbf n=\\mathbf a\\cdot\\mathbf n$ can.",
+  "markscheme": "$\\mathbf r=\\mathbf a+\\lambda\\mathbf b$ has one parameter, so it gives points along one direction only — a line. $\\mathbf r\\cdot\\mathbf n=\\mathbf a\\cdot\\mathbf n$ is satisfied by every point whose displacement from $A$ is perpendicular to $\\mathbf n$, which fills a whole plane **(R1)**",
+  "source": "original"
+ }
+]

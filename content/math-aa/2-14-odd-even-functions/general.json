@@ -1,0 +1,41 @@
+[
+ {
+  "id": "g-odd-even-classify",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "2.14.1",
+  "concept": "Odd and even functions",
+  "calculator": false,
+  "prompt": "**(a)** Classify each function as odd, even or neither: $f(x)=x^{3}-x$, $g(x)=x^{2}\\cos x$, $h(x)=x^{2}+x$. **[3]**\n\n**(b)** Describe the symmetry of the graph of an odd function. **[1]**",
+  "markscheme": "**(a)** $f(-x)=-x^{3}+x=-f(x)$: odd **(A1)**; $g(-x)=x^{2}\\cos x=g(x)$: even **(A1)**; $h(-x)=x^{2}-x$, which is neither $h(x)$ nor $-h(x)$: neither **(A1)**\n\n**(b)** Rotational symmetry of order 2 about the origin **(A1)** (an even function is symmetric in the $y$-axis).",
+  "source": "original"
+ },
+ {
+  "id": "g-inverse-domain-restriction",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 5,
+  "subtopic": "2.14.2",
+  "concept": "Inverse with domain restriction",
+  "calculator": false,
+  "prompt": "Let $f(x)=(x-2)^{2}+1$.\n\n**(a)** Explain why $f$ has no inverse for $x\\in\\mathbb{R}$. **[1]**\n\n**(b)** State the largest domain of the form $x\\ge k$ for which $f^{-1}$ exists. **[1]**\n\n**(c)** For this domain, find $f^{-1}(x)$ and its domain. **[3]**",
+  "markscheme": "**(a)** $f$ is not one-to-one, e.g. $f(1)=f(3)=2$ **(R1)**\n\n**(b)** $x\\ge2$ (to the right of the vertex) **(A1)**\n\n**(c)** $y-1=(x-2)^{2}\\Rightarrow x=2+\\sqrt{y-1}$ (positive root because $x\\ge2$) **(M1)(A1)**; $f^{-1}(x)=2+\\sqrt{x-1}$, $x\\ge1$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-self-inverse-rational",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "2.14.3",
+  "concept": "Self-inverse functions",
+  "calculator": false,
+  "prompt": "Show that $f(x)=\\dfrac{3x+1}{x-3}$, $x\\neq3$, is self-inverse, and state a geometric property of its graph.",
+  "markscheme": "$y=\\dfrac{3x+1}{x-3}\\Rightarrow yx-3y=3x+1\\Rightarrow x(y-3)=3y+1\\Rightarrow x=\\dfrac{3y+1}{y-3}$ **(M1)**\n\nSo $f^{-1}(x)=\\dfrac{3x+1}{x-3}=f(x)$ **(A1)**\n\nThe graph is symmetric in the line $y=x$ **(A1)**",
+  "source": "original"
+ }
+]

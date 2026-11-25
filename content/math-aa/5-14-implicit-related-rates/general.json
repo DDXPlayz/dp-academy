@@ -1,0 +1,54 @@
+[
+ {
+  "id": "g-implicit-tangent",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "5.14.1",
+  "concept": "Implicit differentiation",
+  "calculator": false,
+  "prompt": "The curve $x^{2}+xy+y^{2}=7$ passes through $(1,2)$. Find the gradient of the curve at this point.",
+  "markscheme": "$2x+\\left(y+x\\dfrac{dy}{dx}\\right)+2y\\dfrac{dy}{dx}=0$ **(M1)(A1)** (product rule on $xy$)\n\nAt $(1,2)$: $2+2+(1+4)\\dfrac{dy}{dx}=0$ **(M1)**, $\\dfrac{dy}{dx}=-\\dfrac45$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-related-rates-ladder",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "5.14.2",
+  "concept": "Related rates of change",
+  "calculator": false,
+  "prompt": "A 5 m ladder leans against a vertical wall. The bottom slides away from the wall at $0.3$ m s⁻¹. Find how fast the top slides down the wall when the bottom is 3 m from the wall.",
+  "markscheme": "$x^{2}+y^{2}=25\\Rightarrow2x\\dfrac{dx}{dt}+2y\\dfrac{dy}{dt}=0$ **(M1)(A1)**\n\nAt $x=3$, $y=4$: $3(0.3)+4\\dfrac{dy}{dt}=0$ **(M1)**, $\\dfrac{dy}{dt}=-0.225$: sliding down at $0.225$ m s⁻¹ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-related-rates-balloon",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "5.14.2",
+  "concept": "Related rates of change",
+  "calculator": true,
+  "prompt": "Air is pumped into a spherical balloon at $50\\ \\text{cm}^{3}\\,\\text{s}^{-1}$. Find the rate at which the radius increases when the radius is 10 cm.",
+  "markscheme": "$V=\\tfrac43\\pi r^{3}\\Rightarrow\\dfrac{dV}{dt}=4\\pi r^{2}\\dfrac{dr}{dt}$ **(M1)(A1)**\n\n$\\dfrac{dr}{dt}=\\dfrac{50}{400\\pi}\\approx0.0398\\ \\text{cm s}^{-1}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-closest-point-optimisation",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "5.14.3",
+  "concept": "Optimisation (HL)",
+  "calculator": false,
+  "prompt": "Find the point on the curve $y=\\sqrt x$ closest to $A(3,0)$, and the minimum distance.",
+  "markscheme": "$D^{2}=(x-3)^{2}+x$ — minimising $D^{2}$ is equivalent to minimising $D$ **(M1)(A1)**\n\n$\\dfrac{d}{dx}D^{2}=2(x-3)+1=0\\Rightarrow x=\\tfrac52$ **(A1)**\n\nPoint $\\left(\\tfrac52,\\sqrt{\\tfrac52}\\right)$ **(A1)**; $D=\\sqrt{\\tfrac14+\\tfrac52}=\\dfrac{\\sqrt{11}}{2}\\approx1.66$ **(A1)**",
+  "source": "original"
+ }
+]

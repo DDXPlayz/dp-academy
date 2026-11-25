@@ -1,0 +1,151 @@
+[
+ {
+  "id": "g-describe-motion-quantities",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "A.1.1",
+  "concept": "Describing motion: position, velocity, acceleration",
+  "prompt": "The gradient of a velocity–time graph and the area under it give, respectively:",
+  "options": [
+   "displacement and acceleration",
+   "acceleration and displacement",
+   "acceleration and distance only if v is constant",
+   "velocity and displacement"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** Gradient $=\\dfrac{\\Delta v}{\\Delta t}$ = acceleration; area = $v\\times t$ summed = displacement.",
+  "source": "original"
+ },
+ {
+  "id": "g-acceleration-sign-change",
+  "paper": "1A",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "A.1.2",
+  "concept": "Acceleration as rate of change of velocity",
+  "prompt": "A ball moving at $+5.0\\ \\text{m s}^{-1}$ is moving at $-3.0\\ \\text{m s}^{-1}$ two seconds later. What is its average acceleration?",
+  "options": [
+   "$-4.0\\ \\text{m s}^{-2}$",
+   "$-1.0\\ \\text{m s}^{-2}$",
+   "$+1.0\\ \\text{m s}^{-2}$",
+   "$+4.0\\ \\text{m s}^{-2}$"
+  ],
+  "answer": 0,
+  "markscheme": "**A.** $a=\\dfrac{\\Delta v}{\\Delta t}=\\dfrac{-3.0-5.0}{2.0}=-4.0\\ \\text{m s}^{-2}$. Velocity is a vector, so the change in direction counts: the change is $8\\ \\text{m s}^{-1}$, not $2\\ \\text{m s}^{-1}$.",
+  "source": "original"
+ },
+ {
+  "id": "g-track-displacement",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "A.1.3",
+  "concept": "Displacement as change in position",
+  "prompt": "An athlete runs 1.5 laps of a circular 400 m track.\n\n**(a)** State the distance travelled. **[1]**\n\n**(b)** Calculate the magnitude of the displacement. **[2]**",
+  "markscheme": "**(a)** $600$ m **(A1)**\n\n**(b)** After 1.5 laps the athlete is diametrically opposite the start **(M1)**: $r=\\dfrac{400}{2\\pi}=63.7$ m, displacement $=2r=127$ m **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-distance-vs-displacement-throw",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "A.1.4",
+  "concept": "Distance vs displacement",
+  "prompt": "A ball is thrown vertically upwards, rises 5.0 m and is caught at the point of release. What are the distance travelled and the magnitude of the displacement?",
+  "options": [
+   "0 m and 10 m",
+   "5.0 m and 5.0 m",
+   "10 m and 0 m",
+   "10 m and 10 m"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** Distance is the total path length (5 up + 5 down = 10 m); displacement is the change in position, which is zero.",
+  "source": "original"
+ },
+ {
+  "id": "g-average-speed-trap",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "A.1.5",
+  "concept": "Average vs instantaneous values",
+  "prompt": "A car travels 30 km at $60\\ \\text{km h}^{-1}$ and then a further 30 km at $30\\ \\text{km h}^{-1}$.\n\n**(a)** Calculate the average speed for the whole journey. **[2]**\n\n**(b)** Explain how the instantaneous speed at a given moment could be found from a distance–time graph. **[1]**",
+  "markscheme": "**(a)** Times: $0.5$ h and $1.0$ h **(M1)**; average speed $=\\dfrac{60\\ \\text{km}}{1.5\\ \\text{h}}=40\\ \\text{km h}^{-1}$ **(A1)**\n\n**(b)** Draw the tangent to the curve at that time; its gradient is the instantaneous speed **(R1)**\n\n**Common mistake:** averaging the two speeds ($45\\ \\text{km h}^{-1}$). The car spends longer at the lower speed.",
+  "source": "original"
+ },
+ {
+  "id": "g-suvat-thrown-up-from-height",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 5,
+  "subtopic": "A.1.6",
+  "concept": "Equations of uniformly accelerated motion",
+  "prompt": "A ball is thrown vertically upwards at $15\\ \\text{m s}^{-1}$ from a point 2.0 m above the ground. Air resistance is negligible. Take $g=9.8\\ \\text{m s}^{-2}$.\n\n**(a)** Calculate the maximum height of the ball above the ground. **[2]**\n\n**(b)** Calculate the time taken for the ball to reach the ground. **[3]**",
+  "markscheme": "**(a)** At the top $v=0$: $s=\\dfrac{u^{2}}{2g}=\\dfrac{15^{2}}{2\\times9.8}=11.5$ m **(M1)**; height above ground $=13.5$ m **(A1)**\n\n**(b)** Taking up as positive, $s=-2.0$ m, $u=+15$, $a=-9.8$: $-2.0=15t-4.9t^{2}$ **(M1)**\n\n$4.9t^{2}-15t-2.0=0\\Rightarrow t=3.2$ s (rejecting the negative root) **(A1)(A1)**\n\n**Common mistake:** using $s=+2.0$ m — the ball ends *below* its starting point.",
+  "source": "original"
+ },
+ {
+  "id": "g-derive-suvat-from-graph",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "A.1.6",
+  "concept": "Deriving the equations of motion",
+  "prompt": "Using a velocity–time graph for uniform acceleration from $u$ to $v$ in time $t$, show that $s=ut+\\tfrac12at^{2}$.",
+  "markscheme": "The graph is a straight line; the area under it is the displacement **(M1)**\n\nArea = rectangle $ut$ + triangle $\\tfrac12t(v-u)$ **(A1)**\n\nSince $v-u=at$: $s=ut+\\tfrac12at^{2}$ **(A1)(AG)**",
+  "source": "original"
+ },
+ {
+  "id": "g-non-uniform-acceleration",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "A.1.7",
+  "concept": "Uniform and non-uniform acceleration",
+  "prompt": "A cart's velocity is $v=3t^{2}$ (SI units) for $0\\le t\\le2.0$ s, starting from rest.\n\n**(a)** Explain why the equations of uniformly accelerated motion cannot be used to find its displacement. **[1]**\n\n**(b)** Determine the displacement in the first 2.0 s. **[2]**\n\n**(c)** Describe the shape of its velocity–time graph. **[1]**",
+  "markscheme": "**(a)** $a=\\dfrac{dv}{dt}=6t$, which is not constant **(R1)**\n\n**(b)** Displacement = area under the $v$–$t$ graph $=\\displaystyle\\int_0^{2}3t^{2}dt=t^{3}\\Big|_0^{2}=8.0$ m **(M1)(A1)**\n\n**(c)** A curve getting steeper (concave up) from the origin — the increasing gradient shows increasing acceleration **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-projectile-angle-launch",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 6,
+  "subtopic": "A.1.8",
+  "concept": "Projectile motion without air resistance",
+  "prompt": "A football is kicked from level ground at $20\\ \\text{m s}^{-1}$ at $35^{\\circ}$ above the horizontal. Air resistance is negligible. Take $g=9.8\\ \\text{m s}^{-2}$.\n\n**(a)** Calculate the horizontal and vertical components of the initial velocity. **[2]**\n\n**(b)** Calculate the time of flight. **[2]**\n\n**(c)** Calculate the range and the maximum height. **[2]**",
+  "markscheme": "**(a)** $u_x=20\\cos35^{\\circ}=16.4\\ \\text{m s}^{-1}$, $u_y=20\\sin35^{\\circ}=11.5\\ \\text{m s}^{-1}$ **(A1)(A1)**\n\n**(b)** Vertical motion: $0=u_yt-\\tfrac12gt^{2}$ **(M1)** $\\Rightarrow t=\\dfrac{2u_y}{g}=2.3$ s **(A1)**\n\n**(c)** Range $=u_xt=16.4\\times2.34=38$ m **(A1)**; $h=\\dfrac{u_y^{2}}{2g}=6.7$ m **(A1)**\n\nThe horizontal velocity is constant because no horizontal force acts; only the vertical component is changed by gravity.",
+  "source": "original"
+ },
+ {
+  "id": "g-velocity-at-top",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "A.1.8",
+  "concept": "Projectile components",
+  "prompt": "A projectile is launched at $20\\ \\text{m s}^{-1}$ at $35^{\\circ}$ to the horizontal (no air resistance). What is its speed at the highest point?",
+  "options": [
+   "$0$",
+   "$11\\ \\text{m s}^{-1}$",
+   "$16\\ \\text{m s}^{-1}$",
+   "$20\\ \\text{m s}^{-1}$"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** At the top only the vertical component is zero; the horizontal component $20\\cos35^{\\circ}=16\\ \\text{m s}^{-1}$ is unchanged throughout. The acceleration there is still $g$ downwards.",
+  "source": "original"
+ },
+ {
+  "id": "g-air-resistance-projectile",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "A.1.9",
+  "concept": "Effect of fluid resistance on projectiles",
+  "prompt": "A ball is launched at an angle to the horizontal. Compare its motion with and without significant air resistance, considering **(a)** the maximum height and range, **(b)** the shape of the trajectory, **(c)** the acceleration during the flight, **(d)** the speed if the ball fell for a very long time.",
+  "markscheme": "**(a)** Both are reduced, because drag removes energy and opposes motion **(A1)**\n\n**(b)** No longer a symmetric parabola: the descent is steeper than the ascent **(A1)**\n\n**(c)** No longer constant $g$: drag adds to the downward acceleration on the way up, reduces it on the way down, and also gives a horizontal deceleration **(A1)**\n\n**(d)** It would approach a terminal speed, when drag balances weight **(A1)**",
+  "source": "original"
+ }
+]

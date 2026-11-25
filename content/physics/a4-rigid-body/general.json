@@ -1,0 +1,172 @@
+[
+ {
+  "id": "g-torque-spanner-angle",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "A.4.1",
+  "concept": "Torque τ = Fr sin θ",
+  "prompt": "A force of 40 N is applied to the end of a 0.25 m spanner at $60^{\\circ}$ to the spanner. Calculate the torque about the bolt, and state the angle that would give the maximum torque.",
+  "markscheme": "$\\tau=Fr\\sin\\theta=40\\times0.25\\times\\sin60^{\\circ}=8.7$ N m **(M1)(A1)**\n\nMaximum at $90^{\\circ}$ (force perpendicular to the spanner), giving 10 N m.",
+  "source": "original"
+ },
+ {
+  "id": "g-beam-balance-pivot",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "A.4.2",
+  "concept": "Rotational equilibrium",
+  "prompt": "A uniform beam of length 4.0 m and mass 20 kg rests on a pivot 1.5 m from end A. A load hung from end A keeps the beam horizontal. Take $g=9.8\\ \\text{m s}^{-2}$.\n\n**(a)** Calculate the mass of the load. **[2]**\n\n**(b)** Calculate the force exerted by the pivot on the beam. **[2]**",
+  "markscheme": "**(a)** The beam's weight acts at its centre, 0.5 m beyond the pivot. Taking torques about the pivot: $m(1.5)=20(0.5)$ **(M1)**, $m=6.7$ kg **(A1)**\n\n**(b)** Translational equilibrium too: pivot force $=(20+6.7)\\times9.8=261$ N upwards **(M1)(A1)**\n\nEquilibrium of an extended body needs both zero resultant force **and** zero resultant torque.",
+  "source": "original"
+ },
+ {
+  "id": "g-door-hinge-torque",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "A.4.3",
+  "concept": "Unbalanced torque causes angular acceleration",
+  "prompt": "The same perpendicular force is applied to a door either at the handle or halfway between the handle and the hinge. Compared with pushing at the handle, pushing halfway gives:",
+  "options": [
+   "the same angular acceleration",
+   "half the angular acceleration",
+   "a quarter of the angular acceleration",
+   "double the angular acceleration"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** Torque $=Fr$ is halved, so by $\\tau=I\\alpha$ the angular acceleration is halved (the moment of inertia of the door is unchanged).",
+  "source": "original"
+ },
+ {
+  "id": "g-angular-displacement-radians",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "A.4.4",
+  "concept": "Angular displacement, velocity, acceleration",
+  "prompt": "A wheel turns through 3.5 revolutions in 2.0 s at constant angular velocity. Calculate **(a)** its angular displacement in radians and **(b)** its angular velocity.",
+  "markscheme": "**(a)** $3.5\\times2\\pi=22$ rad **(A1)**\n\n**(b)** $\\omega=\\dfrac{22}{2.0}=11\\ \\text{rad s}^{-1}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-fan-angular-suvat",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "A.4.5",
+  "concept": "Equations of uniform angular acceleration",
+  "prompt": "A fan accelerates uniformly from rest to 300 revolutions per minute in 4.0 s.\n\n**(a)** Calculate the angular acceleration. **[2]**\n\n**(b)** Calculate the number of revolutions made in these 4.0 s. **[2]**",
+  "markscheme": "**(a)** $\\omega_f=\\dfrac{300\\times2\\pi}{60}=31.4\\ \\text{rad s}^{-1}$ **(A1)**; $\\alpha=\\dfrac{31.4}{4.0}=7.9\\ \\text{rad s}^{-2}$ **(A1)**\n\n**(b)** $\\Delta\\theta=\\dfrac{\\omega_i+\\omega_f}{2}t=\\dfrac{31.4}{2}\\times4.0=62.8$ rad **(M1)** $=10$ revolutions **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-hoop-vs-disc-race",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "A.4.6",
+  "concept": "Moment of inertia and mass distribution",
+  "prompt": "A hoop and a solid disc of the same mass and radius are released together from rest at the top of the same slope and roll without slipping. Explain which reaches the bottom first.",
+  "markscheme": "The hoop's mass is all at the rim, so it has the larger moment of inertia **(R1)**\n\nBoth lose the same gravitational potential energy, but the hoop must put a larger share into rotational kinetic energy ($\\tfrac12I\\omega^{2}$), leaving less translational kinetic energy **(R1)**\n\nSo the disc has the greater speed at every point and arrives first **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-point-mass-inertia",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "A.4.7",
+  "concept": "I = Σmr² for point masses",
+  "prompt": "Two 0.50 kg masses are fixed at each end of a light rod of length 0.80 m, which rotates about its centre. Calculate the moment of inertia, and the new value if the masses are moved to 0.20 m from the centre.",
+  "markscheme": "$I=2\\times0.50\\times0.40^{2}=0.16\\ \\text{kg m}^{2}$ **(A1)**\n\nAt 0.20 m: $2\\times0.50\\times0.20^{2}=0.040\\ \\text{kg m}^{2}$ — halving $r$ quarters $I$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-pulley-hanging-mass",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "A.4.8",
+  "concept": "Newton's second law for rotation",
+  "prompt": "A light string is wound round a pulley of radius 0.10 m and moment of inertia $0.010\\ \\text{kg m}^{2}$, which turns on a frictionless axle. A 2.0 kg mass hangs from the string and is released. Take $g=9.8\\ \\text{m s}^{-2}$.\n\n**(a)** Write down equations for the motion of the mass and of the pulley. **[2]**\n\n**(b)** Calculate the acceleration of the mass and the tension in the string. **[3]**",
+  "markscheme": "**(a)** Mass: $mg-T=ma$ **(A1)**; pulley: $Tr=I\\alpha=I\\dfrac ar$ **(A1)**\n\n**(b)** $T=\\dfrac{Ia}{r^{2}}=1.0a$, so $19.6-1.0a=2.0a$ **(M1)**, $a=6.5\\ \\text{m s}^{-2}$ **(A1)**, $T=6.5$ N **(A1)**\n\nThe tension is less than the weight (19.6 N) because the mass accelerates; the pulley's inertia makes $a<g$.",
+  "source": "original"
+ },
+ {
+  "id": "g-flywheel-spin-up",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "A.4.8",
+  "concept": "τ = Iα",
+  "prompt": "A constant torque of 4.0 N m acts on a flywheel of moment of inertia $0.80\\ \\text{kg m}^{2}$ initially at rest. Calculate the time for it to reach 600 revolutions per minute.",
+  "markscheme": "$\\alpha=\\dfrac{\\tau}{I}=5.0\\ \\text{rad s}^{-2}$ **(A1)**; $\\omega=\\dfrac{600\\times2\\pi}{60}=62.8\\ \\text{rad s}^{-1}$ **(A1)**; $t=\\dfrac{62.8}{5.0}=13$ s **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-angular-momentum-flywheel",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "A.4.9",
+  "concept": "Angular momentum L = Iω",
+  "prompt": "A flywheel of moment of inertia $0.80\\ \\text{kg m}^{2}$ rotates at $62.8\\ \\text{rad s}^{-1}$. What is its angular momentum?",
+  "options": [
+   "$0.013\\ \\text{kg m}^{2}\\,\\text{s}^{-1}$",
+   "$25\\ \\text{kg m}^{2}\\,\\text{s}^{-1}$",
+   "$50\\ \\text{kg m}^{2}\\,\\text{s}^{-1}$",
+   "$1600\\ \\text{kg m}^{2}\\,\\text{s}^{-1}$"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** $L=I\\omega=0.80\\times62.8=50\\ \\text{kg m}^{2}\\,\\text{s}^{-1}$.",
+  "source": "original"
+ },
+ {
+  "id": "g-skater-angular-momentum",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "A.4.10",
+  "concept": "Conservation of angular momentum",
+  "prompt": "A spinning ice skater pulls in her arms, reducing her moment of inertia from $3.0\\ \\text{kg m}^{2}$ to $1.2\\ \\text{kg m}^{2}$. She was spinning at 2.0 revolutions per second.\n\n**(a)** Calculate her new rate of spin. **[2]**\n\n**(b)** Show that her rotational kinetic energy increases, and explain where the extra energy comes from. **[2]**",
+  "markscheme": "**(a)** No external torque about the vertical axis, so $I_1\\omega_1=I_2\\omega_2$ **(M1)**: $\\omega_2=\\dfrac{3.0\\times2.0}{1.2}=5.0$ rev s⁻¹ **(A1)**\n\n**(b)** $E_k=\\dfrac{L^{2}}{2I}$ with $L$ constant: $E_k$ increases by the factor $\\dfrac{3.0}{1.2}=2.5$ **(A1)**. The skater does work pulling her arms inwards against their tendency to move outwards **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-angular-impulse-brake",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "A.4.11",
+  "concept": "Angular impulse",
+  "prompt": "A brake applies a constant torque of 15 N m to a wheel spinning with angular momentum $80\\ \\text{kg m}^{2}\\,\\text{s}^{-1}$ for 4.0 s. Calculate the angular impulse and the final angular momentum of the wheel.",
+  "markscheme": "Angular impulse $\\Delta L=\\tau\\Delta t=15\\times4.0=60\\ \\text{kg m}^{2}\\,\\text{s}^{-1}$ (N m s) **(M1)(A1)**\n\nThe torque opposes the rotation: $L=80-60=20\\ \\text{kg m}^{2}\\,\\text{s}^{-1}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-rolling-cylinder-speed",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "A.4.12",
+  "concept": "Rotational kinetic energy",
+  "prompt": "A solid cylinder ($I=\\tfrac12mr^{2}$) rolls without slipping from rest down a slope, descending a vertical height of 1.5 m. Take $g=9.8\\ \\text{m s}^{-2}$.\n\n**(a)** Show that its speed at the bottom is $v=\\sqrt{\\tfrac43gh}$. **[3]**\n\n**(b)** Calculate this speed. **[1]**",
+  "markscheme": "**(a)** $mgh=\\tfrac12mv^{2}+\\tfrac12I\\omega^{2}$ **(M1)**; rolling: $\\omega=\\dfrac vr$, so $\\tfrac12\\left(\\tfrac12mr^{2}\\right)\\dfrac{v^{2}}{r^{2}}=\\tfrac14mv^{2}$ **(A1)**\n\n$mgh=\\tfrac34mv^{2}\\Rightarrow v=\\sqrt{\\tfrac43gh}$ **(A1)(AG)**\n\n**(b)** $v=\\sqrt{\\tfrac43\\times9.8\\times1.5}=4.4\\ \\text{m s}^{-1}$ **(A1)**",
+  "source": "original"
+ }
+]

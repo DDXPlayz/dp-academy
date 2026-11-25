@@ -1,0 +1,65 @@
+[
+ {
+  "id": "g-doppler-nature",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "C.5.1",
+  "concept": "The Doppler effect",
+  "prompt": "An ambulance with its siren on drives past a stationary listener. Describe what the listener hears and explain why.",
+  "markscheme": "Higher pitch as it approaches and lower pitch as it moves away **(A1)**; the source's motion compresses the wavefronts ahead of it (shorter wavelength, higher observed frequency) and stretches them behind **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-doppler-wavefront-diagram",
+  "paper": "1A",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "C.5.2",
+  "concept": "Wavefront diagrams for a moving source",
+  "prompt": "A source moves to the right while emitting waves. On a wavefront diagram, the wavefronts are:",
+  "options": [
+   "concentric circles centred on the source",
+   "closer together on the left",
+   "closer together on the right",
+   "evenly spaced but elliptical"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** Each wavefront is a circle centred on where the source **was** when it was emitted, so the circles crowd together on the right (ahead) and spread out on the left.",
+  "source": "original"
+ },
+ {
+  "id": "g-redshift-velocity",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "C.5.3",
+  "concept": "Δλ/λ ≈ v/c",
+  "prompt": "A hydrogen line emitted at 656.3 nm is observed at 662.9 nm in the spectrum of a galaxy. Calculate the galaxy's velocity relative to the Earth.",
+  "markscheme": "$\\Delta\\lambda=6.6$ nm **(A1)**; $v=\\dfrac{\\Delta\\lambda}{\\lambda}c=\\dfrac{6.6}{656.3}\\times3.0\\times10^{8}$ **(M1)** $=3.0\\times10^{6}\\ \\text{m s}^{-1}$, moving away (redshift) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-spectral-shift-information",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "C.5.4",
+  "concept": "Spectral shifts in astronomy",
+  "prompt": "The spectral lines from one edge of a rotating galaxy are redshifted and those from the opposite edge are blueshifted, relative to the centre. Explain what this shows.",
+  "markscheme": "Redshift: that edge is moving away from us; blueshift: the other edge is moving towards us **(R1)**; so the galaxy is rotating, and the size of the shifts gives its rotational speed (used to infer its mass) **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-doppler-sound-source-observer",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "C.5.5",
+  "concept": "Doppler effect for sound (moving source/observer)",
+  "prompt": "A siren emits 800 Hz. The speed of sound is $340\\ \\text{m s}^{-1}$.\n\n**(a)** Calculate the frequency heard by a stationary observer as the siren approaches at $25\\ \\text{m s}^{-1}$, and as it moves away at the same speed. **[2]**\n\n**(b)** Calculate the frequency heard by an observer moving at $25\\ \\text{m s}^{-1}$ towards a stationary siren, and comment on the comparison with (a). **[2]**",
+  "markscheme": "**(a)** Approaching: $f'=800\\times\\dfrac{340}{340-25}=864$ Hz **(A1)**; receding: $800\\times\\dfrac{340}{340+25}=745$ Hz **(A1)**\n\n**(b)** $f'=800\\times\\dfrac{340+25}{340}=859$ Hz **(A1)**; different from 864 Hz: for sound the result depends on whether the source or the observer moves relative to the medium **(R1)**",
+  "source": "original"
+ }
+]

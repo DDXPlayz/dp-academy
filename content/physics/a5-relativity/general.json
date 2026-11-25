@@ -1,0 +1,210 @@
+[
+ {
+  "id": "g-inertial-frame",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "A.5.1",
+  "concept": "Reference frames",
+  "prompt": "Which is the best description of an inertial reference frame?",
+  "options": [
+   "A frame at rest relative to the Earth",
+   "A frame moving at the speed of light",
+   "A frame moving at constant velocity, in which a body with no resultant force stays at rest or moves uniformly",
+   "A frame attached to a rotating object"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** An inertial frame is one in which Newton's first law holds — it is not accelerating. A rotating merry-go-round (D) or braking car is non-inertial.",
+  "source": "original"
+ },
+ {
+  "id": "g-galilean-relativity-train",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "A.5.2",
+  "concept": "Galilean relativity",
+  "prompt": "A student in a closed, windowless train carriage moving smoothly at constant velocity drops a ball and plays table tennis. Explain why no mechanics experiment inside the carriage can determine whether the train is moving.",
+  "markscheme": "The carriage is an inertial frame **(R1)**; Newton's laws take the same form in all inertial frames, so every mechanics experiment gives the same results as in a stationary carriage (the ball falls straight down relative to the student) **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-galilean-transformation",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "A.5.3",
+  "concept": "Galilean transformation",
+  "prompt": "Frame S′ moves at $20\\ \\text{m s}^{-1}$ in the $+x$ direction relative to frame S; their origins coincide at $t=t'=0$. An event occurs at $x=500$ m, $t=10$ s in S. Find its coordinates in S′.",
+  "markscheme": "$x'=x-vt=500-20\\times10=300$ m **(A1)**; $t'=t=10$ s — Galilean relativity assumes absolute time **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-galilean-velocity-addition-light",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "A.5.4",
+  "concept": "Galilean velocity addition",
+  "prompt": "**(a)** A ball is thrown forwards at $15\\ \\text{m s}^{-1}$ relative to a train moving at $20\\ \\text{m s}^{-1}$. State its speed relative to the ground according to Galilean relativity. **[1]**\n\n**(b)** Explain why the same rule fails for a light pulse emitted forwards from the train. **[2]**",
+  "markscheme": "**(a)** $35\\ \\text{m s}^{-1}$ **(A1)**\n\n**(b)** Galilean addition predicts $c+20\\ \\text{m s}^{-1}$ relative to the ground **(A1)**, but experiments (and Maxwell's equations) show light has speed $c$ in every inertial frame **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-postulates-sr",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "A.5.5",
+  "concept": "Postulates of special relativity",
+  "prompt": "State the two postulates of special relativity.",
+  "markscheme": "1. The laws of physics are the same in all inertial reference frames **(A1)**\n\n2. The speed of light in a vacuum is the same, $c$, for all inertial observers, regardless of the motion of the source or observer **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-lorentz-event",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "A.5.6",
+  "concept": "Lorentz transformations",
+  "prompt": "Frame S′ moves at $0.60c$ relative to S along $x$; origins coincide at $t=t'=0$. An event has coordinates $x=3.0\\times10^{8}$ m, $t=2.0$ s in S.\n\n**(a)** Calculate $\\gamma$. **[1]**\n\n**(b)** Calculate $x'$ and $t'$. **[3]**",
+  "markscheme": "**(a)** $\\gamma=\\dfrac{1}{\\sqrt{1-0.36}}=1.25$ **(A1)**\n\n**(b)** $x'=\\gamma(x-vt)=1.25(3.0\\times10^{8}-1.8\\times10^{8}\\times2.0)=-7.5\\times10^{7}$ m **(M1)(A1)**\n\n$t'=\\gamma\\left(t-\\dfrac{vx}{c^{2}}\\right)=1.25(2.0-0.60)=1.75$ s **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-relativistic-velocity-addition",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "A.5.7",
+  "concept": "Relativistic velocity addition",
+  "prompt": "Two spacecraft approach each other, each moving at $0.80c$ relative to the Earth. Calculate the speed of one spacecraft measured by the other.",
+  "markscheme": "In the frame of craft A ($v=0.80c$), craft B has $u=-0.80c$ in the Earth frame **(M1)**\n\n$u'=\\dfrac{u-v}{1-uv/c^{2}}=\\dfrac{-1.60c}{1+0.64}$ **(M1)** $=-0.98c$, i.e. speed $0.98c$ **(A1)** — less than $c$, unlike the Galilean $1.6c$.",
+  "source": "original"
+ },
+ {
+  "id": "g-spacetime-interval",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "A.5.8",
+  "concept": "Invariant space–time interval",
+  "prompt": "In frame S two events are separated by $\\Delta x=6.0\\times10^{8}$ m and $\\Delta t=3.0$ s.\n\n**(a)** Calculate the space–time interval $\\Delta s$. **[2]**\n\n**(b)** Hence determine the time between the events in a frame in which they occur at the same place. **[2]**",
+  "markscheme": "**(a)** $(\\Delta s)^{2}=(c\\Delta t)^{2}-(\\Delta x)^{2}=(9.0\\times10^{8})^{2}-(6.0\\times10^{8})^{2}=4.5\\times10^{17}\\ \\text{m}^{2}$ **(M1)**; $\\Delta s=6.7\\times10^{8}$ m **(A1)**\n\n**(b)** In that frame $\\Delta x'=0$, so $c\\Delta t'=\\Delta s$ (invariant) **(M1)**: $\\Delta t'=2.2$ s — the proper time **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-proper-time-length-def",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "A.5.9",
+  "concept": "Proper time and proper length",
+  "prompt": "A muon travels through the atmosphere. Which observer measures the **proper time** for the muon's lifetime and the **proper length** of the atmosphere?",
+  "options": [
+   "proper time: muon frame; proper length: Earth frame",
+   "proper time: Earth frame; proper length: muon frame",
+   "both in the muon frame",
+   "both in the Earth frame"
+  ],
+  "answer": 0,
+  "markscheme": "**A.** Proper time is measured in the frame where both events (creation, decay) happen at the same place — the muon's frame. Proper length is measured in the frame where the object is at rest — the Earth's frame for the atmosphere.",
+  "source": "original"
+ },
+ {
+  "id": "g-time-dilation-clock",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "A.5.10",
+  "concept": "Time dilation",
+  "prompt": "A particle has a proper lifetime of $2.0\\ \\mu\\text{s}$ and moves at $0.80c$ relative to a laboratory. Calculate its lifetime measured in the laboratory.",
+  "markscheme": "$\\gamma=\\dfrac{1}{\\sqrt{1-0.64}}=\\dfrac53$ **(A1)**; $\\Delta t=\\gamma\\Delta t_0=3.3\\ \\mu\\text{s}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-length-contraction-rod",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "A.5.11",
+  "concept": "Length contraction",
+  "prompt": "A rod has proper length 10 m. What length does an observer measure when the rod moves along its length at $0.80c$?",
+  "options": [
+   "3.6 m",
+   "6.0 m",
+   "10 m",
+   "17 m"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** $L=\\dfrac{L_0}{\\gamma}=\\dfrac{10}{5/3}=6.0$ m; only the dimension along the motion contracts.",
+  "source": "original"
+ },
+ {
+  "id": "g-relativity-of-simultaneity",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "A.5.12",
+  "concept": "Relativity of simultaneity",
+  "prompt": "Two lamps 900 m apart in frame S flash simultaneously. Frame S′ moves at $0.60c$ along the line joining them, from the first lamp towards the second.\n\n**(a)** Calculate the time between the flashes in S′. **[2]**\n\n**(b)** State which flash occurs first in S′ and explain why observers disagree. **[2]**",
+  "markscheme": "**(a)** $\\Delta t'=\\gamma\\left(\\Delta t-\\dfrac{v\\Delta x}{c^{2}}\\right)=-1.25\\times\\dfrac{0.60\\times900}{3.0\\times10^{8}}$ **(M1)** $=-2.3\\times10^{-6}$ s **(A1)**\n\n**(b)** $\\Delta t'<0$: the flash from the second lamp (further along $+x$) occurs first in S′ **(A1)**. With $c$ the same in both frames, the time order of separated events depends on the frame; simultaneity is not absolute **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-spacetime-diagram-light",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "A.5.13",
+  "concept": "Space–time diagrams",
+  "prompt": "On a space–time diagram with axes $x$ and $ct$ drawn to the same scale, the world line of a light pulse is:",
+  "options": [
+   "parallel to the ct axis",
+   "parallel to the x axis",
+   "at $45^{\\circ}$ to the axes",
+   "a curve"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** Light travels $\\Delta x=c\\Delta t$, so its world line makes $45^{\\circ}$ with both axes. A stationary object's world line is vertical (parallel to the $ct$ axis).",
+  "source": "original"
+ },
+ {
+  "id": "g-worldline-angle-speed",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "A.5.14",
+  "concept": "World line angle and speed",
+  "prompt": "The world line of a particle makes an angle of $30^{\\circ}$ with the $ct$ axis. Calculate the particle's speed, and explain why no world line can make more than $45^{\\circ}$ with the $ct$ axis.",
+  "markscheme": "$\\tan\\theta=\\dfrac vc\\Rightarrow v=c\\tan30^{\\circ}=0.58c$ **(A1)**\n\n$45^{\\circ}$ corresponds to $v=c$, and no massive particle can reach $c$ **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-muon-evidence",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 6,
+  "subtopic": "A.5.15",
+  "concept": "Muon decay as evidence for relativity",
+  "prompt": "Muons are produced 10 km above the ground and travel down at $0.995c$. Their half-life in their rest frame is $1.56\\ \\mu\\text{s}$.\n\n**(a)** Calculate the fraction expected to reach the ground if time dilation did not occur. **[2]**\n\n**(b)** Calculate $\\gamma$ and the fraction expected with time dilation. **[2]**\n\n**(c)** Explain how the result is interpreted in the muon's rest frame. **[2]**",
+  "markscheme": "**(a)** Distance per half-life $=0.995\\times3.0\\times10^{8}\\times1.56\\times10^{-6}=466$ m; $10\\,000/466=21.5$ half-lives **(M1)**; fraction $=2^{-21.5}\\approx3\\times10^{-7}$ **(A1)**\n\n**(b)** $\\gamma=10.0$ **(A1)**; dilated half-life $15.6\\ \\mu\\text{s}$ → 2.15 half-lives, fraction $\\approx0.23$ **(A1)**\n\n**(c)** In the muon frame the half-life is the proper $1.56\\ \\mu\\text{s}$, but the atmosphere is length-contracted to $10\\,000/10.0\\approx1.0$ km **(R1)**; the number of half-lives (2.15) and so the surviving fraction are the same — both frames agree on what is observed **(R1)**\n\nMeasurements show far more muons reaching the ground than (a) predicts, confirming (b).",
+  "source": "original"
+ }
+]

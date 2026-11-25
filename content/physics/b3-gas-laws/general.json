@@ -1,0 +1,104 @@
+[
+ {
+  "id": "g-pressure-heel",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "B.3.1",
+  "concept": "Pressure P = F/A",
+  "prompt": "A 60 kg person stands on one heel of area $1.0\\ \\text{cm}^{2}$. Calculate the pressure on the floor. Take $g=9.8\\ \\text{m s}^{-2}$.",
+  "markscheme": "$P=\\dfrac FA=\\dfrac{60\\times9.8}{1.0\\times10^{-4}}$ **(M1)** $=5.9\\times10^{6}$ Pa **(A1)** — far larger than under a flat shoe, which is why heels dent floors.",
+  "source": "original"
+ },
+ {
+  "id": "g-amount-of-substance",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "B.3.2",
+  "concept": "Amount of substance n = N/N_A",
+  "prompt": "How many moles are in a sample containing $3.0\\times10^{23}$ molecules? ($N_A=6.02\\times10^{23}\\ \\text{mol}^{-1}$)",
+  "options": [
+   "0.50 mol",
+   "2.0 mol",
+   "3.0 mol",
+   "$1.8\\times10^{47}$ mol"
+  ],
+  "answer": 0,
+  "markscheme": "**A.** $n=\\dfrac{N}{N_A}=\\dfrac{3.0\\times10^{23}}{6.02\\times10^{23}}=0.50$ mol.",
+  "source": "original"
+ },
+ {
+  "id": "g-kinetic-theory-assumptions",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "B.3.3",
+  "concept": "Ideal gas assumptions",
+  "prompt": "State three assumptions of the kinetic model of an ideal gas.",
+  "markscheme": "Any three **(A3)**:\n- molecules are point particles (negligible volume compared with the container);\n- no intermolecular forces except during collisions;\n- collisions are perfectly elastic;\n- collisions take negligible time;\n- molecules move randomly, obeying Newton's laws;\n- there is a very large number of molecules.",
+  "source": "original"
+ },
+ {
+  "id": "g-combined-gas-law",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "B.3.4",
+  "concept": "Combined gas law PV/T = constant",
+  "prompt": "A fixed mass of gas has volume 2.0 L at 300 K and 100 kPa. It is compressed to 1.5 L and heated to 350 K. Calculate the new pressure.",
+  "markscheme": "$\\dfrac{P_1V_1}{T_1}=\\dfrac{P_2V_2}{T_2}\\Rightarrow P_2=100\\times\\dfrac{2.0}{1.5}\\times\\dfrac{350}{300}$ **(M1)** $=156$ kPa **(A1)**\n\nTemperatures must be in kelvin; the volume units cancel.",
+  "source": "original"
+ },
+ {
+  "id": "g-ideal-gas-cylinder",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "B.3.5",
+  "concept": "PV = nRT and PV = Nk_BT",
+  "prompt": "A cylinder of volume $0.020\\ \\text{m}^{3}$ contains gas at $2.0\\times10^{5}$ Pa and 20 °C. Calculate the amount of gas and the number of molecules. ($R=8.31\\ \\text{J mol}^{-1}\\text{K}^{-1}$, $N_A=6.02\\times10^{23}\\ \\text{mol}^{-1}$)",
+  "markscheme": "$n=\\dfrac{PV}{RT}=\\dfrac{2.0\\times10^{5}\\times0.020}{8.31\\times293}$ **(M1)** $=1.6$ mol **(A1)**\n\n$N=nN_A=9.9\\times10^{23}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-rms-speed-air",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "B.3.6",
+  "concept": "Pressure from molecular collisions",
+  "prompt": "**(a)** Explain how the motion of gas molecules produces a pressure on the walls of a container. **[2]**\n\n**(b)** Air at $1.0\\times10^{5}$ Pa has density $1.2\\ \\text{kg m}^{-3}$. Use $P=\\tfrac13\\rho\\overline{v^{2}}$ to estimate the root-mean-square speed of its molecules. **[1]**",
+  "markscheme": "**(a)** Each molecule that rebounds from a wall has its momentum changed, so the wall exerts a force on it and (Newton's third law) it exerts a force on the wall **(R1)**; the many collisions per second produce an average force per unit area — pressure **(R1)**\n\n**(b)** $v_{rms}=\\sqrt{\\dfrac{3P}{\\rho}}=\\sqrt{\\dfrac{3\\times1.0\\times10^{5}}{1.2}}=500\\ \\text{m s}^{-1}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-internal-energy-monatomic",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "B.3.7",
+  "concept": "Internal energy of an ideal monatomic gas",
+  "prompt": "Calculate the internal energy of 2.0 mol of helium (an ideal monatomic gas) at 300 K, and explain why it contains no potential energy term.",
+  "markscheme": "$U=\\tfrac32nRT=1.5\\times2.0\\times8.31\\times300=7.5\\times10^{3}$ J **(A1)**\n\nIdeal gas molecules exert no forces on each other between collisions, so there is no intermolecular potential energy **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-real-gas-conditions",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "B.3.8",
+  "concept": "When real gases behave ideally",
+  "prompt": "A real gas behaves most like an ideal gas at:",
+  "options": [
+   "high pressure and low temperature",
+   "high pressure and high temperature",
+   "low pressure and low temperature",
+   "low pressure and high temperature"
+  ],
+  "answer": 3,
+  "markscheme": "**D.** At low pressure (low density) molecules are far apart, so their own volume and intermolecular forces matter little; at high temperature their kinetic energy greatly exceeds any intermolecular potential energy.",
+  "source": "original"
+ }
+]

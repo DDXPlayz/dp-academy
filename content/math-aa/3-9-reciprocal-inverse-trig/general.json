@@ -1,0 +1,41 @@
+[
+ {
+  "id": "g-reciprocal-trig-exact",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "3.9.1",
+  "concept": "sec, cosec and cot",
+  "calculator": false,
+  "prompt": "Find the exact values of **(a)** $\\sec\\dfrac\\pi3$ **(b)** $\\operatorname{cosec}\\dfrac{7\\pi}{6}$ **(c)** $\\cot\\dfrac{3\\pi}{4}$.",
+  "markscheme": "**(a)** $\\dfrac{1}{\\cos(\\pi/3)}=2$ **(A1)**\n\n**(b)** $\\sin\\dfrac{7\\pi}{6}=-\\dfrac12$, so $\\operatorname{cosec}=-2$ **(A1)**\n\n**(c)** $\\tan\\dfrac{3\\pi}{4}=-1$, so $\\cot=-1$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-sec-from-tan-identity",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "3.9.2",
+  "concept": "1 + tan²θ = sec²θ",
+  "calculator": false,
+  "prompt": "Given $\\tan\\theta=2$ and $\\pi<\\theta<\\dfrac{3\\pi}{2}$, find the exact value of $\\cos\\theta$.",
+  "markscheme": "$\\sec^{2}\\theta=1+\\tan^{2}\\theta=5$ **(M1)**\n\nIn the third quadrant cosine is negative, so $\\sec\\theta=-\\sqrt5$ **(A1)** and $\\cos\\theta=-\\dfrac{1}{\\sqrt5}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-inverse-trig-ranges",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "3.9.2",
+  "concept": "Inverse trig functions: domains and ranges",
+  "calculator": false,
+  "prompt": "**(a)** Find $\\arccos\\left(-\\dfrac12\\right)$. **[1]**\n\n**(b)** Find $\\arcsin\\left(\\sin\\dfrac{5\\pi}{6}\\right)$. **[1]**\n\n**(c)** Simplify $\\sin(\\arccos x)$ for $-1\\le x\\le1$. **[1]**",
+  "markscheme": "**(a)** $\\dfrac{2\\pi}{3}$ (range of arccos is $[0,\\pi]$) **(A1)**\n\n**(b)** $\\sin\\frac{5\\pi}{6}=\\frac12$ and the range of arcsin is $[-\\frac\\pi2,\\frac\\pi2]$, so the answer is $\\dfrac\\pi6$, **not** $\\frac{5\\pi}{6}$ **(A1)**\n\n**(c)** If $\\theta=\\arccos x\\in[0,\\pi]$ then $\\sin\\theta\\ge0$, so $\\sin\\theta=\\sqrt{1-x^{2}}$ **(A1)**",
+  "source": "original"
+ }
+]

@@ -1,0 +1,62 @@
+[
+ {
+  "id": "g-cumulative-frequency-median-iqr",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 5,
+  "subtopic": "4.2.4",
+  "concept": "Cumulative frequency: median and quartiles",
+  "calculator": true,
+  "prompt": "The times, $t$ minutes, that 60 students took to complete a task are shown.\n\n| Time | $0<t\\le10$ | $10<t\\le20$ | $20<t\\le30$ | $30<t\\le40$ | $40<t\\le50$ |\n|---|---|---|---|---|---|\n| Frequency | 6 | 14 | 22 | 12 | 6 |\n\n**(a)** Write down the cumulative frequencies. **[1]**\n\n**(b)** Using a cumulative frequency graph (or linear interpolation), estimate the median and the interquartile range. **[3]**\n\n**(c)** Estimate the number of students who took more than 35 minutes. **[1]**",
+  "markscheme": "**(a)** $6,\\ 20,\\ 42,\\ 54,\\ 60$ **(A1)**\n\n**(b)** Median at the 30th student: $20+\\dfrac{30-20}{22}\\times10\\approx24.5$ min **(A1)**\n\n$Q_1$ (15th): $10+\\dfrac{9}{14}\\times10\\approx16.4$; $Q_3$ (45th): $30+\\dfrac{3}{12}\\times10=32.5$ **(M1)**; IQR $\\approx16$ min **(A1)**\n\n**(c)** At $t=35$, cumulative frequency $\\approx42+6=48$, so about $60-48=12$ students **(A1)**\n\nAnswers read from a hand-drawn graph within about ±1 min are acceptable.",
+  "source": "original"
+ },
+ {
+  "id": "g-choose-presentation",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "4.2.1",
+  "concept": "Presenting discrete and continuous data",
+  "calculator": false,
+  "prompt": "State an appropriate diagram for each data set and give a reason:\n\n**(a)** the number of siblings of 40 students; **(b)** the heights of 40 students.",
+  "markscheme": "**(a)** Discrete: a frequency table or bar chart (vertical line graph) with a bar for each value **(A1)**\n\n**(b)** Continuous: a grouped frequency table with a histogram (bars touching), or a cumulative frequency graph **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-frequency-table-build",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "4.2.2",
+  "concept": "Frequency distributions",
+  "calculator": false,
+  "prompt": "The number of goals scored in 12 matches were: $0,2,1,1,3,0,2,1,4,1,0,2$. Construct a frequency table and use it to find the total number of goals.",
+  "markscheme": "| Goals | 0 | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|---|\n| Frequency | 3 | 4 | 3 | 1 | 1 |\n\n**(A1)**; total $=0(3)+1(4)+2(3)+3(1)+4(1)=17$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-histogram-shape",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "4.2.3",
+  "concept": "Histograms",
+  "calculator": false,
+  "prompt": "The times, $t$ minutes, that 60 students took to complete a task are shown.\n\n| Time | $0<t\\le10$ | $10<t\\le20$ | $20<t\\le30$ | $30<t\\le40$ | $40<t\\le50$ |\n|---|---|---|---|---|---|\n| Frequency | 6 | 14 | 22 | 12 | 6 |\n\nDescribe the shape of the histogram for these data and explain why the bars touch.",
+  "markscheme": "Roughly symmetric and single-peaked, centred on the $20$–$30$ class **(A1)**. Time is continuous, so the classes have no gaps between them **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-box-plot-outlier",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "4.2.5",
+  "concept": "Box and whisker diagrams",
+  "calculator": false,
+  "prompt": "A data set has minimum 3, $Q_1=8$, median 11, $Q_3=15$ and maximum 30. The second largest value is 22.\n\n**(a)** Show that 30 is an outlier. **[1]**\n\n**(b)** Describe how the box and whisker diagram should be drawn. **[2]**",
+  "markscheme": "**(a)** $15+1.5(15-8)=25.5<30$ **(A1)**\n\n**(b)** Box from 8 to 15 with a line at 11 **(A1)**; lower whisker to 3, upper whisker to 22 (largest non-outlier), and 30 marked as a separate cross **(A1)**",
+  "source": "original"
+ }
+]

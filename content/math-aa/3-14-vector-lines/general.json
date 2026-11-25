@@ -1,0 +1,54 @@
+[
+ {
+  "id": "g-line-through-points",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "3.14.2",
+  "concept": "Vector equation of a line",
+  "calculator": false,
+  "prompt": "**(a)** Find a vector equation of the line through $A(1,2,-1)$ and $B(3,-1,2)$. **[2]**\n\n**(b)** Determine whether $C(7,-7,8)$ lies on the line. **[1]**",
+  "markscheme": "**(a)** Direction $\\overrightarrow{AB}=\\begin{pmatrix}2\\\\-3\\\\3\\end{pmatrix}$ **(A1)**; $\\mathbf r=\\begin{pmatrix}1\\\\2\\\\-1\\end{pmatrix}+\\lambda\\begin{pmatrix}2\\\\-3\\\\3\\end{pmatrix}$ **(A1)**\n\n**(b)** $\\lambda=3$ gives $(7,-7,8)$ in all three components, so yes **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-line-equation-meaning",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "3.14.1",
+  "concept": "Meaning of r = a + λb",
+  "calculator": false,
+  "prompt": "In the vector equation $\\mathbf r=\\mathbf a+\\lambda\\mathbf b$, state what $\\mathbf a$, $\\mathbf b$ and $\\lambda$ represent.",
+  "markscheme": "$\\mathbf a$: position vector of a known point on the line; $\\mathbf b$: a direction vector of the line; $\\lambda$: a scalar parameter — each real value gives one point on the line **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-angle-between-lines",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "3.14.3",
+  "concept": "Angle between two lines",
+  "calculator": false,
+  "prompt": "Find the acute angle between the lines $\\mathbf r=\\begin{pmatrix}1\\\\0\\\\2\\end{pmatrix}+\\lambda\\begin{pmatrix}1\\\\1\\\\0\\end{pmatrix}$ and $\\mathbf r=\\begin{pmatrix}0\\\\3\\\\1\\end{pmatrix}+\\mu\\begin{pmatrix}0\\\\1\\\\1\\end{pmatrix}$.",
+  "markscheme": "Use the direction vectors only: $\\cos\\theta=\\dfrac{0+1+0}{\\sqrt2\\sqrt2}=\\dfrac12$ **(M1)(A1)**\n\n$\\theta=\\dfrac\\pi3$ ($60^{\\circ}$) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-vector-kinematics-ship",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "3.14.4",
+  "concept": "Vector lines in kinematics",
+  "calculator": true,
+  "prompt": "A ship's position $t$ hours after noon is $\\mathbf r=\\begin{pmatrix}2\\\\-3\\end{pmatrix}+t\\begin{pmatrix}4\\\\3\\end{pmatrix}$ km, where $\\mathbf i$ is east and $\\mathbf j$ is north.\n\n**(a)** Find the speed of the ship. **[1]**\n\n**(b)** Find the time and position when the ship is due east of the origin. **[3]**",
+  "markscheme": "**(a)** $\\left|\\begin{pmatrix}4\\\\3\\end{pmatrix}\\right|=5\\ \\text{km h}^{-1}$ **(A1)**\n\n**(b)** Due east of $O$: north component $0$: $-3+3t=0$ **(M1)**, $t=1$ (13:00) **(A1)**; position $(6,0)$ **(A1)**",
+  "source": "original"
+ }
+]

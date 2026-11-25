@@ -1,0 +1,69 @@
+[
+ {
+  "id": "g-normal-properties",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "4.9.2",
+  "concept": "Properties of the normal distribution",
+  "calculator": false,
+  "prompt": "Which statement about a normal distribution is **false**?",
+  "options": [
+   "It is symmetric about the mean.",
+   "The mean, median and mode are equal.",
+   "About 68% of values lie within one standard deviation of the mean.",
+   "All values lie within three standard deviations of the mean."
+  ],
+  "answer": 3,
+  "markscheme": "**D.** The normal curve never touches the horizontal axis, so any value has non-zero probability density, but about 99.7% of values (not all) lie within 3 standard deviations. A, B and C are true.",
+  "source": "original"
+ },
+ {
+  "id": "g-normal-diagram",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "4.9.3",
+  "concept": "Diagrammatic representation",
+  "calculator": false,
+  "prompt": "Heights $H\\sim N(170,\\ 8^{2})$ cm. Sketch a normal curve and shade the region representing $P(160<H<180)$, labelling the mean and the values 160 and 180.",
+  "markscheme": "Bell-shaped curve centred at 170 **(A1)**; region between 160 and 180 shaded, symmetric about 170 **(A1)**\n\nA sketch helps to check whether an answer should be more or less than 0.5.",
+  "source": "original"
+ },
+ {
+  "id": "g-normal-probabilities",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "4.9.4",
+  "concept": "Normal probability calculations",
+  "calculator": true,
+  "prompt": "Heights $H\\sim N(170,\\ 8^{2})$ cm. Find\n\n**(a)** $P(H>182)$ **[1]**\n\n**(b)** $P(160<H<180)$ **[1]**",
+  "markscheme": "**(a)** $0.0668$ **(A1)**\n\n**(b)** $0.789$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-inverse-normal",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "4.9.5",
+  "concept": "Inverse normal calculations",
+  "calculator": true,
+  "prompt": "Heights $H\\sim N(170,\\ 8^{2})$ cm. Find the height exceeded by the tallest 10% of people.",
+  "markscheme": "$P(H<h)=0.9$ **(M1)**; $h\\approx180$ cm (180.3) **(A1)**\n\n**Common mistake:** entering 0.1 as the left-tail area. The tallest 10% lie *above* $h$, so the area to the left is 0.9.",
+  "source": "original"
+ },
+ {
+  "id": "g-when-normal-appropriate",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "4.9.1",
+  "concept": "The normal distribution as a model",
+  "calculator": false,
+  "prompt": "Explain why the normal distribution is a reasonable model for adult heights but not for the number of goals scored in a football match.",
+  "markscheme": "Heights are continuous and roughly symmetric about the mean; goals are discrete, small and skewed (many 0s and 1s, a long right tail) **(R1)**",
+  "source": "original"
+ }
+]

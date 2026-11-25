@@ -153,6 +153,8 @@ export const examQuestionSchema = z
     marks: z.number().int().positive(),
     /** Guide subtopic or understanding this targets, e.g. "A.1.3" or "5.12". */
     subtopic: z.string().optional(),
+    /** The single idea a general-bank question tests, in a few words, e.g. "Distance vs displacement". */
+    concept: z.string().optional(),
     calculator: z.boolean().optional(),
     prompt: z.string().min(1),
     /** Multiple-choice options (paper 1A); `answer` is the correct index. */

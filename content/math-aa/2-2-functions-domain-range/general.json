@@ -1,0 +1,81 @@
+[
+ {
+  "id": "g-domain-range-root",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "2.2.1",
+  "concept": "Domain and range",
+  "calculator": false,
+  "prompt": "Find the largest possible domain and the corresponding range of\n\n**(a)** $f(x)=\\sqrt{x-3}+1$ **[2]**\n\n**(b)** $g(x)=\\dfrac{1}{x^{2}-4}$ **[2]**",
+  "markscheme": "**(a)** Need $x-3\\ge0$: domain $x\\ge3$ **(A1)**; $\\sqrt{x-3}\\ge0$ so range $f(x)\\ge1$ **(A1)**\n\n**(b)** Domain $x\\in\\mathbb{R}$, $x\\neq\\pm2$ **(A1)**. Since $x^{2}-4$ takes every value in $[-4,0)\\cup(0,\\infty)$, its reciprocal takes $g(x)\\le-\\tfrac14$ or $g(x)>0$ **(A1)**\n\n**Common mistake (b):** giving range $g(x)\\neq0$. The maximum of the middle branch is $g(0)=-\\tfrac14$, so values in $(-\\tfrac14,0]$ are never reached.",
+  "source": "original"
+ },
+ {
+  "id": "g-is-it-a-function",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "2.2.1",
+  "concept": "What makes a relation a function",
+  "calculator": false,
+  "prompt": "Which of the following relations defines $y$ as a function of $x$ for $x\\in\\mathbb{R}$?",
+  "options": [
+   "$x^{2}+y^{2}=4$",
+   "$y^{2}=x$",
+   "$y=x^{3}-x$",
+   "$x=3$"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** A function gives **exactly one** output for each input. $x^{2}+y^{2}=4$ and $y^{2}=x$ give two $y$-values for some $x$ (they fail the vertical line test), and $x=3$ gives infinitely many $y$ for one $x$. $y=x^{3}-x$ gives one $y$ for every $x$.",
+  "source": "original"
+ },
+ {
+  "id": "g-function-notation",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "2.2.2",
+  "concept": "Function notation",
+  "calculator": false,
+  "prompt": "Let $f(x)=x^{2}-3x$. Find and simplify $f(x+1)-f(x)$.",
+  "markscheme": "$f(x+1)=(x+1)^{2}-3(x+1)=x^{2}-x-2$ **(M1)(A1)**\n\n$f(x+1)-f(x)=x^{2}-x-2-x^{2}+3x=2x-2$ **(A1)**\n\n**Common mistake:** writing $f(x+1)=f(x)+1$. Replace **every** $x$ in the rule by $(x+1)$.",
+  "source": "original"
+ },
+ {
+  "id": "g-function-as-model",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "2.2.3",
+  "concept": "Functions as models",
+  "calculator": true,
+  "prompt": "The cost, in dollars, of producing $n$ phone cases is modelled by $C(n)=250+12n$.\n\n**(a)** Interpret the numbers 250 and 12 in context. **[2]**\n\n**(b)** State a suitable domain for $C$. **[1]**",
+  "markscheme": "**(a)** 250: the fixed cost (incurred even if no cases are made) **(A1)**; 12: the cost of each additional case, in dollars **(A1)**\n\n**(b)** $n\\in\\mathbb{N}$ (whole numbers of cases, up to the maximum the factory can make) **(A1)**\n\nA model's domain is restricted by the context, not just by the algebra.",
+  "source": "original"
+ },
+ {
+  "id": "g-inverse-undoes",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "2.2.4",
+  "concept": "An inverse undoes a function",
+  "calculator": false,
+  "prompt": "The function $f$ multiplies a number by 3 and then subtracts 5.\n\n**(a)** Describe in words what $f^{-1}$ does. **[1]**\n\n**(b)** Write down $f^{-1}(x)$. **[1]**",
+  "markscheme": "**(a)** Add 5, then divide by 3 — the inverse undoes the steps **in reverse order** **(A1)**\n\n**(b)** $f^{-1}(x)=\\dfrac{x+5}{3}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-inverse-reflection",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "2.2.5",
+  "concept": "Inverse as reflection in y = x",
+  "calculator": false,
+  "prompt": "The graph of $y=f(x)$ passes through $(2,7)$, and $f$ has domain $0\\le x\\le5$ and range $1\\le f(x)\\le26$.\n\n**(a)** Write down $f^{-1}(7)$. **[1]**\n\n**(b)** Write down the domain and range of $f^{-1}$. **[2]**",
+  "markscheme": "**(a)** The graph of $f^{-1}$ is the reflection of $f$ in $y=x$, so $(7,2)$ lies on it: $f^{-1}(7)=2$ **(A1)**\n\n**(b)** Domain of $f^{-1}$ = range of $f$: $1\\le x\\le26$ **(A1)**; range of $f^{-1}$ = domain of $f$: $0\\le f^{-1}(x)\\le5$ **(A1)**",
+  "source": "original"
+ }
+]

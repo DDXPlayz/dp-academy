@@ -1,0 +1,50 @@
+[
+ {
+  "id": "g-bearings-two-legs",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "3.3.1",
+  "concept": "Applications with bearings",
+  "calculator": true,
+  "prompt": "A ship sails 12 km on a bearing of $050^{\\circ}$ and then 8 km on a bearing of $140^{\\circ}$.\n\n**(a)** Find its distance from the starting point. **[2]**\n\n**(b)** Find the bearing of the ship from the starting point. **[2]**",
+  "markscheme": "**(a)** The bearings differ by $90^{\\circ}$, so the legs are perpendicular **(R1)**: $d=\\sqrt{12^{2}+8^{2}}=14.4$ km **(A1)**\n\n**(b)** Angle at the start between the first leg and the line to the ship: $\\arctan\\frac{8}{12}=33.7^{\\circ}$ **(M1)**; bearing $050^{\\circ}+33.7^{\\circ}=083.7^{\\circ}$ **(A1)**\n\nA sketch with north lines at each point is essential for bearings.",
+  "source": "original"
+ },
+ {
+  "id": "g-elevation-two-points",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "3.3.2",
+  "concept": "Angles of elevation",
+  "calculator": true,
+  "prompt": "From point $P$ the angle of elevation of the top of a tower is $30^{\\circ}$. From point $Q$, 20 m closer to the tower on the same level line, the angle of elevation is $45^{\\circ}$. Find the height of the tower.",
+  "markscheme": "Let the height be $h$. Distances to the base: $\\dfrac{h}{\\tan30^{\\circ}}=h\\sqrt3$ and $\\dfrac{h}{\\tan45^{\\circ}}=h$ **(M1)(A1)**\n\n$h\\sqrt3-h=20$ **(M1)** $\\Rightarrow h=\\dfrac{20}{\\sqrt3-1}\\approx27.3$ m **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-depression-cliff",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "3.3.2",
+  "concept": "Angles of depression",
+  "calculator": true,
+  "prompt": "From the top of a 60 m cliff, the angle of depression of a boat is $25^{\\circ}$. Find the horizontal distance from the foot of the cliff to the boat.",
+  "markscheme": "The angle of depression equals the angle of elevation from the boat (alternate angles) **(R1)**\n\n$d=\\dfrac{60}{\\tan25^{\\circ}}=129$ m **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-diagram-from-statement",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "3.3.3",
+  "concept": "Labelled diagrams from written statements",
+  "calculator": true,
+  "prompt": "Town $B$ is 5 km due east of town $A$. Town $C$ is 7 km from $A$ on a bearing of $030^{\\circ}$.\n\n**(a)** Draw a labelled diagram showing this information. **[2]**\n\n**(b)** Find the distance $BC$. **[2]**",
+  "markscheme": "**(a)** North line at $A$; $AB$ along $090^{\\circ}$ of length 5; $AC$ at $030^{\\circ}$ of length 7; angle $BAC=90^{\\circ}-30^{\\circ}=60^{\\circ}$ marked **(A2)**\n\n**(b)** $BC^{2}=5^{2}+7^{2}-2(5)(7)\\cos60^{\\circ}=39$ **(M1)**, $BC=6.24$ km **(A1)**",
+  "source": "original"
+ }
+]

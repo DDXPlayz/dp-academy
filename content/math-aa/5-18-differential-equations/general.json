@@ -1,0 +1,67 @@
+[
+ {
+  "id": "g-verify-de-solution",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "5.18.1",
+  "concept": "First order differential equations",
+  "calculator": false,
+  "prompt": "Show that $y=Ce^{2x}-\\tfrac12$ satisfies $\\dfrac{dy}{dx}=2y+1$ for any constant $C$.",
+  "markscheme": "$\\dfrac{dy}{dx}=2Ce^{2x}$ **(A1)**; $2y+1=2Ce^{2x}-1+1=2Ce^{2x}$ ✓ **(A1)** — a general solution contains an arbitrary constant fixed by an initial condition.",
+  "source": "original"
+ },
+ {
+  "id": "g-euler-method",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "5.18.2",
+  "concept": "Euler's method",
+  "calculator": true,
+  "prompt": "$\\dfrac{dy}{dx}=x+y$, $y(0)=1$.\n\n**(a)** Use Euler's method with step $h=0.1$ to estimate $y(0.2)$. **[2]**\n\n**(b)** The exact solution is $y=2e^{x}-x-1$. Find the percentage error and explain why Euler's method underestimates here. **[2]**",
+  "markscheme": "**(a)** $y_1=1+0.1(0+1)=1.1$; $y_2=1.1+0.1(0.1+1.1)=1.22$ **(M1)(A1)**\n\n**(b)** Exact $y(0.2)=1.2428$; error $\\approx1.8\\%$ **(A1)**. The solution curve is concave up, so each tangent step lies below the curve **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-separable-newton-cooling",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 6,
+  "subtopic": "5.18.3",
+  "concept": "Separating variables",
+  "calculator": true,
+  "prompt": "A cup of tea cools according to $\\dfrac{dT}{dt}=-k(T-20)$, where $T$ °C is its temperature after $t$ minutes. $T(0)=90$ and $T(10)=60$.\n\n**(a)** Solve the differential equation to show that $T=20+70e^{-kt}$. **[3]**\n\n**(b)** Find $k$, and the time for the tea to cool to 30 °C. **[3]**",
+  "markscheme": "**(a)** $\\displaystyle\\int\\frac{dT}{T-20}=-\\int k\\,dt\\Rightarrow\\ln|T-20|=-kt+c$ **(M1)(A1)**; $T-20=Ae^{-kt}$ and $T(0)=90\\Rightarrow A=70$ **(A1)**\n\n**(b)** $40=70e^{-10k}\\Rightarrow k=\\dfrac{\\ln(7/4)}{10}\\approx0.0560$ **(A1)**; $10=70e^{-kt}\\Rightarrow t=\\dfrac{\\ln7}{k}\\approx34.8$ min **(M1)(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-homogeneous-de",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 6,
+  "subtopic": "5.18.4",
+  "concept": "Homogeneous differential equations",
+  "calculator": false,
+  "prompt": "Use the substitution $y=vx$ to solve $\\dfrac{dy}{dx}=\\dfrac{x^{2}+y^{2}}{xy}$, $x>0$, given $y=2$ when $x=1$.",
+  "markscheme": "$\\dfrac{dy}{dx}=v+x\\dfrac{dv}{dx}$ and RHS $=\\dfrac1v+v$ **(M1)(A1)**\n\n$x\\dfrac{dv}{dx}=\\dfrac1v\\Rightarrow\\displaystyle\\int v\\,dv=\\int\\frac{dx}{x}$ **(M1)**, $\\dfrac{v^{2}}{2}=\\ln x+c$ **(A1)**\n\n$x=1$, $v=2$: $c=2$ **(A1)**; $y^{2}=x^{2}(2\\ln x+4)$, i.e. $y=x\\sqrt{2\\ln x+4}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-integrating-factor",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "5.18.5",
+  "concept": "Integrating factor",
+  "calculator": false,
+  "prompt": "Solve $\\dfrac{dy}{dx}+\\dfrac{2y}{x}=x$, $x>0$, given $y(1)=1$.",
+  "markscheme": "Integrating factor $e^{\\int2/x\\,dx}=x^{2}$ **(M1)(A1)**\n\n$\\dfrac{d}{dx}(x^{2}y)=x^{3}\\Rightarrow x^{2}y=\\dfrac{x^{4}}{4}+C$ **(A1)**\n\n$y(1)=1\\Rightarrow C=\\tfrac34$ **(A1)**; $y=\\dfrac{x^{2}}{4}+\\dfrac{3}{4x^{2}}$ **(A1)**",
+  "source": "original"
+ }
+]

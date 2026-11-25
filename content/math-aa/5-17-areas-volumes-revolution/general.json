@@ -1,0 +1,41 @@
+[
+ {
+  "id": "g-area-y-axis",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "5.17.1",
+  "concept": "Area between a curve and the y-axis",
+  "calculator": false,
+  "prompt": "Find the area of the region bounded by $y=x^{2}$ ($x\\ge0$), the $y$-axis and the line $y=4$.",
+  "markscheme": "$x=\\sqrt y$ **(M1)**; $\\displaystyle\\int_0^4\\sqrt y\\,dy=\\left[\\tfrac23y^{3/2}\\right]_0^4$ **(A1)** $=\\dfrac{16}{3}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-volume-cone-derivation",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "5.17.2",
+  "concept": "Volumes of revolution",
+  "calculator": false,
+  "prompt": "The line $y=\\dfrac{r}{h}x$, $0\\le x\\le h$, is rotated through $2\\pi$ about the $x$-axis. Show that the volume of the solid formed is $\\tfrac13\\pi r^{2}h$, and name the solid.",
+  "markscheme": "$V=\\pi\\displaystyle\\int_0^h\\left(\\frac rhx\\right)^{2}dx$ **(M1)** $=\\pi\\dfrac{r^{2}}{h^{2}}\\left[\\dfrac{x^{3}}{3}\\right]_0^h$ **(A1)** $=\\tfrac13\\pi r^{2}h$ **(A1)(AG)**\n\nA right circular cone of base radius $r$ and height $h$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-volume-about-y-axis",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "5.17.2",
+  "concept": "Volume of revolution about the y-axis",
+  "calculator": false,
+  "prompt": "The region bounded by $y=x^{2}$, the $y$-axis and $y=4$ is rotated through $2\\pi$ about the $y$-axis. Find the exact volume.",
+  "markscheme": "$V=\\pi\\displaystyle\\int_0^4x^{2}\\,dy=\\pi\\int_0^4y\\,dy$ **(M1)(A1)** $=8\\pi$ **(A1)**",
+  "source": "original"
+ }
+]

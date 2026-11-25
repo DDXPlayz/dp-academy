@@ -1,0 +1,38 @@
+[
+ {
+  "id": "g-quadratic-axis-vertex",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "2.6.1",
+  "concept": "Axis of symmetry and y-intercept",
+  "calculator": false,
+  "prompt": "Let $f(x)=2x^{2}-8x+5$.\n\n**(a)** Write down the $y$-intercept. **[1]**\n\n**(b)** Find the equation of the axis of symmetry and the coordinates of the vertex. **[2]**",
+  "markscheme": "**(a)** $(0,5)$ **(A1)**\n\n**(b)** $x=-\\dfrac{b}{2a}=\\dfrac{8}{4}=2$ **(A1)**; $f(2)=8-16+5=-3$, vertex $(2,-3)$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-quadratic-from-roots",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "2.6.2",
+  "concept": "Factorised form a(x−p)(x−q)",
+  "calculator": false,
+  "prompt": "A parabola crosses the $x$-axis at $(-1,0)$ and $(5,0)$ and the $y$-axis at $(0,-10)$.\n\n**(a)** Find its equation in the form $y=a(x-p)(x-q)$. **[2]**\n\n**(b)** Find the coordinates of its vertex. **[2]**",
+  "markscheme": "**(a)** $y=a(x+1)(x-5)$; at $(0,-10)$: $-10=-5a$, $a=2$ **(M1)**; $y=2(x+1)(x-5)$ **(A1)**\n\n**(b)** The axis is midway between the roots: $x=2$ **(A1)**; $y=2(3)(-3)=-18$, vertex $(2,-18)$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-quadratic-vertex-form",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "2.6.3",
+  "concept": "Vertex form a(x−h)²+k",
+  "calculator": false,
+  "prompt": "A parabola has vertex $(3,4)$ and passes through $(1,-4)$.\n\n**(a)** Find its equation in the form $y=a(x-h)^{2}+k$. **[2]**\n\n**(b)** Write down the range of the function. **[1]**\n\n**(c)** Write the equation in the form $y=ax^{2}+bx+c$. **[1]**",
+  "markscheme": "**(a)** $y=a(x-3)^{2}+4$; $-4=4a+4\\Rightarrow a=-2$ **(M1)**, $y=-2(x-3)^{2}+4$ **(A1)**\n\n**(b)** $a<0$ so the vertex is a maximum: $y\\le4$ **(A1)**\n\n**(c)** $y=-2x^{2}+12x-14$ **(A1)**",
+  "source": "original"
+ }
+]

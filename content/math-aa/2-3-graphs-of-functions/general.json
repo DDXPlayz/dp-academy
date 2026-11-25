@@ -1,0 +1,38 @@
+[
+ {
+  "id": "g-point-on-graph",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "2.3.1",
+  "concept": "The graph of y = f(x)",
+  "calculator": false,
+  "prompt": "Let $f(x)=x^{3}-3$.\n\n**(a)** Determine whether the point $(2,5)$ lies on the graph of $y=f(x)$. **[1]**\n\n**(b)** The point $(k,-11)$ lies on the graph. Find $k$. **[1]**",
+  "markscheme": "**(a)** $f(2)=8-3=5$, so yes **(A1)**\n\n**(b)** $k^{3}-3=-11\\Rightarrow k^{3}=-8\\Rightarrow k=-2$ **(A1)**\n\nA point is on the graph exactly when its coordinates satisfy $y=f(x)$.",
+  "source": "original"
+ },
+ {
+  "id": "g-sketch-bath-context",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "2.3.2",
+  "concept": "Sketching a graph from a context",
+  "calculator": false,
+  "prompt": "A bath is filled from a tap at a constant rate for 8 minutes. It is left untouched for 15 minutes and then emptied through the plughole, which drains it faster than it filled. The bath has vertical sides.\n\nSketch a graph of the depth of water against time, and describe the key features of your sketch.",
+  "markscheme": "- A straight line rising from $(0,0)$ for $0\\le t\\le8$ (constant rate and vertical sides give constant rate of rise) **(A1)**\n- A horizontal segment for $8\\le t\\le23$ **(A1)**\n- A line falling back to depth 0, **steeper** than the rising segment (faster drain) **(A1)**\n\n(If the drainage slows as the water gets shallower, a curve that flattens as it approaches zero is also acceptable with that explanation.)",
+  "source": "original"
+ },
+ {
+  "id": "g-gdc-minimum-sum",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "2.3.3",
+  "concept": "Graphing with technology",
+  "calculator": true,
+  "prompt": "Let $f(x)=x^{2}+\\dfrac{8}{x}$ for $x>0$. Use technology to find the coordinates of the minimum point of the graph of $f$.",
+  "markscheme": "Graph $y=x^{2}+\\frac8x$ on the GDC and use the minimum function **(M1)**\n\n$(1.59,\\ 7.56)$ **(A1)(A1)** (exactly $x=\\sqrt[3]4$)\n\nGraphing the sum of $x^{2}$ and $\\frac8x$ shows why there is a minimum: one term grows as $x$ increases while the other shrinks.",
+  "source": "original"
+ }
+]

@@ -1,0 +1,41 @@
+[
+ {
+  "id": "g-compound-exact-sin75",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "3.10.1",
+  "concept": "Compound angle identities",
+  "calculator": false,
+  "prompt": "Find the exact value of $\\sin75^{\\circ}$.",
+  "markscheme": "$\\sin(45^{\\circ}+30^{\\circ})=\\sin45^{\\circ}\\cos30^{\\circ}+\\cos45^{\\circ}\\sin30^{\\circ}$ **(M1)**\n\n$=\\dfrac{\\sqrt2}{2}\\cdot\\dfrac{\\sqrt3}{2}+\\dfrac{\\sqrt2}{2}\\cdot\\dfrac12$ **(A1)** $=\\dfrac{\\sqrt6+\\sqrt2}{4}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-compound-tan-sum",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "3.10.1",
+  "concept": "Compound angle identities",
+  "calculator": false,
+  "prompt": "Given $\\tan A=\\dfrac12$ and $\\tan B=\\dfrac13$ with $A$, $B$ acute, show that $A+B=\\dfrac\\pi4$.",
+  "markscheme": "$\\tan(A+B)=\\dfrac{\\frac12+\\frac13}{1-\\frac12\\cdot\\frac13}$ **(M1)** $=\\dfrac{5/6}{5/6}=1$ **(A1)**\n\n$A$ and $B$ are acute, so $0<A+B<\\pi$, and the only angle there with tangent 1 is $\\dfrac\\pi4$ **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-double-angle-tan",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "3.10.2",
+  "concept": "Double angle identity for tan",
+  "calculator": false,
+  "prompt": "Given $\\tan\\theta=3$, find the exact value of $\\tan2\\theta$.",
+  "markscheme": "$\\tan2\\theta=\\dfrac{2\\tan\\theta}{1-\\tan^{2}\\theta}=\\dfrac{6}{1-9}$ **(M1)** $=-\\dfrac34$ **(A1)**",
+  "source": "original"
+ }
+]

@@ -1,0 +1,41 @@
+[
+ {
+  "id": "g-substitution-definite",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "5.16.1",
+  "concept": "Integration by substitution",
+  "calculator": false,
+  "prompt": "Use $u=x-1$ to find $\\displaystyle\\int x\\sqrt{x-1}\\,dx$.",
+  "markscheme": "$x=u+1$, $dx=du$: $\\displaystyle\\int(u+1)u^{1/2}du=\\int\\left(u^{3/2}+u^{1/2}\\right)du$ **(M1)(A1)**\n\n$=\\dfrac25u^{5/2}+\\dfrac23u^{3/2}+C=\\dfrac25(x-1)^{5/2}+\\dfrac23(x-1)^{3/2}+C$ **(A1)(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-by-parts",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "5.16.2",
+  "concept": "Integration by parts",
+  "calculator": false,
+  "prompt": "Find **(a)** $\\displaystyle\\int xe^{2x}dx$ **(b)** $\\displaystyle\\int_1^e\\ln x\\,dx$",
+  "markscheme": "**(a)** $u=x$, $dv=e^{2x}dx$: $\\dfrac{xe^{2x}}{2}-\\displaystyle\\int\\frac{e^{2x}}{2}dx=\\dfrac{xe^{2x}}{2}-\\dfrac{e^{2x}}{4}+C$ **(M1)(A1)**\n\n**(b)** $u=\\ln x$, $dv=dx$: $\\left[x\\ln x-x\\right]_1^e=(e-e)-(0-1)=1$ **(M1)(A1)**\n\nChoose $u$ to be the factor that becomes simpler when differentiated.",
+  "source": "original"
+ },
+ {
+  "id": "g-repeated-parts-cyclic",
+  "paper": "1",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "5.16.3",
+  "concept": "Repeated integration by parts",
+  "calculator": false,
+  "prompt": "Find $\\displaystyle\\int e^{x}\\sin x\\,dx$.",
+  "markscheme": "Let $I=\\int e^{x}\\sin x\\,dx=e^{x}\\sin x-\\int e^{x}\\cos x\\,dx$ **(M1)(A1)**\n\n$\\int e^{x}\\cos x\\,dx=e^{x}\\cos x+\\int e^{x}\\sin x\\,dx=e^{x}\\cos x+I$ **(A1)**\n\n$I=e^{x}\\sin x-e^{x}\\cos x-I\\Rightarrow I=\\tfrac12e^{x}(\\sin x-\\cos x)+C$ **(M1)(A1)**\n\nThe integral reappears; solve for it algebraically rather than integrating forever.",
+  "source": "original"
+ }
+]

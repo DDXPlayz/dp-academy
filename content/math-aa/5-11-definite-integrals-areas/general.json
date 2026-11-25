@@ -1,0 +1,38 @@
+[
+ {
+  "id": "g-definite-analytic",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "5.11.1",
+  "concept": "Definite integrals analytically",
+  "calculator": false,
+  "prompt": "Find the exact values of **(a)** $\\displaystyle\\int_1^4 3\\sqrt x\\,dx$ **(b)** $\\displaystyle\\int_0^1e^{2x}dx$.",
+  "markscheme": "**(a)** $\\left[2x^{3/2}\\right]_1^4=16-2=14$ **(M1)(A1)**\n\n**(b)** $\\left[\\tfrac12e^{2x}\\right]_0^1=\\dfrac{e^{2}-1}{2}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-area-above-below",
+  "paper": "1",
+  "difficulty": "hard",
+  "marks": 5,
+  "subtopic": "5.11.2",
+  "concept": "Areas when the curve is below the axis",
+  "calculator": false,
+  "prompt": "Let $f(x)=x^{2}-4x$.\n\n**(a)** Find $\\displaystyle\\int_0^5f(x)\\,dx$. **[2]**\n\n**(b)** Find the total area enclosed by $y=f(x)$, the $x$-axis and the line $x=5$. **[3]**",
+  "markscheme": "**(a)** $\\left[\\dfrac{x^{3}}{3}-2x^{2}\\right]_0^5=\\dfrac{125}{3}-50=-\\dfrac{25}{3}$ **(A2)**\n\n**(b)** $f<0$ on $(0,4)$ and $f>0$ on $(4,5)$ **(R1)**. $\\displaystyle\\int_0^4f=-\\frac{32}{3}$, $\\displaystyle\\int_4^5f=\\frac73$ **(M1)**\n\nArea $=\\dfrac{32}{3}+\\dfrac73=13$ **(A1)**\n\nThe integral in (a) is a *net* signed area, which is why it differs from the area.",
+  "source": "original"
+ },
+ {
+  "id": "g-area-between-curves",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "5.11.3",
+  "concept": "Area between curves",
+  "calculator": false,
+  "prompt": "Find the area enclosed between $y=x^{2}$ and $y=x+2$.",
+  "markscheme": "Intersections: $x^{2}=x+2\\Rightarrow x=-1,\\ 2$ **(A1)**\n\n$\\displaystyle\\int_{-1}^{2}(x+2-x^{2})dx$ (top minus bottom) **(M1)** $=\\left[\\frac{x^{2}}{2}+2x-\\frac{x^{3}}{3}\\right]_{-1}^{2}$ **(A1)** $=\\dfrac92$ **(A1)**",
+  "source": "original"
+ }
+]

@@ -1,0 +1,33 @@
+[
+ {
+  "id": "g-second-derivative",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "5.7.1",
+  "concept": "The second derivative",
+  "calculator": false,
+  "prompt": "Let $f(x)=x^{4}-4x^{3}$. Find $f''(x)$ and the values of $x$ for which the graph is concave down.",
+  "markscheme": "$f''(x)=12x^{2}-24x=12x(x-2)$ **(A1)**; concave down where $f''<0$: $0<x<2$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-f-fprime-fdoubleprime",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "5.7.2",
+  "concept": "Graphs of f, f′ and f″",
+  "calculator": false,
+  "prompt": "The graph of $y=f'(x)$ has a local maximum at $x=2$. Which statement must be true?",
+  "options": [
+   "$f$ has a local maximum at $x=2$",
+   "$f$ has a local minimum at $x=2$",
+   "$f$ has a point of inflexion at $x=2$",
+   "$f''(2)>0$"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** A maximum of $f'$ is where $f'$ stops increasing and starts decreasing, so $f''$ changes from positive to negative: $f$ has a point of inflexion there. $f'(2)$ need not be zero (A, B), and $f''(2)=0$, not positive (D).",
+  "source": "original"
+ }
+]

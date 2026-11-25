@@ -1,0 +1,26 @@
+[
+ {
+  "id": "g-sector-arc-area",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 4,
+  "subtopic": "3.4.1",
+  "concept": "Arc length and sector area",
+  "calculator": false,
+  "prompt": "A sector of a circle has radius 8 cm and angle $1.2$ radians.\n\n**(a)** Find the arc length. **[1]**\n\n**(b)** Find the area of the sector. **[1]**\n\n**(c)** Find the perimeter of the sector. **[1]**\n\n**(d)** Convert $135^{\\circ}$ to radians in terms of $\\pi$. **[1]**",
+  "markscheme": "**(a)** $l=r\\theta=9.6$ cm **(A1)**\n\n**(b)** $A=\\tfrac12r^{2}\\theta=38.4\\ \\text{cm}^{2}$ **(A1)**\n\n**(c)** $9.6+2(8)=25.6$ cm **(A1)**\n\n**(d)** $135\\times\\dfrac{\\pi}{180}=\\dfrac{3\\pi}{4}$ **(A1)**\n\nThese formulae need $\\theta$ in **radians**.",
+  "source": "original"
+ },
+ {
+  "id": "g-segment-area",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "3.4.1",
+  "concept": "Area of a segment",
+  "calculator": false,
+  "prompt": "A chord subtends an angle of $\\dfrac\\pi3$ at the centre of a circle of radius 10 cm. Find the exact area of the minor segment.",
+  "markscheme": "Sector $=\\tfrac12(100)\\tfrac\\pi3=\\dfrac{50\\pi}{3}$ **(A1)**; triangle $=\\tfrac12(100)\\sin\\tfrac\\pi3=25\\sqrt3$ **(A1)**\n\nSegment $=\\dfrac{50\\pi}{3}-25\\sqrt3\\ \\text{cm}^{2}$ ($\\approx9.06$) **(A1)**",
+  "source": "original"
+ }
+]

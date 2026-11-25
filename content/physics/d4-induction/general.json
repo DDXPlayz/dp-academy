@@ -1,0 +1,81 @@
+[
+ {
+  "id": "g-flux-angle",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "D.4.1",
+  "concept": "Magnetic flux Φ = BA cos θ",
+  "prompt": "A coil of area $0.020\\ \\text{m}^{2}$ is in a uniform 0.30 T field. The normal to the coil makes $60^{\\circ}$ with the field. Calculate the flux through the coil, and state the angle for maximum flux.",
+  "markscheme": "$\\Phi=BA\\cos\\theta=0.30\\times0.020\\times\\cos60^{\\circ}=3.0\\times10^{-3}$ Wb **(A1)**; maximum when the normal is parallel to the field ($\\theta=0$, plane of coil perpendicular to $B$) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-faraday-coil",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "D.4.2",
+  "concept": "Faraday's law",
+  "prompt": "The flux through each turn of a 200-turn coil falls uniformly from $3.0\\times10^{-3}$ Wb to zero in 0.15 s. Calculate the magnitude of the induced emf.",
+  "markscheme": "$|\\varepsilon|=N\\dfrac{\\Delta\\Phi}{\\Delta t}=200\\times\\dfrac{3.0\\times10^{-3}}{0.15}$ **(M1)** $=4.0$ V **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-aircraft-wing-emf",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "D.4.3",
+  "concept": "ε = BvL",
+  "prompt": "An aircraft with a 30 m wingspan flies horizontally at $250\\ \\text{m s}^{-1}$ where the vertical component of the Earth's magnetic field is $4.0\\times10^{-5}$ T. Calculate the emf induced between the wing tips, and explain why it cannot drive a current through a wire connected across the wings.",
+  "markscheme": "$\\varepsilon=BvL=4.0\\times10^{-5}\\times250\\times30=0.30$ V **(A1)**; the connecting wire moves through the same field and has the same emf induced in it, cancelling around the circuit **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-lenz-magnet-coil",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "D.4.4",
+  "concept": "Lenz's law",
+  "prompt": "The north pole of a bar magnet is pushed into a coil connected to a meter.\n\n**(a)** State the polarity of the end of the coil facing the magnet. **[1]**\n\n**(b)** Explain how this is a consequence of conservation of energy. **[2]**",
+  "markscheme": "**(a)** North — the induced current opposes the change producing it, so it repels the approaching N pole **(A1)**\n\n**(b)** Work must be done against this repulsion to push the magnet in **(R1)**; that work is the source of the electrical energy in the circuit — if the induced pole attracted, energy would be created from nothing **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-rotating-coil-peak-emf",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "D.4.5",
+  "concept": "Sinusoidal emf from a rotating coil",
+  "prompt": "A coil of 100 turns and area $0.010\\ \\text{m}^{2}$ rotates at 50 Hz in a uniform 0.20 T field.\n\n**(a)** Calculate the peak emf. **[2]**\n\n**(b)** State the orientation of the coil when the emf is maximum. **[1]**",
+  "markscheme": "**(a)** $\\varepsilon_0=BAN\\omega=0.20\\times0.010\\times100\\times2\\pi\\times50$ **(M1)** $=63$ V **(A1)**\n\n**(b)** When the plane of the coil is parallel to the field (flux zero, but changing fastest) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-double-rotation-frequency",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "D.4.6",
+  "concept": "Effect of rotation frequency",
+  "prompt": "The rotation frequency of a generator coil is doubled. What happens to the peak emf and the frequency of the output?",
+  "options": [
+   "peak emf unchanged, frequency doubled",
+   "peak emf doubled, frequency unchanged",
+   "peak emf quadrupled, frequency doubled",
+   "peak emf doubled, frequency doubled"
+  ],
+  "answer": 3,
+  "markscheme": "**D.** $\\varepsilon_0=BAN\\omega$, so doubling $\\omega$ doubles the peak emf, and the output alternates twice as often.",
+  "source": "original"
+ }
+]

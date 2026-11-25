@@ -19,6 +19,8 @@ export interface BankFilters {
   papers: string[];
   difficulties: ExamDifficulty[];
   topics: string[];
+  /** One guide understanding (e.g. "A.1.4") inside the chosen topic, or null for all. */
+  subtopic: string | null;
   sources: ExamSource[];
   level: 'SL' | 'HL';
   status: BankStatus;
@@ -36,6 +38,7 @@ export const DEFAULT_FILTERS: BankFilters = {
   papers: [],
   difficulties: [],
   topics: [],
+  subtopic: null,
   sources: [],
   level: 'HL',
   status: 'all',
@@ -51,6 +54,7 @@ export function matches(q: ExamQuestion, f: BankFilters): boolean {
   if (f.papers.length && !f.papers.includes(q.paper)) return false;
   if (f.difficulties.length && !f.difficulties.includes(q.difficulty)) return false;
   if (f.topics.length && (!q.topicKey || !f.topics.includes(q.topicKey))) return false;
+  if (f.subtopic && q.subtopic !== f.subtopic) return false;
   if (f.sources.length && !f.sources.includes(q.source)) return false;
   // SL students don't see HL-only questions; HL students see everything.
   if (f.level === 'SL' && q.level === 'HL') return false;
@@ -102,6 +106,26 @@ export function filterBank(questions: ExamQuestion[], f: BankFilters): ExamQuest
     .map(({ q }) => q);
 }
 
+/** The guide understandings tested in a topic (by subtopic code, in guide order), with how many questions each has and how many you marked for review. */
+export function conceptsIn(questions: ExamQuestion[], topicKey: string, results: Record<string, { r: string }>) {
+  const out = new Map<string, { code: string; concept: string; total: number; review: number }>();
+  for (const q of questions) {
+    if (q.topicKey !== topicKey || !q.subtopic || q.subtopic.split('.').length < 3) continue;
+    const c = out.get(q.subtopic) ?? { code: q.subtopic, concept: q.concept ?? '', total: 0, review: 0 };
+    c.total++;
+    if (!c.concept && q.concept) c.concept = q.concept;
+    const r = results[q.key]?.r;
+    if (r === 'partial' || r === 'missed') c.review++;
+    out.set(q.subtopic, c);
+  }
+  const num = (code: string) => code.split('.').map((x) => parseInt(x.replace(/\D/g, ''), 10) || 0);
+  return [...out.values()].sort((a, b) => {
+    const x = num(a.code), y = num(b.code);
+    for (let i = 0; i < Math.max(x.length, y.length); i++) if ((x[i] ?? 0) !== (y[i] ?? 0)) return (x[i] ?? 0) - (y[i] ?? 0);
+    return a.code.localeCompare(b.code);
+  });
+}
+
 /** Counts per value of one facet under the other filters, for the "(n)" next to each chip. */
 export function facetCounts<K extends 'paper' | 'difficulty' | 'source'>(
   questions: ExamQuestion[],
@@ -138,6 +162,7 @@ export function filtersFromParams(p: URLSearchParams): BankFilters {
     papers: list('p'),
     difficulties: list('d').filter((d): d is ExamDifficulty => (DIFFICULTIES as string[]).includes(d)),
     topics: list('t'),
+    subtopic: p.get('u') || null,
     sources: list('src').filter((s): s is ExamSource => ['original', 'past-paper', 'mock'].includes(s)),
     level: p.get('l') === 'SL' ? 'SL' : 'HL',
     status: (STATUSES as string[]).includes(p.get('st') ?? '') ? (p.get('st') as BankStatus) : 'all',
@@ -151,6 +176,7 @@ export function filtersToParams(f: BankFilters): URLSearchParams {
   if (f.papers.length) p.set('p', f.papers.join(','));
   if (f.difficulties.length) p.set('d', f.difficulties.join(','));
   if (f.topics.length) p.set('t', f.topics.join(','));
+  if (f.subtopic) p.set('u', f.subtopic);
   if (f.sources.length) p.set('src', f.sources.join(','));
   if (f.level !== 'HL') p.set('l', f.level);
   if (f.status !== 'all') p.set('st', f.status);

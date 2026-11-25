@@ -1,0 +1,38 @@
+[
+ {
+  "id": "g-reciprocal-self-inverse",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "2.8.1",
+  "concept": "The reciprocal function",
+  "calculator": false,
+  "prompt": "Let $f(x)=\\dfrac1x$, $x\\neq0$.\n\n**(a)** Show that $f$ is its own inverse. **[1]**\n\n**(b)** Explain how this is shown by the graph of $y=f(x)$. **[1]**",
+  "markscheme": "**(a)** $f(f(x))=\\dfrac{1}{1/x}=x$, so $f^{-1}=f$ **(A1)**\n\n**(b)** The hyperbola $y=\\frac1x$ is symmetric in the line $y=x$, so reflecting it in $y=x$ leaves it unchanged **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-rational-linear-features",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "2.8.2",
+  "concept": "Graphs of (ax+b)/(cx+d)",
+  "calculator": false,
+  "prompt": "Let $f(x)=\\dfrac{2x-1}{x+3}$, $x\\neq-3$.\n\n**(a)** Write down the equations of the asymptotes. **[2]**\n\n**(b)** Find the intercepts with the axes. **[2]**",
+  "markscheme": "**(a)** Vertical: $x=-3$ (denominator zero) **(A1)**; horizontal: $y=\\dfrac21=2$ (ratio of the $x$-coefficients) **(A1)**\n\n**(b)** $x$-intercept $\\left(\\tfrac12,0\\right)$ **(A1)**; $y$-intercept $\\left(0,-\\tfrac13\\right)$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-rational-find-from-asymptotes",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "2.8.3",
+  "concept": "Asymptotes of rational functions",
+  "calculator": false,
+  "prompt": "The graph of $y=\\dfrac{ax+3}{x+b}$ has asymptotes $x=2$ and $y=-4$. Find $a$ and $b$.",
+  "markscheme": "Vertical asymptote where $x+b=0$: $b=-2$ **(A1)**; horizontal asymptote $y=\\dfrac a1$: $a=-4$ **(A1)**",
+  "source": "original"
+ }
+]

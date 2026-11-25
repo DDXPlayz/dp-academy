@@ -1,0 +1,26 @@
+[
+ {
+  "id": "g-conditional-formula-independence",
+  "paper": "1",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "4.11.2",
+  "concept": "Formal conditional probability",
+  "calculator": false,
+  "prompt": "$P(A)=0.6$, $P(B)=0.5$ and $P(A\\mid B)=0.4$.\n\n**(a)** Find $P(A\\cap B)$ and $P(B\\mid A)$. **[3]**\n\n**(b)** State, with a reason, whether $A$ and $B$ are independent. **[1]**",
+  "markscheme": "**(a)** $P(A\\cap B)=P(A\\mid B)P(B)=0.2$ **(A1)**; $P(B\\mid A)=\\dfrac{0.2}{0.6}=\\dfrac13$ **(M1)(A1)**\n\n**(b)** $P(A\\mid B)=0.4\\ne P(A)=0.6$, so not independent **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-independence-both-conditions",
+  "paper": "1",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "4.11.1",
+  "concept": "Independence via conditional probability",
+  "calculator": false,
+  "prompt": "Show that if $A$ and $B$ are independent then $P(A\\mid B')=P(A)$.",
+  "markscheme": "$P(A\\cap B')=P(A)-P(A\\cap B)=P(A)-P(A)P(B)$ **(M1)** $=P(A)\\big(1-P(B)\\big)=P(A)P(B')$ **(A1)**\n\nSo $P(A\\mid B')=\\dfrac{P(A)P(B')}{P(B')}=P(A)$ **(AG)(R1)** — whether or not $B$ happens, the probability of $A$ is unchanged.",
+  "source": "original"
+ }
+]

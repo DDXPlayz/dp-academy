@@ -1,0 +1,26 @@
+[
+ {
+  "id": "g-limit-gradient-chord",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "5.1.1",
+  "concept": "The concept of a limit",
+  "calculator": false,
+  "prompt": "Let $f(x)=x^{2}$. The chord from $P(2,4)$ to $Q(2+h,\\ (2+h)^{2})$ has gradient $m(h)$.\n\n**(a)** Show that $m(h)=4+h$ for $h\\neq0$. **[2]**\n\n**(b)** Hence state the gradient of the curve at $P$. **[1]**",
+  "markscheme": "**(a)** $m(h)=\\dfrac{(2+h)^{2}-4}{h}=\\dfrac{4h+h^{2}}{h}$ **(M1)** $=4+h$ **(A1)**\n\n**(b)** As $h\\to0$, $m(h)\\to4$, so the gradient at $P$ is 4 **(A1)**\n\nThe limit describes what the chord gradient approaches; we never actually set $h=0$ (that would give $\\frac00$).",
+  "source": "original"
+ },
+ {
+  "id": "g-derivative-rate-of-change",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "5.1.2",
+  "concept": "Derivative as a rate of change",
+  "calculator": false,
+  "prompt": "The volume of water in a tank, in litres, $t$ minutes after a tap is opened is $V(t)=200-4t^{2}$. Find $V'(3)$ and interpret it.",
+  "markscheme": "$V'(t)=-8t$, $V'(3)=-24$ **(A1)**\n\nAt $t=3$ minutes the volume is decreasing at 24 litres per minute **(R1)** (include units and the direction of change).",
+  "source": "original"
+ }
+]

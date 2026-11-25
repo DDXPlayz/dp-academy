@@ -1,0 +1,38 @@
+[
+ {
+  "id": "g-compound-interest-geometric",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "1.4.1",
+  "concept": "Compound interest as a geometric sequence",
+  "calculator": false,
+  "prompt": "\\$1000 is invested at a nominal annual interest rate of 6%.\n\n**(a)** Explain why the values of the investment at the end of each year form a geometric sequence when interest is compounded annually. **[1]**\n\n**(b)** Explain, without calculating, why compounding the same nominal rate monthly gives a larger value after one year. **[2]**",
+  "markscheme": "**(a)** Each year the value is multiplied by the same factor $1.06$, so consecutive values have a constant ratio. **(R1)**\n\n**(b)** With monthly compounding, interest is added each month **(R1)** and later interest is earned on interest already added, so the effective yearly factor $\\left(1+\\tfrac{0.06}{12}\\right)^{12}\\approx1.0617$ exceeds $1.06$ **(R1)**.",
+  "source": "original"
+ },
+ {
+  "id": "g-compound-interest-monthly",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 6,
+  "subtopic": "1.4.2",
+  "concept": "Compound interest",
+  "calculator": true,
+  "prompt": "Priya invests \\$5000 at a nominal annual interest rate of 4.2%, compounded monthly.\n\n**(a)** Find the value of the investment after 6 years, to the nearest cent. **[3]**\n\n**(b)** Find how long it takes for the investment to first exceed \\$8000. Give your answer in years and months. **[3]**",
+  "markscheme": "**(a)** Monthly rate $\\dfrac{4.2}{12}=0.35\\%$ and $6\\times12=72$ periods **(M1)**\n\n$FV=5000(1.0035)^{72}$ **(M1)** $=\\$6430.15$ **(A1)**\n\n**(b)** $5000(1.0035)^{n}>8000 \\iff 1.0035^{n}>1.6$ **(M1)**\n\n$n>\\dfrac{\\ln1.6}{\\ln1.0035}\\approx134.5$, so $n=135$ months **(A1)** $=11$ years 3 months **(A1)**\n\n(A TVM solver gives the same result: $N\\approx134.5$.)\n\n**Common mistake:** using $4.2\\%$ with $n=72$ — the rate per period must match the number of periods.",
+  "source": "original"
+ },
+ {
+  "id": "g-depreciation-car",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "1.4.2",
+  "concept": "Annual depreciation",
+  "calculator": true,
+  "prompt": "A car bought for \\$28 000 depreciates by 15% each year.\n\n**(a)** Find its value after 5 years. **[2]**\n\n**(b)** Find the number of complete years after which the car's value first falls below \\$10 000. **[2]**",
+  "markscheme": "**(a)** Each year the value is multiplied by $0.85$: $28000(0.85)^{5}$ **(M1)** $=\\$12\\,423.75$ **(A1)**\n\n**(b)** $28000(0.85)^{n}<10000 \\iff n>\\dfrac{\\ln(10000/28000)}{\\ln0.85}\\approx6.34$ **(M1)**, so after **7** years **(A1)**.\n\n**Common mistake:** multiplying by $0.15$ — that is the amount lost, not the value kept.",
+  "source": "original"
+ }
+]

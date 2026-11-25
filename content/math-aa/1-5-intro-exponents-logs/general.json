@@ -1,0 +1,38 @@
+[
+ {
+  "id": "g-integer-exponent-laws",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "1.5.1",
+  "concept": "Laws of exponents (integer exponents)",
+  "calculator": false,
+  "prompt": "Simplify $\\dfrac{(2x^{3}y^{-2})^{3}}{4x^{-1}y^{2}}$, giving your answer with positive exponents.",
+  "markscheme": "$(2x^{3}y^{-2})^{3}=8x^{9}y^{-6}$ **(A1)**\n\n$\\dfrac{8x^{9}y^{-6}}{4x^{-1}y^{2}}=2x^{9-(-1)}y^{-6-2}=2x^{10}y^{-8}$ **(M1)**\n\n$=\\dfrac{2x^{10}}{y^{8}}$ **(A1)**\n\n**Common mistake:** cubing only the variables and leaving the 2 as 2 — the power applies to every factor in the bracket.",
+  "source": "original"
+ },
+ {
+  "id": "g-log-meaning",
+  "paper": "1",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "1.5.2",
+  "concept": "Meaning of logarithms (base 10 and e)",
+  "calculator": false,
+  "prompt": "**(a)** Write down the value of $\\log_{10}0.001$. **[1]**\n\n**(b)** Write down the value of $\\ln\\left(e^{5}\\right)$. **[1]**\n\n**(c)** Solve $e^{2x}=7$, giving your answer in exact form. **[1]**",
+  "markscheme": "**(a)** $0.001=10^{-3}$, so $\\log_{10}0.001=-3$ **(A1)**\n\n**(b)** $\\ln$ and $e^{x}$ are inverse functions: $\\ln(e^{5})=5$ **(A1)**\n\n**(c)** $2x=\\ln7$, so $x=\\dfrac{\\ln7}{2}$ **(A1)**\n\nA logarithm answers the question “what power?”: $\\log_{10}y=x$ means exactly $10^{x}=y$.",
+  "source": "original"
+ },
+ {
+  "id": "g-log-technology-growth",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "1.5.3",
+  "concept": "Evaluating logarithms with technology",
+  "calculator": true,
+  "prompt": "The number of fish in a lake $t$ months after stocking is modelled by $N=300e^{0.2t}$. Find the time taken for the population to reach 5000.",
+  "markscheme": "$300e^{0.2t}=5000 \\Rightarrow e^{0.2t}=\\dfrac{50}{3}$ **(M1)**\n\n$t=5\\ln\\dfrac{50}{3}\\approx14.1$ months **(A1)**",
+  "source": "original"
+ }
+]

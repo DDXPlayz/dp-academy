@@ -1,0 +1,257 @@
+[
+ {
+  "id": "g-particle-model-liquid",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "B.1.1",
+  "concept": "Molecular theory of solids, liquids and gases",
+  "prompt": "Which statement best describes the particles in a liquid?",
+  "options": [
+   "Fixed positions, vibrating about equilibrium points",
+   "Close together, but able to move past each other",
+   "Far apart, moving randomly at high speed",
+   "Far apart, in fixed positions"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** In a liquid the particles are still close together (similar density to the solid) but can move past one another, which is why liquids flow and take the shape of their container.",
+  "source": "original"
+ },
+ {
+  "id": "g-density-block",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "B.1.2",
+  "concept": "Density",
+  "prompt": "A rectangular block measures $5.0\\ \\text{cm}\\times4.0\\ \\text{cm}\\times2.0\\ \\text{cm}$ and has a mass of 108 g. Calculate its density in $\\text{kg m}^{-3}$.",
+  "markscheme": "$V=40\\ \\text{cm}^{3}=4.0\\times10^{-5}\\ \\text{m}^{3}$, $m=0.108$ kg **(M1)**\n\n$\\rho=\\dfrac mV=2.7\\times10^{3}\\ \\text{kg m}^{-3}$ **(A1)** (aluminium)\n\n**Common mistake:** converting cm³ to m³ by dividing by 100; $1\\ \\text{m}^{3}=10^{6}\\ \\text{cm}^{3}$.",
+  "source": "original"
+ },
+ {
+  "id": "g-kelvin-ke-ratio",
+  "paper": "1A",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "B.1.3",
+  "concept": "Kelvin temperature and kinetic energy",
+  "prompt": "The temperature of a gas rises from 20 °C to 40 °C. By what factor does the average kinetic energy of its molecules increase?",
+  "options": [
+   "1.00",
+   "1.07",
+   "1.50",
+   "2.00"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** $\\bar E_k\\propto T$ in **kelvin**: $\\dfrac{313}{293}=1.07$. Using Celsius would wrongly suggest a doubling.",
+  "source": "original"
+ },
+ {
+  "id": "g-temperature-change-same",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "B.1.4",
+  "concept": "Kelvin and Celsius scales",
+  "prompt": "**(a)** Convert $27\\ ^{\\circ}\\text{C}$ to kelvin. **[1]**\n\n**(b)** Water is heated from $15\\ ^{\\circ}\\text{C}$ to $30\\ ^{\\circ}\\text{C}$. State the temperature change in kelvin, with a reason. **[1]**",
+  "markscheme": "**(a)** $27+273=300$ K **(A1)**\n\n**(b)** 15 K — the two scales have the same size of degree and differ only by an offset, so a temperature *change* is the same number on both **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-mean-ke-room",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "B.1.5",
+  "concept": "Ek = (3/2)k_B T",
+  "prompt": "Calculate the average translational kinetic energy of a gas molecule at 300 K. ($k_B=1.38\\times10^{-23}\\ \\text{J K}^{-1}$)",
+  "markscheme": "$\\bar E_k=\\tfrac32k_BT=1.5\\times1.38\\times10^{-23}\\times300$ **(M1)** $=6.2\\times10^{-21}$ J **(A1)** — the same for every gas at this temperature, whatever the molecular mass.",
+  "source": "original"
+ },
+ {
+  "id": "g-internal-energy-melting",
+  "paper": "1A",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "B.1.6",
+  "concept": "Internal energy",
+  "prompt": "Ice at 0 °C melts to water at 0 °C. What happens to the average random kinetic energy and to the intermolecular potential energy of the particles?",
+  "options": [
+   "KE increases, PE unchanged",
+   "KE increases, PE increases",
+   "KE unchanged, PE increases",
+   "KE unchanged, PE unchanged"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** The temperature is constant, so average kinetic energy is unchanged; the energy supplied breaks intermolecular bonds, increasing the potential energy — and hence the internal energy.",
+  "source": "original"
+ },
+ {
+  "id": "g-temperature-not-internal-energy",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "B.1.7",
+  "concept": "Temperature difference sets the direction of transfer",
+  "prompt": "A full bath of water at 40 °C has much more internal energy than a cup of coffee at 80 °C. The cup is placed in the bath. State the direction of the net thermal energy transfer and explain your answer.",
+  "markscheme": "From the coffee to the bath water **(A1)** — net thermal energy flows from higher to lower **temperature**, not from greater to smaller internal energy, until thermal equilibrium is reached **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-boiling-constant-temperature",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "B.1.8",
+  "concept": "Phase change at constant temperature",
+  "prompt": "Explain, in terms of particles, why the temperature of boiling water remains constant even though thermal energy is still being supplied.",
+  "markscheme": "The energy supplied is used to overcome intermolecular forces / separate the molecules, increasing their potential energy **(R1)**; the average kinetic energy, and therefore the temperature, does not change **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-ice-to-water-energy",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "B.1.9",
+  "concept": "Specific heat capacity and latent heat",
+  "prompt": "Calculate the energy needed to turn 0.20 kg of ice at $-10\\ ^{\\circ}\\text{C}$ into water at $20\\ ^{\\circ}\\text{C}$.\n\n$c_{\\text{ice}}=2100\\ \\text{J kg}^{-1}\\text{K}^{-1}$, $c_{\\text{water}}=4180\\ \\text{J kg}^{-1}\\text{K}^{-1}$, $L_f=3.34\\times10^{5}\\ \\text{J kg}^{-1}$",
+  "markscheme": "Warm ice: $0.20\\times2100\\times10=4.2\\times10^{3}$ J **(A1)**\n\nMelt: $0.20\\times3.34\\times10^{5}=6.68\\times10^{4}$ J **(A1)**\n\nWarm water: $0.20\\times4180\\times20=1.67\\times10^{4}$ J **(A1)**\n\nTotal $=8.8\\times10^{4}$ J **(A1)** — the melting stage needs the most energy.",
+  "source": "original"
+ },
+ {
+  "id": "g-method-of-mixtures",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "B.1.9",
+  "concept": "Thermal equilibrium calculations",
+  "prompt": "0.30 kg of water at 80 °C is mixed with 0.20 kg of water at 20 °C in an insulated container. Calculate the final temperature, and state one assumption.",
+  "markscheme": "Energy lost by hot = energy gained by cold: $0.30c(80-T)=0.20c(T-20)$ **(M1)**\n\n$T=56\\ ^{\\circ}\\text{C}$ **(A1)**\n\nAssumption: no energy is transferred to the container or surroundings **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-electrical-shc-experiment",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "B.1.9",
+  "concept": "Measuring specific heat capacity",
+  "prompt": "A 50 W heater warms a 0.50 kg metal block by 12 K in 300 s.\n\n**(a)** Calculate the specific heat capacity of the metal from these data. **[2]**\n\n**(b)** Explain whether the true value is likely to be larger or smaller. **[1]**",
+  "markscheme": "**(a)** $c=\\dfrac{Pt}{m\\Delta T}=\\dfrac{50\\times300}{0.50\\times12}=2.5\\times10^{3}\\ \\text{J kg}^{-1}\\text{K}^{-1}$ **(M1)(A1)**\n\n**(b)** Smaller: some of the 15 kJ was lost to the surroundings, so less energy actually went into the block than assumed **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-vacuum-flask",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "B.1.10",
+  "concept": "Mechanisms of thermal energy transfer",
+  "prompt": "The vacuum between the double walls of a vacuum flask mainly reduces thermal energy transfer by:",
+  "options": [
+   "radiation only",
+   "conduction and radiation",
+   "conduction and convection",
+   "convection and radiation"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** Conduction and convection need particles; a vacuum has none. Radiation can cross a vacuum, which is why the walls are also silvered.",
+  "source": "original"
+ },
+ {
+  "id": "g-metal-conduction-electrons",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "B.1.11",
+  "concept": "Conduction and particle kinetic energy",
+  "prompt": "Explain why metals are much better thermal conductors than non-metals.",
+  "markscheme": "In all solids, energetic vibrating particles pass kinetic energy to neighbours through collisions/bonds **(R1)**; metals also have delocalised (free) electrons that move quickly through the lattice and transfer kinetic energy from hot to cold regions far more effectively **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-window-conduction-rate",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "B.1.12",
+  "concept": "Rate of conduction ΔQ/Δt = kAΔT/Δx",
+  "prompt": "A glass window of area $1.2\\ \\text{m}^{2}$ and thickness 4.0 mm has thermal conductivity $0.80\\ \\text{W m}^{-1}\\text{K}^{-1}$. The inner surface is 15 K warmer than the outer surface.\n\n**(a)** Calculate the rate of thermal energy transfer through the glass. **[2]**\n\n**(b)** Suggest why double glazing reduces this rate. **[1]**",
+  "markscheme": "**(a)** $\\dfrac{\\Delta Q}{\\Delta t}=kA\\dfrac{\\Delta T}{\\Delta x}=0.80\\times1.2\\times\\dfrac{15}{0.0040}$ **(M1)** $=3.6\\times10^{3}$ W **(A1)**\n\n**(b)** The trapped air layer has a very low thermal conductivity, greatly reducing conduction (and the gap is thin enough to limit convection) **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-convection-heater",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "B.1.13",
+  "concept": "Convection",
+  "prompt": "Explain why a room heater is usually placed near the floor.",
+  "markscheme": "Air near the heater warms, expands and becomes less dense, so it rises; cooler, denser air sinks to replace it **(R1)**. This sets up a convection current that circulates warm air through the whole room **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-stefan-boltzmann-sun",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "B.1.14",
+  "concept": "Stefan–Boltzmann law",
+  "prompt": "The Sun's surface temperature is 5800 K and its radius is $6.96\\times10^{8}$ m. Treating it as a black body, calculate its luminosity. $\\sigma=5.67\\times10^{-8}\\ \\text{W m}^{-2}\\,\\text{K}^{-4}$",
+  "markscheme": "$L=\\sigma AT^{4}=\\sigma(4\\pi R^{2})T^{4}$ **(M1)(A1)**\n\n$L=5.67\\times10^{-8}\\times4\\pi(6.96\\times10^{8})^{2}\\times5800^{4}=3.9\\times10^{26}$ W **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-stefan-boltzmann-ratio",
+  "paper": "1A",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "B.1.14",
+  "concept": "Stefan–Boltzmann law",
+  "prompt": "Star X has twice the radius and half the surface temperature of star Y. What is $\\dfrac{L_X}{L_Y}$?",
+  "options": [
+   "$\\tfrac14$",
+   "$\\tfrac12$",
+   "1",
+   "4"
+  ],
+  "answer": 0,
+  "markscheme": "**A.** $L\\propto R^{2}T^{4}$: $2^{2}\\times\\left(\\tfrac12\\right)^{4}=\\dfrac{4}{16}=\\dfrac14$.",
+  "source": "original"
+ },
+ {
+  "id": "g-apparent-brightness-concept",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "B.1.15",
+  "concept": "Apparent brightness",
+  "prompt": "Distinguish between the luminosity of a star and its apparent brightness.",
+  "markscheme": "Luminosity: total power emitted by the star (W), an intrinsic property **(A1)**; apparent brightness: power received per unit area at the observer ($\\text{W m}^{-2}$), which depends on distance **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-brightness-at-earth",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "B.1.16",
+  "concept": "b = L/4πd²",
+  "prompt": "The Sun's luminosity is $3.9\\times10^{26}$ W and it is $1.5\\times10^{11}$ m from the Earth. Calculate the apparent brightness of the Sun at the Earth.",
+  "markscheme": "$b=\\dfrac{L}{4\\pi d^{2}}=\\dfrac{3.9\\times10^{26}}{4\\pi(1.5\\times10^{11})^{2}}$ **(M1)** $\\approx1.4\\times10^{3}\\ \\text{W m}^{-2}$ **(A1)** — the solar constant.",
+  "source": "original"
+ },
+ {
+  "id": "g-wien-peak",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "B.1.17",
+  "concept": "Wien's displacement law",
+  "prompt": "**(a)** A star's spectrum peaks at 500 nm. Estimate its surface temperature. **[1]**\n\n**(b)** Estimate the peak wavelength emitted by the human body (310 K) and name the region of the spectrum. **[1]**",
+  "markscheme": "**(a)** $T=\\dfrac{2.9\\times10^{-3}}{500\\times10^{-9}}=5.8\\times10^{3}$ K **(A1)**\n\n**(b)** $\\lambda=\\dfrac{2.9\\times10^{-3}}{310}=9.4\\times10^{-6}$ m, infrared **(A1)**",
+  "source": "original"
+ }
+]
