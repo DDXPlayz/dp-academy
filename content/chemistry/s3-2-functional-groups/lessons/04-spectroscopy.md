@@ -49,6 +49,11 @@ $\text{IHD} = \dfrac{(8 + 2) - 8}{2} = 1$ — one ring or one double bond (e.g. 
 
 The **molecular ion** M⁺ gives $M_r$. Fragments break off, giving peaks at lower m/z:
 
+```figure
+src: chemistry/_iitian/functional-groups-s3-2-12-structural-analysis-ib-dp-chemistr/img/fig-d739864f4d58397b.png
+caption: A mass spectrometer: molecules are ionised, accelerated and deflected by a magnet according to their mass-to-charge ratio.
+```
+
 | Loss from M | Fragment lost |
 |---|---|
 | 15 | CH₃ |
@@ -60,6 +65,16 @@ The **molecular ion** M⁺ gives $M_r$. Fragments break off, giving peaks at low
 ## Infrared spectroscopy
 
 Bonds absorb IR radiation at characteristic wavenumbers when they vibrate (bending or stretching) in a way that changes the dipole moment.
+
+```figure
+src: chemistry/_iitian/functional-groups-s3-2-9-infrared-spectra-ib-dp-chemistry-st/img/fig-3b1cdb6047a17390.png
+caption: Infrared radiation makes covalent bonds stretch and bend; each bond absorbs at characteristic wavenumbers.
+```
+
+```figure
+src: chemistry/_iitian/functional-groups-s3-2-12-structural-analysis-ib-dp-chemistr/img/fig-63b84cb8c93b9630.png
+caption: An IR spectrum: a broad O-H band, C-H absorptions, and the fingerprint region below about 1500 cm⁻¹.
+```
 
 | Bond | Wavenumber / cm⁻¹ | Notes |
 |---|---|---|
@@ -75,6 +90,11 @@ Bonds absorb IR radiation at characteristic wavenumbers when they vibrate (bendi
 
 ```keyidea
 Each signal in a ¹H NMR spectrum is a different hydrogen environment. Its chemical shift tells you what the H is near; its integration (area) tells you how many H are in that environment; its splitting tells you how many H are on neighbouring carbons (n + 1 rule).
+```
+
+```figure
+src: chemistry/_iitian/functional-groups-s3-2-10-proton-nuclear-magnetic-resonance-/img/fig-431f629d911339db.png
+caption: Typical ¹H NMR chemical shifts for protons in different environments.
 ```
 
 | Environment | δ / ppm (approx.) |
@@ -97,6 +117,21 @@ TMS (tetramethylsilane) is the reference at δ = 0: it gives one strong signal, 
 A compound C₃H₆O₂ has: IR — very broad 2500–3000 cm⁻¹ and a strong 1710 cm⁻¹ band; ¹H NMR — 11.7 ppm (1H, singlet), 2.4 ppm (2H, quartet), 1.2 ppm (3H, triplet); MS — peaks at m/z 74 and 29. Identify it.
 ---
 IHD = (8 − 6)/2 = 1: one C=O. IR shows a carboxylic acid (O–H 2500–3000, C=O 1710). NMR: COOH proton at 11.7; CH₂ quartet next to CH₃; CH₃ triplet next to CH₂ — an ethyl group. MS: M = 74 and C₂H₅⁺ at 29. It is propanoic acid, CH₃CH₂COOH.
+```
+
+```figure
+src: chemistry/_iitian/functional-groups-s3-2-12-structural-analysis-ib-dp-chemistr/img/fig-5138913bf647ad1b.png
+caption: Mass spectrum of propanone: the molecular ion at m/z = 58 and fragment peaks such as CH₃CO⁺ at 43.
+```
+
+```figure
+src: chemistry/_iitian/functional-groups-s3-2-12-structural-analysis-ib-dp-chemistr/img/fig-4369294d4d0b9d68.png
+caption: IR spectrum of propanone: the strong C=O absorption near 1700 cm⁻¹ identifies the carbonyl group.
+```
+
+```figure
+src: chemistry/_iitian/functional-groups-s3-2-12-structural-analysis-ib-dp-chemistr/img/fig-721e1afdeae7e650.png
+caption: ¹H NMR spectrum of propanone: all six protons are equivalent, so there is a single peak at 2.16 ppm.
 ```
 
 ```question

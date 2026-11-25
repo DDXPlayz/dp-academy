@@ -53,6 +53,16 @@ A single atom is far too small to weigh. But chemical equations are written in p
 
 One mole of anything contains $6.02 \times 10^{23}$ particles — the **Avogadro constant**, $N_A$. It is like a “dozen”, only vastly bigger.
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-4-3-molar-mass-study-notes/img/fig-dd081b4871d960a9.png
+caption: Converting between mass, amount in moles and number of particles: divide or multiply by the molar mass and by the Avogadro constant.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-4-3-molar-mass-study-notes/img/fig-5dabb3e561d24319.png
+caption: The mass-moles-molar mass triangle: m = n × M, n = m / M, M = m / n.
+```
+
 The amount was chosen so that one mole of a substance has a mass in grams equal to its relative formula mass. One mole of carbon-12 atoms has a mass of exactly 12 g; one mole of water molecules (H₂O, $M_r = 18.02$) has a mass of 18.02 g.
 
 ```keyidea
@@ -75,6 +85,11 @@ Molecules: $N = 0.50 \times 6.02 \times 10^{23} = 3.0 \times 10^{23}$.
 
 Analysis tells us the percentage by mass of each element in a compound. Dividing each by the element’s atomic mass gives the **mole ratio**.
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-4-4-empirical-and-molecular-formulass-stu/img/fig-4a52c468ab13f67d.png
+caption: C₆H₁₂O₆ and CH₂O have the same empirical formula: the molecular formula is a whole-number multiple of it.
+```
+
 ```example
 A compound contains 40.0 % carbon, 6.7 % hydrogen and 53.3 % oxygen by mass. Find its empirical formula. ($A_r$: C = 12.01, H = 1.01, O = 16.00)
 ---
@@ -94,6 +109,11 @@ If the molar mass is found to be 180 g mol⁻¹, then since CH₂O has $M = 30.0
 ## Concentration of solutions
 
 The concentration of a solution tells you how many moles of solute are in each cubic decimetre:
+
+```figure
+src: chemistry/_sme/counting-particles-by-mass-the-mole/img/fig-5cb5b3e2d34c856f.png
+caption: The concentration triangle: amount in moles = concentration × volume (in dm³).
+```
 
 $$c = \frac{n}{V}$$
 

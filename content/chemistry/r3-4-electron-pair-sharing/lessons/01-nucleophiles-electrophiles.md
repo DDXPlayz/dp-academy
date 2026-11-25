@@ -31,11 +31,41 @@ related:
 A nucleophile donates an electron pair to form a bond; an electrophile accepts one. Curly arrows show the movement of an electron pair, from a lone pair or bond to where the new bond forms.
 ```
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-4-2-nucleophilic-substitution-reactions-s/img/fig-942fc5d19862df91.png
+caption: A curly arrow shows a pair of electrons moving: from the tail (the electron source) to the head (where they go).
+```
+
+```figure
+src: chemistry/_sme/electron-pair-sharing-reactions/img/fig-2eed021b48c8db89.png
+caption: An electrophile accepts an electron pair; a nucleophile donates one. Here hydroxide donates a lone pair to H⁺.
+```
+
+```figure
+src: chemistry/_sme/electron-pair-sharing-reactions/img/fig-e8cf2e5d42f9d031.png
+caption: Heterolytic fission: both electrons of the bond go to one atom, giving a pair of ions.
+```
+
 **Heterolytic fission** gives ions because one fragment takes both bonding electrons: $\text{C–Br} \rightarrow \text{C}^+ + \text{Br}^-$.
 
 ## Nucleophilic substitution
 
 In halogenoalkanes, the C–X bond is polar ($\text{C}^{\delta+}\text{–X}^{\delta-}$). A nucleophile attacks the δ+ carbon and the halide leaves:
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-4-9-sn1-and-sn2-mechanisms-study-notes/img/fig-b2ad347d8af54079.png
+caption: The C-X bond is polar, so the carbon is δ+ and open to attack by nucleophiles.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-4-9-sn1-and-sn2-mechanisms-study-notes/img/fig-764294e37d95df07.png
+caption: Nucleophilic substitution: the nucleophile replaces the halogen, which leaves as a halide ion.
+```
+
+```figure
+src: chemistry/_sme/electron-pair-sharing-reactions/img/fig-a383e08df2989e87.png
+caption: Halogenoalkane reactivity increases from fluoro- to iodoalkanes, as the C-X bond gets weaker.
+```
 
 $$
 \text{CH}_3\text{CH}_2\text{Br} + \text{OH}^- \rightarrow \text{CH}_3\text{CH}_2\text{OH} + \text{Br}^-
@@ -46,6 +76,16 @@ Conditions: warm aqueous NaOH. The halide ion is the **leaving group**.
 ## Electrophilic addition to alkenes
 
 The C=C double bond is a region of **high electron density** (the π bond), so it attracts electrophiles. The π bond breaks and two new single bonds form.
+
+```figure
+src: chemistry/_sme/electron-pair-sharing-reactions/img/fig-be62e56c52ae12b5.png
+caption: Electrophilic addition of HBr to ethene: the π bond attacks Hδ+, forming a carbocation, which bromide then attacks.
+```
+
+```figure
+src: chemistry/_sme/electron-pair-sharing-reactions/img/fig-07fa097b0810ce1a.png
+caption: Overall, X-Y adds across the C=C double bond.
+```
 
 | Reagent | Product | Conditions |
 |---|---|---|

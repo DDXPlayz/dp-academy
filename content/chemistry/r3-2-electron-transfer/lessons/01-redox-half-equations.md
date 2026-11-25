@@ -37,6 +37,16 @@ related:
 | Oxygen | gain | loss |
 | Hydrogen | loss | gain |
 
+```figure
+src: chemistry/_sme/electron-transfer-reactions/img/fig-acd0ba74767f2e2f.png
+caption: An increase in oxidation state is oxidation; a decrease is reduction.
+```
+
+```figure
+src: chemistry/_sme/electron-transfer-reactions/img/fig-0009d881f85c1fa8.png
+caption: Hydrogen peroxide as an oxidising agent: it oxidises Fe²⁺ to Fe³⁺ and is itself reduced to water.
+```
+
 ```keyidea
 Oxidation and reduction always happen together. The oxidising agent gains electrons (is reduced); the reducing agent loses electrons (is oxidised).
 ```
@@ -46,6 +56,16 @@ Oxidation and reduction always happen together. The oxidising agent gains electr
 $$
 \text{Zn} \rightarrow \text{Zn}^{2+} + 2e^- \qquad \text{(oxidation)}
 $$
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-2-2-redox-half-equations-study-notes/img/fig-09c475964b7561b2.png
+caption: Splitting a redox reaction into an oxidation half-equation and a reduction half-equation.
+```
+
+```figure
+src: chemistry/_sme/electron-transfer-reactions/img/fig-08baed2e2d4d3aae.png
+caption: Balancing by oxidation-number change: Mn falls by 5 while each Fe rises by 1, so five Fe²⁺ are needed for each MnO₄⁻.
+```
 
 $$
 \text{Cu}^{2+} + 2e^- \rightarrow \text{Cu} \qquad \text{(reduction)}
@@ -68,6 +88,21 @@ Multiply the iron half-equation by 5 and add: MnO₄⁻ + 8H⁺ + 5Fe²⁺ → M
 - **Metals**: reactivity increases down a group and towards the left — they lose electrons more easily. A more reactive metal displaces a less reactive one from solution: Mg + CuSO₄ → MgSO₄ + Cu.
 - **Halogens**: oxidising power decreases down group 17 (Cl₂ > Br₂ > I₂).
 - **Metals with acids**: metals above hydrogen in the activity series release hydrogen: $\text{Mg} + 2\text{HCl} \rightarrow \text{MgCl}_2 + \text{H}_2$. Copper, silver and gold do not.
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-2-4-acid-metal-reactions-study-notes/img/fig-ca6a979ba3e9f469.png
+caption: Oxidation is loss of electrons; reduction is gain of electrons. They always happen together.
+```
+
+```figure
+src: chemistry/_sme/electron-transfer-reactions/img/fig-415d56973765f9d7.png
+caption: The activity series: reactivity increases from platinum and gold up to potassium.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-2-3-reactivity-of-elements-based-on-perio/img/fig-a5ad601b62bf8974.png
+caption: Magnesium displaces hydrogen from acid: Mg is oxidised to Mg²⁺ and H⁺ ions are reduced to H₂.
+```
 
 ```question
 oxidising-agent

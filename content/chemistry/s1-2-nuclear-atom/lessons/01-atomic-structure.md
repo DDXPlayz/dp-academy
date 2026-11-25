@@ -31,6 +31,16 @@ related:
 Almost all of an atom’s mass is in a tiny, dense, positively charged nucleus of protons and neutrons (nucleons). Negatively charged electrons occupy the much larger space around it.
 ```
 
+```figure
+src: chemistry/_sme/the-nuclear-atom/img/fig-00f8574cb0a3a36b.png
+caption: The nuclear atom: a tiny, dense nucleus of protons and neutrons, surrounded by electrons in a much larger volume.
+```
+
+```figure
+src: chemistry/_iitian/the-nuclear-atom-ib-dp-chemistry-study-notes/img/fig-bf23c7e202d127ee.png
+caption: Nuclear symbol notation: mass number A at the top, atomic number Z at the bottom; the neutron number is A − Z.
+```
+
 | Particle | Relative mass | Relative charge | Location |
 |---|---|---|---|
 | Proton | 1 | +1 | Nucleus |
@@ -61,6 +71,11 @@ Cl⁻: 17 protons, 18 neutrons, 17 + 1 = 18 electrons.
 ## Isotopes
 
 Isotopes of an element have the same number of protons but different numbers of neutrons — e.g. $^{12}_{6}\text{C}$, $^{13}_{6}\text{C}$, $^{14}_{6}\text{C}$.
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-2-2-isotopes-study-notes/img/fig-17b9f54d53b2dd18.png
+caption: Isotopes have the same number of protons but different numbers of neutrons.
+```
 
 - **Chemical properties: the same.** Chemistry depends on electrons, and isotopes have the same electron configuration.
 - **Physical properties: slightly different** — mass, density, rate of diffusion, and nuclear stability (some isotopes are radioactive).

@@ -29,6 +29,16 @@ related:
 When a system at equilibrium is disturbed, the position of equilibrium shifts in the direction that partly opposes the disturbance.
 ```
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r2-3-4-le-chateliers-principle-study-notes-n/img/fig-4671abd8bd337996.png
+caption: Increasing the pressure shifts the equilibrium towards the side with fewer gas molecules.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r2-3-4-le-chateliers-principle-study-notes-n/img/fig-7fae9dddda27ab1a.png
+caption: Treat heat as a product of an exothermic reaction: adding heat shifts the equilibrium left; removing it shifts it right.
+```
+
 | Change | Shift | K? |
 |---|---|---|
 | Add a reactant / remove a product | to the right (products) | unchanged |
@@ -40,6 +50,16 @@ When a system at equilibrium is disturbed, the position of equilibrium shifts in
 ## Temperature and K
 
 For an **exothermic** forward reaction, raising the temperature shifts the equilibrium to the left and **decreases K**. For an **endothermic** forward reaction, K **increases** with temperature.
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r2-3-4-le-chateliers-principle-study-notes-n/img/fig-0dafee74501b2f56.png
+caption: Removing A shifts the equilibrium to the left to replace it; adding A shifts it to the right to use it up.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r2-3-3-magnitude-of-k-and-temperature-depend/img/fig-d09fbaf277df918e.png
+caption: For an exothermic forward reaction, raising the temperature favours the endothermic (reverse) reaction and lowers K.
+```
 
 ```example
 N₂(g) + 3H₂(g) ⇌ 2NH₃(g), ΔH = −92 kJ mol⁻¹. Predict the effect on the yield of ammonia of (a) increasing pressure, (b) increasing temperature, (c) adding an iron catalyst.

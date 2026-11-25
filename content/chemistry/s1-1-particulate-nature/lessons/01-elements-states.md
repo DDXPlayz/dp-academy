@@ -31,6 +31,16 @@ related:
 Elements are the primary constituents of matter: they cannot be broken down chemically. Compounds are elements chemically bonded in fixed ratios. Mixtures are substances physically combined — and can be separated by physical methods.
 ```
 
+```figure
+src: chemistry/_iitian/introduction-to-the-particulate-nature-of-matter-study-notes/img/fig-022599f1f2110440.png
+caption: Elements are made of one kind of atom, either as single atoms or as molecules.
+```
+
+```figure
+src: chemistry/_iitian/introduction-to-the-particulate-nature-of-matter-study-notes/img/fig-c58e2812a434b8e7.png
+caption: A compound contains two or more elements chemically bonded in a fixed ratio.
+```
+
 | | Element | Compound | Mixture |
 |---|---|---|---|
 | Composition | One type of atom | Fixed ratio of elements | Any proportions |
@@ -51,6 +61,21 @@ Mixtures can be **homogeneous** (uniform, one phase — a solution, air, an allo
 | Paper / thin-layer chromatography | Dissolved substances | Different affinity for stationary and mobile phases |
 | Solvent extraction | A solute between two immiscible solvents | Different solubility |
 | Magnetic attraction | Magnetic solids | Magnetism |
+
+```figure
+src: chemistry/_sme/introduction-to-the-particulate-nature-of-matter/img/fig-abfd0f8ef879b184.png
+caption: Filtration separates an insoluble solid (the residue) from a liquid (the filtrate).
+```
+
+```figure
+src: chemistry/_iitian/introduction-to-the-particulate-nature-of-matter-study-notes/img/fig-086519133ac6387f.png
+caption: Distillation: the liquid with the lower boiling point evaporates, is cooled in the condenser and collected.
+```
+
+```figure
+src: chemistry/_iitian/introduction-to-the-particulate-nature-of-matter-study-notes/img/fig-33f062ba133b735d.png
+caption: Paper chromatography: components of a mixture travel different distances up the paper with the solvent.
+```
 
 ```example
 How would you obtain pure, dry salt from a mixture of sand and salt?

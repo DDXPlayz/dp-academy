@@ -53,6 +53,16 @@ $n = \dfrac{PV}{RT} = \dfrac{101\times10^3\times2.50\times10^{-3}}{8.31\times298
 
 For a fixed amount of gas:
 
+```figure
+src: chemistry/_sme/ideal-gases/img/fig-68b1f6701f364f58.png
+caption: Graphs of the simple gas laws: p against 1/V, V against T and p against T are straight lines for an ideal gas.
+```
+
+```figure
+src: chemistry/_sme/ideal-gases/img/fig-ec631b3cef88922f.png
+caption: Heating a gas at constant pressure: the particles move faster and the volume increases in proportion to the absolute temperature.
+```
+
 $$
 \frac{P_1V_1}{T_1} = \frac{P_2V_2}{T_2}
 $$

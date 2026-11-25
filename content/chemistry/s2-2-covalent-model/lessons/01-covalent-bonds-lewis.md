@@ -32,6 +32,21 @@ related:
 A covalent bond forms when two atoms (usually non-metals) share a pair of electrons. The bond is the electrostatic attraction between the shared electrons and both positive nuclei.
 ```
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s2-2-1-formation-of-covalent-bonds-study-not/img/fig-5c10c23175871ce5.png
+caption: A covalent bond forms when two non-metal atoms share a pair of their valence electrons.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s2-2-1-formation-of-covalent-bonds-study-not/img/fig-971f5e3b4598fd34.png
+caption: Two oxygen atoms share two pairs of electrons, forming a double bond; each atom keeps two lone pairs.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s2-2-2-single-double-and-triple-bonds-study-/img/fig-e350ed9b92b98617.png
+caption: Triple bonds are shorter and stronger than double bonds, which are shorter and stronger than single bonds.
+```
+
 Atoms often share enough electrons to complete an **octet** (hydrogen: two electrons).
 
 | Bond | Shared pairs | Example | Bond length | Bond strength |
@@ -57,6 +72,16 @@ Valence electrons: 4 + 2(6) = 16. Skeleton O–C–O uses 4; octets on O use 12;
 ## Coordination bonds
 
 In a **coordination** (dative) bond both shared electrons come from one atom, which must have a lone pair:
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s2-2-3-coordination-bonds-study-notes/img/fig-67e35ee894880caa.png
+caption: In carbon monoxide one of the three bonds is a coordination bond: both of its electrons come from oxygen.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s2-2-3-coordination-bonds-study-notes/img/fig-3e5c66e7ece24a6d.png
+caption: Ammonia's lone pair forms a coordination bond to H⁺, giving the ammonium ion.
+```
 
 $$
 \text{NH}_3 + \text{H}^+ \rightarrow \text{NH}_4^+ \qquad \text{H}_2\text{O} + \text{H}^+ \rightarrow \text{H}_3\text{O}^+

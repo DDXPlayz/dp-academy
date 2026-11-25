@@ -31,6 +31,16 @@ related:
 
 A C=C double bond cannot rotate (the π bond would break). If **each** carbon of the double bond carries two **different** groups, two arrangements are possible:
 
+```figure
+src: chemistry/_sme/functional-groups-classification-of-organic-compounds/img/fig-96ef21d2a98d0369.png
+caption: Rotation is possible about a C-C single bond but not about a C=C double bond, so cis and trans isomers cannot interconvert.
+```
+
+```figure
+src: chemistry/_iitian/functional-groups-s3-2-7-stereoisomers-ib-dp-chemistry-study/img/fig-d3e1e4f6f39d8a1e.png
+caption: Cis-trans isomerism also occurs in rings: cis and trans 1,2-dibromocyclopentane.
+```
+
 - **cis:** the same groups on the same side;
 - **trans:** the same groups on opposite sides.
 
@@ -55,6 +65,16 @@ Cis and trans isomers have different physical properties (e.g. boiling point) an
 
 ```keyidea
 A carbon with four different groups attached is chiral. The molecule and its mirror image cannot be superimposed — they are enantiomers, a pair of optical isomers.
+```
+
+```figure
+src: chemistry/_sme/functional-groups-classification-of-organic-compounds/img/fig-dcfedd1369803304.png
+caption: A chiral carbon has four different groups; its two enantiomers are non-superimposable mirror images.
+```
+
+```figure
+src: chemistry/_sme/functional-groups-classification-of-organic-compounds/img/fig-46b9c57b03258ea0.png
+caption: Enantiomers rotate plane-polarised light in opposite directions; a racemic (50:50) mixture leaves it unchanged.
 ```
 
 Example: butan-2-ol, CH₃CH(OH)CH₂CH₃ — C2 carries H, OH, CH₃ and C₂H₅.

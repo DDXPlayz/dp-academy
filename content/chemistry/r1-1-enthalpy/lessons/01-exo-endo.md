@@ -28,10 +28,25 @@ related:
 
 The **system** is the reacting chemicals; the **surroundings** are everything else (solvent, container, air, thermometer). Energy is conserved overall — what the system loses, the surroundings gain.
 
+```figure
+src: chemistry/_iitian/measuring-enthalpy-changes-r1-1-1-energy-transfer-in-chemica/img/fig-faa20996adc71b75.png
+caption: The system is the reaction itself; everything else is the surroundings, and energy passes between the two.
+```
+
+```figure
+src: chemistry/_iitian/measuring-enthalpy-changes-r1-1-1-energy-transfer-in-chemica/img/fig-ed295d8a0950486c.png
+caption: Every reaction involves breaking bonds (which needs energy) and forming new bonds (which releases energy).
+```
+
 ## Exothermic and endothermic
 
 ```keyidea
 Exothermic: heat flows from the system to the surroundings — ΔH < 0, surroundings warm up, products more stable (lower enthalpy). Endothermic: heat flows into the system — ΔH > 0, surroundings cool, products less stable.
+```
+
+```figure
+src: chemistry/_iitian/measuring-enthalpy-changes-r1-1-2-endothermic-and-exothermic/img/fig-317a10938d5f7aba.png
+caption: Endothermic: the system takes in heat, so the surroundings get cooler (ΔH > 0). Exothermic: the system gives out heat, so the surroundings get warmer (ΔH < 0).
 ```
 
 | | Exothermic | Endothermic |
@@ -52,6 +67,16 @@ caption: Energy profiles. Exothermic (left): products lower than reactants. Endo
   <g font-size="11" fill="currentColor"><text x="30" y="84">reactants</text><text x="140" y="146">products</text><text x="164" y="114">ΔH &lt; 0</text><text x="250" y="146">reactants</text><text x="360" y="74">products</text><text x="394" y="110">ΔH &gt; 0</text></g>
   <g font-size="12" text-anchor="middle" fill="currentColor"><text x="110" y="196">exothermic</text><text x="330" y="196">endothermic</text></g>
 </svg>
+```
+
+```figure
+src: chemistry/_sme/measuring-enthalpy-change/img/fig-b3b5f0be2a31e03b.png
+caption: Exothermic energy profile: the products are lower in energy than the reactants, so ΔH is negative; Ea is the climb to the transition state.
+```
+
+```figure
+src: chemistry/_sme/measuring-enthalpy-change/img/fig-766bbc85016ecd8f.png
+caption: Endothermic energy profile: the products are higher in energy than the reactants, so ΔH is positive.
 ```
 
 The hump is the **activation energy** — the energy needed to start the reaction, even when it is exothermic overall.

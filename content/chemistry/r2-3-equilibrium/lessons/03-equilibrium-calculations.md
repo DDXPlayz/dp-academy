@@ -31,6 +31,11 @@ related:
 
 $Q$ has the same form as $K$ but uses the **current** concentrations.
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r2-3-5-reaction-quotient-q-study-notes-new-s/img/fig-7e932c400faf77c0.png
+caption: If Q < K the reaction moves to the right; if Q > K it moves to the left, until Q = K.
+```
+
 ```keyidea
 If Q < K, the reaction proceeds forward (more products) to reach equilibrium. If Q > K, it proceeds backward. If Q = K, the system is at equilibrium.
 ```
@@ -64,6 +69,16 @@ $K = \dfrac{(2x)^2}{0.10} = 1.0\times10^{-6}$ → $4x^2 = 1.0\times10^{-7}$ → 
 $$
 \Delta G^\ominus = -RT\ln K
 $$
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r2-3-7-gibbs-free-energy-and-equilibrium-stu/img/fig-4805966c643f8a30.png
+caption: Le Châtelier's principle: when a change is made, the position of equilibrium shifts to oppose it.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r2-3-7-gibbs-free-energy-and-equilibrium-stu/img/fig-9152d15457ccdc00.png
+caption: Gibbs energy is at its minimum when Q = K: there ΔG = 0, and on either side the reaction runs downhill towards equilibrium.
+```
 
 A negative ΔG⦵ gives K > 1 (products favoured); a positive ΔG⦵ gives K < 1.
 

@@ -34,9 +34,24 @@ related:
 
 Half-cell potentials cannot be measured alone, so each is measured against a reference: the **standard hydrogen electrode** (SHE), $\text{H}^+(aq) + e^- \rightleftharpoons \tfrac{1}{2}\text{H}_2(g)$, defined as **0.00 V**.
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-2-12-standard-electrode-potentials-study-/img/fig-71e92ae1f3eaf8c0.png
+caption: The standard hydrogen electrode: hydrogen gas at 100 kPa bubbled over platinum in 1 mol dm⁻³ H⁺, at 298 K.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-2-12-standard-electrode-potentials-study-/img/fig-671e55a449dfe313.png
+caption: Measuring a standard electrode potential: the half-cell is connected to a standard hydrogen electrode through a salt bridge and a high-resistance voltmeter.
+```
+
 ## Reading E⦵ values
 
 Half-equations in the data booklet are written as reductions, in order of E⦵:
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-2-14-gibbs-free-energy-and-cell-potential/img/fig-3945ff363a4c1d2f.png
+caption: Links between ΔG⦵, E⦵cell and K: a positive E⦵cell means a negative ΔG⦵ and K > 1, so the reaction is spontaneous.
+```
 
 | Half-equation | E⦵ / V |
 |---|---|
@@ -56,6 +71,11 @@ The more positive E⦵, the more readily the species on the left is reduced — 
 $$
 E^\ominus_{\text{cell}} = E^\ominus_{\text{cathode}} - E^\ominus_{\text{anode}}
 $$
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-2-6-primary-voltaic-cells-study-notes/img/fig-0b06ae376762cf89.png
+caption: A magnesium-silver cell: magnesium has the more negative E⦵, so it is the anode.
+```
 
 The half-cell with the more positive E⦵ is the cathode. A reaction is **spontaneous** if $E^\ominus_{\text{cell}} > 0$.
 

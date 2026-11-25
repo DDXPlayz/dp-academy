@@ -35,6 +35,11 @@ related:
 The limiting reactant runs out first and fixes how much product forms. To find it, divide the moles of each reactant by its coefficient in the equation: the smallest result is limiting.
 ```
 
+```figure
+src: chemistry/_iitian/reactivity-2-1-how-much-r2-1-3-limiting-and-excess-reactants/img/fig-4eeb5f01f06193b8.png
+caption: Limiting reactant: 5 carbon atoms can use only 5 of the 10 O₂ molecules, so carbon is limiting and 5 O₂ molecules are left in excess.
+```
+
 ```example
 5.00 g of aluminium (M = 26.98) reacts with 20.0 g of chlorine (M = 70.90). 2Al + 3Cl₂ → 2AlCl₃. Which is limiting, and what mass of AlCl₃ (M = 133.33) forms?
 ---
@@ -49,6 +54,16 @@ $$
 \%\text{ yield} = \frac{\text{experimental yield}}{\text{theoretical yield}}\times100
 $$
 
+```figure
+src: chemistry/_iitian/reactivity-2-1-how-much-r2-1-4-percentage-yield-ib-dp-chemis/img/fig-b4236aa85347dbc9.png
+caption: The theoretical yield is the most product the limiting reagent can make, using the mole ratio.
+```
+
+```figure
+src: chemistry/_iitian/reactivity-2-1-how-much-r2-1-3-limiting-and-excess-reactants/img/fig-a1726ad393e3e67c.png
+caption: Percentage yield = actual yield ÷ theoretical yield × 100; above 100% suggests an impure product, below 100% incomplete reaction or losses.
+```
+
 Yields are below 100% because of incomplete reactions, side reactions, losses during transfer and purification, and reversible reactions.
 
 ## Atom economy
@@ -56,6 +71,21 @@ Yields are below 100% because of incomplete reactions, side reactions, losses du
 $$
 \text{atom economy} = \frac{M(\text{desired product})}{\sum M(\text{all reactants})}\times100
 $$
+
+```figure
+src: chemistry/_iitian/reactivity-2-1-how-much-r2-1-3-limiting-and-excess-reactants/img/fig-8b177af94a033c2b.png
+caption: Once the limiting reagent is used up the reaction stops, and some of the excess reagent is left over.
+```
+
+```figure
+src: chemistry/_iitian/reactivity-2-1-how-muchr2-1-5-atom-economy-ib-dp-chemistry-s/img/fig-9945b8a21681e598.png
+caption: High atom economy: all the reactant atoms end up in the desired product. Low atom economy: some become waste.
+```
+
+```figure
+src: chemistry/_iitian/reactivity-2-1-how-muchr2-1-5-atom-economy-ib-dp-chemistry-s/img/fig-02751e0a6d41fa23.png
+caption: Addition and rearrangement reactions have 100% atom economy; substitution and elimination reactions have less.
+```
 
 ```example
 Calculate the atom economy for making ethanol by fermentation: C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂. (M: glucose 180.18, ethanol 46.08)

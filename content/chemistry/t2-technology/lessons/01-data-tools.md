@@ -33,6 +33,16 @@ related:
 | conductivity probe | following ion concentration |
 | gas sensors (CO₂, O₂) | combustion, respiration |
 
+```figure
+src: chemistry/_sme/tool-2-technology/img/fig-57910c5dc04d2ff8.png
+caption: A data-logger records readings from several sensors and sends them to a computer for graphing.
+```
+
+```figure
+src: chemistry/_sme/tool-2-technology/img/fig-6a7a76fc04e24190.png
+caption: A handheld data-logger with a temperature probe, plotting temperature against time as it measures.
+```
+
 ```keyidea
 Data loggers record many readings at high frequency and without reaction-time error — ideal for fast changes such as the steep part of a titration curve. Probes must be calibrated (e.g. pH probes against buffer solutions).
 ```
@@ -44,6 +54,11 @@ Spreadsheets calculate derived values (moles, concentrations, ln k, 1/T) consist
 ## Modelling and simulation
 
 Molecular modelling shows 3D shapes, bond angles and electron density; simulations model reactions, equilibria and kinetics that would be slow, dangerous or costly to test. Their predictions must be checked against experiment.
+
+```figure
+src: chemistry/_sme/tool-2-technology/img/fig-ffcc540d85c2a1fa.png
+caption: A computer simulation lets you vary electronegativities and see how molecular polarity changes.
+```
 
 ```question
 probe-calibrate

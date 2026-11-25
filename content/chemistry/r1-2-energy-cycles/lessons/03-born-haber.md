@@ -29,6 +29,16 @@ related:
 
 For NaCl(s), the formation from elements can be broken into steps:
 
+```figure
+src: chemistry/_iitian/energy-cycles-in-reactions-r1-2-5-bornhaber-cycle-ib-dp-chem/img/fig-1592035a4959ba51.png
+caption: A Born-Haber cycle links the formation of an ionic solid to atomisation, ionisation, electron affinity and lattice enthalpy.
+```
+
+```figure
+src: chemistry/_iitian/energy-cycles-in-reactions-r1-2-5-bornhaber-cycle-ib-dp-chem/img/fig-0b5a805e9aeb838d.png
+caption: Born-Haber cycle for potassium chloride, drawn as an energy-level diagram.
+```
+
 | Step | Process | Sign |
 |---|---|---|
 | Atomisation of Na | Na(s) → Na(g) | + |
@@ -53,6 +63,11 @@ $\Delta H_\text{lattice} = 375 + 411 = +786$ kJ mol⁻¹.
 ## Doubly charged ions
 
 For MgO, include the **second ionisation energy** of Mg and **both electron affinities** of O. The second EA (O⁻ + e⁻ → O²⁻) is **endothermic**, because an electron is added to a negative ion. MgO’s very large lattice enthalpy (~3800 kJ mol⁻¹) more than pays for these.
+
+```figure
+src: chemistry/_sme/energy-cycles-in-reactions/img/fig-63390a137870526b.png
+caption: Born-Haber cycle for sodium chloride (kJ mol⁻¹); the lattice enthalpy is found from the other steps by Hess's law.
+```
 
 ```question
 born-haber-calc

@@ -31,6 +31,11 @@ related:
 
 An **ideal gas** obeys the gas laws exactly. Its assumptions:
 
+```figure
+src: chemistry/_sme/ideal-gases/img/fig-4d4d9bb64c6040c0.png
+caption: Compressing a gas pushes the particles closer together, so they hit the walls more often and the pressure rises.
+```
+
 1. Particles are in constant, **random** motion.
 2. Particles have **negligible volume** compared with the container.
 3. There are **no intermolecular forces** between particles (except during collisions).
@@ -40,6 +45,21 @@ An **ideal gas** obeys the gas laws exactly. Its assumptions:
 
 ```keyidea
 Real gases deviate most from ideal behaviour at low temperature and high pressure. Particles are then close together and moving slowly, so their own volume and the attractions between them matter.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-5-2-deviations-from-ideal-gas-behavior-st/img/fig-50709d078db9ccc2.png
+caption: At low pressure the particles' own volume is negligible compared with the container; at high pressure it is not, so the gas stops behaving ideally.
+```
+
+```figure
+src: chemistry/_sme/ideal-gases/img/fig-86009d1492a7208e.png
+caption: Real gases deviate from ideal behaviour (pV/nRT = 1) most at high pressure and low temperature.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-5-2-deviations-from-ideal-gas-behavior-st/img/fig-c9cfc77219c80d2b.png
+caption: The same amount of gas at low pressure (large volume) and high pressure (small volume).
 ```
 
 - **High pressure:** particles are packed closely, so their volume is no longer negligible.

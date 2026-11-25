@@ -37,6 +37,11 @@ The standard enthalpy change ΔH⦵ is measured at **100 kPa**, usually **298 K*
 
 Heat released or absorbed by a reaction changes the temperature of a known mass of water or solution:
 
+```figure
+src: chemistry/_iitian/measuring-enthalpy-changes-r1-1-5-practical-considerations-i/img/fig-da011492f92b0365.png
+caption: Measuring the enthalpy of combustion: a burning fuel heats a known mass of water in a copper can.
+```
+
 $$
 Q = mc\Delta T
 $$
@@ -68,6 +73,21 @@ $\Delta H_c = -11.7/0.00998 = -1170$ kJ mol⁻¹ (the data-booklet value is −1
 - **Heat loss** to the surroundings (biggest error) → |ΔH| too small. Reduce with insulation, a lid, a polystyrene cup; correct with a cooling-curve extrapolation.
 - **Incomplete combustion** (soot) in combustion experiments.
 - Heat absorbed by the calorimeter itself, and evaporation of fuel.
+
+```figure
+src: chemistry/_sme/measuring-enthalpy-change/img/fig-2a1c3a5ce5441aca.png
+caption: A simple solution calorimeter: a polystyrene cup with a lid and a thermometer, for reactions in solution.
+```
+
+```figure
+src: chemistry/_sme/measuring-enthalpy-change/img/fig-6a552b33d9c70e4e.png
+caption: Reducing heat loss in combustion calorimetry: an insulating lid, a draught shield and the flame placed close to the can.
+```
+
+```figure
+src: chemistry/_iitian/measuring-enthalpy-changes-r1-1-5-practical-considerations-i/img/fig-a758d44614390eed.png
+caption: Correcting for heat loss: extrapolate the cooling line back to the moment of mixing to estimate the true maximum temperature change.
+```
 
 ```plot
 caption: Correcting for heat loss — extrapolate the cooling line back to the time of mixing (t = 3 min) to estimate the maximum temperature rise.

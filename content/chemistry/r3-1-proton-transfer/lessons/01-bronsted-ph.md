@@ -38,6 +38,21 @@ related:
 A Brønsted–Lowry acid donates a proton (H⁺); a base accepts one. Every acid–base reaction involves two conjugate pairs.
 ```
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-1-3-amphiprotic-species-study-notes-new-s/img/fig-69cc4eaf21e162e1.png
+caption: HCl donates a proton to water: HCl and Cl⁻ are a conjugate pair, as are H₂O and H₃O⁺.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-1-3-amphiprotic-species-study-notes-new-s/img/fig-863158590ad6ac53.png
+caption: Water is amphiprotic: with ammonia it donates a proton, becoming OH⁻, while NH₃ becomes NH₄⁺.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-1-3-amphiprotic-species-study-notes-new-s/img/fig-4807224289f6776e.png
+caption: Water can accept a proton with a lone pair on oxygen, or donate one of its hydrogen atoms.
+```
+
 $$
 \underset{\text{acid}}{\text{NH}_4^+} + \underset{\text{base}}{\text{H}_2\text{O}} \rightleftharpoons \underset{\text{conj. base}}{\text{NH}_3} + \underset{\text{conj. acid}}{\text{H}_3\text{O}^+}
 $$
@@ -51,6 +66,11 @@ Conjugate pairs differ by one H⁺: NH₄⁺/NH₃ and H₃O⁺/H₂O.
 $$
 \text{pH} = -\log_{10}[\text{H}^+]
 $$
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-1-4-ph-and-the-hydrogen-ion-concentration/img/fig-aeaa5231b2c0298a.png
+caption: pH is a logarithmic scale: each unit is a factor of ten in [H⁺].
+```
 
 - pH < 7 acidic, pH = 7 neutral, pH > 7 alkaline (at 298 K).
 - A change of **1** pH unit is a **tenfold** change in [H⁺].
@@ -66,6 +86,16 @@ HCl is fully ionised: [H⁺] = 0.0050; pH = −log(0.0050) = 2.30.
 ## The ionic product of water
 
 Water ionises very slightly: $\text{H}_2\text{O} \rightleftharpoons \text{H}^+ + \text{OH}^-$.
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-1-9-poh-scale-study-notes/img/fig-6ac8629c01eb3f83.png
+caption: Converting between pH, pOH, [H₃O⁺] and [OH⁻] at 25 °C, where pH + pOH = 14.
+```
+
+```figure
+src: chemistry/_sme/proton-transfer-reactions/img/fig-aadd0014ffecfd68.png
+caption: Kw rises with temperature, because the ionisation of water is endothermic; so neutral pH is below 7 when hot.
+```
 
 $$
 K_w = [\text{H}^+][\text{OH}^-] = 1.00\times10^{-14}\ \text{at 298 K}

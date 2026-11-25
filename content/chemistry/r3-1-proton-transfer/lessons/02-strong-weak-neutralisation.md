@@ -31,6 +31,21 @@ related:
 Strong acids and bases ionise (almost) completely in water; weak acids and bases ionise only partially and set up an equilibrium.
 ```
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-1-6-strong-and-weak-acids-and-bases-study/img/fig-cb4edf4f57f391c9.png
+caption: Strong acids dissociate completely in water; weak acids dissociate only partially, so at equal concentration they have a higher pH.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-1-7-neutralization-reactions-study-notes/img/fig-8cdfdf5c6d0fdd5d.png
+caption: Neutralisation: an acid and a base react to form a salt and water.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-1-10-acid-and-base-strength-and-constants/img/fig-5094343b76b3adeb.png
+caption: pKa + pKb = pKw for a conjugate pair: as one rises the other falls.
+```
+
 $$
 \text{HCl(aq)} \rightarrow \text{H}^+\text{(aq)} + \text{Cl}^-\text{(aq)} \qquad \text{CH}_3\text{COOH(aq)} \rightleftharpoons \text{CH}_3\text{COO}^-\text{(aq)} + \text{H}^+\text{(aq)}
 $$
@@ -49,6 +64,16 @@ $$
 - acid + reactive metal → salt + hydrogen
 - acid + ammonia → ammonium salt
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-1-7-neutralization-reactions-study-notes/img/fig-768c1fb7343cd9a4.png
+caption: Acids react with reactive metals such as magnesium to give a salt and bubbles of hydrogen.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-1-7-neutralization-reactions-study-notes/img/fig-4410db954f1bf36e.png
+caption: A metal carbonate reacts with acid to give CO₂, which turns limewater milky.
+```
+
 Ionic equation: $\text{H}^+\text{(aq)} + \text{OH}^-\text{(aq)} \rightarrow \text{H}_2\text{O(l)}$, ΔH ≈ −57 kJ mol⁻¹ for strong acid with strong base.
 
 ## Strong acid–strong base pH curve
@@ -62,6 +87,11 @@ vline: 25
 hline: 7
 xlabel: volume of NaOH added / cm³
 ylabel: pH
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-1-13-ph-curves-of-acid-base-combinations-/img/fig-ad90742dbd186673.png
+caption: Strong acid titrated with strong base: a steep vertical section, with the equivalence point at pH 7.
 ```
 
 Features: starts at pH 1, rises slowly, then a **steep jump** (≈ pH 3–11) at the **equivalence point** (pH 7), then levels off near pH 13.

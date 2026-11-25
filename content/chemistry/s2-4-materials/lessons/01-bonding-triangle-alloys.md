@@ -28,6 +28,16 @@ related:
 Bonding is rarely purely ionic, covalent or metallic. The bonding triangle places a substance using two numbers: the electronegativity difference (ΔEN) and the average electronegativity (ΣEN/2) of its elements.
 ```
 
+```figure
+src: chemistry/_iitian/from-models-to-materials-ib-dp-chemistry-study-notes-iitian-/img/fig-b93a7ca3e30f2f89.png
+caption: Bonding is a continuum: as the electronegativity difference grows, bonds change from pure covalent to polar covalent to ionic.
+```
+
+```figure
+src: chemistry/_sme/from-models-to-materials/img/fig-a663d29b6e7a4e67.png
+caption: The bonding triangle has ionic, covalent and metallic bonding at its corners; real substances sit somewhere inside.
+```
+
 ```svg
 caption: The bonding triangle. Ionic at the top (large ΔEN), metallic bottom left (low average EN), covalent bottom right (high average EN).
 <svg viewBox="0 0 400 240">
@@ -52,6 +62,16 @@ Locate MgO using electronegativities Mg 1.3 and O 3.4.
 ## Alloys
 
 An **alloy** is a mixture of a metal with other elements (metals or non-metals such as carbon). Examples: steel (Fe + C), brass (Cu + Zn), bronze (Cu + Sn), solder.
+
+```figure
+src: chemistry/_sme/from-models-to-materials/img/fig-9b83294aff1c3c9a.png
+caption: In an alloy, atoms of a different size disrupt the regular layers, so they slide less easily and the alloy is harder.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s2-4-3-alloys-study-notes/img/fig-7da6b38155b27a11.png
+caption: Common alloys: stainless steel, brass, bronze, aluminium alloys and others.
+```
 
 ```keyidea
 Atoms of a different size disrupt the regular layers of the metal lattice, so layers cannot slide easily. Alloys are therefore harder and stronger than the pure metal; they can also resist corrosion better.

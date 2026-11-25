@@ -31,6 +31,21 @@ related:
 1. Convert the known quantity to moles. 2. Use the mole ratio from the balanced equation. 3. Convert moles of the unknown into the quantity asked for.
 ```
 
+```figure
+src: chemistry/_iitian/reactivity-2-1-how-much-r2-1-2-using-the-mole-ratio-ib-dp-ch/img/fig-7654ed1ba9b26b3f.png
+caption: Converting between mass, moles and number of particles using the molar mass and the Avogadro constant.
+```
+
+```figure
+src: chemistry/_iitian/reactivity-2-1-how-much-r2-1-2-using-the-mole-ratio-ib-dp-ch/img/fig-710c2d3e196d539b.png
+caption: A balanced equation gives the mole ratio: 2 mol H₂ react with 1 mol O₂ to give 2 mol H₂O.
+```
+
+```figure
+src: chemistry/_sme/how-much-the-amount-of-chemical-change/img/fig-ce7d22178da0bea9.png
+caption: For gases: amount in moles = volume (dm³) ÷ 22.7 dm³ mol⁻¹ at STP (0 °C, 100 kPa).
+```
+
 ```example
 What mass of iron forms when 16.0 g of Fe₂O₃ reacts completely? Fe₂O₃ + 3CO → 2Fe + 3CO₂ (M: Fe₂O₃ 159.70, Fe 55.85)
 ---

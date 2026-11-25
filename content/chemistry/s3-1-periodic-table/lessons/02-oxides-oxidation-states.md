@@ -30,6 +30,21 @@ related:
 Metal oxides are basic, non-metal oxides are acidic, and aluminium oxide in between is amphoteric. This mirrors the change from metallic to non-metallic character across the period.
 ```
 
+```figure
+src: chemistry/_iitian/the-periodic-table-s3-1-5-metallic-and-non-metallic-oxides-i/img/fig-ba619ae0180b36c3.png
+caption: Electronegativity increases across a period and up a group; fluorine is the most electronegative element.
+```
+
+```figure
+src: chemistry/_iitian/the-periodic-table-s3-1-5-metallic-and-non-metallic-oxides-i/img/fig-c1780392d9f5e3f7.png
+caption: Oxides are classed as acidic, basic, amphoteric or neutral, depending on how they react with acids and bases.
+```
+
+```figure
+src: chemistry/_iitian/the-periodic-table-s3-1-5-metallic-and-non-metallic-oxides-i/img/fig-e3e45f20643149f8.png
+caption: Across a period, oxides change from basic (metals) through amphoteric to acidic (non-metals).
+```
+
 | Oxide | Na₂O | MgO | Al₂O₃ | SiO₂ | P₄O₁₀ | SO₃ |
 |---|---|---|---|---|---|---|
 | Character | basic | basic | amphoteric | acidic | acidic | acidic |
@@ -52,9 +67,29 @@ Metal oxides are basic, non-metal oxides are acidic, and aluminium oxide in betw
 - Effects: damage to limestone buildings, forests and aquatic life. Reduce by removing sulfur, scrubbing flue gases with CaO, and catalytic converters.
 - Dissolved CO₂ forms carbonic acid, lowering ocean pH and harming shell-forming organisms.
 
+```figure
+src: chemistry/_iitian/the-periodic-table-s3-1-5-metallic-and-non-metallic-oxides-i/img/fig-e2d279dc228c7bc3.png
+caption: Acid deposition: sulfur and nitrogen oxides from human and natural sources dissolve in cloud water and fall as wet or dry deposition.
+```
+
+```figure
+src: chemistry/_iitian/the-periodic-table-s3-1-5-metallic-and-non-metallic-oxides-i/img/fig-911efc74b867b0ec.png
+caption: Ocean acidification: CO₂ dissolves in seawater to form carbonic acid, raising the H⁺ concentration.
+```
+
+```figure
+src: chemistry/_sme/the-periodic-table-classification-of-elements/img/fig-74ba3f0680cf86c3.png
+caption: A catalytic converter turns CO and NOₓ in exhaust gases into CO₂ and N₂.
+```
+
 ## Oxidation states
 
 Rules:
+
+```figure
+src: chemistry/_iitian/the-periodic-table-s3-1-6-oxidation-states-ib-dp-chemistry-s/img/fig-ccc33cec1ebd5d45.png
+caption: Typical oxidation states across the periodic table; transition elements usually have several.
+```
 
 1. Elements: 0.
 2. Monatomic ions: the ion charge.

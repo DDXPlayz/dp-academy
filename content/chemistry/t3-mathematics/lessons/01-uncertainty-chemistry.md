@@ -33,6 +33,16 @@ related:
 - Burette: ±0.05 cm³ per reading → **±0.10 cm³** for a titre (two readings).
 - Temperature *change*: two readings → ±1 °C for a ±0.5 °C thermometer.
 
+```figure
+src: chemistry/_sme/tool-3-mathematics/img/fig-834f7febbcbc2d28.png
+caption: Reading a burette: the smallest division is 0.1 cm³, so readings are recorded to ±0.05 cm³.
+```
+
+```figure
+src: chemistry/_sme/tool-3-mathematics/img/fig-33da28b518d25146.png
+caption: Percentage uncertainty depends on the size of the reading: ±0.05 in 18.85 cm³ is 0.27%, but ±0.01 in 56.00 g is only 0.02%.
+```
+
 ## Propagation
 
 ```keyidea
@@ -50,6 +60,11 @@ In a calorimetry experiment: mass of water 50.00 ± 0.01 g, ΔT = 6.5 ± 1.0 °C
 $$
 \%\text{ error} = \frac{|\text{experimental} - \text{accepted}|}{\text{accepted}}\times100
 $$
+
+```figure
+src: chemistry/_sme/tool-3-mathematics/img/fig-8ed99f883eabaa06.png
+caption: Error bars show the uncertainty in each point, in both the x and y values.
+```
 
 - % error **≤** % uncertainty → result is consistent with random error.
 - % error **>** % uncertainty → systematic errors (e.g. heat loss) are present.

@@ -27,6 +27,16 @@ related:
 Electron domains around a central atom repel one another and spread out as far as possible. Lone pairs repel more strongly than bonding pairs, so they reduce the angles between bonds.
 ```
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s2-2-4-vsepr-theory-study-notes/img/fig-39ea64d3b38be2c3.png
+caption: VSEPR: the number of electron domains sets the electron-domain geometry; lone pairs change the molecular shape and squeeze the bond angles.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s2-2-16-hybridization-and-bonding-study-note/img/fig-03d3920238dfe2af.png
+caption: Methane: four bonding domains around carbon point to the corners of a tetrahedron, 109.5° apart.
+```
+
 ## Shapes for 2, 3 and 4 domains
 
 | Domains | Lone pairs | Electron domain geometry | Molecular geometry | Angle | Example |
@@ -37,6 +47,21 @@ Electron domains around a central atom repel one another and spread out as far a
 | 4 | 0 | tetrahedral | tetrahedral | 109.5° | CH₄ |
 | 4 | 1 | tetrahedral | trigonal pyramidal | ~107° | NH₃ |
 | 4 | 2 | tetrahedral | bent (V-shaped) | ~104.5° | H₂O |
+
+```figure
+src: chemistry/_sme/the-covalent-model/img/fig-cb2d909b856b7ea7.png
+caption: Methane and the ammonium ion both have four bonding domains, so both are tetrahedral with 109.5° bond angles.
+```
+
+```figure
+src: chemistry/_sme/the-covalent-model/img/fig-23d43810f8f9d857.png
+caption: Water has two bonding pairs and two lone pairs: the shape is bent, with a bond angle of about 104.5°.
+```
+
+```figure
+src: chemistry/_sme/the-covalent-model/img/fig-1cadaa731f149328.png
+caption: Three electron domains around the central atom give trigonal planar shapes with 120° bond angles.
+```
 
 ```svg
 caption: Four electron domains: methane, ammonia and water. Each lone pair squeezes the bond angle a little more.

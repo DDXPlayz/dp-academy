@@ -31,6 +31,16 @@ related:
 
 Many substances burn in oxygen: reactive metals ($2\text{Mg} + \text{O}_2 \rightarrow 2\text{MgO}$), non-metals ($\text{S} + \text{O}_2 \rightarrow \text{SO}_2$) and organic compounds.
 
+```figure
+src: chemistry/_iitian/energy-from-fuels-r1-3-1-combustion-fuels-ib-dp-chemistry-st/img/fig-f06ca6c3a77c7a5c.png
+caption: Incomplete combustion (air hole closed) gives a yellow, sooty flame; complete combustion (air hole open) gives a hot blue flame.
+```
+
+```figure
+src: chemistry/_iitian/energy-from-fuelsr1-3-3-fossil-fuels-ib-dp-chemistry-study-n/img/fig-19013af7b4bea99f.png
+caption: Engine exhaust: complete combustion gives CO₂ and H₂O, while incomplete combustion adds CO, soot and unburnt fuel, plus NOₓ from the air.
+```
+
 ```keyidea
 Complete combustion of a hydrocarbon or alcohol gives CO₂ and H₂O. With limited oxygen, incomplete combustion gives toxic carbon monoxide and/or soot (carbon) instead of some CO₂.
 ```
@@ -53,9 +63,24 @@ Incomplete: $\text{C}_8\text{H}_{18} + 8\tfrac{1}{2}\text{O}_2 \rightarrow 8\tex
 | Crude oil | Easily transported; refined into many fuels and chemicals | Spills; limited reserves; CO₂ |
 | Natural gas (CH₄) | Cleanest-burning, highest specific energy, least CO₂ per kJ | Methane leaks (potent greenhouse gas); hard to store |
 
+```figure
+src: chemistry/_iitian/energy-from-fuelsr1-3-3-fossil-fuels-ib-dp-chemistry-study-n/img/fig-397e3c6209ba0250.png
+caption: Natural gas, petroleum and coal are mainly carbon and hydrogen, with smaller amounts of sulfur, nitrogen and oxygen.
+```
+
 ## Climate change
 
 Burning fossil fuels releases carbon that was locked away for millions of years. CO₂ (and CH₄, H₂O) absorb infrared radiation emitted by the Earth, enhancing the greenhouse effect and raising the average global temperature, with effects on sea level, weather patterns and ecosystems.
+
+```figure
+src: chemistry/_iitian/energy-from-fuelsr1-3-3-fossil-fuels-ib-dp-chemistry-study-n/img/fig-eaad7fc747400c24.png
+caption: The natural greenhouse effect keeps Earth warm; extra greenhouse gases from human activity trap more heat (the enhanced effect).
+```
+
+```figure
+src: chemistry/_sme/energy-from-fuels/img/fig-f014266b7d9a6db2.png
+caption: Sunlight warms Earth's surface, which emits infrared; greenhouse gases absorb some of it and re-emit it back towards the surface.
+```
 
 ```question
 complete-combustion

@@ -32,6 +32,16 @@ related:
 
 Some species cannot be described by a single Lewis formula. In the carbonate ion, the double bond could be to any of the three oxygens.
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s2-2-12-benzene-study-notes/img/fig-53302998689e1678.png
+caption: Benzene's two Lewis structures are resonance forms; the real molecule is the hybrid, with six identical C-C bonds.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s2-2-11-resonance-structures-study-notes/img/fig-3fc05a6b269ac842.png
+caption: The carbonate ion has three resonance structures, so all three C-O bonds are identical.
+```
+
 ```keyidea
 The real structure is a resonance hybrid: the π electrons are delocalised over several atoms, so all the equivalent bonds are identical, with a length and strength between single and double bonds.
 ```
@@ -43,6 +53,21 @@ Examples: CO₃²⁻ (bond order 1⅓), NO₃⁻, O₃ and the carboxylate ion R
 ## Expanded octets
 
 Elements in period 3 and below can hold more than eight electrons around them.
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s2-2-13-expanded-octet-of-electrons-study-no/img/fig-6dfd932d334412cc.png
+caption: BrF₅ has six electron domains (five bonds and one lone pair): square pyramidal, with bond angles squeezed below 90°.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s2-2-13-expanded-octet-of-electrons-study-no/img/fig-b3e6f9e6b11ab59c.png
+caption: XeF₄ has four bonds and two lone pairs opposite each other: square planar with 90° bond angles.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s2-2-13-expanded-octet-of-electrons-study-no/img/fig-3c7336807fc9db56.png
+caption: PCl₅ has five bonding domains around phosphorus: trigonal bipyramidal.
+```
 
 | Domains | Lone pairs | Shape | Angles | Example |
 |---|---|---|---|---|

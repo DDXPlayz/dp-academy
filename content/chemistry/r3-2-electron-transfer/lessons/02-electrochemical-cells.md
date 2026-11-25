@@ -33,6 +33,21 @@ related:
 A voltaic cell converts the chemical energy of a spontaneous redox reaction into electrical energy. Electrons flow through the external circuit from the anode (oxidation, negative) to the cathode (reduction, positive).
 ```
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-2-6-primary-voltaic-cells-study-notes/img/fig-fe6e9b5d5a9cd2ef.png
+caption: Electrons flow through the wire from the zinc anode to the copper cathode, while ions move through the porous membrane.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-2-5-electrochemical-cells-oxidation-and-r/img/fig-392a0f697ae34477.png
+caption: Electrolysis of molten sodium chloride: Cl⁻ ions are oxidised to Cl₂ at the anode; Na⁺ ions are reduced to sodium at the cathode.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-2-13-standard-cell-potential-study-notes/img/fig-7d3f3f0f758db4cb.png
+caption: A zinc-copper voltaic cell: zinc is oxidised at the negative anode, Cu²⁺ is reduced at the positive cathode, and the salt bridge completes the circuit.
+```
+
 ```svg
 caption: A zinc–copper voltaic cell. Electrons flow from zinc (anode) to copper (cathode) through the wire; ions flow through the salt bridge.
 <svg viewBox="0 0 420 220">
@@ -59,9 +74,34 @@ The more different the reactivities of the two metals, the larger the cell volta
 
 In a secondary cell the redox reactions can be **reversed** by applying an external voltage. Examples: lead–acid (car batteries), nickel–metal hydride, lithium-ion. Discharging is voltaic; charging is electrolytic.
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-2-7-secondary-rechargeable-cells-study-no/img/fig-62969e18ca014bb8.png
+caption: A rechargeable cell is discharged to supply current and recharged by forcing current through it the opposite way.
+```
+
+```figure
+src: chemistry/_sme/electron-transfer-reactions/img/fig-056bf5ae0c6f7c7f.png
+caption: A lithium-ion cell: Li⁺ ions move from the graphite anode to the metal-oxide cathode on discharge, and back again on charging.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-ib-dp-chemistry-r3-2-11-reduction-of-unsatur/img/fig-78dcd16e7ba75948.png
+caption: Hydrogenation of ethene: H₂ adds across the double bond over a Pd/C catalyst, giving ethane.
+```
+
 ## Electrolytic cells
 
 An external power supply forces a **non-spontaneous** reaction to occur.
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-2-7-secondary-rechargeable-cells-study-no/img/fig-0203457e40c5b862.png
+caption: A lead-acid battery: lead and lead(IV) oxide electrodes in sulfuric acid.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-2-8-electrolytic-cells-study-notes/img/fig-04599cb56e497a09.png
+caption: Electrolysis of molten lead(II) bromide: bromine forms at the anode and lead at the cathode.
+```
 
 | | Voltaic cell | Electrolytic cell |
 |---|---|---|

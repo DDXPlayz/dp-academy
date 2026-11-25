@@ -38,6 +38,11 @@ With **Br₂**, the approaching π electrons **induce a dipole** in Br–Br; the
 In the addition of HX to an unsymmetrical alkene, the major product comes from the more stable carbocation. Stability: tertiary > secondary > primary, because alkyl groups donate electron density (positive inductive effect).
 ```
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-4-12-the-relative-stability-of-carbocatio/img/fig-2f9374ee2c2f92b5.png
+caption: Markovnikov's rule: hydrogen adds to the carbon that already has more hydrogens, giving the more stable carbocation.
+```
+
 ```example
 Predict the major product of propene + HBr.
 ---
@@ -47,6 +52,16 @@ H⁺ adds to C1 (CH₂ end) to give the secondary carbocation CH₃C⁺HCH₃, w
 ## Electrophilic substitution of benzene
 
 Benzene’s six delocalised π electrons make it electron-rich, but addition would destroy the very stable delocalised ring. Instead it undergoes **substitution**, which keeps the ring intact.
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-4-13-reactions-between-benzene-and-electr/img/fig-24c7402e35b471a6.png
+caption: Electrophilic substitution of benzene: the electrophile attacks to form a carbocation, then loss of H⁺ restores the aromatic ring.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-4-13-reactions-between-benzene-and-electr/img/fig-aa2ef64f709716d1.png
+caption: Nitration of benzene: sulfuric acid generates the nitronium ion NO₂⁺, the electrophile that substitutes onto the ring.
+```
 
 **Nitration** (concentrated HNO₃ + concentrated H₂SO₄, ~50 °C):
 

@@ -32,6 +32,21 @@ related:
 Every covalent bond contains exactly one σ bond, formed by head-on overlap along the axis. Extra bonds in double and triple bonds are π bonds, formed by sideways overlap of p orbitals above and below the axis.
 ```
 
+```figure
+src: chemistry/_sme/the-covalent-model/img/fig-1b262fbb0aa16d4c.png
+caption: A sigma bond forms by head-on overlap of orbitals, here two 1s orbitals in H₂.
+```
+
+```figure
+src: chemistry/_sme/the-covalent-model/img/fig-ad7df6d85f25a245.png
+caption: A pi bond forms from sideways overlap of p orbitals above and below the bond axis.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s2-2-15-sigma-and-pi-bonds-study-notes/img/fig-8ad0f84f9065efd3.png
+caption: Ethene: a C=C double bond is one sigma bond plus one pi bond.
+```
+
 | Bond | σ | π |
 |---|---|---|
 | Single | 1 | 0 |
@@ -49,6 +64,11 @@ Two C–H σ bonds, plus the triple bond (1 σ + 2 π): 3 σ and 2 π.
 ## Hybridisation
 
 Carbon’s ground state (2s² 2p²) has only two unpaired electrons, yet it forms four identical bonds in CH₄. The model: one 2s electron is promoted, then the 2s and three 2p orbitals **mix** to give four identical **sp³** hybrid orbitals pointing to the corners of a tetrahedron.
+
+```figure
+src: chemistry/_sme/the-covalent-model/img/fig-e4e868de2d0270d1.png
+caption: Carbon in methane mixes its 2s and three 2p orbitals into four equivalent sp³ hybrid orbitals.
+```
 
 | Domains | Hybridisation | Geometry | Unhybridised p orbitals | Example |
 |---|---|---|---|---|

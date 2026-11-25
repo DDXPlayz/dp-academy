@@ -30,6 +30,16 @@ related:
 3. **Number** the chain to give the functional group the lowest number.
 4. Add **substituents** as prefixes (methyl-, ethyl-, chloro-, bromo-…) in alphabetical order with locants.
 
+```figure
+src: chemistry/_sme/functional-groups-classification-of-organic-compounds/img/fig-582113ebdf26c823.png
+caption: Naming a branched alkane: find the longest chain, number it to give the lowest locants, then name the substituents (4-ethyl-2-methylhexane).
+```
+
+```figure
+src: chemistry/_iitian/functional-groups-s3-2-5-iupac-nomenclature-ib-dp-chemistry-/img/fig-755e528c290a8876.png
+caption: IUPAC names follow the pattern: secondary prefix, primary prefix, word root, primary suffix, secondary suffix.
+```
+
 ```example
 Name CH₃CH(CH₃)CH₂CH₂OH and CH₃CHClCH(CH₃)CH₃.
 ---
@@ -46,12 +56,32 @@ Longest chain: 4 C; number to give lowest locants: chloro on C2, methyl on C3 �
 | Secondary (2°) | two other C | butan-2-ol |
 | Tertiary (3°) | three other C | 2-methylpropan-2-ol |
 
+```figure
+src: chemistry/_sme/functional-groups-classification-of-organic-compounds/img/fig-659e2f55342ef521.png
+caption: Primary, secondary and tertiary alcohols: the carbon bearing the OH is attached to one, two or three other carbons.
+```
+
+```figure
+src: chemistry/_sme/functional-groups-classification-of-organic-compounds/img/fig-23d1a124af9777e2.png
+caption: Primary, secondary and tertiary amines: the nitrogen is attached to one, two or three carbon groups.
+```
+
 (For amines, the classification counts carbons bonded to the nitrogen.)
 
 ## Structural isomers
 
 ```keyidea
 Structural isomers share a molecular formula but differ in how the atoms are connected. They can differ in chain (branching), position of the functional group, or class of functional group.
+```
+
+```figure
+src: chemistry/_iitian/functional-groups-s3-2-6-structural-isomers-ib-dp-chemistry-/img/fig-0bdb33a439c0c248.png
+caption: Structural isomers of C₄H₁₀: a straight chain (butane) and a branched chain (methylpropane).
+```
+
+```figure
+src: chemistry/_iitian/functional-groups-s3-2-6-structural-isomers-ib-dp-chemistry-/img/fig-436e257fd5facfac.png
+caption: Structural isomers have the same molecular formula but different structures.
 ```
 
 | Type | Example (same formula) |

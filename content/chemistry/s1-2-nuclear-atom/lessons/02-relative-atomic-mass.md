@@ -29,6 +29,11 @@ related:
 
 Because most elements are mixtures of isotopes, the **relative atomic mass** is a weighted mean:
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-2-2-isotopes-study-notes/img/fig-008fb86d69275d84.png
+caption: The isotopes of carbon and their natural abundances: carbon-12 is by far the most common.
+```
+
 $$
 A_r = \frac{\sum (\text{isotope mass} \times \text{abundance})}{\sum \text{abundance}}
 $$
@@ -51,6 +56,11 @@ Let $x$ = % of ⁶³Cu: $63x + 65(100 - x) = 6355$, so $6500 - 2x = 6355$ and $x
 
 ```keyidea
 In a mass spectrometer atoms are ionised, accelerated and separated by mass-to-charge ratio. Each peak is an isotope: its position gives m/z (≈ mass for 1+ ions) and its height gives the relative abundance.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-2-3-mass-spectrometry-study-notes/img/fig-04200317d81a8b5b.png
+caption: A mass spectrum: each peak is an isotope (m/z), and its height gives the relative abundance used to find the relative atomic mass.
 ```
 
 ```svg

@@ -31,6 +31,11 @@ related:
 Breaking bonds absorbs energy (endothermic). Forming bonds releases energy (exothermic). A reaction is exothermic overall if more energy is released forming the products’ bonds than is absorbed breaking the reactants’ bonds.
 ```
 
+```figure
+src: chemistry/_sme/energy-cycles-in-reactions/img/fig-ba5fac67c3bc7440.png
+caption: If more energy is released making bonds than is absorbed breaking them, the reaction is exothermic; if less, endothermic.
+```
+
 $$
 \Delta H = \sum(\text{bond enthalpies of bonds broken}) - \sum(\text{bond enthalpies of bonds formed})
 $$
@@ -48,6 +53,16 @@ Bond-enthalpy answers are **approximate** because the values are **averages** ov
 ## Hess’s law
 
 The total enthalpy change from reactants to products is the same whichever route is taken. So an unknown ΔH can be found from a cycle of known ones.
+
+```figure
+src: chemistry/_sme/energy-cycles-in-reactions/img/fig-fc56623d2e33cedc.png
+caption: Hess's law: the enthalpy change from A + B to C is the same whichever route is taken.
+```
+
+```figure
+src: chemistry/_sme/energy-cycles-in-reactions/img/fig-83b28833049a9ff7.png
+caption: A Hess cycle: the direct route from reactants to products equals the indirect route via the elements.
+```
 
 ```svg
 caption: Hess’s law. The direct route ΔH₁ equals the indirect route ΔH₂ + ΔH₃.

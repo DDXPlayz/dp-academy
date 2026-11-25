@@ -30,11 +30,26 @@ related:
 Entropy measures how dispersed matter and energy are. Under the same conditions: gases have much more entropy than liquids, which have more than solids. Entropy rises with temperature and with the number of particles.
 ```
 
+```figure
+src: chemistry/_iitian/entropy-and-spontaneity-r1-4-1-entropy-s-ib-dp-chemistry-stu/img/fig-1d29e57603ce010c.png
+caption: An exothermic reaction releases heat into the surroundings and increases their entropy; the total entropy change decides whether the process is spontaneous.
+```
+
+```figure
+src: chemistry/_sme/entropy-spontaneity/img/fig-efc99ae155d36b62.png
+caption: Exothermic reactions: with a positive ΔS they are always feasible; with a negative ΔS they are feasible only at low temperature.
+```
+
 $S(\text{solid}) < S(\text{liquid}) \ll S(\text{gas})$
 
 ## Predicting the sign of ΔS
 
 ΔS is **positive** (entropy increases) when:
+
+```figure
+src: chemistry/_sme/entropy-spontaneity/img/fig-1e163959a8e147d5.png
+caption: Melting turns an ordered solid into a more disordered liquid, so entropy increases.
+```
 
 - a solid melts or a liquid boils;
 - a solid dissolves;

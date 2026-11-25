@@ -37,6 +37,11 @@ related:
 | Shape / volume | Fixed / fixed | Takes container’s shape / fixed | Fills container / not fixed |
 | Compressible? | No | Hardly | Yes |
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-1-2-the-kinetic-molecular-theory-study-no/img/fig-b2b3459657996882.png
+caption: Particle arrangements in solids, liquids and gases, and the changes of state between them.
+```
+
 ## Changes of state
 
 ```svg
@@ -53,6 +58,16 @@ caption: Changes of state. Arrows to the right absorb energy (endothermic); arro
 </svg>
 ```
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-1-3-temperature-and-kinetic-energy-study-/img/fig-8a99aedc12726b05.png
+caption: The changes of state: melting, freezing, evaporation, condensation, sublimation and deposition.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-1-3-temperature-and-kinetic-energy-study-/img/fig-cb10de1eba8263b3.png
+caption: A heating curve: temperature stays constant during melting and boiling, because the energy goes into overcoming intermolecular forces.
+```
+
 During a change of state the temperature stays **constant**: the energy supplied goes into overcoming (or is released by forming) attractions between particles, not into increasing their kinetic energy.
 
 **Evaporation** happens at any temperature, from the surface only; **boiling** happens throughout the liquid at the boiling point.
@@ -61,6 +76,11 @@ During a change of state the temperature stays **constant**: the energy supplied
 
 ```keyidea
 The Kelvin temperature is proportional to the average kinetic energy of the particles. Double the Kelvin temperature and you double their average kinetic energy.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-1-3-temperature-and-kinetic-energy-study-/img/fig-c86781ad9affabc7.png
+caption: The average kinetic energy of the particles is directly proportional to the absolute (Kelvin) temperature.
 ```
 
 $$

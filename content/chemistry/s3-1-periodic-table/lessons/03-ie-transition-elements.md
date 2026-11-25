@@ -45,6 +45,16 @@ xlabel: element (Na → Ar)
 ylabel: first IE / kJ mol⁻¹
 ```
 
+```figure
+src: chemistry/_sme/the-periodic-table-classification-of-elements/img/fig-c3b172f7114f36f3.png
+caption: First ionisation energy against atomic number: peaks at the noble gases, with small dips within each period.
+```
+
+```figure
+src: chemistry/_iitian/the-periodic-table-s3-1-7-discontinuities-in-ionization-ener/img/fig-32743bf3cc6ebc00.png
+caption: Across period 2, first ionisation energy dips at B (2p electron) and at O (paired 2p electron).
+```
+
 - **Mg → Al (dip):** Al’s outer electron is in a **3p** orbital, higher in energy and more shielded than Mg’s 3s electrons.
 - **P → S (dip):** in S, the electron is removed from a 3p orbital that contains a **pair**; repulsion between the paired electrons makes it easier to remove.
 
@@ -70,6 +80,21 @@ Transition elements have incomplete d sublevels. This gives them variable oxidat
 1. In an isolated ion the five d orbitals have equal energy. Ligands approaching the ion **split** them into two sets of different energy.
 2. An electron absorbs a photon of visible light and is promoted to the higher set. The energy gap $\Delta E = h\nu$ determines which wavelength is absorbed.
 3. The colour we see is the **complementary** colour of the light absorbed.
+
+```figure
+src: chemistry/_iitian/the-periodic-table-s3-1-10-color-of-transition-metal-complex/img/fig-443dbf581535350d.png
+caption: Transition-metal complex ions are coloured, and the colour depends on the metal, its oxidation state and the ligands.
+```
+
+```figure
+src: chemistry/_sme/the-periodic-table-classification-of-elements/img/fig-f55a080341db9f63.png
+caption: Ligands split the five 3d orbitals into two groups with an energy gap ΔE.
+```
+
+```figure
+src: chemistry/_iitian/the-periodic-table-s3-1-10-color-of-transition-metal-complex/img/fig-4ab774a510dfea8b.png
+caption: A d electron absorbs light whose energy matches ΔE and jumps up; the complementary colour is what we see.
+```
 
 The size of the splitting depends on the metal, its oxidation state, the ligand and the geometry — so changing any of these changes the colour. Ions with d⁰ (Sc³⁺) or d¹⁰ (Zn²⁺, Cu⁺) configurations cannot undergo d–d transitions, so they are colourless.
 

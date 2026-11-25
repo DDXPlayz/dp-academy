@@ -48,6 +48,21 @@ related:
 - **Colorimetry:** measure absorbance to follow concentration of a coloured species (Beer–Lambert: absorbance ∝ concentration).
 - **Gas collection:** gas syringe or over water (for insoluble gases).
 
+```figure
+src: chemistry/_sme/tool-1-experimental-techniques/img/fig-754f644d550d7490.png
+caption: Heating under reflux: the vertical condenser returns the vapour to the flask, so the mixture can be heated for a long time without losing volatile substances.
+```
+
+```figure
+src: chemistry/_sme/tool-1-experimental-techniques/img/fig-63b605668e2aae47.png
+caption: Volumetric glassware: a burette and a pipette are far more precise than a measuring cylinder.
+```
+
+```figure
+src: chemistry/_sme/tool-1-experimental-techniques/img/fig-90bc6f4e3991fe14.png
+caption: Collecting a gas in a gas syringe to follow a reaction.
+```
+
 ```keyidea
 Choose the technique and apparatus by the precision needed — volumetric glassware for quantitative work, measuring cylinders only for approximate volumes.
 ```
@@ -64,6 +79,21 @@ Weigh 0.02500 mol × 105.99 = 2.65 g accurately. Dissolve in a beaker of distill
 - Know hazard symbols: flammable, corrosive, toxic, oxidising, irritant, environmental hazard.
 - Heat flammable liquids with a water bath, not a flame.
 - Dispose of heavy metals and organic waste in labelled containers, not the sink.
+
+```figure
+src: chemistry/_sme/tool-1-experimental-techniques/img/fig-c93edc3bfdfed1a4.png
+caption: Hazard symbol: toxic.
+```
+
+```figure
+src: chemistry/_sme/tool-1-experimental-techniques/img/fig-75679c2fc915eb5d.png
+caption: Hazard symbol: flammable.
+```
+
+```figure
+src: chemistry/_sme/tool-1-experimental-techniques/img/fig-91513b1a529496ae.png
+caption: The twelve principles of green chemistry.
+```
 
 ```question
 glassware-choice

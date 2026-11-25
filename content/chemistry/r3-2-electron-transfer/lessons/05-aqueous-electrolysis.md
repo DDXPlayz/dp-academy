@@ -26,6 +26,16 @@ related:
 
 In aqueous solution, water can be electrolysed too:
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-2-15-electrolysis-of-aqueous-solutions-st/img/fig-da6121ae3587320c.png
+caption: Electrolysis of brine: hydrogen forms at the cathode and chlorine at the anode.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-2-15-electrolysis-of-aqueous-solutions-st/img/fig-b43a96f2fc48faf2.png
+caption: Electrolysis of water: oxygen at the anode and hydrogen at the cathode.
+```
+
 - cathode: $2\text{H}_2\text{O} + 2e^- \rightarrow \text{H}_2 + 2\text{OH}^-$ (E⦵ = −0.83 V)
 - anode: $2\text{H}_2\text{O} \rightarrow \text{O}_2 + 4\text{H}^+ + 4e^-$ (E⦵ = +1.23 V)
 
@@ -44,12 +54,27 @@ At the cathode, the species with the more positive E⦵ is reduced. At the anode
 
 With **copper electrodes** in CuSO₄(aq), the copper anode itself is oxidised ($\text{Cu} \rightarrow \text{Cu}^{2+} + 2e^-$) and copper is deposited at the cathode. The anode loses mass, the cathode gains the same mass, and the solution colour stays constant — the basis of copper purification.
 
+```figure
+src: chemistry/_sme/electron-transfer-reactions/img/fig-462fbdf5d5098cce.png
+caption: Purifying copper: the impure copper anode dissolves, pure copper deposits on the cathode, and impurities fall as anode slime.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-2-16-electroplating-study-notes/img/fig-28425707eaa9eb74.png
+caption: Electroplating: the object to be plated is the cathode and the anode is made of the plating metal.
+```
+
 ## Electroplating
 
 ```example
 Describe how to silver-plate a spoon.
 ---
 Make the spoon the cathode and a silver bar the anode, in a solution of a silver salt (e.g. AgNO₃). At the cathode: Ag⁺ + e⁻ → Ag (silver coats the spoon). At the anode: Ag → Ag⁺ + e⁻ (the bar dissolves, keeping [Ag⁺] constant).
+```
+
+```figure
+src: chemistry/_sme/electron-transfer-reactions/img/fig-4bde21cfb767b74e.png
+caption: Silver plating a spoon: an impure silver anode and the spoon as the cathode in a silver-containing electrolyte.
 ```
 
 ```question

@@ -55,6 +55,16 @@ Transition metals can form more than one ion (Fe²⁺, Fe³⁺; Cu⁺, Cu²⁺).
 An ionic bond is the electrostatic attraction between oppositely charged ions. It acts in all directions, so ions pack into a giant three-dimensional lattice, each ion surrounded by ions of opposite charge.
 ```
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s2-1-2-ionic-bonds-and-binary-compounds-stud/img/fig-c32d8163ab6d5177.png
+caption: Working out an ionic formula: Mg²⁺ and Br⁻ combine in a 1 : 2 ratio to give MgBr₂.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s2-1-3-lattice-structures-and-properties-stu/img/fig-d1febf0a250ef126.png
+caption: Sodium chloride's giant ionic lattice: each ion is surrounded by six ions of opposite charge.
+```
+
 ```svg
 caption: Part of the sodium chloride lattice. Each Na⁺ is surrounded by six Cl⁻ ions, and each Cl⁻ by six Na⁺.
 <svg viewBox="0 0 300 220">
@@ -85,6 +95,21 @@ Al³⁺ and O²⁻ → Al₂O₃. Ca²⁺ and NO₃⁻ → Ca(NO₃)₂. NH₄�
 | Conduct when molten or dissolved, not when solid | Ions must be free to move; in the solid they are fixed |
 | Often soluble in water | Polar water molecules are attracted to the ions |
 | Brittle | A shift brings like charges together, which repel and split the crystal |
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s2-1-2-ionic-bonds-and-binary-compounds-stud/img/fig-a7828daa5493fa9b.png
+caption: Sodium transfers its outer electron to chlorine, forming Na⁺ and Cl⁻ ions with full outer shells.
+```
+
+```figure
+src: chemistry/_sme/the-ionic-model/img/fig-3395c88063772c6a.png
+caption: An ionic lattice is held together by strong electrostatic attractions between oppositely charged ions in all directions.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s2-1-3-lattice-structures-and-properties-stu/img/fig-013a89f901314b8d.png
+caption: Ionic compounds conduct only when molten or dissolved, when their ions are free to move; the solid does not conduct.
+```
 
 ## Lattice enthalpy
 

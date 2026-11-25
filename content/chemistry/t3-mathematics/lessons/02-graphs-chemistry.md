@@ -28,6 +28,11 @@ related:
 - Use most of the grid; plot points carefully.
 - Draw a smooth **best-fit line or curve**, not dot-to-dot; identify anomalous points.
 
+```figure
+src: chemistry/_sme/tool-3-mathematics/img/fig-8598da7296e515a3.png
+caption: Plotting p against 1/V straightens the curve into a line, which is easier to analyse than p against V.
+```
+
 ## Rates from tangents
 
 The rate at a time $t$ is the gradient of the **tangent** to a concentration–time curve at $t$. The **initial rate** is the tangent at $t = 0$.
@@ -48,6 +53,16 @@ ylabel: [A] / mol dm⁻³
 Turn a curve into a straight line by choosing the right axes; then read constants from the gradient and intercept.
 ```
 
+```figure
+src: chemistry/_sme/tool-3-mathematics/img/fig-1a686897870e4f07.png
+caption: Drawing a tangent: place the ruler so that it touches the curve at one point, with equal gaps either side.
+```
+
+```figure
+src: chemistry/_sme/tool-3-mathematics/img/fig-1435186426117a61.png
+caption: The gradient of a tangent at each point gives the rate at that concentration.
+```
+
 | Relationship | Plot | Gradient |
 |---|---|---|
 | Arrhenius: k = Ae^(−Ea/RT) | ln k against 1/T | −Ea/R |
@@ -63,6 +78,16 @@ k = 0.023 s⁻¹; t½ = ln 2/k = 0.693/0.023 = 30 s.
 ## Extrapolation in calorimetry
 
 Plot temperature against time before and after mixing; extrapolate the cooling line back to the time of mixing to find the temperature change that would have occurred with no heat loss.
+
+```figure
+src: chemistry/_sme/tool-3-mathematics/img/fig-7b9f1109e8cda1c7.png
+caption: Calorimetry: extrapolate the cooling line back to the time of mixing to find the temperature change corrected for heat loss.
+```
+
+```figure
+src: chemistry/_sme/tool-3-mathematics/img/fig-9fc52000f222870a.png
+caption: Interpolation reads values within the range of the data; extrapolation extends the line beyond it.
+```
 
 ```question
 tangent-rate

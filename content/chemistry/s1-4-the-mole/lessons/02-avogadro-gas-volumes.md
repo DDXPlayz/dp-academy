@@ -43,6 +43,16 @@ Molar mass $M$ is numerically equal to $M_r$ but has units g mol⁻¹.
 At the same temperature and pressure, equal volumes of any gases contain the same number of particles. So for reacting gases, volume ratios equal mole ratios.
 ```
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-4-6-avogadros-law-study-notes/img/fig-66193381438b5b50.png
+caption: At fixed temperature and pressure, the volume of a gas is directly proportional to its amount in moles (Avogadro's law).
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-4-6-avogadros-law-study-notes/img/fig-62c5eb6c3ee2fc5c.png
+caption: Equal volumes of different gases at the same temperature and pressure contain equal numbers of particles.
+```
+
 ```example
 What volume of oxygen reacts with 40 cm³ of methane, and what volume of CO₂ forms? CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l)
 ---

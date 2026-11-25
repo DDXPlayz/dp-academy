@@ -30,6 +30,11 @@ related:
 In a metal, atoms release their valence electrons into a "sea" of delocalised electrons that moves through a lattice of positive ions. The metallic bond is the electrostatic attraction between the cations and the delocalised electrons.
 ```
 
+```figure
+src: chemistry/_sme/the-metallic-model/img/fig-a40c2d86371f2678.png
+caption: Metal atoms lose their outer electrons into a shared, mobile sea; the bond is the electrostatic attraction between the cations and these electrons.
+```
+
 ## Explaining properties
 
 | Property | Explanation |
@@ -40,9 +45,29 @@ In a metal, atoms release their valence electrons into a "sea" of delocalised el
 | Lustre | Delocalised electrons absorb and re-emit light |
 | High melting point (most) | Strong attractions throughout the lattice |
 
+```figure
+src: chemistry/_iitian/the-metallic-model-ib-dp-chemistry-study-notes-iitian-academ/img/fig-aee36362bf2eaf38.png
+caption: Metallic bonding: a lattice of positive metal ions in a sea of delocalised electrons.
+```
+
+```figure
+src: chemistry/_iitian/the-metallic-model-ib-dp-chemistry-study-notes-iitian-academ/img/fig-f2b916b5d15dcb0f.png
+caption: Metals are malleable: layers of ions can slide over each other without breaking the metallic bond.
+```
+
 ## Strength of metallic bonding
 
 The bond is stronger when there are:
+
+```figure
+src: chemistry/_sme/the-metallic-model/img/fig-a804e49b34701ce8.png
+caption: Melting points fall down group 1 (Li to Cs): the ions get larger, so their attraction to the delocalised electrons weakens.
+```
+
+```figure
+src: chemistry/_sme/the-metallic-model/img/fig-3af6c1089a8e68f8.png
+caption: Melting points across period 3: they rise from Na to Al as the ions' charge and the number of delocalised electrons increase (Si is a covalent network; P to Ar are molecular).
+```
 
 - **more delocalised electrons** per atom (higher cation charge);
 - **smaller cations** (electrons closer to the nuclei).
@@ -56,6 +81,16 @@ Across period 3, the ions carry more charge (1+, 2+, 3+), are smaller and releas
 ## (HL) Transition elements
 
 Transition metals have **delocalised d electrons** as well as s electrons. More electrons in the sea and small ions give them high melting points, high densities and good conductivity compared with s-block metals.
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s2-3-3-transition-elements-and-delocalized-d/img/fig-f0aa5dab292393f1.png
+caption: The transition elements form the d-block, from group 3 to group 12.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s2-3-3-transition-elements-and-delocalized-d/img/fig-ceda91cc180e1ad1.png
+caption: Transition elements show several oxidation states, because 4s and 3d electrons are close in energy.
+```
 
 ```question
 metal-conduct

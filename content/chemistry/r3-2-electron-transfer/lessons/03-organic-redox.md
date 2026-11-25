@@ -26,6 +26,21 @@ related:
 
 Acidified potassium dichromate(VI) (Cr₂O₇²⁻/H⁺) oxidises alcohols; it changes from **orange** to **green** (Cr³⁺). [O] represents the oxidising agent.
 
+```figure
+src: chemistry/_sme/electron-transfer-reactions/img/fig-e07b65e15c45ea8f.png
+caption: Oxidation of alcohols: a primary alcohol gives an aldehyde and then a carboxylic acid.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-2-9-oxidation-of-organic-compounds-study-/img/fig-3492cb69990960cc.png
+caption: Heating with distillation removes the aldehyde as it forms, before it can be oxidised further.
+```
+
+```figure
+src: chemistry/_sme/electron-transfer-reactions/img/fig-1569ffe5d4c284d4.png
+caption: Acidified dichromate turns from orange to green with primary and secondary alcohols but stays orange with a tertiary alcohol.
+```
+
 ```keyidea
 Primary alcohol → aldehyde → carboxylic acid. Secondary alcohol → ketone. Tertiary alcohols are not oxidised.
 ```
@@ -57,6 +72,21 @@ How would you make (a) propanal and (b) propanoic acid from propan-1-ol?
 
 Reducing agents such as **NaBH₄** or **LiAlH₄** (represented as [H]) reverse the oxidation:
 
+```figure
+src: chemistry/_sme/electron-transfer-reactions/img/fig-405ecf37ee8dd6be.png
+caption: Reducing a ketone with 2[H] gives a secondary alcohol.
+```
+
+```figure
+src: chemistry/_sme/electron-transfer-reactions/img/fig-d8c4c0be8d74ef0d.png
+caption: Reducing an aldehyde gives a primary alcohol.
+```
+
+```figure
+src: chemistry/_sme/electron-transfer-reactions/img/fig-6332f83bebae9980.png
+caption: A carboxylic acid needs 4[H] to be reduced to a primary alcohol.
+```
+
 - aldehyde → primary alcohol; ketone → secondary alcohol (NaBH₄ or LiAlH₄);
 - carboxylic acid → primary alcohol (LiAlH₄ only; NaBH₄ is too weak).
 
@@ -65,6 +95,11 @@ Reducing agents such as **NaBH₄** or **LiAlH₄** (represented as [H]) reverse
 $$
 \text{CH}_2\text{=CH}_2 + \text{H}_2 \xrightarrow{\text{Ni, 150 °C}} \text{CH}_3\text{CH}_3
 $$
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-ib-dp-chemistry-r3-2-11-reduction-of-unsatur/img/fig-7142f1a7b0e3e9d9.png
+caption: With excess hydrogen and Pd/C, an alkyne is fully hydrogenated to an alkane.
+```
 
 Adding hydrogen lowers the **degree of unsaturation**. Partial hydrogenation of vegetable oils makes margarine (and can produce trans fats).
 

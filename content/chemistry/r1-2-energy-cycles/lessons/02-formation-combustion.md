@@ -33,10 +33,30 @@ related:
 - **ΔHf⦵** — one mole of compound formed from its **elements in their standard states**. E.g. $\text{C(s)} + 2\text{H}_2\text{(g)} \rightarrow \text{CH}_4\text{(g)}$. For any element in its standard state, ΔHf⦵ = 0.
 - **ΔHc⦵** — one mole of substance burned **completely** in oxygen. E.g. $\text{CH}_4 + 2\text{O}_2 \rightarrow \text{CO}_2 + 2\text{H}_2\text{O(l)}$.
 
+```figure
+src: chemistry/_iitian/energy-cycles-in-reactions-r1-2-3-standard-enthalpy-changes-/img/fig-f00f80f8353ffad3.png
+caption: The standard enthalpy of formation of methane: one mole formed from its elements in their standard states.
+```
+
+```figure
+src: chemistry/_iitian/energy-cycles-in-reactions-r1-2-3-standard-enthalpy-changes-/img/fig-9de5dcda5f97e4ba.png
+caption: The standard enthalpy of combustion of methane: one mole burned completely in oxygen.
+```
+
+```figure
+src: chemistry/_sme/energy-cycles-in-reactions/img/fig-270bbd910a9505a6.png
+caption: Using formation data: ΔH = ΣΔHf(products) − ΣΔHf(reactants).
+```
+
 ## Using formation data
 
 ```keyidea
 ΔH⦵ = ΣΔHf⦵(products) − ΣΔHf⦵(reactants). Both reactants and products can be made from the same elements, so the cycle closes.
+```
+
+```figure
+src: chemistry/_iitian/energy-cycles-in-reactions-r1-2-3-standard-enthalpy-changes-/img/fig-03b022d1959b1650.png
+caption: Using combustion data: ΔH = ΣΔHc(reactants) − ΣΔHc(products).
 ```
 
 ```example
@@ -52,6 +72,11 @@ $\Delta H = -1646 - (-278) = -1368$ kJ mol⁻¹.
 $$
 \Delta H^\ominus = \sum\Delta H_c^\ominus(\text{reactants}) - \sum\Delta H_c^\ominus(\text{products})
 $$
+
+```figure
+src: chemistry/_sme/energy-cycles-in-reactions/img/fig-09d409ce5fa842df.png
+caption: A combustion cycle for the formation of ethane: both routes end with the same combustion products, CO₂ and H₂O.
+```
 
 This works because both sides burn to the same products (CO₂ and H₂O).
 

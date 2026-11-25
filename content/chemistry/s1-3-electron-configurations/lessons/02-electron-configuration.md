@@ -34,6 +34,21 @@ related:
 - Each level splits into **sublevels**: s, p, d, f.
 - Each sublevel contains **orbitals**, each holding up to 2 electrons.
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-3-4-sublevels-and-orbitals-study-notes/img/fig-c458daecca872a7c.png
+caption: s orbitals are spherical and get larger as the energy level increases.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-3-4-sublevels-and-orbitals-study-notes/img/fig-5f96d33bd50c74c1.png
+caption: Each sublevel holds a fixed number of orbitals (s 1, p 3, d 5, f 7), each holding two electrons.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-3-4-sublevels-and-orbitals-study-notes/img/fig-a394c4265144b8bb.png
+caption: The diagonal rule gives the order in which sublevels fill: 1s, 2s, 2p, 3s, 3p, 4s, 3d …
+```
+
 | Sublevel | Orbitals | Max electrons |
 |---|---|---|
 | s | 1 | 2 |
@@ -47,6 +62,16 @@ related:
 
 ```keyidea
 Aufbau: fill the lowest energy orbitals first — 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p. Hund: spread out singly with parallel spins before pairing. Pauli: at most two electrons per orbital, with opposite spins.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-3-5-orbital-configurations-and-rules-stud/img/fig-37717992d932e3cc.png
+caption: Hund's rule: electrons fill orbitals of the same sublevel singly, with parallel spins, before pairing.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-3-5-orbital-configurations-and-rules-stud/img/fig-6c612ac410edcb36.png
+caption: The Pauli exclusion principle: two electrons in the same orbital must have opposite spins.
 ```
 
 ```example

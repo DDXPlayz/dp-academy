@@ -35,6 +35,16 @@ $$
 k = Ae^{-E_a/RT}
 $$
 
+```figure
+src: chemistry/_iitian/reactivity-how-fast-the-rate-of-chemical-change-r2-2-13-arrh/img/fig-b538b993e2a8782e.png
+caption: The Arrhenius equation: k = A e^(−Ea/RT).
+```
+
+```figure
+src: chemistry/_sme/how-fast-the-rate-of-chemical-change/img/fig-396f0ab4c2251ee0.png
+caption: Plotting ln k against 1/T gives a straight line with gradient −Ea/R and intercept ln A.
+```
+
 - $e^{-E_a/RT}$ is the fraction of collisions with energy ≥ Ea — it grows rapidly with T.
 - $A$ (the **Arrhenius factor**) reflects how often collisions occur with the correct orientation.
 
@@ -62,6 +72,11 @@ $-E_a/R = -9000$ → $E_a = 9000\times8.31 = 74\,800$ J mol⁻¹ $= 75$ kJ mol�
 $$
 \ln\frac{k_1}{k_2} = \frac{E_a}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right)
 $$
+
+```figure
+src: chemistry/_iitian/reactivity-how-fast-the-rate-of-chemical-change-r2-2-11-rate/img/fig-7df5605252a3d33a.png
+caption: The rate constant k rises exponentially with temperature.
+```
 
 ```example
 A rate constant doubles from 300 K to 310 K. Find Ea.

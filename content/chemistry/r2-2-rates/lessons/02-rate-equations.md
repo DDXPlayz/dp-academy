@@ -36,6 +36,21 @@ $$
 \text{rate} = k[\text{A}]^m[\text{B}]^n
 $$
 
+```figure
+src: chemistry/_iitian/reactivity-how-fast-the-rate-of-chemical-change-r2-2-9-rate-/img/fig-bf4d061f118768a4.png
+caption: Zero, first and second order: how the rate depends on [A], and how [A] changes with time.
+```
+
+```figure
+src: chemistry/_iitian/reactivity-how-fast-the-rate-of-chemical-change-r2-2-10-orde/img/fig-e2c0575184b37b45.png
+caption: The initial rate is the gradient of the tangent to the concentration-time curve at t = 0.
+```
+
+```figure
+src: chemistry/_iitian/reactivity-how-fast-the-rate-of-chemical-change-r2-2-10-orde/img/fig-37e60299e02e0f9f.png
+caption: A straight line through the origin on a rate against [A] graph shows the reaction is first order in A.
+```
+
 $m$ and $n$ are the **orders** with respect to A and B; $m + n$ is the **overall order**; $k$ is the **rate constant** (fixed at a given temperature).
 
 ```keyidea
@@ -80,6 +95,16 @@ rate = k[A][B]²; $k = \dfrac{2.0\times10^{-3}}{0.10\times0.10^2} = 2.0$ dm⁶ m
 ## Mechanisms
 
 Most reactions occur in several **elementary steps**. The **slowest** is the **rate-determining step** (RDS). The rate equation contains the species (and their numbers) involved up to and including the RDS.
+
+```figure
+src: chemistry/_iitian/reactivity-how-fast-the-rate-of-chemical-change-r2-2-7-energ/img/fig-c9bcca493e3c559a.png
+caption: A two-step mechanism: the step with the higher activation energy is the slow, rate-determining step.
+```
+
+```figure
+src: chemistry/_iitian/reactivity-how-fast-the-rate-of-chemical-change-r2-2-7-energ/img/fig-cfab55850af373f4.png
+caption: A two-step reaction passes through two transition states with a reaction intermediate between them.
+```
 
 ```example
 For 2NO₂ + F₂ → 2NO₂F the rate equation is rate = k[NO₂][F₂]. Suggest a mechanism.

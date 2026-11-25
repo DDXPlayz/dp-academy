@@ -35,6 +35,11 @@ $$
 \Delta G = \Delta H - T\Delta S
 $$
 
+```figure
+src: chemistry/_sme/entropy-spontaneity/img/fig-1c8ec45e14ffef71.png
+caption: Endothermic reactions: with a negative ΔS they are never feasible; with a positive ΔS they become feasible at high temperature.
+```
+
 ```keyidea
 A reaction is spontaneous (thermodynamically feasible) at constant pressure when ΔG is negative. Whether this happens depends on ΔH, ΔS and the temperature.
 ```
@@ -57,6 +62,21 @@ $\Delta G = 0$ when $T = \Delta H/\Delta S = 178/0.161 = 1106$ K. Above ~1110 K 
 ## ΔG and equilibrium
 
 As a reaction proceeds towards equilibrium, ΔG becomes less negative and reaches **zero at equilibrium**. The standard Gibbs change relates to the equilibrium constant:
+
+```figure
+src: chemistry/_iitian/entropy-and-spontaneity-r1-4-4-gibbs-free-energy-and-equilib/img/fig-f4d997754cd5f5fb.png
+caption: Gibbs energy falls from pure reactants to a minimum at equilibrium; the reaction moves spontaneously towards that minimum from either side.
+```
+
+```figure
+src: chemistry/_sme/entropy-spontaneity/img/fig-ad28d6dea4fa65cf.png
+caption: When ΔG is negative, the minimum of G lies close to the products: the equilibrium mixture is mostly products.
+```
+
+```figure
+src: chemistry/_sme/entropy-spontaneity/img/fig-f357cea80acb6284.png
+caption: When ΔG is positive, the minimum lies close to the reactants: the equilibrium mixture is mostly reactants.
+```
 
 $$
 \Delta G^\ominus = -RT\ln K

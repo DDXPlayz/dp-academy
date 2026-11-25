@@ -33,10 +33,25 @@ related:
 
 White light passed through a prism gives a **continuous spectrum** — every colour, no gaps. Light from excited atoms of one element gives a **line spectrum**: only certain colours, as sharp lines on a dark background.
 
+```figure
+src: chemistry/_iitian/electron-configurations-ib-dp-chemistry-study-notes-iitian-a/img/fig-18287afe7b3c14bc.png
+caption: White light gives a continuous spectrum; a heated gas gives a line spectrum of separate colours.
+```
+
 ## Where the lines come from
 
 ```keyidea
 Electrons in atoms occupy discrete energy levels. When an electron in an excited state falls to a lower level, the atom emits a photon whose energy equals the energy difference between the levels: ΔE = hν.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-3-2-hydrogen-emission-spectrum-study-note/img/fig-12b0278f21b899bd.png
+caption: Absorption raises an electron to a higher level; emission happens when it falls back, releasing a photon of energy ΔE = hf.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-3-2-hydrogen-emission-spectrum-study-note/img/fig-48bebb58c68ee739.png
+caption: Transitions in hydrogen: falls to n = 1 give the ultraviolet (Lyman) series, falls to n = 2 give the visible (Balmer) series.
 ```
 
 Because only certain energy gaps exist, only certain frequencies are emitted — hence lines, not a continuous band.
@@ -72,6 +87,11 @@ caption: Hydrogen energy levels get closer together as n increases. Falls to n =
 ## (HL) Convergence limit and ionisation
 
 The convergence limit corresponds to an electron falling from $n = \infty$ — that is, from outside the atom. So the energy at the convergence limit of the Lyman series equals the **ionisation energy** of hydrogen.
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-s1-3-6-ionization-energy-study-notes/img/fig-675a7a9e33cd2f68.png
+caption: Energy levels get closer together as n increases, so the spectral lines converge.
+```
 
 ```example
 (HL) The Lyman series of hydrogen converges at a frequency of 3.29 × 10¹⁵ Hz. Find the ionisation energy of hydrogen in kJ mol⁻¹.

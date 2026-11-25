@@ -38,6 +38,11 @@ related:
 | strong acid + weak base | ~1 | < 7 (~5) | shorter, in acidic region |
 | weak acid + weak base | ~3 | depends | no sharp jump |
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-1-13-ph-curves-of-acid-base-combinations-/img/fig-d81e76481c8969a0.png
+caption: Weak acid with strong base: a buffer region before the equivalence point, which lies above pH 7.
+```
+
 ```plot
 caption: Weak acid (pKa 4.76) titrated with strong base. A buffer region before equivalence; pH = pKa at half-equivalence (12.5 cm³); equivalence near pH 8.7.
 x: 0.5, 40
@@ -54,6 +59,11 @@ ylabel: pH
 
 At the **half-equivalence point**, half the HA has become A⁻, so [HA] = [A⁻] and
 
+```figure
+src: chemistry/_sme/proton-transfer-reactions/img/fig-7bdb7ac56579e2df.png
+caption: At the half-equivalence point of a weak acid-strong base titration, pH = pKa.
+```
+
 $$
 \text{pH} = \text{p}K_a
 $$
@@ -62,6 +72,16 @@ $$
 
 ```keyidea
 An indicator is a weak acid, HIn, whose acid form and conjugate base have different colours. It changes colour over about pKa(In) ± 1. Choose one whose range falls within the steep part of the pH curve.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-1-13-ph-curves-of-acid-base-combinations-/img/fig-0b66fa9ed5167a12.png
+caption: Strong acid with weak base: the equivalence point lies below pH 7.
+```
+
+```figure
+src: chemistry/_sme/proton-transfer-reactions/img/fig-f8bd5022ed007209.png
+caption: Weak acid with weak base: no sharp vertical section, so no indicator gives a clear end point.
 ```
 
 | Indicator | Range | Suitable for |
@@ -73,6 +93,16 @@ An indicator is a weak acid, HIn, whose acid form and conjugate base have differ
 ## Buffers
 
 A buffer contains a weak acid and its conjugate base in similar amounts (e.g. CH₃COOH/CH₃COO⁻):
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-1-14-acid-base-indicators-and-ph-changes-/img/fig-397b304c3eeea0d0.png
+caption: An indicator changes colour over about pKa ± 1, between the colours of HIn and In⁻.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r3-1-4-ph-and-the-hydrogen-ion-concentration/img/fig-ac359eb8eb57f0ae.png
+caption: Universal indicator colours across the pH range.
+```
 
 - Add H⁺: $\text{CH}_3\text{COO}^- + \text{H}^+ \rightarrow \text{CH}_3\text{COOH}$ — removed.
 - Add OH⁻: $\text{CH}_3\text{COOH} + \text{OH}^- \rightarrow \text{CH}_3\text{COO}^- + \text{H}_2\text{O}$ — removed.

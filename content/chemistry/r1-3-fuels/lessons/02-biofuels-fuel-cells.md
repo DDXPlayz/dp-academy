@@ -26,6 +26,16 @@ related:
 
 Photosynthesis fixes atmospheric carbon into glucose:
 
+```figure
+src: chemistry/_iitian/energy-from-fuels-r1-3-4-biofuels-ib-dp-chemistry-study-note/img/fig-52e27d726b1074aa.png
+caption: Making bioethanol: biomass is pretreated, hydrolysed to sugars, fermented by microorganisms and purified by distillation.
+```
+
+```figure
+src: chemistry/_iitian/energy-from-fuels-r1-3-4-biofuels-ib-dp-chemistry-study-note/img/fig-967335fea9b98e98.png
+caption: Biofuels are close to carbon neutral: the CO₂ released when they burn was taken in by the plants as they grew.
+```
+
 $$
 6\text{CO}_2 + 6\text{H}_2\text{O} \rightarrow \text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2
 $$
@@ -50,6 +60,16 @@ Biofuels release carbon that was captured from the air only recently, so in prin
 ## Fuel cells
 
 A fuel cell converts chemical energy directly to electrical energy, with no combustion. Fuel and oxygen are supplied continuously.
+
+```figure
+src: chemistry/_iitian/energy-from-fuels-r1-3-5-fuel-cells-ib-dp-chemistry-study-no/img/fig-aaa5800b8da2328c.png
+caption: A hydrogen fuel cell with an alkaline electrolyte: H₂ is oxidised at the anode, O₂ reduced at the cathode, and water is the only product.
+```
+
+```figure
+src: chemistry/_iitian/energy-from-fuels-r1-3-5-fuel-cells-ib-dp-chemistry-study-no/img/fig-0ef9f0139b21f277.png
+caption: A methanol fuel cell with an acidic electrolyte: H⁺ ions cross the membrane while electrons flow round the external circuit.
+```
 
 **Hydrogen fuel cell (acidic electrolyte):**
 

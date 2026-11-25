@@ -34,6 +34,16 @@ related:
 | Skeletal | a zig-zag of three lines ending in OH |
 | Stereochemical | wedges and dashes show 3D arrangement |
 
+```figure
+src: chemistry/_sme/functional-groups-classification-of-organic-compounds/img/fig-2db0f003bd69ddb4.png
+caption: Showing 3D structure: solid lines lie in the plane, solid wedges point forwards and dashed wedges point backwards.
+```
+
+```figure
+src: chemistry/_sme/functional-groups-classification-of-organic-compounds/img/fig-a90e2d24f225a2cf.png
+caption: Pentane as a full structural formula and as a condensed formula.
+```
+
 ## Functional groups
 
 | Class | Functional group | Example | Suffix / prefix |
@@ -52,10 +62,30 @@ related:
 | Amide | carboxamide –CONH₂ | ethanamide | -amide |
 | Arene | phenyl –C₆H₅ | methylbenzene | phenyl / -benzene |
 
+```figure
+src: chemistry/_iitian/functional-groups-classification-of-organic-compounds-ib-dp-/img/fig-ff6feb018ea07476.png
+caption: Ethers (R-O-R') and alkoxide ions (R-O⁻): the R groups stand for carbon chains.
+```
+
+```figure
+src: chemistry/_iitian/functional-groups-s3-2-3-homologous-series-ib-dp-chemistry-s/img/fig-ae9c497fa5eddf66.png
+caption: The carboxylic acid homologous series: each member differs from the next by CH₂.
+```
+
 ## Homologous series
 
 ```keyidea
 Members of a homologous series share a functional group and general formula, differ by CH₂, have similar chemical properties and show a gradual trend in physical properties.
+```
+
+```figure
+src: chemistry/_iitian/functional-groups-classification-of-organic-compounds-ib-dp-/img/fig-811d7e409fe22853.png
+caption: Halogenoalkanes contain the R-X group, where X is a halogen.
+```
+
+```figure
+src: chemistry/_sme/functional-groups-classification-of-organic-compounds/img/fig-8bcea7b74d807b94.png
+caption: Boiling points rise steadily with chain length in each homologous series; alcohols and acids boil higher because of hydrogen bonding.
 ```
 
 General formulas: alkanes CₙH₂ₙ₊₂, alkenes CₙH₂ₙ, alcohols CₙH₂ₙ₊₁OH, carboxylic acids CₙH₂ₙ₊₁COOH.

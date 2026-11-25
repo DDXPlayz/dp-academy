@@ -33,6 +33,16 @@ related:
 
 Rate is the change in concentration per unit time. In practice we follow something that changes during the reaction:
 
+```figure
+src: chemistry/_iitian/reactivity-how-fast-the-rate-of-chemical-change-r2-2-1-rate-/img/fig-0a311e7f965fdf88.png
+caption: Measuring rate by collecting gas in a gas syringe: the volume-time graph is steepest at the start and levels off when the reaction stops.
+```
+
+```figure
+src: chemistry/_sme/how-fast-the-rate-of-chemical-change/img/fig-de4754649a8649c9.png
+caption: Following the mass lost as a gas escapes: the rate is the gradient of the mass-time graph.
+```
+
 - **gas volume** (gas syringe) or **mass loss** (as gas escapes) against time;
 - **colour** change (colorimeter);
 - **pH** or **conductivity**;
@@ -44,6 +54,16 @@ The rate at any time is the **gradient of the tangent** to the concentration–t
 
 ```keyidea
 Particles react only when they collide with energy at least equal to the activation energy AND with the correct orientation. Anything that increases the frequency of successful collisions increases the rate.
+```
+
+```figure
+src: chemistry/_sme/how-fast-the-rate-of-chemical-change/img/fig-25dfff4ba81e5540.png
+caption: Higher pressure packs the particles closer together, so effective collisions happen more often.
+```
+
+```figure
+src: chemistry/_iitian/reactivity-how-fast-the-rate-of-chemical-change-r2-2-3-facto/img/fig-7bed6b403c0ac666.png
+caption: Breaking a solid into smaller pieces exposes more surface area, so more particles can collide.
 ```
 
 | Factor | Effect | Why |
@@ -64,6 +84,16 @@ f: 0.386*x*exp(-x*x/7)/1.6 | higher T
 vline: 3.5
 xlabel: kinetic energy
 ylabel: fraction of particles
+```
+
+```figure
+src: chemistry/_iitian/reactivity-how-fast-the-rate-of-chemical-change-r2-2-4-activ/img/fig-52c589763f7a4f64.png
+caption: The Maxwell-Boltzmann distribution: few particles have very low or very high energy; the curve starts at the origin and never touches the energy axis.
+```
+
+```figure
+src: chemistry/_sme/how-fast-the-rate-of-chemical-change/img/fig-bbe85e205af1d8a0.png
+caption: At a higher temperature the curve flattens and shifts right: many more particles have energy at or above Ea.
 ```
 
 - Increasing temperature: more particles have energy ≥ Ea → rate increases sharply.

@@ -41,6 +41,11 @@ Each successive ionisation energy is **larger** than the last: each electron is 
 A very large jump in successive ionisation energies means the next electron comes from a main energy level closer to the nucleus — less shielded and much more strongly attracted.
 ```
 
+```figure
+src: chemistry/_sme/electronic-configurations/img/fig-0071dee0c2c71add.png
+caption: Successive ionisation energies: large jumps show where an electron is removed from a shell closer to the nucleus.
+```
+
 ```plot
 caption: log₁₀ of successive ionisation energies of sodium (kJ mol⁻¹). One easy electron, then eight from n = 2, then two from n = 1 — the pattern 1, 8, 2.
 x: 0, 12

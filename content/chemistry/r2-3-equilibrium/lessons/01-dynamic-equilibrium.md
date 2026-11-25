@@ -31,6 +31,16 @@ related:
 In a closed system a reversible reaction reaches dynamic equilibrium: the forward and backward reactions continue at equal rates, so the concentrations of all species stay constant (but are usually not equal).
 ```
 
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r2-3-1-dynamic-equilibrium-study-notes-new-s/img/fig-dd87557701ae11f2.png
+caption: As reactants are used up the forward rate falls and the reverse rate rises, until both rates are equal: dynamic equilibrium.
+```
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r2-3-1-dynamic-equilibrium-study-notes-new-s/img/fig-297767395ebfee35.png
+caption: In a closed system the forward and reverse reactions continue at equal rates, so the concentrations stay constant.
+```
+
 ```plot
 caption: Approaching equilibrium. Reactant concentration falls and product rises until both level off; from then on the forward and backward rates are equal.
 x: 0, 10
@@ -46,6 +56,11 @@ Characteristics: closed system; constant macroscopic properties (colour, pressur
 ## The equilibrium constant
 
 For $a\text{A} + b\text{B} \rightleftharpoons c\text{C} + d\text{D}$:
+
+```figure
+src: chemistry/_iitian/ib-dp-chemistry-r2-3-3-magnitude-of-k-and-temperature-depend/img/fig-cfcfda0745905807.png
+caption: K ≈ 1: neither side favoured. K >> 1: products favoured. K << 1: reactants favoured.
+```
 
 $$
 K = \frac{[\text{C}]^c[\text{D}]^d}{[\text{A}]^a[\text{B}]^b}
