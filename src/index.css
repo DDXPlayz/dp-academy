@@ -272,6 +272,33 @@ html[data-text='lg'] .prose-lesson {
 
 /* Printing: only the page content, on white, with sensible page breaks. */
 @media print {
+  /* Always print in the light palette: dark-mode text is near-white and vanishes on paper. */
+  :root,
+  .dark {
+    --canvas: #ffffff;
+    --card: #ffffff;
+    --sunken: #f4f4f2;
+    --ink: #000000;
+    --ink-2: #27272a;
+    --muted: #52525b;
+    --line: #d4d4cf;
+    --line-strong: #a1a1aa;
+    --accent: #3730a3;
+    --accent-hover: #3730a3;
+    --accent-soft: #eef0ff;
+    --on-accent: #ffffff;
+    --good: #15803d;
+    --good-soft: #ecfdf3;
+    --bad: #b91c1c;
+    --bad-soft: #fef2f2;
+    --warn: #a16207;
+    --warn-soft: #fefce8;
+    color-scheme: light;
+  }
+  .dark .prose-lesson img.lesson-math {
+    filter: none;
+    mix-blend-mode: multiply;
+  }
   .app-chrome,
   .no-print {
     display: none !important;
