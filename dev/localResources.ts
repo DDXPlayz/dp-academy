@@ -4,6 +4,8 @@
  * available under /data/:
  *
  *   /data/bank.json        every imported question (merged from resources/question-bank/*.json)
+ *   /data/bank-tags.json   proposed topics for untagged questions (resources/question-bank/tags.json,
+ *                          written by scripts/tag_past_papers.py; optional)
  *   /data/bank/<file>      diagrams referenced by those questions
  *   /data/papers/<path>    original paper PDFs, so a question can open its source page
  *   /data/sme/<path>       original Save My Exams revision-note PDFs (resources/<subject folder>/...),
@@ -23,6 +25,8 @@ const PAPERS_DIR = 'resources/past-papers';
 const NOTES_DIR = 'resources/extracted';
 /** Folders of resources/ whose PDFs may be served under /data/sme/ (nothing else in resources/ is). */
 const SME_PDF_DIRS = ['Physics HL 2025', 'Chemistry HL 2025', 'Maths AA HL'];
+/** Not a question file: topic overrides, served separately as /data/bank-tags.json. */
+const TAGS_FILE = 'tags.json';
 
 /** Every diagram referenced by a ```figure block in the committed lessons. */
 export function referencedFigures(root: string): string[] {
@@ -77,7 +81,7 @@ export function mergedBank(root: string): unknown[] {
   if (!fs.existsSync(dir)) return [];
   return fs
     .readdirSync(dir)
-    .filter((f) => f.endsWith('.json'))
+    .filter((f) => f.endsWith('.json') && f !== TAGS_FILE)
     .sort()
     .flatMap((f) => {
       const data = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
@@ -172,6 +176,18 @@ export function localResources(): Plugin {
           res.end(JSON.stringify(mergedBank(root)));
           return;
         }
+        if (file === '/data/bank-tags.json') {
+          const tags = path.join(root, BANK_DIR, TAGS_FILE);
+          if (!fs.existsSync(tags)) {
+            res.statusCode = 404;
+            res.end('Not found');
+            return;
+          }
+          res.setHeader('Content-Type', 'application/json; charset=utf-8');
+          res.setHeader('Cache-Control', 'no-store');
+          fs.createReadStream(tags).pipe(res);
+          return;
+        }
         const [base, rel] = file.startsWith('/data/bank/')
           ? [path.join(root, BANK_DIR, 'img'), file.slice('/data/bank/'.length)]
           : file.startsWith('/data/papers/')
@@ -200,6 +216,8 @@ export function localResources(): Plugin {
       const data = path.join(outDir, 'data');
       fs.mkdirSync(data, { recursive: true });
       fs.writeFileSync(path.join(data, 'bank.json'), JSON.stringify(bank));
+      const tags = path.join(root, BANK_DIR, TAGS_FILE);
+      if (fs.existsSync(tags)) fs.copyFileSync(tags, path.join(data, 'bank-tags.json'));
       const imgs = copyDir(path.join(root, BANK_DIR, 'img'), path.join(data, 'bank'), (f) => !!TYPES[path.extname(f).toLowerCase()]);
       const papers = copyDir(path.join(root, PAPERS_DIR), path.join(data, 'papers'), (f) => f.toLowerCase().endsWith('.pdf'));
       let figs = 0;
