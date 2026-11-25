@@ -70,6 +70,11 @@ caption: An electron entering a uniform field at right angles follows a parabola
 </svg>
 ```
 
+```figure
+src: physics/_sme/motion-in-electromagnetic-fields/img/fig-49aeb8b353f57faa.png
+caption: Charged particles entering a uniform electric field at right angles follow a parabola: positive charges bend towards the negative plate, negative charges towards the positive one.
+```
+
 If a charge enters between parallel plates with velocity $v_0$ perpendicular to the field:
 
 - **along the plates:** no force, so constant velocity, $x = v_0t$;

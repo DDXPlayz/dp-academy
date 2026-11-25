@@ -39,6 +39,11 @@ related:
 
 To describe motion you need a viewpoint: an origin, axes and a clock. This is a **reference frame**. A passenger on a train and a person on the platform watching the train are using two different frames, and they disagree about how fast a cup on the table is moving.
 
+```figure
+src: physics/_sme/galilean-special-relativity/img/fig-00d83cbad391faef.png
+caption: A passenger on a moving train and an observer on the platform are in different reference frames and describe the same motion differently.
+```
+
 An **inertial frame** is one that is not accelerating. In an inertial frame, an object with no resultant force on it moves at constant velocity — Newton’s first law works. A frame in a car that is braking is *not* inertial: objects slide forward with no force pushing them.
 
 ## Galilean relativity

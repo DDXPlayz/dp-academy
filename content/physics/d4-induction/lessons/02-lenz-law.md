@@ -53,6 +53,11 @@ caption: Pushing a north pole into a coil. The induced current makes the near en
 </svg>
 ```
 
+```figure
+src: physics/_sme/induction/img/fig-6125ad112dd884f1.png
+caption: The induced current makes the coil's end into a pole that opposes the approaching magnet (Lenz's law).
+```
+
 1. **Which way is the flux?** The magnet’s field points out of its north pole, into the coil.
 2. **Is it changing?** The magnet is approaching, so the flux is **increasing**.
 3. **Oppose the change:** the coil’s own field must point the other way — its near end becomes a **north** pole, repelling the magnet.
@@ -69,6 +74,16 @@ Upward flux is decreasing, so the induced field must point **upwards** to top it
 ## Why it must be so: energy
 
 If the induced current helped the change instead, the magnet would be pulled in faster, inducing a bigger current, pulling harder still — energy from nothing. Lenz’s law guarantees you have to **do work** to induce a current, and that work becomes the electrical energy in the circuit.
+
+```figure
+src: physics/_sme/induction/img/fig-c1ae4c1053abe6b5.png
+caption: Pushing a magnet into a coil changes the flux linkage and induces an emf, which the voltmeter shows.
+```
+
+```figure
+src: physics/_sme/induction/img/fig-07770e559c3cd395.png
+caption: When the field through a coil increases, the induced current produces a field that opposes the increase.
+```
 
 The same idea explains **eddy current braking**: a metal plate moving through a magnetic field has currents induced in it, and their forces oppose the motion, converting kinetic energy into internal energy.
 

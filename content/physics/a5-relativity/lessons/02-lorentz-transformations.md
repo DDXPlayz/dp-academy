@@ -42,6 +42,11 @@ related:
 
 In 1905 Einstein built special relativity on two statements:
 
+```figure
+src: physics/_sme/galilean-special-relativity/img/fig-76badabcf607a113.png
+caption: Light leaves the torch at c whether or not the runner is moving: the speed of light is the same in every inertial frame.
+```
+
 1. **The laws of physics are the same in all inertial reference frames.** (This extends Galilean relativity from mechanics to all of physics, including electromagnetism.)
 2. **The speed of light in a vacuum, $c$, is the same for every inertial observer**, regardless of how the source or the observer is moving.
 

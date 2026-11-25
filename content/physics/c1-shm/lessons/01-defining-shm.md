@@ -44,6 +44,11 @@ A mass bouncing on a spring, a swinging pendulum, a guitar string, the atoms in 
 
 An object moves with SHM when the resultant force on it
 
+```figure
+src: physics/_iitian/ibdp-physics-slhl-c-1-simple-harmonic-motion-study-notes-fir/img/fig-437c3680332cc5a3.png
+caption: For SHM the restoring force always points back towards equilibrium, opposite to the displacement x.
+```
+
 1. is **proportional to its displacement** from equilibrium, and
 2. always acts **towards the equilibrium position**.
 
@@ -73,6 +78,11 @@ ylabel: a / m s⁻²
 | period | $T$ | time for one oscillation |
 | frequency | $f$ | oscillations per second (Hz) |
 | angular frequency | $\omega$ | $2\pi f$, in rad s⁻¹ |
+
+```figure
+src: physics/_sme/simple-harmonic-motion/img/fig-c9b3eb6ee6fc4a81.png
+caption: A displacement-time graph of an oscillation: sinusoidal, with the amplitude as the peak and the period as one full cycle.
+```
 
 They are linked by
 

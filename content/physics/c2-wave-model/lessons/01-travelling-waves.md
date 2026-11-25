@@ -70,6 +70,11 @@ caption: In a transverse wave the particles move perpendicular to the wave direc
 </svg>
 ```
 
+```figure
+src: physics/_sme/wave-model/img/fig-c84efab275199edd.png
+caption: In a transverse wave the particles oscillate at right angles to the direction the wave travels and transfers energy.
+```
+
 - **Transverse:** oscillation perpendicular to energy transfer — waves on a string, water ripples, all electromagnetic waves.
 - **Longitudinal:** oscillation parallel to energy transfer, producing **compressions** and **rarefactions** — sound, some seismic waves.
 
@@ -83,6 +88,11 @@ caption: In a transverse wave the particles move perpendicular to the wave direc
 | period | $T$ | time for one complete oscillation of a point |
 | frequency | $f$ | oscillations per second, $f = 1/T$ |
 | wave speed | $v$ | speed at which the wave (energy) travels |
+
+```figure
+src: physics/_sme/wave-model/img/fig-0a53f876bdf3f2e1.png
+caption: A displacement-time graph for one point on a wave: the time for one full oscillation is the period T.
+```
 
 In one period the wave moves forward one wavelength, so
 

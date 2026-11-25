@@ -40,6 +40,16 @@ As an ambulance approaches, its siren sounds higher; as it passes and moves away
 
 A stationary source emits circular wavefronts centred on itself. A **moving** source emits each new wavefront from a slightly different position:
 
+```figure
+src: physics/_iitian/the-doppler-effect-at-low-speeds-ib-dp-physics-study-notes/img/fig-bd94c0296a576d7c.png
+caption: A moving source bunches up the wavefronts ahead of it (higher frequency heard) and spreads them out behind (lower frequency).
+```
+
+```figure
+src: physics/_iitian/ibdp-physics-slhl-c-5-doppler-effect-study-notes-first-asses/img/fig-2e6070c150adbae4.png
+caption: An ambulance siren sounds higher-pitched as it approaches and lower as it moves away.
+```
+
 - in front of the source the wavefronts bunch up — **shorter wavelength, higher observed frequency**;
 - behind it they spread out — **longer wavelength, lower observed frequency**.
 
@@ -63,6 +73,11 @@ If instead the **observer** moves towards a stationary source, they meet wavefro
 ## The Doppler effect for light
 
 Light shows the same effect. Because light speed is so large, for everyday and most astronomical speeds ($v \ll c$):
+
+```figure
+src: physics/_sme/doppler-effect/img/fig-5f1135b44130b7eb.png
+caption: Light from a receding galaxy is redshifted: its absorption lines move towards longer wavelengths compared with a source at rest.
+```
 
 $$
 \frac{\Delta f}{f} = \frac{\Delta\lambda}{\lambda} \approx \frac{v}{c}
@@ -88,6 +103,16 @@ Almost every distant galaxy is redshifted, and the further away it is, the large
 - **Radar speed guns** measure the frequency shift of microwaves reflected from a moving car.
 - **Doppler ultrasound** measures the speed of blood flow in arteries.
 - **Rotating stars and binary stars** show alternating red- and blueshifts as they move towards and away from us.
+
+```figure
+src: physics/_iitian/ibdp-physics-slhl-c-5-doppler-effect-study-notes-first-asses/img/fig-154d05fcd3c42764.png
+caption: Doppler weather radar measures the speed of rain and wind from the frequency shift of the reflected microwaves.
+```
+
+```figure
+src: physics/_iitian/ibdp-physics-slhl-c-5-doppler-effect-study-notes-first-asses/img/fig-030458e3c8882234.png
+caption: A police speed gun measures a car's speed from the Doppler shift of the reflected radio or laser waves.
+```
 
 ```question
 redshift-speed

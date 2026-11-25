@@ -67,6 +67,11 @@ The kinetic energy is half the size of the potential energy, and the total energ
 
 To escape to infinity, an object needs enough kinetic energy to make its total energy at least zero:
 
+```figure
+src: physics/_sme/gravitational-fields/img/fig-74f7038c6e7dcb65.png
+caption: A projectile launched at the escape speed has enough kinetic energy to reach infinity.
+```
+
 $$
 \tfrac{1}{2}mv_{\text{esc}}^2 - \frac{GMm}{r} = 0 \quad\Rightarrow\quad v_{\text{esc}} = \sqrt{\frac{2GM}{r}}
 $$
@@ -84,6 +89,11 @@ Escape speed is √2 × orbital speed at the same radius, and it does not depend
 ## Atmospheric drag and orbital decay
 
 Satellites in low orbits brush against the thin upper atmosphere. The small drag force does negative work, so the satellite’s **total energy decreases** (becomes more negative). Because $E_{\text{total}} = -GMm/2r$, a lower energy means a **smaller orbital radius**. And because $v = \sqrt{GM/r}$, the satellite ends up moving **faster**.
+
+```figure
+src: physics/_sme/gravitational-fields/img/fig-53c4f3a28b49f120.png
+caption: A satellite in low orbit loses energy to atmospheric drag and gradually spirals inwards: orbital decay.
+```
 
 So drag makes a satellite spiral slowly inwards while speeding up — until it re-enters the denser atmosphere and burns up, unless its engines boost it back.
 

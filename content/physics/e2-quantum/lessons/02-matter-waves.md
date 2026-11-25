@@ -51,6 +51,11 @@ $\lambda = h/p = 6.63\times10^{-34}/6.6\times10^{-24} = 1.0\times10^{-10}$ m —
 
 A beam of electrons fired through a thin film of graphite produces **rings** on a fluorescent screen — a diffraction pattern, just like light through a grating. The crystal’s atoms act as the "slits".
 
+```figure
+src: physics/_sme/quantum-physics/img/fig-8d37048e3e71ed6c.png
+caption: Electron diffraction: electrons passing through a thin graphite target produce rings on a screen, just as waves would.
+```
+
 - Increase the accelerating voltage → electrons have more momentum → shorter wavelength → **smaller rings**.
 - The measured ring sizes match the de Broglie wavelength.
 

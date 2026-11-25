@@ -46,6 +46,11 @@ Two people climb the same flight of stairs. They do the same work against gravit
 
 $$P = \frac{\Delta W}{\Delta t}$$
 
+```figure
+src: physics/_sme/work-energy-power/img/fig-68bd5af09e6761b5.png
+caption: Two motors lift the same weight through the same height and do the same work; the faster one has more power.
+```
+
 One watt is one joule per second.
 
 ```example
@@ -73,6 +78,11 @@ $$P = Fv = 800 \times 25 = 20\,000\ \text{W} = 20\ \text{kW}$$
 ## Efficiency
 
 No real machine transfers all of its input energy usefully — some is always dissipated as thermal energy or sound.
+
+```figure
+src: physics/_iitian/ibdp-physics-slhl-a-3-work-energy-and-power-study-notes-firs/img/fig-269a674bd90b09aa.png
+caption: A Sankey diagram: the total energy in splits into useful energy out and wasted energy; arrow widths show the amounts.
+```
 
 $$\eta = \frac{\text{useful output}}{\text{total input}}$$
 

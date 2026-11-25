@@ -18,6 +18,28 @@ import type { Plugin } from 'vite';
 
 const BANK_DIR = 'resources/question-bank';
 const PAPERS_DIR = 'resources/past-papers';
+const NOTES_DIR = 'resources/extracted';
+
+/** Every diagram referenced by a ```figure block in the committed lessons. */
+export function referencedFigures(root: string): string[] {
+  const out = new Set<string>();
+  const walk = (dir: string) => {
+    if (!fs.existsSync(dir)) return;
+    for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, e.name);
+      if (e.isDirectory()) walk(full);
+      else if (e.name.endsWith('.md')) {
+        const text = fs.readFileSync(full, 'utf8');
+        for (const m of text.matchAll(/```figure\s*\n([\s\S]*?)```/g)) {
+          const src = m[1].match(/^src:\s*(.+)$/m)?.[1]?.trim();
+          if (src) out.add(src);
+        }
+      }
+    }
+  };
+  walk(path.join(root, 'content'));
+  return [...out].sort();
+}
 const TYPES: Record<string, string> = {
   '.png': 'image/png',
   '.jpg': 'image/jpeg',
@@ -25,6 +47,7 @@ const TYPES: Record<string, string> = {
   '.gif': 'image/gif',
   '.svg': 'image/svg+xml',
   '.pdf': 'application/pdf',
+  '.html': 'text/html; charset=utf-8', // dev-only contact sheets under resources/extracted/_sheets
 };
 
 /** Resolves a client-supplied relative path inside `base`, or null if it escapes. */
@@ -93,7 +116,9 @@ export function localResources(): Plugin {
           ? [path.join(root, BANK_DIR, 'img'), file.slice('/data/bank/'.length)]
           : file.startsWith('/data/papers/')
             ? [path.join(root, PAPERS_DIR), file.slice('/data/papers/'.length)]
-            : [null, null];
+            : file.startsWith('/data/notes/')
+              ? [path.join(root, NOTES_DIR), file.slice('/data/notes/'.length)]
+              : [null, null];
         const full = base ? resolveInside(base, rel) : null;
         const type = full ? TYPES[path.extname(full).toLowerCase()] : undefined;
         if (!full || !type || !fs.existsSync(full) || !fs.statSync(full).isFile()) {
@@ -115,7 +140,16 @@ export function localResources(): Plugin {
       fs.writeFileSync(path.join(data, 'bank.json'), JSON.stringify(bank));
       const imgs = copyDir(path.join(root, BANK_DIR, 'img'), path.join(data, 'bank'), (f) => !!TYPES[path.extname(f).toLowerCase()]);
       const papers = copyDir(path.join(root, PAPERS_DIR), path.join(data, 'papers'), (f) => f.toLowerCase().endsWith('.pdf'));
-      this.info?.(`private data: ${bank.length} questions, ${imgs} images, ${papers} papers`);
+      let figs = 0;
+      for (const rel of referencedFigures(root)) {
+        const src = resolveInside(path.join(root, NOTES_DIR), rel);
+        const dst = resolveInside(path.join(data, 'notes'), rel);
+        if (!src || !dst || !fs.existsSync(src)) continue;
+        fs.mkdirSync(path.dirname(dst), { recursive: true });
+        fs.copyFileSync(src, dst);
+        figs++;
+      }
+      this.info?.(`private data: ${bank.length} questions, ${imgs} images, ${papers} papers, ${figs} lesson diagrams`);
     },
   };
 }

@@ -53,6 +53,11 @@ It is a vector, pointing the same way as the velocity.
 
 Newton originally wrote his second law in terms of momentum: the resultant force equals the rate of change of momentum,
 
+```figure
+src: physics/_sme/forces-momentum/img/fig-1f910be21c694231.png
+caption: Moving the hands back while catching increases the stopping time, so the same change in momentum needs a smaller force.
+```
+
 $$F = \frac{\Delta p}{\Delta t}$$
 
 For a constant mass this is the same as $F = ma$. Rearranged, it says that a force acting for a time produces a change in momentum called the **impulse**:
@@ -91,6 +96,11 @@ collision
 
 Momentum is conserved in every collision of an isolated system. Kinetic energy is a different matter.
 
+```figure
+src: physics/_iitian/ib-dp-physics-collisions-study-notes/img/fig-70cb106207bebcb7.png
+caption: In a perfectly inelastic collision the objects stick together; total momentum is conserved but kinetic energy is not.
+```
+
 - In an **elastic** collision, total kinetic energy is also conserved.
 - In an **inelastic** collision, some kinetic energy becomes thermal energy, sound or deformation. When the objects stick together, the loss is as large as it can be.
 
@@ -109,6 +119,11 @@ Kinetic energy before $= \tfrac12 (2.0)(3.0)^2 = 9.0$ J. After $= \tfrac12 (3.0)
 ## Explosions
 
 In an explosion, objects that start at rest fly apart. The total momentum before is zero, so it must be zero afterwards: the pieces move in opposite directions with equal and opposite momenta. This is why a rifle recoils and how a rocket accelerates.
+
+```figure
+src: physics/_iitian/ib-dp-physics-collisions-study-notes/img/fig-2fca783c3ca56738.png
+caption: A cannon firing a shell: total momentum is zero before and after, so the cannon recoils backwards.
+```
 
 ## Try it yourself
 

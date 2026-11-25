@@ -44,6 +44,16 @@ Thermal energy moves from hotter to colder places by
 
 At the hot end of a metal rod, particles vibrate with more kinetic energy. They collide with their neighbours and pass some of that energy on, so energy spreads towards the cold end even though the particles stay in place. In metals, **free electrons** also move through the lattice and carry energy quickly, which is why metals are good conductors.
 
+```figure
+src: physics/_iitian/thermal-energy-transfer-ib-dp-physics-study-notes/img/fig-1bcaec02e4ce926e.png
+caption: Conduction: vibrating particles at the hot end pass energy along to their neighbours (free electrons do this very effectively in metals).
+```
+
+```figure
+src: physics/_sme/thermal-energy-transfers/img/fig-a49d92f9741beaa1.png
+caption: Rate of conduction through a slab depends on the conductivity, the cross-sectional area and the temperature gradient ΔT/Δx.
+```
+
 The rate of conduction through a slab of material is
 
 $$
@@ -85,6 +95,11 @@ Good insulators (air, wool, polystyrene) have low k. Many insulating materials w
 ## Convection
 
 In a liquid or gas, the fluid near a heater warms up and expands. Its **density falls**, so it rises, and cooler, denser fluid sinks to take its place. This sets up a **convection current** that carries energy around the fluid.
+
+```figure
+src: physics/_iitian/thermal-energy-transfer-ib-dp-physics-study-notes/img/fig-54112d2395833390.png
+caption: A convection current: warm fluid expands and rises, cooler denser fluid sinks to replace it.
+```
 
 Convection explains sea breezes, the circulation in a heated room, and the motion of the Earth’s mantle. It needs a fluid and a gravitational field.
 

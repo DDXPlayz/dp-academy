@@ -41,6 +41,11 @@ Compton fired X-rays at a graphite target and measured the wavelength of the X-r
 Treat the X-ray as a photon with energy hf and momentum h/λ colliding with an electron. The electron recoils and takes some energy; the photon is left with less energy, so its wavelength increases.
 ```
 
+```figure
+src: physics/_iitian/matter-waves-ib-dp-physics-study-notes/img/fig-b62a116885c0373d.png
+caption: Compton scattering: a photon collides with an electron and leaves with a longer wavelength; the electron recoils like a particle.
+```
+
 Applying conservation of energy and momentum to this collision gives
 
 $$

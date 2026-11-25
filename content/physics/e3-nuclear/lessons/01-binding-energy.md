@@ -74,6 +74,11 @@ ylabel: E_B / A (MeV)
 vline: 56 | Fe-56
 ```
 
+```figure
+src: physics/_iitian/radioactivity-ib-dp-physics-study-notes/img/fig-22d7901192fdd7aa.png
+caption: Binding energy per nucleon against nucleon number: it peaks near iron-56, so fusion of light nuclei and fission of heavy ones both release energy.
+```
+
 ```keyidea
 Energy is released by any nuclear reaction whose products have a greater binding energy per nucleon than the reactants — fusion of light nuclei, or fission of heavy ones.
 ```
@@ -81,6 +86,16 @@ Energy is released by any nuclear reaction whose products have a greater binding
 ## The strong nuclear force
 
 Protons in the nucleus repel each other electrically, yet the nucleus holds together. The **strong nuclear force**:
+
+```figure
+src: physics/_sme/radioactive-decay/img/fig-bb7f0cb4c3b9a78e.png
+caption: Protons repel each other electrostatically, but the strong nuclear force between all nucleons holds the nucleus together.
+```
+
+```figure
+src: physics/_sme/radioactive-decay/img/fig-e3b6400526f58f6d.png
+caption: The strong force is strongly attractive at about 1 fm, repulsive at shorter range, and negligible beyond about 3 fm.
+```
 
 - attracts nucleons (protons and neutrons alike) to each other;
 - has a very short range, about $10^{-15}$ m — so each nucleon only feels its nearest neighbours;
@@ -91,6 +106,11 @@ Protons in the nucleus repel each other electrically, yet the nucleus holds toge
 - **Evidence** for the strong force: nuclei exist at all despite proton repulsion; high-energy scattering deviates from Rutherford’s Coulomb-only prediction once the projectile reaches the nucleus.
 - **Neutron–proton ratio:** light stable nuclei have $N \approx Z$. Heavier nuclei need extra neutrons, which add strong-force attraction without adding electric repulsion. Nuclei too far from the stability band decay.
 - **Above A ≈ 60** the binding energy per nucleon is roughly **constant** (about 8 MeV, falling slowly): because the strong force is short-range, each nucleon interacts only with its neighbours, so adding nucleons adds about the same binding energy each time.
+
+```figure
+src: physics/_iitian/radioactivity-ib-dp-physics-study-notes/img/fig-82a28ffbcf608dcc.png
+caption: Stable nuclei (black) follow N = Z for light elements but need extra neutrons as Z increases; the type of decay depends on which side of the line a nucleus lies.
+```
 
 ```question
 mass-defect-calc

@@ -33,6 +33,16 @@ related:
 
 Sound is a **longitudinal mechanical wave**. A vibrating source pushes on neighbouring air molecules, creating **compressions** (higher pressure) and **rarefactions** (lower pressure) that travel outwards.
 
+```figure
+src: physics/_sme/wave-model/img/fig-84f0d0e82e2ce60f.png
+caption: In a longitudinal wave the particles oscillate parallel to the direction of travel, forming compressions and rarefactions.
+```
+
+```figure
+src: physics/_iitian/mechanical-pulses-and-waves-ib-dp-physics-study-notes/img/fig-6f96e0aa19e64110.png
+caption: A loudspeaker cone vibrates back and forth, pushing the air into compressions and rarefactions: a sound wave.
+```
+
 - Sound needs a medium. In a vacuum there are no particles to carry it.
 - Its speed depends on the medium: about 340 m s⁻¹ in air, 1500 m s⁻¹ in water and over 5000 m s⁻¹ in steel.
 - **Pitch** depends on frequency and **loudness** on amplitude. Humans hear roughly 20 Hz – 20 kHz.
@@ -46,6 +56,11 @@ $\lambda = v/f = 340/440 = 0.77$ m.
 ## Electromagnetic waves
 
 An **electromagnetic (EM) wave** consists of oscillating electric and magnetic fields at right angles to each other and to the direction of travel. It is therefore **transverse**. Because the fields can exist in empty space, EM waves need no medium, and in a vacuum they all travel at
+
+```figure
+src: physics/_sme/wave-model/img/fig-da478bbe4c14718b.png
+caption: An electromagnetic wave: oscillating electric and magnetic fields at right angles to each other and to the direction of travel.
+```
 
 $$
 c = 3.00\times10^8\ \text{m s}^{-1}
@@ -63,6 +78,16 @@ $$
 | X-ray | 0.01 – 10 nm | medical imaging |
 | Gamma | < 0.01 nm | cancer treatment |
 
+```figure
+src: physics/_sme/wave-model/img/fig-620b89c945b536a6.png
+caption: Short wavelength means high frequency, long wavelength means low frequency, since c = fλ is fixed.
+```
+
+```figure
+src: physics/_iitian/electromagnetic-waves-ib-dp-physics-study-notes/img/fig-a6f2ffe677390be5.png
+caption: The electromagnetic spectrum from radio waves to gamma rays, in order of increasing frequency.
+```
+
 ```keyidea
 Moving down the table, wavelength decreases and frequency (and photon energy) increases — but in a vacuum the speed is always c.
 ```
@@ -75,6 +100,11 @@ Moving down the table, wavelength decreases and frequency (and photon energy) in
 | What oscillates | particles of the medium | electric and magnetic fields |
 | Type | transverse or longitudinal | always transverse |
 | Speed | depends on medium, much less than c | c in a vacuum |
+
+```figure
+src: physics/_sme/wave-model/img/fig-388a821faa678574.png
+caption: Electromagnetic waves can cross the vacuum of space; mechanical waves such as water waves need a medium.
+```
 
 ```example
 A radio station broadcasts at 98 MHz. Find the wavelength.

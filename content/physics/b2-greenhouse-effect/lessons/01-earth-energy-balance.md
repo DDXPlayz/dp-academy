@@ -62,6 +62,16 @@ so a real surface radiates $P = e\sigma AT^4$. A black body has $e = 1$.
 
 Some incoming sunlight is reflected straight back by clouds, ice and the ground. The fraction reflected is the **albedo**:
 
+```figure
+src: physics/_sme/greenhouse-effect/img/fig-dad6fc15386ace17.png
+caption: Pale surfaces like snow and ice reflect most incoming radiation (high albedo); dark surfaces like asphalt absorb most of it (low albedo).
+```
+
+```figure
+src: physics/_iitian/energy-balance-of-the-earth-ib-dp-physics-study-notes/img/fig-4602b6c5056ca364.png
+caption: Earth's energy budget in W m⁻²: incoming solar radiation, the part reflected, and the energy absorbed and re-emitted by the surface and atmosphere.
+```
+
 $$
 \alpha = \frac{\text{total scattered power}}{\text{total incident power}}
 $$
@@ -71,6 +81,11 @@ Earth’s albedo averages about 0.30 but **varies** from day to day with cloud c
 ## The solar constant and the factor of four
 
 At Earth’s distance the Sun delivers about $S = 1360$ W m⁻² to a surface facing it directly. But the Earth intercepts sunlight only over its **cross-section**, a disc of area $\pi R^2$, while it radiates (and is averaged) over its whole **surface**, $4\pi R^2$:
+
+```figure
+src: physics/_sme/greenhouse-effect/img/fig-2a71e21ee3f3af70.png
+caption: Earth intercepts sunlight over a disc of area πR² but spreads it over a sphere of area 4πR², which gives the factor of four.
+```
 
 $$
 I_{\text{mean}} = \frac{S\,\pi R^2}{4\pi R^2} = \frac{S}{4} \approx 340\ \text{W m}^{-2}

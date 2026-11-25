@@ -37,9 +37,19 @@ related:
 
 Displace a system and let go, and it oscillates at its **natural frequency** $f_0$. If instead an outside force pushes it repeatedly at a **driving frequency** $f_d$, it is made to oscillate at $f_d$ — a **forced oscillation**.
 
+```figure
+src: physics/_sme/standing-waves-resonance/img/fig-db2598b3dce7ff6a.png
+caption: Pushing a swing at its natural frequency is a forced oscillation that builds up a large amplitude: resonance.
+```
+
 ## Resonance
 
 The amplitude of a forced oscillation depends on how close the driving frequency is to the natural frequency. When $f_d \approx f_0$, energy is fed in at exactly the right moment each cycle and the amplitude grows large: this is **resonance**.
+
+```figure
+src: physics/_sme/standing-waves-resonance/img/fig-a619ce7557de6b71.png
+caption: A resonance curve: the amplitude peaks when the driving frequency equals the natural frequency.
+```
 
 ```plot
 caption: Resonance curves. Light damping gives a tall, sharp peak at the natural frequency f₀; heavier damping gives a lower, broader peak.
@@ -58,6 +68,11 @@ Resonance can be useful — tuning a radio, microwave ovens, musical instruments
 ## Damping
 
 Real oscillators lose energy to friction and air resistance — **damping**. The more damping, the faster the amplitude dies away.
+
+```figure
+src: physics/_iitian/resonance-and-damping-ib-dp-physics-study-notes/img/fig-b605fe03085d13c4.png
+caption: Damping removes energy from an oscillation: light damping lets it decay slowly, heavier damping stops it sooner.
+```
 
 - **Light (under-) damping:** the system oscillates with gradually decreasing amplitude; the period is almost unchanged.
 - **Critical damping:** the system returns to equilibrium in the **shortest possible time without oscillating**.

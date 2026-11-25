@@ -74,6 +74,11 @@ caption: Left — the radial field of a spherical mass; lines point inwards and 
 </svg>
 ```
 
+```figure
+src: physics/_sme/gravitational-fields/img/fig-31e761ec5853448f.png
+caption: Radial field lines spread out from a planet; close to the surface they are nearly parallel, so the field there is roughly uniform.
+```
+
 - Field lines show the **direction of the force** on a mass — always towards the attracting mass.
 - The **closer together** the lines, the **stronger** the field.
 - Lines never cross.

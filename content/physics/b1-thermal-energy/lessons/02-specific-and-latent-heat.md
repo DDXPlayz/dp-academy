@@ -40,6 +40,11 @@ related:
 
 When a solid is heated, its particles vibrate more and its temperature rises. At the melting point something different happens: the energy supplied goes into **breaking the bonds** that hold the particles in fixed positions. Particle kinetic energy (and so the temperature) stays the same; the **potential energy** increases.
 
+```figure
+src: physics/_sme/thermal-energy-transfers/img/fig-db95ec80f9aa39ff.png
+caption: A heating curve: temperature rises within each phase but stays constant while the substance melts or boils.
+```
+
 ```keyidea
 During a phase change, energy is transferred but the temperature does not change. The energy goes into intermolecular potential energy, not kinetic energy.
 ```
@@ -86,6 +91,11 @@ $Q = mc\Delta T = 1.5 \times 4200 \times 80 = 5.0\times10^5$ J.
 
 At the melting or boiling point,
 
+```figure
+src: physics/_sme/thermal-energy-transfers/img/fig-10c2411acfdb05b0.png
+caption: Equal masses of water and copper: water has the much larger specific heat capacity, so it takes longer to heat up or cool down.
+```
+
 $$
 Q = mL
 $$
@@ -107,6 +117,11 @@ Total $= 95\,400$ J $\approx 9.5\times10^4$ J. Melting takes by far the largest 
 ## Mixing problems
 
 When substances at different temperatures are mixed in an insulated container, energy flows until they share a final temperature. If no energy is lost:
+
+```figure
+src: physics/_sme/thermal-energy-transfers/img/fig-810ab679ee107f22.png
+caption: When a hot and a cold object are mixed, their temperatures approach a common final value; energy lost by one equals energy gained by the other.
+```
 
 $$
 \text{energy lost by the hotter substance} = \text{energy gained by the cooler substance}

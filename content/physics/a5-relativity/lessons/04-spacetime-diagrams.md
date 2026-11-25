@@ -34,6 +34,16 @@ related:
 
 A **space–time diagram** plots position $x$ horizontally and $ct$ vertically. Using $ct$ (a distance) means both axes have the same units, and a light ray moving at $c$ appears at exactly **45°**.
 
+```figure
+src: physics/_sme/galilean-special-relativity/img/fig-a49afa9ca8fd1cf1.png
+caption: World lines on a spacetime diagram: a slower object has a steeper line; light is drawn at 45°.
+```
+
+```figure
+src: physics/_iitian/spacetime-diagrams-ib-dp-physics-study-notes/img/fig-bc138f72a64dcb36.png
+caption: The axes of a moving frame (x', ct') tilt towards the light line by the same angle θ = tan⁻¹(v/c).
+```
+
 - An **event** is a single point.
 - An object’s **world line** is its path through space–time. A stationary object has a vertical world line; a moving object’s world line is tilted.
 

@@ -36,6 +36,11 @@ related:
 
 Mass measures how hard it is to change an object’s velocity. The rotational equivalent, the **moment of inertia** $I$, measures how hard it is to change an object’s **angular** velocity. It depends not only on how much mass there is, but on **where** that mass sits relative to the axis.
 
+```figure
+src: physics/_iitian/ib-dp-physics-2025-slhl-4-2-rotational-equilibrium-and-newto/img/fig-c4ea8b92cfcc41cd.png
+caption: Equal masses: concentrated at the centre the moment of inertia is small; spread around the rim it is larger and harder to spin.
+```
+
 For a set of point masses,
 
 $$
@@ -69,6 +74,11 @@ The same object has twice the moment of inertia about the end — it is harder t
 ## Newton’s second law for rotation
 
 A resultant torque produces an angular acceleration in proportion to it, and inversely proportional to the moment of inertia:
+
+```figure
+src: physics/_sme/rigid-body-mechanics/img/fig-e08365a0818579b2.png
+caption: Newton's second law for rotation: a torque on a body produces an angular acceleration, τ = Iα.
+```
 
 $$
 \tau = I\alpha

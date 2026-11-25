@@ -47,6 +47,11 @@ related:
 
 The **first law of thermodynamics** is conservation of energy applied to a closed system such as a gas in a cylinder:
 
+```figure
+src: physics/_iitian/the-first-law-of-thermodynamics-ib-dp-physics-study-notes/img/fig-e4770eaf804ae767.png
+caption: Heating a gas in a cylinder: the energy supplied goes partly into internal energy and partly into work done pushing the piston out.
+```
+
 $$
 Q = \Delta U + W
 $$
@@ -60,6 +65,16 @@ Energy supplied to the gas either raises its internal energy or is used to push 
 ## Work done by an expanding gas
 
 If a gas at constant pressure $P$ pushes a piston of area $A$ through a distance $d$, the work done is $Fd = PAd$:
+
+```figure
+src: physics/_sme/thermodynamics/img/fig-0218f1e7a1a1342c.png
+caption: When a gas expands at constant pressure, the work it does is the area under the line on the p-V diagram.
+```
+
+```figure
+src: physics/_sme/thermodynamics/img/fig-416623e5dd987ddb.png
+caption: Two simple processes on a p-V diagram: at constant pressure (isobaric) and at constant volume (isochoric).
+```
 
 $$
 W = P\Delta V

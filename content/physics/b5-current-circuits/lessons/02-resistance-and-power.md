@@ -40,6 +40,11 @@ related:
 
 As free electrons drift through a metal, they keep colliding with the vibrating positive ions of the lattice. Each collision transfers some of their energy to the lattice, which heats the wire. These collisions oppose the current — that opposition is **resistance**:
 
+```figure
+src: physics/_sme/current-circuits/img/fig-4970c5a5922efbfc.png
+caption: Resistance arises as drifting electrons collide with the vibrating metal ions of the lattice.
+```
+
 $$
 R = \frac{V}{I}
 $$
@@ -47,6 +52,11 @@ $$
 ## Resistivity
 
 A longer wire has more collisions along its length, so more resistance; a thicker wire offers more paths, so less resistance. Combining these:
+
+```figure
+src: physics/_iitian/ibdp-physics-slhl-b-5-current-and-circuits-study-notes-first/img/fig-37011c2771e5794d.png
+caption: Resistance depends on the material (resistivity ρ), and grows with length L and falls with cross-sectional area A: R = ρL/A.
+```
 
 $$
 R = \frac{\rho L}{A} \qquad \text{or} \qquad \rho = \frac{RA}{L}
@@ -65,6 +75,16 @@ $R = \dfrac{\rho L}{A} = \dfrac{1.7\times10^{-8} \times 2.0}{1.96\times10^{-7}} 
 ## Ohm’s law and I–V graphs
 
 A conductor obeys **Ohm’s law** if the current through it is proportional to the p.d. across it at constant temperature. Its I–V graph is a straight line through the origin.
+
+```figure
+src: physics/_sme/current-circuits/img/fig-1418740ab785de49.png
+caption: An ohmic resistor: current is proportional to potential difference, so the I-V graph is a straight line through the origin.
+```
+
+```figure
+src: physics/_sme/current-circuits/img/fig-0179409b50439097.png
+caption: A filament lamp is non-ohmic: as it heats up its resistance rises, so the I-V graph curves over.
+```
 
 ```plot
 caption: I–V graphs. An ohmic resistor is a straight line through the origin; a filament lamp curves because its resistance rises as it heats up.

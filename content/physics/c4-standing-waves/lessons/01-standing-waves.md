@@ -39,6 +39,16 @@ related:
 
 Send a wave along a string fixed at one end. It reflects and travels back. The outgoing and returning waves have the same frequency, speed and amplitude and move in **opposite directions**. Their superposition is a **standing (stationary) wave**: a pattern that does not travel.
 
+```figure
+src: physics/_sme/standing-waves-resonance/img/fig-8be134a113b4d92c.png
+caption: Two identical waves travelling in opposite directions superpose to form a standing wave.
+```
+
+```figure
+src: physics/_sme/standing-waves-resonance/img/fig-cf8375e4595a78c0.png
+caption: A standing wave: nodes have zero amplitude, antinodes have maximum amplitude, and adjacent nodes are λ/2 apart.
+```
+
 - At **nodes** the two waves always cancel: zero amplitude.
 - At **antinodes** they reinforce: maximum amplitude.
 - Adjacent nodes (or antinodes) are $\lambda/2$ apart; a node and the next antinode are $\lambda/4$ apart.
@@ -56,6 +66,16 @@ Unlike a travelling wave, a standing wave transfers no net energy. Amplitude var
 ## Strings fixed at both ends
 
 Both ends must be nodes, so a whole number of half-wavelengths fits on the string:
+
+```figure
+src: physics/_sme/standing-waves-resonance/img/fig-a39f935ab141fde7.png
+caption: Harmonics on a string fixed at both ends: there must be a node at each end, so L = nλ/2.
+```
+
+```figure
+src: physics/_sme/standing-waves-resonance/img/fig-340620ae85647eb6.png
+caption: A guitar string vibrates in standing-wave patterns between its two fixed ends.
+```
 
 $$
 L = n\frac{\lambda}{2} \quad\Rightarrow\quad \lambda_n = \frac{2L}{n}, \quad f_n = \frac{nv}{2L}
@@ -84,6 +104,11 @@ $f_1 = \dfrac{v}{2L} = \dfrac{286}{1.30} = 220$ Hz. Then $f_2 = 440$ Hz and $f_3
 ## Pipes
 
 Sound in a pipe forms a standing wave of air displacement:
+
+```figure
+src: physics/_sme/standing-waves-resonance/img/fig-766c46f0d8e476c0.png
+caption: Standing waves in pipes: closed ends are nodes, open ends are antinodes.
+```
 
 - an **open end** is a displacement **antinode**;
 - a **closed end** is a displacement **node**.

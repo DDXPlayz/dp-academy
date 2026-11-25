@@ -31,6 +31,11 @@ related:
 
 Magnets and electric currents create **magnetic fields**. We show them with field lines:
 
+```figure
+src: physics/_sme/electric-magnetic-fields/img/fig-16f114756f31d8b3.png
+caption: The magnetic field of a bar magnet: lines run from north to south outside the magnet and are closest at the poles.
+```
+
 - the direction of a line is the direction a small **north** pole would be pushed;
 - outside a magnet, lines go from **N to S**;
 - magnetic field lines are **closed loops** — they never begin or end;
@@ -63,6 +68,11 @@ caption: Field patterns — bar magnet (left) and the circular field around a st
 </svg>
 ```
 
+```figure
+src: physics/_sme/electric-magnetic-fields/img/fig-042acf65543885d0.png
+caption: A straight current-carrying wire is surrounded by circular magnetic field lines.
+```
+
 - **Bar magnet:** lines leave the north pole and curve round into the south pole; strongest near the poles.
 - **Straight wire:** concentric circles around the wire, weaker further away.
 - **Flat coil:** like a short bar magnet, with lines threading through the centre of the coil.
@@ -72,6 +82,16 @@ caption: Field patterns — bar magnet (left) and the circular field around a st
 
 ```keyidea
 Grip the wire with your right hand, thumb pointing along the conventional current. Your fingers curl in the direction of the magnetic field. For a solenoid, curl your fingers along the current in the turns and your thumb points to the north end.
+```
+
+```figure
+src: physics/_iitian/magnetic-field-and-force-ib-dp-physics-study-notes/img/fig-0fcedee5cb555752.png
+caption: The right-hand grip rule for a solenoid: fingers curl with the current and the thumb points to the north pole.
+```
+
+```figure
+src: physics/_iitian/magnetic-field-and-force-ib-dp-physics-study-notes/img/fig-d5e38fda3fc3c0f7.png
+caption: Dot and cross notation: a dot is a field coming out of the page (arrow tip), a cross is a field going into it (arrow tail).
 ```
 
 ```example

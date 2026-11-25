@@ -54,6 +54,11 @@ Kinematics describes *how* things move. Dynamics explains *why*. The link betwee
 
 An object keeps doing what it is doing — staying still, or moving in a straight line at constant speed — unless a **resultant force** acts on it.
 
+```figure
+src: physics/_sme/forces-momentum/img/fig-8ede13a8401225ff.png
+caption: A puck on a frictionless surface keeps moving in a straight line at constant velocity: no resultant force, no change in motion.
+```
+
 This feels odd at first, because in everyday life moving things slow down. They slow down because friction and air resistance are forces. Remove them (as on an air track, or in space) and motion carries on unchanged.
 
 ```keyidea
@@ -77,6 +82,16 @@ free-body
 ## The second law: F = ma
 
 The acceleration of an object is proportional to the resultant force on it and inversely proportional to its mass:
+
+```figure
+src: physics/_sme/forces-momentum/img/fig-82f301c59f6e7cb4.png
+caption: The resultant force is the vector sum of all the forces: same-direction forces add, opposite ones subtract.
+```
+
+```figure
+src: physics/_sme/forces-momentum/img/fig-28b76cd7b6fcbdcc.png
+caption: In a tug-of-war, unequal pulls leave a resultant force, so the rope and teams accelerate towards the stronger side.
+```
 
 $$F = ma$$
 
@@ -108,6 +123,16 @@ That is more than the person’s weight (686 N), which is why you feel heavier a
 
 When you push on a wall, the wall pushes back on you with an equal and opposite force. Every force is one half of an interaction between **two** objects.
 
+```figure
+src: physics/_sme/forces-momentum/img/fig-969fc7cbb58636dc.png
+caption: Free-body diagram of a book resting on a table: weight down, normal reaction up, and the forces balance.
+```
+
+```figure
+src: physics/_iitian/ibdp-physics-slhl-a-2-forces-and-momentum-study-notes-first-/img/fig-d472d0ce97803856.png
+caption: When two skaters push apart, each exerts an equal and opposite force on the other, acting on different bodies.
+```
+
 A third-law pair is always:
 
 - equal in size and opposite in direction;
@@ -121,6 +146,11 @@ A book resting on a table has two forces on it — its weight and the normal for
 ## Friction
 
 Friction acts along a surface and opposes relative motion. Before an object slides, **static** friction matches whatever force is trying to move it, up to a maximum of $\mu_s F_N$. Once it slides, **dynamic** friction is roughly constant at $\mu_d F_N$, where usually $\mu_d < \mu_s$ — which is why it is harder to start pushing a heavy box than to keep it moving.
+
+```figure
+src: physics/_sme/forces-momentum/img/fig-c382f17cbdee4800.png
+caption: Friction rises to match the applied pull until it reaches its static maximum; once sliding starts the dynamic friction is slightly lower.
+```
 
 ## Try it yourself
 

@@ -39,6 +39,16 @@ related:
 
 A gas expanding once can do work, but then it is done. To keep producing work, an engine takes its working gas through a **cycle** — a sequence of processes that returns it to its starting state — again and again.
 
+```figure
+src: physics/_sme/thermodynamics/img/fig-96ae02344c0034fd.png
+caption: The four stages of a heat-engine cycle: the gas is heated and expands, cools, is compressed and returns to its start.
+```
+
+```figure
+src: physics/_iitian/heat-engines-ib-dp-physics-study-notes/img/fig-78946fa1400b55d4.png
+caption: A heat engine takes heat Qh from a hot reservoir, does work W, and rejects heat Qc to a cold reservoir.
+```
+
 Over a full cycle the gas ends where it started, so $\Delta U = 0$. By the first law, the **net thermal energy in equals the net work out**.
 
 ## The heat engine
@@ -80,6 +90,11 @@ caption: Energy flow in a heat engine. Some of the energy taken from the hot res
 
 On a P–V diagram a cycle is a closed loop. The **net work done by the gas is the area enclosed** by the loop: the work done during expansion (area under the upper path) minus the work done on the gas during compression (area under the lower path).
 
+```figure
+src: physics/_sme/thermodynamics/img/fig-11124263190e5520.png
+caption: On a p-V diagram, the net work done by the gas in one cycle is the area enclosed by the loop.
+```
+
 ```example
 A gas is taken round a rectangular cycle: expansion at 3.0 × 10⁵ Pa from 1.0 L to 4.0 L, cooling at constant volume, compression at 1.0 × 10⁵ Pa back to 1.0 L, then heating at constant volume. Find the net work per cycle.
 ---
@@ -89,6 +104,11 @@ Enclosed area $= \Delta P \times \Delta V = (3.0 - 1.0)\times10^5 \times (4.0 - 
 ## The Carnot limit
 
 The **Carnot cycle** — two isothermal and two adiabatic stages, all perfectly reversible — is the most efficient cycle possible between two reservoirs:
+
+```figure
+src: physics/_iitian/heat-engines-ib-dp-physics-study-notes/img/fig-3884e0a262c131ec.png
+caption: The Carnot cycle: two isothermals and two adiabatics, the most efficient cycle possible between two temperatures.
+```
 
 $$
 \eta_{\text{Carnot}} = 1 - \frac{T_c}{T_h}

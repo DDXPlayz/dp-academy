@@ -68,6 +68,11 @@ caption: The same 20 N force acting at 0.80 m from the hinge. Only the perpendic
 
 The torque of a force $F$ about an axis is
 
+```figure
+src: physics/_sme/rigid-body-mechanics/img/fig-5c8e75e71426f1f1.png
+caption: Torque on a spanner: the force times the perpendicular distance from the axis of rotation to its line of action.
+```
+
 $$
 \tau = F r \sin\theta
 $$
@@ -101,9 +106,24 @@ A torque tends to turn an object either clockwise or anticlockwise about the axi
 
 Two equal and opposite forces acting along *different* lines form a **couple** — think of your hands turning a steering wheel. The forces cancel, so there is no resultant force and the centre does not accelerate, yet both produce torque in the same sense. The torque of a couple is $F \times d$, where $d$ is the perpendicular separation of the two lines of action, and it is the same about *any* axis.
 
+```figure
+src: physics/_sme/rigid-body-mechanics/img/fig-4640f4aac967fddf.png
+caption: A force perpendicular to the handle gives the largest torque; the torque falls as the angle between force and handle shrinks.
+```
+
+```figure
+src: physics/_sme/rigid-body-mechanics/img/fig-f88df44f5628ac01.png
+caption: Turning a steering wheel with two equal, opposite, non-collinear forces: a couple, which rotates without translating.
+```
+
 ## Equilibrium of a rigid body
 
 A **rigid body** is in equilibrium only when both of these are true:
+
+```figure
+src: physics/_sme/rigid-body-mechanics/img/fig-c84c418cd1a222a1.png
+caption: A plank on two supports: for equilibrium the resultant force is zero and clockwise torques balance anticlockwise torques about any point.
+```
 
 1. **Translational equilibrium:** the resultant force is zero, $\sum F = 0$.
 2. **Rotational equilibrium:** the resultant torque about *any* axis is zero, $\sum \tau = 0$.

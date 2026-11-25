@@ -62,6 +62,16 @@ For an object going round a circle of radius $r$:
 
 At every instant the velocity is along the tangent. A moment later it points in a slightly different direction. That change in velocity points towards the centre of the circle — so the acceleration does too.
 
+```figure
+src: physics/_sme/forces-momentum/img/fig-b9c1f6646bf0aae7.png
+caption: A puck on a string moves in a circle: its velocity is always tangential, and if the string is cut it moves off in a straight line.
+```
+
+```figure
+src: physics/_sme/forces-momentum/img/fig-dd967bd33ad2b1f6.png
+caption: Centripetal acceleration points towards the centre of the circle, perpendicular to the linear velocity.
+```
+
 $$a = \frac{v^2}{r} = \omega^2 r$$
 
 ```diagram
@@ -75,6 +85,16 @@ An object moves in a circle only if a resultant force pulls it towards the centr
 ## Centripetal force
 
 From $F = ma$, the resultant force needed is
+
+```figure
+src: physics/_sme/forces-momentum/img/fig-0733d8dc66d984ac.png
+caption: For a car turning on a flat road, friction between the tyres and road supplies the centripetal force.
+```
+
+```figure
+src: physics/_sme/forces-momentum/img/fig-3e50011d28b0b612.png
+caption: On a banked track, the horizontal component of the normal reaction provides the centripetal force.
+```
 
 $$F = \frac{mv^2}{r}$$
 

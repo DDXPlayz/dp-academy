@@ -52,6 +52,11 @@ When a wheel turns, different points on it move different distances, so linear d
 | velocity $v$ | angular velocity $\omega = \dfrac{\Delta\theta}{\Delta t}$ | rad s⁻¹ |
 | acceleration $a$ | angular acceleration $\alpha = \dfrac{\Delta\omega}{\Delta t}$ | rad s⁻² |
 
+```figure
+src: physics/_iitian/ib-dp-physics-2025-slhl-4-1-kinematics-of-rotational-motion-/img/fig-4a03d65eb76a7da5.png
+caption: A rotating disc: angular displacement, angular velocity and the link v = ωr between linear and angular speed.
+```
+
 A point at distance $r$ from the axis moves along an arc of length $s = r\theta$, so its speed and tangential acceleration are
 
 $$

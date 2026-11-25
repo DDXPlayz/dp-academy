@@ -97,6 +97,11 @@ $$s = ut + \tfrac12 at^2 = 0 + \tfrac12(0.80)(25)^2 = 250\ \text{m}$$
 
 Near the Earth’s surface, any object falling without significant air resistance accelerates downwards at $g \approx 9.8$ m s⁻², whatever its mass. Choose a positive direction and keep to it.
 
+```figure
+src: physics/_sme/kinematics/img/fig-1da6f6137e7f139e.png
+caption: A bouncing ball: the velocity-time graph has a constant gradient of -g between bounces, and the acceleration is g except during the brief impacts.
+```
+
 ```example
 A ball is thrown vertically upwards at 14 m s⁻¹. Taking $g = 9.8$ m s⁻², find (a) its maximum height and (b) the time it takes to return to the thrower’s hand.
 ---

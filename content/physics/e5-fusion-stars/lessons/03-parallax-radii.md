@@ -39,6 +39,11 @@ related:
 
 As Earth orbits the Sun, a nearby star appears to shift against the background of very distant stars. Measure its position six months apart: half the angular shift is the **parallax angle** $p$.
 
+```figure
+src: physics/_sme/fusion-stars/img/fig-738468a73c0d209f.png
+caption: Stellar parallax: a nearby star appears to shift against distant stars as Earth moves around its orbit; the parallax angle gives the distance.
+```
+
 ```svg
 caption: Parallax. The nearby star appears in different positions against the distant background from opposite sides of Earth’s orbit; p is half the angle.
 <svg viewBox="0 0 420 220">

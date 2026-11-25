@@ -40,6 +40,11 @@ related:
 
 When two waves (or pulses) overlap, the displacement at each point is the **sum** of the individual displacements. This is the **principle of superposition**. After passing through each other the waves carry on unchanged.
 
+```figure
+src: physics/_sme/wave-phenomena/img/fig-fe450ee4a27f16bd.png
+caption: Two pulses meeting: their displacements add (superposition), then they pass through each other unchanged.
+```
+
 - Two crests meeting give a bigger crest: **constructive** interference.
 - A crest meeting a trough of equal size gives zero: **destructive** interference.
 
@@ -47,9 +52,19 @@ When two waves (or pulses) overlap, the displacement at each point is the **sum*
 
 A steady interference pattern only forms if the sources are **coherent**: same frequency and a **constant phase difference**. Two separate lamps are not coherent. Shining one source through two slits makes the two slits coherent, because both are fed by the same wavefronts.
 
+```figure
+src: physics/_sme/wave-phenomena/img/fig-7cdc53be043c7a71.png
+caption: Coherent sources have the same frequency and a constant phase difference; sources whose phase difference keeps changing are not coherent.
+```
+
 ## Path difference
 
 At a point P, waves from two coherent sources (in phase with each other) have travelled distances $S_1P$ and $S_2P$. Their **path difference** decides what happens:
+
+```figure
+src: physics/_sme/wave-phenomena/img/fig-e0e54facb31eea8b.png
+caption: A path difference of a whole number of wavelengths gives constructive interference; a half-wavelength odd multiple gives destructive interference.
+```
 
 $$
 \text{constructive: } \Delta = n\lambda \qquad \text{destructive: } \Delta = \left(n + \tfrac{1}{2}\right)\lambda
@@ -66,6 +81,16 @@ Path difference $= 0.60$ m $= 1.5\lambda = (1 + \tfrac{1}{2})\lambda$. The waves
 ## Young’s double-slit experiment
 
 Light passes through two narrow slits a distance $d$ apart. The diffracted beams overlap on a screen a distance $D$ away and form a pattern of equally spaced bright and dark **fringes**, with spacing
+
+```figure
+src: physics/_sme/wave-phenomena/img/fig-7b36676e02f0fb5b.png
+caption: Young's double-slit experiment: light from a single slit illuminates two slits, and an interference pattern of fringes forms on the screen.
+```
+
+```figure
+src: physics/_sme/wave-phenomena/img/fig-ba063e4294d7a469.png
+caption: Waves from two coherent slits overlap: bright fringes where crests meet crests, dark fringes where crests meet troughs.
+```
 
 $$
 s = \frac{\lambda D}{d}

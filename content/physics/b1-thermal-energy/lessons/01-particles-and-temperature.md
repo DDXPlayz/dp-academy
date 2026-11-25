@@ -44,6 +44,16 @@ related:
 
 Everything is made of particles (atoms or molecules) that attract each other at short range and are always moving.
 
+```figure
+src: physics/_sme/thermal-energy-transfers/img/fig-e82ac3981400d058.png
+caption: In a solid, particles are closely packed in fixed positions and only vibrate.
+```
+
+```figure
+src: physics/_sme/thermal-energy-transfers/img/fig-387632495ec1be2b.png
+caption: In a liquid, particles are still close together but can move past one another.
+```
+
 | | Solid | Liquid | Gas |
 |---|---|---|---|
 | Arrangement | regular, close together | close together, disordered | far apart, random |
@@ -62,6 +72,11 @@ measured in kg m⁻³. Water has a density of 1000 kg m⁻³; air at room temper
 
 The **Celsius** scale is defined from the melting and boiling points of water. The **kelvin** scale starts at **absolute zero**, the lowest possible temperature:
 
+```figure
+src: physics/_iitian/particles-temperature-and-energy-ib-dp-physics-study-notes/img/fig-dc5d943ebbfb41ee.png
+caption: The Celsius and Kelvin scales have the same size of degree; absolute zero is 0 K, which is -273 °C.
+```
+
 $$
 T/\text{K} = \theta/{}^\circ\text{C} + 273
 $$
@@ -71,6 +86,11 @@ The kelvin and the Celsius degree are the same size, so a temperature **change**
 ## What temperature measures
 
 The particles in a substance move with a range of speeds. The kelvin temperature is directly proportional to their **average random kinetic energy**:
+
+```figure
+src: physics/_sme/thermal-energy-transfers/img/fig-e594e4f0ccbf2bab.png
+caption: Absolute temperature is directly proportional to the average random kinetic energy of the particles.
+```
 
 $$
 \bar{E}_k = \tfrac{3}{2}k_B T
@@ -100,6 +120,11 @@ Raising the temperature increases the kinetic part. Melting or boiling increases
 ## Which way does energy flow?
 
 When two bodies are in thermal contact, thermal energy flows from the one at **higher temperature** to the one at **lower temperature**, until they reach the same temperature — **thermal equilibrium**. It does not matter which one has more internal energy.
+
+```figure
+src: physics/_sme/thermal-energy-transfers/img/fig-b25fc29e04140210.png
+caption: Thermal energy flows from the hotter region to the colder one until both reach the same temperature: thermal equilibrium.
+```
 
 ```mistake
 A large, cool iceberg has more internal energy than a small cup of hot tea, but energy still flows from the tea to the ice, because the tea is at a higher temperature.

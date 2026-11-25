@@ -27,6 +27,11 @@ related:
 
 When a wave passes through a gap or past the edge of an obstacle, it spreads into the region behind — the **geometric shadow**. This spreading is **diffraction**, and it happens to all waves: water ripples, sound, light and even electrons.
 
+```figure
+src: physics/_sme/wave-phenomena/img/fig-bd1f34fcb2fc1c94.png
+caption: Diffraction is most noticeable when the gap is about the same size as the wavelength.
+```
+
 ```svg
 caption: Plane waves passing through a wide gap (left) barely spread; through a gap about one wavelength wide (right) they spread into near-circular wavefronts. The wavelength is unchanged.
 <svg viewBox="0 0 440 200">
@@ -51,6 +56,11 @@ caption: Plane waves passing through a wide gap (left) barely spread; through a 
 ## How much diffraction?
 
 The key comparison is between the **wavelength** $\lambda$ and the **size of the gap or obstacle** $b$:
+
+```figure
+src: physics/_iitian/single-slit-diffraction-ib-dp-physics-study-notes/img/fig-73064740bc1c9481.png
+caption: As the gap b narrows towards λ, the waves spread out more after passing through it.
+```
 
 - if $b \gg \lambda$, the wave passes through with only slight spreading at the edges;
 - if $b \approx \lambda$, the wave spreads out strongly, almost in semicircles;

@@ -38,6 +38,11 @@ related:
 
 A charge creates an **electric field** in the space around it. The **electric field strength** at a point is the force per unit charge on a small positive test charge placed there:
 
+```figure
+src: physics/_sme/electric-magnetic-fields/img/fig-890969ac49ac785a.png
+caption: Field lines between two like charges: they repel, and there is a neutral point midway where the field is zero.
+```
+
 $$
 E = \frac{F}{q}
 $$
@@ -87,6 +92,11 @@ caption: Field lines for a positive and a negative charge (left) and between par
 ## The uniform field between parallel plates
 
 Two parallel plates with potential difference $V$ and separation $d$ produce a **uniform** field between them:
+
+```figure
+src: physics/_sme/electric-magnetic-fields/img/fig-7041e056b3367932.png
+caption: Between parallel plates the field is uniform (evenly spaced, parallel lines) except near the edges.
+```
 
 $$
 E = \frac{V}{d}

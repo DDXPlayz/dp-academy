@@ -79,6 +79,11 @@ Iodine-131 has a half-life of 8.0 days. A sample contains 5.0 × 10¹⁶ nuclei.
 
 Taking logs: $\ln N = \ln N_0 - \lambda t$. Plotting $\ln N$ (or $\ln A$, or the log of a corrected count rate) against $t$ gives a straight line with gradient $-\lambda$ — the best way to find $\lambda$ from experimental data.
 
+```figure
+src: physics/_sme/radioactive-decay/img/fig-d593cb7ca79b6b3d.png
+caption: Plotting ln N (or ln A) against time gives a straight line whose gradient is −λ.
+```
+
 ```question
 decay-constant-calc
 ```

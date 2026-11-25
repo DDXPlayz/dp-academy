@@ -37,6 +37,16 @@ related:
 
 Light passing through one narrow slit of width $b$ produces a wide, bright **central maximum** with much dimmer, narrower maxima either side. Each part of the slit acts as a source; at certain angles their contributions cancel completely, giving minima. The first minimum is at
 
+```figure
+src: physics/_sme/wave-phenomena/img/fig-c7ce29632ebee195.png
+caption: Single-slit diffraction: a wide, bright central maximum with weaker side maxima of half its width.
+```
+
+```figure
+src: physics/_sme/wave-phenomena/img/fig-e72f9d8d10d49e11.png
+caption: A diffraction grating splits white light into spectra: the central fringe stays white and each order spreads out the colours.
+```
+
 $$
 \theta = \frac{\lambda}{b}
 $$
@@ -62,6 +72,11 @@ The first minimum is $D\theta = 1.5 \times 5.5\times10^{-3} = 8.3$ mm from the c
 
 In a real double-slit experiment each slit has a finite width, so the evenly spaced interference fringes are **multiplied by** the single-slit diffraction envelope. The fringes are brightest near the centre and fade towards the edge; where a single-slit minimum falls on a bright fringe, that fringe goes missing.
 
+```figure
+src: physics/_sme/wave-phenomena/img/fig-af4c311f327f0ae9.png
+caption: The double-slit pattern is modulated by the single-slit envelope: the fringe intensities follow the single-slit curve.
+```
+
 ```plot
 caption: Double-slit fringes with real slit widths. The single-slit pattern acts as an envelope that sets how bright each fringe is.
 x: -3, 3
@@ -75,6 +90,11 @@ ylabel: relative intensity
 ## Diffraction gratings
 
 A **grating** has hundreds of slits per millimetre. Light from all of them interferes constructively only at very specific angles:
+
+```figure
+src: physics/_sme/wave-phenomena/img/fig-31772de7aac5c90c.png
+caption: A diffraction grating gives sharp bright maxima at angles where d sin θ = nλ.
+```
 
 $$
 n\lambda = d\sin\theta

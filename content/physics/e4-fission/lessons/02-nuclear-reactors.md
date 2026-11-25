@@ -49,6 +49,16 @@ caption: A simplified pressurised water reactor. Energy flows from the core to t
 </svg>
 ```
 
+```figure
+src: physics/_iitian/fission-ib-dp-physics-study-notes/img/fig-a43fcfc50bf30e2a.png
+caption: A reactor core: fuel rods surrounded by moderator, with control rods that can be lowered to absorb neutrons.
+```
+
+```figure
+src: physics/_iitian/fission-ib-dp-physics-study-notes/img/fig-c5889d62fc5626b4.png
+caption: A nuclear power station: heat from the reactor goes through a heat exchanger to make steam, which drives the turbine and generator.
+```
+
 | Part | Job |
 |---|---|
 | **Fuel rods** | Enriched uranium (a few per cent U-235) where fission happens |
@@ -70,6 +80,11 @@ A neutron loses the most energy in a collision with a nucleus of similar mass. H
 ## Fission products and waste
 
 The fission fragments are usually **neutron-rich**, so they are highly radioactive (mostly β⁻ emitters), some with long half-lives. Spent fuel also contains heavy elements such as plutonium.
+
+```figure
+src: physics/_sme/fission/img/fig-bdc78794e526dd75.png
+caption: High-level radioactive waste is sealed and stored deep underground, isolated for thousands of years.
+```
 
 Managing the waste:
 

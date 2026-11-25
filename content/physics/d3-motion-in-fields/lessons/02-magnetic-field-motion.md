@@ -40,6 +40,11 @@ related:
 
 A charge $q$ moving at speed $v$ at angle $\theta$ to a magnetic field $B$ feels a force
 
+```figure
+src: physics/_sme/motion-in-electromagnetic-fields/img/fig-f7b6242dab5948d2.png
+caption: Positive and negative charges moving through the same magnetic field are pushed in opposite directions.
+```
+
 $$
 F = qvB\sin\theta
 $$
@@ -71,6 +76,16 @@ caption: A positive charge in a field into the page (×). The force is always to
 </svg>
 ```
 
+```figure
+src: physics/_sme/motion-in-electromagnetic-fields/img/fig-c8e974e635c57afe.png
+caption: The magnetic force is always perpendicular to the velocity, so it does no work and the charge moves in a circle.
+```
+
+```figure
+src: physics/_sme/motion-in-electromagnetic-fields/img/fig-1c9aa053fd24f7d9.png
+caption: An electron beam entering a magnetic field directed into the page is bent into a circular arc.
+```
+
 ```keyidea
 The magnetic force is always at right angles to the velocity. It changes the particle’s direction but never its speed — so it does no work, and it supplies exactly the centripetal force for uniform circular motion.
 ```
@@ -92,6 +107,11 @@ $r = \dfrac{mv}{qB} = \dfrac{9.11\times10^{-31}\times4.0\times10^6}{1.60\times10
 ## Crossed fields: the velocity selector
 
 Put a uniform electric field and a uniform magnetic field at right angles to each other and to the particle’s motion. The electric force $qE$ and magnetic force $qvB$ act in opposite directions. They balance when
+
+```figure
+src: physics/_sme/motion-in-electromagnetic-fields/img/fig-c88714d37610c3f4.png
+caption: The motor effect: a copper rod carrying a current in a magnetic field experiences a force and rolls along the rails.
+```
 
 $$
 qE = qvB \quad\Rightarrow\quad v = \frac{E}{B}

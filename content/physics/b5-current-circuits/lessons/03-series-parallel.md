@@ -101,6 +101,11 @@ $V_{\text{out}} = 9.0 \times \dfrac{1.0}{2.0 + 1.0} = 3.0$ V.
 
 A **variable resistor** (rheostat or potentiometer) lets you adjust resistance by hand. Two sensors have resistance that varies by itself:
 
+```figure
+src: physics/_iitian/ibdp-physics-slhl-b-5-current-and-circuits-study-notes-first/img/fig-1e37857a57a69d1d.png
+caption: Fixed resistors, variable resistors and a potentiometer (three terminals) used to control current or voltage.
+```
+
 - a **light-dependent resistor (LDR)** — resistance falls as light intensity increases;
 - an **NTC thermistor** — resistance falls as temperature increases.
 

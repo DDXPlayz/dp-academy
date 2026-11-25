@@ -50,6 +50,11 @@ Throw a ball across a field and it follows a smooth curve. That curve looks comp
 
 Once the ball leaves your hand (and if air resistance is negligible) the only force on it is its weight, which acts **straight down**. So:
 
+```figure
+src: physics/_iitian/ibdp-physics-2025-slhl-1-4-projectile-motion-study-notes/img/fig-2e71c0e979b8e631.png
+caption: A projectile's path: horizontal velocity stays the same while vertical velocity changes, reaching zero at maximum height.
+```
+
 - **Horizontally** there is no force, so no acceleration. The horizontal velocity never changes.
 - **Vertically** the ball accelerates downwards at $g$, exactly like a dropped object.
 
@@ -64,6 +69,11 @@ projectile
 ## Resolving the launch velocity
 
 A projectile launched at speed $u$ and angle $\theta$ above the horizontal starts with
+
+```figure
+src: physics/_sme/kinematics/img/fig-a5525831a7eb4aaa.png
+caption: The vertical component of velocity is zero at the top of the flight; the horizontal component is unchanged throughout.
+```
 
 $$u_x = u\cos\theta \qquad u_y = u\sin\theta$$
 
@@ -91,6 +101,11 @@ $$0 = 10.0^2 - 2(9.8)h \quad\Rightarrow\quad h = \frac{100}{19.6} = 5.1\ \text{m
 
 If an object is launched horizontally, $u_y = 0$. The time it takes to fall depends only on the height — not on how fast it was thrown sideways.
 
+```figure
+src: physics/_sme/kinematics/img/fig-2d48cf8ff71651c1.png
+caption: An object launched horizontally from a cliff: the horizontal and vertical motions are treated separately and share the same time of flight.
+```
+
 ```example
 A stone is thrown horizontally at 8.0 m s⁻¹ from the top of a 20 m cliff. How far from the foot of the cliff does it land?
 ---
@@ -104,6 +119,16 @@ A neat consequence: a bullet fired horizontally and a bullet dropped from the sa
 ## The effect of air resistance
 
 In reality, air pushes back on a moving object with a **drag force** that grows with speed and acts opposite to the velocity. With drag:
+
+```figure
+src: physics/_iitian/ibdp-physics-2025-slhl-1-4-projectile-motion-study-notes/img/fig-f0da81b251646a25.png
+caption: A falling skydiver: drag grows with speed until it balances weight, and the skydiver reaches terminal velocity.
+```
+
+```figure
+src: physics/_iitian/ibdp-physics-2025-slhl-1-4-projectile-motion-study-notes/img/fig-7f0726e03e172cb2.png
+caption: With air resistance the path is lower, shorter and no longer symmetrical: the descent is steeper than the climb.
+```
 
 - the horizontal velocity decreases, so the range is shorter;
 - the maximum height is lower;

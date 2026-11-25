@@ -58,6 +58,11 @@ $\Delta t = 1.67 \times 30 = 50$ min.
 
 The **proper length** $L_0$ of an object is its length measured in the frame where it is at rest. An observer who sees it moving measures a **shorter** length along the direction of motion:
 
+```figure
+src: physics/_sme/galilean-special-relativity/img/fig-1d491fee35f0e42c.png
+caption: An observer at rest relative to the object measures its proper length; an observer moving past it measures a shorter length.
+```
+
 $$
 L = \frac{L_0}{\gamma}
 $$
@@ -76,6 +81,16 @@ Each observer sees the *other* one’s clocks run slow and the *other* one’s r
 
 Imagine a train carriage with a lamp exactly in the middle. The lamp flashes, and light travels to the front and back walls.
 
+```figure
+src: physics/_sme/galilean-special-relativity/img/fig-6a72d20dca1eea9d.png
+caption: A light clock: in the clock's own frame light travels straight up and down, giving the proper time between ticks.
+```
+
+```figure
+src: physics/_sme/galilean-special-relativity/img/fig-8b8db64f5da27023.png
+caption: Simultaneity is relative: two events at the ends of a moving carriage can be simultaneous for one observer but not for another.
+```
+
 - On the train, both walls are the same distance away, so the light arrives at both **at the same time**.
 - On the platform, the back wall is moving *towards* the light and the front wall *away* from it. Light still travels at $c$, so it reaches the **back wall first**.
 
@@ -84,6 +99,11 @@ Two events simultaneous in one frame are not simultaneous in another. In the Lor
 ## Evidence: muon decay
 
 Muons are created about 10 km up when cosmic rays hit the atmosphere. At rest they have a half-life of about 1.5 µs. Travelling at about 0.995c, a muon covers only about 450 m in 1.5 µs — so without relativity, after 10 km (about 22 half-lives) almost none should reach the ground. Detectors at sea level find large numbers.
+
+```figure
+src: physics/_sme/galilean-special-relativity/img/fig-1c9ceeebbc277d83.png
+caption: Muons made high in the atmosphere reach the ground because, in the Earth frame, their lifetime is dilated (or, in the muon frame, the atmosphere is contracted).
+```
 
 ```example
 Muons travel 10 km down through the atmosphere at 0.995c. Their half-life at rest is 1.5 µs. Show that a significant fraction reaches the ground, (a) in Earth’s frame, (b) in the muon’s frame.

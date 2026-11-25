@@ -57,6 +57,16 @@ For a coil of $N$ turns, the **flux linkage** is $N\Phi$.
 An emf is induced whenever the magnetic flux linking a circuit changes. The size of the emf equals the rate of change of flux linkage.
 ```
 
+```figure
+src: physics/_sme/induction/img/fig-bddfdb6b0d099c81.png
+caption: A straight conductor moving across a magnetic field has an emf induced across its ends: ε = BvL.
+```
+
+```figure
+src: physics/_sme/induction/img/fig-cb31fba29f4c4162.png
+caption: A coil rotating in a uniform field: the induced emf is greatest when the coil is parallel to the field and zero when it is perpendicular.
+```
+
 $$
 \varepsilon = -N\frac{\Delta\Phi}{\Delta t}
 $$

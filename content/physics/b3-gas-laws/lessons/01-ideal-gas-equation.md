@@ -45,6 +45,11 @@ related:
 
 A gas presses on the walls of its container. The **pressure** is the force per unit area at right angles to the surface:
 
+```figure
+src: physics/_sme/gas-laws/img/fig-e4c53fd92d6de599.png
+caption: Gas particles collide with every wall of the container; the force of these collisions per unit area is the pressure.
+```
+
 $$
 P = \frac{F}{A}
 $$
@@ -62,6 +67,11 @@ $$
 ## Three empirical gas laws
 
 Experiments on a fixed amount of gas give three relationships (with $T$ in kelvin):
+
+```figure
+src: physics/_sme/gas-laws/img/fig-17df15696b1c4730.png
+caption: Boyle's law: at constant temperature, halving the volume makes the particles hit the walls twice as often, doubling the pressure.
+```
 
 | Law | Held constant | Relationship |
 |---|---|---|
@@ -88,6 +98,11 @@ $$
 ## The ideal gas equation
 
 The constant turns out to be proportional to the amount of gas:
+
+```figure
+src: physics/_sme/gas-laws/img/fig-58adefc6e3c62cde.png
+caption: Charles's law: at constant pressure, heating a gas makes its particles move faster, so the gas expands.
+```
 
 $$
 PV = nRT

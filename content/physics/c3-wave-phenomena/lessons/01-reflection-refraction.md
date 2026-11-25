@@ -42,12 +42,27 @@ related:
 
 In two or three dimensions we draw waves in two ways:
 
+```figure
+src: physics/_sme/wave-phenomena/img/fig-e7c171905e0278cb.png
+caption: Wavefronts join points in phase (e.g. crests); rays show the direction of travel and are perpendicular to the wavefronts.
+```
+
 - **wavefronts** join points that are in phase, such as all the crests;
 - **rays** show the direction the wave travels and are always **perpendicular** to the wavefronts.
 
 ## At a boundary
 
 When a wave reaches the boundary between two media, some of it is **reflected**, some **transmitted** (passes through), and the transmitted part is usually **refracted** — its direction changes because its speed changes.
+
+```figure
+src: physics/_sme/wave-phenomena/img/fig-d94b29d5b41ebe2a.png
+caption: Water waves slow down in shallow water: the wavelength shortens and the wavefronts bend at the boundary.
+```
+
+```figure
+src: physics/_sme/wave-phenomena/img/fig-445faa68be300cfb.png
+caption: Light refracting through a glass block: it bends towards the normal on entering the denser medium and away on leaving.
+```
 
 - **Reflection:** angle of incidence = angle of reflection, both measured from the normal.
 - **Refraction:** the frequency stays the same, but the speed and wavelength change. The wavefronts bunch up when the wave slows, and the ray bends.
@@ -92,6 +107,16 @@ $v = c/n = 3.00\times10^8/1.50 = 2.00\times10^8$ m s⁻¹.
 ## Critical angle and total internal reflection
 
 Going from a higher to a lower refractive index (glass to air, say), the ray bends **away** from the normal. As the angle of incidence increases, the refracted ray gets closer to the boundary. At the **critical angle** $\theta_c$ it runs along the boundary ($\theta_2 = 90^\circ$):
+
+```figure
+src: physics/_sme/wave-phenomena/img/fig-d037e51521ce11e8.png
+caption: Above the critical angle the light cannot leave the denser medium and is totally internally reflected.
+```
+
+```figure
+src: physics/_sme/wave-phenomena/img/fig-33e6aaf16ee16000.png
+caption: In a semicircular block: refraction below the critical angle, a 90° refracted ray at the critical angle, total internal reflection above it.
+```
 
 $$
 \sin\theta_c = \frac{n_2}{n_1}

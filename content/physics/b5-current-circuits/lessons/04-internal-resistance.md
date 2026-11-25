@@ -40,6 +40,16 @@ We model a real cell as an ideal emf $\varepsilon$ in series with a resistor $r$
 
 Applying conservation of energy round the circuit with external resistance $R$:
 
+```figure
+src: physics/_iitian/terminal-potential-difference-and-the-potential-divider-ib-d/img/fig-3181c655e9c44397.png
+caption: With no current, a voltmeter across a cell reads the emf; once current flows, some voltage is lost across the internal resistance r.
+```
+
+```figure
+src: physics/_sme/current-circuits/img/fig-f5a8bf9a11d7a76a.png
+caption: A real power supply: the emf in series with an internal resistance; the terminal p.d. is what the external load receives.
+```
+
 $$
 \varepsilon = I(R + r) = IR + Ir
 $$

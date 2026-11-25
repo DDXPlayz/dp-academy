@@ -39,6 +39,11 @@ related:
 
 An **ideal gas** is a model built on these assumptions:
 
+```figure
+src: physics/_iitian/ideal-gases-ib-dp-physics-study-notes/img/fig-795b98a86eee7564.png
+caption: Measuring the pressure of a gas: a sealed container fitted with a pressure gauge and a thermometer.
+```
+
 - the gas has a very large number of identical molecules in **random motion**;
 - the molecules’ own volume is **negligible** compared with the volume of the container;
 - there are **no intermolecular forces** except during collisions;
@@ -47,6 +52,11 @@ An **ideal gas** is a model built on these assumptions:
 ## Pressure from collisions
 
 When a molecule bounces off a wall, its momentum changes. By Newton’s second and third laws, the wall feels a force. Billions of collisions per second add up to a steady **pressure**.
+
+```figure
+src: physics/_sme/gas-laws/img/fig-0195a37502d0bc62.png
+caption: A particle bouncing off a wall reverses its momentum; the change in momentum, 2mv, means the wall exerts a force on it and it exerts one on the wall.
+```
 
 ```svg
 caption: A molecule hitting a wall at velocity c reverses its perpendicular component. Its momentum change is 2mc, so the wall receives an impulse 2mc.
@@ -113,6 +123,11 @@ $U = \tfrac{3}{2}nRT = \tfrac{3}{2} \times 2.0 \times 8.31 \times 300 = 7.5\time
 ## When is the ideal model good?
 
 Real gases deviate from $PV = nRT$ when the model’s assumptions break down:
+
+```figure
+src: physics/_sme/gas-laws/img/fig-78f1870f5f84da09.png
+caption: Real gases differ from the ideal model: their particles have volume and attract each other, which matters at high pressure and low temperature.
+```
 
 - at **high pressure / high density**, molecules are close together, so their volume and the forces between them matter;
 - at **low temperature**, molecules move slowly enough for attractions to have an effect, and the gas may liquefy.

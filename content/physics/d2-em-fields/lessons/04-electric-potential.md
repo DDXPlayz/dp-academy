@@ -45,6 +45,16 @@ related:
 
 The **electric potential energy** of two point charges is the work done to bring them together from infinity:
 
+```figure
+src: physics/_iitian/electric-potential-and-electric-potential-energy-ib-dp-physi/img/fig-6ac0aa62a04fa36a.png
+caption: Electric potential around a point charge falls with distance; the field strength is the negative of the potential gradient.
+```
+
+```figure
+src: physics/_sme/electric-magnetic-fields/img/fig-c806eb41aca8bd5a.png
+caption: A potential well around a point charge, with circular equipotentials seen from above.
+```
+
 $$
 E_p = \frac{kq_1q_2}{r}
 $$
@@ -72,6 +82,16 @@ Each is 0.10 m away. $V = \dfrac{8.99\times10^9}{0.10}(4.0 - 1.0)\times10^{-9} =
 
 The work done moving a charge $q$ through a potential difference $\Delta V_e$ is
 
+```figure
+src: physics/_sme/electric-magnetic-fields/img/fig-e520a4c235454da2.png
+caption: The work done moving a charge between two points equals the area under the force-distance graph, which is q times the potential difference.
+```
+
+```figure
+src: physics/_iitian/electric-potential-and-electric-potential-energy-ib-dp-physi/img/fig-e8c34d68cbaf1aa4.png
+caption: Equipotentials (dashed) for a uniform field, a point charge and a dipole: always perpendicular to the field lines.
+```
+
 $$
 W = q\Delta V_e
 $$
@@ -90,6 +110,11 @@ The field points from high potential to low potential, and is strongest where th
 
 ```keyidea
 Equipotentials are always perpendicular to field lines. Around a point charge they are concentric spheres; between parallel plates they are planes parallel to the plates and equally spaced.
+```
+
+```figure
+src: physics/_sme/electric-magnetic-fields/img/fig-d61a86ccc2dbdabe.png
+caption: No work is done moving a charge along an equipotential, because the potential does not change.
 ```
 
 No work is done moving a charge along an equipotential, since $\Delta V_e = 0$.

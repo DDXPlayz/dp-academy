@@ -40,6 +40,11 @@ related:
 
 Shine ultraviolet light onto a clean zinc plate and electrons are ejected — the **photoelectric effect**. The details are what matter:
 
+```figure
+src: physics/_iitian/photons-and-the-photoelectric-effect-ib-dp-physics-study-not/img/fig-1442e5b55aa2309c.png
+caption: Photocurrent against potential: the current falls to zero at the stopping potential −V₀.
+```
+
 | Observation | Wave model predicts | Actually |
 |---|---|---|
 | Below a **threshold frequency** $f_0$ | Enough intensity should eject electrons | No emission at all, however bright |
@@ -53,6 +58,16 @@ Shine ultraviolet light onto a clean zinc plate and electrons are ejected — th
 Light arrives as photons, each of energy hf. One photon gives all its energy to one electron. The electron needs at least the work function Φ to escape; whatever is left becomes kinetic energy.
 ```
 
+```figure
+src: physics/_sme/quantum-physics/img/fig-885ecbc065666eae.png
+caption: Ultraviolet light on a negatively charged zinc plate releases photoelectrons, and the electroscope leaf falls; visible light, however bright, does not.
+```
+
+```figure
+src: physics/_sme/quantum-physics/img/fig-016f06ded77b05b6.png
+caption: Electrons sit in a potential well; a photon must supply at least the work function to free one, and any extra becomes kinetic energy.
+```
+
 $$
 E_{\max} = hf - \Phi
 $$
@@ -64,6 +79,21 @@ $$
 ## Measuring E_max: stopping potential
 
 A reverse voltage between the plate and a collector slows the electrons. The **stopping potential** $V_s$ just stops the fastest ones:
+
+```figure
+src: physics/_iitian/photons-and-the-photoelectric-effect-ib-dp-physics-study-not/img/fig-c1fbf05fc36edddf.png
+caption: A photoelectric cell: light ejects electrons from the metal surface and they are collected to form a current.
+```
+
+```figure
+src: physics/_sme/quantum-physics/img/fig-8b95b8d19fbf7890.png
+caption: Maximum kinetic energy against frequency: a straight line with gradient h, cutting the frequency axis at the threshold frequency.
+```
+
+```figure
+src: physics/_sme/quantum-physics/img/fig-272465d7ca19252e.png
+caption: Brighter light (same frequency) gives a larger current but the same stopping potential.
+```
 
 $$
 eV_s = E_{\max}

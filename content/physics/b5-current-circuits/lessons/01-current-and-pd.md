@@ -40,6 +40,11 @@ related:
 
 Electric **current** is a flow of charge. In metals the charge carriers are free electrons; in electrolytes they are ions. The current is the rate at which charge passes a point:
 
+```figure
+src: physics/_sme/current-circuits/img/fig-00def7fafac140e4.png
+caption: Conventional current flows from + to −; the electrons actually drift the opposite way, from − to +.
+```
+
 $$
 I = \frac{\Delta q}{\Delta t}
 $$
@@ -57,6 +62,11 @@ Number of electrons $= \dfrac{48}{1.60\times10^{-19}} = 3.0\times10^{20}$.
 ## Conductors and insulators
 
 Whether a material conducts depends on how many **mobile charge carriers** it has:
+
+```figure
+src: physics/_sme/current-circuits/img/fig-2275e80445cb2374.png
+caption: In a metal, the outer electrons are delocalised and free to move through the lattice of positive ions, so it conducts.
+```
 
 - **conductors** (metals) have many free electrons that can drift through the lattice;
 - **insulators** (plastic, glass) have almost none — their electrons are bound to atoms;
@@ -84,6 +94,11 @@ Current tells you how much charge flows per second. Potential difference tells y
 ## Circuit diagrams
 
 Circuits are drawn with standard symbols so that the arrangement is clear at a glance.
+
+```figure
+src: physics/_sme/current-circuits/img/fig-94d119231ef1b967.png
+caption: Common circuit symbols used in IB circuit diagrams.
+```
 
 ```svg
 caption: Standard symbols. A cell’s longer line is its positive terminal.

@@ -39,6 +39,11 @@ related:
 
 A solution of $a = -\omega^2 x$ is a sine (or cosine) wave in time:
 
+```figure
+src: physics/_sme/simple-harmonic-motion/img/fig-ffa59db52915cf55.png
+caption: SHM as the projection of circular motion: the phase angle ωt on the circle gives the displacement x = x₀ sin(ωt + φ).
+```
+
 $$
 x = x_0\sin(\omega t + \phi)
 $$
@@ -53,6 +58,11 @@ Two oscillators with the same $\omega$ but different $\phi$ have a **phase diffe
 ## Velocity and acceleration
 
 Differentiating gives
+
+```figure
+src: physics/_sme/simple-harmonic-motion/img/fig-cb0637da2d8e2861.png
+caption: Displacement, velocity and acceleration graphs for SHM: velocity is a quarter cycle ahead of displacement and acceleration is in antiphase with it.
+```
 
 $$
 v = \omega x_0\cos(\omega t + \phi) \qquad a = -\omega^2 x_0\sin(\omega t + \phi) = -\omega^2 x

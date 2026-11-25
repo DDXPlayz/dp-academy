@@ -43,6 +43,11 @@ related:
 
 All objects above absolute zero emit **electromagnetic radiation** from their surface. At room temperature it is mostly infrared; at a few thousand kelvin there is enough visible light for the object to glow. Unlike conduction and convection, radiation can cross a vacuum — this is how energy reaches us from the Sun.
 
+```figure
+src: physics/_iitian/thermal-energy-transfer-ib-dp-physics-study-notes/img/fig-ac8610a2415fc61b.png
+caption: A stove warms the room by infrared radiation, which needs no medium to travel through.
+```
+
 ## Black bodies and the Stefan–Boltzmann law
 
 A **black body** is a perfect absorber and therefore a perfect emitter. The total power it radiates — its **luminosity** — is
@@ -62,6 +67,16 @@ $L = 5.67\times10^{-8} \times 6.2\times10^{18} \times 5800^4 = 4.0\times10^{26}$
 ## The black-body spectrum and Wien’s law
 
 A black body emits a continuous spectrum with a peak at wavelength $\lambda_{\max}$. As the temperature rises, the curve gets taller (more power) and the peak moves to **shorter** wavelengths:
+
+```figure
+src: physics/_sme/thermal-energy-transfers/img/fig-3a5fb0b626d8996e.png
+caption: Black-body spectra: a hotter body emits more at every wavelength and its peak shifts to shorter wavelengths (Wien's law).
+```
+
+```figure
+src: physics/_iitian/thermal-energy-transfer-ib-dp-physics-study-notes/img/fig-d63040d96374baba.png
+caption: As an object gets hotter its glow shifts from red towards white and blue.
+```
 
 $$
 \lambda_{\max} T = 2.9\times10^{-3}\ \text{m K}
@@ -86,6 +101,11 @@ $T = \dfrac{2.9\times10^{-3}}{420\times10^{-9}} = 6900$ K.
 ## Luminosity and apparent brightness
 
 Far from a source, its power spreads over a sphere of area $4\pi d^2$. The power received per square metre is the **apparent brightness**:
+
+```figure
+src: physics/_sme/thermal-energy-transfers/img/fig-25b275b8ccc7592d.png
+caption: The energy from a star spreads over ever larger spheres, so apparent brightness falls as 1/d².
+```
 
 $$
 b = \frac{L}{4\pi d^2}

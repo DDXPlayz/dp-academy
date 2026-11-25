@@ -29,6 +29,16 @@ related:
 
 Joining light nuclei produces a nucleus with a **higher binding energy per nucleon** — the steep left-hand side of the binding-energy curve. The product has less mass than the reactants and the difference is released as energy.
 
+```figure
+src: physics/_sme/fusion-stars/img/fig-2b3a23b580e106c2.png
+caption: Light nuclei lie on the steep rising part of the binding-energy curve, so fusing them increases the binding energy per nucleon and releases energy.
+```
+
+```figure
+src: physics/_sme/fusion-stars/img/fig-b5b098cb85bee85e.png
+caption: The proton-proton chain: hydrogen nuclei fuse step by step into helium-4, releasing positrons, neutrinos and gamma rays.
+```
+
 In stars like the Sun, the net result of the **proton–proton chain** is
 
 $$
@@ -49,11 +59,26 @@ $E = 0.027598\times931.5 = 25.7$ MeV (the positrons then annihilate, bringing th
 Nuclei are positively charged and repel strongly. To fuse they must get within about 10⁻¹⁵ m, where the strong force takes over. That needs extremely high **temperature** (≈ 10⁷ K) so they move fast enough, and high **density** so collisions are frequent.
 ```
 
+```figure
+src: physics/_iitian/nuclear-fusion-ib-dp-physics-study-notes/img/fig-0cbcd90ef63302a4.png
+caption: A star forms when gravity pulls a gas cloud together, heating its core until it is hot and dense enough for fusion.
+```
+
+```figure
+src: physics/_iitian/nuclear-fusion-ib-dp-physics-study-notes/img/fig-0a9417f63f5c374d.png
+caption: A tokamak confines a plasma with strong magnetic fields, trying to reproduce on Earth the conditions for fusion.
+```
+
 These conditions exist in the core of a star, where gravity has compressed and heated the gas.
 
 ## Stellar equilibrium
 
 A main-sequence star is stable because two effects balance:
+
+```figure
+src: physics/_sme/fusion-stars/img/fig-a3e736981d3bdf41.png
+caption: Stellar equilibrium: inward gravity is balanced by the outward radiation and gas pressure from the core.
+```
 
 - **gravity** pulls all the star’s mass inward;
 - **radiation and gas pressure** from the hot, fusing core push outward.

@@ -34,6 +34,16 @@ related:
 
 A coil of $N$ turns and area $A$ spins at angular speed $\omega$ in a uniform field $B$. The angle between the field and the coil’s normal is $\theta = \omega t$, so the flux through it is
 
+```figure
+src: physics/_sme/induction/img/fig-0a3a56135b46b405.png
+caption: Magnetic flux is the product of the field strength and the area it passes through at right angles.
+```
+
+```figure
+src: physics/_sme/induction/img/fig-cedd7be64851f6f7.png
+caption: When the area is tilted, only the component of B along the normal counts: Φ = BA cos θ.
+```
+
 $$
 \Phi = BA\cos\omega t
 $$
@@ -63,6 +73,11 @@ The emf is greatest when the flux is zero (coil plane parallel to the field — 
 
 If the coil is turned **twice as fast**:
 
+```figure
+src: physics/_sme/induction/img/fig-92bb5d0d927e4997.png
+caption: Doubling the rotation speed doubles both the frequency and the peak emf of the generator output.
+```
+
 - the **frequency** of the ac doubles (the period halves);
 - the **peak emf** doubles, because the flux changes twice as quickly ($\varepsilon_0 \propto \omega$).
 
@@ -75,6 +90,11 @@ Both the frequency and the peak emf halve: a 25 Hz sinusoid with a peak of 6.0 V
 ## Energy in a generator
 
 When current is drawn from the generator, the current in the coil feels forces in the magnetic field that oppose the rotation (Lenz’s law). The more current is drawn, the harder the coil is to turn — the mechanical work done becomes electrical energy.
+
+```figure
+src: physics/_sme/induction/img/fig-360217f1c1ce0790.png
+caption: A simple AC generator: a coil turned in a magnetic field, with slip rings and brushes taking the alternating emf out.
+```
 
 ```question
 generator-speed

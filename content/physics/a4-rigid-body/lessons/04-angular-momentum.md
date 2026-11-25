@@ -49,6 +49,11 @@ measured in kg m² s⁻¹.
 
 If no resultant external torque acts on a system, its total angular momentum stays constant:
 
+```figure
+src: physics/_sme/rigid-body-mechanics/img/fig-68a884a15a9a0c93.png
+caption: A spinning skater pulls in their arms: the moment of inertia falls, so the angular velocity rises to keep angular momentum constant.
+```
+
 $$
 I_1\omega_1 = I_2\omega_2
 $$
@@ -77,6 +82,11 @@ Kinetic energy falls from 14.4 J to 9.6 J — this is a rotational inelastic col
 
 A torque acting for a time changes angular momentum, just as a force acting for a time changes linear momentum:
 
+```figure
+src: physics/_sme/rigid-body-mechanics/img/fig-29a5af23619feefb.png
+caption: The area under a torque-time graph is the angular impulse, equal to the change in angular momentum.
+```
+
 $$
 \Delta L = \tau\,\Delta t
 $$
@@ -94,6 +104,16 @@ $\Delta t = \dfrac{|\Delta L|}{\tau} = \dfrac{36}{6.0} = 6.0$ s.
 ## Rotational kinetic energy
 
 A rotating body has kinetic energy even if its centre is not moving:
+
+```figure
+src: physics/_sme/rigid-body-mechanics/img/fig-2c086e50ccd23f98.png
+caption: A ball rolling down a slope gains both translational and rotational kinetic energy from its loss of potential energy.
+```
+
+```figure
+src: physics/_sme/rigid-body-mechanics/img/fig-1b31698ef6780b76.png
+caption: Rolling without slipping combines rotation about the centre with translation: the contact point is momentarily at rest.
+```
 
 $$
 E_k = \tfrac{1}{2}I\omega^2 = \frac{L^2}{2I}

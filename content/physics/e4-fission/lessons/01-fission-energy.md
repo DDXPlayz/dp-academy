@@ -35,6 +35,11 @@ related:
 
 Heavy nuclei such as uranium-235 can split into two medium-sized nuclei. This **fission** can happen **spontaneously** (rarely) or be **induced** when the nucleus absorbs a neutron:
 
+```figure
+src: physics/_iitian/fission-ib-dp-physics-study-notes/img/fig-be669b6b03a417ae.png
+caption: A uranium-235 nucleus absorbs a neutron, becomes unstable and splits into two smaller nuclei (here strontium-94 and xenon-140) plus neutrons.
+```
+
 $$
 ^1_0\text{n} + ^{235}_{92}\text{U} \rightarrow\ ^{236}_{92}\text{U} \rightarrow\ ^{141}_{56}\text{Ba} + ^{92}_{36}\text{Kr} + 3\,^1_0\text{n}
 $$
@@ -53,6 +58,16 @@ Energy released ≈ $1970 - 1786 = 184$ MeV — about 200 MeV.
 
 ```keyidea
 Each fission releases 2–3 neutrons. If on average at least one of them goes on to cause another fission, the reaction sustains itself — a chain reaction.
+```
+
+```figure
+src: physics/_sme/fission/img/fig-19c94dd09d339cf1.png
+caption: A chain reaction: each fission releases two or three neutrons that can trigger further fissions.
+```
+
+```figure
+src: physics/_iitian/fission-ib-dp-physics-study-notes/img/fig-40b456965449ad9b.png
+caption: In the moderator, fast neutrons lose energy through repeated collisions until they are slow enough to cause fission efficiently.
 ```
 
 - If on average **exactly one** neutron per fission causes another fission, the reaction proceeds at a steady rate — this is what a reactor aims for.

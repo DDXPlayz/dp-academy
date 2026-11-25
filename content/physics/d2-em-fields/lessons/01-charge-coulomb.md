@@ -36,6 +36,11 @@ related:
 
 There are two types of electric charge, **positive** and **negative**.
 
+```figure
+src: physics/_iitian/electric-charge-force-and-field-ib-dp-physics-study-notes/img/fig-2ccc1e01582d502e.png
+caption: An atom that gains electrons becomes a negative ion; one that loses electrons becomes a positive ion.
+```
+
 - **Like** charges **repel**.
 - **Unlike** charges **attract**.
 
@@ -44,6 +49,11 @@ Ordinary matter is neutral because atoms hold equal numbers of protons (+) and e
 ## Coulomb’s law
 
 Two point charges $q_1$ and $q_2$, a distance $r$ apart, exert forces on each other of size
+
+```figure
+src: physics/_sme/electric-magnetic-fields/img/fig-0cbc6a12a4dd2f2a.png
+caption: Coulomb's law: the electrostatic force between two point charges acts along the line joining them and falls as 1/r².
+```
 
 $$
 F = \frac{kq_1q_2}{r^2}, \qquad k = \frac{1}{4\pi\varepsilon_0} = 8.99\times10^9\ \text{N m}^2\,\text{C}^{-2}
@@ -71,6 +81,16 @@ Charge can be moved from one object to another but never created or destroyed: t
 - **Contact:** touching a charged conductor to a neutral one lets charge spread between them.
 - **Electrostatic induction:** bring a charged rod near (but not touching) a neutral conductor. The conductor’s electrons are attracted or repelled, separating charge. If the conductor is then briefly **grounded** (connected to Earth), electrons flow to or from the ground; remove the ground connection and then the rod, and the conductor is left with a charge **opposite** to the rod’s.
 
+```figure
+src: physics/_sme/electric-magnetic-fields/img/fig-bd05e5a88d1c3473.png
+caption: Charging by friction: rubbing transfers electrons from one material to the other, leaving equal and opposite charges.
+```
+
+```figure
+src: physics/_sme/electric-magnetic-fields/img/fig-108756d39313b48e.png
+caption: Charging by induction: a nearby charged rod separates the charges on a sphere; earthing it and then removing the rod leaves the sphere charged.
+```
+
 ```example
 A negatively charged rod is held near a neutral metal sphere, which is then touched with a grounded wire. The wire is removed, then the rod. What charge does the sphere end up with?
 ---
@@ -80,6 +100,11 @@ The rod repels electrons in the sphere; grounding lets those electrons escape to
 ## Millikan: charge comes in lumps
 
 Millikan sprayed tiny oil droplets between two horizontal charged plates. By adjusting the voltage until a droplet hovered, he balanced its weight against the electric force and found the droplet’s charge. Every charge he measured was a whole-number multiple of one value, about $1.6\times10^{-19}$ C — showing that charge is **quantised**, carried in units of the elementary charge $e$.
+
+```figure
+src: physics/_iitian/electric-charge-force-and-field-ib-dp-physics-study-notes/img/fig-a53c0fd8cd5a686c.png
+caption: Millikan's oil-drop apparatus: charged oil drops are held between plates whose electric field balances their weight.
+```
 
 ```question
 coulomb-force

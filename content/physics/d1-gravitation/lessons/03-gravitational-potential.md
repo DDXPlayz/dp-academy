@@ -48,6 +48,11 @@ Near Earth’s surface we use $\Delta E_p = mg\Delta h$, choosing any convenient
 
 The **gravitational potential energy** of two masses is the work done to bring them together from infinite separation:
 
+```figure
+src: physics/_sme/gravitational-fields/img/fig-0fa6f46f3b0e7285.png
+caption: Gravitational potential is negative and rises towards zero at infinity; the field strength is the negative gradient of the potential-distance graph.
+```
+
 $$
 E_p = -\frac{Gm_1m_2}{r}
 $$
@@ -98,6 +103,11 @@ ylabel: V_g / (GM/R)
 ## Equipotentials
 
 An **equipotential surface** joins points at the same potential. Around a spherical mass they are concentric spheres, closer together near the mass where the potential changes fastest.
+
+```figure
+src: physics/_sme/gravitational-fields/img/fig-ad17e68a8e7a6515.png
+caption: Equipotential surfaces around Earth are concentric spheres, always perpendicular to the field lines.
+```
 
 ```keyidea
 Field lines are always perpendicular to equipotential surfaces. No work is done moving along an equipotential, because ΔV_g = 0.

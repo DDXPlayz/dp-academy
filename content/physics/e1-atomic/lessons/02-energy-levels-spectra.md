@@ -37,6 +37,16 @@ related:
 
 Heat a gas or pass a current through it, and its light, split by a prism or grating, is not a continuous rainbow: it is a set of bright **lines** at particular wavelengths. Shine white light through a cool gas, and the same wavelengths appear as **dark lines** in the continuous spectrum.
 
+```figure
+src: physics/_iitian/the-structure-of-the-atom-ib-dp-physics-study-notes/img/fig-0f28b85868b9df53.png
+caption: An emission line spectrum: bright lines at specific wavelengths on a dark background.
+```
+
+```figure
+src: physics/_iitian/the-structure-of-the-atom-ib-dp-physics-study-notes/img/fig-1081cef2069c20a8.png
+caption: Gas discharge tubes of different elements glow with different colours, each giving its own line spectrum.
+```
+
 ```keyidea
 Each element has its own unique set of lines. The only explanation is that electrons in atoms can only have certain **discrete energies** — energy levels.
 ```
@@ -44,6 +54,16 @@ Each element has its own unique set of lines. The only explanation is that elect
 ## Transitions and photons
 
 When an electron drops from a higher level to a lower one, the atom emits a **photon** carrying away the energy difference:
+
+```figure
+src: physics/_iitian/the-structure-of-the-atom-ib-dp-physics-study-notes/img/fig-8b940e0f5b68fc5d.png
+caption: An electron absorbs a photon of exactly the right energy to jump up a level, then emits a photon of energy E₂ − E₁ when it drops back.
+```
+
+```figure
+src: physics/_iitian/the-structure-of-the-atom-ib-dp-physics-study-notes/img/fig-c5109bd235bb21e8.png
+caption: When an electron drops to a lower energy level it emits a photon whose energy equals the difference between the levels.
+```
 
 $$
 \Delta E = hf = \frac{hc}{\lambda}, \qquad h = 6.63\times10^{-34}\ \text{J s}
@@ -75,6 +95,11 @@ $\lambda = \dfrac{hc}{\Delta E} = \dfrac{6.63\times10^{-34}\times3.00\times10^8}
 ## Spectra as fingerprints
 
 Because every element has a unique set of energy levels, its lines identify it. Astronomers find the composition of a star from the dark absorption lines in its spectrum — helium was discovered in the Sun this way before it was found on Earth.
+
+```figure
+src: physics/_sme/structure-of-the-atom/img/fig-e5f93d3fcafe78fe.png
+caption: Each element has its own pattern of spectral lines, which identifies it like a fingerprint.
+```
 
 ```question
 photon-wavelength

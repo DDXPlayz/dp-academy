@@ -36,6 +36,11 @@ related:
 
 Bohr kept the picture of an electron orbiting the proton, held by the electric force, but added one rule: the electron’s **angular momentum is quantised**,
 
+```figure
+src: physics/_sme/structure-of-the-atom/img/fig-d8c52f6b8f041b9d.png
+caption: Bohr's condition seen as a standing wave: only orbits that fit a whole number of electron wavelengths are allowed.
+```
+
 $$
 mvr = \frac{nh}{2\pi}, \qquad n = 1, 2, 3, \ldots
 $$
@@ -47,6 +52,11 @@ Combining this with $\dfrac{ke^2}{r^2} = \dfrac{mv^2}{r}$ allows only certain ra
 $$
 E_n = -\frac{13.6}{n^2}\ \text{eV}
 $$
+
+```figure
+src: physics/_sme/structure-of-the-atom/img/fig-b116eaf5c2f24794.png
+caption: The energy levels of hydrogen, with transitions down to n = 1 and n = 2 producing spectral lines.
+```
 
 | n | 1 | 2 | 3 | 4 | ∞ |
 |---|---|---|---|---|---|

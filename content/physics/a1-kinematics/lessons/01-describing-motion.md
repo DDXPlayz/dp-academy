@@ -50,11 +50,21 @@ A **scalar** has only a size: 5 m, 12 s, 30 m s⁻¹. A **vector** has a size *a
 
 Imagine walking 3 m east, then 4 m north. You have walked a **distance** of 7 m. But your **displacement** — where you ended up relative to where you started — is the straight line between the two points: $\sqrt{3^2 + 4^2} = 5$ m, pointing 37° east of north.
 
+```figure
+src: physics/_sme/kinematics/img/fig-faff2bd74e2b1f9c.png
+caption: The path actually travelled gives the distance; the straight arrow from start to finish is the displacement.
+```
+
 Distance only ever increases. Displacement can grow, shrink, or return to zero.
 
 ## Speed and velocity
 
 **Speed** tells you how fast distance is covered. **Velocity** tells you how fast *displacement* changes, so it carries a direction:
+
+```figure
+src: physics/_sme/kinematics/img/fig-24c46c62de12cd51.png
+caption: Two cars at the same speed but moving in opposite directions have different velocities.
+```
 
 $$
 v_{\text{avg}} = \frac{\Delta s}{\Delta t}
@@ -70,6 +80,11 @@ Speed is always positive. Velocity can be positive, negative or zero — the sig
 
 Acceleration measures how quickly *velocity* changes:
 
+```figure
+src: physics/_sme/kinematics/img/fig-a50da4b473bbc972.png
+caption: Acceleration in the direction of motion speeds an object up; acceleration opposite to the motion slows it down.
+```
+
 $$
 a = \frac{\Delta v}{\Delta t}
 $$
@@ -83,6 +98,16 @@ A negative acceleration does not always mean “slowing down”. If velocity is 
 ## Reading motion graphs
 
 Graphs pack a whole journey into one picture. Two rules do most of the work:
+
+```figure
+src: physics/_sme/kinematics/img/fig-0fe54c17d6029f89.png
+caption: On a curved displacement-time graph, the gradient of the tangent at a point gives the instantaneous velocity.
+```
+
+```figure
+src: physics/_sme/kinematics/img/fig-a470ee2010776f11.png
+caption: Velocity-time graphs for constant velocity, uniform acceleration and increasing acceleration: the gradient is the acceleration.
+```
 
 - The **gradient** of a displacement–time graph is the velocity.
 - The **gradient** of a velocity–time graph is the acceleration, and the **area** under it is the displacement.

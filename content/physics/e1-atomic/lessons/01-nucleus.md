@@ -39,6 +39,16 @@ related:
 
 Geiger and Marsden, working with Rutherford, fired alpha particles at a very thin gold foil and counted where they went.
 
+```figure
+src: physics/_iitian/the-structure-of-the-atom-ib-dp-physics-study-notes/img/fig-d92f3773dc5b3375.png
+caption: Thomson's plum-pudding model: electrons embedded in a spread-out sphere of positive charge.
+```
+
+```figure
+src: physics/_iitian/the-structure-of-the-atom-ib-dp-physics-study-notes/img/fig-a5eac64a0b874612.png
+caption: Gold-foil experiment: the plum-pudding model predicts only tiny deflections, but a few alpha particles bounce back, so the positive charge must be concentrated in a tiny nucleus.
+```
+
 ```svg
 caption: Alpha particles fired at gold nuclei. Most pass straight through; a few passing close to a nucleus are strongly deflected; a very few rebound.
 <svg viewBox="0 0 420 200">
@@ -67,6 +77,11 @@ This replaced the "plum pudding" model with the **nuclear model**: a tiny, dense
 
 A nuclide is written $^{A}_{Z}\text{X}$, where $A$ is the **nucleon number**, $Z$ the **proton number** and X the chemical symbol. The number of neutrons is $N = A - Z$.
 
+```figure
+src: physics/_sme/structure-of-the-atom/img/fig-3281013d5014d446.png
+caption: A simple model of an atom: protons and neutrons in the nucleus, electrons around it.
+```
+
 ```example
 How many protons, neutrons and electrons are in a neutral atom of $^{238}_{92}\text{U}$?
 ---
@@ -87,6 +102,11 @@ Volume $\propto R^3 \propto A$, and mass $\propto A$, so **all nuclei have about
 
 In a head-on collision, an alpha particle slows as it approaches the nucleus, stops, and returns. At the turning point all its kinetic energy is electric potential energy:
 
+```figure
+src: physics/_sme/structure-of-the-atom/img/fig-5ed56863e18ddeb5.png
+caption: An alpha particle fired head-on at a nucleus slows to a stop at the distance of closest approach, where all its kinetic energy has become electric potential energy.
+```
+
 $$
 E_k = \frac{kQq}{d}
 $$
@@ -104,6 +124,11 @@ $d = \dfrac{k(79e)(2e)}{E_k} = \dfrac{8.99\times10^9\times158\times(1.60\times10
 ## (HL) Deviations at high energies
 
 At high energies the alphas get close enough to touch the nucleus. Then the **strong nuclear force** also acts and the scattering no longer matches the Coulomb-only prediction. The energy at which this deviation begins gives an estimate of the nuclear radius. High-energy electrons are also used: they do not feel the strong force, and they diffract around the nucleus.
+
+```figure
+src: physics/_sme/structure-of-the-atom/img/fig-2bb61d9a8b161569.png
+caption: At high alpha energies the measured scattering departs from Rutherford's prediction, because the alpha particles get close enough to feel the strong nuclear force.
+```
 
 ```question
 rutherford-conclusion

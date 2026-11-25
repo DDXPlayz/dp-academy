@@ -33,6 +33,16 @@ related:
 
 The Sun’s surface is at about 5800 K, so by Wien’s law its radiation peaks in the **visible** range. Earth’s surface is at about 288 K, so it radiates mainly **infrared** at around 10 µm. The atmosphere treats these two kinds of radiation very differently:
 
+```figure
+src: physics/_sme/greenhouse-effect/img/fig-7296d0652b683edf.png
+caption: The Sun's radiation peaks in the visible, while Earth emits at much longer infrared wavelengths.
+```
+
+```figure
+src: physics/_iitian/energy-balance-of-the-earth-ib-dp-physics-study-notes/img/fig-ba8f187b6d64ebbf.png
+caption: Absorption bands of atmospheric gases: water vapour and carbon dioxide absorb strongly in the infrared.
+```
+
 - incoming visible light mostly **passes through** to the surface;
 - outgoing infrared is largely **absorbed** by certain gases.
 
@@ -45,11 +55,21 @@ The Sun’s surface is at about 5800 K, so by Wien’s law its radiation peaks i
 | Methane, CH₄ | wetlands, termites | cattle, rice paddies, landfill, gas leaks |
 | Nitrous oxide, N₂O | soil bacteria, oceans | fertilisers, vehicle exhausts |
 
+```figure
+src: physics/_iitian/energy-balance-of-the-earth-ib-dp-physics-study-notes/img/fig-436e985b1bb7cea1.png
+caption: Atmospheric carbon dioxide concentration and human emissions have risen sharply since the industrial revolution.
+```
+
 Nitrogen and oxygen, which make up 99% of the air, are **not** greenhouse gases.
 
 ## How the gases absorb infrared
 
 Molecules can vibrate (bonds stretching and bending) and rotate. These motions have **quantised energy levels**. When a photon of infrared radiation has exactly the energy needed to move the molecule to a higher vibrational level, it is absorbed. This can also be pictured as **resonance**: the molecule’s natural frequency of vibration matches the frequency of the infrared radiation, so it absorbs energy strongly.
+
+```figure
+src: physics/_iitian/energy-balance-of-the-earth-ib-dp-physics-study-notes/img/fig-03adc62336ba82a3.png
+caption: Infrared radiation makes the bonds in a CO₂ molecule vibrate, so the molecule absorbs it and re-emits it in all directions.
+```
 
 ```keyidea
 Absorbed infrared is soon re-emitted — but in a random direction. Roughly half heads back towards the surface, so the surface receives energy from the Sun **and** from the atmosphere, and warms until it is radiating enough to stay in balance.
@@ -81,6 +101,11 @@ caption: Visible sunlight passes through; infrared from the surface is absorbed 
 ## The natural and the enhanced greenhouse effect
 
 The natural greenhouse effect raises Earth’s average surface temperature from about 255 K to about 288 K, which keeps water liquid and makes life possible.
+
+```figure
+src: physics/_sme/greenhouse-effect/img/fig-c23d7e5f243bb410.png
+caption: A simple energy-balance model: the atmosphere absorbs infrared from the surface and re-radiates part of it back down, warming the surface.
+```
 
 Since the industrial revolution, human activity has raised the concentration of CO₂ from about 280 ppm to over 420 ppm and increased methane and nitrous oxide too. More greenhouse gas means more infrared absorbed and re-emitted downwards, so the surface must warm further to restore balance. This additional warming is the **enhanced greenhouse effect**, and it drives current climate change.
 

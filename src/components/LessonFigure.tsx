@@ -15,7 +15,7 @@
  * SVGs are authored for DP Academy; they use currentColor and the theme
  * variables (--accent, --muted, --good, --bad) so they work in both themes.
  */
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { evaluate } from '../lib/expression';
 
 function Frame({ caption, children }: { caption?: string; children: React.ReactNode }) {
@@ -197,5 +197,48 @@ export function PlotFigure({ src }: { src: string }) {
         </div>
       )}
     </Frame>
+  );
+}
+
+const CREDIT: Record<string, string> = { _sme: 'Save My Exams', _iitian: 'IITian Academy', _studyib: 'StudyIB' };
+
+/**
+ * A diagram from the private revision notes (resources/extracted, never
+ * committed). It is served from /data/notes/ behind the sign-in; in a build
+ * without the private folder the image is missing and the figure hides itself.
+ *
+ *   ```figure
+ *   src: physics/_sme/<note>/img/fig-<hash>.png
+ *   caption: What the diagram shows, in one sentence.
+ *   ```
+ */
+export function NoteFigure({ src }: { src: string }) {
+  const { meta } = header(src);
+  const file = meta.src?.[0]?.trim() ?? '';
+  const caption = meta.caption?.[0];
+  const width = Number(meta.width?.[0]) || undefined;
+  const [failed, setFailed] = useState(false);
+  const credit = CREDIT[file.split('/')[1] ?? ''];
+  if (!file || failed) return null;
+  return (
+    <figure className="lesson-fig note-fig my-6">
+      <div className="overflow-hidden rounded-xl border border-line bg-white p-2">
+        <img
+          src={`/data/notes/${file}`}
+          alt={caption ?? 'Diagram'}
+          loading="lazy"
+          decoding="async"
+          onError={() => setFailed(true)}
+          className="mx-auto h-auto max-w-full"
+          style={width ? { width: `${width}px` } : undefined}
+        />
+      </div>
+      {(caption || credit) && (
+        <figcaption className="mt-2 text-center text-sm text-muted">
+          {caption}
+          {credit && <span className="ml-1 text-xs opacity-75">Diagram: {credit}.</span>}
+        </figcaption>
+      )}
+    </figure>
   );
 }

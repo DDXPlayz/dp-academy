@@ -36,10 +36,25 @@ related:
 
 The **activity** $A$ of a sample is its number of decays per second, in becquerels (Bq). A detector such as a Geiger–Müller tube only catches some of the radiation, so it measures a smaller **count rate**. Both are proportional to the number of undecayed nuclei.
 
+```figure
+src: physics/_sme/radioactive-decay/img/fig-085dc1ec33b14d69.png
+caption: Radioactive decay is random: the count rate fluctuates about a smooth exponential trend.
+```
+
+```figure
+src: physics/_iitian/radioactivity-ib-dp-physics-study-notes/img/fig-716e85b13bb3cfae.png
+caption: After each half-life, half of the remaining radioactive nuclei have decayed, so the activity halves again and again.
+```
+
 ## Half-life
 
 ```keyidea
 The half-life is the time for half the undecayed nuclei to decay. Because decay is random, every nucleus has the same chance of decaying in a given time — so in each half-life, half of whatever is left decays.
+```
+
+```figure
+src: physics/_sme/radioactive-decay/img/fig-1676c893e00a9add.png
+caption: A larger decay constant gives a steeper curve and a shorter half-life.
 ```
 
 After $n$ half-lives:
@@ -71,6 +86,16 @@ A sample has an activity of 3200 Bq. Its half-life is 6 hours. What is its activ
 ## Background radiation
 
 Detectors always record some counts from **background radiation** — radon gas, rocks, cosmic rays, medical sources. Measure the background with no source present and **subtract** it from every reading before using the data.
+
+```figure
+src: physics/_sme/radioactive-decay/img/fig-553af4e9115d9cb6.png
+caption: Measuring background radiation: a GM tube and counter with no source present.
+```
+
+```figure
+src: physics/_sme/radioactive-decay/img/fig-d0df768b4b59015c.png
+caption: With the source in place, the background count is subtracted from the measured count to give the corrected count rate.
+```
 
 ```example
 A detector records 520 counts per minute near a source and 20 counts per minute with the source removed. After 30 minutes it records 145 counts per minute. Find the half-life.

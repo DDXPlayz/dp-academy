@@ -53,6 +53,11 @@ related:
 
 For a constant force $F$ moving an object a displacement $s$, with an angle $\theta$ between them:
 
+```figure
+src: physics/_sme/work-energy-power/img/fig-b0e40441f0624b1c.png
+caption: Pulling a sled with a rope at an angle: only the component of the force along the direction of motion does work.
+```
+
 $$W = Fs\cos\theta$$
 
 Only the component of the force along the displacement, $F\cos\theta$, does work.
@@ -79,6 +84,11 @@ force-displacement
 
 **Kinetic energy** — the energy of motion:
 
+```figure
+src: physics/_iitian/ibdp-physics-2025-slhl-3-4-energy-transfers-study-notes/img/fig-32de5aae82a24dc0.png
+caption: A swinging pendulum swaps gravitational potential energy and kinetic energy: maximum Ep at the ends, maximum Ek at the bottom.
+```
+
 $$E_k = \tfrac12 mv^2$$
 
 **Gravitational potential energy** — lifting an object of mass $m$ through a height $\Delta h$ near the Earth stores
@@ -90,6 +100,11 @@ $$\Delta E_p = mg\Delta h$$
 ## Conservation of energy
 
 Energy is never created or destroyed. If friction and air resistance are negligible, mechanical energy is simply swapped between kinetic and potential forms.
+
+```figure
+src: physics/_iitian/ibdp-physics-2025-slhl-3-2-conservation-of-energy-study-note/img/fig-2b947d7dcef51f0c.png
+caption: Energy is conserved within a system: as an object falls, Ep becomes Ek, and on impact it becomes heat, sound and deformation.
+```
 
 ```example
 A 0.50 kg ball is dropped from rest from a height of 5.0 m. Ignoring air resistance, how fast is it moving just before it hits the ground? Take $g = 9.8$ m s⁻².

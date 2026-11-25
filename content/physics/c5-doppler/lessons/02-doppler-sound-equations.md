@@ -39,6 +39,11 @@ Sound travels through a medium (air) at speed $v$ relative to that medium. It ma
 
 A source moving at $u_s$ emits wavefronts that are squashed in front of it. The wavelength ahead becomes $\lambda' = (v - u_s)/f$, so the observed frequency is
 
+```figure
+src: physics/_iitian/ibdp-physics-slhl-c-5-doppler-effect-study-notes-first-asses/img/fig-c4ca207b683dfd59.png
+caption: Waves from a source moving towards the observer arrive compressed, with a shorter wavelength.
+```
+
 $$
 f' = f\,\frac{v}{v \pm u_s}
 $$

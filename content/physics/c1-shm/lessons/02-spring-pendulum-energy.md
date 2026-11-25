@@ -37,6 +37,11 @@ related:
 
 A mass $m$ on a spring of spring constant $k$ obeys Hooke’s law: the restoring force is $F = -kx$. Newton’s second law gives $a = -\dfrac{k}{m}x$ — SHM with $\omega^2 = k/m$, so
 
+```figure
+src: physics/_sme/simple-harmonic-motion/img/fig-f0974a6d9e0eb7b4.png
+caption: A mass on a vertical spring: the restoring force and the acceleration always point towards the equilibrium position.
+```
+
 $$
 T = 2\pi\sqrt{\frac{m}{k}}
 $$
@@ -52,6 +57,11 @@ $k = \dfrac{4\pi^2 m}{T^2} = \dfrac{4\pi^2 \times 0.40}{0.80^2} = 25$ N m⁻¹.
 ## The simple pendulum
 
 For small swings, the component of the bob’s weight along its arc acts as a restoring force approximately proportional to displacement, giving SHM with
+
+```figure
+src: physics/_sme/simple-harmonic-motion/img/fig-05f833d25d814b19.png
+caption: For a pendulum, the component of weight along the arc, mg sin θ, is the restoring force; for small angles it is proportional to the displacement.
+```
 
 $$
 T = 2\pi\sqrt{\frac{l}{g}}
@@ -70,6 +80,16 @@ $l = \dfrac{gT^2}{4\pi^2} = \dfrac{9.81 \times 4.0}{4\pi^2} = 0.99$ m.
 ## Energy in SHM
 
 Energy constantly changes form during an oscillation, but (with no friction) the total stays the same.
+
+```figure
+src: physics/_sme/simple-harmonic-motion/img/fig-4faeeae764dd5271.png
+caption: Energy in SHM: kinetic energy is greatest at equilibrium, potential energy is greatest at the amplitude, and the total stays constant.
+```
+
+```figure
+src: physics/_sme/simple-harmonic-motion/img/fig-079cd26f900ad0b4.png
+caption: A swinging pendulum: maximum potential energy at the extremes, maximum kinetic energy at the lowest point.
+```
 
 - At the **extremes**, the object is momentarily at rest: all the energy is **potential** (elastic for a spring, gravitational for a pendulum).
 - At the **equilibrium position**, it moves fastest: all the energy is **kinetic**.

@@ -33,6 +33,11 @@ related:
 
 An HR diagram plots **luminosity** (vertical, log scale) against **surface temperature** (horizontal, log scale, *decreasing* to the right).
 
+```figure
+src: physics/_sme/fusion-stars/img/fig-cfd96d811a81c2c5.png
+caption: The Hertzsprung-Russell diagram: luminosity against surface temperature (falling to the right), with the main sequence, giants, supergiants and white dwarfs.
+```
+
 ```svg
 caption: The main regions of the HR diagram. Temperature decreases to the right; luminosity is on a logarithmic scale relative to the Sun.
 <svg viewBox="0 0 420 260">
@@ -62,6 +67,11 @@ Since $L = \sigma A T^4$, a star that is cool yet bright must be **large**, and 
 
 ```keyidea
 Mass is the deciding factor. More massive stars have hotter cores, fuse faster, are more luminous and live shorter lives.
+```
+
+```figure
+src: physics/_iitian/stellar-evolution-extension-ib-dp-physics-study-notes/img/fig-c659a35105744ce1.png
+caption: A massive star near the end of its life has an onion-like structure of fusing shells around an iron core.
 ```
 
 **Low-mass stars (up to about 8 solar masses at birth, like the Sun):**

@@ -40,9 +40,19 @@ related:
 
 A hot drink cools to room temperature; it never spontaneously heats up by taking energy from the cooler room. A drop of ink spreads through water; it never gathers itself back together. The first law allows both directions — energy is conserved either way. Something else decides which way things go. That something is **entropy**.
 
+```figure
+src: physics/_iitian/the-second-law-of-thermodynamics-ib-dp-physics-study-notes/img/fig-911a2da5214e98cc.png
+caption: A gas released into an empty space spreads out on its own and never gathers back by itself: the process runs one way only.
+```
+
 ## Entropy as disorder
 
 **Entropy** $S$ measures how disordered a system is — more precisely, how many ways its particles and energy can be arranged. A gas has much more entropy than a crystal; spread-out energy has more entropy than concentrated energy.
+
+```figure
+src: physics/_sme/thermodynamics/img/fig-61fe364a171dceeb.png
+caption: Entropy rises with temperature and jumps sharply at melting and boiling, when the particles become much more disordered.
+```
 
 Microscopically,
 
@@ -70,6 +80,11 @@ $\Delta S = \dfrac{\Delta Q}{T} = \dfrac{3.3\times10^5}{273} = 1200$ J K⁻¹. L
 
 ```keyidea
 The entropy of an isolated system never decreases. In every real (irreversible) process, the total entropy increases.
+```
+
+```figure
+src: physics/_iitian/the-second-law-of-thermodynamics-ib-dp-physics-study-notes/img/fig-0fbf8c51cdba5b94.png
+caption: Gas particles spreading through a box: the spread-out state has far more possible arrangements, so a higher entropy.
 ```
 
 This explains the direction of heat flow. Suppose energy $Q$ leaves a hot body at $T_h$ and enters a cold body at $T_c$:

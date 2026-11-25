@@ -38,6 +38,16 @@ related:
 
 Using years of careful observations of planetary positions, Johannes Kepler found three empirical rules:
 
+```figure
+src: physics/_sme/gravitational-fields/img/fig-94c1587a014a491d.png
+caption: Kepler's second law: the line from the Sun to a planet sweeps out equal areas in equal times, so the planet moves faster near the Sun.
+```
+
+```figure
+src: physics/_sme/gravitational-fields/img/fig-3d4f1e860e7c1f1c.png
+caption: Kepler's first law: each planet moves in an ellipse with the Sun at one focus.
+```
+
 1. **Orbits are ellipses**, with the Sun at one focus.
 2. **Equal areas in equal times:** the line from the Sun to a planet sweeps out equal areas in equal time intervals, so a planet moves fastest when closest to the Sun.
 3. **$T^2 \propto r^3$:** the square of the period is proportional to the cube of the mean orbital radius.
@@ -45,6 +55,16 @@ Using years of careful observations of planetary positions, Johannes Kepler foun
 ## Newton’s law of gravitation
 
 Newton explained all three with one law. Any two point masses attract each other with a force
+
+```figure
+src: physics/_iitian/ibdp-physics-slhl-d-1-gravitational-fields-study-notes-first/img/fig-e6403364a1b4043f.png
+caption: Two point masses attract each other with equal and opposite forces that follow an inverse-square law.
+```
+
+```figure
+src: physics/_sme/gravitational-fields/img/fig-e0388b374aacf968.png
+caption: The gravitational field around Earth is radial: field lines point towards the centre, showing the direction of the force on a mass.
+```
 
 $$
 F = \frac{Gm_1m_2}{r^2}
@@ -67,6 +87,11 @@ $F = \dfrac{6.67\times10^{-11} \times 6.0\times10^{24} \times 7.3\times10^{22}}{
 ## Deriving Kepler’s third law
 
 For a circular orbit of radius $r$ around a mass $M$, gravity provides the centripetal force:
+
+```figure
+src: physics/_sme/gravitational-fields/img/fig-8aafdb46a6e3106d.png
+caption: For a satellite in a circular orbit, gravity provides the centripetal force towards the centre of the Earth.
+```
 
 $$
 \frac{GMm}{r^2} = m\omega^2 r = m\left(\frac{2\pi}{T}\right)^2 r \quad\Rightarrow\quad T^2 = \frac{4\pi^2}{GM}r^3

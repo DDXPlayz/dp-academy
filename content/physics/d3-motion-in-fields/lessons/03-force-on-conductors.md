@@ -36,6 +36,11 @@ related:
 
 A current is a flow of moving charges, so a wire carrying current in a magnetic field feels a force. For a length $L$ of wire at angle $\theta$ to the field:
 
+```figure
+src: physics/_iitian/motion-in-an-electric-field-ib-dp-physics-study-notes/img/fig-480e3819ad353736.png
+caption: The right-hand rule relates the directions of the velocity v, the magnetic field B and the force F on a moving positive charge.
+```
+
 $$
 F = BIL\sin\theta
 $$
@@ -53,6 +58,16 @@ This force drives electric motors: a coil in a magnetic field feels forces in op
 ## Parallel wires
 
 Each current-carrying wire sits in the magnetic field of the other, so the two wires push or pull on each other. The force per unit length is
+
+```figure
+src: physics/_sme/motion-in-electromagnetic-fields/img/fig-eb7c6611f27162d1.png
+caption: Parallel wires: currents in the same direction attract, currents in opposite directions repel.
+```
+
+```figure
+src: physics/_sme/motion-in-electromagnetic-fields/img/fig-7111e8589722b3f1.png
+caption: Each wire sits in the magnetic field of the other, so each experiences a force; by Newton's third law the forces are equal and opposite.
+```
 
 $$
 \frac{F}{L} = \frac{\mu_0 I_1 I_2}{2\pi r}, \qquad \mu_0 = 4\pi\times10^{-7}\ \text{T m A}^{-1}

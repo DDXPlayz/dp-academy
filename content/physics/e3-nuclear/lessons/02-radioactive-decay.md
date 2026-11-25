@@ -48,6 +48,11 @@ Unstable nuclei decay to become more stable. Decay is:
 | Change to nucleus | A − 4, Z − 2 | Z + 1 | Z − 1 | none (loses energy) |
 | Also emitted | — | antineutrino $\bar{\nu}_e$ | neutrino $\nu_e$ | — |
 
+```figure
+src: physics/_sme/radioactive-decay/img/fig-cbe5aa5c64d6753c.png
+caption: Alpha decay: the nucleus emits a helium-4 nucleus, so its proton number drops by 2 and its nucleon number by 4.
+```
+
 ```example
 Write the equations for the α decay of radium-226 and the β⁻ decay of carbon-14.
 ---
@@ -85,6 +90,16 @@ caption: Alpha is stopped by paper, beta by a few mm of aluminium; gamma is only
 </svg>
 ```
 
+```figure
+src: physics/_sme/radioactive-decay/img/fig-f290998718f8620e.png
+caption: Penetrating power: alpha is stopped by paper, beta by a few millimetres of aluminium, gamma is only reduced by thick lead.
+```
+
+```figure
+src: physics/_sme/radioactive-decay/img/fig-7dd0301d88507f2b.png
+caption: Ionising radiation knocks electrons out of the atoms it passes, leaving ions behind.
+```
+
 | | α | β | γ |
 |---|---|---|---|
 | Ionising ability | Very strong | Moderate | Weak |
@@ -99,6 +114,16 @@ Alpha particles are big and highly charged, so they ionise strongly and lose the
 
 - **Alpha and gamma** emissions from a given nuclide have **discrete** energies. Like atomic line spectra, this shows that nuclei have **discrete energy levels**.
 - **Beta** particles have a **continuous** range of energies up to a maximum. If only two particles were produced, energy and momentum conservation would fix the beta energy. The spread showed a third, undetected particle was sharing the energy — Pauli’s **neutrino**, later detected directly.
+
+```figure
+src: physics/_iitian/radioactivity-ib-dp-physics-study-notes/img/fig-e49c7eac5727643c.png
+caption: Beta-minus decay: a neutron turns into a proton, emitting an electron and an antineutrino; the daughter nucleus may then emit a gamma photon.
+```
+
+```figure
+src: physics/_iitian/radioactivity-ib-dp-physics-study-notes/img/fig-62c02a8947c3bf06.png
+caption: Beta particles have a continuous range of energies up to a maximum, which is evidence that a neutrino carries away the rest.
+```
 
 ```question
 decay-balance
