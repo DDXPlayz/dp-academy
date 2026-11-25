@@ -1,7 +1,49 @@
 import { Link } from 'react-router-dom';
 import type { Lesson, Topic } from '../content';
-import { NOTE_SOURCES, useNotesIndex } from '../lib/referenceNotes';
+import { NOTE_SOURCES, smePdfUrl, useNotesIndex, useSmePdfs } from '../lib/referenceNotes';
 import { Icon } from './Icon';
+
+/**
+ * The topic's original Save My Exams PDFs: each opens in a new tab (the browser's
+ * PDF viewer, at the topic's first page) and can be downloaded. Renders nothing
+ * while loading or on a copy of the app without the private PDFs.
+ */
+export function SmePdfLinks({ topicKey, className = '' }: { topicKey: string; className?: string }) {
+  const pdfs = useSmePdfs(topicKey);
+  if (!pdfs?.length) return null;
+  return (
+    <div className={className}>
+      <p className="mb-1.5 text-xs font-medium text-muted">Original PDF{pdfs.length === 1 ? '' : 's'}</p>
+      <ul className="space-y-1 text-sm">
+        {pdfs.map((p) => (
+          <li key={p.file} className="flex items-center gap-2">
+            <a
+              href={smePdfUrl(p)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-w-0 items-center gap-1.5 text-ink-2 hover:text-accent"
+              title="Open the original Save My Exams PDF in a new tab"
+            >
+              <Icon name="note" size={14} className="shrink-0 text-muted" />
+              <span className="truncate">{p.title}</span>
+              {p.page && p.page > 1 ? <span className="shrink-0 text-xs text-muted">from p. {p.page}</span> : null}
+              <Icon name="external" size={12} className="shrink-0 text-muted" />
+            </a>
+            <a
+              href={smePdfUrl(p, false)}
+              download={p.file.split('/').pop()}
+              className="shrink-0 rounded p-1 text-muted hover:bg-sunken hover:text-ink"
+              aria-label={`Download ${p.title} (PDF)`}
+              title="Download PDF"
+            >
+              <Icon name="download" size={14} />
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 /*
  * End-of-lesson links to the Save My Exams and IITian Academy notes: one card
@@ -51,6 +93,7 @@ export function ReferenceLinks({ lesson, topic }: { lesson: Lesson; topic: Topic
                   ))}
                 </ul>
               )}
+              {c.id === 'sme' && <SmePdfLinks topicKey={topic.key} className="mt-3 border-t border-line pt-3" />}
             </div>
           );
         })}

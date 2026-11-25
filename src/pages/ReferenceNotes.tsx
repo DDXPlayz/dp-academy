@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, Navigate, useLocation, useParams } from 'react-router-dom';
 import { getSubject, getTopic, type Topic } from '../content';
 import { Icon } from '../components/Icon';
+import { SmePdfLinks } from '../components/ReferenceLinks';
 import { Markdown, headingsOf } from '../components/Markdown';
 import { NOTE_SOURCES, sourceName, useNotesIndex, useTopicNotes, type NoteEntry, type NoteSource } from '../lib/referenceNotes';
 import NotFound from './NotFound';
@@ -167,6 +168,7 @@ export default function ReferenceNotes() {
                 {notes.length} {sourceName(src)} note{notes.length === 1 ? '' : 's'} for this topic, each on its own page with the original diagrams and
                 worked examples.
               </p>
+              {src === 'sme' && <SmePdfLinks topicKey={topic.key} className="no-print mt-4" />}
               {sources.length > 1 && (
                 <div role="tablist" aria-label="Source" className="mt-5 inline-flex rounded-lg border border-line bg-sunken p-1">
                   {sources.map((s) => (
@@ -229,6 +231,7 @@ export default function ReferenceNotes() {
               <Markdown>{note.body}</Markdown>
             </div>
             <p className="mt-8 text-xs text-muted">Notes © {sourceName(src)}, shown for personal revision.</p>
+            {src === 'sme' && <SmePdfLinks topicKey={topic.key} className="no-print mt-4" />}
 
             <footer className="no-print mt-10 grid grid-cols-2 gap-3 border-t border-line pt-6">
               <div>
