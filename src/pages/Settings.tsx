@@ -21,6 +21,8 @@ export default function Settings() {
   const setExamDate = useProgress((s) => s.setExamDate);
   const levels = useProgress((s) => s.levels);
   const setLevel = useProgress((s) => s.setLevel);
+  const dailyGoal = useProgress((s) => s.dailyGoal);
+  const setDailyGoal = useProgress((s) => s.setDailyGoal);
   const [message, setMessage] = useState('');
   const [confirming, setConfirming] = useState(false);
   const file = useRef<HTMLInputElement>(null);
@@ -59,8 +61,21 @@ export default function Settings() {
         </section>
 
         <section className="card p-5">
-          <p className="text-sm font-medium text-ink">Your exams</p>
-          <p className="mt-1 text-sm text-muted">Used for the countdown on Home and to hide HL-only topics in subjects you take at SL.</p>
+          <p className="text-sm font-medium text-ink">Goals and exams</p>
+          <p className="mt-1 text-sm text-muted">Used for the daily goal and countdown on Home, and to hide HL-only topics in subjects you take at SL.</p>
+          <label htmlFor="daily-goal" className="mt-4 block text-sm text-ink-2">
+            Questions to answer each day
+          </label>
+          <input
+            id="daily-goal"
+            type="number"
+            min={0}
+            max={200}
+            className="input mt-1 max-w-[8rem]"
+            value={dailyGoal}
+            onChange={(e) => setDailyGoal(Number(e.target.value))}
+          />
+          <p className="mt-1 text-xs text-muted">Set to 0 to turn the goal off.</p>
           <label htmlFor="exam-date" className="mt-4 block text-sm text-ink-2">
             Date of your first exam
           </label>

@@ -10,6 +10,7 @@ import { ThemeToggle, useApplyTheme } from './ThemeToggle';
 import { SearchCommand } from './SearchCommand';
 import { ProgressRing } from './ProgressBar';
 import { ShortcutsDialog } from './ShortcutsDialog';
+import { FocusTimer } from './FocusTimer';
 import { dueCards } from '../lib/recommend';
 import { useStudyState } from '../store/progress';
 
@@ -169,6 +170,7 @@ function TopBar() {
           <div className="md:hidden">
             <SearchButton compact />
           </div>
+          <FocusTimer />
           <ThemeToggle />
         </div>
       </div>

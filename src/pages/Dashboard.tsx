@@ -4,7 +4,7 @@ import { getFlashcard, getLesson, getQuestion, getSubject, getTopic, subjects } 
 import { Page } from '../components/AppShell';
 import { Icon } from '../components/Icon';
 import { ProgressBar } from '../components/ProgressBar';
-import { StudyStats } from '../components/StudyStats';
+import { ActivityHeatmap, StudyStats, TodayGoal } from '../components/StudyStats';
 import { SubjectCard } from '../components/SubjectCard';
 import { greeting, relativeTime } from '../lib/dates';
 import { continueLesson, revisitSuggestions, todaysFocus } from '../lib/recommend';
@@ -76,6 +76,7 @@ export default function Dashboard() {
   const bookmarks = useProgress((s) => s.bookmarks);
   const studyDays = useProgress((s) => s.studyDays);
   const examDate = useProgress((s) => s.examDate);
+  const dailyGoal = useProgress((s) => s.dailyGoal);
   const state = useStudyState();
   const levels = useProgress((s) => s.levels);
 
@@ -154,8 +155,12 @@ export default function Dashboard() {
         </section>
       </div>
 
-      <div className="mt-8">
+      <div className="mt-8 space-y-3">
         <StudyStats state={state} studyDays={studyDays} />
+        <div className="grid gap-3 lg:grid-cols-[1fr_1.6fr]">
+          <TodayGoal state={state} goal={dailyGoal} />
+          <ActivityHeatmap state={state} studyDays={studyDays} />
+        </div>
       </div>
 
       <div className="mt-10">

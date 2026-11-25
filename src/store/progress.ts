@@ -31,6 +31,7 @@ interface ProgressState {
   textSize: TextSize;
   examDate: string;
   levels: Record<string, Level>;
+  dailyGoal: number;
   exam: Record<string, { r: ExamResult; at: number }>; // exam-bank question key → self-marked result
   completed: Record<string, string>; // lesson key → ISO date completed
   visited: Record<string, number>; // lesson key → last opened (epoch ms)
@@ -47,6 +48,7 @@ interface ProgressState {
   setTextSize: (size: TextSize) => void;
   setExamDate: (date: string) => void;
   setLevel: (subjectId: string, level: Level) => void;
+  setDailyGoal: (n: number) => void;
   markExam: (key: string, result: ExamResult | null) => void;
   visitLesson: (key: string) => void;
   setComplete: (key: string, done: boolean) => void;
@@ -65,6 +67,7 @@ const initial = {
   textSize: 'md' as TextSize,
   examDate: '',
   levels: {} as Record<string, Level>,
+  dailyGoal: 10,
   exam: {} as Record<string, { r: ExamResult; at: number }>,
   completed: {},
   visited: {},
@@ -90,6 +93,7 @@ export const useProgress = create<ProgressState>()(
       setTheme: (theme) => set({ theme }),
       setTextSize: (textSize) => set({ textSize }),
       setExamDate: (examDate) => set({ examDate: /^\d{4}-\d{2}-\d{2}$/.test(examDate) ? examDate : '' }),
+      setDailyGoal: (n) => set({ dailyGoal: Math.max(0, Math.min(200, Math.round(n) || 0)) }),
       setLevel: (subjectId, level) => set((s) => ({ levels: { ...s.levels, [subjectId]: level } })),
       markExam: (key, result) =>
         set((s) => {
@@ -145,7 +149,7 @@ export const useProgress = create<ProgressState>()(
       },
       replaceData: (data) => set({ ...normalise(data) }),
       // Keeps the name and display preferences; everything else is cleared on every device (see resetAt in syncMerge).
-      reset: () => set((s) => ({ ...initial, name: s.name, theme: s.theme, textSize: s.textSize, examDate: s.examDate, levels: s.levels, resetAt: Date.now() })),
+      reset: () => set((s) => ({ ...initial, name: s.name, theme: s.theme, textSize: s.textSize, examDate: s.examDate, levels: s.levels, dailyGoal: s.dailyGoal, resetAt: Date.now() })),
     }),
     {
       name: 'dp-academy:v1',
@@ -158,9 +162,9 @@ export const useProgress = create<ProgressState>()(
 );
 
 export const exportableState = () => {
-  const { name, theme, textSize, examDate, levels, exam, completed, visited, lastLesson, attempts, bookmarks, notes, cards, studyDays, resetAt } =
+  const { name, theme, textSize, examDate, levels, dailyGoal, exam, completed, visited, lastLesson, attempts, bookmarks, notes, cards, studyDays, resetAt } =
     useProgress.getState();
-  return { name, theme, textSize, examDate, levels, exam, completed, visited, lastLesson, attempts, bookmarks, notes, cards, studyDays, resetAt };
+  return { name, theme, textSize, examDate, levels, dailyGoal, exam, completed, visited, lastLesson, attempts, bookmarks, notes, cards, studyDays, resetAt };
 };
 
 /** The slice the statistics functions need, with shallow equality. */

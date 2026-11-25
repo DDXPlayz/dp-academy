@@ -19,6 +19,8 @@ export interface SyncedProgress {
   examDate: string;
   /** Level taken per subject id; subjects not listed are treated as HL. */
   levels: Record<string, Level>;
+  /** Questions to answer per day (0 = no goal). */
+  dailyGoal: number;
   exam: Record<string, { r: ExamResult; at: number }>;
   completed: Record<string, string>;
   visited: Record<string, number>;
@@ -46,6 +48,7 @@ export function normalise(raw: unknown): SyncedProgress {
     theme,
     textSize: d.textSize === 'sm' || d.textSize === 'lg' ? d.textSize : 'md',
     examDate: typeof d.examDate === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(d.examDate) ? d.examDate : '',
+    dailyGoal: typeof d.dailyGoal === 'number' && d.dailyGoal >= 0 && d.dailyGoal <= 200 ? Math.round(d.dailyGoal) : 10,
     levels: Object.fromEntries(Object.entries(obj<unknown>(d.levels)).filter(([, v]) => v === 'SL' || v === 'HL')) as Record<string, Level>,
     exam: obj(d.exam),
     completed: obj(d.completed),
@@ -125,6 +128,7 @@ export function mergeProgress(mineRaw: unknown, theirsRaw: unknown): SyncedProgr
     textSize: mine.textSize,
     examDate: mine.examDate || theirs.examDate,
     levels: { ...theirs.levels, ...mine.levels },
+    dailyGoal: mine.dailyGoal,
     exam,
     completed,
     visited,

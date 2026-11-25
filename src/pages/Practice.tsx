@@ -23,6 +23,7 @@ export default function Practice() {
   const topicKey = params.get('topic');
   const mode = params.get('mode');
   const focusId = params.get('q');
+  const subjectId = params.get('subject');
 
   // Questions are chosen once per URL so answering doesn't reshuffle the set.
   const session = useMemo((): { title: string; questions: PracticeQuestion[]; start: number } | null => {
@@ -46,13 +47,18 @@ export default function Practice() {
       return { title: 'Retry mistakes', questions: pool.slice(0, 15), start: 0 };
     }
     if (mode === 'mixed') {
+      // One subject: any of its questions. All subjects: topics you've practised (or everything, at first).
+      if (subjectId) {
+        const pool = allQuestions().filter((q) => q.subjectId === subjectId);
+        return { title: `Mixed ${getSubject(subjectId)?.short ?? ''} practice`, questions: shuffle(pool).slice(0, 10), start: 0 };
+      }
       const studied = new Set(state.attempts.map((a) => a.topicKey));
       const pool = allQuestions().filter((q) => !studied.size || studied.has(q.topicKey));
       return { title: 'Mixed practice', questions: shuffle(pool).slice(0, 10), start: 0 };
     }
     return null;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [topicKey, mode, focusId]);
+  }, [topicKey, mode, focusId, subjectId]);
 
   if (session) {
     const t = topicKey ? getTopic(topicKey) : undefined;
@@ -70,7 +76,7 @@ export default function Practice() {
         </nav>
         <div className="mx-auto max-w-3xl">
           {session.questions.length ? (
-            <Quiz key={`${topicKey}-${mode}`} questions={session.questions} startAt={session.start} title={session.title} onExit={() => setParams({})} />
+            <Quiz key={`${topicKey}-${mode}-${subjectId}`} questions={session.questions} startAt={session.start} title={session.title} onExit={() => setParams({})} />
           ) : (
             <div className="card p-8 text-center text-ink-2">
               {mode === 'mistakes' ? 'No mistakes to retry. Every question you have answered, your latest answer was right.' : mode === 'weak' ? 'No weak areas yet — answer more questions and they will be identified automatically.' : 'No questions here yet.'}
@@ -127,6 +133,16 @@ export default function Practice() {
             </span>
           </span>
         </button>
+      </div>
+
+      <div className="-mt-6 mb-10 flex flex-wrap items-center gap-2 text-sm">
+        <span className="text-muted">Mixed set from one subject:</span>
+        {subjects.map((s) => (
+          <button key={s.id} type="button" className="chip h-8 gap-2 px-3 hover:bg-sunken" onClick={() => setParams({ mode: 'mixed', subject: s.id })}>
+            <span className="size-2 rounded-full" style={{ background: s.colour }} />
+            {s.short}
+          </button>
+        ))}
       </div>
 
       <div className="space-y-8">
