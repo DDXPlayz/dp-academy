@@ -372,3 +372,9 @@ html[data-text='lg'] .prose-lesson {
     padding-right: 0 !important;
   }
 }
+
+/* Lesson highlights (src/components/Highlighter.tsx). */
+::highlight(dpa-highlight) {
+  background-color: rgb(250 204 21 / 0.45);
+  color: inherit;
+}

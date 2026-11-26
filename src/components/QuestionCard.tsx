@@ -1,7 +1,8 @@
-import { useEffect, useId, useRef, useState } from 'react';
+import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { getLesson, topicOf, type PracticeQuestion } from '../content';
+import { type PracticeQuestion } from '../content';
 import { checkAnswer, isAnswered, type Response } from '../lib/answers';
+import { lessonLinkFor, similarQuestion } from '../lib/related';
 import { useProgress } from '../store/progress';
 import { BookmarkButton } from './BookmarkButton';
 import { Icon } from './Icon';
@@ -91,8 +92,9 @@ export function QuestionCard({
   }, [q.key]);
 
   const submitted = result !== null;
-  const topic = topicOf(q);
-  const lesson = q.lesson ? getLesson(`${topic.key}/${q.lesson}`) : undefined;
+  const lesson = useMemo(() => lessonLinkFor(q), [q]);
+  // Picked once per wrong answer, so it doesn't change while you read.
+  const similar = useMemo(() => (result === false ? similarQuestion(q, useProgress.getState().attempts) : null), [q, result]);
 
   const submit = () => {
     if (!isAnswered(q, response) || submitted) return;
@@ -249,6 +251,22 @@ export function QuestionCard({
             <Icon name={result ? 'check' : 'x'} />
             {result ? 'Correct' : 'Not quite'}
           </p>
+          {!result && (lesson || similar) && (
+            <div className="mt-3 flex flex-col gap-1.5 rounded-lg border border-bad/20 bg-card/60 px-3 py-2.5 text-sm sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-4">
+              {showLessonLink && lesson && (
+                <Link to={lesson.href} className="inline-flex items-center gap-1.5 text-accent hover:underline">
+                  <Icon name="book" size={14} />
+                  Review: {lesson.section ?? lesson.title}
+                </Link>
+              )}
+              {similar && (
+                <Link to={`/practice?topic=${encodeURIComponent(similar.topicKey)}&q=${encodeURIComponent(similar.id)}`} className="inline-flex items-center gap-1.5 text-accent hover:underline">
+                  <Icon name="shuffle" size={14} />
+                  Try a similar question
+                </Link>
+              )}
+            </div>
+          )}
           {!result && !revealed && (
             <div className="mt-3 flex flex-wrap gap-2">
               <button type="button" className="btn-secondary h-9" onClick={retry}>
@@ -277,7 +295,8 @@ export function QuestionCard({
                 <span>{q.concept}</span>
                 {showLessonLink && lesson && (
                   <Link to={lesson.href} className="inline-flex items-center gap-1 text-accent hover:underline">
-                    {lesson.meta.title} <Icon name="arrowRight" size={14} />
+                    {lesson.title}
+                    {lesson.section ? ` › ${lesson.section}` : ''} <Icon name="arrowRight" size={14} />
                   </Link>
                 )}
               </p>

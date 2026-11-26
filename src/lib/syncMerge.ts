@@ -35,6 +35,7 @@ export interface SyncedProgress {
   attempts: { key: string; topicKey: string; concept: string; correct: boolean; ms: number; at: number }[];
   bookmarks: Record<string, { kind: 'lesson' | 'question' | 'flashcard'; at: number }>;
   notes: Record<string, string>;
+  highlights: Record<string, LessonHighlights>;
   cards: Record<string, CardState>;
   studyDays: string[];
   /** When this copy was last reset (epoch ms). A copy reset earlier than the other keeps only what happened after the later reset. */
@@ -42,6 +43,14 @@ export interface SyncedProgress {
 }
 
 export const MAX_ATTEMPTS = 3000;
+
+export interface Highlight {
+  id: string;
+  text: string;
+  at: number;
+}
+/** Highlights per lesson; `at` is when that lesson's list last changed, so a removal on one device wins over an older copy. */
+export type LessonHighlights = { at: number; items: Highlight[] };
 
 const obj = <T>(v: unknown): Record<string, T> => (v && typeof v === 'object' && !Array.isArray(v) ? (v as Record<string, T>) : {});
 const arr = <T>(v: unknown): T[] => (Array.isArray(v) ? (v as T[]) : []);
@@ -70,6 +79,9 @@ export function normalise(raw: unknown): SyncedProgress {
     attempts: arr(d.attempts),
     bookmarks: obj(d.bookmarks),
     notes: obj(d.notes),
+    highlights: Object.fromEntries(
+      Object.entries(obj<LessonHighlights>(d.highlights)).filter(([, v]) => v && typeof v.at === 'number' && Array.isArray(v.items)),
+    ),
     cards: obj(d.cards),
     studyDays: arr(d.studyDays),
     resetAt: typeof d.resetAt === 'number' ? d.resetAt : 0,
@@ -90,6 +102,7 @@ function since(p: SyncedProgress, epoch: number): SyncedProgress {
     attempts: p.attempts.filter((a) => a.at > epoch),
     bookmarks: keep(p.bookmarks, (v) => v.at),
     notes: {}, // notes carry no timestamp, so a reset clears them
+    highlights: keep(p.highlights, (v) => v.at),
     cards: {}, // card states only make sense as a whole history
     studyDays: p.studyDays.filter((d) => d >= day),
     resetAt: epoch,
@@ -154,6 +167,11 @@ export function mergeProgress(mineRaw: unknown, theirsRaw: unknown): SyncedProgr
     attempts,
     bookmarks,
     notes: { ...theirs.notes, ...mine.notes },
+    highlights: (() => {
+      const h = { ...theirs.highlights };
+      for (const [k, v] of Object.entries(mine.highlights)) if (!h[k] || h[k].at <= v.at) h[k] = v;
+      return h;
+    })(),
     cards,
     studyDays: [...new Set([...theirs.studyDays, ...mine.studyDays])].sort().slice(-400),
     resetAt: Math.max(mine.resetAt, theirs.resetAt),

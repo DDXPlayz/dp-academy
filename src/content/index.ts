@@ -96,7 +96,9 @@ function check<T>(schema: ZodType<T, any, any>, data: unknown, where: string): T
 }
 
 function splitFrontmatter(raw: string): { data: unknown; body: string } {
-  const m = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/.exec(raw);
+  // Files checked out on Windows have CRLF line endings; every parser downstream expects \n.
+  raw = raw.replace(/\r\n?/g, '\n');
+  const m = /^---\n([\s\S]*?)\n---\n?([\s\S]*)$/.exec(raw);
   if (!m) return { data: null, body: raw };
   return { data: parseYaml(m[1]), body: m[2] };
 }

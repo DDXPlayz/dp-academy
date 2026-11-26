@@ -6,6 +6,7 @@ import { FormulaCard } from '../components/FormulaCard';
 import { Icon } from '../components/Icon';
 import { Markdown, headingsOf } from '../components/Markdown';
 import { NotesPanel } from '../components/NotesPanel';
+import { Highlighter, HighlightsList } from '../components/Highlighter';
 import { ProgressBar } from '../components/ProgressBar';
 import { QuestionCard } from '../components/QuestionCard';
 import { ReferenceLinks } from '../components/ReferenceLinks';
@@ -301,6 +302,7 @@ export default function LessonPage() {
   return (
     <div>
       <ReadingProgress target={article} variant="pinned" />
+      <Highlighter lessonKey={lesson.key} root={article} />
 
       <div className="mx-auto flex max-w-6xl gap-10 px-4 pt-6 md:px-8 md:pt-10">
         <article ref={article} className="min-w-0 max-w-[44rem] flex-1">
@@ -463,6 +465,10 @@ export default function LessonPage() {
             </div>
             <div className="border-t border-line pt-5">
               <NotesPanel lessonKey={lesson.key} />
+            </div>
+            <div className="border-t border-line pt-5">
+              <p className="eyebrow mb-2 px-3">Highlights</p>
+              <HighlightsList lessonKey={lesson.key} root={article} />
             </div>
           </div>
         </aside>

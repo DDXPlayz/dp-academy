@@ -3,9 +3,9 @@ import { createJSONStorage, persist } from 'zustand/middleware';
 import { useShallow } from 'zustand/react/shallow';
 import { review, type CardState, type Grade } from '../lib/srs';
 import { today } from '../lib/dates';
-import { MAX_ATTEMPTS, normalise, type ExamResult, type Level, type RevisitMark, type TextSize } from '../lib/syncMerge';
+import { MAX_ATTEMPTS, normalise, type ExamResult, type Highlight, type LessonHighlights, type Level, type RevisitMark, type TextSize } from '../lib/syncMerge';
 
-export type { ExamResult, Level, RevisitMark, TextSize };
+export type { ExamResult, Highlight, Level, RevisitMark, TextSize };
 
 /*
  * Everything a student does lives here. It is persisted to localStorage under
@@ -40,6 +40,7 @@ interface ProgressState {
   attempts: Attempt[];
   bookmarks: Record<string, { kind: BookmarkKind; at: number }>;
   notes: Record<string, string>;
+  highlights: Record<string, LessonHighlights>;
   cards: Record<string, CardState>;
   studyDays: string[];
   resetAt: number;
@@ -57,6 +58,8 @@ interface ProgressState {
   recordAttempt: (a: Omit<Attempt, 'at'>) => void;
   toggleBookmark: (key: string, kind: BookmarkKind) => void;
   setNote: (key: string, text: string) => void;
+  addHighlight: (lessonKey: string, text: string) => void;
+  removeHighlight: (lessonKey: string, id: string) => void;
   gradeCard: (key: string, grade: Grade) => void;
   importData: (data: unknown) => boolean;
   replaceData: (data: unknown) => void;
@@ -78,6 +81,7 @@ const initial = {
   attempts: [],
   bookmarks: {},
   notes: {},
+  highlights: {} as Record<string, LessonHighlights>,
   cards: {},
   studyDays: [] as string[],
   resetAt: 0,
@@ -139,6 +143,19 @@ export const useProgress = create<ProgressState>()(
           else delete notes[key];
           return { notes };
         }),
+      addHighlight: (lessonKey, text) =>
+        set((s) => {
+          const t = text.replace(/\s+/g, ' ').trim().slice(0, 600);
+          const items = s.highlights[lessonKey]?.items ?? [];
+          if (t.length < 2 || items.some((h) => h.text === t)) return {};
+          const h = { id: `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`, text: t, at: Date.now() };
+          return { highlights: { ...s.highlights, [lessonKey]: { at: Date.now(), items: [...items, h] } } };
+        }),
+      removeHighlight: (lessonKey, id) =>
+        set((s) => {
+          const items = (s.highlights[lessonKey]?.items ?? []).filter((h) => h.id !== id);
+          return { highlights: { ...s.highlights, [lessonKey]: { at: Date.now(), items } } };
+        }),
       gradeCard: (key, grade) =>
         set((s) => ({
           cards: { ...s.cards, [key]: review(s.cards[key], grade) },
@@ -167,9 +184,9 @@ export const useProgress = create<ProgressState>()(
 );
 
 export const exportableState = () => {
-  const { name, theme, textSize, examDate, levels, dailyGoal, exam, completed, visited, revisit, lastLesson, attempts, bookmarks, notes, cards, studyDays, resetAt } =
+  const { name, theme, textSize, examDate, levels, dailyGoal, exam, completed, visited, revisit, lastLesson, attempts, bookmarks, notes, highlights, cards, studyDays, resetAt } =
     useProgress.getState();
-  return { name, theme, textSize, examDate, levels, dailyGoal, exam, completed, visited, revisit, lastLesson, attempts, bookmarks, notes, cards, studyDays, resetAt };
+  return { name, theme, textSize, examDate, levels, dailyGoal, exam, completed, visited, revisit, lastLesson, attempts, bookmarks, notes, highlights, cards, studyDays, resetAt };
 };
 
 /** Whether a lesson is currently flagged for revision. Usable as `useProgress((s) => isRevisit(s, key))`. */
