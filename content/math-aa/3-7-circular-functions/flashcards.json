@@ -1,4 +1,14 @@
 [
-  { "id": "trig-transform-card", "front": "Features of $y = a\\sin(b(x + c)) + d$?", "back": "Amplitude |a|, period 2π/b, principal axis y = d, shift left c.", "concept": "Period" },
-  { "id": "trig-model-card", "front": "Fitting a sinusoidal model from data?", "back": "a = (max − min)/2, d = (max + min)/2, b = 2π/period.", "concept": "Modelling" }
+  { "id": "trig-transform-card", "front": "Features of $y = a\\sin(b(x + c)) + d$?", "back": "Amplitude |a|, period 2π/b, principal axis y = d, shift left c.", "concept": "Period", "kind": "graph" },
+  { "id": "trig-model-card", "front": "Fitting a sinusoidal model from data?", "back": "a = (max − min)/2, d = (max + min)/2, b = 2π/period.", "concept": "Modelling", "kind": "method" },
+  { "id": "basic-periods", "front": "Periods and ranges of $\\sin x$, $\\cos x$, $\\tan x$?", "back": "$\\sin$, $\\cos$: period $2\\pi$, range $[-1, 1]$. $\\tan$: period $\\pi$, range $\\mathbb R$.", "concept": "Period", "kind": "graph" },
+  { "id": "tan-graph", "front": "Key features of $y = \\tan x$?", "back": "Zeros at $x = k\\pi$; vertical asymptotes at $x = \\frac\\pi2 + k\\pi$; increasing on each branch.", "concept": "Period", "kind": "graph" },
+  { "id": "transform-example", "front": "Amplitude, period and range of $y = 3\\sin2x + 1$?", "back": "Amplitude 3, period $\\pi$, principal axis $y = 1$, range $-2 \\le y \\le 4$.", "concept": "Period", "kind": "application" },
+  { "id": "period-mistake", "front": "Period of $y = \\sin4x$: is it 4?", "back": "No — period $= \\dfrac{2\\pi}4 = \\dfrac\\pi2$ (or $\\frac{360^\\circ}4 = 90^\\circ$ in degrees).", "concept": "Period", "kind": "misconception" },
+  { "id": "phase-shift", "front": "Horizontal shift of $y = \\sin\\left(2x - \\frac\\pi3\\right)$?", "back": "Factor out $b$: $\\sin\\left(2\\left(x - \\frac\\pi6\\right)\\right)$ — shift $\\frac\\pi6$ right, not $\\frac\\pi3$.", "concept": "Period", "kind": "method" },
+  { "id": "cos-as-sin", "front": "How is the graph of $\\cos x$ related to $\\sin x$?", "back": "$\\cos x = \\sin\\left(x + \\frac\\pi2\\right)$: the cosine graph is the sine graph translated $\\frac\\pi2$ left.", "concept": "The basic graphs", "kind": "formula" },
+  { "id": "amplitude-def", "front": "Amplitude and principal axis?", "back": "Amplitude: half the distance between max and min, $|a|$. Principal axis: the horizontal line midway, $y = d$.", "concept": "Modelling", "kind": "definition" },
+  { "id": "model-example", "front": "Depth varies between 2 m and 10 m with a period of 12 hours, max at $t = 0$. Model?", "back": "$a = 4$, $d = 6$, $b = \\frac{2\\pi}{12} = \\frac\\pi6$: $D = 4\\cos\\left(\\frac\\pi6t\\right) + 6$.", "concept": "Modelling", "kind": "application" },
+  { "id": "ferris-wheel", "front": "A Ferris wheel of radius 20 m, centre 22 m high, starts at the bottom, one turn per 10 min. Height?", "back": "$h = 22 - 20\\cos\\left(\\frac{2\\pi}{10}t\\right)$ — $-\\cos$ because it starts at the minimum.", "concept": "Modelling", "kind": "application" },
+  { "id": "model-limits", "front": "Limitations of a sinusoidal model?", "back": "Real data are rarely perfectly periodic (amplitude or period may drift); extrapolating far beyond the data is unreliable.", "concept": "Limits of a trigonometric model", "kind": "concept" }
 ]

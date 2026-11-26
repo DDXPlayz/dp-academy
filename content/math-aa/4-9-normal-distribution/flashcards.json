@@ -1,5 +1,14 @@
 [
-  { "id": "normal-props-card", "front": "Properties of a normal distribution?", "back": "Symmetric bell, mean = median = mode, area 1.", "concept": "Properties" },
-  { "id": "6895-card", "front": "68–95–99.7 rule?", "back": "≈68%, 95%, 99.7% within 1σ, 2σ, 3σ of μ.", "concept": "68–95–99.7 rule" },
-  { "id": "n-notation-card", "front": "What is the second parameter in $N(\\mu, \\sigma^2)$?", "back": "The variance — take its square root for σ.", "concept": "Properties" }
+  { "id": "normal-props-card", "front": "Properties of a normal distribution?", "back": "Symmetric bell, mean = median = mode, area 1.", "concept": "Properties", "kind": "concept" },
+  { "id": "6895-card", "front": "68–95–99.7 rule?", "back": "≈68%, 95%, 99.7% within 1σ, 2σ, 3σ of μ.", "concept": "68–95–99.7 rule", "kind": "formula" },
+  { "id": "n-notation-card", "front": "What is the second parameter in $N(\\mu, \\sigma^2)$?", "back": "The variance — take its square root for σ.", "concept": "Properties", "kind": "misconception" },
+  { "id": "normal-def", "front": "Normal distribution?", "back": "A continuous, symmetric, bell-shaped distribution, completely described by its mean $\\mu$ and standard deviation $\\sigma$.", "concept": "Properties", "kind": "definition" },
+  { "id": "normal-point-zero", "front": "For $X \\sim N(\\mu, \\sigma^2)$, what is $P(X = a)$?", "back": "0 — for a continuous variable only intervals have probability, so $P(X < a) = P(X \\le a)$.", "concept": "Properties", "kind": "misconception" },
+  { "id": "normal-symmetry", "front": "Symmetry results for $X \\sim N(\\mu, \\sigma^2)$?", "back": "$P(X < \\mu) = 0.5$ and $P(X < \\mu - k) = P(X > \\mu + k)$.", "concept": "Properties", "kind": "formula" },
+  { "id": "normal-example", "front": "$X \\sim N(50, 4^2)$. Find $P(X > 58)$.", "back": "$58$ is $2\\sigma$ above the mean: $P \\approx 0.0228$ (GDC normal cdf).", "concept": "Probabilities with a GDC", "kind": "application" },
+  { "id": "normal-68", "front": "$X \\sim N(50, 16)$. Approximate $P(46 < X < 54)$.", "back": "$\\sigma = 4$, so this is within $1\\sigma$: about $0.68$.", "concept": "68–95–99.7 rule", "kind": "application" },
+  { "id": "invnorm", "front": "$X \\sim N(50, 4^2)$. Find $a$ with $P(X < a) = 0.9$.", "back": "Inverse normal (left tail area 0.9): $a \\approx 55.1$.", "concept": "Probabilities with a GDC", "kind": "method" },
+  { "id": "invnorm-tail", "front": "Finding $a$ with $P(X > a) = 0.1$: enter 0.1 as a left-tail area?", "back": "Only if the GDC is set to the right tail. Otherwise use $P(X < a) = 0.9$.", "concept": "Probabilities with a GDC", "kind": "misconception" },
+  { "id": "sketch-first", "front": "First step in any normal-distribution question?", "back": "Sketch the bell curve, mark $\\mu$ and the given values, and shade the required area.", "concept": "Probabilities with a GDC", "kind": "method" },
+  { "id": "normal-inflection", "front": "Where are the points of inflection of the normal curve?", "back": "At $x = \\mu \\pm \\sigma$; the curve is maximal at $x = \\mu$ and approaches 0 as $x \\to \\pm\\infty$.", "concept": "Properties", "kind": "graph" }
 ]

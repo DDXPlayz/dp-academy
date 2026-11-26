@@ -1,5 +1,14 @@
 [
-  { "id": "fv-card", "front": "Compound interest formula?", "back": "$FV = PV\\left(1 + \\dfrac{r}{100k}\\right)^{kn}$", "concept": "Compound interest" },
-  { "id": "dep-card", "front": "Depreciation formula?", "back": "$V = V_0(1 - r/100)^n$", "concept": "Depreciation" },
-  { "id": "k-card", "front": "What is k in the compound interest formula?", "back": "Compounding periods per year: 1 annual, 4 quarterly, 12 monthly.", "concept": "Compound interest" }
+  { "id": "fv-card", "front": "Compound interest formula?", "back": "$FV = PV\\left(1 + \\dfrac{r}{100k}\\right)^{kn}$", "concept": "Compound interest", "kind": "formula" },
+  { "id": "dep-card", "front": "Depreciation formula?", "back": "$V = V_0(1 - r/100)^n$", "concept": "Depreciation", "kind": "formula" },
+  { "id": "k-card", "front": "What is k in the compound interest formula?", "back": "Compounding periods per year: 1 annual, 4 quarterly, 12 monthly.", "concept": "Compound interest", "kind": "definition" },
+  { "id": "fin-pv-fv", "front": "Present value (PV) and future value (FV)?", "back": "PV: the amount invested or borrowed at the start. FV: the value after interest has been added (or after depreciation).", "concept": "Compound interest", "kind": "definition" },
+  { "id": "fin-geometric-link", "front": "Why is compound interest a geometric sequence?", "back": "Each period the value is multiplied by the same factor $1 + \\dfrac{r}{100k}$, the common ratio.", "concept": "Compound interest", "kind": "concept" },
+  { "id": "fin-per-period", "front": "6% per year compounded monthly: is the monthly factor $1.06$?", "back": "No. Monthly rate $= 6/12 = 0.5\\%$, factor $1.005$, applied $12n$ times for $n$ years.", "concept": "Compound interest", "kind": "misconception" },
+  { "id": "fin-monthly-example", "front": "\\$1000 at 6% p.a. compounded monthly for 5 years — FV?", "back": "$1000\\left(1 + \\dfrac{6}{1200}\\right)^{60} = 1000(1.005)^{60} \\approx \\$1348.85$.", "concept": "Compound interest", "kind": "application" },
+  { "id": "fin-dep-example", "front": "A car worth \\$20 000 depreciates by 12% per year. Value after 3 years?", "back": "$20000(0.88)^3 = \\$13\\,629.44$.", "concept": "Depreciation", "kind": "application" },
+  { "id": "fin-find-n", "front": "How do you find the time for an investment to reach a target?", "back": "Solve $PV\\left(1 + \\frac{r}{100k}\\right)^{kn} = FV$ with logs or the GDC TVM solver; the number of periods must be a whole number, so round **up**.", "concept": "Finding the time or rate", "kind": "method" },
+  { "id": "fin-double-example", "front": "How many whole years to double money at 5% compounded annually?", "back": "$1.05^n = 2 \\Rightarrow n = \\dfrac{\\ln 2}{\\ln 1.05} \\approx 14.2$, so 15 years.", "concept": "Finding the time or rate", "kind": "application" },
+  { "id": "fin-find-rate", "front": "How do you find the annual rate $r$ needed to reach $FV$ from $PV$?", "back": "Rearrange: $r = 100k\\left[\\left(\\dfrac{FV}{PV}\\right)^{1/(kn)} - 1\\right]$, or solve for I% on the GDC TVM solver.", "concept": "Finding the time or rate", "kind": "method" },
+  { "id": "fin-tvm", "front": "Key GDC TVM settings for compound interest?", "back": "N $= kn$ (total periods), I% = annual rate, PV and FV with **opposite signs** (money out vs in), PMT $= 0$, P/Y = C/Y $= k$.", "concept": "Compound interest", "kind": "method" }
 ]

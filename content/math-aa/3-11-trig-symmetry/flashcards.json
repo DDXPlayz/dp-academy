@@ -1,5 +1,14 @@
 [
-  { "id": "odd-even-trig-card", "front": "(HL) Odd/even trig functions?", "back": "sin and tan odd; cos even.", "concept": "Symmetries" },
-  { "id": "supp-card", "front": "(HL) $\\sin(\\pi - x)$ and $\\cos(\\pi - x)$?", "back": "$\\sin x$ and $-\\cos x$.", "concept": "Symmetries" },
-  { "id": "compl-card", "front": "(HL) $\\cos(\\frac\\pi2 - x)$?", "back": "$\\sin x$", "concept": "Complementary angles" }
+  { "id": "odd-even-trig-card", "front": "(HL) Odd/even trig functions?", "back": "sin and tan odd; cos even.", "concept": "Symmetries", "kind": "concept" },
+  { "id": "supp-card", "front": "(HL) $\\sin(\\pi - x)$ and $\\cos(\\pi - x)$?", "back": "$\\sin x$ and $-\\cos x$.", "concept": "Symmetries", "kind": "formula" },
+  { "id": "compl-card", "front": "(HL) $\\cos(\\frac\\pi2 - x)$?", "back": "$\\sin x$", "concept": "Complementary angles", "kind": "formula" },
+  { "id": "neg-angle-values", "front": "(HL) Evaluate $\\cos\\left(-\\frac\\pi3\\right)$ and $\\sin\\left(-\\frac\\pi6\\right)$.", "back": "$\\cos$ even: $\\frac12$. $\\sin$ odd: $-\\frac12$.", "concept": "Symmetries", "kind": "application" },
+  { "id": "tan-supp", "front": "(HL) $\\tan(\\pi - x)$ and $\\tan(-x)$?", "back": "$-\\tan x$ in both cases.", "concept": "Symmetries", "kind": "formula" },
+  { "id": "pi-plus-x", "front": "(HL) $\\sin(\\pi + x)$, $\\cos(\\pi + x)$, $\\tan(\\pi + x)$?", "back": "$-\\sin x$, $-\\cos x$, $\\tan x$ (third quadrant: only $\\tan$ positive).", "concept": "Symmetries", "kind": "formula" },
+  { "id": "half-pi-plus", "front": "(HL) $\\sin\\left(\\frac\\pi2 + x\\right)$ and $\\cos\\left(\\frac\\pi2 + x\\right)$?", "back": "$\\cos x$ and $-\\sin x$.", "concept": "Complementary angles", "kind": "formula" },
+  { "id": "sin-compl", "front": "(HL) $\\sin\\left(\\frac\\pi2 - x\\right)$ and $\\tan\\left(\\frac\\pi2 - x\\right)$?", "back": "$\\cos x$ and $\\cot x$.", "concept": "Complementary angles", "kind": "formula" },
+  { "id": "derive-symmetry", "front": "(HL) How can you derive $\\cos(\\pi - x)$ if you forget it?", "back": "Compound angle: $\\cos\\pi\\cos x + \\sin\\pi\\sin x = -\\cos x$. Or use the unit circle (reflect in the $y$-axis).", "concept": "Symmetries", "kind": "method" },
+  { "id": "graph-symmetry", "front": "(HL) Lines of symmetry of $y = \\sin x$ and $y = \\cos x$?", "back": "$\\sin x$: $x = \\frac\\pi2 + k\\pi$ (through max/min). $\\cos x$: $x = k\\pi$, including the $y$-axis (even).", "concept": "Symmetry from the graphs", "kind": "graph" },
+  { "id": "complement-degrees", "front": "(HL) Write $\\sin70^\\circ$ using cosine.", "back": "$\\cos20^\\circ$ — complementary angles add to $90^\\circ$.", "concept": "Complementary angles", "kind": "application" },
+  { "id": "simplify-example", "front": "(HL) Simplify $\\sin(\\pi - x) + \\cos\\left(\\frac\\pi2 - x\\right)$.", "back": "$\\sin x + \\sin x = 2\\sin x$.", "concept": "Symmetries", "kind": "application" }
 ]

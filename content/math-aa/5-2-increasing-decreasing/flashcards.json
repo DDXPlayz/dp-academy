@@ -1,3 +1,12 @@
 [
-  { "id": "sign-fprime-card", "front": "What does the sign of f′(x) tell you?", "back": "> 0 increasing; < 0 decreasing; = 0 stationary.", "concept": "Increasing and decreasing" }
+  { "id": "sign-fprime-card", "front": "What does the sign of f′(x) tell you?", "back": "> 0 increasing; < 0 decreasing; = 0 stationary.", "concept": "Increasing and decreasing", "kind": "concept" },
+  { "id": "increasing-def", "front": "Increasing and decreasing on an interval?", "back": "Increasing: $f'(x) > 0$ there ($y$ rises as $x$ rises). Decreasing: $f'(x) < 0$.", "concept": "Increasing and decreasing", "kind": "definition" },
+  { "id": "stationary-def", "front": "Stationary point?", "back": "A point where $f'(x) = 0$ — the tangent is horizontal.", "concept": "Increasing and decreasing", "kind": "definition" },
+  { "id": "incdec-method", "front": "Method to find where $f$ is increasing?", "back": "Solve $f'(x) = 0$, mark the roots on a number line, test the sign of $f'$ in each interval, and state the intervals where $f' > 0$.", "concept": "Increasing and decreasing", "kind": "method" },
+  { "id": "incdec-example", "front": "Where is $f(x) = x^3 - 3x^2 - 9x$ increasing?", "back": "$f'(x) = 3(x - 3)(x + 1)$: increasing for $x < -1$ or $x > 3$; decreasing for $-1 < x < 3$.", "concept": "Increasing and decreasing", "kind": "application" },
+  { "id": "incdec-from-graph", "front": "Reading increasing/decreasing from the graph of $y = f'(x)$?", "back": "$f$ increases where the graph of $f'$ is above the $x$-axis and decreases where it is below.", "concept": "Increasing and decreasing", "kind": "graph" },
+  { "id": "interval-wording", "front": "Is \"increasing for $x < -1$ and $x > 3$\" correctly written?", "back": "Use \"or\" (or $x \\in\\, ]-\\infty, -1[\\ \\cup\\ ]3, \\infty[$) — no $x$ satisfies both inequalities.", "concept": "Increasing and decreasing", "kind": "misconception" },
+  { "id": "always-increasing", "front": "Show $f(x) = x^3 + x$ is increasing for all $x$.", "back": "$f'(x) = 3x^2 + 1 \\ge 1 > 0$ for all $x$.", "concept": "Increasing and decreasing", "kind": "application" },
+  { "id": "incr-for-all-k", "front": "For which $k$ is $f(x) = x^3 + kx$ increasing for all $x$?", "back": "Need $f'(x) = 3x^2 + k \\ge 0$ for all $x$, i.e. $k \\ge 0$. (In general require the quadratic $f'$ to have $\\Delta \\le 0$ with positive leading coefficient.)", "concept": "Increasing and decreasing", "kind": "method" },
+  { "id": "stationary-not-turning", "front": "Does $f'(a) = 0$ mean the graph turns at $a$?", "back": "Not always — $y = x^3$ has $f'(0) = 0$ but keeps increasing (a stationary point of inflexion).", "concept": "Increasing and decreasing", "kind": "misconception" }
 ]

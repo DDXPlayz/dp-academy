@@ -1,5 +1,15 @@
 [
-  { "id": "fog-card", "front": "$(f\\circ g)(x)$?", "back": "$f(g(x))$ — apply $g$ first.", "concept": "Composite functions" },
-  { "id": "find-inv-card", "front": "Finding $f^{-1}(x)$?", "back": "Write $y = f(x)$, swap $x$ and $y$, rearrange for $y$.", "concept": "Inverse functions" },
-  { "id": "inv-reciprocal-card", "front": "Is $f^{-1}(x) = 1/f(x)$?", "back": "No — the inverse function reverses $f$; it is not the reciprocal.", "concept": "Inverse functions" }
+  { "id": "fog-card", "front": "$(f\\circ g)(x)$?", "back": "$f(g(x))$ — apply $g$ first.", "concept": "Composite functions", "kind": "definition" },
+  { "id": "find-inv-card", "front": "Finding $f^{-1}(x)$?", "back": "Write $y = f(x)$, swap $x$ and $y$, rearrange for $y$.", "concept": "Inverse functions", "kind": "method" },
+  { "id": "inv-reciprocal-card", "front": "Is $f^{-1}(x) = 1/f(x)$?", "back": "No — the inverse function reverses $f$; it is not the reciprocal.", "concept": "Inverse functions", "kind": "misconception" },
+  { "id": "fog-example", "front": "$f(x) = 2x + 1$, $g(x) = x^2$. Find $(f\\circ g)(x)$ and $(g\\circ f)(x)$.", "back": "$f(g(x)) = 2x^2 + 1$; $g(f(x)) = (2x + 1)^2$. Composition is not commutative.", "concept": "Composite functions", "kind": "application" },
+  { "id": "fog-evaluate", "front": "Evaluate $(f\\circ g)(3)$ for $f(x) = 2x + 1$, $g(x) = x^2$.", "back": "Inside first: $g(3) = 9$, then $f(9) = 19$.", "concept": "Composite functions", "kind": "method" },
+  { "id": "fog-domain", "front": "Which $x$ are allowed in $(f\\circ g)(x)$?", "back": "$x$ must be in the domain of $g$, **and** $g(x)$ must be in the domain of $f$ (range of $g$ fits inside the domain of $f$).", "concept": "Composite functions", "kind": "condition" },
+  { "id": "inv-example", "front": "Find $f^{-1}$ for $f(x) = \\dfrac{2x + 3}{x - 1}$, $x \\ne 1$.", "back": "Swap: $x = \\dfrac{2y + 3}{y - 1} \\Rightarrow xy - x = 2y + 3 \\Rightarrow y = \\dfrac{x + 3}{x - 2}$, $x \\ne 2$.", "concept": "Inverse functions", "kind": "application" },
+  { "id": "inv-property", "front": "Composite of $f$ with its inverse?", "back": "$(f\\circ f^{-1})(x) = (f^{-1}\\circ f)(x) = x$, the identity function.", "concept": "Inverse functions", "kind": "formula" },
+  { "id": "identity-def", "front": "Identity function?", "back": "$I(x) = x$ — it leaves every input unchanged; its graph is $y = x$.", "concept": "Inverse functions", "kind": "definition" },
+  { "id": "inv-domain-range", "front": "How are the domain and range of $f^{-1}$ found?", "back": "Domain of $f^{-1}$ = range of $f$; range of $f^{-1}$ = domain of $f$.", "concept": "Inverse functions", "kind": "concept" },
+  { "id": "inv-value", "front": "Find $f^{-1}(7)$ for $f(x) = 2x + 1$ without finding $f^{-1}(x)$.", "back": "Solve $f(x) = 7$: $2x + 1 = 7$, so $f^{-1}(7) = 3$.", "concept": "Inverse functions", "kind": "method" },
+  { "id": "fog-inverse", "front": "Inverse of a composite $(f\\circ g)^{-1}$?", "back": "$g^{-1}\\circ f^{-1}$ — undo the last step first.", "concept": "Composite functions", "kind": "formula" },
+  { "id": "f-equals-finv", "front": "For an increasing function, how can you solve $f(x) = f^{-1}(x)$?", "back": "Their graphs are reflections in $y = x$ and (for increasing $f$) meet on that line, so solve $f(x) = x$.", "concept": "Inverse functions", "kind": "method" }
 ]

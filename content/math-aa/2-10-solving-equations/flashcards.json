@@ -1,4 +1,13 @@
 [
-  { "id": "solve-factor-card", "front": "Why factorise instead of dividing by x?", "back": "Dividing loses the solution x = 0.", "concept": "Factorising" },
-  { "id": "hidden-quad-card", "front": "Hidden quadratics?", "back": "Substitute u = x², eˣ, 2ˣ, ln x… to get a quadratic in u; reject impossible u.", "concept": "Hidden quadratics" }
+  { "id": "solve-factor-card", "front": "Why factorise instead of dividing by x?", "back": "Dividing loses the solution x = 0.", "concept": "Factorising", "kind": "misconception" },
+  { "id": "hidden-quad-card", "front": "Hidden quadratics?", "back": "Substitute u = x², eˣ, 2ˣ, ln x… to get a quadratic in u; reject impossible u.", "concept": "Hidden quadratics", "kind": "method" },
+  { "id": "analytic-vs-graphical", "front": "Analytic vs graphical solution?", "back": "Analytic: exact, by algebra. Graphical: approximate, from intersections or zeros on a GDC (give 3 s.f.).", "concept": "Analytic methods", "kind": "distinction" },
+  { "id": "solve-factor-example", "front": "Solve $x^3 = 4x$.", "back": "$x^3 - 4x = x(x - 2)(x + 2) = 0$, so $x = 0, \\pm2$. (Dividing by $x$ would lose $x = 0$.)", "concept": "Factorising", "kind": "application" },
+  { "id": "hidden-quad-exp", "front": "Solve $e^{2x} - 5e^x + 6 = 0$.", "back": "Let $u = e^x$: $(u - 2)(u - 3) = 0$, so $e^x = 2$ or $3$: $x = \\ln2$ or $\\ln3$.", "concept": "Hidden quadratics", "kind": "application" },
+  { "id": "hidden-quad-ln", "front": "Solve $(\\ln x)^2 - \\ln x - 2 = 0$.", "back": "$(\\ln x - 2)(\\ln x + 1) = 0$: $x = e^2$ or $x = e^{-1}$.", "concept": "Hidden quadratics", "kind": "application" },
+  { "id": "hidden-quad-quartic", "front": "Solve $x^4 - 5x^2 + 4 = 0$.", "back": "$u = x^2$: $(u - 1)(u - 4) = 0$, so $x^2 = 1$ or $4$: $x = \\pm1, \\pm2$.", "concept": "Hidden quadratics", "kind": "application" },
+  { "id": "gdc-only", "front": "Solve $e^x = x + 2$.", "back": "No algebraic method: graph both and intersect. $x \\approx -1.84$ or $x \\approx 1.15$.", "concept": "Graphical methods", "kind": "application" },
+  { "id": "extraneous-roots", "front": "Solve $\\sqrt{x + 2} = x$ — are both roots of $x^2 - x - 2 = 0$ valid?", "back": "No. Squaring gives $x = 2$ or $-1$, but $x = -1$ fails ($\\sqrt1 \\ne -1$). Always check after squaring.", "concept": "Analytic methods", "kind": "misconception" },
+  { "id": "context-reject", "front": "When should a mathematically correct solution be rejected?", "back": "When it is outside the domain or context (negative time or length, non-integer number of items, log of a negative).", "concept": "Analytic methods", "kind": "condition" },
+  { "id": "hidden-quad-reject", "front": "$u = 2^x$ gives $u = -3$. What is $x$?", "back": "No solution: $2^x > 0$ for all real $x$, so reject $u = -3$.", "concept": "Hidden quadratics", "kind": "misconception" }
 ]

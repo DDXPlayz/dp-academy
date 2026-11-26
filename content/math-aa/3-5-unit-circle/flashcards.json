@@ -1,6 +1,15 @@
 [
-  { "id": "unit-circle-card", "front": "Unit circle definitions?", "back": "Point at angle θ is $(\\cos\\theta, \\sin\\theta)$; $\\tan\\theta = \\sin\\theta/\\cos\\theta$.", "concept": "Unit circle" },
-  { "id": "astc-card", "front": "Which ratios are positive in each quadrant?", "back": "Q1 all, Q2 sin, Q3 tan, Q4 cos.", "concept": "Quadrant signs" },
-  { "id": "exact-card", "front": "sin and cos of π/6, π/4, π/3?", "back": "sin: ½, √2/2, √3/2. cos: √3/2, √2/2, ½.", "concept": "Exact values" },
-  { "id": "ambig-card", "front": "Ambiguous case of the sine rule?", "back": "sin B = k gives B and 180° − B; keep both if the angles sum < 180°.", "concept": "Ambiguous case" }
+  { "id": "unit-circle-card", "front": "Unit circle definitions?", "back": "Point at angle θ is $(\\cos\\theta, \\sin\\theta)$; $\\tan\\theta = \\sin\\theta/\\cos\\theta$.", "concept": "Unit circle", "kind": "definition" },
+  { "id": "astc-card", "front": "Which ratios are positive in each quadrant?", "back": "Q1 all, Q2 sin, Q3 tan, Q4 cos.", "concept": "Quadrant signs", "kind": "concept" },
+  { "id": "exact-card", "front": "sin and cos of π/6, π/4, π/3?", "back": "sin: ½, √2/2, √3/2. cos: √3/2, √2/2, ½.", "concept": "Exact values", "kind": "formula" },
+  { "id": "ambig-card", "front": "Ambiguous case of the sine rule?", "back": "sin B = k gives B and 180° − B; keep both if the angles sum < 180°.", "concept": "Ambiguous case", "kind": "condition" },
+  { "id": "exact-tan", "front": "$\\tan$ of $\\frac\\pi6, \\frac\\pi4, \\frac\\pi3$?", "back": "$\\dfrac1{\\sqrt3} = \\dfrac{\\sqrt3}3$, $1$, $\\sqrt3$.", "concept": "Exact values", "kind": "formula" },
+  { "id": "exact-axes", "front": "$\\sin$, $\\cos$, $\\tan$ of $0$, $\\frac\\pi2$, $\\pi$?", "back": "$0$: $0, 1, 0$. $\\frac\\pi2$: $1, 0$, undefined. $\\pi$: $0, -1, 0$.", "concept": "Exact values", "kind": "formula" },
+  { "id": "exact-not-booklet", "front": "Are exact trig values in the formula booklet?", "back": "No — the values for $0, \\frac\\pi6, \\frac\\pi4, \\frac\\pi3, \\frac\\pi2$ must be memorised (Paper 1 has no calculator).", "concept": "Exact values", "kind": "concept" },
+  { "id": "reference-angle", "front": "Find $\\sin\\frac{5\\pi}6$, $\\cos\\frac{4\\pi}3$, $\\tan\\frac{7\\pi}4$ exactly.", "back": "Reference angle + quadrant sign: $\\frac12$ (Q2), $-\\frac12$ (Q3), $-1$ (Q4).", "concept": "Quadrant signs", "kind": "method" },
+  { "id": "trig-ranges", "front": "Possible values of $\\sin\\theta$, $\\cos\\theta$, $\\tan\\theta$?", "back": "$-1 \\le \\sin\\theta, \\cos\\theta \\le 1$; $\\tan\\theta$ takes any real value but is undefined when $\\cos\\theta = 0$.", "concept": "Unit circle", "kind": "concept" },
+  { "id": "unit-circle-pyth", "front": "Why is $\\cos^2\\theta + \\sin^2\\theta = 1$?", "back": "The point $(\\cos\\theta, \\sin\\theta)$ lies on the unit circle $x^2 + y^2 = 1$.", "concept": "Unit circle", "kind": "derivation" },
+  { "id": "negative-angles", "front": "Meaning of a negative angle or an angle above $2\\pi$ on the unit circle?", "back": "Negative: measured clockwise. Adding $2\\pi$ returns to the same point, so values repeat every $2\\pi$.", "concept": "Unit circle", "kind": "concept" },
+  { "id": "ambig-example", "front": "$A = 30^\\circ$, $a = 6$, $b = 10$. Find $B$.", "back": "$\\sin B = \\frac{10\\sin30^\\circ}6 = \\frac56$: $B \\approx 56.4^\\circ$ or $123.6^\\circ$. Both valid ($30^\\circ + 123.6^\\circ < 180^\\circ$): two triangles.", "concept": "Ambiguous case", "kind": "application" },
+  { "id": "ambig-when", "front": "When can the ambiguous case arise?", "back": "Only when using the sine rule to find an angle from two sides and a non-included angle (SSA). It never arises with the cosine rule.", "concept": "Ambiguous case", "kind": "condition" }
 ]

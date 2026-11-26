@@ -1,5 +1,15 @@
 [
-  { "id": "tan-sec-card", "front": "(HL) Derivatives of tan x and sec x?", "back": "$\\sec^2x$ and $\\sec x\\tan x$.", "concept": "Trig derivatives" },
-  { "id": "ax-card", "front": "(HL) Derivatives of $a^x$ and $\\log_a x$?", "back": "$a^x\\ln a$ and $\\frac{1}{x\\ln a}$.", "concept": "Exponential derivatives" },
-  { "id": "invtrig-card", "front": "(HL) Derivatives of arcsin x, arctan x?", "back": "$\\frac{1}{\\sqrt{1 - x^2}}$, $\\frac{1}{1 + x^2}$.", "concept": "Inverse trig" }
+  { "id": "tan-sec-card", "front": "(HL) Derivatives of tan x and sec x?", "back": "$\\sec^2x$ and $\\sec x\\tan x$.", "concept": "Trig derivatives", "kind": "formula" },
+  { "id": "ax-card", "front": "(HL) Derivatives of $a^x$ and $\\log_a x$?", "back": "$a^x\\ln a$ and $\\frac{1}{x\\ln a}$.", "concept": "Exponential derivatives", "kind": "formula" },
+  { "id": "invtrig-card", "front": "(HL) Derivatives of arcsin x, arctan x?", "back": "$\\frac{1}{\\sqrt{1 - x^2}}$, $\\frac{1}{1 + x^2}$.", "concept": "Inverse trig", "kind": "formula" },
+  { "id": "csc-cot-deriv", "front": "(HL) Derivatives of $\\csc x$ and $\\cot x$?", "back": "$-\\csc x\\cot x$ and $-\\csc^2x$.", "concept": "Trig derivatives", "kind": "formula" },
+  { "id": "arccos-deriv", "front": "(HL) Derivative of $\\arccos x$?", "back": "$-\\dfrac1{\\sqrt{1 - x^2}}$, $-1 < x < 1$.", "concept": "Inverse trig", "kind": "formula" },
+  { "id": "arcsin-derivation", "front": "(HL) Derive $\\dfrac{d}{dx}\\arcsin x$.", "back": "$y = \\arcsin x \\Rightarrow \\sin y = x \\Rightarrow \\cos y\\frac{dy}{dx} = 1 \\Rightarrow \\frac{dy}{dx} = \\frac1{\\cos y} = \\frac1{\\sqrt{1 - x^2}}$ ($\\cos y \\ge 0$ on the range).", "concept": "Inverse trig", "kind": "derivation" },
+  { "id": "ax-example", "front": "(HL) Differentiate $2^x$ and $\\arctan(2x)$.", "back": "$2^x\\ln2$; $\\dfrac2{1 + 4x^2}$.", "concept": "Exponential derivatives", "kind": "application" },
+  { "id": "ln-a-mistake", "front": "(HL) Is $\\dfrac{d}{dx}3^x = x\\cdot3^{x-1}$?", "back": "No — that is the power rule. $\\dfrac{d}{dx}3^x = 3^x\\ln3$.", "concept": "Exponential derivatives", "kind": "misconception" },
+  { "id": "int-arctan", "front": "(HL) $\\displaystyle\\int\\frac1{a^2 + x^2}\\,dx$? Example with $a = 2$.", "back": "$\\dfrac1a\\arctan\\dfrac xa + C$. $\\int\\frac1{4 + x^2}\\,dx = \\frac12\\arctan\\frac x2 + C$.", "concept": "Integrals", "kind": "formula" },
+  { "id": "int-arcsin", "front": "(HL) $\\displaystyle\\int\\frac1{\\sqrt{a^2 - x^2}}\\,dx$? Example with $a = 3$.", "back": "$\\arcsin\\dfrac xa + C$ ($|x| < a$). $\\int\\frac1{\\sqrt{9 - x^2}}\\,dx = \\arcsin\\frac x3 + C$.", "concept": "Integrals", "kind": "formula" },
+  { "id": "int-sec2-ax", "front": "(HL) $\\int\\sec^2x\\,dx$ and $\\int a^x\\,dx$?", "back": "$\\tan x + C$; $\\dfrac{a^x}{\\ln a} + C$.", "concept": "Integrals", "kind": "formula" },
+  { "id": "int-tan", "front": "(HL) Find $\\int\\tan x\\,dx$.", "back": "$\\int\\frac{\\sin x}{\\cos x}\\,dx = -\\ln|\\cos x| + C = \\ln|\\sec x| + C$ (form $-\\frac{f'}{f}$).", "concept": "Integrals", "kind": "derivation" },
+  { "id": "int-pf-example", "front": "(HL) Find $\\displaystyle\\int\\frac1{x^2 - 1}\\,dx$.", "back": "$\\frac12\\left(\\frac1{x - 1} - \\frac1{x + 1}\\right)$, so $\\frac12\\ln\\left|\\dfrac{x - 1}{x + 1}\\right| + C$.", "concept": "Partial fractions", "kind": "application" }
 ]

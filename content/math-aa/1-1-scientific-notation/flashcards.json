@@ -1,5 +1,14 @@
 [
-  { "id": "sn-card", "front": "Scientific notation form?", "back": "$a\\times10^k$ with $1 \\le a < 10$, $k$ an integer.", "concept": "Scientific notation" },
-  { "id": "sn-ops-card", "front": "Multiplying and dividing in scientific notation?", "back": "Multiply/divide the $a$ values; add/subtract the powers; renormalise.", "concept": "Calculating in scientific notation" },
-  { "id": "sn-add-card", "front": "Adding numbers in scientific notation?", "back": "Rewrite with the same power of 10, then add the $a$ values.", "concept": "Calculating in scientific notation" }
+  { "id": "sn-card", "front": "Scientific notation form?", "back": "$a\\times10^k$ with $1 \\le a < 10$, $k$ an integer.", "concept": "Scientific notation", "kind": "definition" },
+  { "id": "sn-ops-card", "front": "Multiplying and dividing in scientific notation?", "back": "Multiply/divide the $a$ values; add/subtract the powers; renormalise.", "concept": "Calculating in scientific notation", "kind": "method" },
+  { "id": "sn-add-card", "front": "Adding numbers in scientific notation?", "back": "Rewrite with the same power of 10, then add the $a$ values.", "concept": "Calculating in scientific notation", "kind": "method" },
+  { "id": "sn-k-sign", "front": "What does the sign of $k$ tell you in $a\\times10^k$?", "back": "$k > 0$: the number is $\\ge 10$. $k = 0$: $1 \\le$ number $< 10$. $k < 0$: the number is between 0 and 1 (e.g. $0.00052 = 5.2\\times10^{-4}$).", "concept": "Scientific notation", "kind": "concept" },
+  { "id": "sn-not-normalised", "front": "Is $34\\times10^5$ in scientific notation?", "back": "No — $a$ must satisfy $1 \\le a < 10$. Rewrite as $3.4\\times10^6$ (divide $a$ by 10, add 1 to $k$).", "concept": "Scientific notation", "kind": "misconception" },
+  { "id": "sn-renormalise", "front": "How do you renormalise $a\\times10^k$ when $a$ is out of range?", "back": "If $a \\ge 10$: divide $a$ by 10 and add 1 to $k$. If $a < 1$: multiply $a$ by 10 and subtract 1 from $k$. Repeat until $1 \\le a < 10$.", "concept": "Calculating in scientific notation", "kind": "method" },
+  { "id": "sn-mult-example", "front": "Evaluate $(4\\times10^5)(6\\times10^{-2})$ in scientific notation.", "back": "$24\\times10^{3} = 2.4\\times10^4$.", "concept": "Calculating in scientific notation", "kind": "application" },
+  { "id": "sn-div-example", "front": "Evaluate $\\dfrac{3\\times10^4}{6\\times10^{-3}}$ in scientific notation.", "back": "$0.5\\times10^{7} = 5\\times10^6$ (subtracting powers: $4 - (-3) = 7$).", "concept": "Calculating in scientific notation", "kind": "application" },
+  { "id": "sn-add-example", "front": "Evaluate $4.2\\times10^5 + 3\\times10^4$.", "back": "$4.2\\times10^5 + 0.3\\times10^5 = 4.5\\times10^5$.", "concept": "Calculating in scientific notation", "kind": "application" },
+  { "id": "sn-add-powers-mistake", "front": "Is $(2\\times10^3) + (3\\times10^3) = 5\\times10^6$?", "back": "No — exponents only add when **multiplying**. The sum is $5\\times10^3$.", "concept": "Calculating in scientific notation", "kind": "misconception" },
+  { "id": "sn-power-example", "front": "Evaluate $(3\\times10^4)^2$.", "back": "Square both parts: $9\\times10^8$.", "concept": "Calculating in scientific notation", "kind": "application" },
+  { "id": "sn-gdc-display", "front": "A GDC shows 3.2E-5. How should you write it?", "back": "$3.2\\times10^{-5}$ — never copy the \"E\" notation into a written answer.", "concept": "Scientific notation", "kind": "concept" }
 ]

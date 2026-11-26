@@ -1,5 +1,16 @@
 [
-  { "id": "euler-card", "front": "(HL) Euler’s formula?", "back": "$e^{i\\theta} = \\cos\\theta + i\\sin\\theta$", "concept": "Converting forms" },
-  { "id": "polar-mult-card", "front": "(HL) Multiplying in polar form?", "back": "Multiply moduli, add arguments.", "concept": "Products" },
-  { "id": "polar-div-card", "front": "(HL) Dividing in polar form?", "back": "Divide moduli, subtract arguments.", "concept": "Products" }
+  { "id": "euler-card", "front": "(HL) Euler’s formula?", "back": "$e^{i\\theta} = \\cos\\theta + i\\sin\\theta$", "concept": "Converting forms", "kind": "formula" },
+  { "id": "polar-mult-card", "front": "(HL) Multiplying in polar form?", "back": "Multiply moduli, add arguments.", "concept": "Products", "kind": "formula" },
+  { "id": "polar-div-card", "front": "(HL) Dividing in polar form?", "back": "Divide moduli, subtract arguments.", "concept": "Products", "kind": "formula" },
+  { "id": "polar-forms", "front": "(HL) Three equivalent forms of a complex number?", "back": "$z = a + bi = r(\\cos\\theta + i\\sin\\theta) = r\\,\\text{cis}\\,\\theta = re^{i\\theta}$, with $r = |z|$ and $\\theta = \\arg z$.", "concept": "Converting forms", "kind": "formula" },
+  { "id": "polar-to-example", "front": "(HL) Write $1 + \\sqrt3\\,i$ in Euler form.", "back": "$r = 2$, $\\theta = \\frac\\pi3$ (first quadrant): $2e^{i\\pi/3}$.", "concept": "Converting forms", "kind": "application" },
+  { "id": "polar-from-example", "front": "(HL) Write $4e^{i\\pi/6}$ in Cartesian form.", "back": "$4\\cos\\frac\\pi6 + 4i\\sin\\frac\\pi6 = 2\\sqrt3 + 2i$.", "concept": "Converting forms", "kind": "application" },
+  { "id": "polar-mult-example", "front": "(HL) Simplify $\\left(2\\,\\text{cis}\\frac\\pi3\\right)\\left(3\\,\\text{cis}\\frac\\pi6\\right)$.", "back": "$6\\,\\text{cis}\\frac\\pi2 = 6i$.", "concept": "Products", "kind": "application" },
+  { "id": "polar-div-example", "front": "(HL) Simplify $\\dfrac{8\\,\\text{cis}\\frac{5\\pi}6}{2\\,\\text{cis}\\frac\\pi3}$.", "back": "$4\\,\\text{cis}\\frac\\pi2 = 4i$.", "concept": "Products", "kind": "application" },
+  { "id": "polar-mult-mistake", "front": "(HL) Multiplying $z_1z_2$: add the moduli?", "back": "No — moduli **multiply**, arguments **add**.", "concept": "Products", "kind": "misconception" },
+  { "id": "polar-geometry", "front": "(HL) Geometric effect of multiplying by $re^{i\\theta}$?", "back": "Enlargement by scale factor $r$ and rotation by $\\theta$ anticlockwise about $O$. Multiplying by $i$ rotates by $\\frac\\pi2$.", "concept": "Products", "kind": "graph" },
+  { "id": "polar-conj-recip", "front": "(HL) Conjugate and reciprocal of $re^{i\\theta}$?", "back": "$z^* = re^{-i\\theta}$ and $\\dfrac1z = \\dfrac1re^{-i\\theta}$.", "concept": "Converting forms", "kind": "formula" },
+  { "id": "polar-arg-range", "front": "(HL) The arguments add to more than $\\pi$. What should you do?", "back": "Subtract $2\\pi$ (or add $2\\pi$ if below $-\\pi$) to give the principal argument in $(-\\pi, \\pi]$.", "concept": "Products", "kind": "method" },
+  { "id": "polar-negative-r", "front": "(HL) Is $-2\\,\\text{cis}\\frac\\pi6$ in polar form?", "back": "No — $r$ must be positive. $-2\\,\\text{cis}\\frac\\pi6 = 2\\,\\text{cis}\\left(\\frac\\pi6 + \\pi\\right) = 2\\,\\text{cis}\\left(-\\frac{5\\pi}6\\right)$.", "concept": "Converting forms", "kind": "misconception" },
+  { "id": "euler-trig", "front": "(HL) $\\cos\\theta$ and $\\sin\\theta$ in terms of $e^{i\\theta}$?", "back": "$\\cos\\theta = \\dfrac{e^{i\\theta} + e^{-i\\theta}}2$, $\\sin\\theta = \\dfrac{e^{i\\theta} - e^{-i\\theta}}{2i}$.", "concept": "Converting forms", "kind": "formula" }
 ]

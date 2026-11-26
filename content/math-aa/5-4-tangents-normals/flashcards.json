@@ -1,4 +1,13 @@
 [
-  { "id": "tangent-card", "front": "Equation of a tangent at $x_1$?", "back": "$y - f(x_1) = f'(x_1)(x - x_1)$", "concept": "Tangent" },
-  { "id": "normal-card", "front": "Gradient of the normal?", "back": "$-1/f'(x_1)$", "concept": "Normal" }
+  { "id": "tangent-card", "front": "Equation of a tangent at $x_1$?", "back": "$y - f(x_1) = f'(x_1)(x - x_1)$", "concept": "Tangent", "kind": "formula" },
+  { "id": "normal-card", "front": "Gradient of the normal?", "back": "$-1/f'(x_1)$", "concept": "Normal", "kind": "formula" },
+  { "id": "tangent-method", "front": "Steps to find the tangent at $x = x_1$?", "back": "1. $y_1 = f(x_1)$ from the original function. 2. $m = f'(x_1)$. 3. $y - y_1 = m(x - x_1)$.", "concept": "Tangent", "kind": "method" },
+  { "id": "tangent-example", "front": "Tangent to $y = x^2$ at $x = 3$?", "back": "$y_1 = 9$, $m = 6$: $y - 9 = 6(x - 3)$, i.e. $y = 6x - 9$.", "concept": "Tangent", "kind": "application" },
+  { "id": "normal-example", "front": "Normal to $y = x^2$ at $x = 3$?", "back": "Gradient $-\\frac16$: $y - 9 = -\\frac16(x - 3)$, i.e. $y = -\\frac16x + \\frac{19}2$.", "concept": "Normal", "kind": "application" },
+  { "id": "normal-def", "front": "Normal to a curve?", "back": "The line through the point of contact perpendicular to the tangent.", "concept": "Normal", "kind": "definition" },
+  { "id": "fprime-number", "front": "Tangent at $x = 2$ of $y = x^3$: is $y - 8 = 3x^2(x - 2)$ right?", "back": "No — the gradient must be the number $f'(2) = 12$: $y - 8 = 12(x - 2)$.", "concept": "Tangent", "kind": "misconception" },
+  { "id": "y1-mistake", "front": "Where should $y_1$ come from?", "back": "From the original function $f(x_1)$, not from $f'(x_1)$.", "concept": "Tangent", "kind": "misconception" },
+  { "id": "horizontal-tangent", "front": "Normal at a point where $f'(x_1) = 0$?", "back": "The tangent is horizontal ($y = y_1$), so the normal is the vertical line $x = x_1$.", "concept": "Normal", "kind": "concept" },
+  { "id": "parallel-tangent", "front": "Find where the tangent to $y = f(x)$ is parallel to $y = 4x + 1$.", "back": "Solve $f'(x) = 4$, then find $y$ from $f$.", "concept": "Tangent", "kind": "method" },
+  { "id": "tangent-gdc", "front": "Finding a tangent in Paper 2?", "back": "Use the GDC to evaluate $f'(x_1)$ numerically (and $f(x_1)$), then write $y - y_1 = m(x - x_1)$.", "concept": "Tangent", "kind": "method" }
 ]

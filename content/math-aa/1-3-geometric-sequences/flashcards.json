@@ -1,6 +1,16 @@
 [
-  { "id": "geo-nth-card", "front": "Geometric nth term?", "back": "$u_n = u_1r^{n-1}$", "concept": "Geometric nth term" },
-  { "id": "geo-sum-card", "front": "Geometric sum of n terms?", "back": "$S_n = \\dfrac{u_1(r^n - 1)}{r - 1}$, $r \\ne 1$.", "concept": "Geometric series" },
-  { "id": "geo-r-card", "front": "Finding r from two terms?", "back": "Divide them: $u_m/u_k = r^{m-k}$.", "concept": "Common ratio" },
-  { "id": "geo-growth-card", "front": "Ratio for p% growth or decay?", "back": "$r = 1 + p/100$ (growth), $r = 1 - p/100$ (decay).", "concept": "Finding n" }
+  { "id": "geo-nth-card", "front": "Geometric nth term?", "back": "$u_n = u_1r^{n-1}$", "concept": "Geometric nth term", "kind": "formula" },
+  { "id": "geo-sum-card", "front": "Geometric sum of n terms?", "back": "$S_n = \\dfrac{u_1(r^n - 1)}{r - 1}$, $r \\ne 1$.", "concept": "Geometric series", "kind": "formula" },
+  { "id": "geo-r-card", "front": "Finding r from two terms?", "back": "Divide them: $u_m/u_k = r^{m-k}$.", "concept": "Common ratio", "kind": "method" },
+  { "id": "geo-growth-card", "front": "Ratio for p% growth or decay?", "back": "$r = 1 + p/100$ (growth), $r = 1 - p/100$ (decay).", "concept": "Finding n", "kind": "formula" },
+  { "id": "geo-r-def", "front": "Common ratio of a geometric sequence?", "back": "$r = \\dfrac{u_{n+1}}{u_n}$, the same for every $n$. If $r < 0$ the terms alternate in sign.", "concept": "Common ratio", "kind": "definition" },
+  { "id": "geo-two-terms-example", "front": "$u_2 = 6$ and $u_5 = 162$ in a geometric sequence. Find $r$ and $u_1$.", "back": "$\\dfrac{u_5}{u_2} = r^3 = 27$, so $r = 3$ and $u_1 = 2$.", "concept": "Common ratio", "kind": "application" },
+  { "id": "geo-even-power", "front": "$u_3 = 9u_1$ in a geometric sequence. Is $r = 3$?", "back": "Not necessarily: $r^2 = 9$ gives $r = \\pm 3$ — two possible sequences; check which the question allows.", "concept": "Common ratio", "kind": "misconception" },
+  { "id": "geo-sum-alt", "front": "Alternative form of the geometric sum, useful when $|r| < 1$?", "back": "$S_n = \\dfrac{u_1(1 - r^n)}{1 - r}$, $r \\ne 1$ (equivalent to $\\dfrac{u_1(r^n - 1)}{r - 1}$).", "concept": "Geometric series", "kind": "formula" },
+  { "id": "geo-r-one", "front": "Why does the geometric sum formula need $r \\ne 1$, and what is $S_n$ when $r = 1$?", "back": "The formula divides by $r - 1$. If $r = 1$ every term is $u_1$, so $S_n = nu_1$.", "concept": "Geometric series", "kind": "condition" },
+  { "id": "geo-mean", "front": "If $a, b, c$ are consecutive terms of a geometric sequence, how are they related?", "back": "$\\dfrac ba = \\dfrac cb$, so $b^2 = ac$.", "concept": "Common ratio", "kind": "formula" },
+  { "id": "geo-sigma-example", "front": "Evaluate $\\displaystyle\\sum_{k=1}^{5} 3(2)^k$.", "back": "Geometric: $u_1 = 6$, $r = 2$, 5 terms. $S_5 = \\dfrac{6(2^5 - 1)}{2 - 1} = 186$.", "concept": "Geometric series", "kind": "application" },
+  { "id": "geo-find-n-logs", "front": "How do you find $n$ from $u_1r^{n-1} = k$?", "back": "Take logs: $n - 1 = \\dfrac{\\ln(k/u_1)}{\\ln r}$. (Or use a GDC table.) $n$ must be a positive integer.", "concept": "Finding n", "kind": "method" },
+  { "id": "geo-log-inequality", "front": "Solving $0.8^n < 0.1$: why is $n < \\dfrac{\\ln 0.1}{\\ln 0.8}$ wrong?", "back": "$\\ln 0.8 < 0$, so dividing by it reverses the inequality: $n > \\dfrac{\\ln 0.1}{\\ln 0.8} \\approx 10.3$, so $n = 11$.", "concept": "Finding n", "kind": "misconception" },
+  { "id": "geo-index-shift", "front": "A value $V_0$ grows by 5% a year. Is the value after $n$ years $V_0(1.05)^{n-1}$?", "back": "No — after $n$ years it is $V_0(1.05)^n$. The $n - 1$ only applies when the starting value is labelled $u_1$ and you want $u_n$.", "concept": "Finding n", "kind": "misconception" }
 ]

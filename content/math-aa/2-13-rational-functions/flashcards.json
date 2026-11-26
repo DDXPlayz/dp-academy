@@ -1,4 +1,12 @@
 [
-  { "id": "oblique-card", "front": "(HL) When is there an oblique asymptote?", "back": "Numerator degree = denominator degree + 1; divide to find y = mx + c.", "concept": "Oblique asymptotes" },
-  { "id": "ha-zero-card", "front": "(HL) Horizontal asymptote when numerator degree < denominator degree?", "back": "$y = 0$.", "concept": "Horizontal asymptotes" }
+  { "id": "oblique-card", "front": "(HL) When is there an oblique asymptote?", "back": "Numerator degree = denominator degree + 1; divide to find y = mx + c.", "concept": "Oblique asymptotes", "kind": "condition" },
+  { "id": "ha-zero-card", "front": "(HL) Horizontal asymptote when numerator degree < denominator degree?", "back": "$y = 0$.", "concept": "Horizontal asymptotes", "kind": "condition" },
+  { "id": "rat-va-hl", "front": "(HL) Where are the vertical asymptotes of a rational function?", "back": "At zeros of the denominator that are not also zeros of the numerator.", "concept": "Vertical asymptotes", "kind": "method" },
+  { "id": "ha-equal-degree", "front": "(HL) Horizontal asymptote when numerator and denominator have equal degree?", "back": "$y = \\dfrac{\\text{leading coefficient of numerator}}{\\text{leading coefficient of denominator}}$.", "concept": "Horizontal asymptotes", "kind": "condition" },
+  { "id": "ha-crossing", "front": "(HL) Can a graph cross its horizontal asymptote?", "back": "Yes — the asymptote only describes behaviour as $x \\to \\pm\\infty$; the curve may cross it for moderate $x$.", "concept": "Horizontal asymptotes", "kind": "misconception" },
+  { "id": "oblique-example", "front": "(HL) Asymptotes of $y = \\dfrac{x^2 + 3x + 1}{x + 1}$?", "back": "Divide: $x + 2 - \\dfrac1{x + 1}$. Oblique asymptote $y = x + 2$; vertical asymptote $x = -1$.", "concept": "Oblique asymptotes", "kind": "application" },
+  { "id": "quad-denominator", "front": "(HL) Asymptotes of $y = \\dfrac x{x^2 + 1}$?", "back": "Horizontal $y = 0$; no vertical asymptote, since $x^2 + 1 = 0$ has no real roots.", "concept": "Vertical asymptotes", "kind": "application" },
+  { "id": "range-discriminant", "front": "(HL) Find the range of $y = \\dfrac x{x^2 + 1}$ algebraically.", "back": "Rearrange: $yx^2 - x + y = 0$. Real $x$ needs $\\Delta = 1 - 4y^2 \\ge 0$, so $-\\frac12 \\le y \\le \\frac12$.", "concept": "Horizontal asymptotes", "kind": "method" },
+  { "id": "hole-vs-asymptote", "front": "(HL) $y = \\dfrac{x^2 - 1}{x - 1}$: asymptote at $x = 1$?", "back": "No — the factor cancels: $y = x + 1$ with a missing point (hole) at $(1, 2)$, not an asymptote.", "concept": "Vertical asymptotes", "kind": "distinction" },
+  { "id": "rat-sketch-hl", "front": "(HL) Steps to sketch a rational function?", "back": "Intercepts; vertical asymptotes and the sign of $y$ on each side; horizontal/oblique asymptote; turning points (GDC or calculus); then join smoothly.", "concept": "Oblique asymptotes", "kind": "method" }
 ]

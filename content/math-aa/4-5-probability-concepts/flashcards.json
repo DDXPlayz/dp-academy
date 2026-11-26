@@ -1,5 +1,13 @@
 [
-  { "id": "prob-def-card", "front": "Probability of event A (equally likely outcomes)?", "back": "$n(A)/n(U)$", "concept": "Probability" },
-  { "id": "expected-card", "front": "Expected number of occurrences?", "back": "$np$", "concept": "Expected occurrences" },
-  { "id": "atleast-card", "front": "Strategy for 'at least one'?", "back": "1 − P(none).", "concept": "Complement" }
+  { "id": "prob-def-card", "front": "Probability of event A (equally likely outcomes)?", "back": "$n(A)/n(U)$", "concept": "Probability", "kind": "formula" },
+  { "id": "expected-card", "front": "Expected number of occurrences?", "back": "$np$", "concept": "Expected occurrences", "kind": "formula" },
+  { "id": "atleast-card", "front": "Strategy for 'at least one'?", "back": "1 − P(none).", "concept": "Complement", "kind": "method" },
+  { "id": "prob-language", "front": "Trial, outcome, sample space, event?", "back": "Trial: one repetition of an experiment. Outcome: a possible result. Sample space $U$: the set of all outcomes. Event: a set of outcomes.", "concept": "Probability", "kind": "definition" },
+  { "id": "prob-range", "front": "Possible values of a probability?", "back": "$0 \\le P(A) \\le 1$: 0 impossible, 1 certain.", "concept": "Probability", "kind": "concept" },
+  { "id": "complement", "front": "Complement rule?", "back": "$P(A') = 1 - P(A)$, where $A'$ is \"not $A$\".", "concept": "Complement", "kind": "formula" },
+  { "id": "relative-freq", "front": "Relative frequency?", "back": "$\\dfrac{\\text{number of times the event occurs}}{\\text{number of trials}}$ — an experimental estimate of $P(A)$, improving with more trials.", "concept": "Relative frequency", "kind": "definition" },
+  { "id": "expected-example", "front": "A fair die is rolled 120 times. Expected number of sixes?", "back": "$np = 120\\times\\frac16 = 20$.", "concept": "Expected occurrences", "kind": "application" },
+  { "id": "atleast-example", "front": "P(at least one six in 4 rolls of a fair die)?", "back": "$1 - \\left(\\frac56\\right)^4 = \\frac{671}{1296} \\approx 0.518$.", "concept": "Complement", "kind": "application" },
+  { "id": "two-dice", "front": "Two fair dice: P(sum = 7)?", "back": "Sample space has 36 equally likely outcomes, 6 give 7: $\\frac6{36} = \\frac16$.", "concept": "Probability", "kind": "application" },
+  { "id": "equally-likely", "front": "\"Sum of two dice is 2 to 12, so P(sum = 7) $= \\frac1{11}$.\" Error?", "back": "$\\frac{n(A)}{n(U)}$ needs equally likely outcomes; the 11 sums are not. Use the 36 ordered pairs.", "concept": "Probability", "kind": "misconception" }
 ]

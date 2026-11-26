@@ -1,4 +1,12 @@
 [
-  { "id": "z-card", "front": "z-score formula?", "back": "$z = (x - \\mu)/\\sigma$", "concept": "z-scores" },
-  { "id": "unknown-card", "front": "Finding unknown μ or σ?", "back": "invNorm on N(0, 1) to get z, then solve $z = (x - \\mu)/\\sigma$.", "concept": "Unknown mean" }
+  { "id": "z-card", "front": "z-score formula?", "back": "$z = (x - \\mu)/\\sigma$", "concept": "z-scores", "kind": "formula" },
+  { "id": "unknown-card", "front": "Finding unknown μ or σ?", "back": "invNorm on N(0, 1) to get z, then solve $z = (x - \\mu)/\\sigma$.", "concept": "Unknown mean", "kind": "method" },
+  { "id": "z-def", "front": "Meaning of a $z$-score?", "back": "The number of standard deviations a value is above (positive) or below (negative) the mean.", "concept": "z-scores", "kind": "definition" },
+  { "id": "z-example", "front": "$X \\sim N(50, 10^2)$. $z$-score of 65?", "back": "$z = \\frac{65 - 50}{10} = 1.5$: 1.5 SDs above the mean.", "concept": "z-scores", "kind": "application" },
+  { "id": "std-normal", "front": "Standard normal distribution?", "back": "$Z \\sim N(0, 1)$. Standardising preserves probabilities: $P(X < x) = P\\left(Z < \\frac{x - \\mu}\\sigma\\right)$.", "concept": "z-scores", "kind": "definition" },
+  { "id": "compare-z", "front": "Ana scores 72 (mean 60, SD 8); Ben scores 80 (mean 70, SD 10). Who did relatively better?", "back": "$z_A = 1.5$, $z_B = 1$: Ana performed better relative to her group.", "concept": "z-scores", "kind": "application" },
+  { "id": "unknown-sigma", "front": "$X \\sim N(100, \\sigma^2)$, $P(X < 110) = 0.8$. Find $\\sigma$.", "back": "$z = 0.8416$; $\\frac{10}\\sigma = 0.8416 \\Rightarrow \\sigma \\approx 11.9$.", "concept": "Unknown standard deviation", "kind": "application" },
+  { "id": "unknown-mu", "front": "$X \\sim N(\\mu, 5^2)$, $P(X > 80) = 0.1$. Find $\\mu$.", "back": "$P(Z < z) = 0.9 \\Rightarrow z = 1.2816$; $\\mu = 80 - 5(1.2816) \\approx 73.6$.", "concept": "Unknown mean", "kind": "application" },
+  { "id": "two-unknowns", "front": "Both $\\mu$ and $\\sigma$ unknown: method?", "back": "Use two probability statements to get two $z$-values, form $\\mu + z_1\\sigma = x_1$ and $\\mu + z_2\\sigma = x_2$, and solve simultaneously.", "concept": "Unknown mean", "kind": "method" },
+  { "id": "invnorm-x-mistake", "front": "Why can't you use inverse normal on $X$ when $\\sigma$ is unknown?", "back": "The GDC needs $\\mu$ and $\\sigma$; work with $Z \\sim N(0, 1)$ instead, then solve $z = \\frac{x - \\mu}\\sigma$.", "concept": "Unknown mean", "kind": "misconception" }
 ]

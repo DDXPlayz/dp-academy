@@ -1,4 +1,12 @@
 [
-  { "id": "concavity-card", "front": "Sign of f″ and concavity?", "back": "$f'' > 0$ concave up; $f'' < 0$ concave down.", "concept": "Concavity" },
-  { "id": "f-fprime-card", "front": "Turning point of f′ corresponds to…?", "back": "A point of inflexion of f.", "concept": "Graphs of f and f′" }
+  { "id": "concavity-card", "front": "Sign of f″ and concavity?", "back": "$f'' > 0$ concave up; $f'' < 0$ concave down.", "concept": "Concavity", "kind": "condition" },
+  { "id": "f-fprime-card", "front": "Turning point of f′ corresponds to…?", "back": "A point of inflexion of f.", "concept": "Graphs of f and f′", "kind": "graph" },
+  { "id": "second-notation", "front": "Second derivative?", "back": "The derivative of $f'$: $f''(x) = \\dfrac{d^2y}{dx^2}$ — the rate of change of the gradient.", "concept": "Concavity", "kind": "definition" },
+  { "id": "concave-def", "front": "Concave up vs concave down?", "back": "Up (cup): gradient increasing, $f'' > 0$. Down (cap): gradient decreasing, $f'' < 0$.", "concept": "Concavity", "kind": "definition" },
+  { "id": "concavity-example", "front": "Where is $f(x) = x^3 - 6x^2$ concave up?", "back": "$f''(x) = 6x - 12 > 0$ for $x > 2$ (concave down for $x < 2$).", "concept": "Concavity", "kind": "application" },
+  { "id": "fprime-zeros", "front": "On the graph of $f'$, what do the $x$-intercepts show about $f$?", "back": "Stationary points of $f$ (where its gradient is 0) — not zeros of $f$.", "concept": "Graphs of f and f′", "kind": "misconception" },
+  { "id": "max-from-fprime", "front": "How do you identify a maximum of $f$ from the graph of $f'$?", "back": "$f'$ crosses the $x$-axis from positive to negative. (Negative to positive: a minimum.)", "concept": "Graphs of f and f′", "kind": "graph" },
+  { "id": "fprime-increasing", "front": "What does it mean for $f$ where the graph of $f'$ is increasing?", "back": "$f'' > 0$ there, so $f$ is concave up.", "concept": "Graphs of f and f′", "kind": "graph" },
+  { "id": "sketch-f-from-fprime", "front": "Sketching $f$ from the graph of $f'$?", "back": "Zeros of $f'$ give stationary points; the sign of $f'$ gives increasing/decreasing; turning points of $f'$ give inflexion points of $f$.", "concept": "Graphs of f and f′", "kind": "method" },
+  { "id": "fpp-kinematics", "front": "Meaning of $\\dfrac{d^2s}{dt^2}$ for displacement $s(t)$?", "back": "Acceleration — the rate of change of velocity.", "concept": "Concavity", "kind": "application" }
 ]

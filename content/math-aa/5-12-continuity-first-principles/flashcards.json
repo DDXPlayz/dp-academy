@@ -1,4 +1,14 @@
 [
-  { "id": "fp-card", "front": "(HL) Derivative from first principles?", "back": "$f'(x) = \\lim_{h\\to0}\\frac{f(x + h) - f(x)}{h}$", "concept": "First principles" },
-  { "id": "cont-diff-card", "front": "(HL) Continuity vs differentiability?", "back": "Differentiable ⇒ continuous, not conversely (e.g. |x| at 0).", "concept": "Differentiability" }
+  { "id": "fp-card", "front": "(HL) Derivative from first principles?", "back": "$f'(x) = \\lim_{h\\to0}\\frac{f(x + h) - f(x)}{h}$", "concept": "First principles", "kind": "formula" },
+  { "id": "cont-diff-card", "front": "(HL) Continuity vs differentiability?", "back": "Differentiable ⇒ continuous, not conversely (e.g. |x| at 0).", "concept": "Differentiability", "kind": "distinction" },
+  { "id": "continuity-def", "front": "(HL) Continuous at $x = a$?", "back": "$\\lim_{x\\to a}f(x)$ exists and equals $f(a)$ — the graph has no break there.", "concept": "Continuity", "kind": "definition" },
+  { "id": "differentiable-def", "front": "(HL) Differentiable at $x = a$?", "back": "$f'(a)$ exists: the left and right gradients agree, so the graph is smooth (no corner, cusp or vertical tangent).", "concept": "Differentiability", "kind": "definition" },
+  { "id": "discontinuity-types", "front": "(HL) Ways a function can fail to be continuous?", "back": "A jump (left and right limits differ), a vertical asymptote, or a hole / isolated point where $f(a)$ differs from the limit.", "concept": "Continuity", "kind": "graph" },
+  { "id": "fp-x2", "front": "(HL) Differentiate $f(x) = x^2$ from first principles.", "back": "$\\dfrac{(x + h)^2 - x^2}h = \\dfrac{2xh + h^2}h = 2x + h \\to 2x$ as $h \\to 0$.", "concept": "First principles", "kind": "derivation" },
+  { "id": "fp-x3", "front": "(HL) Differentiate $x^3$ from first principles.", "back": "$\\dfrac{(x + h)^3 - x^3}h = 3x^2 + 3xh + h^2 \\to 3x^2$.", "concept": "First principles", "kind": "derivation" },
+  { "id": "fp-method", "front": "(HL) Steps in a first-principles proof?", "back": "Write $\\frac{f(x + h) - f(x)}h$, expand $f(x + h)$, cancel $f(x)$, divide by $h$, **then** let $h \\to 0$ (never put $h = 0$ before dividing).", "concept": "First principles", "kind": "method" },
+  { "id": "piecewise-diff", "front": "(HL) $f(x) = x^2$ for $x \\le 1$, $ax + b$ for $x > 1$, differentiable at 1. Find $a$, $b$.", "back": "Continuity: $a + b = 1$. Equal gradients: $a = 2$. So $b = -1$.", "concept": "Differentiability", "kind": "application" },
+  { "id": "higher-derivs", "front": "(HL) Notation for higher derivatives?", "back": "$f''(x) = \\frac{d^2y}{dx^2}$, $f'''(x)$, and in general $f^{(n)}(x) = \\frac{d^ny}{dx^n}$.", "concept": "Higher derivatives", "kind": "definition" },
+  { "id": "higher-example", "front": "(HL) $\\dfrac{d^n}{dx^n}e^{2x}$ and the 4th derivative of $\\sin x$?", "back": "$2^ne^{2x}$; $\\sin x$ (derivatives cycle with period 4).", "concept": "Higher derivatives", "kind": "application" },
+  { "id": "convergence", "front": "(HL) Convergent vs divergent limit?", "back": "Convergent: approaches a finite value (e.g. $\\frac1n \\to 0$). Divergent: grows without bound or oscillates (e.g. $n^2$, $(-1)^n$).", "concept": "Continuity", "kind": "concept" }
 ]

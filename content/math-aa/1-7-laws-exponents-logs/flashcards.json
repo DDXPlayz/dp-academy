@@ -1,5 +1,16 @@
 [
-  { "id": "log-laws-card", "front": "Three laws of logarithms?", "back": "$\\log xy = \\log x + \\log y$; $\\log\\frac{x}{y} = \\log x - \\log y$; $\\log x^m = m\\log x$.", "concept": "Laws of logarithms" },
-  { "id": "cob-card", "front": "Change of base?", "back": "$\\log_b a = \\dfrac{\\ln a}{\\ln b}$", "concept": "Change of base" },
-  { "id": "ratexp-card", "front": "$a^{m/n}$?", "back": "$(\\sqrt[n]{a})^m$", "concept": "Rational exponents" }
+  { "id": "log-laws-card", "front": "Three laws of logarithms?", "back": "$\\log xy = \\log x + \\log y$; $\\log\\frac{x}{y} = \\log x - \\log y$; $\\log x^m = m\\log x$.", "concept": "Laws of logarithms", "kind": "formula" },
+  { "id": "cob-card", "front": "Change of base?", "back": "$\\log_b a = \\dfrac{\\ln a}{\\ln b}$", "concept": "Change of base", "kind": "formula" },
+  { "id": "ratexp-card", "front": "$a^{m/n}$?", "back": "$(\\sqrt[n]{a})^m$", "concept": "Rational exponents", "kind": "formula" },
+  { "id": "ratexp-example", "front": "Evaluate $8^{2/3}$ and $27^{-1/3}$.", "back": "$8^{2/3} = (\\sqrt[3]8)^2 = 4$; $27^{-1/3} = \\dfrac1{\\sqrt[3]{27}} = \\dfrac13$.", "concept": "Rational exponents", "kind": "application" },
+  { "id": "exp-e-form", "front": "Write $a^x$ using base $e$.", "back": "$a^x = e^{x\\ln a}$ ($a > 0$).", "concept": "Laws of logarithms", "kind": "formula" },
+  { "id": "log-sum-mistake", "front": "Is $\\log(x + y) = \\log x + \\log y$?", "back": "No — there is no law for the log of a sum. $\\log x + \\log y = \\log(xy)$.", "concept": "Laws of logarithms", "kind": "misconception" },
+  { "id": "log-quotient-mistake", "front": "Is $\\dfrac{\\log x}{\\log y} = \\log\\dfrac xy$? Is $(\\log x)^2 = 2\\log x$?", "back": "Neither. $\\log\\frac xy = \\log x - \\log y$ and $\\log x^2 = 2\\log x$; $\\frac{\\log x}{\\log y}$ is a change of base, $\\log_y x$.", "concept": "Laws of logarithms", "kind": "misconception" },
+  { "id": "cob-example", "front": "Evaluate $\\log_4 8$ exactly.", "back": "$\\dfrac{\\log_2 8}{\\log_2 4} = \\dfrac32$.", "concept": "Change of base", "kind": "application" },
+  { "id": "log-reciprocal", "front": "Relationship between $\\log_a b$ and $\\log_b a$?", "back": "$\\log_b a = \\dfrac1{\\log_a b}$ (change of base to base $a$).", "concept": "Change of base", "kind": "formula" },
+  { "id": "exp-eq-logs", "front": "Solve $3^{x+1} = 5^x$.", "back": "$(x + 1)\\ln 3 = x\\ln 5 \\Rightarrow x = \\dfrac{\\ln 3}{\\ln 5 - \\ln 3} \\approx 2.15$.", "concept": "Exponential equations", "kind": "application" },
+  { "id": "exp-disguised-quadratic", "front": "Solve $4^x - 3\\cdot2^x - 4 = 0$.", "back": "Let $y = 2^x$: $y^2 - 3y - 4 = 0 \\Rightarrow y = 4$ or $y = -1$. Reject $-1$ ($2^x > 0$), so $2^x = 4$, $x = 2$.", "concept": "Exponential equations", "kind": "method" },
+  { "id": "log-eq-method", "front": "Steps to solve an equation with several logs?", "back": "Combine into a single log on each side, convert to exponential form ($\\log_a X = c \\Rightarrow X = a^c$), solve, then reject values making any log argument $\\le 0$.", "concept": "Log equations", "kind": "method" },
+  { "id": "log-eq-example", "front": "Solve $\\log_2 x + \\log_2(x - 2) = 3$.", "back": "$x(x - 2) = 8 \\Rightarrow x^2 - 2x - 8 = 0 \\Rightarrow x = 4$ or $-2$. Reject $-2$ (log of a negative), so $x = 4$.", "concept": "Log equations", "kind": "application" },
+  { "id": "log-power-domain", "front": "Are $\\ln x^2$ and $2\\ln x$ the same function?", "back": "Only for $x > 0$. $\\ln x^2$ is defined for all $x \\ne 0$ (it equals $2\\ln|x|$); $2\\ln x$ needs $x > 0$.", "concept": "Laws of logarithms", "kind": "condition" }
 ]

@@ -1,5 +1,14 @@
 [
-  { "id": "vol-x-card", "front": "(HL) Volume of revolution about the x-axis?", "back": "$V = \\pi\\int_a^b y^2\\,dx$", "concept": "Volume about the x-axis" },
-  { "id": "vol-y-card", "front": "(HL) Volume of revolution about the y-axis?", "back": "$V = \\pi\\int_c^d x^2\\,dy$", "concept": "Volume about the y-axis" },
-  { "id": "area-y-card", "front": "(HL) Area between curve and y-axis?", "back": "$\\int_c^d x\\,dy$", "concept": "Area with the y-axis" }
+  { "id": "vol-x-card", "front": "(HL) Volume of revolution about the x-axis?", "back": "$V = \\pi\\int_a^b y^2\\,dx$", "concept": "Volume about the x-axis", "kind": "formula" },
+  { "id": "vol-y-card", "front": "(HL) Volume of revolution about the y-axis?", "back": "$V = \\pi\\int_c^d x^2\\,dy$", "concept": "Volume about the y-axis", "kind": "formula" },
+  { "id": "area-y-card", "front": "(HL) Area between curve and y-axis?", "back": "$\\int_c^d x\\,dy$", "concept": "Area with the y-axis", "kind": "formula" },
+  { "id": "vol-def", "front": "(HL) Volume of revolution?", "back": "The volume of the solid formed when a region is rotated $360^\\circ$ ($2\\pi$) about an axis.", "concept": "Volume about the x-axis", "kind": "definition" },
+  { "id": "area-y-example", "front": "(HL) Area between $x = y^2$, the $y$-axis, $y = 0$ and $y = 2$?", "back": "$\\int_0^2y^2\\,dy = \\frac83$.", "concept": "Area with the y-axis", "kind": "application" },
+  { "id": "vol-x-example", "front": "(HL) Rotate $y = \\sqrt x$, $0 \\le x \\le 4$, about the $x$-axis.", "back": "$V = \\pi\\int_0^4x\\,dx = 8\\pi$.", "concept": "Volume about the x-axis", "kind": "application" },
+  { "id": "vol-y-example", "front": "(HL) Rotate $y = x^2$, $0 \\le y \\le 4$, about the $y$-axis.", "back": "$x^2 = y$: $V = \\pi\\int_0^4y\\,dy = 8\\pi$.", "concept": "Volume about the y-axis", "kind": "application" },
+  { "id": "cone-derivation", "front": "(HL) Derive the volume of a cone by rotating $y = \\frac rhx$, $0 \\le x \\le h$.", "back": "$\\pi\\int_0^h\\frac{r^2}{h^2}x^2\\,dx = \\pi\\frac{r^2}{h^2}\\cdot\\frac{h^3}3 = \\frac13\\pi r^2h$.", "concept": "Volume about the x-axis", "kind": "derivation" },
+  { "id": "vol-between-mistake", "front": "(HL) Volume between two curves rotated about the $x$-axis: $\\pi\\int(y_1 - y_2)^2\\,dx$?", "back": "No — subtract the volumes: $\\pi\\int_a^b(y_1^2 - y_2^2)\\,dx$ (outer squared minus inner squared).", "concept": "Volume about the x-axis", "kind": "misconception" },
+  { "id": "y-limits-mistake", "front": "(HL) Rotating about the $y$-axis using $x$-limits?", "back": "Wrong — write $x^2$ in terms of $y$ and use $y$-limits.", "concept": "Volume about the y-axis", "kind": "misconception" },
+  { "id": "vol-forget", "front": "(HL) Common slips in volume formulae?", "back": "Forgetting $\\pi$, or forgetting to square: it is $\\pi\\int y^2\\,dx$, not $\\pi\\int y\\,dx$ or $\\int y^2\\,dx$.", "concept": "Volume about the x-axis", "kind": "misconception" },
+  { "id": "vol-gdc", "front": "(HL) Volumes in Paper 2?", "back": "Write the integral (with limits from intersections) and evaluate it numerically on the GDC.", "concept": "Volume about the x-axis", "kind": "method" }
 ]

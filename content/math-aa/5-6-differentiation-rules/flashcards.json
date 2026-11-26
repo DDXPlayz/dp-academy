@@ -1,6 +1,15 @@
 [
-  { "id": "std-deriv-card", "front": "Derivatives of sin x, cos x, eˣ, ln x?", "back": "cos x, −sin x, eˣ, 1/x.", "concept": "Standard derivatives" },
-  { "id": "chain-card", "front": "Chain rule?", "back": "$\\frac{dy}{dx} = \\frac{dy}{du}\\cdot\\frac{du}{dx}$ — outside′ × inside′.", "concept": "Chain rule" },
-  { "id": "product-card", "front": "Product rule?", "back": "$(uv)' = u'v + uv'$", "concept": "Product rule" },
-  { "id": "quotient-card", "front": "Quotient rule?", "back": "$\\left(\\frac uv\\right)' = \\frac{u'v - uv'}{v^2}$", "concept": "Quotient rule" }
+  { "id": "std-deriv-card", "front": "Derivatives of sin x, cos x, eˣ, ln x?", "back": "cos x, −sin x, eˣ, 1/x.", "concept": "Standard derivatives", "kind": "formula" },
+  { "id": "chain-card", "front": "Chain rule?", "back": "$\\frac{dy}{dx} = \\frac{dy}{du}\\cdot\\frac{du}{dx}$ — outside′ × inside′.", "concept": "Chain rule", "kind": "formula" },
+  { "id": "product-card", "front": "Product rule?", "back": "$(uv)' = u'v + uv'$", "concept": "Product rule", "kind": "formula" },
+  { "id": "quotient-card", "front": "Quotient rule?", "back": "$\\left(\\frac uv\\right)' = \\frac{u'v - uv'}{v^2}$", "concept": "Quotient rule", "kind": "formula" },
+  { "id": "rational-power", "front": "Differentiate $\\sqrt x$ and $\\dfrac1{\\sqrt x}$.", "back": "$\\frac12x^{-1/2} = \\dfrac1{2\\sqrt x}$ and $-\\frac12x^{-3/2}$.", "concept": "Standard derivatives", "kind": "application" },
+  { "id": "chain-example", "front": "Differentiate $(3x^2 + 1)^5$.", "back": "$5(3x^2 + 1)^4\\cdot6x = 30x(3x^2 + 1)^4$.", "concept": "Chain rule", "kind": "application" },
+  { "id": "chain-exp-trig", "front": "Differentiate $e^{3x}$ and $\\sin(x^2)$.", "back": "$3e^{3x}$ and $2x\\cos(x^2)$.", "concept": "Chain rule", "kind": "application" },
+  { "id": "ln-chain", "front": "Derivative of $\\ln f(x)$?", "back": "$\\dfrac{f'(x)}{f(x)}$. E.g. $\\frac{d}{dx}\\ln(2x + 1) = \\frac2{2x + 1}$; $\\frac{d}{dx}\\ln(kx) = \\frac1x$.", "concept": "Chain rule", "kind": "formula" },
+  { "id": "chain-mistake", "front": "Is $\\dfrac{d}{dx}e^{3x} = e^{3x}$?", "back": "No — multiply by the inner derivative: $3e^{3x}$.", "concept": "Chain rule", "kind": "misconception" },
+  { "id": "product-example", "front": "Differentiate $x^2e^x$.", "back": "$2xe^x + x^2e^x = xe^x(x + 2)$.", "concept": "Product rule", "kind": "application" },
+  { "id": "quotient-example", "front": "Differentiate $\\dfrac x{x + 1}$.", "back": "$\\dfrac{1\\cdot(x + 1) - x\\cdot1}{(x + 1)^2} = \\dfrac1{(x + 1)^2}$.", "concept": "Quotient rule", "kind": "application" },
+  { "id": "quotient-order", "front": "Quotient rule numerator: $uv' - u'v$?", "back": "No — it is $u'v - uv'$ (derivative of the top first); the reversed order changes the sign.", "concept": "Quotient rule", "kind": "misconception" },
+  { "id": "rules-booklet", "front": "Are the chain, product and quotient rules in the formula booklet?", "back": "Yes, along with the standard derivatives of $x^n$, $\\sin x$, $\\cos x$, $e^x$ and $\\ln x$.", "concept": "Standard derivatives", "kind": "concept" }
 ]

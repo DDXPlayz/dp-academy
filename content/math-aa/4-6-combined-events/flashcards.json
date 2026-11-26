@@ -1,5 +1,13 @@
 [
-  { "id": "addition-card", "front": "Addition rule?", "back": "$P(A\\cup B) = P(A) + P(B) - P(A\\cap B)$", "concept": "Addition rule" },
-  { "id": "cond-card", "front": "Conditional probability?", "back": "$P(A\\mid B) = P(A\\cap B)/P(B)$", "concept": "Conditional probability" },
-  { "id": "me-ind-card", "front": "Mutually exclusive vs independent?", "back": "ME: $P(A\\cap B) = 0$. Independent: $P(A\\cap B) = P(A)P(B)$.", "concept": "Independence" }
+  { "id": "addition-card", "front": "Addition rule?", "back": "$P(A\\cup B) = P(A) + P(B) - P(A\\cap B)$", "concept": "Addition rule", "kind": "formula" },
+  { "id": "cond-card", "front": "Conditional probability?", "back": "$P(A\\mid B) = P(A\\cap B)/P(B)$", "concept": "Conditional probability", "kind": "formula" },
+  { "id": "me-ind-card", "front": "Mutually exclusive vs independent?", "back": "ME: $P(A\\cap B) = 0$. Independent: $P(A\\cap B) = P(A)P(B)$.", "concept": "Independence", "kind": "distinction" },
+  { "id": "addition-example", "front": "$P(A) = 0.5$, $P(B) = 0.4$, $P(A\\cap B) = 0.2$. Find $P(A\\cup B)$ and $P(A'\\cap B')$.", "back": "$P(A\\cup B) = 0.7$; $P(A'\\cap B') = 1 - 0.7 = 0.3$.", "concept": "Addition rule", "kind": "application" },
+  { "id": "me-addition", "front": "Addition rule for mutually exclusive events?", "back": "$P(A\\cup B) = P(A) + P(B)$, since $P(A\\cap B) = 0$.", "concept": "Addition rule", "kind": "formula" },
+  { "id": "indep-check", "front": "Are $A$ and $B$ independent if $P(A) = 0.5$, $P(B) = 0.4$, $P(A\\cap B) = 0.2$?", "back": "$P(A)P(B) = 0.2 = P(A\\cap B)$, so yes.", "concept": "Independence", "kind": "method" },
+  { "id": "me-not-indep", "front": "Can mutually exclusive events (non-zero probabilities) be independent?", "back": "No — if $A$ happens, $B$ cannot, so $P(A\\cap B) = 0 \\ne P(A)P(B)$.", "concept": "Independence", "kind": "misconception" },
+  { "id": "tree-rules", "front": "Rules for tree diagrams?", "back": "Multiply along branches (and); add the results of different paths (or). Branches from each point sum to 1.", "concept": "Tree diagrams", "kind": "method" },
+  { "id": "without-replacement", "front": "How does \"without replacement\" affect a tree?", "back": "Second-stage probabilities change: e.g. 5 red, 3 blue: P(red then red) $= \\frac58\\times\\frac47 = \\frac5{14}$.", "concept": "Tree diagrams", "kind": "concept" },
+  { "id": "venn-regions", "front": "Filling a Venn diagram from $P(A)$, $P(B)$, $P(A\\cap B)$?", "back": "Start with the intersection, then $P(A) - P(A\\cap B)$ and $P(B) - P(A\\cap B)$, and finally the outside so the total is 1.", "concept": "Addition rule", "kind": "method" },
+  { "id": "prob-booklet", "front": "Which probability rules are in the formula booklet?", "back": "$P(A) + P(A') = 1$, the addition rule, the mutually exclusive rule, $P(A\\mid B) = \\frac{P(A\\cap B)}{P(B)}$ and $P(A\\cap B) = P(A)P(B)$ for independent events.", "concept": "Conditional probability", "kind": "concept" }
 ]

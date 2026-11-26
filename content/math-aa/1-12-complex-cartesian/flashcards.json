@@ -1,6 +1,17 @@
 [
-  { "id": "i-card", "front": "(HL) Powers of i?", "back": "$i, -1, -i, 1$ repeating every 4.", "concept": "Arithmetic" },
-  { "id": "mod-arg-card", "front": "(HL) Modulus and argument of $a + bi$?", "back": "$|z| = \\sqrt{a^2 + b^2}$; $\\arg z$ from a sketch, in $(-\\pi, \\pi]$.", "concept": "Modulus" },
-  { "id": "conj-card", "front": "(HL) Conjugate and $zz^*$?", "back": "$z^* = a - bi$; $zz^* = a^2 + b^2$ (real).", "concept": "Conjugate" },
-  { "id": "divide-card", "front": "(HL) Dividing complex numbers?", "back": "Multiply numerator and denominator by the conjugate of the denominator.", "concept": "Division" }
+  { "id": "i-card", "front": "(HL) Powers of i?", "back": "$i, -1, -i, 1$ repeating every 4.", "concept": "Arithmetic", "kind": "formula" },
+  { "id": "mod-arg-card", "front": "(HL) Modulus and argument of $a + bi$?", "back": "$|z| = \\sqrt{a^2 + b^2}$; $\\arg z$ from a sketch, in $(-\\pi, \\pi]$.", "concept": "Modulus", "kind": "formula" },
+  { "id": "conj-card", "front": "(HL) Conjugate and $zz^*$?", "back": "$z^* = a - bi$; $zz^* = a^2 + b^2$ (real).", "concept": "Conjugate", "kind": "formula" },
+  { "id": "divide-card", "front": "(HL) Dividing complex numbers?", "back": "Multiply numerator and denominator by the conjugate of the denominator.", "concept": "Division", "kind": "method" },
+  { "id": "cx-def", "front": "(HL) Complex number, real part, imaginary part?", "back": "$z = a + bi$ with $a, b \\in \\mathbb R$, $i^2 = -1$. $\\text{Re}(z) = a$, $\\text{Im}(z) = b$ (a real number, not $bi$).", "concept": "Arithmetic", "kind": "definition" },
+  { "id": "cx-i-power-example", "front": "(HL) Simplify $i^{23}$.", "back": "$23 = 4\\times5 + 3$, so $i^{23} = i^3 = -i$.", "concept": "Arithmetic", "kind": "application" },
+  { "id": "cx-mult-example", "front": "(HL) Simplify $(2 + 3i)(1 - i)$.", "back": "$2 - 2i + 3i - 3i^2 = 2 + i + 3 = 5 + i$.", "concept": "Arithmetic", "kind": "application" },
+  { "id": "cx-div-example", "front": "(HL) Simplify $\\dfrac{3 + i}{1 - i}$.", "back": "$\\dfrac{(3 + i)(1 + i)}{(1 - i)(1 + i)} = \\dfrac{2 + 4i}{2} = 1 + 2i$.", "concept": "Division", "kind": "application" },
+  { "id": "cx-argand", "front": "(HL) How is $z = a + bi$ shown on an Argand diagram?", "back": "As the point $(a, b)$ (real axis horizontal, imaginary vertical). $|z|$ is its distance from $O$, $\\arg z$ the angle from the positive real axis; $z^*$ is its reflection in the real axis.", "concept": "Modulus", "kind": "graph" },
+  { "id": "cx-arg-quadrant", "front": "(HL) Is $\\arg(-1 - i) = \\arctan\\frac{-1}{-1} = \\frac\\pi4$?", "back": "No — $-1 - i$ is in the third quadrant: $\\arg = -\\frac{3\\pi}4$. Always sketch before using $\\arctan$.", "concept": "Modulus", "kind": "misconception" },
+  { "id": "cx-equate", "front": "(HL) Solve $(x + iy)^2 = 3 + 4i$ for real $x, y$.", "back": "Equate parts: $x^2 - y^2 = 3$, $2xy = 4$. Solving: $x = 2, y = 1$ or $x = -2, y = -1$.", "concept": "Equating parts", "kind": "method" },
+  { "id": "cx-quadratic", "front": "(HL) Solve $z^2 + 2z + 5 = 0$.", "back": "$z = \\dfrac{-2 \\pm \\sqrt{-16}}{2} = -1 \\pm 2i$ (a conjugate pair).", "concept": "Arithmetic", "kind": "application" },
+  { "id": "cx-conj-props", "front": "(HL) Properties of the conjugate?", "back": "$(z \\pm w)^* = z^* \\pm w^*$, $(zw)^* = z^*w^*$, $z + z^* = 2\\,\\text{Re}(z)$, $z - z^* = 2i\\,\\text{Im}(z)$.", "concept": "Conjugate", "kind": "formula" },
+  { "id": "cx-mod-props", "front": "(HL) Modulus of a product and quotient?", "back": "$|zw| = |z||w|$ and $\\left|\\dfrac zw\\right| = \\dfrac{|z|}{|w|}$. But $|z + w| \\le |z| + |w|$, not equal in general.", "concept": "Modulus", "kind": "formula" },
+  { "id": "cx-sqrt-mistake", "front": "(HL) Is $\\sqrt{-4}\\sqrt{-9} = \\sqrt{36} = 6$?", "back": "No — $\\sqrt a\\sqrt b = \\sqrt{ab}$ needs $a, b \\ge 0$. Here $2i\\cdot3i = 6i^2 = -6$.", "concept": "Arithmetic", "kind": "misconception" }
 ]

@@ -1,5 +1,15 @@
 [
-  { "id": "qf-card", "front": "Quadratic formula?", "back": "$x = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$", "concept": "Quadratic formula" },
-  { "id": "disc-card", "front": "Discriminant cases?", "back": "$\\Delta > 0$ two real; $\\Delta = 0$ equal; $\\Delta < 0$ none.", "concept": "Discriminant" },
-  { "id": "ineq-card", "front": "Solving quadratic inequalities?", "back": "Find roots, sketch, read off the region above/below the x-axis.", "concept": "Quadratic inequalities" }
+  { "id": "qf-card", "front": "Quadratic formula?", "back": "$x = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$", "concept": "Quadratic formula", "kind": "formula" },
+  { "id": "disc-card", "front": "Discriminant cases?", "back": "$\\Delta > 0$ two real; $\\Delta = 0$ equal; $\\Delta < 0$ none.", "concept": "Discriminant", "kind": "condition" },
+  { "id": "ineq-card", "front": "Solving quadratic inequalities?", "back": "Find roots, sketch, read off the region above/below the x-axis.", "concept": "Quadratic inequalities", "kind": "method" },
+  { "id": "disc-def", "front": "Discriminant of $ax^2 + bx + c$?", "back": "$\\Delta = b^2 - 4ac$, the expression under the square root in the quadratic formula.", "concept": "Discriminant", "kind": "definition" },
+  { "id": "qf-booklet", "front": "Are the quadratic formula and discriminant in the formula booklet?", "back": "Yes — both are given. You still need to know how to interpret $\\Delta$.", "concept": "Quadratic formula", "kind": "concept" },
+  { "id": "disc-keywords", "front": "Discriminant condition for: \"touches / tangent\", \"does not meet\", \"real roots\"?", "back": "Tangent or equal roots: $\\Delta = 0$. Does not meet: $\\Delta < 0$. Real roots: $\\Delta \\ge 0$. Two distinct real roots: $\\Delta > 0$.", "concept": "Discriminant", "kind": "concept" },
+  { "id": "disc-k-example", "front": "Find $k$ so that $x^2 + kx + 9 = 0$ has equal roots.", "back": "$\\Delta = k^2 - 36 = 0 \\Rightarrow k = \\pm6$.", "concept": "Discriminant", "kind": "application" },
+  { "id": "tangent-method", "front": "Find $c$ so that $y = x + c$ is tangent to $y = x^2$.", "back": "Substitute: $x^2 - x - c = 0$. Tangent $\\Rightarrow \\Delta = 1 + 4c = 0 \\Rightarrow c = -\\frac14$.", "concept": "Discriminant", "kind": "method" },
+  { "id": "always-positive", "front": "When is $ax^2 + bx + c > 0$ for all real $x$?", "back": "When $a > 0$ and $\\Delta < 0$ (parabola opens up and never meets the $x$-axis).", "concept": "Discriminant", "kind": "condition" },
+  { "id": "ineq-example", "front": "Solve $x^2 - x - 6 < 0$ and $x^2 - x - 6 > 0$.", "back": "$(x - 3)(x + 2)$: $< 0$ for $-2 < x < 3$; $> 0$ for $x < -2$ or $x > 3$.", "concept": "Quadratic inequalities", "kind": "application" },
+  { "id": "ineq-square-mistake", "front": "Solve $x^2 > 9$. Is \"$x > \\pm3$\" right?", "back": "No — the solution is $x < -3$ or $x > 3$ (outside the roots, since the parabola opens up).", "concept": "Quadratic inequalities", "kind": "misconception" },
+  { "id": "roots-sum-product-quad", "front": "Sum and product of the roots of $ax^2 + bx + c = 0$?", "back": "$\\alpha + \\beta = -\\dfrac ba$, $\\alpha\\beta = \\dfrac ca$.", "concept": "Quadratic formula", "kind": "formula" },
+  { "id": "solve-methods", "front": "Three analytic ways to solve a quadratic equation?", "back": "Factorise; complete the square; quadratic formula. Use factorising when it is quick, the formula otherwise.", "concept": "Quadratic formula", "kind": "method" }
 ]

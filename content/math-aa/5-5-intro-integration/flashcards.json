@@ -1,4 +1,13 @@
 [
-  { "id": "int-power-card", "front": "Integrate $ax^n$?", "back": "$\\frac{a}{n+1}x^{n+1} + C$, $n \\ne -1$.", "concept": "Antidifferentiation" },
-  { "id": "area-card", "front": "Area under $y = f(x) \\ge 0$ from a to b?", "back": "$\\int_a^b f(x)\\,dx$", "concept": "Area under a curve" }
+  { "id": "int-power-card", "front": "Integrate $ax^n$?", "back": "$\\frac{a}{n+1}x^{n+1} + C$, $n \\ne -1$.", "concept": "Antidifferentiation", "kind": "formula" },
+  { "id": "area-card", "front": "Area under $y = f(x) \\ge 0$ from a to b?", "back": "$\\int_a^b f(x)\\,dx$", "concept": "Area under a curve", "kind": "formula" },
+  { "id": "indef-def", "front": "Indefinite integral?", "back": "The family of all antiderivatives of $f$: $\\int f(x)\\,dx = F(x) + C$ where $F' = f$.", "concept": "Antidifferentiation", "kind": "definition" },
+  { "id": "plus-c", "front": "Why must an indefinite integral include $+C$?", "back": "Constants differentiate to 0, so infinitely many functions have the same derivative.", "concept": "Antidifferentiation", "kind": "misconception" },
+  { "id": "int-poly-example", "front": "Find $\\int(6x^2 - 4x + 1)\\,dx$.", "back": "$2x^3 - 2x^2 + x + C$.", "concept": "Antidifferentiation", "kind": "application" },
+  { "id": "int-neg-power", "front": "Find $\\displaystyle\\int\\frac1{x^2}\\,dx$.", "back": "$\\int x^{-2}\\,dx = \\dfrac{x^{-1}}{-1} + C = -\\dfrac1x + C$.", "concept": "Antidifferentiation", "kind": "application" },
+  { "id": "find-c", "front": "$f'(x) = 2x$ and $f(1) = 5$. Find $f(x)$.", "back": "$f(x) = x^2 + C$; $1 + C = 5 \\Rightarrow C = 4$, so $f(x) = x^2 + 4$.", "concept": "Antidifferentiation", "kind": "method" },
+  { "id": "expand-integrate", "front": "Find $\\int(x + 1)^2\\,dx$.", "back": "Expand first: $\\int(x^2 + 2x + 1)\\,dx = \\frac{x^3}3 + x^2 + x + C$.", "concept": "Antidifferentiation", "kind": "method" },
+  { "id": "int-check", "front": "How can you check an integral?", "back": "Differentiate your answer — you should get the integrand back.", "concept": "Antidifferentiation", "kind": "method" },
+  { "id": "n-minus-one", "front": "Why does $\\int x^n\\,dx = \\dfrac{x^{n+1}}{n + 1} + C$ exclude $n = -1$?", "back": "It would divide by zero. $\\int x^{-1}\\,dx = \\ln|x| + C$ instead.", "concept": "Antidifferentiation", "kind": "condition" },
+  { "id": "area-gdc", "front": "Area between $y = f(x)$ and the $x$-axis using a GDC?", "back": "Evaluate $\\int_a^b|f(x)|\\,dx$ numerically (taking the modulus handles parts below the axis).", "concept": "Area under a curve", "kind": "method" }
 ]

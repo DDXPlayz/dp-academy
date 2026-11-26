@@ -1,8 +1,17 @@
 [
-  { "id": "arith-nth", "concept": "Arithmetic", "front": "nth term of an **arithmetic** sequence?", "back": "$u_n = u_1 + (n-1)d$" },
-  { "id": "arith-sum", "concept": "Arithmetic", "front": "Sum of the first n terms of an **arithmetic** series (two forms)?", "back": "$S_n = \\dfrac n2\\left(2u_1 + (n-1)d\\right) = \\dfrac n2(u_1 + u_n)$" },
-  { "id": "geo-nth", "concept": "Geometric", "front": "nth term of a **geometric** sequence?", "back": "$u_n = u_1 r^{\\,n-1}$" },
-  { "id": "geo-sum", "concept": "Geometric", "front": "Sum of the first n terms of a **geometric** series?", "back": "$S_n = \\dfrac{u_1(r^n - 1)}{r - 1}$, for $r \\ne 1$" },
-  { "id": "sum-infinity", "concept": "Geometric", "front": "Sum to infinity — formula and condition?", "back": "$S_\\infty = \\dfrac{u_1}{1 - r}$, valid only when $|r| < 1$." },
-  { "id": "growth-ratio", "concept": "Applications", "front": "A quantity grows by 7 % each year. What is the common ratio?", "back": "$r = 1.07$" }
+  { "id": "arith-nth", "front": "nth term of an **arithmetic** sequence?", "back": "$u_n = u_1 + (n-1)d$", "concept": "Arithmetic", "kind": "formula" },
+  { "id": "arith-sum", "front": "Sum of the first n terms of an **arithmetic** series (two forms)?", "back": "$S_n = \\dfrac n2\\left(2u_1 + (n-1)d\\right) = \\dfrac n2(u_1 + u_n)$", "concept": "Arithmetic", "kind": "formula" },
+  { "id": "geo-nth", "front": "nth term of a **geometric** sequence?", "back": "$u_n = u_1 r^{\\,n-1}$", "concept": "Geometric", "kind": "formula" },
+  { "id": "geo-sum", "front": "Sum of the first n terms of a **geometric** series?", "back": "$S_n = \\dfrac{u_1(r^n - 1)}{r - 1}$, for $r \\ne 1$", "concept": "Geometric", "kind": "formula" },
+  { "id": "sum-infinity", "front": "Sum to infinity — formula and condition?", "back": "$S_\\infty = \\dfrac{u_1}{1 - r}$, valid only when $|r| < 1$.", "concept": "Geometric", "kind": "condition" },
+  { "id": "growth-ratio", "front": "A quantity grows by 7 % each year. What is the common ratio?", "back": "$r = 1.07$", "concept": "Applications", "kind": "application" },
+  { "id": "arith-d-def", "front": "Common difference $d$ of an arithmetic sequence?", "back": "$d = u_{n+1} - u_n$, the same for every $n$. A sequence is arithmetic exactly when this difference is constant.", "concept": "Arithmetic", "kind": "definition" },
+  { "id": "arith-two-terms", "front": "Given $u_3 = 11$ and $u_8 = 31$, find $u_1$ and $d$.", "back": "$u_1 + 2d = 11$ and $u_1 + 7d = 31$. Subtract: $5d = 20$, so $d = 4$ and $u_1 = 3$.", "concept": "Arithmetic", "kind": "method" },
+  { "id": "arith-find-n", "front": "Which term of $7, 10, 13, \\ldots$ equals 100?", "back": "$7 + 3(n - 1) = 100 \\Rightarrow n - 1 = 31 \\Rightarrow n = 32$. If $n$ is not a positive integer, the number is not a term.", "concept": "Arithmetic", "kind": "method" },
+  { "id": "arith-mean", "front": "If $a, b, c$ are consecutive terms of an arithmetic sequence, how are they related?", "back": "$b - a = c - b$, so $b = \\dfrac{a + c}{2}$ (the middle term is the mean of its neighbours).", "concept": "Arithmetic", "kind": "formula" },
+  { "id": "arith-sigma-example", "front": "Evaluate $\\displaystyle\\sum_{r=1}^{10}(3r + 2)$.", "back": "Arithmetic: first term $5$, last term $32$, 10 terms. Sum $= \\dfrac{10}{2}(5 + 32) = 185$.", "concept": "Sigma notation", "kind": "application" },
+  { "id": "arith-sigma-count", "front": "How many terms are in $\\displaystyle\\sum_{r=k}^{n} u_r$?", "back": "$n - k + 1$ (not $n - k$). E.g. $\\sum_{r=3}^{10}$ has 8 terms.", "concept": "Sigma notation", "kind": "misconception" },
+  { "id": "arith-un-from-sn", "front": "How do you get $u_n$ from a formula for $S_n$?", "back": "$u_n = S_n - S_{n-1}$ for $n \\ge 2$, and $u_1 = S_1$.", "concept": "Arithmetic", "kind": "formula" },
+  { "id": "arith-shape", "front": "As functions of $n$, what kind of expressions are $u_n$ and $S_n$ for an arithmetic sequence?", "back": "$u_n$ is linear in $n$ (gradient $d$); $S_n$ is quadratic in $n$ with no constant term.", "concept": "Arithmetic", "kind": "concept" },
+  { "id": "arith-exceed", "front": "How do you find the least $n$ for which $S_n$ exceeds a value $X$?", "back": "Solve $\\frac n2(2u_1 + (n-1)d) > X$ (quadratic, or GDC table), take the positive root and round **up** to the next integer.", "concept": "Arithmetic", "kind": "method" }
 ]

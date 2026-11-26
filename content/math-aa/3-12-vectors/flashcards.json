@@ -1,5 +1,15 @@
 [
-  { "id": "ab-card", "front": "(HL) Vector from A to B?", "back": "$\\overrightarrow{AB} = \\mathbf b - \\mathbf a$", "concept": "Displacement" },
-  { "id": "unit-card", "front": "(HL) Unit vector in direction of v?", "back": "$\\mathbf v/|\\mathbf v|$", "concept": "Unit vectors" },
-  { "id": "collinear-card", "front": "(HL) Showing points are collinear?", "back": "Show $\\overrightarrow{AB} = k\\overrightarrow{AC}$ (parallel, common point A).", "concept": "Parallel vectors" }
+  { "id": "ab-card", "front": "(HL) Vector from A to B?", "back": "$\\overrightarrow{AB} = \\mathbf b - \\mathbf a$", "concept": "Displacement", "kind": "formula" },
+  { "id": "unit-card", "front": "(HL) Unit vector in direction of v?", "back": "$\\mathbf v/|\\mathbf v|$", "concept": "Unit vectors", "kind": "formula" },
+  { "id": "collinear-card", "front": "(HL) Showing points are collinear?", "back": "Show $\\overrightarrow{AB} = k\\overrightarrow{AC}$ (parallel, common point A).", "concept": "Parallel vectors", "kind": "method" },
+  { "id": "vec-notation", "front": "(HL) Column vector and $\\mathbf i, \\mathbf j, \\mathbf k$ notation?", "back": "$\\begin{pmatrix}2\\\\-1\\\\3\\end{pmatrix} = 2\\mathbf i - \\mathbf j + 3\\mathbf k$, where $\\mathbf i, \\mathbf j, \\mathbf k$ are unit vectors along the axes.", "concept": "Vectors and components", "kind": "definition" },
+  { "id": "position-vector", "front": "(HL) Position vector?", "back": "The vector $\\overrightarrow{OA} = \\mathbf a$ from the origin to the point $A$; its components are $A$'s coordinates.", "concept": "Vectors and components", "kind": "definition" },
+  { "id": "magnitude", "front": "(HL) Magnitude of $\\mathbf v = \\begin{pmatrix}2\\\\-1\\\\2\\end{pmatrix}$?", "back": "$|\\mathbf v| = \\sqrt{v_1^2 + v_2^2 + v_3^2} = \\sqrt{4 + 1 + 4} = 3$.", "concept": "Displacement and magnitude", "kind": "formula" },
+  { "id": "unit-example", "front": "(HL) Vector of length 6 in the direction of $\\begin{pmatrix}2\\\\-1\\\\2\\end{pmatrix}$?", "back": "Unit vector $\\frac13\\begin{pmatrix}2\\\\-1\\\\2\\end{pmatrix}$, times 6: $\\begin{pmatrix}4\\\\-2\\\\4\\end{pmatrix}$.", "concept": "Unit vectors", "kind": "application" },
+  { "id": "parallel-def", "front": "(HL) When are two vectors parallel?", "back": "When one is a scalar multiple of the other: $\\mathbf v = k\\mathbf w$ ($k < 0$ means opposite directions).", "concept": "Parallel vectors", "kind": "definition" },
+  { "id": "ab-mistake", "front": "(HL) Is $\\overrightarrow{AB} = \\mathbf a - \\mathbf b$?", "back": "No — end minus start: $\\overrightarrow{AB} = \\mathbf b - \\mathbf a$.", "concept": "Displacement", "kind": "misconception" },
+  { "id": "collinear-example", "front": "(HL) Are $A(1, 2, 3)$, $B(3, 5, 4)$, $C(7, 11, 6)$ collinear?", "back": "$\\overrightarrow{AB} = (2, 3, 1)$, $\\overrightarrow{AC} = (6, 9, 3) = 3\\overrightarrow{AB}$: parallel with common point $A$, so yes.", "concept": "Parallel vectors", "kind": "application" },
+  { "id": "midpoint-vector", "front": "(HL) Position vector of the midpoint of $AB$?", "back": "$\\dfrac{\\mathbf a + \\mathbf b}2$.", "concept": "Displacement", "kind": "formula" },
+  { "id": "ratio-point", "front": "(HL) Position vector of $P$ dividing $AB$ in the ratio $m : n$?", "back": "$\\mathbf p = \\mathbf a + \\dfrac m{m + n}(\\mathbf b - \\mathbf a) = \\dfrac{n\\mathbf a + m\\mathbf b}{m + n}$.", "concept": "Displacement", "kind": "formula" },
+  { "id": "vector-addition", "front": "(HL) Triangle law of vector addition?", "back": "$\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC}$: follow the route; reversing a vector changes its sign.", "concept": "Proving geometric results with vectors", "kind": "concept" }
 ]

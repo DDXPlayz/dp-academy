@@ -1,5 +1,15 @@
 [
-  { "id": "exp-graph-card", "front": "Key features of $y = a^x$?", "back": "Through $(0, 1)$; asymptote $y = 0$; range $y > 0$.", "concept": "Exponential functions" },
-  { "id": "log-graph-card", "front": "Key features of $y = \\log_a x$?", "back": "Through $(1, 0)$; asymptote $x = 0$; domain $x > 0$.", "concept": "Logarithmic functions" },
-  { "id": "exp-ln-card", "front": "$e^{\\ln x}$ and $\\ln e^x$?", "back": "Both equal $x$ — inverse functions.", "concept": "Inverse relationship" }
+  { "id": "exp-graph-card", "front": "Key features of $y = a^x$?", "back": "Through $(0, 1)$; asymptote $y = 0$; range $y > 0$.", "concept": "Exponential functions", "kind": "graph" },
+  { "id": "log-graph-card", "front": "Key features of $y = \\log_a x$?", "back": "Through $(1, 0)$; asymptote $x = 0$; domain $x > 0$.", "concept": "Logarithmic functions", "kind": "graph" },
+  { "id": "exp-ln-card", "front": "$e^{\\ln x}$ and $\\ln e^x$?", "back": "Both equal $x$ (the first needs $x > 0$) — $e^x$ and $\\ln x$ are inverse functions.", "concept": "Inverse relationship", "kind": "formula" },
+  { "id": "exp-base-effect", "front": "How does the base $a$ affect $y = a^x$?", "back": "$a > 1$: increasing (growth). $0 < a < 1$: decreasing (decay). $a^{-x} = \\left(\\frac1a\\right)^x$ is the reflection of $a^x$ in the $y$-axis.", "concept": "Exponential functions", "kind": "graph" },
+  { "id": "exp-log-reflection", "front": "How are the graphs of $y = a^x$ and $y = \\log_a x$ related?", "back": "They are inverse functions: reflections of each other in $y = x$. Domain and range swap.", "concept": "Inverse relationship", "kind": "graph" },
+  { "id": "exp-asym-mistake", "front": "Asymptote of $y = e^x + 3$?", "back": "$y = 3$, not $y = 0$ — the vertical translation moves the asymptote too.", "concept": "Exponential functions", "kind": "misconception" },
+  { "id": "log-transform", "front": "Domain and asymptote of $y = \\ln(x - 2)$?", "back": "Domain $x > 2$; vertical asymptote $x = 2$; passes through $(3, 0)$.", "concept": "Logarithmic functions", "kind": "graph" },
+  { "id": "exp-model", "front": "Meaning of $A$ and $k$ in $y = Ae^{kt}$?", "back": "$A$: the initial value ($t = 0$). $k > 0$: growth; $k < 0$: decay.", "concept": "Models", "kind": "definition" },
+  { "id": "exp-model-example", "front": "$P = 500e^{0.04t}$. Find $P$ when $t = 10$.", "back": "$500e^{0.4} \\approx 746$.", "concept": "Models", "kind": "application" },
+  { "id": "doubling-time", "front": "Doubling time for $y = Ae^{kt}$ ($k > 0$)?", "back": "$e^{kt} = 2 \\Rightarrow t = \\dfrac{\\ln 2}k$. (Half-life for decay: $t = \\dfrac{\\ln 2}{|k|}$.)", "concept": "Models", "kind": "derivation" },
+  { "id": "find-k", "front": "How do you find $k$ in $N = N_0e^{kt}$ from one data point?", "back": "Substitute: $e^{kt} = \\dfrac N{N_0}$, so $k = \\dfrac1t\\ln\\dfrac N{N_0}$.", "concept": "Models", "kind": "method" },
+  { "id": "limited-growth", "front": "Key feature of $y = c - Ae^{-kt}$ ($A, k > 0$)?", "back": "It rises towards the horizontal asymptote $y = c$ — the long-term limiting value; at $t = 0$, $y = c - A$.", "concept": "Models", "kind": "graph" },
+  { "id": "ln-key-values", "front": "$\\ln 1$, $\\ln e$ and $e^0$?", "back": "$\\ln 1 = 0$, $\\ln e = 1$, $e^0 = 1$.", "concept": "Logarithmic functions", "kind": "formula" }
 ]

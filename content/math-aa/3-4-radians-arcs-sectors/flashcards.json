@@ -1,5 +1,14 @@
 [
-  { "id": "rad-card", "front": "Degrees ↔ radians?", "back": "π rad = 180°.", "concept": "Radians" },
-  { "id": "arc-sector-card", "front": "Arc length and sector area?", "back": "$l = r\\theta$; $A = \\tfrac12r^2\\theta$ (radians).", "concept": "Arc length" },
-  { "id": "segment-card", "front": "Area of a segment?", "back": "$\\tfrac12r^2(\\theta - \\sin\\theta)$", "concept": "Sector area" }
+  { "id": "rad-card", "front": "Degrees ↔ radians?", "back": "π rad = 180°.", "concept": "Radians", "kind": "formula" },
+  { "id": "arc-sector-card", "front": "Arc length and sector area?", "back": "$l = r\\theta$; $A = \\tfrac12r^2\\theta$ (radians).", "concept": "Arc length", "kind": "formula" },
+  { "id": "segment-card", "front": "Area of a segment?", "back": "$\\tfrac12r^2(\\theta - \\sin\\theta)$", "concept": "Sector area", "kind": "formula" },
+  { "id": "radian-def", "front": "Definition of one radian?", "back": "The angle at the centre of a circle subtended by an arc equal in length to the radius. $1$ rad $\\approx 57.3^\\circ$.", "concept": "Radians", "kind": "definition" },
+  { "id": "convert-examples", "front": "Convert $150^\\circ$ to radians and $2$ rad to degrees.", "back": "$150\\times\\frac\\pi{180} = \\frac{5\\pi}6$; $2\\times\\frac{180}\\pi \\approx 114.6^\\circ$.", "concept": "Radians", "kind": "application" },
+  { "id": "arc-example", "front": "Arc length and sector area for $r = 6$, $\\theta = \\frac\\pi3$?", "back": "$l = 6\\cdot\\frac\\pi3 = 2\\pi$; $A = \\frac12(36)\\frac\\pi3 = 6\\pi$.", "concept": "Arc length", "kind": "application" },
+  { "id": "sector-perimeter", "front": "Perimeter of a sector?", "back": "$2r + r\\theta$ — two radii plus the arc.", "concept": "Arc length", "kind": "formula" },
+  { "id": "find-theta", "front": "Find the angle of a sector given $r$ and arc length $l$ (or area $A$)?", "back": "$\\theta = \\dfrac lr$, or $\\theta = \\dfrac{2A}{r^2}$ (in radians).", "concept": "Sector area", "kind": "method" },
+  { "id": "degrees-mistake", "front": "Arc length for $r = 5$, $\\theta = 40^\\circ$: $5\\times40 = 200$?", "back": "No — $l = r\\theta$ needs radians: $5\\times\\frac{2\\pi}9 \\approx 3.49$. (In degrees: $\\frac{\\theta}{360}\\times2\\pi r$.)", "concept": "Arc length", "kind": "misconception" },
+  { "id": "segment-def", "front": "Why is the segment area $\\frac12r^2(\\theta - \\sin\\theta)$?", "back": "Segment = sector $\\frac12r^2\\theta$ minus triangle $\\frac12r^2\\sin\\theta$ (two radii with included angle $\\theta$).", "concept": "Sector area", "kind": "derivation" },
+  { "id": "common-radians", "front": "$30^\\circ, 45^\\circ, 60^\\circ, 90^\\circ, 270^\\circ$ in radians?", "back": "$\\frac\\pi6, \\frac\\pi4, \\frac\\pi3, \\frac\\pi2, \\frac{3\\pi}2$.", "concept": "Radians", "kind": "formula" },
+  { "id": "arc-booklet", "front": "Are arc length and sector area in the formula booklet?", "back": "Yes, $l = r\\theta$ and $A = \\frac12r^2\\theta$ ($\\theta$ in radians). The segment formula is not — derive it.", "concept": "Arc length", "kind": "concept" }
 ]

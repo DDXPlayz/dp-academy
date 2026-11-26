@@ -1,4 +1,13 @@
 [
-  { "id": "quad-forms-card", "front": "Three forms of a quadratic and what they show?", "back": "$ax^2 + bx + c$: y-int, axis $-b/2a$. $a(x - p)(x - q)$: roots. $a(x - h)^2 + k$: vertex.", "concept": "Vertex form" },
-  { "id": "quad-a-card", "front": "Effect of $a$ on a parabola?", "back": "$a > 0$ opens up (min), $a < 0$ opens down (max); larger $|a|$ narrower.", "concept": "Parabola" }
+  { "id": "quad-forms-card", "front": "Three forms of a quadratic and what they show?", "back": "$ax^2 + bx + c$: y-int, axis $-b/2a$. $a(x - p)(x - q)$: roots. $a(x - h)^2 + k$: vertex.", "concept": "Vertex form", "kind": "formula" },
+  { "id": "quad-a-card", "front": "Effect of $a$ on a parabola?", "back": "$a > 0$ opens up (min), $a < 0$ opens down (max); larger $|a|$ narrower.", "concept": "Parabola", "kind": "graph" },
+  { "id": "axis-formula", "front": "Axis of symmetry of $y = ax^2 + bx + c$?", "back": "$x = -\\dfrac b{2a}$; the vertex has this $x$-coordinate.", "concept": "Parabola", "kind": "formula" },
+  { "id": "axis-from-roots", "front": "Axis of symmetry from roots $p$ and $q$?", "back": "Halfway between them: $x = \\dfrac{p + q}2$.", "concept": "Parabola", "kind": "formula" },
+  { "id": "complete-square", "front": "Complete the square for $x^2 + 6x + 11$.", "back": "Halve the $x$-coefficient: $(x + 3)^2 - 9 + 11 = (x + 3)^2 + 2$. Vertex $(-3, 2)$.", "concept": "Completing the square", "kind": "method" },
+  { "id": "complete-square-a", "front": "Write $2x^2 - 8x + 3$ in vertex form.", "back": "Factor out 2 from the $x$ terms: $2(x^2 - 4x) + 3 = 2[(x - 2)^2 - 4] + 3 = 2(x - 2)^2 - 5$. Vertex $(2, -5)$.", "concept": "Completing the square", "kind": "method" },
+  { "id": "vertex-sign", "front": "Vertex of $y = a(x + 3)^2 - 2$?", "back": "$(-3, -2)$, not $(3, -2)$: the form is $a(x - h)^2 + k$ with $h = -3$.", "concept": "Vertex form", "kind": "misconception" },
+  { "id": "quad-range", "front": "Range of $f(x) = a(x - h)^2 + k$, $x \\in \\mathbb R$?", "back": "$a > 0$: $f(x) \\ge k$. $a < 0$: $f(x) \\le k$.", "concept": "Vertex form", "kind": "concept" },
+  { "id": "quad-from-vertex", "front": "Find the quadratic with vertex $(1, -4)$ through $(3, 4)$.", "back": "$y = a(x - 1)^2 - 4$; $4 = 4a - 4 \\Rightarrow a = 2$. So $y = 2(x - 1)^2 - 4$.", "concept": "Vertex form", "kind": "application" },
+  { "id": "quad-from-roots", "front": "Find the quadratic with roots $-1$ and $3$ through $(0, -6)$.", "back": "$y = a(x + 1)(x - 3)$; $-6 = -3a \\Rightarrow a = 2$. So $y = 2(x + 1)(x - 3)$.", "concept": "Parabola", "kind": "application" },
+  { "id": "quad-transform", "front": "How is $y = a(x - h)^2 + k$ obtained from $y = x^2$?", "back": "Vertical stretch by factor $a$ (reflection if $a < 0$), then translation by $\\binom hk$.", "concept": "Vertex form", "kind": "graph" }
 ]

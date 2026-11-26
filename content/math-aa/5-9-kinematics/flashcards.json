@@ -1,5 +1,14 @@
 [
-  { "id": "kin-diff-card", "front": "Links between s, v, a?", "back": "$v = ds/dt$, $a = dv/dt$; integrate to go back.", "concept": "Velocity" },
-  { "id": "kin-dist-card", "front": "Displacement vs distance from velocity?", "back": "Displacement $\\int v\\,dt$; distance $\\int|v|\\,dt$.", "concept": "Distance" },
-  { "id": "kin-speed-card", "front": "When is a particle speeding up?", "back": "When v and a have the same sign.", "concept": "Speeding up" }
+  { "id": "kin-diff-card", "front": "Links between s, v, a?", "back": "$v = ds/dt$, $a = dv/dt$; integrate to go back.", "concept": "Velocity", "kind": "formula" },
+  { "id": "kin-dist-card", "front": "Displacement vs distance from velocity?", "back": "Displacement $\\int v\\,dt$; distance $\\int|v|\\,dt$.", "concept": "Distance", "kind": "distinction" },
+  { "id": "kin-speed-card", "front": "When is a particle speeding up?", "back": "When v and a have the same sign.", "concept": "Speeding up", "kind": "condition" },
+  { "id": "kin-example-va", "front": "$s = t^3 - 6t^2 + 9t$. Find $v$, $a$ and when the particle is at rest.", "back": "$v = 3t^2 - 12t + 9 = 3(t - 1)(t - 3)$; $a = 6t - 12$. At rest when $t = 1$ and $t = 3$.", "concept": "Velocity", "kind": "application" },
+  { "id": "kin-distance-example", "front": "For $s = t^3 - 6t^2 + 9t$, $0 \\le t \\le 4$: displacement and distance?", "back": "$s(0) = 0$, $s(1) = 4$, $s(3) = 0$, $s(4) = 4$. Displacement 4; distance $4 + 4 + 4 = 12$.", "concept": "Distance", "kind": "application" },
+  { "id": "at-rest", "front": "\"At rest\" and \"changes direction\"?", "back": "At rest: $v = 0$. Changes direction: $v$ changes sign (passes through 0).", "concept": "Velocity", "kind": "definition" },
+  { "id": "speed-def", "front": "Speed vs velocity?", "back": "Velocity has a sign (direction); speed $= |v|$, never negative.", "concept": "Velocity", "kind": "definition" },
+  { "id": "kin-integrate", "front": "Given $a(t)$ and $v(0)$, how do you find $v(t)$?", "back": "$v = \\int a\\,dt + C$; use $v(0)$ to find $C$. Similarly $s = \\int v\\,dt + C$ with an initial position.", "concept": "Integrating", "kind": "method" },
+  { "id": "kin-distance-mistake", "front": "Is distance travelled $= \\int_{t_1}^{t_2}v\\,dt$?", "back": "Only if $v$ does not change sign. Otherwise use $\\int|v|\\,dt$ (or split at $v = 0$).", "concept": "Distance", "kind": "misconception" },
+  { "id": "slowing-down", "front": "When is a particle slowing down?", "back": "When $v$ and $a$ have opposite signs (speed decreasing).", "concept": "Speeding up", "kind": "condition" },
+  { "id": "max-displacement", "front": "How do you find the maximum displacement from the origin?", "back": "Find where $v = 0$ and compare $|s|$ there and at the endpoints of the time interval.", "concept": "Velocity", "kind": "method" },
+  { "id": "kin-gdc", "front": "Distance travelled on a GDC?", "back": "Evaluate $\\int_{t_1}^{t_2}|v(t)|\\,dt$ numerically.", "concept": "Distance", "kind": "method" }
 ]

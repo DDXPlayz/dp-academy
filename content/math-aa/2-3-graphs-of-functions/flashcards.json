@@ -1,4 +1,13 @@
 [
-  { "id": "sketch-card", "front": "What must a sketch show?", "back": "Correct shape, labelled intercepts, turning points and asymptotes (dashed, with equations).", "concept": "Intercepts" },
-  { "id": "intersect-card", "front": "How to solve $f(x) = g(x)$ with a GDC?", "back": "Graph both and use intersect (or find zeros of $f - g$).", "concept": "Intersections" }
+  { "id": "sketch-card", "front": "What must a sketch show?", "back": "Correct shape, labelled intercepts, turning points and asymptotes (dashed, with equations).", "concept": "Intercepts", "kind": "method" },
+  { "id": "intersect-card", "front": "How to solve $f(x) = g(x)$ with a GDC?", "back": "Graph both and use intersect (or find zeros of $f - g$).", "concept": "Intersections", "kind": "method" },
+  { "id": "sketch-vs-draw", "front": "\"Sketch\" vs \"draw\" a graph?", "back": "Sketch: correct shape and key features labelled, not to scale. Draw: accurate, to scale, usually on given axes or grid.", "concept": "Sketching", "kind": "distinction" },
+  { "id": "intercepts-method", "front": "How do you find the intercepts of $y = f(x)$?", "back": "$y$-intercept: $f(0)$. $x$-intercepts (zeros): solve $f(x) = 0$.", "concept": "Intercepts", "kind": "method" },
+  { "id": "zero-def", "front": "Zero (root) of a function?", "back": "A value of $x$ with $f(x) = 0$ — an $x$-intercept of the graph.", "concept": "Intercepts", "kind": "definition" },
+  { "id": "asymptote-drawing", "front": "How should a curve behave near a vertical asymptote on a sketch?", "back": "It approaches the dashed line ever more closely but never touches or crosses it. Label the asymptote with its equation.", "concept": "Asymptotes", "kind": "misconception" },
+  { "id": "domain-endpoints", "front": "What must a sketch on a restricted domain show?", "back": "Only the given domain, with the endpoints marked (solid dot if included, open if not) and their coordinates.", "concept": "Sketching", "kind": "graph" },
+  { "id": "solutions-count", "front": "How can a graph tell you how many solutions $f(x) = k$ has?", "back": "Count the intersections of $y = f(x)$ with the horizontal line $y = k$.", "concept": "Intersections", "kind": "concept" },
+  { "id": "features-checklist", "front": "Key features checklist for any sketch?", "back": "Intercepts, turning points, asymptotes, symmetry, end behaviour and domain endpoints — each labelled.", "concept": "Key features", "kind": "method" },
+  { "id": "gdc-to-paper", "front": "Copying a GDC graph to paper: what matters?", "back": "Show the same window, keep relative positions and shape, and label the key points with coordinates read from the GDC.", "concept": "Sketching", "kind": "method" },
+  { "id": "intersect-difference", "front": "Why do the zeros of $f(x) - g(x)$ solve $f(x) = g(x)$?", "back": "$f(x) - g(x) = 0 \\iff f(x) = g(x)$: the $x$-values of the intersection points are the zeros of the difference.", "concept": "Intersections", "kind": "concept" }
 ]

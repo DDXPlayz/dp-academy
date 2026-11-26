@@ -1,4 +1,14 @@
 [
-  { "id": "change-card", "front": "Effect of adding k / multiplying by k on data?", "back": "+k: mean +k, spread same. ×k: mean ×k, SD and IQR ×k, variance ×k².", "concept": "Effect of changes" },
-  { "id": "grouped-card", "front": "Estimating a mean from grouped data?", "back": "Use class midpoints: $\\bar x = \\sum fx/n$.", "concept": "Grouped data" }
+  { "id": "change-card", "front": "Effect of adding k / multiplying by k on data?", "back": "+k: mean +k, spread same. ×k: mean ×k, SD and IQR ×k, variance ×k².", "concept": "Effect of changes", "kind": "concept" },
+  { "id": "grouped-card", "front": "Estimating a mean from grouped data?", "back": "Use class midpoints: $\\bar x = \\sum fx/n$.", "concept": "Grouped data", "kind": "method" },
+  { "id": "mean-median-mode", "front": "Mean, median and mode?", "back": "Mean: $\\bar x = \\frac{\\sum x}n$. Median: middle value of the ordered data (position $\\frac{n+1}2$). Mode: most frequent value.", "concept": "Measures of centre", "kind": "definition" },
+  { "id": "centre-example", "front": "Mean and median of 2, 4, 4, 5, 10?", "back": "Mean $\\frac{25}5 = 5$; median 4; mode 4.", "concept": "Measures of centre", "kind": "application" },
+  { "id": "iqr-def", "front": "Interquartile range?", "back": "$IQR = Q_3 - Q_1$, the spread of the middle 50% of the data.", "concept": "Measures of spread", "kind": "formula" },
+  { "id": "sd-def", "front": "Standard deviation and variance?", "back": "SD $\\sigma$: typical distance of values from the mean. Variance $= \\sigma^2$. In IB, find them with a GDC ($\\sigma_x$).", "concept": "Measures of spread", "kind": "definition" },
+  { "id": "robust", "front": "Which measures are affected by outliers?", "back": "Mean, range and standard deviation are affected; median and IQR are resistant.", "concept": "Measures of spread", "kind": "concept" },
+  { "id": "change-example", "front": "Data have mean 20 and SD 3. Each value is doubled then 5 added. New mean and SD?", "back": "Mean $2(20) + 5 = 45$; SD $2\\times3 = 6$ (adding 5 does not change spread).", "concept": "Effect of changes", "kind": "application" },
+  { "id": "change-mistake", "front": "Does adding a constant to every value change the standard deviation?", "back": "No — every value moves equally, so SD, variance and IQR are unchanged; only the measures of centre shift.", "concept": "Effect of changes", "kind": "misconception" },
+  { "id": "combined-mean", "front": "Mean of two groups combined?", "back": "$\\bar x = \\dfrac{n_1\\bar x_1 + n_2\\bar x_2}{n_1 + n_2}$ (total of all values ÷ total count).", "concept": "Measures of centre", "kind": "formula" },
+  { "id": "missing-value", "front": "Five values have mean 8; four of them are 6, 7, 9, 10. Find the fifth.", "back": "Total $= 5\\times8 = 40$, so the fifth is $40 - 32 = 8$.", "concept": "Measures of centre", "kind": "method" },
+  { "id": "modal-class", "front": "Modal class, and why is a grouped mean an estimate?", "back": "Modal class: the class with the highest frequency. The grouped mean uses midpoints, not the actual values, so it is only an estimate.", "concept": "Grouped data", "kind": "definition" }
 ]
