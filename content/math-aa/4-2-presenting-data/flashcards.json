@@ -1,4 +1,13 @@
 [
-  { "id": "cf-card", "front": "Reading a cumulative frequency graph?", "back": "Plot at upper boundaries; Q₁, median, Q₃ at n/4, n/2, 3n/4.", "concept": "Cumulative frequency" },
-  { "id": "boxplot-card", "front": "What does a box plot show?", "back": "Min, Q₁, median, Q₃, max; outliers marked separately.", "concept": "Box plots" }
+  { "id": "cf-card", "front": "Reading a cumulative frequency graph?", "back": "Plot at upper boundaries; Q₁, median, Q₃ at n/4, n/2, 3n/4.", "concept": "Cumulative frequency", "kind": "method" },
+  { "id": "boxplot-card", "front": "What does a box plot show?", "back": "Min, Q₁, median, Q₃, max; outliers marked separately.", "concept": "Box plots", "kind": "graph" },
+  { "id": "cf-def", "front": "Cumulative frequency?", "back": "The running total of frequencies up to the end of each class.", "concept": "Cumulative frequency", "kind": "definition" },
+  { "id": "cf-midpoint-mistake", "front": "Where are points plotted on a cumulative frequency graph?", "back": "At the **upper class boundary**, not the midpoint (the total is reached only at the end of the class).", "concept": "Cumulative frequency", "kind": "misconception" },
+  { "id": "percentile-def", "front": "Percentile?", "back": "The value below which a given percentage of the data lies. Median = 50th, $Q_1$ = 25th, $Q_3$ = 75th percentile.", "concept": "Cumulative frequency", "kind": "definition" },
+  { "id": "cf-reading", "front": "80 values on a cumulative frequency graph. Where do you read the median and the 90th percentile?", "back": "Median at $CF = 40$; 90th percentile at $CF = 72$ — read across to the curve, then down.", "concept": "Cumulative frequency", "kind": "application" },
+  { "id": "cf-above", "front": "How do you find the number of values above $x = a$ from a CF graph?", "back": "Read the CF at $a$ and subtract it from the total $n$.", "concept": "Cumulative frequency", "kind": "method" },
+  { "id": "histogram", "front": "Features of a frequency histogram (equal class widths)?", "back": "Continuous scale on the $x$-axis with no gaps between bars; bar height = frequency.", "concept": "Frequency tables and histograms", "kind": "graph" },
+  { "id": "boxplot-skew", "front": "Recognising skew on a box plot?", "back": "Positive (right) skew: median nearer $Q_1$, longer right whisker. Negative skew: the reverse. Symmetric: median central.", "concept": "Box plots", "kind": "graph" },
+  { "id": "boxplot-outliers", "front": "How are outliers shown on a box plot?", "back": "As separate crosses; the whisker extends only to the most extreme value that is not an outlier.", "concept": "Box plots", "kind": "graph" },
+  { "id": "compare-sets", "front": "How do you compare two data sets from box plots?", "back": "Compare a measure of centre (median) **and** a measure of spread (IQR or range), in context.", "concept": "Comparing data sets", "kind": "method" }
 ]

@@ -1,4 +1,12 @@
 [
-  { "id": "classify-card", "front": "(HL) Four relationships between lines?", "back": "Coincident, parallel, intersecting, skew.", "concept": "Classifying lines" },
-  { "id": "skew-card", "front": "(HL) Skew lines?", "back": "Not parallel and do not intersect (3D only).", "concept": "Skew lines" }
+  { "id": "classify-card", "front": "(HL) Four relationships between lines?", "back": "Coincident, parallel, intersecting, skew.", "concept": "Classifying lines", "kind": "concept" },
+  { "id": "skew-card", "front": "(HL) Skew lines?", "back": "Not parallel and do not intersect (3D only).", "concept": "Skew lines", "kind": "definition" },
+  { "id": "classify-method", "front": "(HL) Flowchart to classify two lines in 3D?", "back": "Directions parallel? Yes: coincident if they share a point, otherwise parallel. No: solve for an intersection — consistent → intersecting, inconsistent → skew.", "concept": "Classifying lines", "kind": "method" },
+  { "id": "coincident-def", "front": "(HL) Coincident lines and how to show it?", "back": "The same line: directions parallel **and** a point of one lies on the other.", "concept": "Classifying lines", "kind": "definition" },
+  { "id": "two-parameters", "front": "(HL) Finding an intersection: use $\\lambda$ for both lines?", "back": "No — use different parameters ($\\lambda$ and $\\mu$); the lines generally reach the point at different parameter values.", "concept": "Finding an intersection", "kind": "misconception" },
+  { "id": "intersection-method", "front": "(HL) Steps to find where two lines meet?", "back": "Equate components, solve two equations for $\\lambda$ and $\\mu$, **check the third**, then substitute back to get the point.", "concept": "Finding an intersection", "kind": "method" },
+  { "id": "intersection-example", "front": "(HL) Intersection of $\\mathbf r = (1, 0, 0) + \\lambda(1, 1, 0)$ and $\\mathbf r = (0, 1, 0) + \\mu(1, 0, 0)$?", "back": "$1 + \\lambda = \\mu$, $\\lambda = 1$, $0 = 0$: $\\lambda = 1$, $\\mu = 2$. Point $(2, 1, 0)$.", "concept": "Finding an intersection", "kind": "application" },
+  { "id": "skew-example", "front": "(HL) Show $\\mathbf r = \\lambda(1, 0, 0)$ and $\\mathbf r = (0, 1, 1) + \\mu(0, 0, 1)$ are skew.", "back": "Directions not parallel. $y$-components: $0 = 1$ — impossible, so they never meet: skew.", "concept": "Skew lines", "kind": "application" },
+  { "id": "no-skew-2d", "front": "(HL) Can lines in 2D be skew?", "back": "No — two lines in a plane either intersect, are parallel, or coincide. Skew lines need three dimensions.", "concept": "Skew lines", "kind": "concept" },
+  { "id": "third-equation", "front": "(HL) What does it mean if $\\lambda$ and $\\mu$ from two equations fail the third?", "back": "The equations are inconsistent — the lines do not meet (skew, if not parallel).", "concept": "Finding an intersection", "kind": "concept" }
 ]

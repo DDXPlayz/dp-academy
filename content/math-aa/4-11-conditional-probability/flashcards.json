@@ -1,4 +1,12 @@
 [
-  { "id": "cond-formal-card", "front": "Formal definition of $P(A\\mid B)$?", "back": "$\\dfrac{P(A\\cap B)}{P(B)}$", "concept": "Conditional probability" },
-  { "id": "indep-cond-card", "front": "Independence test using conditional probability?", "back": "$P(A\\mid B) = P(A) = P(A\\mid B')$", "concept": "Independence" }
+  { "id": "cond-formal-card", "front": "Formal definition of $P(A\\mid B)$?", "back": "$\\dfrac{P(A\\cap B)}{P(B)}$", "concept": "Conditional probability", "kind": "formula" },
+  { "id": "indep-cond-card", "front": "Independence test using conditional probability?", "back": "$P(A\\mid B) = P(A) = P(A\\mid B')$", "concept": "Independence", "kind": "condition" },
+  { "id": "mult-rule", "front": "Multiplication rule from conditional probability?", "back": "$P(A\\cap B) = P(B)P(A\\mid B) = P(A)P(B\\mid A)$.", "concept": "Conditional probability", "kind": "formula" },
+  { "id": "cond-table-example", "front": "40 girls (10 play chess) and 60 boys (20 play chess). Find P(chess | girl) and P(girl | chess).", "back": "P(chess | girl) $= \\frac{10}{40} = 0.25$. P(girl | chess) $= \\frac{10}{30} = \\frac13$.", "concept": "Conditional probability", "kind": "application" },
+  { "id": "cond-reverse", "front": "Is $P(A\\mid B) = P(B\\mid A)$?", "back": "Generally not — the denominators differ ($P(B)$ vs $P(A)$). In the chess example they are 0.25 and $\\frac13$.", "concept": "Conditional probability", "kind": "misconception" },
+  { "id": "indep-table-example", "front": "Using the chess data, are \"girl\" and \"plays chess\" independent?", "back": "P(chess) $= \\frac{30}{100} = 0.3 \\ne$ P(chess | girl) $= 0.25$, so not independent.", "concept": "Independence", "kind": "application" },
+  { "id": "table-restrict", "front": "How do you read $P(A\\mid B)$ from a two-way table?", "back": "Restrict to the row (or column) for $B$: $\\dfrac{\\text{count in }A\\text{ and }B}{\\text{total of }B}$.", "concept": "Conditional probability", "kind": "method" },
+  { "id": "tree-cond", "front": "Where do conditional probabilities appear on a tree diagram?", "back": "Second-stage branches are conditional on the first: e.g. the branch to $A$ after $B$ is $P(A\\mid B)$.", "concept": "Conditional probability", "kind": "method" },
+  { "id": "without-replacement-cond", "front": "5 red, 3 blue; two taken without replacement. P(second red | first red)?", "back": "$\\frac47$ — one red has gone, 7 balls remain.", "concept": "Conditional probability", "kind": "application" },
+  { "id": "indep-forms", "front": "Equivalent tests for independence of $A$ and $B$?", "back": "$P(A\\cap B) = P(A)P(B)$, or $P(A\\mid B) = P(A)$, or $P(A\\mid B) = P(A\\mid B')$.", "concept": "Independence", "kind": "formula" }
 ]

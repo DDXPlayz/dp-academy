@@ -1,5 +1,15 @@
 [
-  { "id": "transl-card", "front": "$y = f(x - a) + b$?", "back": "Translation $a$ right and $b$ up — vector $\\binom ab$.", "concept": "Translations" },
-  { "id": "refl-card", "front": "$y = -f(x)$ and $y = f(-x)$?", "back": "Reflections in the x-axis and y-axis respectively.", "concept": "Reflections" },
-  { "id": "stretch-card", "front": "$y = pf(x)$ and $y = f(qx)$?", "back": "Vertical stretch factor $p$; horizontal stretch factor $1/q$.", "concept": "Stretches" }
+  { "id": "transl-card", "front": "$y = f(x - a) + b$?", "back": "Translation $a$ right and $b$ up — vector $\\binom ab$.", "concept": "Translations", "kind": "graph" },
+  { "id": "refl-card", "front": "$y = -f(x)$ and $y = f(-x)$?", "back": "Reflections in the x-axis and y-axis respectively.", "concept": "Reflections", "kind": "graph" },
+  { "id": "stretch-card", "front": "$y = pf(x)$ and $y = f(qx)$?", "back": "Vertical stretch factor $p$; horizontal stretch factor $1/q$.", "concept": "Stretches", "kind": "graph" },
+  { "id": "transl-direction", "front": "Which way does $y = f(x - 3)$ move the graph?", "back": "3 units **right** (inside changes act on $x$ the \"opposite\" way). $y = f(x + 3)$ moves it 3 left.", "concept": "Translations", "kind": "misconception" },
+  { "id": "stretch-mistake", "front": "Scale factor of the stretch in $y = f(2x)$?", "back": "Horizontal stretch, scale factor $\\frac12$ (towards the $y$-axis), not 2.", "concept": "Stretches", "kind": "misconception" },
+  { "id": "point-mapping", "front": "Where does the point $(x, y)$ on $y = f(x)$ go on $y = pf(qx)$?", "back": "To $\\left(\\dfrac xq, py\\right)$.", "concept": "Stretches", "kind": "method" },
+  { "id": "point-example", "front": "$(2, 5)$ lies on $y = f(x)$. Image on $y = f(x - 1) + 3$? On $y = 2f\\left(\\frac x3\\right)$?", "back": "$(3, 8)$; $(6, 10)$.", "concept": "Composite transformations", "kind": "application" },
+  { "id": "refl-points", "front": "Image of $(x, y)$ under $y = -f(x)$ and $y = f(-x)$?", "back": "$y = -f(x)$: $(x, -y)$. $y = f(-x)$: $(-x, y)$.", "concept": "Reflections", "kind": "method" },
+  { "id": "outside-order", "front": "Describe $y = 2f(x) + 3$ as a sequence of transformations.", "back": "Vertical stretch factor 2, **then** translate up 3. (Translating first would give $2f(x) + 6$.)", "concept": "Composite transformations", "kind": "method" },
+  { "id": "inside-order", "front": "Describe $y = f(2x - 6)$.", "back": "$f(2(x - 3))$: horizontal stretch factor $\\frac12$, then translate 3 right. (Equivalently: translate 6 right, then stretch factor $\\frac12$.)", "concept": "Composite transformations", "kind": "method" },
+  { "id": "invariant-points", "front": "Which points stay fixed under $y = -f(x)$ and $y = f(-x)$?", "back": "$y = -f(x)$: points on the $x$-axis. $y = f(-x)$: points on the $y$-axis.", "concept": "Reflections", "kind": "concept" },
+  { "id": "asymptotes-transform", "front": "What happens to asymptotes under a transformation?", "back": "They transform like the graph: e.g. $y = \\frac1{x - 2} + 1$ has asymptotes $x = 2$, $y = 1$.", "concept": "Translations", "kind": "graph" },
+  { "id": "inside-outside-rule", "front": "General rule: changes inside vs outside $f$?", "back": "Outside ($af(x) + b$): vertical, act as expected. Inside ($f(qx + c)$): horizontal, act the opposite way (divide by $q$, shift by $-c$).", "concept": "Composite transformations", "kind": "concept" }
 ]

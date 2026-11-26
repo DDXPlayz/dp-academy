@@ -1,5 +1,15 @@
 [
-  { "id": "dist3d-card", "front": "Distance between two points in 3D?", "back": "$\\sqrt{\\Delta x^2 + \\Delta y^2 + \\Delta z^2}$", "concept": "Distance" },
-  { "id": "solids-card", "front": "Volumes of cone, pyramid, sphere?", "back": "$\\tfrac13\\pi r^2h$, $\\tfrac13Ah$, $\\tfrac43\\pi r^3$.", "concept": "Volume" },
-  { "id": "cone-sa-card", "front": "Curved surface area of a cone?", "back": "$\\pi rl$, slant height $l = \\sqrt{r^2 + h^2}$.", "concept": "Surface area" }
+  { "id": "dist3d-card", "front": "Distance between two points in 3D?", "back": "$\\sqrt{\\Delta x^2 + \\Delta y^2 + \\Delta z^2}$", "concept": "Distance", "kind": "formula" },
+  { "id": "solids-card", "front": "Volumes of cone, pyramid, sphere?", "back": "$\\tfrac13\\pi r^2h$, $\\tfrac13Ah$, $\\tfrac43\\pi r^3$.", "concept": "Volume", "kind": "formula" },
+  { "id": "cone-sa-card", "front": "Curved surface area of a cone?", "back": "$\\pi rl$, slant height $l = \\sqrt{r^2 + h^2}$.", "concept": "Surface area", "kind": "formula" },
+  { "id": "midpoint3d", "front": "Midpoint of $(x_1, y_1, z_1)$ and $(x_2, y_2, z_2)$?", "back": "$\\left(\\dfrac{x_1 + x_2}2, \\dfrac{y_1 + y_2}2, \\dfrac{z_1 + z_2}2\\right)$.", "concept": "Distance", "kind": "formula" },
+  { "id": "dist3d-example", "front": "Distance between $(1, 2, 3)$ and $(4, 6, 15)$?", "back": "$\\sqrt{3^2 + 4^2 + 12^2} = \\sqrt{169} = 13$.", "concept": "Distance", "kind": "application" },
+  { "id": "sphere-sa", "front": "Surface area of a sphere and total surface area of a solid hemisphere?", "back": "Sphere: $4\\pi r^2$. Hemisphere: $2\\pi r^2$ (curved) $+ \\pi r^2$ (flat base) $= 3\\pi r^2$.", "concept": "Surface area", "kind": "formula" },
+  { "id": "cone-total-sa", "front": "Total surface area of a solid cone?", "back": "$\\pi rl + \\pi r^2$ (curved surface plus circular base), with $l = \\sqrt{r^2 + h^2}$.", "concept": "Surface area", "kind": "formula" },
+  { "id": "cone-example", "front": "Cone with $r = 3$, $h = 4$: slant height, curved surface area, volume?", "back": "$l = 5$; curved SA $= 15\\pi$; $V = \\frac13\\pi(9)(4) = 12\\pi$.", "concept": "Volume", "kind": "application" },
+  { "id": "slant-mistake", "front": "Curved surface of a cone: use $\\pi rh$?", "back": "No — use the **slant** height: $\\pi rl$, where $l = \\sqrt{r^2 + h^2}$.", "concept": "Surface area", "kind": "misconception" },
+  { "id": "cuboid-diagonal", "front": "Length of the space diagonal of an $a\\times b\\times c$ cuboid?", "back": "$\\sqrt{a^2 + b^2 + c^2}$ (Pythagoras twice: base diagonal, then up).", "concept": "Distance", "kind": "application" },
+  { "id": "line-plane-angle-3d", "front": "How do you find the angle between a line and a plane in a solid?", "back": "Drop a perpendicular from a point on the line to the plane; the angle sits in the right-angled triangle formed by the line, the perpendicular and the projection.", "concept": "Angles in 3D", "kind": "method" },
+  { "id": "composite-solids", "front": "Surface area of a composite solid (e.g. cone on a hemisphere)?", "back": "Add only the exposed surfaces — omit faces that are joined together. Volumes simply add.", "concept": "Surface area", "kind": "method" },
+  { "id": "solids-booklet", "front": "Are the 3D volume and surface-area formulae given?", "back": "Yes — pyramid, cone, sphere volumes and cone/sphere surface areas are in the formula booklet; cuboid, cylinder and prism results are assumed prior knowledge.", "concept": "Volume", "kind": "concept" }
 ]

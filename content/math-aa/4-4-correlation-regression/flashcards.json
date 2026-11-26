@@ -1,5 +1,14 @@
 [
-  { "id": "r-card", "front": "Pearson’s r?", "back": "Strength and direction of linear correlation, −1 to 1.", "concept": "Pearson’s r" },
-  { "id": "reg-card", "front": "Regression line facts?", "back": "y = ax + b from GDC; passes through (x̄, ȳ); a = change in y per unit x.", "concept": "Regression line" },
-  { "id": "extrap-card", "front": "When are predictions reliable?", "back": "Strong r and interpolation (within the data range).", "concept": "Prediction" }
+  { "id": "r-card", "front": "Pearson’s r?", "back": "Strength and direction of linear correlation, −1 to 1.", "concept": "Pearson’s r", "kind": "definition" },
+  { "id": "reg-card", "front": "Regression line facts?", "back": "y = ax + b from GDC; passes through (x̄, ȳ); a = change in y per unit x.", "concept": "Regression line", "kind": "concept" },
+  { "id": "extrap-card", "front": "When are predictions reliable?", "back": "Strong r and interpolation (within the data range).", "concept": "Prediction", "kind": "condition" },
+  { "id": "scatter-describe", "front": "How do you describe correlation on a scatter diagram?", "back": "State the direction (positive/negative), strength (strong/weak) and form (linear or not), and mention any outliers.", "concept": "Correlation", "kind": "method" },
+  { "id": "r-values", "front": "Meaning of $r = 1$, $r = -1$, $r = 0$?", "back": "$\\pm1$: perfect positive/negative linear correlation. $0$: no **linear** correlation (there may still be a non-linear relationship).", "concept": "Pearson’s r", "kind": "concept" },
+  { "id": "causation", "front": "Strong correlation between ice-cream sales and drownings — does one cause the other?", "back": "No — correlation does not imply causation; both may depend on a third variable (hot weather).", "concept": "Correlation", "kind": "misconception" },
+  { "id": "interpret-a-b", "front": "Interpret $a$ and $b$ in $y = ax + b$ for cost $y$ vs distance $x$.", "back": "$a$: increase in cost per extra unit of distance. $b$: predicted cost when distance is 0 (meaningful only if $x = 0$ is sensible).", "concept": "Regression line", "kind": "application" },
+  { "id": "least-squares", "front": "What does the $y$-on-$x$ regression line minimise?", "back": "The sum of the squares of the **vertical** distances from the points to the line (least squares).", "concept": "Regression line", "kind": "concept" },
+  { "id": "predict-example", "front": "$y = 2.1x + 3$ from data with $5 \\le x \\le 20$. Predict $y$ at $x = 10$ and comment.", "back": "$y = 24$. Reliable if $r$ is strong, since $x = 10$ is interpolation.", "concept": "Prediction", "kind": "application" },
+  { "id": "extrapolation-def", "front": "Extrapolation and why it is risky?", "back": "Predicting outside the range of the data; the linear trend may not continue there.", "concept": "Prediction", "kind": "definition" },
+  { "id": "wrong-line", "front": "Can you rearrange $y = ax + b$ to predict $x$ from $y$?", "back": "Not reliably — unless $|r| = 1$ use the $x$-on-$y$ line for that.", "concept": "Prediction", "kind": "misconception" },
+  { "id": "r-gdc", "front": "How is $r$ found in IB exams?", "back": "With the GDC (linear regression), for bivariate data; it only measures **linear** association.", "concept": "Pearson’s r", "kind": "concept" }
 ]

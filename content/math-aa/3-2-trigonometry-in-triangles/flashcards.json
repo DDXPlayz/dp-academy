@@ -1,5 +1,16 @@
 [
-  { "id": "sine-rule-card", "front": "Sine rule?", "back": "$\\dfrac{a}{\\sin A} = \\dfrac{b}{\\sin B} = \\dfrac{c}{\\sin C}$", "concept": "Sine rule" },
-  { "id": "cos-rule-card", "front": "Cosine rule?", "back": "$c^2 = a^2 + b^2 - 2ab\\cos C$", "concept": "Cosine rule" },
-  { "id": "area-card", "front": "Area of a triangle (trig)?", "back": "$\\tfrac12ab\\sin C$", "concept": "Area" }
+  { "id": "sine-rule-card", "front": "Sine rule?", "back": "$\\dfrac{a}{\\sin A} = \\dfrac{b}{\\sin B} = \\dfrac{c}{\\sin C}$", "concept": "Sine rule", "kind": "formula" },
+  { "id": "cos-rule-card", "front": "Cosine rule?", "back": "$c^2 = a^2 + b^2 - 2ab\\cos C$", "concept": "Cosine rule", "kind": "formula" },
+  { "id": "area-card", "front": "Area of a triangle (trig)?", "back": "$\\tfrac12ab\\sin C$", "concept": "Area", "kind": "formula" },
+  { "id": "soh-cah-toa", "front": "Trig ratios in a right-angled triangle?", "back": "$\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}$, $\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}$, $\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}$.", "concept": "Right-angled triangles", "kind": "formula" },
+  { "id": "which-rule", "front": "Sine rule or cosine rule?", "back": "Sine rule: you know a side and its opposite angle (a matching pair). Cosine rule: two sides and the included angle (SAS) or all three sides (SSS).", "concept": "Which rule?", "kind": "method" },
+  { "id": "cos-rule-angle", "front": "Cosine rule rearranged for an angle?", "back": "$\\cos C = \\dfrac{a^2 + b^2 - c^2}{2ab}$. A negative value means $C$ is obtuse.", "concept": "Cosine rule", "kind": "formula" },
+  { "id": "sine-rule-angle", "front": "Sine rule form for finding an angle?", "back": "$\\dfrac{\\sin A}a = \\dfrac{\\sin B}b = \\dfrac{\\sin C}c$ (unknown in the numerator).", "concept": "Sine rule", "kind": "formula" },
+  { "id": "cos-rule-example", "front": "$a = 5$, $b = 7$, $C = 60^\\circ$. Find $c$.", "back": "$c^2 = 25 + 49 - 70\\cos60^\\circ = 39$, so $c = \\sqrt{39} \\approx 6.24$.", "concept": "Cosine rule", "kind": "application" },
+  { "id": "sine-rule-example", "front": "$A = 40^\\circ$, $a = 10$, $B = 65^\\circ$. Find $b$.", "back": "$b = \\dfrac{10\\sin65^\\circ}{\\sin40^\\circ} \\approx 14.1$.", "concept": "Sine rule", "kind": "application" },
+  { "id": "area-example", "front": "Area of a triangle with $a = 5$, $b = 8$, $C = 30^\\circ$?", "back": "$\\frac12(5)(8)\\sin30^\\circ = 10$.", "concept": "Area", "kind": "application" },
+  { "id": "included-angle", "front": "Included angle (and why it matters for $\\frac12ab\\sin C$)?", "back": "The angle **between** the two given sides; the area formula and SAS cosine rule need exactly this angle.", "concept": "Area", "kind": "definition" },
+  { "id": "degree-mode", "front": "The sine rule gives a nonsense answer. Common cause?", "back": "Calculator in radian mode when the angles are in degrees (or vice versa).", "concept": "Sine rule", "kind": "misconception" },
+  { "id": "side-angle-order", "front": "Which angle of a triangle is largest?", "back": "The one opposite the longest side — useful for checking answers and the ambiguous case.", "concept": "Which rule?", "kind": "concept" },
+  { "id": "triangle-booklet", "front": "Are the sine rule, cosine rule and $\\frac12ab\\sin C$ in the formula booklet?", "back": "Yes, all three are given. The right-angled ratios (SOH CAH TOA) are not.", "concept": "Which rule?", "kind": "concept" }
 ]

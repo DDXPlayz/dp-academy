@@ -1,5 +1,14 @@
 [
-  { "id": "even-odd-card", "front": "(HL) Even and odd function tests?", "back": "Even: $f(-x) = f(x)$ (y-axis symmetry). Odd: $f(-x) = -f(x)$ (origin symmetry).", "concept": "Odd and even functions" },
-  { "id": "self-inv-card", "front": "(HL) Self-inverse function?", "back": "$f(f(x)) = x$; graph symmetric in $y = x$.", "concept": "Self-inverse" },
-  { "id": "one-one-card", "front": "(HL) When does a function have an inverse?", "back": "When it is one-to-one — restrict the domain if needed.", "concept": "Restricted domains" }
+  { "id": "even-odd-card", "front": "(HL) Even and odd function tests?", "back": "Even: $f(-x) = f(x)$ (y-axis symmetry). Odd: $f(-x) = -f(x)$ (origin symmetry).", "concept": "Odd and even functions", "kind": "definition" },
+  { "id": "self-inv-card", "front": "(HL) Self-inverse function?", "back": "$f(f(x)) = x$; graph symmetric in $y = x$.", "concept": "Self-inverse", "kind": "definition" },
+  { "id": "one-one-card", "front": "(HL) When does a function have an inverse?", "back": "When it is one-to-one — restrict the domain if needed.", "concept": "Restricted domains", "kind": "condition" },
+  { "id": "even-odd-examples", "front": "(HL) Standard even and odd functions?", "back": "Even: $x^2$, $x^4$, $\\cos x$, $|x|$. Odd: $x$, $x^3$, $\\sin x$, $\\tan x$, $\\frac1x$.", "concept": "Odd and even functions", "kind": "application" },
+  { "id": "neither-mistake", "front": "(HL) Is every function odd or even?", "back": "No — most are neither. $f(x) = x^2 + x$: $f(-x) = x^2 - x$, which is neither $f(x)$ nor $-f(x)$.", "concept": "Odd and even functions", "kind": "misconception" },
+  { "id": "odd-test-example", "front": "(HL) Show $f(x) = x^3 + x$ is odd.", "back": "$f(-x) = -x^3 - x = -(x^3 + x) = -f(x)$.", "concept": "Odd and even functions", "kind": "application" },
+  { "id": "odd-even-products", "front": "(HL) Parity of products of odd and even functions?", "back": "even × even = even; odd × odd = even; odd × even = odd (like multiplying signs).", "concept": "Odd and even functions", "kind": "concept" },
+  { "id": "odd-at-zero", "front": "(HL) If $f$ is odd and defined at 0, what is $f(0)$?", "back": "$f(0) = -f(0)$, so $f(0) = 0$ — the graph passes through the origin.", "concept": "Odd and even functions", "kind": "concept" },
+  { "id": "odd-even-integral", "front": "(HL) $\\int_{-a}^a f(x)\\,dx$ for odd and even $f$?", "back": "Odd: 0. Even: $2\\int_0^a f(x)\\,dx$.", "concept": "Odd and even functions", "kind": "application" },
+  { "id": "restrict-example", "front": "(HL) Inverse of $f(x) = (x - 2)^2 + 1$, $x \\ge 2$?", "back": "$f^{-1}(x) = 2 + \\sqrt{x - 1}$, $x \\ge 1$ (positive root because the range of $f^{-1}$ is $y \\ge 2$).", "concept": "Restricted domains", "kind": "application" },
+  { "id": "restrict-largest", "front": "(HL) Largest domain on which a quadratic has an inverse?", "back": "One side of the vertex: $x \\ge h$ or $x \\le h$ for vertex $(h, k)$.", "concept": "Restricted domains", "kind": "method" },
+  { "id": "self-inv-examples", "front": "(HL) Examples of self-inverse functions?", "back": "$f(x) = \\frac1x$, $f(x) = -x$, $f(x) = c - x$, and $\\dfrac{ax + b}{cx - a}$.", "concept": "Self-inverse", "kind": "application" }
 ]

@@ -1,6 +1,17 @@
 [
-  { "id": "pdf-card", "front": "(HL) Conditions for a pdf?", "back": "$f(x) \\ge 0$ and $\\int f(x)\\,dx = 1$; probability = area.", "concept": "Probability density functions" },
-  { "id": "median-cont-card", "front": "(HL) Median of a continuous RV?", "back": "Solve $\\int_{a}^{m} f(x)\\,dx = 0.5$.", "concept": "Median" },
-  { "id": "var-card", "front": "(HL) Variance formula?", "back": "$E(X^2) - [E(X)]^2$", "concept": "Variance" },
-  { "id": "lin-card", "front": "(HL) $E(aX + b)$ and $\\text{Var}(aX + b)$?", "back": "$aE(X) + b$ and $a^2\\text{Var}(X)$.", "concept": "Linear transformations" }
+  { "id": "pdf-card", "front": "(HL) Conditions for a pdf?", "back": "$f(x) \\ge 0$ and $\\int f(x)\\,dx = 1$; probability = area.", "concept": "Probability density functions", "kind": "condition" },
+  { "id": "median-cont-card", "front": "(HL) Median of a continuous RV?", "back": "Solve $\\int_{a}^{m} f(x)\\,dx = 0.5$.", "concept": "Median", "kind": "method" },
+  { "id": "var-card", "front": "(HL) Variance formula?", "back": "$E(X^2) - [E(X)]^2$", "concept": "Variance", "kind": "formula" },
+  { "id": "lin-card", "front": "(HL) $E(aX + b)$ and $\\text{Var}(aX + b)$?", "back": "$aE(X) + b$ and $a^2\\text{Var}(X)$.", "concept": "Linear transformations", "kind": "formula" },
+  { "id": "pdf-prob", "front": "(HL) $P(a \\le X \\le b)$ for a continuous random variable?", "back": "$\\int_a^b f(x)\\,dx$, the area under the pdf. $P(X = a) = 0$, so $<$ and $\\le$ give the same value.", "concept": "Probability density functions", "kind": "formula" },
+  { "id": "pdf-k-example", "front": "(HL) $f(x) = kx$ for $0 \\le x \\le 2$ (0 otherwise). Find $k$.", "back": "$\\int_0^2 kx\\,dx = 2k = 1 \\Rightarrow k = \\frac12$.", "concept": "Probability density functions", "kind": "application" },
+  { "id": "pdf-prob-example", "front": "(HL) With $f(x) = \\frac x2$ on $[0, 2]$, find $P(0.5 < X < 1)$.", "back": "$\\left[\\frac{x^2}4\\right]_{0.5}^1 = \\frac14 - \\frac1{16} = \\frac3{16}$.", "concept": "Probability density functions", "kind": "application" },
+  { "id": "cont-mean", "front": "(HL) Mean of a continuous random variable, and $E(g(X))$?", "back": "$E(X) = \\int xf(x)\\,dx$ and $E(g(X)) = \\int g(x)f(x)\\,dx$, over the domain of $f$.", "concept": "Mode, median, mean, variance", "kind": "formula" },
+  { "id": "cont-mv-example", "front": "(HL) Mean and variance for $f(x) = \\frac x2$ on $[0, 2]$?", "back": "$E(X) = \\int_0^2\\frac{x^2}2dx = \\frac43$; $E(X^2) = \\int_0^2\\frac{x^3}2dx = 2$; $\\text{Var} = 2 - \\frac{16}9 = \\frac29$.", "concept": "Variance", "kind": "application" },
+  { "id": "cont-median-example", "front": "(HL) Median for $f(x) = \\frac x2$ on $[0, 2]$?", "back": "$\\int_0^m\\frac x2dx = \\frac{m^2}4 = \\frac12 \\Rightarrow m = \\sqrt2$.", "concept": "Median", "kind": "application" },
+  { "id": "cont-mode", "front": "(HL) Mode of a continuous random variable?", "back": "The $x$ at which $f(x)$ is greatest (a stationary point or an endpoint of the domain).", "concept": "Mode, median, mean, variance", "kind": "definition" },
+  { "id": "pdf-not-prob", "front": "(HL) Is $f(1) = 0.5$ the probability that $X = 1$?", "back": "No — $f$ is a density; probabilities are areas. $f(x)$ can even exceed 1.", "concept": "Probability density functions", "kind": "misconception" },
+  { "id": "var-b-mistake", "front": "(HL) $\\text{Var}(X) = 4$. Is $\\text{Var}(3X + 2) = 14$?", "back": "No — $\\text{Var}(3X + 2) = 9\\times4 = 36$. Adding a constant does not change spread.", "concept": "Linear transformations", "kind": "misconception" },
+  { "id": "piecewise-pdf", "front": "(HL) Working with a piecewise pdf?", "back": "Integrate each piece over its own interval and add — for the total area (= 1), probabilities, $E(X)$ and the median.", "concept": "Probability density functions", "kind": "method" },
+  { "id": "sd-from-var", "front": "(HL) Standard deviation of a random variable?", "back": "$\\sigma = \\sqrt{\\text{Var}(X)}$; for $aX + b$ it is $|a|\\sigma$.", "concept": "Variance", "kind": "formula" }
 ]

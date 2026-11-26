@@ -1,4 +1,13 @@
 [
-  { "id": "dot-card", "front": "(HL) Scalar product two ways?", "back": "$v_1w_1 + v_2w_2 + v_3w_3 = |\\mathbf v||\\mathbf w|\\cos\\theta$", "concept": "Scalar product" },
-  { "id": "perp-dot-card", "front": "(HL) Test for perpendicular vectors?", "back": "$\\mathbf v\\cdot\\mathbf w = 0$", "concept": "Perpendicular vectors" }
+  { "id": "dot-card", "front": "(HL) Scalar product two ways?", "back": "$v_1w_1 + v_2w_2 + v_3w_3 = |\\mathbf v||\\mathbf w|\\cos\\theta$", "concept": "Scalar product", "kind": "formula" },
+  { "id": "perp-dot-card", "front": "(HL) Test for perpendicular vectors?", "back": "$\\mathbf v\\cdot\\mathbf w = 0$", "concept": "Perpendicular vectors", "kind": "condition" },
+  { "id": "angle-formula", "front": "(HL) Angle between two vectors?", "back": "$\\cos\\theta = \\dfrac{\\mathbf v\\cdot\\mathbf w}{|\\mathbf v||\\mathbf w|}$, $0 \\le \\theta \\le \\pi$.", "concept": "Scalar product", "kind": "formula" },
+  { "id": "angle-example", "front": "(HL) Angle between $(1, 2, 2)$ and $(2, 0, 1)$?", "back": "$\\mathbf v\\cdot\\mathbf w = 4$, $|\\mathbf v| = 3$, $|\\mathbf w| = \\sqrt5$: $\\cos\\theta = \\frac4{3\\sqrt5}$, $\\theta \\approx 53.4^\\circ$.", "concept": "Scalar product", "kind": "application" },
+  { "id": "perp-k-example", "front": "(HL) Find $k$ so that $(k, 2, -1)$ is perpendicular to $(3, 1, 4)$.", "back": "$3k + 2 - 4 = 0 \\Rightarrow k = \\frac23$.", "concept": "Perpendicular vectors", "kind": "application" },
+  { "id": "dot-sign", "front": "(HL) What does the sign of $\\mathbf v\\cdot\\mathbf w$ tell you?", "back": "Positive: acute angle. Zero: perpendicular. Negative: obtuse angle.", "concept": "Scalar product", "kind": "concept" },
+  { "id": "dot-self", "front": "(HL) $\\mathbf v\\cdot\\mathbf v$?", "back": "$|\\mathbf v|^2$.", "concept": "Scalar product", "kind": "formula" },
+  { "id": "dot-properties", "front": "(HL) Algebraic properties of the scalar product?", "back": "$\\mathbf v\\cdot\\mathbf w = \\mathbf w\\cdot\\mathbf v$; $\\mathbf u\\cdot(\\mathbf v + \\mathbf w) = \\mathbf u\\cdot\\mathbf v + \\mathbf u\\cdot\\mathbf w$; $(k\\mathbf v)\\cdot\\mathbf w = k(\\mathbf v\\cdot\\mathbf w)$.", "concept": "Scalar product", "kind": "formula" },
+  { "id": "dot-is-scalar", "front": "(HL) Scalar product vs vector product: what type of answer?", "back": "$\\mathbf v\\cdot\\mathbf w$ is a number; $\\mathbf v\\times\\mathbf w$ is a vector.", "concept": "Scalar product", "kind": "distinction" },
+  { "id": "vertex-angle", "front": "(HL) Finding angle $ABC$ with vectors: use $\\overrightarrow{AB}$ and $\\overrightarrow{BC}$?", "back": "No — both vectors must start at $B$: use $\\overrightarrow{BA}$ and $\\overrightarrow{BC}$, otherwise you get $180^\\circ - \\angle ABC$.", "concept": "Scalar product", "kind": "misconception" },
+  { "id": "ijk-dots", "front": "(HL) $\\mathbf i\\cdot\\mathbf i$ and $\\mathbf i\\cdot\\mathbf j$?", "back": "$\\mathbf i\\cdot\\mathbf i = 1$ (unit vector), $\\mathbf i\\cdot\\mathbf j = 0$ (perpendicular); similarly for $\\mathbf j$, $\\mathbf k$.", "concept": "Scalar product", "kind": "formula" }
 ]

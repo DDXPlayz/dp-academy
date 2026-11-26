@@ -1,4 +1,12 @@
 [
-  { "id": "ineq-method-card", "front": "(HL) Method for polynomial/rational inequalities?", "back": "Make one side zero, factorise, find critical values, sign diagram.", "concept": "Polynomial inequalities" },
-  { "id": "ineq-trap-card", "front": "(HL) Why not multiply by the denominator?", "back": "Its sign is unknown — a negative multiplier reverses the inequality.", "concept": "Rational inequalities" }
+  { "id": "ineq-method-card", "front": "(HL) Method for polynomial/rational inequalities?", "back": "Make one side zero, factorise, find critical values, sign diagram.", "concept": "Polynomial inequalities", "kind": "method" },
+  { "id": "ineq-trap-card", "front": "(HL) Why not multiply by the denominator?", "back": "Its sign is unknown — a negative multiplier reverses the inequality.", "concept": "Rational inequalities", "kind": "misconception" },
+  { "id": "sign-diagram", "front": "(HL) Sign diagram?", "back": "A number line marked with the critical values, showing where the expression is positive, negative or zero.", "concept": "Polynomial inequalities", "kind": "definition" },
+  { "id": "poly-ineq-example", "front": "(HL) Solve $(x - 1)(x + 2)(x - 4) \\ge 0$.", "back": "Signs (right to left): $+, -, +, -$. Solution $-2 \\le x \\le 1$ or $x \\ge 4$.", "concept": "Polynomial inequalities", "kind": "application" },
+  { "id": "repeated-factor", "front": "(HL) Solve $(x - 1)^2(x + 3) > 0$.", "back": "A squared factor does not change sign: $x > -3$, $x \\ne 1$.", "concept": "Polynomial inequalities", "kind": "concept" },
+  { "id": "rat-ineq-example", "front": "(HL) Solve $\\dfrac{x + 1}{x - 2} \\le 0$.", "back": "Critical values $-1$, $2$: $-1 \\le x < 2$ ($x = 2$ excluded — denominator zero).", "concept": "Rational inequalities", "kind": "application" },
+  { "id": "rat-ineq-one-side", "front": "(HL) Solve $\\dfrac1{x - 1} > 2$.", "back": "$\\dfrac{1 - 2(x - 1)}{x - 1} > 0 \\Rightarrow \\dfrac{3 - 2x}{x - 1} > 0$, so $1 < x < \\frac32$.", "concept": "Rational inequalities", "kind": "method" },
+  { "id": "multiply-square", "front": "(HL) Safe way to clear a denominator $g(x)$ in an inequality?", "back": "Multiply both sides by $[g(x)]^2$, which is positive (for $g(x) \\ne 0$), so the sign is kept.", "concept": "Rational inequalities", "kind": "method" },
+  { "id": "denominator-excluded", "front": "(HL) Can a zero of the denominator be in the solution of a $\\le$ or $\\ge$ inequality?", "back": "Never — the expression is undefined there, so use an open endpoint.", "concept": "Rational inequalities", "kind": "condition" },
+  { "id": "graph-ineq", "front": "(HL) Solve $f(x) > g(x)$ graphically.", "back": "Find the intersections on a GDC; the solution is the set of $x$ where the graph of $f$ lies above the graph of $g$.", "concept": "Graphically", "kind": "method" }
 ]

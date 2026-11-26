@@ -1,4 +1,12 @@
 [
-  { "id": "features-meaning-card", "front": "Meaning of a horizontal asymptote in a model?", "back": "The long-term (limiting) value.", "concept": "Interpreting features" },
-  { "id": "gdc-accuracy-card", "front": "Accuracy of GDC answers?", "back": "Exact if possible, otherwise 3 significant figures.", "concept": "Maxima and minima" }
+  { "id": "features-meaning-card", "front": "Meaning of a horizontal asymptote in a model?", "back": "The long-term (limiting) value.", "concept": "Interpreting features", "kind": "application" },
+  { "id": "gdc-accuracy-card", "front": "Accuracy of GDC answers?", "back": "Exact if possible, otherwise 3 significant figures.", "concept": "Maxima and minima", "kind": "concept" },
+  { "id": "local-max-def", "front": "Local maximum?", "back": "A point higher than all nearby points on the graph — a turning point where the graph changes from increasing to decreasing.", "concept": "Maxima and minima", "kind": "definition" },
+  { "id": "local-vs-global", "front": "Local maximum vs greatest value on a domain?", "back": "A local max is only highest nearby; the greatest value on a domain may be at an endpoint or a different local max — compare them all.", "concept": "Maxima and minima", "kind": "distinction" },
+  { "id": "viewing-window", "front": "The GDC graph shows no turning point. Does that prove there isn't one?", "back": "No — it may lie outside the viewing window. Adjust the window (or use the table) to check.", "concept": "Viewing window", "kind": "misconception" },
+  { "id": "context-y-int", "front": "In a model $h(t)$, what does the $y$-intercept represent?", "back": "The initial value, at $t = 0$ (e.g. the starting height).", "concept": "Interpreting features", "kind": "application" },
+  { "id": "context-max", "front": "In a model $h(t)$ for the height of a ball, what do the maximum and the positive zero mean?", "back": "Maximum: the greatest height and when it occurs. Positive zero: when the ball hits the ground.", "concept": "Interpreting features", "kind": "application" },
+  { "id": "context-domain", "front": "What restrictions should you check on answers from a model?", "back": "The model's domain — e.g. $t \\ge 0$, quantities $\\ge 0$, whole numbers of items — and reject GDC solutions outside it.", "concept": "Interpreting features", "kind": "condition" },
+  { "id": "context-intersection", "front": "Meaning of the intersection of cost $C(x)$ and revenue $R(x)$ graphs?", "back": "The break-even point: there $C(x) = R(x)$, so profit is zero.", "concept": "Interpreting features", "kind": "application" },
+  { "id": "premature-rounding", "front": "Why should you not round intermediate GDC values?", "back": "Rounding errors propagate; store full values and round only the final answer (3 s.f.).", "concept": "Maxima and minima", "kind": "misconception" }
 ]

@@ -1,5 +1,15 @@
 [
-  { "id": "abs-f-card", "front": "(HL) $|f(x)|$ vs $f(|x|)$?", "back": "$|f(x)|$: reflect negative parts up. $f(|x|)$: reflect the $x \\ge 0$ part in the y-axis.", "concept": "Modulus graphs" },
-  { "id": "recip-f-card", "front": "(HL) Sketching $1/f(x)$?", "back": "Zeros of $f$ → vertical asymptotes; max ↔ min; points at $y = \\pm1$ unchanged.", "concept": "Reciprocal graphs" },
-  { "id": "abs-eq-card", "front": "(HL) Solving $|A| = B$?", "back": "$A = B$ or $A = -B$; check each solution.", "concept": "Modulus equations" }
+  { "id": "abs-f-card", "front": "(HL) $|f(x)|$ vs $f(|x|)$?", "back": "$|f(x)|$: reflect negative parts up. $f(|x|)$: reflect the $x \\ge 0$ part in the y-axis.", "concept": "Modulus graphs", "kind": "distinction" },
+  { "id": "recip-f-card", "front": "(HL) Sketching $1/f(x)$?", "back": "Zeros of $f$ → vertical asymptotes; max ↔ min; points at $y = \\pm1$ unchanged.", "concept": "Reciprocal graphs", "kind": "graph" },
+  { "id": "abs-eq-card", "front": "(HL) Solving $|A| = B$?", "back": "$A = B$ or $A = -B$; check each solution.", "concept": "Modulus equations", "kind": "method" },
+  { "id": "modulus-def", "front": "(HL) Definition of $|x|$?", "back": "$|x| = x$ if $x \\ge 0$ and $-x$ if $x < 0$ — the distance of $x$ from 0. Note $\\sqrt{x^2} = |x|$.", "concept": "Modulus graphs", "kind": "definition" },
+  { "id": "abs-f-features", "front": "(HL) Features of $y = |f(x)|$?", "back": "Never below the $x$-axis; parts where $f < 0$ are reflected up; sharp corners where $f$ crosses the axis.", "concept": "Modulus graphs", "kind": "graph" },
+  { "id": "f-abs-features", "front": "(HL) Features of $y = f(|x|)$?", "back": "An even function: keep the part for $x \\ge 0$ and reflect it in the $y$-axis (the left half of $f$ is discarded).", "concept": "Modulus graphs", "kind": "graph" },
+  { "id": "recip-sign", "front": "(HL) More features of $y = \\dfrac1{f(x)}$?", "back": "Same sign as $f$; large $|f|$ gives values near 0 (often a horizontal asymptote $y = 0$); a max of $f$ becomes a min of $\\frac1f$ at the same $x$.", "concept": "Reciprocal graphs", "kind": "graph" },
+  { "id": "square-f", "front": "(HL) Features of $y = [f(x)]^2$?", "back": "Never negative; zeros of $f$ become touching points; points with $f = \\pm1$ map to $y = 1$; $|f| < 1$ shrinks, $|f| > 1$ grows.", "concept": "Modulus graphs", "kind": "graph" },
+  { "id": "f-ax-b", "front": "(HL) How is $y = f(ax + b)$ obtained from $y = f(x)$?", "back": "$f\\left(a\\left(x + \\frac ba\\right)\\right)$: horizontal stretch factor $\\frac1a$, then translation $\\frac ba$ left.", "concept": "Modulus graphs", "kind": "graph" },
+  { "id": "abs-eq-example", "front": "(HL) Solve $|2x - 1| = x + 4$.", "back": "$2x - 1 = x + 4 \\Rightarrow x = 5$; $2x - 1 = -(x + 4) \\Rightarrow x = -1$. Both check (RHS $\\ge 0$).", "concept": "Modulus equations", "kind": "application" },
+  { "id": "abs-both-sides", "front": "(HL) Solve $|x - 1| = |2x + 1|$.", "back": "$x - 1 = \\pm(2x + 1)$ (or square both sides): $x = -2$ or $x = 0$.", "concept": "Modulus equations", "kind": "method" },
+  { "id": "abs-ineq", "front": "(HL) Solve $|x - 3| < 2$ and $|x - 3| > 2$.", "back": "$|x - a| < b \\iff a - b < x < a + b$: $1 < x < 5$. $|x - a| > b$: $x < 1$ or $x > 5$.", "concept": "Modulus inequalities", "kind": "formula" },
+  { "id": "abs-check", "front": "(HL) Why must you check solutions of $|A| = B$?", "back": "Splitting into $A = \\pm B$ (or squaring) can produce values with $B < 0$, which cannot equal a modulus.", "concept": "Modulus equations", "kind": "misconception" }
 ]

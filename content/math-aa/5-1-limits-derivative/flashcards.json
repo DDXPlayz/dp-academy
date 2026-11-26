@@ -1,4 +1,12 @@
 [
-  { "id": "deriv-meaning-card", "front": "Two meanings of the derivative?", "back": "Gradient of the tangent; instantaneous rate of change.", "concept": "Derivative" },
-  { "id": "secant-card", "front": "How do chords relate to the derivative?", "back": "As h → 0, chord gradients approach the tangent gradient f′(x).", "concept": "Gradient" }
+  { "id": "deriv-meaning-card", "front": "Two meanings of the derivative?", "back": "Gradient of the tangent; instantaneous rate of change.", "concept": "Derivative", "kind": "concept" },
+  { "id": "secant-card", "front": "How do chords relate to the derivative?", "back": "As h → 0, chord gradients approach the tangent gradient f′(x).", "concept": "Gradient", "kind": "concept" },
+  { "id": "limit-def", "front": "Limit of $f(x)$ as $x \\to a$ (informally)?", "back": "The value $f(x)$ approaches as $x$ gets arbitrarily close to $a$ — it need not equal $f(a)$, or $f(a)$ may not exist.", "concept": "Limits", "kind": "definition" },
+  { "id": "limit-example", "front": "Find $\\displaystyle\\lim_{x\\to2}\\frac{x^2 - 4}{x - 2}$.", "back": "For $x \\ne 2$ it equals $x + 2$, so the limit is 4 (even though the expression is undefined at $x = 2$).", "concept": "Limits", "kind": "application" },
+  { "id": "limit-infinity", "front": "What is $\\displaystyle\\lim_{x\\to\\infty}\\frac1x$?", "back": "0 — the values get as close to 0 as we like; this is why $y = 0$ is an asymptote of $y = \\frac1x$.", "concept": "Limits", "kind": "concept" },
+  { "id": "average-vs-instant", "front": "Average vs instantaneous rate of change?", "back": "Average: gradient of a chord (secant), $\\dfrac{f(b) - f(a)}{b - a}$. Instantaneous: gradient of the tangent, $f'(x)$.", "concept": "Rates of change", "kind": "distinction" },
+  { "id": "secant-formula", "front": "Gradient of the chord from $x$ to $x + h$?", "back": "$\\dfrac{f(x + h) - f(x)}h$; its limit as $h \\to 0$ is $f'(x)$.", "concept": "Gradient", "kind": "formula" },
+  { "id": "secant-numeric", "front": "Estimate the gradient of $y = x^2$ at $x = 3$ using $h = 0.1$.", "back": "$\\dfrac{3.1^2 - 9}{0.1} = 6.1$; smaller $h$ gives values approaching 6, the true gradient.", "concept": "Gradient", "kind": "application" },
+  { "id": "deriv-notation", "front": "Notations for the derivative?", "back": "$f'(x)$ and $\\dfrac{dy}{dx}$ — the gradient function; $f'(a)$ is the gradient at $x = a$.", "concept": "Derivative", "kind": "definition" },
+  { "id": "deriv-units", "front": "Units of $\\dfrac{dy}{dx}$?", "back": "Units of $y$ per unit of $x$ — e.g. displacement (m) against time (s) gives m s$^{-1}$.", "concept": "Rates of change", "kind": "concept" }
 ]

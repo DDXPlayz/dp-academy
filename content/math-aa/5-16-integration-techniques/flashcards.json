@@ -1,5 +1,15 @@
 [
-  { "id": "parts-card", "front": "(HL) Integration by parts formula?", "back": "$\\int uv'\\,dx = uv - \\int vu'\\,dx$", "concept": "Integration by parts" },
-  { "id": "liate-card", "front": "(HL) Choosing u in parts?", "back": "LIATE: Logs, Inverse trig, Algebraic, Trig, Exponential.", "concept": "Integration by parts" },
-  { "id": "sub-card", "front": "(HL) Substitution with definite integrals?", "back": "Change the limits to u-values (or back-substitute before evaluating).", "concept": "Substitution" }
+  { "id": "parts-card", "front": "(HL) Integration by parts formula?", "back": "$\\int uv'\\,dx = uv - \\int vu'\\,dx$", "concept": "Integration by parts", "kind": "formula" },
+  { "id": "liate-card", "front": "(HL) Choosing u in parts?", "back": "LIATE: Logs, Inverse trig, Algebraic, Trig, Exponential.", "concept": "Integration by parts", "kind": "method" },
+  { "id": "sub-card", "front": "(HL) Substitution with definite integrals?", "back": "Change the limits to u-values (or back-substitute before evaluating).", "concept": "Substitution", "kind": "method" },
+  { "id": "sub-method", "front": "(HL) Steps for integration by substitution?", "back": "Choose $u$ (usually an inner function whose derivative appears), find $du = u'\\,dx$, rewrite the whole integral in $u$, integrate, substitute back.", "concept": "Substitution", "kind": "method" },
+  { "id": "sub-example", "front": "(HL) Find $\\int x\\sqrt{x^2 + 1}\\,dx$.", "back": "$u = x^2 + 1$, $du = 2x\\,dx$: $\\frac12\\int u^{1/2}\\,du = \\frac13(x^2 + 1)^{3/2} + C$.", "concept": "Substitution", "kind": "application" },
+  { "id": "sub-definite", "front": "(HL) Evaluate $\\int_0^1 2x(x^2 + 1)^3\\,dx$ by substitution.", "back": "$u = x^2 + 1$: limits $1$ to $2$. $\\int_1^2u^3\\,du = \\frac{16 - 1}4 = \\frac{15}4$.", "concept": "Substitution", "kind": "application" },
+  { "id": "sub-trig", "front": "(HL) Find $\\int\\sin^3x\\cos x\\,dx$.", "back": "$u = \\sin x$: $\\int u^3\\,du = \\frac14\\sin^4x + C$.", "concept": "Substitution", "kind": "application" },
+  { "id": "parts-xex", "front": "(HL) Find $\\int xe^x\\,dx$.", "back": "$u = x$, $v' = e^x$: $xe^x - \\int e^x\\,dx = xe^x - e^x + C$.", "concept": "Integration by parts", "kind": "application" },
+  { "id": "parts-xcos", "front": "(HL) Find $\\int x\\cos x\\,dx$.", "back": "$u = x$, $v' = \\cos x$: $x\\sin x - \\int\\sin x\\,dx = x\\sin x + \\cos x + C$.", "concept": "Integration by parts", "kind": "application" },
+  { "id": "parts-lnx", "front": "(HL) Find $\\int\\ln x\\,dx$.", "back": "Write as $\\int1\\cdot\\ln x\\,dx$ with $u = \\ln x$, $v' = 1$: $x\\ln x - \\int1\\,dx = x\\ln x - x + C$.", "concept": "Integration by parts", "kind": "application" },
+  { "id": "parts-repeated", "front": "(HL) Find $\\int x^2e^x\\,dx$.", "back": "Parts twice (with $u = x^2$, then $u = x$): $e^x(x^2 - 2x + 2) + C$.", "concept": "Repeated and cyclic parts", "kind": "application" },
+  { "id": "parts-cyclic", "front": "(HL) Find $\\int e^x\\sin x\\,dx$.", "back": "Parts twice returns the original integral $I$: $I = e^x\\sin x - e^x\\cos x - I$, so $I = \\frac12e^x(\\sin x - \\cos x) + C$.", "concept": "Repeated and cyclic parts", "kind": "method" },
+  { "id": "parts-u-mistake", "front": "(HL) For $\\int xe^x\\,dx$, take $u = e^x$?", "back": "No — then $\\int v\\,u'\\,dx$ becomes $\\int\\frac{x^2}2e^x\\,dx$, which is harder. Let the polynomial be $u$ so it differentiates away.", "concept": "Integration by parts", "kind": "misconception" }
 ]

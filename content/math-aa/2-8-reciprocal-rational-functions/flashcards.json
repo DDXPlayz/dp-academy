@@ -1,4 +1,13 @@
 [
-  { "id": "rat-asym-card", "front": "Asymptotes of $\\dfrac{ax + b}{cx + d}$?", "back": "Vertical $x = -d/c$; horizontal $y = a/c$.", "concept": "Vertical asymptote" },
-  { "id": "recip-card", "front": "Key facts about $y = 1/x$?", "back": "Asymptotes $x = 0$, $y = 0$; quadrants 1 and 3; self-inverse.", "concept": "Self-inverse" }
+  { "id": "rat-asym-card", "front": "Asymptotes of $\\dfrac{ax + b}{cx + d}$?", "back": "Vertical $x = -d/c$; horizontal $y = a/c$.", "concept": "Vertical asymptote", "kind": "formula" },
+  { "id": "recip-card", "front": "Key facts about $y = 1/x$?", "back": "Asymptotes $x = 0$, $y = 0$; quadrants 1 and 3; self-inverse.", "concept": "Self-inverse", "kind": "graph" },
+  { "id": "va-def", "front": "Vertical vs horizontal asymptote?", "back": "Vertical $x = k$: $|f(x)| \\to \\infty$ as $x \\to k$. Horizontal $y = k$: $f(x) \\to k$ as $x \\to \\pm\\infty$.", "concept": "Vertical asymptote", "kind": "definition" },
+  { "id": "ha-why", "front": "Why is $y = \\frac ac$ the horizontal asymptote of $\\dfrac{ax + b}{cx + d}$?", "back": "Divide top and bottom by $x$: $\\dfrac{a + b/x}{c + d/x} \\to \\dfrac ac$ as $x \\to \\pm\\infty$.", "concept": "Horizontal asymptote", "kind": "derivation" },
+  { "id": "va-mistake", "front": "For $\\dfrac{x - 2}{x + 5}$, is $x = 2$ a vertical asymptote?", "back": "No — the numerator's zero gives the $x$-intercept $(2, 0)$. The vertical asymptote is where the denominator is zero: $x = -5$.", "concept": "Vertical asymptote", "kind": "misconception" },
+  { "id": "rat-example", "front": "Key features of $f(x) = \\dfrac{2x - 1}{x + 3}$?", "back": "VA $x = -3$, HA $y = 2$, $x$-intercept $\\left(\\frac12, 0\\right)$, $y$-intercept $\\left(0, -\\frac13\\right)$.", "concept": "Rational functions", "kind": "application" },
+  { "id": "rat-domain-range", "front": "Domain and range of $\\dfrac{ax + b}{cx + d}$ ($c \\ne 0$, $ad \\ne bc$)?", "back": "Domain $x \\ne -\\dfrac dc$; range $y \\ne \\dfrac ac$.", "concept": "Rational functions", "kind": "concept" },
+  { "id": "rat-inverse", "front": "Inverse of $f(x) = \\dfrac{ax + b}{cx + d}$?", "back": "$f^{-1}(x) = \\dfrac{-dx + b}{cx - a}$. So $f$ is self-inverse when $d = -a$.", "concept": "Self-inverse", "kind": "formula" },
+  { "id": "recip-translate", "front": "Asymptotes of $y = \\dfrac k{x - h} + v$?", "back": "$x = h$ and $y = v$ — the graph of $\\frac kx$ translated by $\\binom hv$.", "concept": "Rational functions", "kind": "graph" },
+  { "id": "recip-k-sign", "front": "Where are the branches of $y = \\dfrac kx$?", "back": "$k > 0$: 1st and 3rd quadrants. $k < 0$: 2nd and 4th quadrants.", "concept": "Self-inverse", "kind": "graph" },
+  { "id": "rat-sketch-method", "front": "Steps to sketch $y = \\dfrac{ax + b}{cx + d}$?", "back": "Draw both asymptotes (dashed), mark the intercepts, then draw the two branches approaching the asymptotes in the correct regions.", "concept": "Rational functions", "kind": "method" }
 ]

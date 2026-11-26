@@ -1,4 +1,13 @@
 [
-  { "id": "lh-card", "front": "(HL) L’Hôpital’s rule?", "back": "For 0/0 or ∞/∞: $\\lim\\frac fg = \\lim\\frac{f'}{g'}$ — differentiate top and bottom separately.", "concept": "L’Hôpital’s rule" },
-  { "id": "lh-std-card", "front": "(HL) $\\lim_{x\\to0}\\frac{\\sin x}{x}$?", "back": "1", "concept": "L’Hôpital’s rule" }
+  { "id": "lh-card", "front": "(HL) L’Hôpital’s rule?", "back": "For 0/0 or ∞/∞: $\\lim\\frac fg = \\lim\\frac{f'}{g'}$ — differentiate top and bottom separately.", "concept": "L’Hôpital’s rule", "kind": "formula" },
+  { "id": "lh-std-card", "front": "(HL) $\\lim_{x\\to0}\\frac{\\sin x}{x}$?", "back": "1", "concept": "L’Hôpital’s rule", "kind": "formula" },
+  { "id": "indeterminate-def", "front": "(HL) Indeterminate form?", "back": "A limit like $\\frac00$ or $\\frac\\infty\\infty$ whose value cannot be found by direct substitution.", "concept": "L’Hôpital’s rule", "kind": "definition" },
+  { "id": "lh-exp-example", "front": "(HL) $\\displaystyle\\lim_{x\\to0}\\frac{e^x - 1}x$?", "back": "$\\frac00$: differentiate top and bottom: $\\lim\\frac{e^x}1 = 1$.", "concept": "L’Hôpital’s rule", "kind": "application" },
+  { "id": "lh-twice", "front": "(HL) $\\displaystyle\\lim_{x\\to0}\\frac{1 - \\cos x}{x^2}$?", "back": "$\\frac00 \\to \\lim\\frac{\\sin x}{2x}$, still $\\frac00 \\to \\lim\\frac{\\cos x}2 = \\frac12$.", "concept": "L’Hôpital’s rule", "kind": "application" },
+  { "id": "lh-infinity", "front": "(HL) $\\displaystyle\\lim_{x\\to\\infty}\\frac{\\ln x}x$ and $\\displaystyle\\lim_{x\\to\\infty}\\frac{x^2}{e^x}$?", "back": "$\\frac\\infty\\infty$: $\\lim\\frac{1/x}1 = 0$. Twice: $\\lim\\frac{2}{e^x} = 0$. Exponentials beat powers beat logs.", "concept": "L’Hôpital’s rule", "kind": "application" },
+  { "id": "lh-sin3x", "front": "(HL) $\\displaystyle\\lim_{x\\to0}\\frac{\\sin3x}x$?", "back": "$\\lim\\frac{3\\cos3x}1 = 3$.", "concept": "L’Hôpital’s rule", "kind": "application" },
+  { "id": "lh-quotient-mistake", "front": "(HL) Apply the quotient rule in l'Hôpital?", "back": "No — differentiate the numerator and the denominator **separately**.", "concept": "L’Hôpital’s rule", "kind": "misconception" },
+  { "id": "lh-not-indeterminate", "front": "(HL) Using l'Hôpital on $\\displaystyle\\lim_{x\\to0}\\frac{x + 1}{x + 2}$?", "back": "Wrong — it is not indeterminate; substitution gives $\\frac12$ (l'Hôpital would wrongly give 1). Always check the form first.", "concept": "L’Hôpital’s rule", "kind": "misconception" },
+  { "id": "lh-series", "front": "(HL) Alternative to l'Hôpital for limits at 0?", "back": "Use Maclaurin series: $\\frac{\\sin x}x = 1 - \\frac{x^2}6 + \\ldots \\to 1$.", "concept": "L’Hôpital’s rule", "kind": "method" },
+  { "id": "lh-rewrite", "front": "(HL) $\\displaystyle\\lim_{x\\to0^+}x\\ln x$ (form $0\\times\\infty$)?", "back": "Rewrite as $\\frac{\\ln x}{1/x}$ ($\\frac\\infty\\infty$): $\\lim\\frac{1/x}{-1/x^2} = \\lim(-x) = 0$.", "concept": "L’Hôpital’s rule", "kind": "method" }
 ]

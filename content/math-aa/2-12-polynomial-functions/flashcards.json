@@ -1,5 +1,16 @@
 [
-  { "id": "factor-thm-card", "front": "(HL) Factor and remainder theorems?", "back": "Remainder of $P(x) \\div (x - a)$ is $P(a)$; $P(a) = 0 \\iff (x - a)$ is a factor.", "concept": "Factor theorem" },
-  { "id": "roots-sum-card", "front": "(HL) Sum and product of roots of a polynomial?", "back": "Sum $= -a_{n-1}/a_n$; product $= (-1)^na_0/a_n$.", "concept": "Sum and product of roots" },
-  { "id": "multiplicity-card", "front": "(HL) Graph at single, double, triple roots?", "back": "Crosses; touches; crosses with a flat inflection.", "concept": "Graphs" }
+  { "id": "factor-thm-card", "front": "(HL) Factor and remainder theorems?", "back": "Remainder of $P(x) \\div (x - a)$ is $P(a)$; $P(a) = 0 \\iff (x - a)$ is a factor.", "concept": "Factor theorem", "kind": "formula" },
+  { "id": "roots-sum-card", "front": "(HL) Sum and product of roots of a polynomial?", "back": "Sum $= -a_{n-1}/a_n$; product $= (-1)^na_0/a_n$.", "concept": "Sum and product of roots", "kind": "formula" },
+  { "id": "multiplicity-card", "front": "(HL) Graph at single, double, triple roots?", "back": "Crosses; touches; crosses with a flat inflection.", "concept": "Graphs", "kind": "graph" },
+  { "id": "remainder-example", "front": "(HL) Remainder when $x^3 - 2x + 5$ is divided by $x - 2$?", "back": "$P(2) = 8 - 4 + 5 = 9$.", "concept": "Factor theorem", "kind": "application" },
+  { "id": "factor-linear-ax", "front": "(HL) Factor/remainder theorem for a divisor $ax - b$?", "back": "Remainder $= P\\left(\\dfrac ba\\right)$; $(ax - b)$ is a factor iff $P\\left(\\dfrac ba\\right) = 0$. E.g. for $2x - 1$ test $P\\left(\\frac12\\right)$.", "concept": "Factor theorem", "kind": "formula" },
+  { "id": "factor-find-k", "front": "(HL) $(x + 1)$ is a factor of $x^3 + kx^2 - 4$. Find $k$.", "back": "$P(-1) = -1 + k - 4 = 0 \\Rightarrow k = 5$.", "concept": "Factor theorem", "kind": "method" },
+  { "id": "division-identity", "front": "(HL) Division identity for $P(x) \\div (x - a)$?", "back": "$P(x) \\equiv (x - a)Q(x) + R$, where $Q$ has degree one less than $P$ and $R = P(a)$ is a constant.", "concept": "Polynomial division", "kind": "formula" },
+  { "id": "fundamental-thm", "front": "(HL) How many roots does a degree-$n$ polynomial have?", "back": "Exactly $n$ in $\\mathbb C$ (counting multiplicity). With real coefficients, non-real roots come in conjugate pairs, so odd degree means at least one real root.", "concept": "How many roots?", "kind": "concept" },
+  { "id": "end-behaviour", "front": "(HL) What determines the end behaviour of a polynomial graph?", "back": "The leading term $a_nx^n$: even $n$ — both ends the same way (up if $a_n > 0$); odd $n$ — opposite ends (rising to the right if $a_n > 0$).", "concept": "Shapes and roots", "kind": "graph" },
+  { "id": "turning-points-max", "front": "(HL) Maximum number of turning points of a degree-$n$ polynomial?", "back": "$n - 1$.", "concept": "Shapes and roots", "kind": "concept" },
+  { "id": "multiplicity-example", "front": "(HL) Sketch features of $y = (x - 1)^2(x + 2)$.", "back": "Positive cubic; crosses at $x = -2$, touches (turning point) at $x = 1$; $y$-intercept 2.", "concept": "Graphs", "kind": "application" },
+  { "id": "roots-cubic-example", "front": "(HL) Sum and product of the roots of $2x^3 - 3x^2 + 4x - 5 = 0$?", "back": "Sum $= -\\dfrac{-3}2 = \\dfrac32$. Product $= \\dfrac{(-1)^3(-5)}2 = \\dfrac52$.", "concept": "Sum and product of roots", "kind": "application" },
+  { "id": "product-sign-mistake", "front": "(HL) Product of roots of a cubic $ax^3 + bx^2 + cx + d = 0$: $\\frac da$?", "back": "No — it is $-\\dfrac da$; the factor $(-1)^n$ makes it negative for odd degree.", "concept": "Sum and product of roots", "kind": "misconception" },
+  { "id": "poly-from-roots", "front": "(HL) Cubic with roots $1, 2, -3$ and leading coefficient 2?", "back": "$P(x) = 2(x - 1)(x - 2)(x + 3)$.", "concept": "Shapes and roots", "kind": "application" }
 ]

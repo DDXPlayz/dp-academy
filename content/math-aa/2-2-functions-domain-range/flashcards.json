@@ -1,6 +1,15 @@
 [
-  { "id": "func-card", "front": "Function?", "back": "Each input in the domain has exactly one output.", "concept": "Function" },
-  { "id": "dom-range-card", "front": "Domain vs range?", "back": "Domain: allowed inputs. Range: resulting outputs.", "concept": "Domain" },
-  { "id": "restrict-card", "front": "Natural domain restrictions?", "back": "No zero denominators, no negative square roots, log arguments > 0.", "concept": "Domain" },
-  { "id": "inv-graph-card", "front": "Graph of $f^{-1}$?", "back": "Reflection of $y = f(x)$ in $y = x$; domain and range swap.", "concept": "Inverse functions" }
+  { "id": "func-card", "front": "Function?", "back": "Each input in the domain has exactly one output.", "concept": "Function", "kind": "definition" },
+  { "id": "dom-range-card", "front": "Domain vs range?", "back": "Domain: allowed inputs. Range: resulting outputs.", "concept": "Domain", "kind": "distinction" },
+  { "id": "restrict-card", "front": "Natural domain restrictions?", "back": "No zero denominators, no negative square roots, log arguments > 0.", "concept": "Domain", "kind": "condition" },
+  { "id": "inv-graph-card", "front": "Graph of $f^{-1}$?", "back": "Reflection of $y = f(x)$ in $y = x$; domain and range swap.", "concept": "Inverse functions", "kind": "graph" },
+  { "id": "vertical-line-test", "front": "How can you tell from a graph whether it is a function?", "back": "Vertical line test: every vertical line meets the graph at most once.", "concept": "Function", "kind": "graph" },
+  { "id": "func-notation", "front": "What do $f(x) = x^2$ and $f: x \\mapsto x^2$ mean, and what is $f(3)$?", "back": "Both define the same rule (input $x$, output $x^2$). $f(3) = 9$ is the output for input 3.", "concept": "Function", "kind": "definition" },
+  { "id": "interval-notation", "front": "Meaning of $x \\in [2, 5)$?", "back": "$2 \\le x < 5$: square bracket includes the endpoint, round bracket excludes it.", "concept": "Domain", "kind": "definition" },
+  { "id": "domain-sqrt-example", "front": "Domain and range of $f(x) = \\sqrt{x - 3}$?", "back": "Domain $x \\ge 3$; range $f(x) \\ge 0$.", "concept": "Domain", "kind": "application" },
+  { "id": "domain-recip-example", "front": "Domain and range of $g(x) = \\dfrac1{x + 2}$?", "back": "Domain $x \\ne -2$; range $g(x) \\ne 0$.", "concept": "Domain", "kind": "application" },
+  { "id": "domain-ln-example", "front": "Domain and range of $h(x) = \\ln(5 - x)$?", "back": "Need $5 - x > 0$: domain $x < 5$; range $h(x) \\in \\mathbb R$.", "concept": "Domain", "kind": "application" },
+  { "id": "range-quadratic-example", "front": "Range of $f(x) = x^2 + 1$, $x \\in \\mathbb R$? And for $-1 \\le x \\le 2$?", "back": "$f(x) \\ge 1$. On $[-1, 2]$: $1 \\le f(x) \\le 5$ (minimum at the vertex, maximum at the far endpoint).", "concept": "Range", "kind": "application" },
+  { "id": "one-to-one", "front": "One-to-one vs many-to-one function?", "back": "One-to-one: each output comes from exactly one input (passes the horizontal line test). Many-to-one: some output has several inputs (e.g. $x^2$ on $\\mathbb R$). Only one-to-one functions have inverses.", "concept": "Inverse functions", "kind": "distinction" },
+  { "id": "inv-undo", "front": "What is $f^{-1}(f(x))$?", "back": "$x$, for every $x$ in the domain of $f$ — the inverse undoes $f$. Also $f(f^{-1}(x)) = x$ for $x$ in the domain of $f^{-1}$.", "concept": "Inverse functions", "kind": "formula" }
 ]

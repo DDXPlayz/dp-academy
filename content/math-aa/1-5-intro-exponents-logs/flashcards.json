@@ -1,5 +1,15 @@
 [
-  { "id": "log-def-card", "front": "Definition of a logarithm?", "back": "$a^x = b \\iff \\log_a b = x$ ($a > 0$, $a \\ne 1$, $b > 0$).", "concept": "Logarithms" },
-  { "id": "log-special-card", "front": "$\\log_a 1$ and $\\log_a a$?", "back": "0 and 1.", "concept": "Logarithms" },
-  { "id": "neg-exp-card", "front": "$a^{-n}$ and $a^0$?", "back": "$a^{-n} = 1/a^n$; $a^0 = 1$.", "concept": "Laws of exponents" }
+  { "id": "log-def-card", "front": "Definition of a logarithm?", "back": "$a^x = b \\iff \\log_a b = x$ ($a > 0$, $a \\ne 1$, $b > 0$).", "concept": "Logarithms", "kind": "definition" },
+  { "id": "log-special-card", "front": "$\\log_a 1$ and $\\log_a a$?", "back": "0 and 1.", "concept": "Logarithms", "kind": "formula" },
+  { "id": "neg-exp-card", "front": "$a^{-n}$ and $a^0$?", "back": "$a^{-n} = 1/a^n$; $a^0 = 1$.", "concept": "Laws of exponents", "kind": "formula" },
+  { "id": "ln-def", "front": "What do $\\ln x$ and $\\log x$ (no base) mean?", "back": "$\\ln x = \\log_e x$ with $e \\approx 2.71828$; $\\log x = \\log_{10} x$ (common logarithm).", "concept": "Logarithms", "kind": "definition" },
+  { "id": "log-inverse", "front": "Simplify $a^{\\log_a x}$ and $\\log_a a^x$.", "back": "$a^{\\log_a x} = x$ (for $x > 0$) and $\\log_a a^x = x$ — exponentials and logs undo each other.", "concept": "Logarithms", "kind": "formula" },
+  { "id": "log-eval-examples", "front": "Evaluate $\\log_2 32$, $\\log_3\\frac19$, $\\log_4 2$ without a calculator.", "back": "$5$ (as $2^5 = 32$), $-2$ (as $3^{-2} = \\frac19$), $\\frac12$ (as $4^{1/2} = 2$).", "concept": "Logarithms", "kind": "application" },
+  { "id": "log-domain", "front": "What is $\\log_a 0$ or $\\log_a(-4)$?", "back": "Undefined: $a^x > 0$ for all real $x$, so $\\log_a b$ needs $b > 0$.", "concept": "Logarithms", "kind": "misconception" },
+  { "id": "log-sign", "front": "For base $a > 1$, when is $\\log_a x$ negative?", "back": "When $0 < x < 1$ (e.g. $\\log_{10} 0.01 = -2$). It is 0 at $x = 1$ and positive for $x > 1$.", "concept": "Logarithms", "kind": "concept" },
+  { "id": "exp-laws-int", "front": "Laws of exponents (same base / same power)?", "back": "$a^ma^n = a^{m+n}$, $\\dfrac{a^m}{a^n} = a^{m-n}$, $(a^m)^n = a^{mn}$, $(ab)^n = a^nb^n$.", "concept": "Laws of exponents", "kind": "formula" },
+  { "id": "exp-neg-example", "front": "Evaluate $2^{-3}$ and $\\left(\\frac23\\right)^{-2}$.", "back": "$\\frac18$ and $\\frac94$ (a negative power flips the fraction).", "concept": "Laws of exponents", "kind": "application" },
+  { "id": "exp-sum-mistake", "front": "Is $2^3 + 2^4 = 2^7$?", "back": "No — exponent laws apply to products, not sums. $2^3 + 2^4 = 8 + 16 = 24 = 3\\times2^3$.", "concept": "Laws of exponents", "kind": "misconception" },
+  { "id": "exp-minus-sign", "front": "$(-2)^4$ vs $-2^4$?", "back": "$(-2)^4 = 16$; $-2^4 = -(2^4) = -16$. The power binds before the minus sign.", "concept": "Laws of exponents", "kind": "distinction" },
+  { "id": "log-solve-basic", "front": "Solve $2^x = 10$.", "back": "$x = \\log_2 10 = \\dfrac{\\ln 10}{\\ln 2} \\approx 3.32$.", "concept": "Logarithms", "kind": "application" }
 ]

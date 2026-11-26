@@ -1,4 +1,12 @@
 [
-  { "id": "xony-card", "front": "When do you use the x-on-y regression line?", "back": "To predict x from a given y.", "concept": "Choosing a line" },
-  { "id": "both-mean-card", "front": "What point do both regression lines pass through?", "back": "The mean point $(\\bar x, \\bar y)$.", "concept": "Two lines" }
+  { "id": "xony-card", "front": "When do you use the x-on-y regression line?", "back": "To predict x from a given y.", "concept": "Choosing a line", "kind": "distinction" },
+  { "id": "both-mean-card", "front": "What point do both regression lines pass through?", "back": "The mean point $(\\bar x, \\bar y)$.", "concept": "Two lines", "kind": "concept" },
+  { "id": "xony-def", "front": "Regression line of $x$ on $y$?", "back": "$x = cy + d$, the line minimising the sum of squared **horizontal** distances — used to predict $x$ from $y$.", "concept": "Two lines", "kind": "definition" },
+  { "id": "xony-gdc", "front": "How do you find the $x$-on-$y$ line on a GDC?", "back": "Run linear regression with the lists swapped: $y$-data as the independent list and $x$-data as the dependent list.", "concept": "Two lines", "kind": "method" },
+  { "id": "rearrange-mistake", "front": "Predicting $x$ by rearranging $y = ax + b$?", "back": "Gives a different (wrong) answer unless $r = \\pm1$. Use $x = cy + d$.", "concept": "Choosing a line", "kind": "misconception" },
+  { "id": "lines-coincide", "front": "When do the two regression lines coincide?", "back": "Only when $|r| = 1$ (perfect linear correlation). Otherwise they cross at $(\\bar x, \\bar y)$.", "concept": "Two lines", "kind": "condition" },
+  { "id": "mean-from-lines", "front": "Lines $y = 0.5x + 2$ ($y$ on $x$) and $x = 1.6y - 2$ ($x$ on $y$). Find $\\bar x$, $\\bar y$.", "back": "Solve simultaneously: $x = 0.8x + 1.2 \\Rightarrow \\bar x = 6$, $\\bar y = 5$.", "concept": "Two lines", "kind": "method" },
+  { "id": "choose-line", "front": "Which line predicts the arm span from a height of 170 cm?", "back": "Arm span is the variable to predict and height is given, so use arm span on height (predicted variable on given variable).", "concept": "Choosing a line", "kind": "method" },
+  { "id": "weak-r-lines", "front": "How do the two lines look when correlation is weak?", "back": "The angle between them is large; for strong correlation they are close together.", "concept": "Two lines", "kind": "concept" },
+  { "id": "xony-extrapolate", "front": "Conditions for a reliable $x$-on-$y$ prediction?", "back": "Strong correlation and $y$ within the range of the data (interpolation), as for $y$ on $x$.", "concept": "Choosing a line", "kind": "condition" }
 ]

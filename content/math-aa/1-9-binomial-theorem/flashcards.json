@@ -1,5 +1,15 @@
 [
-  { "id": "binom-card", "front": "Binomial theorem?", "back": "$(a + b)^n = \\sum_{r=0}^{n}\\binom nr a^{n-r}b^r$", "concept": "Binomial theorem" },
-  { "id": "ncr-card", "front": "$\\binom nr$ formula?", "back": "$\\dfrac{n!}{r!(n - r)!}$", "concept": "Binomial coefficient" },
-  { "id": "gen-term-card", "front": "General term of $(a + b)^n$?", "back": "$T_{r+1} = \\binom nr a^{n-r}b^r$", "concept": "General term" }
+  { "id": "binom-card", "front": "Binomial theorem?", "back": "$(a + b)^n = \\sum_{r=0}^{n}\\binom nr a^{n-r}b^r$", "concept": "Binomial theorem", "kind": "formula" },
+  { "id": "ncr-card", "front": "$\\binom nr$ formula?", "back": "$\\dfrac{n!}{r!(n - r)!}$", "concept": "Binomial coefficient", "kind": "formula" },
+  { "id": "gen-term-card", "front": "General term of $(a + b)^n$?", "back": "$T_{r+1} = \\binom nr a^{n-r}b^r$", "concept": "General term", "kind": "formula" },
+  { "id": "pascal", "front": "How does Pascal's triangle give binomial coefficients?", "back": "Row $n$ (starting at row 0) lists $\\binom n0, \\ldots, \\binom nn$; each entry is the sum of the two above. Row 4: 1 4 6 4 1.", "concept": "Pascal’s triangle", "kind": "concept" },
+  { "id": "binom-symmetry", "front": "Useful values and symmetry of $\\binom nr$?", "back": "$\\binom n0 = \\binom nn = 1$, $\\binom n1 = n$, and $\\binom nr = \\binom n{n-r}$.", "concept": "Binomial coefficient", "kind": "formula" },
+  { "id": "binom-terms-count", "front": "How many terms are in the expansion of $(a + b)^n$, $n \\in \\mathbb N$?", "back": "$n + 1$. Powers of $a$ fall from $n$ to 0 while powers of $b$ rise from 0 to $n$; each term's powers sum to $n$.", "concept": "Binomial theorem", "kind": "concept" },
+  { "id": "binom-expand-example", "front": "Expand $(x + 2)^4$.", "back": "$x^4 + 8x^3 + 24x^2 + 32x + 16$ (coefficients $1, 4, 6, 4, 1$ times $2^0, \\ldots, 2^4$).", "concept": "Binomial theorem", "kind": "application" },
+  { "id": "binom-coef-example", "front": "Coefficient of $x^3$ in $(2x - 3)^5$?", "back": "Need $(2x)^3$, so $r = 2$: $\\binom52(2x)^3(-3)^2 = 10\\cdot8\\cdot9\\,x^3$, coefficient $720$.", "concept": "Finding one term", "kind": "application" },
+  { "id": "binom-constant-example", "front": "Constant term of $\\left(x + \\dfrac2x\\right)^6$?", "back": "General term $\\binom6r x^{6-r}\\left(\\frac2x\\right)^r = \\binom6r2^rx^{6-2r}$. $6 - 2r = 0 \\Rightarrow r = 3$: $20\\times8 = 160$.", "concept": "Finding one term", "kind": "application" },
+  { "id": "binom-specific-method", "front": "Method for finding a specific term or coefficient?", "back": "Write the general term $\\binom nr a^{n-r}b^r$, simplify the power of $x$, set it equal to the required power, solve for $r$, then substitute.", "concept": "Finding one term", "kind": "method" },
+  { "id": "binom-bracket-mistake", "front": "In $(2x - 3)^5$, is the term with $r = 2$ equal to $\\binom52\\cdot2x^3\\cdot(-3)^2$?", "back": "No — the whole bracket is powered: $(2x)^3 = 8x^3$. Also keep $b = -3$ negative so signs alternate.", "concept": "Finding one term", "kind": "misconception" },
+  { "id": "binom-unknown", "front": "The coefficient of $x^2$ in $(1 + kx)^6$ is 135. Find $k$.", "back": "$\\binom62k^2 = 15k^2 = 135 \\Rightarrow k^2 = 9 \\Rightarrow k = \\pm3$.", "concept": "Finding one term", "kind": "method" },
+  { "id": "binom-n-condition", "front": "For which $n$ is the (finite) binomial theorem $(a + b)^n = \\sum_{r=0}^n\\binom nr a^{n-r}b^r$ valid?", "back": "$n \\in \\mathbb N$ (non-negative integers). Other $n$ need the HL extended binomial series, with a validity condition.", "concept": "Binomial theorem", "kind": "condition" }
 ]

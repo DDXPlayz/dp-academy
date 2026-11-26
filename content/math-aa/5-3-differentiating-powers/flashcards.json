@@ -1,4 +1,13 @@
 [
-  { "id": "power-rule-card", "front": "Power rule?", "back": "$\\frac{d}{dx}(ax^n) = anx^{n-1}$", "concept": "Power rule" },
-  { "id": "rewrite-card", "front": "Before differentiating $\\frac{3}{x^2}$?", "back": "Rewrite as $3x^{-2}$.", "concept": "Negative powers" }
+  { "id": "power-rule-card", "front": "Power rule?", "back": "$\\frac{d}{dx}(ax^n) = anx^{n-1}$", "concept": "Power rule", "kind": "formula" },
+  { "id": "rewrite-card", "front": "Before differentiating $\\frac{3}{x^2}$?", "back": "Rewrite as $3x^{-2}$.", "concept": "Negative powers", "kind": "method" },
+  { "id": "const-deriv", "front": "Derivatives of a constant and of $kx$?", "back": "$\\frac{d}{dx}(c) = 0$; $\\frac{d}{dx}(kx) = k$.", "concept": "Power rule", "kind": "formula" },
+  { "id": "sum-rule", "front": "Derivative of a sum of terms?", "back": "Differentiate term by term: $(f + g)' = f' + g'$; constant multiples stay, $(kf)' = kf'$.", "concept": "Power rule", "kind": "formula" },
+  { "id": "poly-example", "front": "Differentiate $4x^3 - 5x + 7$.", "back": "$12x^2 - 5$.", "concept": "Power rule", "kind": "application" },
+  { "id": "neg-power-example", "front": "Differentiate $\\dfrac3{x^2}$.", "back": "$3x^{-2} \\to -6x^{-3} = -\\dfrac6{x^3}$.", "concept": "Negative powers", "kind": "application" },
+  { "id": "expand-first", "front": "Differentiate $(x + 1)(x - 3)$ without the product rule.", "back": "Expand: $x^2 - 2x - 3$, so $\\dfrac{dy}{dx} = 2x - 2$.", "concept": "Power rule", "kind": "method" },
+  { "id": "split-fraction", "front": "Differentiate $\\dfrac{x^3 + 2}x$.", "back": "Split: $x^2 + 2x^{-1}$, so $\\dfrac{dy}{dx} = 2x - 2x^{-2}$.", "concept": "Negative powers", "kind": "method" },
+  { "id": "quotient-term-mistake", "front": "Is $\\dfrac{d}{dx}\\left(\\dfrac{x^3 + 2}x\\right) = \\dfrac{3x^2}1$?", "back": "No — you cannot differentiate top and bottom separately. Rewrite as a sum of powers first.", "concept": "Negative powers", "kind": "misconception" },
+  { "id": "gradient-at-point", "front": "Gradient of $y = x^3 - 2x$ at $x = 2$?", "back": "$\\dfrac{dy}{dx} = 3x^2 - 2$; at $x = 2$: $10$.", "concept": "Power rule", "kind": "method" },
+  { "id": "given-gradient", "front": "Find the points on $y = x^2 - 4x$ where the gradient is 2.", "back": "$2x - 4 = 2 \\Rightarrow x = 3$; $y = -3$: the point $(3, -3)$.", "concept": "Power rule", "kind": "method" }
 ]

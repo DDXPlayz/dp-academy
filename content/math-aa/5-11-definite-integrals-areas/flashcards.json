@@ -1,5 +1,14 @@
 [
-  { "id": "ftc-card", "front": "Evaluating a definite integral?", "back": "$F(b) - F(a)$ where $F' = f$.", "concept": "Definite integral" },
-  { "id": "split-card", "front": "Total area when the curve crosses the axis?", "back": "Split at the roots and add absolute values.", "concept": "Area below the axis" },
-  { "id": "between-card", "front": "Area between two curves?", "back": "$\\int_a^b(\\text{top} - \\text{bottom})\\,dx$ between intersections.", "concept": "Area between curves" }
+  { "id": "ftc-card", "front": "Evaluating a definite integral?", "back": "$F(b) - F(a)$ where $F' = f$.", "concept": "Definite integral", "kind": "formula" },
+  { "id": "split-card", "front": "Total area when the curve crosses the axis?", "back": "Split at the roots and add absolute values.", "concept": "Area below the axis", "kind": "method" },
+  { "id": "between-card", "front": "Area between two curves?", "back": "$\\int_a^b(\\text{top} - \\text{bottom})\\,dx$ between intersections.", "concept": "Area between curves", "kind": "formula" },
+  { "id": "definite-example", "front": "Evaluate $\\int_1^3(2x + 1)\\,dx$.", "back": "$\\left[x^2 + x\\right]_1^3 = 12 - 2 = 10$.", "concept": "Definite integral", "kind": "application" },
+  { "id": "definite-props", "front": "Properties of definite integrals?", "back": "$\\int_a^a f = 0$; $\\int_b^a f = -\\int_a^b f$; $\\int_a^b f + \\int_b^c f = \\int_a^c f$; $\\int_a^b kf = k\\int_a^b f$.", "concept": "Definite integral", "kind": "formula" },
+  { "id": "signed-area", "front": "What does $\\int_a^b f(x)\\,dx$ represent geometrically?", "back": "Signed area: regions above the $x$-axis count positive, regions below count negative.", "concept": "Definite integral", "kind": "definition" },
+  { "id": "below-axis-example", "front": "Area between $y = x^2 - 4$ and the $x$-axis.", "back": "$\\int_{-2}^2(x^2 - 4)\\,dx = -\\frac{32}3$, so the area is $\\frac{32}3$.", "concept": "Area below the axis", "kind": "application" },
+  { "id": "crossing-example", "front": "Area enclosed by $y = x^3 - x$ and the $x$-axis.", "back": "$\\int_{-1}^1 = 0$ (cancels). Split: $2\\left|\\int_0^1(x^3 - x)\\,dx\\right| = 2\\times\\frac14 = \\frac12$.", "concept": "Area below the axis", "kind": "application" },
+  { "id": "between-example", "front": "Area between $y = x$ and $y = x^2$.", "back": "They meet at $x = 0, 1$; $y = x$ is on top: $\\int_0^1(x - x^2)\\,dx = \\frac12 - \\frac13 = \\frac16$.", "concept": "Area between curves", "kind": "application" },
+  { "id": "between-cross", "front": "Area between curves that cross inside the interval?", "back": "Split at each intersection so that you always integrate top minus bottom, or evaluate $\\int_a^b|f(x) - g(x)|\\,dx$ on a GDC.", "concept": "Area between curves", "kind": "method" },
+  { "id": "no-c-definite", "front": "Why is there no $+C$ in a definite integral?", "back": "It cancels: $(F(b) + C) - (F(a) + C) = F(b) - F(a)$.", "concept": "Definite integral", "kind": "concept" },
+  { "id": "limits-intersections", "front": "First step for the area enclosed by two curves?", "back": "Find their intersections (solve $f(x) = g(x)$) — these are usually the limits — and decide which curve is on top.", "concept": "Area between curves", "kind": "method" }
 ]

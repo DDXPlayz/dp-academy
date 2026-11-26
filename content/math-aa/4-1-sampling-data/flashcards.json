@@ -1,5 +1,15 @@
 [
-  { "id": "sampling-card", "front": "Five sampling methods?", "back": "Simple random, convenience, systematic, quota, stratified.", "concept": "Stratified sampling" },
-  { "id": "outlier-card", "front": "Outlier rule?", "back": "Below $Q_1 - 1.5\\,IQR$ or above $Q_3 + 1.5\\,IQR$.", "concept": "Outliers" },
-  { "id": "disc-cont-card", "front": "Discrete vs continuous data?", "back": "Discrete: countable values. Continuous: any value in a range (measured).", "concept": "Types of data" }
+  { "id": "sampling-card", "front": "Five sampling methods?", "back": "Simple random, convenience, systematic, quota, stratified.", "concept": "Stratified sampling", "kind": "definition" },
+  { "id": "outlier-card", "front": "Outlier rule?", "back": "Below $Q_1 - 1.5\\,IQR$ or above $Q_3 + 1.5\\,IQR$.", "concept": "Outliers", "kind": "formula" },
+  { "id": "disc-cont-card", "front": "Discrete vs continuous data?", "back": "Discrete: countable values. Continuous: any value in a range (measured).", "concept": "Types of data", "kind": "distinction" },
+  { "id": "pop-sample", "front": "Population vs sample?", "back": "Population: the whole group being studied. Sample: a subset used to draw conclusions about the population.", "concept": "Populations and samples", "kind": "distinction" },
+  { "id": "simple-random", "front": "Simple random sampling?", "back": "Every possible sample of the chosen size is equally likely (e.g. number the population and use a random number generator).", "concept": "Sampling techniques", "kind": "definition" },
+  { "id": "systematic", "front": "Systematic sampling?", "back": "Choose every $k$th member from a list, where $k = \\frac{\\text{population size}}{\\text{sample size}}$, starting at a random point within the first $k$.", "concept": "Sampling techniques", "kind": "definition" },
+  { "id": "quota-vs-stratified", "front": "Quota vs stratified sampling?", "back": "Both fill proportional groups. Stratified selects **randomly** within each stratum; quota selects non-randomly (e.g. whoever is available) until each quota is met.", "concept": "Stratified sampling", "kind": "distinction" },
+  { "id": "convenience", "front": "Convenience sampling and its weakness?", "back": "Choosing members that are easy to reach. Quick and cheap, but likely to be biased.", "concept": "Sampling techniques", "kind": "definition" },
+  { "id": "stratified-example", "front": "A school has 40 boys and 60 girls. Stratified sample of 20?", "back": "Boys $\\frac{40}{100}\\times20 = 8$, girls $\\frac{60}{100}\\times20 = 12$.", "concept": "Stratified sampling", "kind": "application" },
+  { "id": "bias-def", "front": "Bias in sampling?", "back": "A systematic tendency for a sample to misrepresent the population (e.g. surveying only one area or time of day).", "concept": "Bias, reliability and outliers", "kind": "definition" },
+  { "id": "outlier-example", "front": "$Q_1 = 10$, $Q_3 = 18$. Which values are outliers?", "back": "$IQR = 8$; fences $10 - 12 = -2$ and $18 + 12 = 30$. Values below $-2$ or above 30.", "concept": "Outliers", "kind": "application" },
+  { "id": "outlier-treatment", "front": "Should every outlier be removed?", "back": "No — remove only values that are errors (e.g. mistyped). Genuine extreme values stay and should be discussed.", "concept": "Outliers", "kind": "misconception" },
+  { "id": "disc-cont-examples", "front": "Discrete or continuous: shoe size, time to run 100 m, number of siblings, mass?", "back": "Shoe size, siblings: discrete (separate values). Time, mass: continuous (measured).", "concept": "Types of data", "kind": "application" }
 ]

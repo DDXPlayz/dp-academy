@@ -1,5 +1,15 @@
 [
-  { "id": "sin-comp-card", "front": "(HL) $\\sin(A \\pm B)$?", "back": "$\\sin A\\cos B \\pm \\cos A\\sin B$", "concept": "Compound angles" },
-  { "id": "cos-comp-card", "front": "(HL) $\\cos(A \\pm B)$?", "back": "$\\cos A\\cos B \\mp \\sin A\\sin B$", "concept": "Compound angles" },
-  { "id": "tan-comp-card", "front": "(HL) $\\tan(A \\pm B)$ and $\\tan2\\theta$?", "back": "$\\frac{\\tan A \\pm \\tan B}{1 \\mp \\tan A\\tan B}$; $\\frac{2\\tan\\theta}{1 - \\tan^2\\theta}$.", "concept": "Double angle (tan)" }
+  { "id": "sin-comp-card", "front": "(HL) $\\sin(A \\pm B)$?", "back": "$\\sin A\\cos B \\pm \\cos A\\sin B$", "concept": "Compound angles", "kind": "formula" },
+  { "id": "cos-comp-card", "front": "(HL) $\\cos(A \\pm B)$?", "back": "$\\cos A\\cos B \\mp \\sin A\\sin B$", "concept": "Compound angles", "kind": "formula" },
+  { "id": "tan-comp-card", "front": "(HL) $\\tan(A \\pm B)$ and $\\tan2\\theta$?", "back": "$\\frac{\\tan A \\pm \\tan B}{1 \\mp \\tan A\\tan B}$; $\\frac{2\\tan\\theta}{1 - \\tan^2\\theta}$.", "concept": "Double angle (tan)", "kind": "formula" },
+  { "id": "distribute-mistake", "front": "(HL) Is $\\sin(A + B) = \\sin A + \\sin B$?", "back": "No — e.g. $\\sin\\left(\\frac\\pi2 + \\frac\\pi2\\right) = 0 \\ne 2$. Use the compound angle formula.", "concept": "Compound angles", "kind": "misconception" },
+  { "id": "cos-sign-mistake", "front": "(HL) Sign in $\\cos(A + B)$?", "back": "Minus: $\\cos(A + B) = \\cos A\\cos B - \\sin A\\sin B$; $\\cos(A - B)$ has a plus.", "concept": "Compound angles", "kind": "misconception" },
+  { "id": "sin75", "front": "(HL) Exact value of $\\sin75^\\circ$.", "back": "$\\sin(45^\\circ + 30^\\circ) = \\frac{\\sqrt2}2\\cdot\\frac{\\sqrt3}2 + \\frac{\\sqrt2}2\\cdot\\frac12 = \\dfrac{\\sqrt6 + \\sqrt2}4$.", "concept": "Compound angles", "kind": "application" },
+  { "id": "tan-pi12", "front": "(HL) Exact value of $\\tan\\frac\\pi{12}$.", "back": "$\\tan\\left(\\frac\\pi3 - \\frac\\pi4\\right) = \\dfrac{\\sqrt3 - 1}{1 + \\sqrt3} = 2 - \\sqrt3$.", "concept": "Compound angles", "kind": "application" },
+  { "id": "sin-ab-example", "front": "(HL) $\\sin A = \\frac35$, $\\cos B = \\frac5{13}$, both acute. Find $\\sin(A + B)$.", "back": "$\\cos A = \\frac45$, $\\sin B = \\frac{12}{13}$: $\\frac35\\cdot\\frac5{13} + \\frac45\\cdot\\frac{12}{13} = \\frac{63}{65}$.", "concept": "Compound angles", "kind": "application" },
+  { "id": "double-from-compound", "front": "(HL) How do the double angle formulae follow from compound angles?", "back": "Put $B = A$: $\\sin2A = 2\\sin A\\cos A$, $\\cos2A = \\cos^2A - \\sin^2A$, $\\tan2A = \\dfrac{2\\tan A}{1 - \\tan^2A}$.", "concept": "Double angle (tan)", "kind": "derivation" },
+  { "id": "expand-example", "front": "(HL) Expand $\\sin\\left(x + \\frac\\pi3\\right)$.", "back": "$\\frac12\\sin x + \\frac{\\sqrt3}2\\cos x$.", "concept": "Compound angles", "kind": "application" },
+  { "id": "sum-identity-proof", "front": "(HL) Show $\\sin(A + B) + \\sin(A - B) \\equiv 2\\sin A\\cos B$.", "back": "Expand both: the $\\cos A\\sin B$ terms cancel, leaving $2\\sin A\\cos B$.", "concept": "Compound angles", "kind": "application" },
+  { "id": "tan2-condition", "front": "(HL) When is $\\tan2\\theta = \\dfrac{2\\tan\\theta}{1 - \\tan^2\\theta}$ undefined?", "back": "When $\\tan\\theta = \\pm1$ (then $2\\theta$ is an odd multiple of $\\frac\\pi2$) or when $\\tan\\theta$ itself is undefined.", "concept": "Double angle (tan)", "kind": "condition" },
+  { "id": "compound-booklet", "front": "(HL) Are the compound angle and $\\tan2\\theta$ formulae in the booklet?", "back": "Yes — $\\sin(A \\pm B)$, $\\cos(A \\pm B)$, $\\tan(A \\pm B)$ and $\\tan2\\theta$ are all given in the HL section.", "concept": "Compound angles", "kind": "concept" }
 ]
