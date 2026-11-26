@@ -1,0 +1,42 @@
+[
+ {
+  "id": "g-cation-formation",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "S2.1.1",
+  "concept": "Formation of cations",
+  "prompt": "Which ion does magnesium form, and why?",
+  "options": [
+   "Mg⁻, by gaining an electron",
+   "Mg⁺, by losing one electron",
+   "Mg²⁺, by losing two electrons",
+   "Mg²⁻, by gaining two electrons"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** Mg ($[\\text{Ne}]3s^{2}$) loses its two valence electrons to reach the stable configuration of neon, forming Mg²⁺.",
+  "source": "original"
+ },
+ {
+  "id": "g-ionic-formulas",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "S2.1.2",
+  "concept": "The ionic bond",
+  "prompt": "Deduce the formulas of **(a)** aluminium oxide and **(b)** magnesium nitride, and define an ionic bond.",
+  "markscheme": "**(a)** Al₂O₃ **(b)** Mg₃N₂ (charges balance: Al³⁺/O²⁻, Mg²⁺/N³⁻) **(A1)**\n\nIonic bond: electrostatic attraction between oppositely charged ions **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-ionic-properties-mgo",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "S2.1.3",
+  "concept": "Ionic lattices and properties",
+  "prompt": "**(a)** Explain why solid sodium chloride does not conduct electricity, but molten sodium chloride does. **[2]**\n\n**(b)** Explain why magnesium oxide has a much higher melting point than sodium chloride. **[1]**",
+  "markscheme": "**(a)** In the solid lattice the ions are held in fixed positions **(R1)**; when molten the ions are free to move and carry charge **(R1)**\n\n**(b)** Mg²⁺ and O²⁻ have higher charges (and smaller radii) than Na⁺ and Cl⁻, so the electrostatic attractions in the lattice are much stronger **(R1)**",
+  "source": "original"
+ }
+]

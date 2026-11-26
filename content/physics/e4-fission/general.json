@@ -1,0 +1,46 @@
+[
+ {
+  "id": "g-fission-energy-per-kg",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "E.4.1",
+  "concept": "Energy from fission",
+  "prompt": "Each fission of a uranium-235 nucleus releases about 200 MeV. Estimate the energy released by fission of 1.0 kg of uranium-235 and compare it with burning 1.0 kg of coal (about 30 MJ). (1 MeV $=1.6\\times10^{-13}$ J, 1 u $=1.66\\times10^{-27}$ kg)",
+  "markscheme": "Nuclei in 1 kg $=\\dfrac{1.0}{235\\times1.66\\times10^{-27}}=2.6\\times10^{24}$ **(A1)**\n\n$E=2.6\\times10^{24}\\times200\\times1.6\\times10^{-13}=8.2\\times10^{13}$ J **(A1)**; about $3\\times10^{6}$ times more than coal **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-chain-reaction",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "E.4.2",
+  "concept": "Chain reactions",
+  "prompt": "Explain how a chain reaction is sustained in a nuclear reactor, and what 'critical' means.",
+  "markscheme": "Each fission releases 2–3 neutrons, which can cause further fissions **(R1)**; critical: on average exactly one neutron from each fission causes another, so the rate is steady **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-reactor-components",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "E.4.3",
+  "concept": "Components of a nuclear power plant",
+  "prompt": "State the function of **(a)** the moderator, **(b)** the control rods, **(c)** the heat exchanger and **(d)** the shielding in a nuclear power station.",
+  "markscheme": "**(a)** Slows fast neutrons by collisions so they are more likely to cause fission **(A1)**\n\n**(b)** Absorb neutrons; inserted further to reduce the reaction rate **(A1)**\n\n**(c)** Transfers thermal energy from the coolant to water, producing steam for the turbines **(A1)**\n\n**(d)** Absorbs radiation (neutrons and gamma) to protect workers **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-fission-products-waste",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "E.4.4",
+  "concept": "Fission products and their management",
+  "prompt": "Explain why fission products are dangerous and describe how high-level waste is managed.",
+  "markscheme": "Fission products are neutron-rich and highly radioactive, some with long half-lives **(R1)**; spent fuel is cooled in water ponds, then vitrified and stored in sealed containers deep underground, isolated for thousands of years **(A1)**",
+  "source": "original"
+ }
+]

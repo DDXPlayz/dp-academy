@@ -19,6 +19,17 @@ describe('content', () => {
     }
   });
 
+  it('has no stray control characters in exam-style questions (e.g. "\\t" from an unescaped \\times)', () => {
+    const bad: string[] = [];
+    for (const s of subjects)
+      for (const t of s.topics)
+        for (const q of t.exam) {
+          const text = [q.prompt, q.markscheme, q.concept ?? '', ...(q.options ?? [])].join('\n');
+          if (/[\u0000-\u0008\u000b-\u001f⁠]/.test(text)) bad.push(q.key);
+        }
+    expect(bad).toEqual([]);
+  });
+
   it('only references private diagrams that exist (when the private folder is present)', () => {
     const notes = path.resolve('resources/extracted');
     const check = fs.existsSync(notes);

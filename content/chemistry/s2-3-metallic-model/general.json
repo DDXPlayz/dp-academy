@@ -1,0 +1,43 @@
+[
+ {
+  "id": "g-metallic-bond-properties",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "S2.3.1",
+  "concept": "The metallic bond",
+  "prompt": "Describe metallic bonding and use it to explain why metals are malleable.",
+  "markscheme": "Electrostatic attraction between a lattice of cations and a sea of delocalised electrons **(A1)**; layers of cations can slide over each other without breaking the bonding, because the delocalised electrons still hold them **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-metallic-strength",
+  "paper": "1A",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "S2.3.2",
+  "concept": "Strength of metallic bonding",
+  "prompt": "Which metal has the highest melting point?",
+  "options": [
+   "Na",
+   "K",
+   "Al",
+   "Rb"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** Metallic bonding is stronger with higher ionic charge and smaller ionic radius: Al³⁺ is small and highly charged, giving more delocalised electrons and stronger attraction.",
+  "source": "original"
+ },
+ {
+  "id": "g-transition-delocalised-d",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "S2.3.3",
+  "concept": "Delocalised d-electrons in transition elements",
+  "prompt": "Explain why transition metals such as iron have higher melting points and densities than group 1 metals.",
+  "markscheme": "Both 4s and 3d electrons can be delocalised, giving more delocalised electrons per atom and stronger metallic bonding **(R1)**; their atoms are also smaller and more massive, so they pack more closely **(R1)**",
+  "source": "original"
+ }
+]

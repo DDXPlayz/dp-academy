@@ -1,0 +1,76 @@
+[
+ {
+  "id": "g-bonding-continuum",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "S2.4.1",
+  "concept": "Bonding as a continuum",
+  "prompt": "Explain why bonding is better described as a continuum than as three separate types.",
+  "markscheme": "Most bonds have partial ionic and partial covalent character, depending on the electronegativity difference; e.g. AlCl₃ is not purely ionic **(R1)**. The bonding triangle places compounds between the ionic, covalent and metallic extremes **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-bonding-triangle-position",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "S2.4.2",
+  "concept": "Using the bonding triangle",
+  "prompt": "A compound's two elements have average electronegativity 2.6 and electronegativity difference 0.4. Predict its predominant bonding type and explain.",
+  "markscheme": "Predominantly covalent **(A1)** — a small difference means little ionic character, and a high average electronegativity means both elements are non-metals, not metallic **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-alloys-hardness",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "S2.4.3",
+  "concept": "Alloys",
+  "prompt": "Explain why an alloy such as steel is harder than pure iron.",
+  "markscheme": "Atoms of different sizes (e.g. carbon) disrupt the regular lattice **(R1)**, so layers cannot slide past each other as easily **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-polymer-definition",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "S2.4.4",
+  "concept": "Polymers and monomers",
+  "prompt": "What is a polymer?",
+  "options": [
+   "A mixture of different small molecules",
+   "A large molecule made from many repeating monomer units",
+   "A substance with an ionic lattice",
+   "A metal alloy"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** A macromolecule made of many repeating units derived from monomers.",
+  "source": "original"
+ },
+ {
+  "id": "g-addition-polymer-repeat",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "S2.4.5",
+  "concept": "Addition polymerization",
+  "prompt": "Draw (describe) the repeating unit of poly(chloroethene) formed from CH₂=CHCl, and state what happens to the double bond.",
+  "markscheme": "Repeating unit: –CH₂–CHCl– with continuation bonds at each end **(A1)**; the C=C double bond breaks (the π bond opens) so each monomer joins two neighbours; no other product forms **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-condensation-polymer",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "S2.4.6",
+  "concept": "Condensation polymerization",
+  "prompt": "Explain how a polyamide forms from a diamine and a dicarboxylic acid, and name the small molecule released.",
+  "markscheme": "The –NH₂ group of one monomer reacts with the –COOH group of another, forming an amide link –CONH– **(A1)**; a water molecule is released at each link **(A1)**",
+  "source": "original"
+ }
+]

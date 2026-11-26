@@ -1,0 +1,142 @@
+[
+ {
+  "id": "g-rutherford-observations",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "E.1.1",
+  "concept": "Geiger–Marsden–Rutherford experiment",
+  "prompt": "In the Geiger–Marsden experiment, alpha particles were fired at thin gold foil. State the two key observations and what each showed about the atom.",
+  "markscheme": "Most alpha particles passed straight through: the atom is mostly empty space **(A1)**\n\nA very small fraction were deflected through large angles (some almost straight back) **(A1)**: the positive charge and most of the mass are concentrated in a tiny, dense nucleus **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-nuclear-notation",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "E.1.2",
+  "concept": "Nuclear notation",
+  "prompt": "How many neutrons are in a nucleus of $^{56}_{26}\\text{Fe}$?",
+  "options": [
+   "26",
+   "30",
+   "56",
+   "82"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** Neutrons $=A-Z=56-26=30$. $Z=26$ is the number of protons; $A=56$ is the total number of nucleons.",
+  "source": "original"
+ },
+ {
+  "id": "g-line-spectra-evidence",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "E.1.3",
+  "concept": "Spectra as evidence for energy levels",
+  "prompt": "Explain how the line emission spectrum of hydrogen provides evidence that atomic energy levels are discrete.",
+  "markscheme": "Only certain specific wavelengths (frequencies) are emitted, not a continuous range **(A1)**; each photon energy $hf$ equals the difference between two energy levels, so only certain differences exist — the levels must be discrete **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-emission-absorption-photons",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "E.1.4",
+  "concept": "Photons in atomic transitions",
+  "prompt": "An electron in an atom moves from a higher energy level to a lower one. What happens?",
+  "options": [
+   "A photon is emitted.",
+   "A photon is absorbed.",
+   "The atom is ionised.",
+   "The nucleus emits a gamma ray."
+  ],
+  "answer": 0,
+  "markscheme": "**A.** Energy is conserved: the atom loses energy, carried away by an emitted photon whose energy equals the level difference. Absorption is the reverse process.",
+  "source": "original"
+ },
+ {
+  "id": "g-photon-energy-transition",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "E.1.5",
+  "concept": "E = hf for atomic transitions",
+  "prompt": "A hydrogen atom emits a photon of wavelength 656 nm. Calculate the energy difference between the two levels, in joules and in eV. ($h=6.63\\times10^{-34}$ J s, $c=3.00\\times10^{8}\\ \\text{m s}^{-1}$, $e=1.60\\times10^{-19}$ C)",
+  "markscheme": "$E=\\dfrac{hc}{\\lambda}=\\dfrac{6.63\\times10^{-34}\\times3.00\\times10^{8}}{656\\times10^{-9}}=3.03\\times10^{-19}$ J **(A1)** $=1.89$ eV **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-spectra-composition",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "E.1.6",
+  "concept": "Spectra and chemical composition",
+  "prompt": "The spectrum of light from a star shows dark lines at the same wavelengths as the bright lines in the emission spectrum of sodium. Explain what this tells us.",
+  "markscheme": "Each element has a unique set of energy levels and so a unique set of line wavelengths **(R1)**; sodium in the star's cooler outer layers absorbs those wavelengths, so sodium is present in the star **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-nuclear-density",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "E.1.7",
+  "concept": "Nuclear radius R = R₀A^(1/3)",
+  "prompt": "Using $R=R_0A^{1/3}$ with $R_0=1.2\\times10^{-15}$ m and nucleon mass $1.66\\times10^{-27}$ kg, show that the density of nuclear matter is about $2\\times10^{17}\\ \\text{kg m}^{-3}$ and explain why it does not depend on $A$.",
+  "markscheme": "$\\rho=\\dfrac{Am}{\\tfrac43\\pi(R_0A^{1/3})^{3}}=\\dfrac{m}{\\tfrac43\\pi R_0^{3}}$ **(M1)(A1)**\n\n$=\\dfrac{1.66\\times10^{-27}}{\\tfrac43\\pi(1.2\\times10^{-15})^{3}}=2.3\\times10^{17}\\ \\text{kg m}^{-3}$ — $A$ cancels, so all nuclei have about the same density **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-deviation-high-energy",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "E.1.8",
+  "concept": "Deviations from Rutherford scattering",
+  "prompt": "At very high alpha-particle energies, the number scattered at large angles is less than Rutherford's model predicts. Explain why.",
+  "markscheme": "Rutherford's model assumes only the Coulomb force acts **(R1)**; high-energy alphas get close enough to the nucleus to experience the strong nuclear force, so the scattering deviates from the Coulomb prediction — this gives an estimate of nuclear radius **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-closest-approach-gold",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "E.1.9",
+  "concept": "Distance of closest approach",
+  "prompt": "A 5.0 MeV alpha particle approaches a gold nucleus ($Z=79$) head-on. Calculate the distance of closest approach. ($k=8.99\\times10^{9}\\ \\text{N m}^{2}\\,\\text{C}^{-2}$, $e=1.60\\times10^{-19}$ C)",
+  "markscheme": "At closest approach all kinetic energy is electric potential energy **(M1)**: $E_k=\\dfrac{k(2e)(79e)}{d}$\n\n$d=\\dfrac{8.99\\times10^{9}\\times2\\times79\\times(1.60\\times10^{-19})^{2}}{5.0\\times1.60\\times10^{-13}}$ **(A1)** $=4.5\\times10^{-14}$ m **(A1)** — an upper limit for the nuclear radius.",
+  "source": "original"
+ },
+ {
+  "id": "g-bohr-levels-transition",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "E.1.10",
+  "concept": "Bohr energy levels E = −13.6/n² eV",
+  "prompt": "**(a)** Calculate the wavelength of the photon emitted when a hydrogen electron moves from $n=3$ to $n=2$. ($h=6.63\\times10^{-34}$ J s, $c=3.00\\times10^{8}\\ \\text{m s}^{-1}$, $e=1.60\\times10^{-19}$ C) **[2]**\n\n**(b)** State the energy needed to ionise hydrogen from $n=2$. **[1]**",
+  "markscheme": "**(a)** $\\Delta E=13.6\\left(\\tfrac14-\\tfrac19\\right)=1.89$ eV **(A1)**; $\\lambda=\\dfrac{hc}{\\Delta E}=6.6\\times10^{-7}$ m (red light) **(A1)**\n\n**(b)** $\\dfrac{13.6}{4}=3.4$ eV **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-bohr-angular-momentum",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "E.1.11",
+  "concept": "Quantised angular momentum",
+  "prompt": "In the Bohr model the ground-state radius of hydrogen is $5.29\\times10^{-11}$ m. Use $mvr=\\dfrac{nh}{2\\pi}$ to calculate the electron's speed in this state, and explain how this condition leads to discrete energy levels. ($m_e=9.11\\times10^{-31}$ kg, $h=6.63\\times10^{-34}$ J s)",
+  "markscheme": "$v=\\dfrac{h}{2\\pi m_er}=2.2\\times10^{6}\\ \\text{m s}^{-1}$ **(M1)(A1)**\n\nOnly orbits with angular momentum a whole multiple of $\\frac{h}{2\\pi}$ are allowed, so only certain radii and therefore certain energies exist **(R1)**",
+  "source": "original"
+ }
+]

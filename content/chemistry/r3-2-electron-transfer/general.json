@@ -1,0 +1,197 @@
+[
+ {
+  "id": "g-redox-definitions",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "R3.2.1",
+  "concept": "Oxidation and reduction",
+  "prompt": "In $\\text{CuO}+\\text{H}_2\\to\\text{Cu}+\\text{H}_2\\text{O}$, which statement is correct?",
+  "options": [
+   "CuO is oxidised",
+   "H₂ is reduced",
+   "Cu changes from 0 to +2",
+   "H₂ is the reducing agent"
+  ],
+  "answer": 3,
+  "markscheme": "**D.** Cu goes from +2 to 0 (reduced, loses oxygen); H goes from 0 to +1 (oxidised, gains oxygen). H₂ is the reducing agent.",
+  "source": "original"
+ },
+ {
+  "id": "g-half-equations-permanganate",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "R3.2.2",
+  "concept": "Half-equations",
+  "prompt": "Write half-equations for the reduction of MnO₄⁻ to Mn²⁺ in acid and the oxidation of Fe²⁺ to Fe³⁺, and combine them into an overall equation.",
+  "markscheme": "MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O **(A1)**; Fe²⁺ → Fe³⁺ + e⁻ **(A1)**\n\nMnO₄⁻ + 8H⁺ + 5Fe²⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O **(A1)** — electrons balanced by multiplying the iron half-equation by 5.",
+  "source": "original"
+ },
+ {
+  "id": "g-halogen-displacement",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "R3.2.3",
+  "concept": "Ease of oxidation and reduction in a group",
+  "prompt": "Chlorine water is added to potassium bromide solution. Write the ionic equation and explain the reaction in terms of the position of the halogens in group 17.",
+  "markscheme": "Cl₂ + 2Br⁻ → 2Cl⁻ + Br₂ (orange solution) **(A1)**; chlorine is a stronger oxidising agent: it is smaller, so it attracts electrons more strongly than bromine **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-metal-acid-hydrogen",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "R3.2.4",
+  "concept": "Acids reacting with metals",
+  "prompt": "Write the ionic equation for zinc reacting with hydrochloric acid, and identify the species oxidised.",
+  "markscheme": "Zn + 2H⁺ → Zn²⁺ + H₂ **(A1)**; zinc is oxidised (0 → +2) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-anode-cathode",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "R3.2.5",
+  "concept": "Anode and cathode",
+  "prompt": "In every electrochemical cell, oxidation occurs at the:",
+  "options": [
+   "anode",
+   "cathode",
+   "salt bridge",
+   "positive electrode in both cell types"
+  ],
+  "answer": 0,
+  "markscheme": "**A.** Oxidation always occurs at the anode and reduction at the cathode, in both voltaic and electrolytic cells (the signs of the electrodes differ between the two types).",
+  "source": "original"
+ },
+ {
+  "id": "g-daniell-cell",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "R3.2.6",
+  "concept": "Primary (voltaic) cells",
+  "prompt": "For a Zn/Zn²⁺ and Cu/Cu²⁺ voltaic cell, identify the anode, the direction of electron flow, and the function of the salt bridge.",
+  "markscheme": "Zinc is the anode (more reactive, oxidised) **(A1)**; electrons flow from Zn to Cu through the external wire **(A1)**; the salt bridge allows ions to move to maintain charge balance and complete the circuit **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-secondary-cells",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "R3.2.7",
+  "concept": "Secondary (rechargeable) cells",
+  "prompt": "Explain how a lithium-ion battery can be recharged, and state one advantage of rechargeable cells.",
+  "markscheme": "An external power supply forces the redox reactions to run in reverse, restoring the original reactants **(R1)**; they can be reused many times, reducing waste and cost **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-electrolysis-molten-nacl",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "R3.2.8",
+  "concept": "Electrolytic cells",
+  "prompt": "State the products at each electrode in the electrolysis of molten sodium chloride, with half-equations.",
+  "markscheme": "Cathode: Na⁺ + e⁻ → Na **(A1)**; anode: 2Cl⁻ → Cl₂ + 2e⁻ **(A1)**; electrical energy drives a non-spontaneous reaction **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-alcohol-oxidation",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "R3.2.9",
+  "concept": "Oxidation of organic compounds",
+  "prompt": "Ethanol is heated with acidified potassium dichromate(VI).\n\n**(a)** State the colour change. **[1]**\n\n**(b)** Explain how the conditions determine whether ethanal or ethanoic acid is obtained. **[2]**\n\n**(c)** Explain why 2-methylpropan-2-ol is not oxidised. **[1]**",
+  "markscheme": "**(a)** Orange to green **(A1)**\n\n**(b)** Distil immediately to remove ethanal (bp 21 °C) before further oxidation **(A1)**; heat under reflux to oxidise fully to ethanoic acid **(A1)**\n\n**(c)** It is a tertiary alcohol: the carbon bearing OH has no hydrogen atom to lose **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-carbonyl-reduction",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "R3.2.10",
+  "concept": "Reduction of organic compounds",
+  "prompt": "Name the product when propanone is reduced with sodium borohydride, and the type of alcohol formed.",
+  "markscheme": "Propan-2-ol **(A1)**; a secondary alcohol (ketones reduce to secondary, aldehydes to primary alcohols) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-hydrogenation",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "R3.2.11",
+  "concept": "Hydrogenation of unsaturated compounds",
+  "prompt": "State the conditions for the hydrogenation of ethene, and one industrial use of hydrogenation.",
+  "markscheme": "H₂ with a nickel catalyst at about 150 °C (or Pt/Pd at room temperature) **(A1)**; converting vegetable oils into solid fats (margarine) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-she-convention",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "R3.2.12",
+  "concept": "Standard hydrogen electrode",
+  "prompt": "Describe the standard hydrogen electrode and explain why it is needed.",
+  "markscheme": "H₂ gas at 100 kPa bubbled over platinum in 1.0 mol dm⁻³ H⁺ at 298 K **(A1)**; the potential of a single electrode cannot be measured alone, so all electrode potentials are measured relative to this reference, defined as 0 V **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-cell-potential-zn-cu",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "R3.2.13",
+  "concept": "Standard cell potential",
+  "prompt": "Calculate $E^{\\ominus}_{cell}$ for a Zn/Cu cell ($E^{\\ominus}$: Zn²⁺/Zn −0.76 V, Cu²⁺/Cu +0.34 V) and state whether the reaction is spontaneous.",
+  "markscheme": "$E^{\\ominus}_{cell}=E_{\\text{cathode}}-E_{\\text{anode}}=0.34-(-0.76)=+1.10$ V **(A1)**; positive, so spontaneous **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-gibbs-from-cell",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "R3.2.14",
+  "concept": "ΔG° = −nFE°",
+  "prompt": "Calculate ΔG° for the Zn/Cu cell reaction ($E^{\\ominus}_{cell}=1.10$ V, $F=96\\,500\\ \\text{C mol}^{-1}$).",
+  "markscheme": "$n=2$ electrons transferred **(A1)**; $\\Delta G^{\\ominus}=-2\\times96500\\times1.10=-212\\ \\text{kJ mol}^{-1}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-aqueous-electrolysis",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "R3.2.15",
+  "concept": "Electrolysis of aqueous solutions",
+  "prompt": "Predict the products at each electrode for the electrolysis of **(a)** concentrated aqueous NaCl and **(b)** aqueous CuSO₄ with inert electrodes. Explain the cathode product in (a).",
+  "markscheme": "**(a)** Cathode: H₂; anode: Cl₂ **(A1)**. Water is reduced in preference to Na⁺ because its reduction potential is much less negative **(R1)**\n\n**(b)** Cathode: Cu; anode: O₂ (water oxidised, as sulfate is not) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-electroplating-silver",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "R3.2.16",
+  "concept": "Electroplating",
+  "prompt": "Describe how a spoon is electroplated with silver.",
+  "markscheme": "The spoon is the cathode and a silver bar is the anode, in a solution of a silver salt (e.g. AgNO₃) **(A1)**; Ag⁺ + e⁻ → Ag deposits on the spoon while the anode dissolves, keeping [Ag⁺] constant **(A1)**",
+  "source": "original"
+ }
+]

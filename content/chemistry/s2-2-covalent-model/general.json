@@ -1,0 +1,212 @@
+[
+ {
+  "id": "g-covalent-bond-def",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "S2.2.1",
+  "concept": "The covalent bond",
+  "prompt": "Define a covalent bond.",
+  "markscheme": "The electrostatic attraction between a shared pair of electrons and the positively charged nuclei of the two bonded atoms **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-bond-order-length-strength",
+  "paper": "1A",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "S2.2.2",
+  "concept": "Single, double and triple bonds",
+  "prompt": "Which correctly compares the C–C, C=C and C≡C bonds?",
+  "options": [
+   "C≡C is the longest and weakest",
+   "All three have the same length",
+   "C=C is the shortest",
+   "C≡C is the shortest and strongest"
+  ],
+  "answer": 3,
+  "markscheme": "**D.** More shared pairs pull the nuclei closer and hold them more strongly: C≡C is the shortest and strongest.",
+  "source": "original"
+ },
+ {
+  "id": "g-coordination-bond-examples",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "S2.2.3",
+  "concept": "Coordination bonds",
+  "prompt": "Explain how a coordination bond forms in the ammonium ion, NH₄⁺, and state how it compares with the other N–H bonds once formed.",
+  "markscheme": "The lone pair on the nitrogen of NH₃ is donated to H⁺, so both shared electrons come from nitrogen **(A1)**; once formed it is identical to the other three N–H bonds **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-vsepr-shapes",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "S2.2.4",
+  "concept": "VSEPR shapes and bond angles",
+  "prompt": "Predict the shape and bond angle of **(a)** NH₃, **(b)** H₂O, **(c)** BF₃, **(d)** CO₂.",
+  "markscheme": "**(a)** Trigonal pyramidal, about 107° (four electron domains, one lone pair) **(A1)**\n\n**(b)** Bent, about 104.5° (two lone pairs) **(A1)**\n\n**(c)** Trigonal planar, 120° **(A1)** **(d)** Linear, 180° **(A1)**\n\nLone pairs repel more strongly than bonding pairs, so they squeeze the bond angles below 109.5°.",
+  "source": "original"
+ },
+ {
+  "id": "g-bond-polarity-order",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "S2.2.5",
+  "concept": "Bond polarity",
+  "prompt": "Which bond is the most polar?",
+  "options": [
+   "H–F",
+   "H–Cl",
+   "H–Br",
+   "H–I"
+  ],
+  "answer": 0,
+  "markscheme": "**A.** Polarity increases with electronegativity difference: H–F has the largest (about 1.8).",
+  "source": "original"
+ },
+ {
+  "id": "g-molecular-polarity",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "S2.2.6",
+  "concept": "Molecular polarity",
+  "prompt": "Explain why CO₂ is non-polar although its bonds are polar, whereas H₂O is polar.",
+  "markscheme": "Both contain polar bonds because O is more electronegative than C and H **(A1)**; CO₂ is linear, so the two bond dipoles cancel **(R1)**; H₂O is bent, so the dipoles do not cancel and there is a net dipole **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-graphite-diamond",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "S2.2.7",
+  "concept": "Covalent network structures",
+  "prompt": "Explain why graphite conducts electricity and is slippery, whereas diamond does not conduct and is very hard.",
+  "markscheme": "Diamond: each C is covalently bonded to four others in a rigid 3D network, with no delocalised electrons **(R1)**\n\nGraphite: each C is bonded to three others in layers, leaving one delocalised electron per atom that can move and carry charge **(R1)**; the layers are held only by weak London forces, so they slide **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-identify-imf",
+  "paper": "1A",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "S2.2.8",
+  "concept": "Types of intermolecular forces",
+  "prompt": "Which substance has hydrogen bonding between its molecules?",
+  "options": [
+   "CH₃OCH₃",
+   "HCl",
+   "CH₃OH",
+   "CH₃CHO"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** Hydrogen bonding needs H bonded directly to N, O or F. Methanol has an O–H group; in CH₃OCH₃ and CH₃CHO the H atoms are bonded to C.",
+  "source": "original"
+ },
+ {
+  "id": "g-boiling-points-comparable-mass",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "S2.2.9",
+  "concept": "Relative strengths of intermolecular forces",
+  "prompt": "Butane (M = 58, bp −0.5 °C), propanone (M = 58, bp 56 °C) and propan-1-ol (M = 60, bp 97 °C) have similar molar masses. Explain the order of their boiling points.",
+  "markscheme": "Butane: non-polar, only London forces **(A1)**\n\nPropanone: polar C=O, so dipole–dipole forces as well **(A1)**\n\nPropan-1-ol: O–H allows hydrogen bonding, the strongest, so most energy is needed to separate the molecules **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-chromatography-rf",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "S2.2.10",
+  "concept": "Chromatography",
+  "prompt": "In paper chromatography, a spot moves 2.4 cm while the solvent front moves 6.0 cm.\n\n**(a)** Calculate the $R_f$ value. **[1]**\n\n**(b)** Explain why components of a mixture separate. **[2]**",
+  "markscheme": "**(a)** $R_f=\\dfrac{2.4}{6.0}=0.40$ **(A1)**\n\n**(b)** Each component has different relative attractions to the stationary phase (paper/water) and the mobile phase (solvent) **(R1)**; those more attracted to the mobile phase travel further **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-nitrate-resonance",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "S2.2.11",
+  "concept": "Resonance structures",
+  "prompt": "Draw (describe) the resonance structures of the nitrate ion, NO₃⁻, and explain what this implies about its N–O bond lengths.",
+  "markscheme": "Three equivalent Lewis structures, each with one N=O and two N–O⁻ bonds, the double bond in a different position **(A1)**\n\nThe real ion is a hybrid with delocalised electrons **(R1)**: all three bonds are identical, intermediate in length between single and double bonds **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-benzene-evidence",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "S2.2.12",
+  "concept": "Resonance in benzene",
+  "prompt": "Give two pieces of evidence that benzene does not contain three localised C=C bonds.",
+  "markscheme": "All six C–C bonds have the same length (140 pm), between single and double **(A1)**\n\nIts enthalpy of hydrogenation is about 150 kJ mol⁻¹ less exothermic than three times that of cyclohexene, so it is more stable than the Kekulé structure **(A1)**\n\nIt undergoes substitution rather than addition reactions with bromine **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-expanded-octet-shapes",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "S2.2.13",
+  "concept": "Expanded octets",
+  "prompt": "Predict the shape and bond angle of **(a)** SF₆, **(b)** PCl₅, **(c)** XeF₄, **(d)** SF₄.",
+  "markscheme": "**(a)** Octahedral, 90° **(A1)** **(b)** Trigonal bipyramidal, 90° and 120° **(A1)**\n\n**(c)** Square planar, 90° (6 domains, 2 lone pairs opposite) **(A1)** **(d)** Seesaw, about 102° and 173° (5 domains, 1 lone pair) **(A1)**\n\nElements in period 3 and below can exceed the octet because they are larger and have available d orbitals.",
+  "source": "original"
+ },
+ {
+  "id": "g-formal-charge-n2o",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "S2.2.14",
+  "concept": "Formal charge",
+  "prompt": "Two Lewis structures of N₂O are N=N=O and N≡N–O. Use formal charges to determine which is preferred.",
+  "markscheme": "Formal charge $=V-N-\\tfrac B2$ **(M1)**\n\nN=N=O: −1, +1, 0 **(A1)**; N≡N–O: 0, +1, −1 **(A1)**\n\nBoth have the same spread, but in N≡N–O the negative formal charge is on the more electronegative oxygen, so it is preferred **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-sigma-pi-count",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "S2.2.15",
+  "concept": "Sigma and pi bonds",
+  "prompt": "How many σ and π bonds are in a molecule of ethyne, HC≡CH?",
+  "options": [
+   "2σ, 3π",
+   "3σ, 2π",
+   "4σ, 1π",
+   "5σ, 0π"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** Each single bond is σ; a triple bond is one σ and two π. Two C–H σ + one C–C σ = 3σ, and 2π.",
+  "source": "original"
+ },
+ {
+  "id": "g-hybridization-carbon",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "S2.2.16",
+  "concept": "Hybridization",
+  "prompt": "State the hybridization of carbon in **(a)** methane, **(b)** ethene, **(c)** ethyne, and relate it to the shape around the carbon.",
+  "markscheme": "**(a)** sp³, tetrahedral **(A1)** **(b)** sp², trigonal planar (one unhybridised p orbital forms the π bond) **(A1)** **(c)** sp, linear (two p orbitals form two π bonds) **(A1)**",
+  "source": "original"
+ }
+]

@@ -1,0 +1,174 @@
+[
+ {
+  "id": "g-nucleophile-identify",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "R3.4.1",
+  "concept": "Nucleophiles",
+  "prompt": "Which species can act as a nucleophile?",
+  "options": [
+   "H⁺",
+   "NH₃",
+   "NO₂⁺",
+   "BF₃"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** A nucleophile donates a lone pair; NH₃ has one. H⁺, NO₂⁺ and BF₃ are electron-pair acceptors (electrophiles).",
+  "source": "original"
+ },
+ {
+  "id": "g-nucleophilic-substitution-outline",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "R3.4.2",
+  "concept": "Nucleophilic substitution",
+  "prompt": "Write an equation for the reaction of bromoethane with aqueous sodium hydroxide, and identify the nucleophile and the leaving group.",
+  "markscheme": "CH₃CH₂Br + OH⁻ → CH₃CH₂OH + Br⁻ **(A1)**; nucleophile OH⁻, leaving group Br⁻ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-heterolytic-fission",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "R3.4.3",
+  "concept": "Heterolytic fission",
+  "prompt": "Distinguish between heterolytic and homolytic fission of a covalent bond.",
+  "markscheme": "Heterolytic: both bonding electrons go to one fragment, forming ions; homolytic: one electron to each fragment, forming radicals **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-electrophile-identify",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "R3.4.4",
+  "concept": "Electrophiles",
+  "prompt": "Define an electrophile and give one example.",
+  "markscheme": "A species that accepts an electron pair to form a new bond, e.g. H⁺, NO₂⁺, Br₂ (polarised), or a carbocation **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-alkene-bromine-test",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "R3.4.5",
+  "concept": "Electrophilic addition to alkenes",
+  "prompt": "Explain why alkenes undergo electrophilic addition, and describe the bromine water test.",
+  "markscheme": "The C=C double bond, especially the π bond, is a region of high electron density that attracts electrophiles **(R1)**\n\nBromine water is decolourised (orange to colourless) by an alkene **(A1)** as bromine adds across the double bond, e.g. forming 1,2-dibromoethane from ethene **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-lewis-acid-base",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "R3.4.6",
+  "concept": "Lewis acids and bases",
+  "prompt": "In $\\text{BF}_3+\\text{NH}_3\\to\\text{F}_3\\text{B–NH}_3$, which statement is correct?",
+  "options": [
+   "BF₃ is a Lewis acid",
+   "NH₃ is a Lewis acid",
+   "BF₃ is a Brønsted–Lowry acid",
+   "A proton is transferred"
+  ],
+  "answer": 0,
+  "markscheme": "**A.** BF₃ (electron-deficient boron) accepts the lone pair donated by NH₃, forming a coordination bond. No proton is transferred, so it is not a Brønsted–Lowry reaction.",
+  "source": "original"
+ },
+ {
+  "id": "g-lewis-nucleophile-link",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "R3.4.7",
+  "concept": "Lewis bases as nucleophiles",
+  "prompt": "Explain why every nucleophile is a Lewis base and every electrophile is a Lewis acid.",
+  "markscheme": "A nucleophile forms a bond by donating an electron pair — the definition of a Lewis base **(R1)**; an electrophile forms a bond by accepting a pair — a Lewis acid; the new bond is a coordination bond **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-complex-ion-ligands",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "R3.4.8",
+  "concept": "Complex ions and ligands",
+  "prompt": "In [Cu(H₂O)₆]²⁺, identify the ligand, explain how it bonds to Cu²⁺, and state the coordination number.",
+  "markscheme": "Ligand H₂O donates a lone pair from oxygen to Cu²⁺, forming coordination bonds **(A1)**; coordination number 6 **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-sn1-sn2",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "R3.4.9",
+  "concept": "SN1 and SN2 mechanisms",
+  "prompt": "Compare the mechanisms of hydrolysis of 1-bromobutane and 2-bromo-2-methylpropane by OH⁻.",
+  "markscheme": "1-bromobutane (primary): SN2 — one step, OH⁻ attacks the carbon from the side opposite Br as Br⁻ leaves, through a transition state; rate $=k[\\text{RBr}][\\text{OH}^{-}]$ **(A2)**\n\n2-bromo-2-methylpropane (tertiary): SN1 — slow heterolysis to a tertiary carbocation, then fast attack by OH⁻; rate $=k[\\text{RBr}]$ **(A1)**; tertiary carbocations are stabilised by alkyl groups, and steric hindrance blocks backside attack **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-leaving-group-rate",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "R3.4.10",
+  "concept": "Leaving group and rate",
+  "prompt": "Which halogenoalkane reacts fastest with aqueous hydroxide ions?",
+  "options": [
+   "CH₃CH₂F",
+   "CH₃CH₂Cl",
+   "CH₃CH₂Br",
+   "CH₃CH₂I"
+  ],
+  "answer": 3,
+  "markscheme": "**D.** The C–I bond is the weakest (longest), so iodide is the best leaving group and iodoalkanes react fastest — bond strength matters more than bond polarity here.",
+  "source": "original"
+ },
+ {
+  "id": "g-ethene-hbr-mechanism",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "R3.4.11",
+  "concept": "Electrophilic addition mechanism",
+  "prompt": "Outline the mechanism of the reaction between ethene and hydrogen bromide.",
+  "markscheme": "The π electrons attack the δ+ H of H–Br; H–Br breaks heterolytically **(A1)**; a carbocation CH₃CH₂⁺ and Br⁻ form **(A1)**; Br⁻ donates a lone pair to the carbocation, forming bromoethane **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-markovnikov-carbocation",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "R3.4.12",
+  "concept": "Carbocation stability in additions",
+  "prompt": "Propene reacts with HBr to give mainly 2-bromopropane rather than 1-bromopropane. Explain this using carbocation stability.",
+  "markscheme": "Addition of H⁺ can give a secondary carbocation (CH₃CH⁺CH₃) or a primary one (CH₃CH₂CH₂⁺) **(A1)**\n\nThe secondary carbocation is more stable because two alkyl groups push electron density towards (stabilise) the positive carbon **(R1)**; it forms faster, so Br⁻ attacks it to give 2-bromopropane **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-nitration-benzene",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "R3.4.13",
+  "concept": "Electrophilic substitution of benzene",
+  "prompt": "Benzene is nitrated with a mixture of concentrated nitric and sulfuric acids.\n\n**(a)** Write the equation for formation of the electrophile. **[1]**\n\n**(b)** Outline the mechanism and explain why benzene undergoes substitution rather than addition. **[3]**",
+  "markscheme": "**(a)** HNO₃ + 2H₂SO₄ → NO₂⁺ + H₃O⁺ + 2HSO₄⁻ **(A1)**\n\n**(b)** The delocalised π ring attacks NO₂⁺, forming a positively charged intermediate with broken delocalisation **(A1)**; loss of H⁺ restores the delocalised ring, giving nitrobenzene **(A1)**. Substitution keeps the stable delocalised system, whereas addition would destroy it **(R1)**",
+  "source": "original"
+ }
+]

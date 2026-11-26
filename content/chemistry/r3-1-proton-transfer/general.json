@@ -1,0 +1,226 @@
+[
+ {
+  "id": "g-bronsted-identify",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "R3.1.1",
+  "concept": "Brønsted–Lowry acids and bases",
+  "prompt": "In $\\text{NH}_3+\\text{H}_2\\text{O}\\rightleftharpoons\\text{NH}_4^{+}+\\text{OH}^{-}$, which species acts as a Brønsted–Lowry acid in the forward reaction?",
+  "options": [
+   "NH₃",
+   "H₂O",
+   "NH₄⁺",
+   "OH⁻"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** Water donates a proton (H⁺) to ammonia, so water is the acid and ammonia the base.",
+  "source": "original"
+ },
+ {
+  "id": "g-conjugate-pairs",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "R3.1.2",
+  "concept": "Conjugate acid–base pairs",
+  "prompt": "Identify the two conjugate acid–base pairs in $\\text{HNO}_3+\\text{H}_2\\text{O}\\to\\text{NO}_3^{-}+\\text{H}_3\\text{O}^{+}$.",
+  "markscheme": "HNO₃ / NO₃⁻ **(A1)** and H₃O⁺ / H₂O **(A1)** — each pair differs by one proton.",
+  "source": "original"
+ },
+ {
+  "id": "g-amphiprotic-hco3",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "R3.1.3",
+  "concept": "Amphiprotic species",
+  "prompt": "Write equations to show the hydrogencarbonate ion, HCO₃⁻, acting as **(a)** an acid and **(b)** a base with water.",
+  "markscheme": "**(a)** HCO₃⁻ + H₂O ⇌ CO₃²⁻ + H₃O⁺ **(A1)**\n\n**(b)** HCO₃⁻ + H₂O ⇌ H₂CO₃ + OH⁻ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-ph-calculations",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "R3.1.4",
+  "concept": "pH and [H⁺]",
+  "prompt": "**(a)** Calculate the pH of 0.0050 mol dm⁻³ HCl. **[1]**\n\n**(b)** Calculate [H⁺] in a solution of pH 3.70. **[1]**\n\n**(c)** State the change in pH when a strong acid is diluted tenfold. **[1]**",
+  "markscheme": "**(a)** $-\\log(0.0050)=2.30$ **(A1)**\n\n**(b)** $10^{-3.70}=2.0\\times10^{-4}\\ \\text{mol dm}^{-3}$ **(A1)**\n\n**(c)** It increases by 1 — [H⁺] falls by a factor of 10 **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-kw-neutral-hot",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "R3.1.5",
+  "concept": "The ion product of water",
+  "prompt": "At 50 °C, $K_w=5.5\\times10^{-14}$. Calculate the pH of pure water at 50 °C and explain whether it is acidic, neutral or basic.",
+  "markscheme": "$[\\text{H}^{+}]=[\\text{OH}^{-}]=\\sqrt{5.5\\times10^{-14}}$ **(M1)**; pH $=6.63$ **(A1)**\n\nStill neutral, because $[\\text{H}^{+}]=[\\text{OH}^{-}]$; neutral pH is 7 only at 25 °C **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-strong-weak-compare",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "R3.1.6",
+  "concept": "Strong and weak acids",
+  "prompt": "Describe two experiments that distinguish 0.10 mol dm⁻³ HCl from 0.10 mol dm⁻³ CH₃COOH, and explain the difference.",
+  "markscheme": "Measure pH: HCl ≈ 1, CH₃COOH ≈ 2.9 **(A1)**; measure conductivity or the rate of reaction with magnesium: HCl is higher/faster **(A1)**\n\nHCl is fully ionised; ethanoic acid only partially ionises, so [H⁺] is lower **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-neutralisation-equation",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "R3.1.7",
+  "concept": "Neutralization",
+  "prompt": "What is the ionic equation for any reaction between a strong acid and a strong base in aqueous solution?",
+  "options": [
+   "H⁺(aq) + OH⁻(aq) → H₂O(l)",
+   "Na⁺(aq) + Cl⁻(aq) → NaCl(s)",
+   "HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)",
+   "H₃O⁺(aq) → H⁺(aq) + H₂O(l)"
+  ],
+  "answer": 0,
+  "markscheme": "**A.** The spectator ions cancel, leaving H⁺(aq) + OH⁻(aq) → H₂O(l), which is why the enthalpy of neutralisation is about the same for all strong acid–strong base pairs.",
+  "source": "original"
+ },
+ {
+  "id": "g-strong-strong-ph-curve",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "R3.1.8",
+  "concept": "pH curves for strong acid–strong base",
+  "prompt": "Describe the pH curve when 0.10 mol dm⁻³ NaOH is added to 25.0 cm³ of 0.10 mol dm⁻³ HCl.",
+  "markscheme": "Starts at pH 1 and rises only slowly at first **(A1)**; a very steep rise around the equivalence point at 25.0 cm³, where pH = 7 **(A1)**; levels off near pH 13 with excess NaOH **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-poh-conversion",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "R3.1.9",
+  "concept": "pOH",
+  "prompt": "Calculate the pOH and pH of 0.020 mol dm⁻³ NaOH at 25 °C.",
+  "markscheme": "pOH $=-\\log0.020=1.70$ **(A1)**; pH $=14.00-1.70=12.30$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-weak-acid-ph",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "R3.1.10",
+  "concept": "Ka and the pH of a weak acid",
+  "prompt": "Calculate the pH of 0.10 mol dm⁻³ ethanoic acid ($K_a=1.8\\times10^{-5}$), stating one assumption.",
+  "markscheme": "$K_a=\\dfrac{[\\text{H}^{+}]^{2}}{0.10}$ **(M1)**; $[\\text{H}^{+}]=1.3\\times10^{-3}$, pH $=2.87$ **(A1)**\n\nAssumption: ionisation is so small that [CH₃COOH] at equilibrium ≈ 0.10 (and [H⁺] from water is negligible) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-ka-kb-relationship",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "R3.1.11",
+  "concept": "Ka × Kb = Kw",
+  "prompt": "$K_a$ for the ammonium ion is $5.6\\times10^{-10}$ at 298 K. Calculate $K_b$ for ammonia and state what the product $K_aK_b$ shows about conjugate pairs.",
+  "markscheme": "$K_b=\\dfrac{K_w}{K_a}=\\dfrac{1.0\\times10^{-14}}{5.6\\times10^{-10}}=1.8\\times10^{-5}$ **(A1)**; the stronger an acid, the weaker its conjugate base **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-salt-ph",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "R3.1.12",
+  "concept": "pH of salt solutions",
+  "prompt": "Which salt forms an acidic solution in water?",
+  "options": [
+   "NaCl",
+   "NH₄Cl",
+   "CH₃COONa",
+   "KNO₃"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** NH₄Cl comes from a weak base and strong acid; NH₄⁺ donates a proton to water. Sodium ethanoate is basic, NaCl and KNO₃ are neutral.",
+  "source": "original"
+ },
+ {
+  "id": "g-weak-acid-strong-base-curve",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "R3.1.13",
+  "concept": "pH curves with weak acids",
+  "prompt": "Describe how the pH curve for titrating ethanoic acid with NaOH differs from that for HCl with NaOH, and state how $\\text{p}K_a$ can be found from it.",
+  "markscheme": "Higher starting pH (≈2.9) and a buffer region where pH changes slowly **(A1)**; the equivalence point is above 7 (≈8.7) with a shorter steep section **(A1)**; at half-equivalence pH = p$K_a$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-indicator-pka",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "R3.1.14",
+  "concept": "Acid–base indicators",
+  "prompt": "Explain how an indicator HIn changes colour, and relate its end point to its p$K_a$.",
+  "markscheme": "HIn ⇌ H⁺ + In⁻, with HIn and In⁻ of different colours; adding acid shifts it left, adding base shifts it right **(R1)**; the colour changes when [HIn] ≈ [In⁻], i.e. at pH ≈ p$K_a$ **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-choose-indicator",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "R3.1.15",
+  "concept": "Choosing an indicator",
+  "prompt": "Which indicator is most suitable for titrating ethanoic acid with sodium hydroxide?",
+  "options": [
+   "methyl orange (3.1–4.4)",
+   "bromophenol blue (3.0–4.6)",
+   "phenolphthalein (8.2–10.0)",
+   "any indicator"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** The equivalence point is about pH 8.7, which lies within phenolphthalein's range (8.2–10). Methyl orange (3.1–4.4) would change too early.",
+  "source": "original"
+ },
+ {
+  "id": "g-buffer-action",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "R3.1.16",
+  "concept": "Buffer solutions",
+  "prompt": "Explain how a buffer of ethanoic acid and sodium ethanoate resists changes in pH when small amounts of acid or alkali are added.",
+  "markscheme": "Large reservoirs of CH₃COOH and CH₃COO⁻ are present **(A1)**\n\nAdded H⁺ reacts with CH₃COO⁻ to form CH₃COOH **(A1)**; added OH⁻ reacts with CH₃COOH to form CH₃COO⁻ and water **(A1)** — the ratio, and so pH, barely changes.",
+  "source": "original"
+ },
+ {
+  "id": "g-buffer-ph-calc",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 2,
+  "subtopic": "R3.1.17",
+  "concept": "pH of a buffer",
+  "prompt": "Calculate the pH of a buffer containing 0.10 mol dm⁻³ ethanoic acid and 0.20 mol dm⁻³ sodium ethanoate (p$K_a$ = 4.76).",
+  "markscheme": "pH $=\\text{p}K_a+\\log\\dfrac{[\\text{A}^{-}]}{[\\text{HA}]}=4.76+\\log2$ **(M1)** $=5.06$ **(A1)**",
+  "source": "original"
+ }
+]

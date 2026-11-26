@@ -1,0 +1,64 @@
+[
+ {
+  "id": "g-system-surroundings",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "R1.1.1",
+  "concept": "Energy transfer between system and surroundings",
+  "prompt": "When ammonium nitrate dissolves in water in a beaker, the beaker becomes cold. Identify the system and the surroundings, and state the direction of energy transfer.",
+  "markscheme": "System: the dissolving ammonium nitrate (the chemical change); surroundings: the water, beaker and air **(A1)**\n\nEnergy transfers from the surroundings into the system, so the surroundings cool; total energy is conserved **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-exo-endo-identify",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "R1.1.2",
+  "concept": "Exothermic and endothermic reactions",
+  "prompt": "Which process is endothermic?",
+  "options": [
+   "Combustion of methane",
+   "Neutralisation of HCl by NaOH",
+   "Melting of ice",
+   "Condensation of steam"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** Melting needs energy to overcome attractions between particles. Combustion, neutralisation and condensation release energy.",
+  "source": "original"
+ },
+ {
+  "id": "g-stability-energy-profile",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "R1.1.3",
+  "concept": "Relative stability of reactants and products",
+  "prompt": "For an exothermic reaction, compare the stability of the reactants and products, and describe the energy profile.",
+  "markscheme": "Products are lower in enthalpy, so more stable than the reactants **(R1)**; the profile rises to a transition state (activation energy) and falls to a product level below the reactant level, with $\\Delta H<0$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-calorimetry-neutralisation",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "R1.1.4",
+  "concept": "ΔH from temperature change",
+  "prompt": "50.0 cm³ of 1.00 mol dm⁻³ HCl is mixed with 50.0 cm³ of 1.00 mol dm⁻³ NaOH. The temperature rises by 6.8 °C. Calculate the enthalpy change of neutralisation. (Assume the solution has density 1.00 g cm⁻³ and $c=4.18\\ \\text{J g}^{-1}\\text{K}^{-1}$.)",
+  "markscheme": "$q=mc\\Delta T=100\\times4.18\\times6.8=2.84\\times10^{3}$ J **(M1)(A1)**\n\n$n(\\text{H}_2\\text{O})=0.0500$ mol **(A1)**; $\\Delta H=-\\dfrac{2.84}{0.0500}=-57\\ \\text{kJ mol}^{-1}$ **(A1)** — negative because the reaction is exothermic.",
+  "source": "original"
+ },
+ {
+  "id": "g-calorimetry-combustion-error",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "R1.1.4",
+  "concept": "Calorimetry and heat loss",
+  "prompt": "Burning 0.46 g of ethanol (M = 46.08) heats 200 g of water by 11.5 °C. Calculate the enthalpy of combustion of ethanol and explain why it is much less exothermic than the data-booklet value of −1367 kJ mol⁻¹.",
+  "markscheme": "$q=200\\times4.18\\times11.5=9.61\\times10^{3}$ J; $n=0.00998$ mol **(M1)(A1)**\n\n$\\Delta H=-963\\ \\text{kJ mol}^{-1}$ **(A1)**\n\nHeat is lost to the surroundings (air, can), and combustion may be incomplete **(R1)**",
+  "source": "original"
+ }
+]

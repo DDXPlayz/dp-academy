@@ -1,0 +1,42 @@
+[
+ {
+  "id": "g-radical-definition",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "R3.3.1",
+  "concept": "Radicals",
+  "prompt": "Which species is a radical?",
+  "options": [
+   "Cl⁻",
+   "Cl₂",
+   "Cl•",
+   "Cl⁺"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** Cl• has an unpaired electron (7 valence electrons). Cl⁻, Cl⁺ and Cl₂ have all electrons paired.",
+  "source": "original"
+ },
+ {
+  "id": "g-homolytic-fission",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "R3.3.2",
+  "concept": "Homolytic fission",
+  "prompt": "Write an equation for the homolytic fission of chlorine and state the condition required.",
+  "markscheme": "Cl₂ → 2Cl• (each atom takes one electron of the shared pair) **(A1)**; UV light **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-radical-substitution-mechanism",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "R3.3.3",
+  "concept": "Radical substitution of alkanes",
+  "prompt": "Outline the mechanism for the reaction of methane with chlorine in UV light, and explain why a mixture of products forms.",
+  "markscheme": "Initiation: Cl₂ → 2Cl• **(A1)**\n\nPropagation: CH₄ + Cl• → CH₃• + HCl; CH₃• + Cl₂ → CH₃Cl + Cl• **(A1)**\n\nTermination: e.g. Cl• + Cl• → Cl₂; CH₃• + CH₃• → C₂H₆ **(A1)**\n\nCl• can also attack CH₃Cl and further products, giving CH₂Cl₂, CHCl₃, CCl₄ and ethane **(R1)**",
+  "source": "original"
+ }
+]

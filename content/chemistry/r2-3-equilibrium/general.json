@@ -1,0 +1,89 @@
+[
+ {
+  "id": "g-dynamic-equilibrium",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "R2.3.1",
+  "concept": "Dynamic equilibrium",
+  "prompt": "State two characteristics of a system in dynamic equilibrium.",
+  "markscheme": "Any two **(A2)**: forward and backward rates are equal; concentrations remain constant (not necessarily equal); it requires a closed system; macroscopic properties are constant while reactions continue.",
+  "source": "original"
+ },
+ {
+  "id": "g-kc-expression",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "R2.3.2",
+  "concept": "The equilibrium law",
+  "prompt": "Write the equilibrium constant expression for $\\text{N}_2(g)+3\\text{H}_2(g)\\rightleftharpoons2\\text{NH}_3(g)$.",
+  "markscheme": "$K_c=\\dfrac{[\\text{NH}_3]^{2}}{[\\text{N}_2][\\text{H}_2]^{3}}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-k-magnitude-temperature",
+  "paper": "1A",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "R2.3.3",
+  "concept": "Magnitude of K",
+  "prompt": "For an exothermic reaction, K is very large at 300 K. Which statement is correct?",
+  "options": [
+   "The reaction is very fast.",
+   "Increasing the temperature increases K.",
+   "The equilibrium mixture contains mainly products.",
+   "A catalyst increases K."
+  ],
+  "answer": 2,
+  "markscheme": "**C.** A large K means the mixture is mostly products at equilibrium. For an exothermic reaction, raising the temperature decreases K. A catalyst does not change K.",
+  "source": "original"
+ },
+ {
+  "id": "g-le-chatelier-haber",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "R2.3.4",
+  "concept": "Le Châtelier's principle",
+  "prompt": "For $\\text{N}_2(g)+3\\text{H}_2(g)\\rightleftharpoons2\\text{NH}_3(g)$, ΔH = −92 kJ, predict and explain the effect on the yield of ammonia of **(a)** increasing the pressure and **(b)** increasing the temperature.",
+  "markscheme": "**(a)** Increases: the equilibrium shifts to the side with fewer moles of gas (2 vs 4), reducing the pressure **(A1)(R1)**\n\n**(b)** Decreases: the forward reaction is exothermic, so the equilibrium shifts in the endothermic (backward) direction to absorb the heat **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-q-vs-k",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "R2.3.5",
+  "concept": "Reaction quotient",
+  "prompt": "For a reaction with $K_c=50$ at a certain temperature, a mixture has $Q=12$. Predict the direction in which the reaction proceeds.",
+  "markscheme": "$Q<K$, so the ratio of products to reactants is too small **(R1)**; the forward reaction is favoured until $Q=K$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-ice-table-hi",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "R2.3.6",
+  "concept": "Equilibrium calculations",
+  "prompt": "1.00 mol of H₂ and 1.00 mol of I₂ are placed in a 1.00 dm³ flask. $\\text{H}_2+\\text{I}_2\\rightleftharpoons2\\text{HI}$, $K_c=50.0$. Calculate the equilibrium concentration of HI.",
+  "markscheme": "Let $x$ react: $[\\text{H}_2]=[\\text{I}_2]=1.00-x$, $[\\text{HI}]=2x$ **(M1)**\n\n$\\dfrac{(2x)^{2}}{(1.00-x)^{2}}=50.0\\Rightarrow\\dfrac{2x}{1.00-x}=7.07$ **(M1)**\n\n$x=0.780$ **(A1)**; $[\\text{HI}]=1.56\\ \\text{mol dm}^{-3}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-delta-g-from-k",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "R2.3.7",
+  "concept": "ΔG and K",
+  "prompt": "A reaction has $K=1.0\\times10^{-5}$ at 298 K. Calculate ΔG° and comment on the position of equilibrium. ($R=8.31\\ \\text{J K}^{-1}\\text{mol}^{-1}$)",
+  "markscheme": "$\\Delta G^{\\circ}=-RT\\ln K=-8.31\\times298\\times\\ln(1.0\\times10^{-5})=+28.5\\ \\text{kJ mol}^{-1}$ **(A1)**; positive ΔG° and small K: reactants predominate at equilibrium **(R1)**",
+  "source": "original"
+ }
+]

@@ -1,0 +1,131 @@
+[
+ {
+  "id": "g-photoelectric-particle-evidence",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "E.2.1",
+  "concept": "Photoelectric effect as evidence for photons",
+  "prompt": "State two observations of the photoelectric effect that the wave model of light cannot explain, and explain how the photon model accounts for them.",
+  "markscheme": "No emission below a threshold frequency, however intense the light **(A1)**; emission is instantaneous even at very low intensity **(A1)**\n\nEach electron absorbs one photon of energy $hf$; if $hf<\\Phi$ no electron escapes, and a single photon can release an electron immediately **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-threshold-frequency",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "E.2.2",
+  "concept": "Threshold frequency",
+  "prompt": "Light below the threshold frequency shines on a metal. If its intensity is doubled:",
+  "options": [
+   "photoelectrons are emitted with low energy",
+   "twice as many photoelectrons are emitted",
+   "photoelectrons are emitted after a delay",
+   "no photoelectrons are emitted"
+  ],
+  "answer": 3,
+  "markscheme": "**D.** Doubling intensity doubles the number of photons but not the energy of each, which is still below the work function.",
+  "source": "original"
+ },
+ {
+  "id": "g-einstein-photoelectric",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "E.2.3",
+  "concept": "E_max = hf − Φ",
+  "prompt": "Light of wavelength 400 nm falls on sodium, whose work function is 2.3 eV. ($h=6.63\\times10^{-34}$ J s, $c=3.00\\times10^{8}\\ \\text{m s}^{-1}$, $e=1.60\\times10^{-19}$ C)\n\n**(a)** Calculate the maximum kinetic energy of the photoelectrons in eV. **[2]**\n\n**(b)** Calculate the threshold frequency of sodium. **[1]**",
+  "markscheme": "**(a)** $hf=\\dfrac{hc}{\\lambda}=3.1$ eV **(A1)**; $E_{max}=3.1-2.3=0.8$ eV **(A1)**\n\n**(b)** $f_0=\\dfrac{\\Phi}{h}=\\dfrac{2.3\\times1.60\\times10^{-19}}{6.63\\times10^{-34}}=5.6\\times10^{14}$ Hz **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-electron-diffraction-evidence",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "E.2.4",
+  "concept": "Particle diffraction and matter waves",
+  "prompt": "Describe an experiment that shows electrons have wave properties.",
+  "markscheme": "Electrons accelerated through a few kV pass through a thin crystalline (graphite) film **(A1)**; concentric rings appear on a fluorescent screen — a diffraction pattern, which only waves produce, with ring size consistent with $\\lambda=\\frac hp$ **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-wave-particle-duality",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "E.2.5",
+  "concept": "Wave–particle duality",
+  "prompt": "Which phenomenon is evidence for the **particle** nature of light?",
+  "options": [
+   "Diffraction",
+   "Interference",
+   "The photoelectric effect",
+   "Polarisation"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** Diffraction, interference and polarisation are wave behaviours; the photoelectric effect (and Compton scattering) need photons.",
+  "source": "original"
+ },
+ {
+  "id": "g-de-broglie-electron-ball",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "E.2.6",
+  "concept": "de Broglie wavelength",
+  "prompt": "**(a)** Calculate the de Broglie wavelength of an electron accelerated from rest through 100 V. ($m_e=9.11\\times10^{-31}$ kg) ($h=6.63\\times10^{-34}$ J s, $c=3.00\\times10^{8}\\ \\text{m s}^{-1}$, $e=1.60\\times10^{-19}$ C) **[2]**\n\n**(b)** Explain why a 0.16 kg ball moving at $30\\ \\text{m s}^{-1}$ shows no wave behaviour. **[1]**",
+  "markscheme": "**(a)** $p=\\sqrt{2m_eeV}=5.4\\times10^{-24}\\ \\text{kg m s}^{-1}$ **(A1)**; $\\lambda=\\dfrac hp=1.2\\times10^{-10}$ m — similar to atomic spacings, so electrons diffract off crystals **(A1)**\n\n**(b)** $\\lambda=\\dfrac{h}{mv}\\approx1.4\\times10^{-34}$ m, far too small to diffract from any real gap **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-compton-evidence",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "E.2.7",
+  "concept": "Compton scattering",
+  "prompt": "Explain why Compton scattering is evidence for the particle nature of light.",
+  "markscheme": "X-ray photons scattered by electrons emerge with a longer wavelength that depends on the scattering angle **(A1)**; this matches a collision of a particle with momentum $\\frac h\\lambda$ and an electron, conserving energy and momentum — a wave model predicts no wavelength change **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-compton-wavelength-increase",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "E.2.8",
+  "concept": "Photon scattering increases wavelength",
+  "prompt": "After a photon scatters off a free electron, the photon's:",
+  "options": [
+   "wavelength decreases",
+   "wavelength increases",
+   "speed decreases",
+   "frequency increases"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** The photon gives some energy to the recoiling electron, so its energy falls and its wavelength increases; its speed is still $c$.",
+  "source": "original"
+ },
+ {
+  "id": "g-compton-shift-90",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "E.2.9",
+  "concept": "Compton shift formula",
+  "prompt": "X-rays of wavelength 0.0710 nm are scattered through $90^{\\circ}$ by electrons. Calculate the scattered wavelength. ($m_e=9.11\\times10^{-31}$ kg) ($h=6.63\\times10^{-34}$ J s, $c=3.00\\times10^{8}\\ \\text{m s}^{-1}$, $e=1.60\\times10^{-19}$ C)",
+  "markscheme": "$\\Delta\\lambda=\\dfrac{h}{m_ec}(1-\\cos90^{\\circ})=2.43\\times10^{-12}$ m **(A1)**; $\\lambda_f=0.0734$ nm **(A1)**",
+  "source": "original"
+ }
+]

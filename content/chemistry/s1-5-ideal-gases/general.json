@@ -1,0 +1,53 @@
+[
+ {
+  "id": "g-ideal-gas-assumptions-chem",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "S1.5.1",
+  "concept": "The ideal gas model",
+  "prompt": "State two assumptions of the ideal gas model.",
+  "markscheme": "Any two **(A2)**: particles have negligible volume; there are no intermolecular forces; collisions are perfectly elastic; particles move randomly in straight lines between collisions.",
+  "source": "original"
+ },
+ {
+  "id": "g-real-gas-deviation",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "S1.5.2",
+  "concept": "Deviation of real gases",
+  "prompt": "Explain why real gases deviate most from ideal behaviour at low temperature and high pressure.",
+  "markscheme": "At high pressure particles are close together, so their own volume is a significant fraction of the container volume **(R1)**\n\nAt low temperature particles move slowly, so intermolecular attractions become significant **(R1)**; attractions reduce the pressure exerted, so $PV<nRT$ **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-molar-volume-co2",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "S1.5.3",
+  "concept": "Molar volume of a gas",
+  "prompt": "What volume does 4.40 g of carbon dioxide occupy at STP (273 K, 100 kPa; molar volume $22.7\\ \\text{dm}^{3}\\,\\text{mol}^{-1}$)? ($M=44.0$)",
+  "options": [
+   "0.227 dm³",
+   "2.27 dm³",
+   "22.7 dm³",
+   "4.40 dm³"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** $n=0.100$ mol; $V=0.100\\times22.7=2.27\\ \\text{dm}^{3}$. The molar volume is the same for every ideal gas at a given T and P.",
+  "source": "original"
+ },
+ {
+  "id": "g-molar-mass-ideal-gas",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "S1.5.4",
+  "concept": "PV = nRT",
+  "prompt": "0.500 g of a gas occupies 250 cm³ at 25 °C and 101 kPa. Calculate its molar mass. ($R=8.31\\ \\text{J K}^{-1}\\text{mol}^{-1}$)",
+  "markscheme": "Convert units: $V=2.50\\times10^{-4}\\ \\text{m}^{3}$, $T=298$ K, $P=1.01\\times10^{5}$ Pa **(A1)**\n\n$n=\\dfrac{PV}{RT}=0.0102$ mol **(M1)(A1)**\n\n$M=\\dfrac{0.500}{0.0102}=49.1\\ \\text{g mol}^{-1}$ **(A1)**\n\n**Common mistake:** using cm³ and kPa directly — with $R=8.31$ the units must be Pa and m³.",
+  "source": "original"
+ }
+]

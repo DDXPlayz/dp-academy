@@ -1,0 +1,64 @@
+[
+ {
+  "id": "g-balance-equation-ratio",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "R2.1.1",
+  "concept": "Chemical equations and mole ratios",
+  "prompt": "In $4\\text{NH}_3+5\\text{O}_2\\to4\\text{NO}+6\\text{H}_2\\text{O}$, how many moles of oxygen react with 2.0 mol of ammonia?",
+  "options": [
+   "1.6 mol",
+   "2.0 mol",
+   "2.5 mol",
+   "5.0 mol"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** Ratio NH₃ : O₂ = 4 : 5, so $2.0\\times\\dfrac54=2.5$ mol.",
+  "source": "original"
+ },
+ {
+  "id": "g-titration-sulfuric",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "R2.1.2",
+  "concept": "Mole ratios in solution reactions",
+  "prompt": "25.0 cm³ of NaOH solution is neutralised by 18.5 cm³ of 0.100 mol dm⁻³ H₂SO₄. Calculate the concentration of the NaOH.",
+  "markscheme": "$n(\\text{H}_2\\text{SO}_4)=0.0185\\times0.100=1.85\\times10^{-3}$ mol **(A1)**\n\n$\\text{H}_2\\text{SO}_4+2\\text{NaOH}\\to\\text{Na}_2\\text{SO}_4+2\\text{H}_2\\text{O}$, so $n(\\text{NaOH})=3.70\\times10^{-3}$ mol **(M1)**\n\n$c=\\dfrac{3.70\\times10^{-3}}{0.0250}=0.148\\ \\text{mol dm}^{-3}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-limiting-reactant-mg",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "R2.1.3",
+  "concept": "Limiting reactant and theoretical yield",
+  "prompt": "5.00 g of magnesium is added to 100 cm³ of 1.00 mol dm⁻³ HCl. $\\text{Mg}+2\\text{HCl}\\to\\text{MgCl}_2+\\text{H}_2$\n\n**(a)** Determine the limiting reactant. **[2]**\n\n**(b)** Calculate the theoretical volume of hydrogen at STP (22.7 dm³ mol⁻¹). **[2]**",
+  "markscheme": "**(a)** $n(\\text{Mg})=\\dfrac{5.00}{24.31}=0.206$ mol, which needs 0.411 mol HCl; only 0.100 mol HCl is present, so HCl is limiting **(M1)(A1)**\n\n**(b)** $n(\\text{H}_2)=0.0500$ mol **(A1)**; $V=1.14\\ \\text{dm}^{3}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-percentage-yield",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "R2.1.4",
+  "concept": "Percentage yield",
+  "prompt": "The theoretical yield of hydrogen in an experiment is 1.14 dm³, but 1.02 dm³ is collected. Calculate the percentage yield and suggest one reason it is below 100%.",
+  "markscheme": "$\\dfrac{1.02}{1.14}\\times100=89.5\\%$ **(A1)**; e.g. gas escaped before the stopper was fitted, or some dissolved in the water **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-atom-economy-ethanol",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "R2.1.5",
+  "concept": "Atom economy",
+  "prompt": "Ethanol can be made by fermentation, $\\text{C}_6\\text{H}_{12}\\text{O}_6\\to2\\text{C}_2\\text{H}_5\\text{OH}+2\\text{CO}_2$, or by hydration of ethene, $\\text{C}_2\\text{H}_4+\\text{H}_2\\text{O}\\to\\text{C}_2\\text{H}_5\\text{OH}$. Calculate the atom economy of each and comment. ($M$: glucose 180.18, ethanol 46.08)",
+  "markscheme": "Fermentation: $\\dfrac{2\\times46.08}{180.18}\\times100=51.1\\%$ **(A1)**; hydration: 100% (one product) **(A1)**\n\nHydration wastes no atoms, but uses ethene from crude oil; fermentation uses a renewable feedstock **(R1)**",
+  "source": "original"
+ }
+]

@@ -1,0 +1,64 @@
+[
+ {
+  "id": "g-entropy-predict-sign",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "R1.4.1",
+  "concept": "Entropy",
+  "prompt": "Which reaction has the largest positive entropy change?",
+  "options": [
+   "N₂(g) + 3H₂(g) → 2NH₃(g)",
+   "H₂O(g) → H₂O(l)",
+   "Ag⁺(aq) + Cl⁻(aq) → AgCl(s)",
+   "(NH₄)₂CO₃(s) → 2NH₃(g) + CO₂(g) + H₂O(g)"
+  ],
+  "answer": 3,
+  "markscheme": "**D.** It produces 4 mol of gas from a solid, greatly increasing the dispersal of matter. A decreases moles of gas; B and C have little or negative change.",
+  "source": "original"
+ },
+ {
+  "id": "g-gibbs-calcium-carbonate",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "R1.4.2",
+  "concept": "Gibbs energy ΔG = ΔH − TΔS",
+  "prompt": "For $\\text{CaCO}_3(s)\\to\\text{CaO}(s)+\\text{CO}_2(g)$, $\\Delta H=+178\\ \\text{kJ mol}^{-1}$. Standard entropies (J K⁻¹ mol⁻¹): CaCO₃ 93, CaO 40, CO₂ 214.\n\n**(a)** Calculate ΔS. **[1]**\n\n**(b)** Calculate ΔG at 298 K. **[2]**\n\n**(c)** Determine the temperature above which the reaction becomes spontaneous. **[1]**",
+  "markscheme": "**(a)** $\\Delta S=40+214-93=+161\\ \\text{J K}^{-1}\\text{mol}^{-1}$ **(A1)**\n\n**(b)** $\\Delta G=178-298\\times0.161$ **(M1)** $=+130\\ \\text{kJ mol}^{-1}$ (not spontaneous) **(A1)**\n\n**(c)** $\\Delta G<0$ when $T>\\dfrac{178}{0.161}=1.1\\times10^{3}$ K **(A1)**\n\n**Common mistake:** mixing kJ and J — convert ΔS to kJ.",
+  "source": "original"
+ },
+ {
+  "id": "g-spontaneity-signs",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "R1.4.3",
+  "concept": "Spontaneity and ΔG",
+  "prompt": "A reaction has ΔH < 0 and ΔS < 0. When is it spontaneous?",
+  "options": [
+   "At all temperatures",
+   "Only at low temperatures",
+   "Only at high temperatures",
+   "Never"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** $\\Delta G=\\Delta H-T\\Delta S$: both terms compete. At low T the negative ΔH dominates, so ΔG < 0; at high T the $-T\\Delta S$ term (positive) wins.",
+  "source": "original"
+ },
+ {
+  "id": "g-delta-g-towards-equilibrium",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "R1.4.4",
+  "concept": "ΔG approaching equilibrium",
+  "prompt": "Explain what happens to ΔG as a reaction mixture approaches equilibrium, and state its value at equilibrium.",
+  "markscheme": "As reactants are used up and products form, the driving force decreases, so ΔG becomes less negative **(R1)**; at equilibrium ΔG = 0 and there is no further net change **(A1)**",
+  "source": "original"
+ }
+]

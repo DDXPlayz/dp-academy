@@ -1,0 +1,167 @@
+[
+ {
+  "id": "g-rate-from-graph",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "R2.2.1",
+  "concept": "Rate of reaction",
+  "prompt": "Explain how the initial rate of a reaction can be found from a graph of product concentration against time, and state its units.",
+  "markscheme": "Draw the tangent to the curve at $t=0$ and find its gradient **(A1)**; units $\\text{mol dm}^{-3}\\,\\text{s}^{-1}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-collision-theory",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "R2.2.2",
+  "concept": "Collision theory",
+  "prompt": "State the two conditions required for a collision between particles to lead to reaction.",
+  "markscheme": "Energy equal to or greater than the activation energy **(A1)**, and the correct orientation **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-factors-temperature",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "R2.2.3",
+  "concept": "Factors affecting rate",
+  "prompt": "Use the Maxwell–Boltzmann distribution to explain why a 10 °C rise in temperature can roughly double the rate of a reaction.",
+  "markscheme": "At higher temperature the distribution flattens and shifts to higher energies **(A1)**; the fraction of particles with $E\\ge E_a$ (area beyond $E_a$) increases greatly **(R1)**, so the frequency of successful collisions increases much more than the collision frequency alone **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-activation-energy-def",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "R2.2.4",
+  "concept": "Activation energy",
+  "prompt": "Activation energy is:",
+  "options": [
+   "the energy released by a reaction",
+   "the minimum energy needed for a collision to lead to reaction",
+   "the average kinetic energy of particles",
+   "the enthalpy change of reaction"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** The minimum energy colliding particles must have for a successful collision.",
+  "source": "original"
+ },
+ {
+  "id": "g-catalyst-mb",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "R2.2.5",
+  "concept": "Catalysts",
+  "prompt": "Explain, with reference to the Maxwell–Boltzmann distribution, how a catalyst increases the rate of a reaction.",
+  "markscheme": "It provides an alternative pathway with a lower activation energy **(A1)**; the distribution is unchanged, but more particles now exceed the lower $E_a$, so more collisions are successful **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-rate-determining-step",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "R2.2.6",
+  "concept": "Mechanisms and rate-determining step",
+  "prompt": "The reaction $2\\text{NO}_2+\\text{F}_2\\to2\\text{NO}_2\\text{F}$ has rate $=k[\\text{NO}_2][\\text{F}_2]$. Suggest a two-step mechanism consistent with this, identifying the rate-determining step.",
+  "markscheme": "Step 1 (slow): NO₂ + F₂ → NO₂F + F **(A1)**\n\nStep 2 (fast): NO₂ + F → NO₂F **(A1)**\n\nThe slow step involves one NO₂ and one F₂, matching the rate equation; the steps add to the overall equation **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-multistep-energy-profile",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "R2.2.7",
+  "concept": "Energy profiles for multistep reactions",
+  "prompt": "Describe the energy profile of a two-step reaction in which the first step is rate-determining.",
+  "markscheme": "Two humps (transition states) with an intermediate in the trough between them **(A1)**; the first hump is higher, as the rate-determining step has the larger activation energy **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-molecularity",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "R2.2.8",
+  "concept": "Molecularity",
+  "prompt": "What is the molecularity of the elementary step NO₂ + F₂ → NO₂F + F?",
+  "options": [
+   "unimolecular",
+   "bimolecular",
+   "termolecular",
+   "zero"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** Bimolecular — two reacting particles take part. Molecularity applies only to elementary steps.",
+  "source": "original"
+ },
+ {
+  "id": "g-rate-equation-experimental",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "R2.2.9",
+  "concept": "Rate equations are found experimentally",
+  "prompt": "Explain why the orders in a rate equation cannot be deduced from the stoichiometric equation.",
+  "markscheme": "The overall equation shows only the start and end, not the mechanism **(R1)**; the rate depends on the species in the rate-determining step, which can only be found from experiments **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-orders-initial-rates",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "R2.2.10",
+  "concept": "Orders of reaction from initial rates",
+  "prompt": "| [A] / mol dm⁻³ | [B] / mol dm⁻³ | Initial rate / mol dm⁻³ s⁻¹ |\n|---|---|---|\n| 0.10 | 0.10 | $2.0\\times10^{-3}$ |\n| 0.20 | 0.10 | $8.0\\times10^{-3}$ |\n| 0.10 | 0.20 | $4.0\\times10^{-3}$ |\n\nDeduce the order with respect to A and B, and write the rate equation.",
+  "markscheme": "Doubling [A] (B constant) quadruples the rate: second order in A **(A1)**\n\nDoubling [B] doubles the rate: first order in B **(A1)**\n\nrate $=k[\\text{A}]^{2}[\\text{B}]$ **(A1)**, third order overall **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-rate-constant-units",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "R2.2.11",
+  "concept": "Rate constant and its units",
+  "prompt": "For rate $=k[\\text{A}]^{2}[\\text{B}]$ with the data rate $=2.0\\times10^{-3}\\ \\text{mol dm}^{-3}\\text{s}^{-1}$ at [A] = [B] = 0.10 mol dm⁻³, calculate $k$ with units.",
+  "markscheme": "$k=\\dfrac{2.0\\times10^{-3}}{(0.10)^{2}(0.10)}=2.0$ **(A1)**; units $\\text{mol}^{-2}\\text{dm}^{6}\\text{s}^{-1}$ **(A1)** — and $k$ changes with temperature.",
+  "source": "original"
+ },
+ {
+  "id": "g-arrhenius-ea",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "R2.2.12",
+  "concept": "Arrhenius equation",
+  "prompt": "The rate constant of a reaction doubles when the temperature rises from 298 K to 308 K. Calculate the activation energy. ($R=8.31\\ \\text{J K}^{-1}\\text{mol}^{-1}$)",
+  "markscheme": "$\\ln\\dfrac{k_2}{k_1}=\\dfrac{E_a}{R}\\left(\\dfrac1{T_1}-\\dfrac1{T_2}\\right)$ **(M1)**\n\n$\\ln2=\\dfrac{E_a}{8.31}(1.09\\times10^{-4})$ **(A1)** $\\Rightarrow E_a=53\\ \\text{kJ mol}^{-1}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-arrhenius-factor",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "R2.2.13",
+  "concept": "The Arrhenius factor A",
+  "prompt": "State what the Arrhenius factor $A$ represents.",
+  "markscheme": "The frequency of collisions with the correct orientation (the rate constant if every such collision had enough energy) **(A1)**",
+  "source": "original"
+ }
+]

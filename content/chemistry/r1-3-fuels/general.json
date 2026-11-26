@@ -1,0 +1,57 @@
+[
+ {
+  "id": "g-combustion-equations",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "R1.3.1",
+  "concept": "Combustion reactions",
+  "prompt": "Write balanced equations for the complete combustion of **(a)** magnesium and **(b)** propane.",
+  "markscheme": "**(a)** 2Mg + O₂ → 2MgO **(A1)**\n\n**(b)** C₃H₈ + 5O₂ → 3CO₂ + 4H₂O **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-incomplete-combustion",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "R1.3.2",
+  "concept": "Incomplete combustion",
+  "prompt": "Write an equation for the incomplete combustion of methane forming carbon monoxide, and explain why carbon monoxide is dangerous.",
+  "markscheme": "2CH₄ + 3O₂ → 2CO + 4H₂O **(A2)**\n\nCO binds strongly to haemoglobin, reducing the blood's ability to carry oxygen; it is colourless and odourless **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-fossil-fuel-comparison",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "R1.3.3",
+  "concept": "Fossil fuels",
+  "prompt": "Compare coal and natural gas as fuels, giving one advantage of natural gas and one environmental disadvantage of coal.",
+  "markscheme": "Natural gas: cleaner burning, more energy per mole of CO₂ produced (higher H : C ratio), easy to transport by pipeline **(A1)**\n\nCoal: produces the most CO₂ per unit energy **(A1)**, and impurities give SO₂ (acid rain) and particulates **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-biofuels-carbon-neutral",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "R1.3.4",
+  "concept": "Biofuels",
+  "prompt": "Explain why biofuels such as bioethanol are described as renewable and, ideally, carbon-neutral, and give one limitation of this claim.",
+  "markscheme": "The carbon released on burning was recently fixed by photosynthesis, so crops can be regrown in a short time **(R1)**; limitation: fossil fuels are used in farming, fertiliser, processing and transport, and land is taken from food production **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-fuel-cell",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "R1.3.5",
+  "concept": "Fuel cells",
+  "prompt": "For a hydrogen–oxygen fuel cell in acid conditions, write the half-equations at each electrode and state one advantage over burning hydrogen.",
+  "markscheme": "Anode (oxidation): H₂ → 2H⁺ + 2e⁻ **(A1)**; cathode (reduction): O₂ + 4H⁺ + 4e⁻ → 2H₂O **(A1)**\n\nChemical energy is converted directly to electrical energy, so it is more efficient than combustion followed by a heat engine **(A1)**",
+  "source": "original"
+ }
+]

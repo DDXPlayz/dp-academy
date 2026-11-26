@@ -1,0 +1,147 @@
+[
+ {
+  "id": "g-formula-types",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "S3.2.1",
+  "concept": "Types of formula",
+  "prompt": "For butan-1-ol, write the molecular formula, the condensed structural formula and the empirical formula.",
+  "markscheme": "Molecular C₄H₁₀O **(A1)**; condensed CH₃CH₂CH₂CH₂OH **(A1)**; empirical C₄H₁₀O (already in simplest ratio) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-functional-groups-identify",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "S3.2.2",
+  "concept": "Functional groups",
+  "prompt": "Which functional group is present in CH₃COOCH₂CH₃?",
+  "options": [
+   "carboxyl",
+   "carbonyl (ketone)",
+   "ester",
+   "ether"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** –COO– between two carbon chains is an ester (ethyl ethanoate).",
+  "source": "original"
+ },
+ {
+  "id": "g-homologous-series",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "S3.2.3",
+  "concept": "Homologous series",
+  "prompt": "State two features of a homologous series and write the general formula of the alkanes.",
+  "markscheme": "Same functional group and general formula; successive members differ by CH₂; similar chemical properties; gradual trend in physical properties (any two) **(A1)**; alkanes $\\text{C}_n\\text{H}_{2n+2}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-boiling-point-chain-length",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "S3.2.4",
+  "concept": "Trends within a homologous series",
+  "prompt": "Explain why the boiling points of the alkanes increase with chain length.",
+  "markscheme": "Larger molecules have more electrons and greater surface contact **(R1)**, so London (dispersion) forces are stronger and need more energy to overcome **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-iupac-names",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "S3.2.5",
+  "concept": "IUPAC nomenclature",
+  "prompt": "Name **(a)** CH₃CH(CH₃)CH₂CH₃, **(b)** CH₃CH₂CHO, **(c)** CH₃CH(OH)CH₃.",
+  "markscheme": "**(a)** 2-methylbutane **(A1)** **(b)** propanal **(A1)** **(c)** propan-2-ol **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-structural-isomers-c4h10o",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "S3.2.6",
+  "concept": "Structural isomers",
+  "prompt": "Explain what structural isomers are, and give two isomers of C₃H₈O with different functional groups.",
+  "markscheme": "Same molecular formula but different connectivity of atoms **(A1)**; e.g. propan-1-ol (alcohol) and methoxyethane, CH₃OCH₂CH₃ (ether) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-stereoisomers-cis-trans-optical",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "S3.2.7",
+  "concept": "Stereoisomers",
+  "prompt": "**(a)** Explain why but-2-ene has cis–trans isomers but but-1-ene does not. **[2]**\n\n**(b)** Explain why butan-2-ol is chiral. **[1]**",
+  "markscheme": "**(a)** Rotation about C=C is restricted **(R1)**; in but-2-ene each double-bond carbon has two different groups, but in but-1-ene one carbon carries two H atoms **(R1)**\n\n**(b)** C2 is bonded to four different groups (H, OH, CH₃, C₂H₅), giving non-superimposable mirror images **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-ms-fragments",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "S3.2.8",
+  "concept": "Fragmentation in mass spectrometry",
+  "prompt": "The mass spectrum of propanone (M = 58) shows major peaks at $m/z$ 58 and 43. Identify the species responsible for each.",
+  "markscheme": "58: the molecular ion, [CH₃COCH₃]⁺ **(A1)**; 43: [CH₃CO]⁺ after loss of CH₃ (mass 15) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-ir-identify",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "S3.2.9",
+  "concept": "Infrared spectroscopy",
+  "prompt": "An IR spectrum shows a broad absorption at 2500–3000 cm⁻¹ and a strong absorption at 1700–1750 cm⁻¹. Identify the functional group present.",
+  "markscheme": "1700–1750: C=O **(A1)**; very broad 2500–3000: O–H in a carboxylic acid (hydrogen bonded), so the compound is a carboxylic acid **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-nmr-environments",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "S3.2.10",
+  "concept": "¹H NMR chemical environments",
+  "prompt": "Predict the number of signals and their area ratio in the ¹H NMR spectrum of ethanol, CH₃CH₂OH.",
+  "markscheme": "Three environments **(A1)**; ratio 3 : 2 : 1 (CH₃ : CH₂ : OH) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-nmr-splitting",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 2,
+  "subtopic": "S3.2.11",
+  "concept": "Splitting patterns",
+  "prompt": "Predict the splitting of the CH₃ and CH₂ signals in the ¹H NMR spectrum of chloroethane, CH₃CH₂Cl.",
+  "markscheme": "$n+1$ rule: CH₃ has 2 neighbouring H, so a triplet **(A1)**; CH₂ has 3 neighbouring H, so a quartet **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-combined-analysis",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "S3.2.12",
+  "concept": "Combining analytical data",
+  "prompt": "Compound X, C₃H₆O, shows an IR absorption at 1715 cm⁻¹ and no absorption at 3200–3600 cm⁻¹. Its ¹H NMR spectrum has a single signal. Deduce the structure of X, explaining each piece of evidence.",
+  "markscheme": "1715 cm⁻¹: C=O present **(A1)**; no broad O–H band: not an alcohol or acid **(A1)**\n\nOne NMR signal: all six H atoms are equivalent **(A1)**, so X is propanone, CH₃COCH₃ (propanal would show three signals) **(A1)**",
+  "source": "original"
+ }
+]

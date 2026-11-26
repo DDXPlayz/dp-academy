@@ -1,0 +1,82 @@
+[
+ {
+  "id": "g-mole-water",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "S1.4.1",
+  "concept": "The mole and Avogadro's constant",
+  "prompt": "For 9.0 g of water, calculate **(a)** the amount in moles, **(b)** the number of molecules, **(c)** the number of atoms. ($M=18.0\\ \\text{g mol}^{-1}$, $N_A=6.02\\times10^{23}\\ \\text{mol}^{-1}$)",
+  "markscheme": "**(a)** $0.50$ mol **(A1)** **(b)** $3.0\\times10^{23}$ molecules **(A1)** **(c)** 3 atoms per molecule: $9.0\\times10^{23}$ atoms **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-relative-atomic-mass-def",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "S1.4.2",
+  "concept": "Relative atomic mass",
+  "prompt": "Define relative atomic mass.",
+  "markscheme": "The weighted average mass of the atoms of an element (from its isotopes) relative to one-twelfth of the mass of an atom of carbon-12 **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-molar-mass-calcium-carbonate",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "S1.4.3",
+  "concept": "Molar mass",
+  "prompt": "What is the mass of 0.250 mol of calcium carbonate, CaCO₃? ($M_r=100.09$)",
+  "options": [
+   "4.00 g",
+   "25.0 g",
+   "100 g",
+   "400 g"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** $m=nM=0.250\\times100.09=25.0$ g.",
+  "source": "original"
+ },
+ {
+  "id": "g-empirical-molecular",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "S1.4.4",
+  "concept": "Empirical and molecular formulae",
+  "prompt": "A hydrocarbon contains 85.6% carbon and 14.4% hydrogen by mass. Its molar mass is $56\\ \\text{g mol}^{-1}$. Determine its empirical and molecular formulae.",
+  "markscheme": "$\\dfrac{85.6}{12.01}=7.13$, $\\dfrac{14.4}{1.01}=14.3$; ratio 1 : 2 **(M1)**; empirical formula CH₂ **(A1)**\n\n$M(\\text{CH}_2)=14$; $56\\div14=4$: molecular formula C₄H₈ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-concentration-dilution",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "S1.4.5",
+  "concept": "Molar concentration",
+  "prompt": "**(a)** 4.00 g of NaOH ($M=40.0$) is dissolved to make 250 cm³ of solution. Calculate its concentration. **[2]**\n\n**(b)** 25.0 cm³ of this solution is diluted to 100.0 cm³. State the new concentration. **[1]**",
+  "markscheme": "**(a)** $n=0.100$ mol; $c=\\dfrac{0.100}{0.250}=0.400\\ \\text{mol dm}^{-3}$ **(M1)(A1)**\n\n**(b)** Volume ×4, so $0.100\\ \\text{mol dm}^{-3}$ (the amount of solute is unchanged) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-avogadro-gas-volumes",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "S1.4.6",
+  "concept": "Avogadro's law",
+  "prompt": "$2\\text{H}_2(g)+\\text{O}_2(g)\\to2\\text{H}_2\\text{O}(g)$. What volume of oxygen reacts with 50 cm³ of hydrogen at the same temperature and pressure?",
+  "options": [
+   "25 cm³",
+   "50 cm³",
+   "100 cm³",
+   "150 cm³"
+  ],
+  "answer": 0,
+  "markscheme": "**A.** Equal volumes of gases contain equal numbers of molecules, so volumes react in the mole ratio 2 : 1: 25 cm³.",
+  "source": "original"
+ }
+]

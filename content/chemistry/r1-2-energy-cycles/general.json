@@ -1,0 +1,72 @@
+[
+ {
+  "id": "g-bond-enthalpy-methane",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "R1.2.1",
+  "concept": "Bond breaking and forming",
+  "prompt": "Use average bond enthalpies (kJ mol⁻¹: C–H 414, O=O 498, C=O 804, O–H 463) to estimate ΔH for $\\text{CH}_4(g)+2\\text{O}_2(g)\\to\\text{CO}_2(g)+2\\text{H}_2\\text{O}(g)$.",
+  "markscheme": "Bonds broken $=4(414)+2(498)=2652$ kJ **(A1)**; bonds formed $=2(804)+4(463)=3460$ kJ **(A1)**\n\n$\\Delta H=2652-3460=-808\\ \\text{kJ mol}^{-1}$ **(A1)** — an estimate, since bond enthalpies are averages for gaseous species.",
+  "source": "original"
+ },
+ {
+  "id": "g-hess-carbon-monoxide",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "R1.2.2",
+  "concept": "Hess's law",
+  "prompt": "Given $\\text{C}(s)+\\text{O}_2(g)\\to\\text{CO}_2(g)$, $\\Delta H=-394$ kJ and $\\text{CO}(g)+\\tfrac12\\text{O}_2(g)\\to\\text{CO}_2(g)$, $\\Delta H=-283$ kJ, calculate ΔH for $\\text{C}(s)+\\tfrac12\\text{O}_2(g)\\to\\text{CO}(g)$.",
+  "markscheme": "Route: C → CO₂ directly equals C → CO → CO₂ **(M1)**: $\\Delta H=-394-(-283)=-111$ kJ **(A1)**\n\nUseful because this reaction cannot be measured directly (some CO₂ always forms).",
+  "source": "original"
+ },
+ {
+  "id": "g-enthalpy-formation-definition",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "R1.2.3",
+  "concept": "Standard enthalpies of formation and combustion",
+  "prompt": "Define standard enthalpy of formation, and state the value for O₂(g), with a reason.",
+  "markscheme": "The enthalpy change when one mole of a compound is formed from its elements in their standard states under standard conditions **(A1)**; for O₂(g) it is zero, because it is already an element in its standard state **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-hess-formation-propane",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "R1.2.4",
+  "concept": "ΔH from formation data",
+  "prompt": "Calculate ΔH for $\\text{C}_3\\text{H}_8(g)+5\\text{O}_2(g)\\to3\\text{CO}_2(g)+4\\text{H}_2\\text{O}(l)$. ($\\Delta H_f$ in kJ mol⁻¹: C₃H₈ −105, CO₂ −394, H₂O(l) −286)",
+  "markscheme": "$\\Delta H=\\sum\\Delta H_f(\\text{products})-\\sum\\Delta H_f(\\text{reactants})$ **(M1)**\n\n$=3(-394)+4(-286)-(-105)$ **(A1)** $=-2221\\ \\text{kJ mol}^{-1}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-hess-combustion-hydrogenation",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "R1.2.4",
+  "concept": "ΔH from combustion data",
+  "prompt": "Calculate ΔH for $\\text{C}_2\\text{H}_4(g)+\\text{H}_2(g)\\to\\text{C}_2\\text{H}_6(g)$ using $\\Delta H_c$ (kJ mol⁻¹): C₂H₄ −1411, H₂ −286, C₂H₆ −1561.",
+  "markscheme": "With combustion data: $\\Delta H=\\sum\\Delta H_c(\\text{reactants})-\\sum\\Delta H_c(\\text{products})$ **(M1)**\n\n$=-1411-286-(-1561)=-136\\ \\text{kJ mol}^{-1}$ **(A2)**\n\n**Common mistake:** using products minus reactants, as for formation data.",
+  "source": "original"
+ },
+ {
+  "id": "g-born-haber-nacl",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "R1.2.5",
+  "concept": "Born–Haber cycle",
+  "prompt": "Use the data to calculate the lattice enthalpy of NaCl (kJ mol⁻¹): $\\Delta H_f(\\text{NaCl})=-411$; atomisation of Na $+107$; first IE of Na $+496$; $\\tfrac12$ bond enthalpy Cl–Cl $+121$; electron affinity of Cl $-349$.",
+  "markscheme": "Lattice enthalpy (NaCl(s) → Na⁺(g) + Cl⁻(g)) $=-\\Delta H_f+\\Delta H_{at}(\\text{Na})+IE+\\tfrac12E(\\text{Cl–Cl})+EA$ **(M1)(A1)**\n\n$=411+107+496+121-349=+786\\ \\text{kJ mol}^{-1}$ **(A2)**",
+  "source": "original"
+ }
+]

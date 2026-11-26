@@ -1,0 +1,86 @@
+[
+ {
+  "id": "g-stellar-equilibrium",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "E.5.1",
+  "concept": "Stellar equilibrium",
+  "prompt": "Explain why a main-sequence star neither expands nor collapses.",
+  "markscheme": "Inward gravitational force is balanced by outward pressure from the hot gas and radiation produced by fusion **(R1)**; the two are in equilibrium (hydrostatic equilibrium) **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-fusion-energy-source",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "E.5.2",
+  "concept": "Fusion in stars",
+  "prompt": "The main energy source of a main-sequence star is:",
+  "options": [
+   "fission of heavy elements",
+   "fusion of hydrogen into helium",
+   "gravitational collapse only",
+   "chemical combustion"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** Fusion of hydrogen into helium in the core; the products have greater binding energy per nucleon, so mass is converted to energy.",
+  "source": "original"
+ },
+ {
+  "id": "g-fusion-conditions",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "E.5.3",
+  "concept": "Conditions for fusion",
+  "prompt": "Explain why fusion requires both very high temperature and high density.",
+  "markscheme": "High temperature gives nuclei enough kinetic energy to overcome the electrostatic repulsion and come close enough for the strong force to act **(R1)**; high density makes collisions frequent enough for a sustained rate of fusion **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-stellar-mass-evolution",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "E.5.4",
+  "concept": "Stellar mass and evolution",
+  "prompt": "Compare the evolution of a star of one solar mass with that of a star of 20 solar masses after the main sequence.",
+  "markscheme": "1 solar mass: becomes a red giant, ejects its outer layers as a planetary nebula, leaving a white dwarf **(A1)**\n\n20 solar masses: becomes a red supergiant, fuses elements up to iron, explodes as a supernova **(A1)**, leaving a neutron star or black hole **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-hr-diagram-regions",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "E.5.5",
+  "concept": "Hertzsprung–Russell diagram",
+  "prompt": "Describe the positions of main-sequence stars, red giants and white dwarfs on an HR diagram, and state one property of stars in each region.",
+  "markscheme": "Main sequence: diagonal band from hot, luminous (top left) to cool, dim (bottom right); fusing hydrogen in their cores **(A1)**\n\nRed giants: upper right — cool but very luminous, so very large **(A1)**\n\nWhite dwarfs: lower left — hot but dim, so very small **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-parallax-distance",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "E.5.6",
+  "concept": "Stellar parallax",
+  "prompt": "A star has a parallax angle of 0.25 arc-seconds. Calculate its distance in parsecs and in light years (1 pc = 3.26 ly), and state why parallax only works for nearby stars.",
+  "markscheme": "$d=\\dfrac1p=4.0$ pc $=13$ ly **(A1)**; for distant stars the angle is too small to measure accurately **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-stellar-radius",
+  "paper": "2",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "E.5.7",
+  "concept": "Determining stellar radii",
+  "prompt": "A star has luminosity $3.9\\times10^{28}$ W and surface temperature 4000 K. Calculate its radius and compare it with the Sun's ($6.96\\times10^{8}$ m). ($\\sigma=5.67\\times10^{-8}\\ \\text{W m}^{-2}\\,\\text{K}^{-4}$)",
+  "markscheme": "$L=4\\pi R^{2}\\sigma T^{4}\\Rightarrow R=\\sqrt{\\dfrac{L}{4\\pi\\sigma T^{4}}}$ **(M1)** $=1.5\\times10^{10}$ m **(A1)**; about 21 times the Sun's radius — a giant star **(A1)**\n\nTemperature comes from Wien's law and luminosity from $b=\\frac{L}{4\\pi d^{2}}$ with a measured distance.",
+  "source": "original"
+ }
+]

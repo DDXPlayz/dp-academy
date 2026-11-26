@@ -1,0 +1,130 @@
+[
+ {
+  "id": "g-blocks-groups-periods",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "S3.1.1",
+  "concept": "Periods, groups and blocks",
+  "prompt": "Bromine ($[\\text{Ar}]3d^{10}4s^{2}4p^{5}$) is in which block, period and group?",
+  "options": [
+   "s-block, period 4, group 7",
+   "d-block, period 4, group 17",
+   "p-block, period 5, group 17",
+   "p-block, period 4, group 17"
+  ],
+  "answer": 3,
+  "markscheme": "**D.** The last electron enters a p orbital; outer level $n=4$; seven valence electrons: group 17.",
+  "source": "original"
+ },
+ {
+  "id": "g-period-outer-level",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "S3.1.2",
+  "concept": "Period number and outer energy level",
+  "prompt": "State what the period number of an element tells you about its electron configuration.",
+  "markscheme": "The number of the outermost occupied main energy level, e.g. period 3 elements have valence electrons in $n=3$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-atomic-radius-trend",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "S3.1.3",
+  "concept": "Periodicity",
+  "prompt": "Explain the trends in atomic radius **(a)** across period 3 and **(b)** down group 1.",
+  "markscheme": "**(a)** Decreases: nuclear charge increases while electrons are added to the same main level with similar shielding, so they are pulled closer **(R1)(A1)**\n\n**(b)** Increases: each element has an extra occupied main energy level **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-group-trends-reactivity",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "S3.1.4",
+  "concept": "Trends in groups 1 and 17",
+  "prompt": "Explain why reactivity increases down group 1 but decreases down group 17.",
+  "markscheme": "Group 1 react by losing an electron; down the group the outer electron is further from the nucleus and more shielded, so it is lost more easily **(R1)**\n\nGroup 17 react by gaining an electron; down the group the incoming electron is further from the nucleus and less strongly attracted **(R1)**, so electron gain is harder **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-oxides-acid-base",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "S3.1.5",
+  "concept": "Acid–base character of oxides",
+  "prompt": "Write equations for the reactions of **(a)** sodium oxide with water and **(b)** sulfur trioxide with water, and state the nature of aluminium oxide.",
+  "markscheme": "**(a)** Na₂O + H₂O → 2NaOH (basic) **(A1)**\n\n**(b)** SO₃ + H₂O → H₂SO₄ (acidic) **(A1)**\n\nAl₂O₃ is amphoteric — it reacts with both acids and bases **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-oxidation-states",
+  "paper": "1A",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "S3.1.6",
+  "concept": "Oxidation states",
+  "prompt": "What is the oxidation state of manganese in KMnO₄?",
+  "options": [
+   "+2",
+   "+4",
+   "+6",
+   "+7"
+  ],
+  "answer": 3,
+  "markscheme": "**D.** K is +1 and each O is −2: $+1+x+4(-2)=0$, so $x=+7$.",
+  "source": "original"
+ },
+ {
+  "id": "g-ie-discontinuities",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "S3.1.7",
+  "concept": "Discontinuities in first ionization energy",
+  "prompt": "Explain why the first ionisation energy of **(a)** aluminium is lower than that of magnesium, and **(b)** sulfur is lower than that of phosphorus.",
+  "markscheme": "**(a)** Al's outer electron is in a 3p orbital, which is higher in energy and more shielded than Mg's 3s **(R1)(A1)**\n\n**(b)** In S the electron is removed from a doubly occupied 3p orbital, where electron–electron repulsion makes it easier to remove **(R1)(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-transition-properties",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "S3.1.8",
+  "concept": "Characteristic properties of transition elements",
+  "prompt": "State two characteristic properties of transition elements, and why zinc is not considered a transition element.",
+  "markscheme": "Any two: variable oxidation states, coloured compounds, catalytic activity, complex ion formation, magnetic properties **(A1)**\n\nZinc forms only Zn²⁺, which has a full $3d^{10}$ sublevel — it has no incomplete d sublevel **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-variable-oxidation-states",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "S3.1.9",
+  "concept": "Variable oxidation states",
+  "prompt": "Explain why transition elements show variable oxidation states.",
+  "markscheme": "The 4s and 3d sublevels are close in energy **(R1)**, so successive ionisation energies increase gradually and different numbers of electrons can be lost (or shared) without a large energy jump **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-complex-colour",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "S3.1.10",
+  "concept": "Colour of transition element complexes",
+  "prompt": "Explain why an aqueous solution of [Cu(H₂O)₆]²⁺ appears blue.",
+  "markscheme": "The ligands split the 3d orbitals into two sets of different energy **(A1)**\n\nAn electron is promoted from the lower to the higher set by absorbing light of a particular frequency (orange/red) **(R1)**\n\nThe colour observed is the complementary colour of the light absorbed — blue **(R1)**",
+  "source": "original"
+ }
+]

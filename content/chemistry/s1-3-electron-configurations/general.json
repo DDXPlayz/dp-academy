@@ -1,0 +1,95 @@
+[
+ {
+  "id": "g-emission-photon-origin",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "S1.3.1",
+  "concept": "Origin of emission spectra",
+  "prompt": "Explain how an atom produces an emission spectrum.",
+  "markscheme": "Electrons are excited to higher energy levels (by heat or electricity) **(A1)**; when they return to lower levels, they emit photons whose energy equals the difference between the levels, giving lines of specific frequencies **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-hydrogen-convergence",
+  "paper": "1A",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "S1.3.2",
+  "concept": "Line spectrum of hydrogen",
+  "prompt": "Why do the lines in the hydrogen emission spectrum get closer together at higher frequency?",
+  "options": [
+   "Electrons move faster in higher levels",
+   "Higher levels hold more electrons",
+   "Energy levels get closer together at higher energies",
+   "Photons of high frequency travel more slowly"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** The energy levels themselves converge as $n$ increases, so transitions from successive high levels differ less and less in energy.",
+  "source": "original"
+ },
+ {
+  "id": "g-max-electrons-level",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "S1.3.3",
+  "concept": "Electrons in a main energy level",
+  "prompt": "What is the maximum number of electrons in the third main energy level ($n=3$)?",
+  "options": [
+   "8",
+   "9",
+   "18",
+   "32"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** $2n^{2}=18$: one 3s, three 3p and five 3d orbitals, each holding two electrons.",
+  "source": "original"
+ },
+ {
+  "id": "g-configurations-exceptions",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "S1.3.4",
+  "concept": "Sublevels and electron configurations",
+  "prompt": "Write the full electron configurations of **(a)** Fe, **(b)** Fe³⁺, **(c)** Cr and **(d)** Cu.",
+  "markscheme": "**(a)** $1s^{2}2s^{2}2p^{6}3s^{2}3p^{6}3d^{6}4s^{2}$ **(A1)**\n\n**(b)** $1s^{2}2s^{2}2p^{6}3s^{2}3p^{6}3d^{5}$ — 4s electrons are removed before 3d **(A1)**\n\n**(c)** $[\\text{Ar}]3d^{5}4s^{1}$ **(A1)** **(d)** $[\\text{Ar}]3d^{10}4s^{1}$ **(A1)** — half-filled and filled d sublevels are especially stable.",
+  "source": "original"
+ },
+ {
+  "id": "g-orbital-diagram-nitrogen",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "S1.3.5",
+  "concept": "Orbitals and electron spin",
+  "prompt": "Draw (describe) the orbital diagram for the valence electrons of nitrogen and state the rule that determines how the 2p electrons are arranged.",
+  "markscheme": "2s: one box with two electrons of opposite spin; 2p: three boxes each with one electron, all with parallel spins **(A1)**\n\nHund's rule: electrons occupy orbitals of equal energy singly before pairing, minimising repulsion **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-ie-from-convergence",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 3,
+  "subtopic": "S1.3.6",
+  "concept": "Ionisation energy from the convergence limit",
+  "prompt": "The convergence limit of the hydrogen Lyman series is at $3.29\\times10^{15}$ Hz. Calculate the first ionisation energy of hydrogen in $\\text{kJ mol}^{-1}$. ($h=6.63\\times10^{-34}$ J s, $N_A=6.02\\times10^{23}\\ \\text{mol}^{-1}$)",
+  "markscheme": "At the convergence limit the electron moves from $n=1$ to $n=\\infty$ (removed) **(R1)**\n\n$E=hf=2.18\\times10^{-18}$ J per atom **(A1)**; $\\times N_A$, $\\div1000$: $1.31\\times10^{3}\\ \\text{kJ mol}^{-1}$ **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-successive-ie-group",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "S1.3.7",
+  "concept": "Successive ionisation energies",
+  "prompt": "The first five ionisation energies of element X (kJ mol⁻¹) are 738, 1451, 7733, 10540, 13630. Deduce the group of X and explain your answer.",
+  "markscheme": "Group 2 **(A1)** — the large jump between the 2nd and 3rd IE shows that the third electron is removed from a lower main energy level, closer to the nucleus and less shielded, so X has two valence electrons **(R1)**",
+  "source": "original"
+ }
+]

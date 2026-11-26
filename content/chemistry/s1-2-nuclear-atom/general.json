@@ -1,0 +1,43 @@
+[
+ {
+  "id": "g-subatomic-chloride",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "S1.2.1",
+  "concept": "Protons, neutrons and electrons",
+  "prompt": "How many protons, neutrons and electrons are in the ion $^{35}_{17}\\text{Cl}^{-}$?",
+  "options": [
+   "17, 18, 17",
+   "17, 35, 18",
+   "18, 17, 18",
+   "17, 18, 18"
+  ],
+  "answer": 3,
+  "markscheme": "**D.** Protons $=Z=17$; neutrons $=35-17=18$; the 1− charge means one extra electron: 18.",
+  "source": "original"
+ },
+ {
+  "id": "g-isotope-properties",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "S1.2.2",
+  "concept": "Isotopes",
+  "prompt": "Explain why isotopes of an element have the same chemical properties but different physical properties.",
+  "markscheme": "Chemical properties depend on the electron arrangement, which is the same (same number of protons and electrons) **(R1)**; isotopes differ in the number of neutrons and so in mass, affecting mass-dependent properties such as density and rate of diffusion **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-mass-spectrum-mg",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "S1.2.3",
+  "concept": "Relative atomic mass from a mass spectrum",
+  "prompt": "The mass spectrum of magnesium shows peaks at $m/z$ 24, 25 and 26 with relative abundances 78.99%, 10.00% and 11.01%. Calculate the relative atomic mass of magnesium to two decimal places.",
+  "markscheme": "$A_r=\\dfrac{24(78.99)+25(10.00)+26(11.01)}{100}$ **(M1)** $=24.32$ **(A1)**\n\nIt is a weighted mean, so it lies closest to the most abundant isotope.",
+  "source": "original"
+ }
+]

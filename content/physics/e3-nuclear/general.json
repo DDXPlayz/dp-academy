@@ -1,0 +1,277 @@
+[
+ {
+  "id": "g-helium-binding-energy",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 4,
+  "subtopic": "E.3.1",
+  "concept": "Mass defect and binding energy",
+  "prompt": "Calculate the binding energy per nucleon of helium-4. (Masses: proton 1.007276 u, neutron 1.008665 u, helium-4 nucleus 4.001506 u; 1 u = 931.5 MeV $c^{-2}$)",
+  "markscheme": "Mass of separate nucleons $=2(1.007276)+2(1.008665)=4.031882$ u **(A1)**\n\nMass defect $=0.030376$ u **(A1)**; binding energy $=0.030376\\times931.5=28.3$ MeV **(A1)**\n\nPer nucleon $=7.07$ MeV **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-binding-energy-curve",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "E.3.2",
+  "concept": "Binding energy per nucleon curve",
+  "prompt": "Sketch (describe) the graph of binding energy per nucleon against nucleon number, and use it to explain why both fusion of light nuclei and fission of heavy nuclei release energy.",
+  "markscheme": "Rises steeply from hydrogen, peaks at about 8.8 MeV near iron-56, then falls gently to about 7.6 MeV for uranium **(A1)**\n\nFusion of light nuclei and fission of heavy nuclei both produce nuclei closer to the peak, with larger binding energy per nucleon **(R1)**; the increase in total binding energy is released **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-mass-energy-fission",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "E.3.3",
+  "concept": "E = mc² in nuclear reactions",
+  "prompt": "In a nuclear reaction the total mass of the products is $3.1\\times10^{-28}$ kg less than that of the reactants. Calculate the energy released in MeV. ($c=3.00\\times10^{8}\\ \\text{m s}^{-1}$)",
+  "markscheme": "$E=mc^{2}=3.1\\times10^{-28}\\times9.0\\times10^{16}=2.8\\times10^{-11}$ J **(A1)** $=1.7\\times10^{2}$ MeV **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-strong-force-properties",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "E.3.4",
+  "concept": "The strong nuclear force",
+  "prompt": "Which describes the strong nuclear force between nucleons?",
+  "options": [
+   "Long range and repulsive",
+   "Long range and attractive",
+   "Short range and attractive",
+   "Acts only between protons"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** It is attractive and very short range (about $10^{-15}$ m), acting between protons and neutrons alike — strong enough to overcome proton–proton repulsion within the nucleus.",
+  "source": "original"
+ },
+ {
+  "id": "g-random-spontaneous",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "E.3.5",
+  "concept": "Random and spontaneous decay",
+  "prompt": "Explain what is meant by radioactive decay being **random** and **spontaneous**.",
+  "markscheme": "Random: it is impossible to predict which nucleus will decay next or when, only the probability per unit time **(A1)**; spontaneous: decay is not affected by external conditions such as temperature or pressure **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-decay-changes",
+  "paper": "1A",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "E.3.6",
+  "concept": "Changes to the nucleus in α, β, γ decay",
+  "prompt": "A nucleus undergoes $\\beta^{-}$ decay. What happens to its proton number $Z$ and nucleon number $A$?",
+  "options": [
+   "Z unchanged, A unchanged",
+   "Z increases by 1, A unchanged",
+   "Z decreases by 1, A unchanged",
+   "Z decreases by 2, A decreases by 4"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** A neutron becomes a proton (plus an electron and an antineutrino): $Z$ increases by 1, $A$ unchanged. In alpha decay $Z-2$, $A-4$; gamma decay changes neither.",
+  "source": "original"
+ },
+ {
+  "id": "g-decay-equations",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "E.3.7",
+  "concept": "Decay equations",
+  "prompt": "Complete the following decay equations:\n\n**(a)** $^{238}_{92}\\text{U}\\to{}^{234}_{\\ ?}\\text{Th}+\\ ?$ **[1]**\n\n**(b)** $^{14}_{6}\\text{C}\\to{}^{14}_{\\ ?}\\text{N}+\\ ?+\\ ?$ **[1]**\n\n**(c)** $^{22}_{11}\\text{Na}\\to{}^{22}_{10}\\text{Ne}+\\ ?+\\ ?$ **[1]**",
+  "markscheme": "**(a)** $^{234}_{90}\\text{Th}+{}^{4}_{2}\\alpha$ **(A1)**\n\n**(b)** $^{14}_{7}\\text{N}+{}^{\\ 0}_{-1}e+\\bar\\nu_e$ **(A1)**\n\n**(c)** $^{\\ 0}_{+1}e+\\nu_e$ ($\\beta^{+}$ decay) **(A1)**\n\nBoth $A$ and $Z$ must balance on each side.",
+  "source": "original"
+ },
+ {
+  "id": "g-neutrino-types",
+  "paper": "1A",
+  "difficulty": "medium",
+  "marks": 1,
+  "subtopic": "E.3.8",
+  "concept": "Neutrinos and antineutrinos",
+  "prompt": "Which particle is emitted together with a positron in $\\beta^{+}$ decay?",
+  "options": [
+   "neutrino",
+   "antineutrino",
+   "proton",
+   "gamma photon only"
+  ],
+  "answer": 0,
+  "markscheme": "**A.** $\\beta^{+}$ decay emits a positron and an electron neutrino; $\\beta^{-}$ decay emits an electron and an electron antineutrino (lepton number is conserved).",
+  "source": "original"
+ },
+ {
+  "id": "g-penetration-ionisation",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 3,
+  "subtopic": "E.3.9",
+  "concept": "Penetration and ionising ability",
+  "prompt": "Compare alpha, beta and gamma radiation in terms of ionising ability and penetration, and explain the link between the two.",
+  "markscheme": "Alpha: most strongly ionising, stopped by paper or a few cm of air; beta: moderate, stopped by a few mm of aluminium; gamma: weakly ionising, reduced significantly only by thick lead or concrete **(A2)**\n\nThe more strongly radiation ionises, the faster it loses energy, so the less far it penetrates **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-activity-count-rate",
+  "paper": "2",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "E.3.10",
+  "concept": "Activity, count rate and half-life",
+  "prompt": "Distinguish between the activity of a source and the count rate measured by a detector near it.",
+  "markscheme": "Activity: the number of nuclei decaying per second in the source (Bq) **(A1)**; count rate: the number of decays detected per second, smaller because the detector catches only some emissions and includes background **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-half-life-integer",
+  "paper": "1A",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "E.3.11",
+  "concept": "Activity after whole half-lives",
+  "prompt": "Iodine-131 has a half-life of 8 days. A sample has activity 800 Bq. What is its activity after 24 days?",
+  "options": [
+   "50 Bq",
+   "100 Bq",
+   "200 Bq",
+   "267 Bq"
+  ],
+  "answer": 1,
+  "markscheme": "**B.** 24 days is 3 half-lives: $800\\to400\\to200\\to100$ Bq.",
+  "source": "original"
+ },
+ {
+  "id": "g-background-correction",
+  "paper": "2",
+  "difficulty": "medium",
+  "marks": 3,
+  "subtopic": "E.3.12",
+  "concept": "Background radiation",
+  "prompt": "A detector records 250 counts per minute near a source; the background count is 30 counts per minute. Predict the reading after two half-lives.",
+  "markscheme": "Corrected rate from the source $=220$ cpm **(A1)**; after two half-lives $=55$ cpm **(A1)**; reading $=55+30=85$ cpm — background does not decay **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-strong-force-evidence",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "E.3.13",
+  "concept": "Evidence for the strong force",
+  "prompt": "Explain why the existence of stable nuclei containing many protons is evidence for the strong nuclear force.",
+  "markscheme": "Protons repel by the electric force, which is enormous at nuclear separations **(R1)**; gravity is far too weak to hold them, so another, stronger attractive force must act between nucleons **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-n-z-stability",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "E.3.14",
+  "concept": "Neutron-to-proton ratio and stability",
+  "prompt": "Explain why stable heavy nuclei have more neutrons than protons, and predict the decay of a nuclide with too many neutrons.",
+  "markscheme": "As $Z$ increases, proton repulsion (long range) grows faster than strong attraction (short range); extra neutrons add attraction without repulsion **(R1)**. A neutron-rich nuclide decays by $\\beta^{-}$, converting a neutron to a proton **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-binding-energy-constant",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "E.3.15",
+  "concept": "Near-constant binding energy for A > 60",
+  "prompt": "Explain why the binding energy per nucleon is roughly constant for nucleon numbers above about 60.",
+  "markscheme": "The strong force is short range, so each nucleon is bound only to its nearest neighbours, whose number is roughly fixed **(R1)**; adding nucleons beyond this does not increase the binding per nucleon (and growing proton repulsion makes it fall slowly) **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-discrete-nuclear-levels",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "E.3.16",
+  "concept": "Evidence for nuclear energy levels",
+  "prompt": "Explain how alpha and gamma spectra provide evidence for discrete nuclear energy levels.",
+  "markscheme": "Alpha particles and gamma photons from a given nuclide are emitted with only certain specific energies **(A1)**; these energies equal differences between nuclear energy states, so the levels must be discrete **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-beta-spectrum-neutrino",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "medium",
+  "marks": 2,
+  "subtopic": "E.3.17",
+  "concept": "Continuous beta spectrum",
+  "prompt": "Explain why the continuous energy spectrum of beta particles led to the prediction of the neutrino.",
+  "markscheme": "The nucleus has discrete levels, so a fixed energy is released in each decay, yet beta particles have a range of energies up to a maximum **(R1)**; a third particle (the (anti)neutrino) must share the energy and momentum, otherwise energy would not be conserved **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-carbon-dating",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 4,
+  "subtopic": "E.3.18",
+  "concept": "Decay law N = N₀e^(−λt)",
+  "prompt": "Carbon-14 has a half-life of 5730 years. A piece of wood has 30% of the carbon-14 activity of living wood.\n\n**(a)** Calculate the decay constant of carbon-14 in $\\text{yr}^{-1}$. **[1]**\n\n**(b)** Estimate the age of the wood. **[3]**",
+  "markscheme": "**(a)** $\\lambda=\\dfrac{\\ln2}{5730}=1.21\\times10^{-4}\\ \\text{yr}^{-1}$ **(A1)**\n\n**(b)** $0.30=e^{-\\lambda t}$ **(M1)**; $t=\\dfrac{\\ln(1/0.30)}{\\lambda}$ **(M1)** $=9.95\\times10^{3}$ years **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-decay-constant-probability",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "hard",
+  "marks": 2,
+  "subtopic": "E.3.19",
+  "concept": "Decay constant as probability",
+  "prompt": "The decay constant is often described as the probability that a nucleus decays per unit time. Explain why this is only approximately true, and when it holds.",
+  "markscheme": "The probability of decaying in time $t$ is $1-e^{-\\lambda t}$ **(R1)**, which is approximately $\\lambda t$ only when $\\lambda t\\ll1$; so $\\lambda$ is the probability per unit time only for short times compared with the half-life **(R1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-activity-from-n",
+  "paper": "2",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 2,
+  "subtopic": "E.3.20",
+  "concept": "Activity A = λN",
+  "prompt": "A sample contains $1.0\\times10^{20}$ radioactive nuclei with decay constant $7.6\\times10^{-10}\\ \\text{s}^{-1}$. Calculate its activity.",
+  "markscheme": "$A=\\lambda N=7.6\\times10^{-10}\\times1.0\\times10^{20}$ **(M1)** $=7.6\\times10^{10}$ Bq **(A1)**",
+  "source": "original"
+ },
+ {
+  "id": "g-half-life-decay-constant",
+  "paper": "1A",
+  "level": "HL",
+  "difficulty": "easy",
+  "marks": 1,
+  "subtopic": "E.3.21",
+  "concept": "T½ = ln2/λ",
+  "prompt": "A nuclide has decay constant $0.0231\\ \\text{s}^{-1}$. What is its half-life?",
+  "options": [
+   "0.016 s",
+   "21 s",
+   "30 s",
+   "43 s"
+  ],
+  "answer": 2,
+  "markscheme": "**C.** $T_{1/2}=\\dfrac{\\ln2}{\\lambda}=\\dfrac{0.693}{0.0231}=30$ s.",
+  "source": "original"
+ }
+]
