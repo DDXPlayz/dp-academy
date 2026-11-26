@@ -3,8 +3,8 @@
  * /api/<path> to /api?path=<path>). The logic lives in server/api.ts so the
  * Vite dev server can run exactly the same code.
  */
-import { handleApi } from '../server/api';
-import { redisFromEnv } from '../server/store';
+import { handleApi } from '../server/api.js';
+import { redisFromEnv } from '../server/store.js';
 
 async function handle(request: Request): Promise<Response> {
   const kv = redisFromEnv(process.env);

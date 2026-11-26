@@ -8,7 +8,7 @@
  * If SESSION_SECRET is not set, nothing gets through — a misconfigured
  * deployment fails closed instead of going public.
  */
-import { SESSION_COOKIE, readCookie, verifySession } from './server/auth';
+import { SESSION_COOKIE, readCookie, verifySession } from './server/auth.js';
 
 export const config = { matcher: '/:path*' };
 

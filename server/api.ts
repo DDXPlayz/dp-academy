@@ -30,9 +30,9 @@ import {
   verifySession,
   type Role,
   type Session,
-} from './auth';
-import { personalFor } from './personal';
-import type { KV } from './store';
+} from './auth.js';
+import { personalFor } from './personal.js';
+import type { KV } from './store.js';
 
 export interface Env {
   ADMIN_USER?: string;
