@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { showMoment } from './PersonalTouches';
 import { Link } from 'react-router-dom';
 import { getTopic, type PracticeQuestion } from '../content';
 import { pct } from '../lib/stats';
@@ -152,7 +153,10 @@ export function Quiz({ questions, startAt = 0, title, onExit }: { questions: Pra
             {answered ? 'Next question' : 'Skip'} <Icon name="arrowRight" size={16} />
           </button>
         ) : (
-          <button type="button" className="btn-primary" disabled={!count} onClick={() => setFinished(true)}>
+          <button type="button" className="btn-primary" disabled={!count} onClick={() => {
+            setFinished(true);
+            showMoment('session');
+          }}>
             Finish session
           </button>
         )}

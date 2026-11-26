@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState, type ReactNode } from 'react';
+import { showMoment } from './PersonalTouches';
 import { useSearchParams } from 'react-router-dom';
 import { getLesson, getSubject, getTopic, subjects, type Flashcard as Card } from '../content';
 import { isDue, isLearned } from '../lib/srs';
@@ -345,6 +346,11 @@ function Session({ session, onExit, onCram }: { session: SessionParams; onExit: 
       queue: again ? [...d.queue.slice(1), d.queue[0]] : d.queue.slice(1),
     }));
   const restart = () => setDeck({ id, queue: build(), done: 0, total: 0 });
+  // A finished session (personal touches only; a no-op for other accounts).
+  const sessionOver = !card && deck.done > 0;
+  useEffect(() => {
+    if (sessionOver) showMoment('session');
+  }, [sessionOver]);
 
   const header = (
     <div className="mb-3 flex items-center gap-3 text-sm text-muted">

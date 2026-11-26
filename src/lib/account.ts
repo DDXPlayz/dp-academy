@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { exportableState, useProgress } from '../store/progress';
 import { startSync, stopSync, flushSync } from './sync';
+import { loadPersonal } from './personal';
 
 /*
  * Who is signed in, and which local copy of progress belongs to them.
@@ -106,6 +107,8 @@ export async function initAccount() {
     const migrated = await loadLocalProgress(username, role);
     useAccount.setState({ status: 'ready', username, role });
     startSync(username, migrated);
+    // Only here, after the server confirmed who is signed in (not in the offline fallback below).
+    void loadPersonal(username);
     return;
   }
   if (res.status === 401) return redirectToLogin();

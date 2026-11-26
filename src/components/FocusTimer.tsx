@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import { Icon } from "./Icon";
+import { showMoment } from "./PersonalTouches";
 
 /*
  * A Pomodoro-style focus timer in the top bar. It lives on this device only
@@ -127,10 +128,11 @@ export function FocusTimer() {
         const wasFocus = useTimer.getState().mode === "focus";
         useTimer.getState().finish();
         chime();
+        const breakNote = wasFocus ? showMoment("break") : null;
         if ("Notification" in window && Notification.permission === "granted") {
           new Notification(wasFocus ? "Focus block done" : "Break over", {
             body: wasFocus
-              ? "Time for a short break."
+              ? (breakNote ?? "Time for a short break.")
               : "Ready for the next focus block?",
           });
         }

@@ -373,6 +373,55 @@ html[data-text='lg'] .prose-lesson {
   }
 }
 
+/* Personal touches (src/components/PersonalTouches.tsx): a rose accent and a tiny heart burst. */
+:root {
+  --rose: #db5a8a;
+}
+.dark {
+  --rose: #f08cb3;
+}
+.heart-burst {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 1em;
+}
+.heart-burst span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 0.8em;
+  color: var(--rose);
+  opacity: 0;
+  animation: heart-up 1.8s ease-out forwards;
+}
+.heart-burst span:nth-child(2) {
+  left: 0.6em;
+  animation-delay: 0.25s;
+}
+.heart-burst span:nth-child(3) {
+  left: -0.4em;
+  animation-delay: 0.5s;
+}
+@keyframes heart-up {
+  0% {
+    transform: translateY(0) scale(0.6);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-1.6em) scale(1);
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .heart-burst {
+    display: none;
+  }
+}
+
 /* Lesson highlights (src/components/Highlighter.tsx). */
 ::highlight(dpa-highlight) {
   background-color: rgb(250 204 21 / 0.45);

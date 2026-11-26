@@ -25,6 +25,15 @@ function fileKV(file: string): KV {
   });
 }
 
+/** The private personal-touches config (git-ignored), read fresh so edits apply without a restart. */
+function readPersonal(root: string): string | undefined {
+  try {
+    return fs.readFileSync(path.join(root, 'resources', 'personal.json'), 'utf8');
+  } catch {
+    return undefined;
+  }
+}
+
 function apiMiddleware(root: string, logger: Logger): Connect.NextHandleFunction {
   const env: Env = {
     ADMIN_USER: process.env.ADMIN_USER || 'admin',
@@ -49,7 +58,7 @@ function apiMiddleware(root: string, logger: Logger): Connect.NextHandleFunction
         headers,
         body: req.method === 'GET' || req.method === 'HEAD' ? undefined : Buffer.concat(chunks),
       });
-      const response = await handleApi(request, url.pathname, env, kv);
+      const response = await handleApi(request, url.pathname, { ...env, PERSONAL_CONFIG: process.env.PERSONAL_CONFIG || readPersonal(root) }, kv);
       res.statusCode = response.status;
       response.headers.forEach((value, key) => res.setHeader(key, value));
       res.end(await response.text());

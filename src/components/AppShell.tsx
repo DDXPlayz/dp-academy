@@ -12,6 +12,7 @@ import { ProgressRing } from './ProgressBar';
 import { ShortcutsDialog } from './ShortcutsDialog';
 import { FocusTimer } from './FocusTimer';
 import { ToolsButton, ToolsPanel, useTools } from './ToolsPanel';
+import { PersonalToast } from './PersonalTouches';
 import { dueCards } from '../lib/recommend';
 import { useStudyState } from '../store/progress';
 
@@ -298,6 +299,7 @@ export function AppShell() {
       <SearchCommand />
       <ShortcutsDialog />
       <ToolsPanel />
+      <PersonalToast />
     </div>
   );
 }

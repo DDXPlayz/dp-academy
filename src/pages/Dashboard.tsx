@@ -6,7 +6,8 @@ import { Icon } from '../components/Icon';
 import { ProgressBar } from '../components/ProgressBar';
 import { ActivityHeatmap, StudyStats, TodayGoal } from '../components/StudyStats';
 import { SubjectCard } from '../components/SubjectCard';
-import { greeting, relativeTime } from '../lib/dates';
+import { greeting, relativeTime, streak } from '../lib/dates';
+import { DashboardGreeting, PersonalFooter } from '../components/PersonalTouches';
 import { continueLesson, revisitSuggestions, todaysFocus } from '../lib/recommend';
 import { pct, subjectStats, topicStats, weakTopics } from '../lib/stats';
 import { plain } from '../lib/search';
@@ -101,11 +102,19 @@ export default function Dashboard() {
     <Page wide>
       <header className="mb-8">
         <p className="text-sm text-muted">{new Date().toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long' })}</p>
-        <h1 className="mt-1 text-2xl font-semibold tracking-tight text-ink md:text-3xl">
-          {greeting()}
-          {name ? `, ${name}` : ''}
-        </h1>
-        {!name && <NamePrompt />}
+        <DashboardGreeting
+          streak={streak(studyDays)}
+          lessons={Object.keys(state.completed).length}
+          fallback={
+            <>
+              <h1 className="mt-1 text-2xl font-semibold tracking-tight text-ink md:text-3xl">
+                {greeting()}
+                {name ? `, ${name}` : ''}
+              </h1>
+              {!name && <NamePrompt />}
+            </>
+          }
+        />
         <ExamCountdown date={examDate} />
       </header>
 
@@ -290,6 +299,7 @@ export default function Dashboard() {
           )}
         </Section>
       </div>
+      <PersonalFooter />
     </Page>
   );
 }

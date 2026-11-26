@@ -11,6 +11,7 @@
  *   POST   /api/users             { username, password }  (admin) → create an account
  *   POST   /api/users/<name>/password { password } (admin) → reset someone's password
  *   DELETE /api/users/<name>                   (admin)    → remove an account and its progress
+ *   GET    /api/personal                                  → personal touches for one account (see personal.ts), or 204
  *
  * The owner account comes from ADMIN_USER / ADMIN_PASSWORD; everyone else is
  * created by the owner in Settings → People. SESSION_SECRET signs cookies.
@@ -30,12 +31,15 @@ import {
   type Role,
   type Session,
 } from './auth';
+import { personalFor } from './personal';
 import type { KV } from './store';
 
 export interface Env {
   ADMIN_USER?: string;
   ADMIN_PASSWORD?: string;
   SESSION_SECRET?: string;
+  /** Optional JSON for the personal touches (see server/personal.ts). Kept out of the repository. */
+  PERSONAL_CONFIG?: string;
 }
 
 interface UserRecord {
@@ -130,6 +134,12 @@ export async function handleApi(req: Request, path: string, env: Env, kv: KV): P
   if (session.r === 'admin' && session.u !== admin) return signedOut();
 
   if (route === 'auth/me' && method === 'GET') return issue(session.u, session.r);
+
+  // Decided here from the signed session only, never from anything the browser sends.
+  if (route === 'personal' && method === 'GET') {
+    const touches = personalFor(env.PERSONAL_CONFIG, session.u);
+    return touches ? json(touches, 200, { 'Cache-Control': 'no-store, private' }) : new Response(null, { status: 204, headers: { 'Cache-Control': 'no-store, private' } });
+  }
 
   if (route === 'auth/password' && method === 'POST') {
     if (session.r === 'admin') return error(400, 'The owner password is set in the Vercel environment variables.');

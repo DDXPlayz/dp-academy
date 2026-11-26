@@ -309,6 +309,16 @@ repository and GitHub-triggered builds never contain them.
   options on the Print notes page. Re-run it after re-extracting; builds
   without the folder simply hide these links.
 
+* **Data booklets:** put the official IB PDFs in `resources/data-booklets/` with the
+  subject in the file name (`physics…pdf`, `chemistry…pdf`, `math…pdf`). They
+  appear in the Tools panel (top bar, or press T), privately like the papers.
+* **Personal touches (optional):** `resources/personal.json` can give one account
+  a nickname, greetings and a few small messages. The server sends it only to
+  that account's signed-in session (`/api/personal`, see `server/personal.ts`);
+  everyone else sees the normal app. Online, paste the same JSON into a
+  `PERSONAL_CONFIG` environment variable on Vercel. It is never part of the
+  repository or the JavaScript bundle.
+
 Plan and structure: [`docs/`](docs/content-plan.md).
 
 ## Content policy
