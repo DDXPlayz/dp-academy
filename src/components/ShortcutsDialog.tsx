@@ -8,6 +8,7 @@ const GROUPS: { title: string; keys: [string, string][] }[] = [
     keys: [
       ['/  or  Ctrl K', 'Search'],
       ['?', 'Show these shortcuts'],
+      ['T', 'Calculators and data booklet'],
       ['Esc', 'Close a dialog'],
     ],
   },

@@ -357,3 +357,18 @@ html[data-text='lg'] .prose-lesson {
     break-inside: avoid;
   }
 }
+
+/* Room for the docked calculators / data booklet panel (src/components/ToolsPanel.tsx). */
+@media (min-width: 1024px) {
+  html[data-tools='open'] .app-body {
+    padding-right: 420px;
+  }
+  html[data-tools='wide'] .app-body {
+    padding-right: min(720px, 50vw);
+  }
+}
+@media print {
+  html[data-tools] .app-body {
+    padding-right: 0 !important;
+  }
+}

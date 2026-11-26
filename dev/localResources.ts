@@ -23,6 +23,20 @@ import type { Plugin } from 'vite';
 const BANK_DIR = 'resources/question-bank';
 const PAPERS_DIR = 'resources/past-papers';
 const NOTES_DIR = 'resources/extracted';
+const BOOKLET_DIR = 'resources/data-booklets';
+
+/** The official IB data/formula booklets dropped into resources/data-booklets/, by subject (matched on the file name). */
+export function dataBooklets(root: string): Record<string, string> {
+  const dir = path.join(root, BOOKLET_DIR);
+  if (!fs.existsSync(dir)) return {};
+  const out: Record<string, string> = {};
+  for (const f of fs.readdirSync(dir).filter((f) => f.toLowerCase().endsWith('.pdf')).sort()) {
+    const n = f.toLowerCase();
+    const id = n.includes('phys') ? 'physics' : n.includes('chem') ? 'chemistry' : n.includes('math') || n.includes('formula') ? 'math-aa' : null;
+    if (id && !out[id]) out[id] = f;
+  }
+  return out;
+}
 /** Folders of resources/ whose PDFs may be served under /data/sme/ (nothing else in resources/ is). */
 const SME_PDF_DIRS = ['Physics HL 2025', 'Chemistry HL 2025', 'Maths AA HL'];
 /** Not a question file: topic overrides, served separately as /data/bank-tags.json. */
@@ -176,6 +190,12 @@ export function localResources(): Plugin {
           res.end(JSON.stringify(mergedBank(root)));
           return;
         }
+        if (file === '/data/booklets.json') {
+          res.setHeader('Content-Type', 'application/json; charset=utf-8');
+          res.setHeader('Cache-Control', 'no-store');
+          res.end(JSON.stringify(dataBooklets(root)));
+          return;
+        }
         if (file === '/data/bank-tags.json') {
           const tags = path.join(root, BANK_DIR, TAGS_FILE);
           if (!fs.existsSync(tags)) {
@@ -192,6 +212,8 @@ export function localResources(): Plugin {
           ? [path.join(root, BANK_DIR, 'img'), file.slice('/data/bank/'.length)]
           : file.startsWith('/data/papers/')
             ? [path.join(root, PAPERS_DIR), file.slice('/data/papers/'.length)]
+            : file.startsWith('/data/booklets/')
+              ? [path.join(root, BOOKLET_DIR), file.slice('/data/booklets/'.length)]
             : file.startsWith('/data/notes/')
               ? [path.join(root, NOTES_DIR), file.slice('/data/notes/'.length)]
               : file.startsWith('/data/sme/')
@@ -220,6 +242,12 @@ export function localResources(): Plugin {
       if (fs.existsSync(tags)) fs.copyFileSync(tags, path.join(data, 'bank-tags.json'));
       const imgs = copyDir(path.join(root, BANK_DIR, 'img'), path.join(data, 'bank'), (f) => !!TYPES[path.extname(f).toLowerCase()]);
       const papers = copyDir(path.join(root, PAPERS_DIR), path.join(data, 'papers'), (f) => f.toLowerCase().endsWith('.pdf'));
+      const booklets = dataBooklets(root);
+      for (const f of Object.values(booklets)) {
+        fs.mkdirSync(path.join(data, 'booklets'), { recursive: true });
+        fs.copyFileSync(path.join(root, BOOKLET_DIR, f), path.join(data, 'booklets', f));
+      }
+      fs.writeFileSync(path.join(data, 'booklets.json'), JSON.stringify(booklets));
       let figs = 0;
       for (const rel of referencedFigures(root)) {
         const src = resolveInside(path.join(root, NOTES_DIR), rel);
@@ -231,7 +259,7 @@ export function localResources(): Plugin {
       }
       const notes = copyReferenceNotes(root, path.join(data, 'notes'));
       const sme = copySmePdfs(root, path.join(data, 'sme'));
-      this.info?.(`private data: ${bank.length} questions, ${imgs} images, ${papers} papers, ${figs} lesson diagrams, ${notes}, ${sme}`);
+      this.info?.(`private data: ${bank.length} questions, ${imgs} images, ${papers} papers, ${figs} lesson diagrams, ${Object.keys(booklets).length} data booklets, ${notes}, ${sme}`);
     },
   };
 }

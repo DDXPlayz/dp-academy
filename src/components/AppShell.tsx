@@ -11,6 +11,7 @@ import { SearchCommand } from './SearchCommand';
 import { ProgressRing } from './ProgressBar';
 import { ShortcutsDialog } from './ShortcutsDialog';
 import { FocusTimer } from './FocusTimer';
+import { ToolsButton, ToolsPanel, useTools } from './ToolsPanel';
 import { dueCards } from '../lib/recommend';
 import { useStudyState } from '../store/progress';
 
@@ -171,6 +172,7 @@ function TopBar() {
             <SearchButton compact />
           </div>
           <FocusTimer />
+          <ToolsButton />
           <ThemeToggle />
         </div>
       </div>
@@ -264,6 +266,9 @@ export function AppShell() {
       } else if (e.key === '?' && !typing) {
         e.preventDefault();
         setHelp(true);
+      } else if ((e.key === 't' || e.key === 'T') && !typing && !e.metaKey && !e.ctrlKey && !e.altKey) {
+        const t = useTools.getState();
+        t.setOpen(!t.open);
       }
     };
     window.addEventListener('keydown', onKey);
@@ -292,6 +297,7 @@ export function AppShell() {
       <Drawer />
       <SearchCommand />
       <ShortcutsDialog />
+      <ToolsPanel />
     </div>
   );
 }
